@@ -1,0 +1,252 @@
+<?xml version='1.0' encoding='utf8'?>
+<nuitka-compilation-report nuitka_version="4.3" nuitka_commercial_version="not installed" mode="module" completion="yes">
+  <scons_environment c_compiler="gcc" the_cc_name="gcc" the_compiler="gcc" c_flags="-march=x86-64 -mtune=generic" cxx_flags="-march=x86-64 -mtune=generic" />
+  <module name="openfabric_runtime" kind="CompiledPythonPackage" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/9f1340543e2160bdcb179103549e0443975c3ab1422a66fa02633e5bc1c41305/openfabric_runtime/__init__.py">
+    <plugin-influence name="implicit-imports" influence="condition-used" condition="module_mode and plugin(&quot;pyside6&quot;)" tags_used="module_mode,plugin" result="false" />
+    <optimization-time pass="1" time="0.0178" micro_passes="4" max_branch_merge="14" merged_total="266" />
+    <optimization-time pass="2" time="0.0029" micro_passes="1" max_branch_merge="14" merged_total="59" />
+    <code-generation-time time="0.0536" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="112176" />
+      <cpu system-cpu-time="0.0615" user-cpu-time="1.6286" />
+      <memory memory-max-rss-kb="72568" />
+      <system-events context-switches-involuntary="3" context-switches-voluntary="66" disk-input-blocks="0" disk-output-blocks="224" page-faults-major="0" page-faults-minor="16426" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="os" finding="excluded" line="1" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="__future__" finding="excluded" line="3" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="json" finding="excluded" line="5" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="sys" finding="absolute" line="6" reason="import" />
+      <module_usage name="dataclasses" finding="excluded" line="7" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="functools" finding="excluded" line="8" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="pathlib" finding="excluded" line="9" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="gc" finding="absolute" line="68" reason="import" />
+      <module_usage name="of_bootstrap" finding="absolute" line="78" reason="import" />
+      <module_usage name="of_bootstrap.worker_command" finding="not-found" line="78" reason="import fromlist" />
+    </module_usages>
+  </module>
+  <module name="openfabric_runtime.build_version" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/9f1340543e2160bdcb179103549e0443975c3ab1422a66fa02633e5bc1c41305/openfabric_runtime/build_version.py">
+    <optimization-time pass="1" time="0.0087" micro_passes="4" max_branch_merge="14" merged_total="162" />
+    <optimization-time pass="2" time="0.0022" micro_passes="1" max_branch_merge="13" merged_total="40" />
+    <code-generation-time time="0.0124" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="50976" />
+      <cpu system-cpu-time="0.0609" user-cpu-time="0.7715" />
+      <memory memory-max-rss-kb="58720" />
+      <system-events context-switches-involuntary="2" context-switches-voluntary="30" disk-input-blocks="0" disk-output-blocks="104" page-faults-major="0" page-faults-minor="12214" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="__future__" finding="excluded" line="2" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="json" finding="excluded" line="4" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="subprocess" finding="excluded" line="5" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="datetime" finding="excluded" line="6" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="pathlib" finding="excluded" line="7" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="openfabric_runtime" finding="absolute" line="35" reason="import" />
+      <module_usage name="openfabric_runtime.context" finding="not-found" line="35" reason="import fromlist" />
+    </module_usages>
+  </module>
+  <module name="openfabric_runtime.entrypoint" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/9f1340543e2160bdcb179103549e0443975c3ab1422a66fa02633e5bc1c41305/openfabric_runtime/entrypoint.py">
+    <optimization-time pass="1" time="0.1079" micro_passes="5" max_branch_merge="43" merged_total="2066" />
+    <optimization-time pass="2" time="0.0235" micro_passes="1" max_branch_merge="43" merged_total="411" />
+    <code-generation-time time="0.0578" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="226264" />
+      <cpu system-cpu-time="0.1158" user-cpu-time="3.8849" />
+      <memory memory-max-rss-kb="116420" />
+      <system-events context-switches-involuntary="20" context-switches-voluntary="74" disk-input-blocks="0" disk-output-blocks="448" page-faults-major="0" page-faults-minor="30359" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="__future__" finding="excluded" line="7" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="argparse" finding="excluded" line="9" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="json" finding="excluded" line="10" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="os" finding="excluded" line="11" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="re" finding="excluded" line="12" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="runpy" finding="excluded" line="13" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="signal" finding="excluded" line="14" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="subprocess" finding="excluded" line="15" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="sys" finding="absolute" line="16" reason="import" />
+      <module_usage name="time" finding="absolute" line="17" reason="import" />
+      <module_usage name="pathlib" finding="excluded" line="18" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="openfabric_runtime" finding="absolute" line="20" reason="import" />
+      <module_usage name="openfabric_runtime.context" finding="not-found" line="20" reason="import fromlist" />
+      <module_usage name="openfabric_runtime.module_args" finding="not-found" line="20" reason="import fromlist" />
+      <module_usage name="openfabric_runtime.startup" finding="absolute" line="21" reason="import" />
+      <module_usage name="ipaddress" finding="excluded" line="87" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="socket" finding="excluded" line="88" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="datetime" finding="excluded" line="89" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="cryptography" finding="not-found" line="91" reason="import" />
+      <module_usage name="cryptography.hazmat.primitives" finding="not-found" line="92" reason="import" />
+      <module_usage name="cryptography.hazmat.primitives.asymmetric" finding="not-found" line="93" reason="import" />
+      <module_usage name="cryptography.x509.oid" finding="not-found" line="94" reason="import" />
+      <module_usage name="psutil" finding="not-found" line="104" reason="import" />
+      <module_usage name="tempfile" finding="excluded" line="141" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="openfabric_runtime.serve" finding="absolute" line="215" reason="import" />
+      <module_usage name="error_catalog.startup" finding="absolute" line="216" reason="import" />
+      <module_usage name="socket" finding="excluded" line="259" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="gateway_core.runtime_readiness" finding="absolute" line="287" reason="import" />
+      <module_usage name="importlib" finding="excluded" line="308" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="gateway_core.reset" finding="absolute" line="322" reason="import" />
+    </module_usages>
+  </module>
+  <module name="openfabric_runtime.serve" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/9f1340543e2160bdcb179103549e0443975c3ab1422a66fa02633e5bc1c41305/openfabric_runtime/serve.py">
+    <optimization-time pass="1" time="0.0169" micro_passes="4" max_branch_merge="8" merged_total="359" />
+    <optimization-time pass="2" time="0.0038" micro_passes="1" max_branch_merge="8" merged_total="86" />
+    <code-generation-time time="0.0147" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="65496" />
+      <cpu system-cpu-time="0.0495" user-cpu-time="1.0111" />
+      <memory memory-max-rss-kb="62456" />
+      <system-events context-switches-involuntary="1" context-switches-voluntary="44" disk-input-blocks="0" disk-output-blocks="128" page-faults-major="0" page-faults-minor="13020" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="logging" finding="excluded" line="3" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="sys" finding="absolute" line="4" reason="import" />
+      <module_usage name="error_catalog.startup" finding="absolute" line="8" reason="import" />
+      <module_usage name="uvicorn.main" finding="not-found" line="39" reason="import" />
+      <module_usage name="error_catalog.startup" finding="absolute" line="50" reason="import" />
+    </module_usages>
+  </module>
+  <module name="openfabric_runtime.server" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/9f1340543e2160bdcb179103549e0443975c3ab1422a66fa02633e5bc1c41305/openfabric_runtime/server.py">
+    <optimization-time pass="1" time="0.1388" micro_passes="6" max_branch_merge="34" merged_total="2192" />
+    <optimization-time pass="2" time="0.0210" micro_passes="1" max_branch_merge="33" merged_total="354" />
+    <code-generation-time time="0.0674" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="258624" />
+      <cpu system-cpu-time="0.1021" user-cpu-time="4.3100" />
+      <memory memory-max-rss-kb="126996" />
+      <system-events context-switches-involuntary="5" context-switches-voluntary="94" disk-input-blocks="0" disk-output-blocks="512" page-faults-major="0" page-faults-minor="33176" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="__future__" finding="excluded" line="8" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="asyncio" finding="excluded" line="10" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="html" finding="excluded" line="11" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="logging" finding="excluded" line="12" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="re" finding="excluded" line="13" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="threading" finding="excluded" line="14" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="time" finding="absolute" line="15" reason="import" />
+      <module_usage name="contextlib" finding="excluded" line="16" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="pathlib" finding="excluded" line="17" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="starlette.applications" finding="not-found" line="19" reason="import" />
+      <module_usage name="starlette.requests" finding="not-found" line="20" reason="import" />
+      <module_usage name="starlette.responses" finding="not-found" line="21" reason="import" />
+      <module_usage name="starlette.routing" finding="not-found" line="22" reason="import" />
+      <module_usage name="openfabric_runtime.startup" finding="absolute" line="24" reason="import" />
+      <module_usage name="openfabric_runtime.startup_report" finding="relative" line="57" reason="import" />
+      <module_usage name="error_catalog.startup" finding="absolute" line="80" reason="import" />
+      <module_usage name="agent_runtime.api.app" finding="absolute" line="151" reason="import" />
+      <module_usage name="agent_runtime.branding" finding="absolute" line="156" reason="import" />
+      <module_usage name="openfabric_runtime.serve" finding="absolute" line="184" reason="import" />
+      <module_usage name="psutil" finding="not-found" line="204" reason="import" />
+    </module_usages>
+  </module>
+  <module name="openfabric_runtime.startup" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/9f1340543e2160bdcb179103549e0443975c3ab1422a66fa02633e5bc1c41305/openfabric_runtime/startup.py">
+    <optimization-time pass="1" time="0.0659" micro_passes="5" max_branch_merge="20" merged_total="1339" />
+    <optimization-time pass="2" time="0.0097" micro_passes="1" max_branch_merge="20" merged_total="235" />
+    <code-generation-time time="0.0397" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="157552" />
+      <cpu system-cpu-time="0.0794" user-cpu-time="2.3946" />
+      <memory memory-max-rss-kb="91072" />
+      <system-events context-switches-involuntary="12" context-switches-voluntary="77" disk-input-blocks="0" disk-output-blocks="312" page-faults-major="0" page-faults-minor="20978" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="sys" finding="absolute" line="7" reason="import" />
+      <module_usage name="threading" finding="excluded" line="8" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="time" finding="absolute" line="9" reason="import" />
+      <module_usage name="contextlib" finding="excluded" line="10" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="contextvars" finding="excluded" line="11" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="itertools" finding="absolute" line="59" reason="import" />
+      <module_usage name="itertools" finding="absolute" line="73" reason="import" />
+      <module_usage name="openfabric_runtime.startup_report" finding="relative" line="85" reason="import" />
+    </module_usages>
+  </module>
+  <module name="openfabric_runtime.startup_report" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/9f1340543e2160bdcb179103549e0443975c3ab1422a66fa02633e5bc1c41305/openfabric_runtime/startup_report.py">
+    <optimization-time pass="1" time="0.2458" micro_passes="6" max_branch_merge="21" merged_total="4311" />
+    <optimization-time pass="2" time="0.0356" micro_passes="1" max_branch_merge="20" merged_total="691" />
+    <code-generation-time time="0.0824" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="275000" />
+      <cpu system-cpu-time="0.1420" user-cpu-time="4.9581" />
+      <memory memory-max-rss-kb="132072" />
+      <system-events context-switches-involuntary="25" context-switches-voluntary="95" disk-input-blocks="0" disk-output-blocks="544" page-faults-major="0" page-faults-minor="34603" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="__future__" finding="excluded" line="7" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="json" finding="excluded" line="9" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="math" finding="absolute" line="10" reason="import" />
+      <module_usage name="os" finding="excluded" line="11" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="statistics" finding="excluded" line="12" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="threading" finding="excluded" line="13" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="time" finding="absolute" line="14" reason="import" />
+      <module_usage name="pathlib" finding="excluded" line="15" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="uuid" finding="excluded" line="16" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+    </module_usages>
+  </module>
+  <linker-resources>
+    <cpu system-cpu-time="0.0188" user-cpu-time="0.0315" />
+    <memory memory-max-rss-kb="44608" />
+    <system-events context-switches-involuntary="0" context-switches-voluntary="7" disk-input-blocks="0" disk-output-blocks="3144" page-faults-major="0" page-faults-minor="4065" />
+  </linker-resources>
+  <performance>
+    <memory_usage name="after_launch" value="61292544" />
+    <memory_usage name="before_c_code_generation" value="64696320" />
+    <memory_usage name="before_running_scons" value="68939776" />
+  </performance>
+  <data_composer blob_size="27775" total="1330">
+    <module_data filename="__bytecode.const" blob_name=".bytecode" blob_size="3" input_size="0" />
+    <module_data filename="__constants.const" blob_name="" blob_size="996" input_size="2454" />
+    <module_data filename="module.openfabric_runtime.build_version.const" blob_name="openfabric_runtime.build_version" blob_size="1404" input_size="3233" />
+    <module_data filename="module.openfabric_runtime.const" blob_name="openfabric_runtime" blob_size="2875" input_size="5070" />
+    <module_data filename="module.openfabric_runtime.entrypoint.const" blob_name="openfabric_runtime.entrypoint" blob_size="6334" input_size="11785" />
+    <module_data filename="module.openfabric_runtime.serve.const" blob_name="openfabric_runtime.serve" blob_size="1322" input_size="3494" />
+    <module_data filename="module.openfabric_runtime.server.const" blob_name="openfabric_runtime.server" blob_size="6041" input_size="11651" />
+    <module_data filename="module.openfabric_runtime.startup.const" blob_name="openfabric_runtime.startup" blob_size="3993" input_size="7381" />
+    <module_data filename="module.openfabric_runtime.startup_report.const" blob_name="openfabric_runtime.startup_report" blob_size="4566" input_size="9988" />
+  </data_composer>
+  <performance-totals>
+    <optimization-time pass="1" time="0.6018" module_count="7" />
+    <optimization-time pass="2" time="0.0987" module_count="7" />
+    <optimization-time pass="all" time="0.7005" module_count="7" />
+    <code-generation-time time="0.3281" module_count="7" />
+    <c-compilation-time user-cpu-time="18.9587" system-cpu-time="0.6111" module_count="7" />
+    <c-linking-time user-cpu-time="0.0315" system-cpu-time="0.0188" />
+  </performance-totals>
+  <python_binary filename="${cwd}/.build/compiled/targets/linux-x86_64/modules/openfabric_runtime/openfabric_runtime.cpython-312-x86_64-linux-gnu.so" backend_resource_mode="incbin" reproducible="yes" size="1599128" />
+  <command_line>
+    <option value="--mode=module" />
+    <option value="/workspace/.build/compiled/targets/linux-x86_64/sources/9f1340543e2160bdcb179103549e0443975c3ab1422a66fa02633e5bc1c41305/openfabric_runtime" />
+    <option value="--include-package=openfabric_runtime" />
+    <option value="--no-pyi-file" />
+    <option value="--assume-yes-for-downloads" />
+    <option value="--output-dir=/workspace/.build/compiled/targets/linux-x86_64/modules/openfabric_runtime" />
+    <option value="--jobs=8" />
+    <option value="--report=/workspace/.build/compiled/targets/linux-x86_64/modules/openfabric_runtime/compilation.xml" />
+  </command_line>
+  <plugins>
+    <plugin name="anti-bloat" user_enabled="no" />
+    <plugin name="gi" user_enabled="no" />
+    <plugin name="implicit-imports" user_enabled="no" />
+    <plugin name="options-nanny" user_enabled="no" />
+    <plugin name="pkg-resources" user_enabled="no" />
+    <plugin name="transformers" user_enabled="no" />
+  </plugins>
+  <distributions />
+  <python python_exe="${sys.prefix}/bin/python" python_flavor="Unknown" python_version="3.12.14" os_name="Linux" os_release="Ubuntu-Debian-22.04.5" arch_name="x86_64" filesystem_encoding="utf-8">
+    <search_path>
+      <path value="${cwd}/.build/compiled/targets/linux-x86_64/sources/9f1340543e2160bdcb179103549e0443975c3ab1422a66fa02633e5bc1c41305" />
+      <path value="${cwd}" />
+      <path value="${sys.real_prefix}/lib/python3.12" />
+      <path value="${sys.real_prefix}/lib/python3.12/lib-dynload" />
+      <path value="${sys.prefix}/lib/python3.12/site-packages" />
+      <path value="${sys.prefix}/lib/python3.12/site-packages/setuptools/_vendor" />
+    </search_path>
+  </python>
+  <output run_filename="${cwd}/.build/compiled/targets/linux-x86_64/modules/openfabric_runtime/openfabric_runtime.cpython-312-x86_64-linux-gnu.so" />
+</nuitka-compilation-report>

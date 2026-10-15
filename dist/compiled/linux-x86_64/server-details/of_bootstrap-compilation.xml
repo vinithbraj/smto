@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='utf8'?>
+<nuitka-compilation-report nuitka_version="4.3" nuitka_commercial_version="not installed" mode="module" completion="yes">
+  <scons_environment c_compiler="gcc" the_cc_name="gcc" the_compiler="gcc" c_flags="-march=x86-64 -mtune=generic" cxx_flags="-march=x86-64 -mtune=generic" />
+  <module name="of_bootstrap" kind="CompiledPythonPackage" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/9f1340543e2160bdcb179103549e0443975c3ab1422a66fa02633e5bc1c41305/of_bootstrap/__init__.py">
+    <plugin-influence name="implicit-imports" influence="condition-used" condition="module_mode and plugin(&quot;pyside6&quot;)" tags_used="module_mode,plugin" result="false" />
+    <optimization-time pass="1" time="0.0203" micro_passes="3" max_branch_merge="30" merged_total="236" />
+    <optimization-time pass="2" time="0.0041" micro_passes="1" max_branch_merge="30" merged_total="76" />
+    <code-generation-time time="0.0523" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="108144" />
+      <cpu system-cpu-time="0.0568" user-cpu-time="1.5193" />
+      <memory memory-max-rss-kb="75280" />
+      <system-events context-switches-involuntary="2" context-switches-voluntary="47" disk-input-blocks="0" disk-output-blocks="216" page-faults-major="0" page-faults-minor="17426" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="os" finding="excluded" line="1" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="__future__" finding="excluded" line="2" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="argparse" finding="excluded" line="4" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="importlib" finding="excluded" line="5" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="json" finding="excluded" line="6" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="os" finding="excluded" line="7" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="runpy" finding="excluded" line="8" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="subprocess" finding="excluded" line="9" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="sys" finding="absolute" line="10" reason="import" />
+      <module_usage name="pathlib" finding="excluded" line="11" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="of_bootstrap.common" finding="relative" line="13" reason="import" />
+      <module_usage name="openfabric_runtime.entrypoint" finding="absolute" line="86" reason="import" />
+      <module_usage name="of_bootstrap.installer" finding="relative" line="91" reason="import" />
+      <module_usage name="openfabric_runtime.entrypoint" finding="absolute" line="100" reason="import" />
+    </module_usages>
+  </module>
+  <module name="of_bootstrap.common" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/9f1340543e2160bdcb179103549e0443975c3ab1422a66fa02633e5bc1c41305/of_bootstrap/common.py">
+    <optimization-time pass="1" time="0.0720" micro_passes="5" max_branch_merge="11" merged_total="1347" />
+    <optimization-time pass="2" time="0.0122" micro_passes="1" max_branch_merge="9" merged_total="261" />
+    <code-generation-time time="0.0454" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="165696" />
+      <cpu system-cpu-time="0.1119" user-cpu-time="2.7964" />
+      <memory memory-max-rss-kb="96924" />
+      <system-events context-switches-involuntary="7" context-switches-voluntary="82" disk-input-blocks="0" disk-output-blocks="328" page-faults-major="0" page-faults-minor="24640" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="__future__" finding="excluded" line="2" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="contextlib" finding="excluded" line="4" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="hashlib" finding="excluded" line="5" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="json" finding="excluded" line="6" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="os" finding="excluded" line="7" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="shutil" finding="excluded" line="8" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="ssl" finding="excluded" line="9" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="stat" finding="excluded" line="10" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="subprocess" finding="excluded" line="11" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="sys" finding="absolute" line="12" reason="import" />
+      <module_usage name="tarfile" finding="excluded" line="13" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="tempfile" finding="excluded" line="14" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="time" finding="absolute" line="15" reason="import" />
+      <module_usage name="urllib.request" finding="absolute" line="16" reason="import" />
+      <module_usage name="zipfile" finding="excluded" line="17" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="pathlib" finding="excluded" line="18" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="fcntl" finding="absolute" line="168" reason="import" />
+    </module_usages>
+  </module>
+  <module name="of_bootstrap.installer" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/9f1340543e2160bdcb179103549e0443975c3ab1422a66fa02633e5bc1c41305/of_bootstrap/installer.py">
+    <optimization-time pass="1" time="0.1357" micro_passes="5" max_branch_merge="29" merged_total="2254" />
+    <optimization-time pass="2" time="0.0247" micro_passes="1" max_branch_merge="27" merged_total="420" />
+    <code-generation-time time="0.0823" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="324320" />
+      <cpu system-cpu-time="0.1735" user-cpu-time="5.4491" />
+      <memory memory-max-rss-kb="144392" />
+      <system-events context-switches-involuntary="50" context-switches-voluntary="135" disk-input-blocks="0" disk-output-blocks="640" page-faults-major="0" page-faults-minor="43227" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="__future__" finding="excluded" line="2" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="json" finding="excluded" line="4" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="os" finding="excluded" line="5" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="shutil" finding="excluded" line="6" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="subprocess" finding="excluded" line="7" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="sys" finding="absolute" line="8" reason="import" />
+      <module_usage name="time" finding="absolute" line="9" reason="import" />
+      <module_usage name="uuid" finding="excluded" line="10" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="pathlib" finding="excluded" line="11" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="of_bootstrap.common" finding="relative" line="13" reason="import" />
+      <module_usage name="of_bootstrap" finding="absolute" line="198" reason="import" />
+      <module_usage name="of_bootstrap.worker_command" finding="not-found" line="198" reason="import fromlist" />
+      <module_usage name="of_bootstrap.system" finding="relative" line="199" reason="import" />
+    </module_usages>
+  </module>
+  <module name="of_bootstrap.system" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/9f1340543e2160bdcb179103549e0443975c3ab1422a66fa02633e5bc1c41305/of_bootstrap/system.py">
+    <optimization-time pass="1" time="0.1569" micro_passes="5" max_branch_merge="39" merged_total="2834" />
+    <optimization-time pass="2" time="0.0262" micro_passes="1" max_branch_merge="29" merged_total="518" />
+    <code-generation-time time="0.0872" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="285896" />
+      <cpu system-cpu-time="0.1430" user-cpu-time="4.9752" />
+      <memory memory-max-rss-kb="128976" />
+      <system-events context-switches-involuntary="14" context-switches-voluntary="89" disk-input-blocks="0" disk-output-blocks="560" page-faults-major="0" page-faults-minor="33393" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="__future__" finding="excluded" line="2" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="json" finding="excluded" line="4" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="os" finding="excluded" line="5" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="shutil" finding="excluded" line="6" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="subprocess" finding="excluded" line="7" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="sys" finding="absolute" line="8" reason="import" />
+      <module_usage name="tarfile" finding="excluded" line="9" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="zipfile" finding="excluded" line="10" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="pathlib" finding="excluded" line="11" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="of_bootstrap.common" finding="relative" line="13" reason="import" />
+      <module_usage name="of_bootstrap.installer" finding="relative" line="31" reason="import" />
+      <module_usage name="platform" finding="excluded" line="140" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="ctypes" finding="excluded" line="197" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="ctypes.wintypes" finding="absolute" line="198" reason="import" />
+    </module_usages>
+  </module>
+  <linker-resources>
+    <cpu system-cpu-time="0.0140" user-cpu-time="0.0314" />
+    <memory memory-max-rss-kb="43204" />
+    <system-events context-switches-involuntary="1" context-switches-voluntary="7" disk-input-blocks="0" disk-output-blocks="2872" page-faults-major="0" page-faults-minor="3925" />
+  </linker-resources>
+  <performance>
+    <memory_usage name="after_launch" value="61292544" />
+    <memory_usage name="before_c_code_generation" value="64688128" />
+    <memory_usage name="before_running_scons" value="69570560" />
+  </performance>
+  <data_composer blob_size="22286" total="1073">
+    <module_data filename="__bytecode.const" blob_name=".bytecode" blob_size="3" input_size="0" />
+    <module_data filename="__constants.const" blob_name="" blob_size="996" input_size="2454" />
+    <module_data filename="module.of_bootstrap.common.const" blob_name="of_bootstrap.common" blob_size="2982" input_size="6485" />
+    <module_data filename="module.of_bootstrap.const" blob_name="of_bootstrap" blob_size="3030" input_size="5621" />
+    <module_data filename="module.of_bootstrap.installer.const" blob_name="of_bootstrap.installer" blob_size="8187" input_size="14658" />
+    <module_data filename="module.of_bootstrap.system.const" blob_name="of_bootstrap.system" blob_size="6977" input_size="12758" />
+  </data_composer>
+  <performance-totals>
+    <optimization-time pass="1" time="0.3849" module_count="4" />
+    <optimization-time pass="2" time="0.0671" module_count="4" />
+    <optimization-time pass="all" time="0.4520" module_count="4" />
+    <code-generation-time time="0.2671" module_count="4" />
+    <c-compilation-time user-cpu-time="14.7400" system-cpu-time="0.4852" module_count="4" />
+    <c-linking-time user-cpu-time="0.0314" system-cpu-time="0.0140" />
+  </performance-totals>
+  <python_binary filename="${cwd}/.build/compiled/targets/linux-x86_64/modules/of_bootstrap/of_bootstrap.cpython-312-x86_64-linux-gnu.so" backend_resource_mode="incbin" reproducible="yes" size="1459448" />
+  <command_line>
+    <option value="--mode=module" />
+    <option value="/workspace/.build/compiled/targets/linux-x86_64/sources/9f1340543e2160bdcb179103549e0443975c3ab1422a66fa02633e5bc1c41305/of_bootstrap" />
+    <option value="--include-package=of_bootstrap" />
+    <option value="--no-pyi-file" />
+    <option value="--assume-yes-for-downloads" />
+    <option value="--output-dir=/workspace/.build/compiled/targets/linux-x86_64/modules/of_bootstrap" />
+    <option value="--jobs=8" />
+    <option value="--report=/workspace/.build/compiled/targets/linux-x86_64/modules/of_bootstrap/compilation.xml" />
+  </command_line>
+  <plugins>
+    <plugin name="anti-bloat" user_enabled="no" />
+    <plugin name="gi" user_enabled="no" />
+    <plugin name="implicit-imports" user_enabled="no" />
+    <plugin name="options-nanny" user_enabled="no" />
+    <plugin name="pkg-resources" user_enabled="no" />
+    <plugin name="transformers" user_enabled="no" />
+  </plugins>
+  <distributions />
+  <python python_exe="${sys.prefix}/bin/python" python_flavor="Unknown" python_version="3.12.14" os_name="Linux" os_release="Ubuntu-Debian-22.04.5" arch_name="x86_64" filesystem_encoding="utf-8">
+    <search_path>
+      <path value="${cwd}/.build/compiled/targets/linux-x86_64/sources/9f1340543e2160bdcb179103549e0443975c3ab1422a66fa02633e5bc1c41305" />
+      <path value="${cwd}" />
+      <path value="${sys.real_prefix}/lib/python3.12" />
+      <path value="${sys.real_prefix}/lib/python3.12/lib-dynload" />
+      <path value="${sys.prefix}/lib/python3.12/site-packages" />
+      <path value="${sys.prefix}/lib/python3.12/site-packages/setuptools/_vendor" />
+    </search_path>
+  </python>
+  <output run_filename="${cwd}/.build/compiled/targets/linux-x86_64/modules/of_bootstrap/of_bootstrap.cpython-312-x86_64-linux-gnu.so" />
+</nuitka-compilation-report>

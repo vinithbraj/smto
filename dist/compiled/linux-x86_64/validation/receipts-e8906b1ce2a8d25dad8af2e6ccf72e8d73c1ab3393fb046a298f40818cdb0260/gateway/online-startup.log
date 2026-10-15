@@ -1,0 +1,26 @@
+SMTO gateway dev.e103e9178883.20261015.20261015T172718448064Z
+[SMTO gateway startup +0s] Verifying application download...
+[SMTO gateway startup +0s] Preparing shared private Python...
+[SMTO gateway startup +1s] Preparing compiled application...
+[SMTO gateway startup] Checking packaged runtime: starting (0.0s)
+[SMTO gateway startup] Checking packaged runtime: complete (1.0s)
+[SMTO gateway startup] Preparing HTTPS identity: starting (0.0s)
+[SMTO gateway startup] Preparing HTTPS identity: complete (0.1s)
+INFO:     Started server process [7926]
+INFO:     Waiting for application startup.
+[SMTO gateway startup] Initializing Gateway services: starting (0.0s)
+[SMTO gateway startup] Validating runtime dependencies: starting (0.0s)
+[SMTO gateway startup] Validating runtime dependencies: complete (0.0s)
+[SMTO gateway startup] Restoring jobs and starting worker communication: starting (0.0s)
+[SMTO gateway startup] Restoring jobs and starting worker communication: complete (0.0s)
+[SMTO gateway startup] Initializing Gateway services: complete (0.1s)
+[SMTO gateway startup] Starting background services: starting (0.0s)
+[SMTO gateway startup] Starting background services: complete (0.0s)
+INFO:     Application startup complete.
+INFO:     Uvicorn running on https://127.0.0.1:46647 (Press CTRL+C to quit)
+Gateway runtime ready: 22646a543a07c5c1
+INFO:     127.0.0.1:34334 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [7926]
