@@ -6,7 +6,7 @@
         "libc.so.6",
         "ld-linux-x86-64.so.2"
       ],
-      "path": "openfabric-launcher",
+      "path": "smto-launcher",
       "required_cpu_properties": [
         "x86-64-baseline"
       ],
@@ -24,7 +24,7 @@
         "2.34"
       ],
       "search_paths": [],
-      "sha256": "639d59ae71916161ebfd7f828352e82b783f3b9466ffc31276a23d0d77d590d6"
+      "sha256": "6365f46caddac7f6647bb1e2c6839208e926079ec5a7fdbd553034bc7c2ca4fa"
     }
   ],
   "highest_glibc_symbol": "2.34",

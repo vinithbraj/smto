@@ -1,32 +1,32 @@
 <?xml version='1.0' encoding='utf8'?>
 <nuitka-compilation-report nuitka_version="4.3" nuitka_commercial_version="not installed" mode="module" completion="yes">
   <scons_environment c_compiler="gcc" the_cc_name="gcc" the_compiler="gcc" c_flags="-march=x86-64 -mtune=generic" cxx_flags="-march=x86-64 -mtune=generic" />
-  <module name="smto_site" kind="CompiledPythonPackage" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/9f1340543e2160bdcb179103549e0443975c3ab1422a66fa02633e5bc1c41305/smto_site/__init__.py">
+  <module name="smto_site" kind="CompiledPythonPackage" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/smto_site/__init__.py">
     <plugin-influence name="implicit-imports" influence="condition-used" condition="module_mode and plugin(&quot;pyside6&quot;)" tags_used="module_mode,plugin" result="false" />
     <optimization-time pass="1" time="0.0007" micro_passes="2" />
-    <optimization-time pass="2" time="0.0003" micro_passes="1" />
-    <code-generation-time time="0.0313" />
+    <optimization-time pass="2" time="0.0002" micro_passes="1" />
+    <code-generation-time time="0.0322" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="41696" />
-      <cpu system-cpu-time="0.0458" user-cpu-time="0.6697" />
-      <memory memory-max-rss-kb="53624" />
-      <system-events context-switches-involuntary="5" context-switches-voluntary="29" disk-input-blocks="0" disk-output-blocks="88" page-faults-major="0" page-faults-minor="10385" />
+      <cpu system-cpu-time="0.0602" user-cpu-time="0.6439" />
+      <memory memory-max-rss-kb="53280" />
+      <system-events context-switches-involuntary="0" context-switches-voluntary="28" disk-input-blocks="0" disk-output-blocks="88" page-faults-major="0" page-faults-minor="10512" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="os" finding="excluded" line="1" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
     </module_usages>
   </module>
-  <module name="smto_site.app" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/9f1340543e2160bdcb179103549e0443975c3ab1422a66fa02633e5bc1c41305/smto_site/app.py">
-    <optimization-time pass="1" time="0.0709" micro_passes="4" max_branch_merge="58" merged_total="1189" />
-    <optimization-time pass="2" time="0.0209" micro_passes="1" max_branch_merge="48" merged_total="296" />
-    <code-generation-time time="0.0587" />
+  <module name="smto_site.app" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/smto_site/app.py">
+    <optimization-time pass="1" time="0.0658" micro_passes="4" max_branch_merge="58" merged_total="1189" />
+    <optimization-time pass="2" time="0.0162" micro_passes="1" max_branch_merge="48" merged_total="296" />
+    <code-generation-time time="0.0593" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="222696" />
-      <cpu system-cpu-time="0.1212" user-cpu-time="4.0362" />
-      <memory memory-max-rss-kb="120892" />
-      <system-events context-switches-involuntary="8" context-switches-voluntary="75" disk-input-blocks="0" disk-output-blocks="440" page-faults-major="0" page-faults-minor="29899" />
+      <cpu system-cpu-time="0.1153" user-cpu-time="4.1500" />
+      <memory memory-max-rss-kb="120292" />
+      <system-events context-switches-involuntary="19" context-switches-voluntary="74" disk-input-blocks="0" disk-output-blocks="440" page-faults-major="0" page-faults-minor="29879" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="__future__" finding="excluded" line="21" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -51,16 +51,16 @@
       <module_usage name="smto_site.visuals" finding="absolute" line="42" reason="import" />
     </module_usages>
   </module>
-  <module name="smto_site.cli" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/9f1340543e2160bdcb179103549e0443975c3ab1422a66fa02633e5bc1c41305/smto_site/cli.py">
-    <optimization-time pass="1" time="0.0092" micro_passes="5" max_branch_merge="8" merged_total="136" />
-    <optimization-time pass="2" time="0.0016" micro_passes="1" max_branch_merge="8" merged_total="26" />
-    <code-generation-time time="0.0065" />
+  <module name="smto_site.cli" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/smto_site/cli.py">
+    <optimization-time pass="1" time="0.0096" micro_passes="5" max_branch_merge="8" merged_total="136" />
+    <optimization-time pass="2" time="0.0014" micro_passes="1" max_branch_merge="8" merged_total="26" />
+    <code-generation-time time="0.0063" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="37416" />
-      <cpu system-cpu-time="0.0540" user-cpu-time="0.6734" />
-      <memory memory-max-rss-kb="58048" />
-      <system-events context-switches-involuntary="1" context-switches-voluntary="23" disk-input-blocks="0" disk-output-blocks="80" page-faults-major="0" page-faults-minor="11626" />
+      <cpu system-cpu-time="0.0639" user-cpu-time="0.6826" />
+      <memory memory-max-rss-kb="57724" />
+      <system-events context-switches-involuntary="4" context-switches-voluntary="23" disk-input-blocks="0" disk-output-blocks="80" page-faults-major="0" page-faults-minor="11553" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="argparse" finding="excluded" line="21" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -70,16 +70,16 @@
       <module_usage name="uvicorn" finding="not-found" line="45" reason="import" />
     </module_usages>
   </module>
-  <module name="smto_site.config" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/9f1340543e2160bdcb179103549e0443975c3ab1422a66fa02633e5bc1c41305/smto_site/config.py">
-    <optimization-time pass="1" time="0.0201" micro_passes="4" max_branch_merge="19" merged_total="396" />
-    <optimization-time pass="2" time="0.0039" micro_passes="1" max_branch_merge="14" merged_total="97" />
+  <module name="smto_site.config" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/smto_site/config.py">
+    <optimization-time pass="1" time="0.0195" micro_passes="4" max_branch_merge="19" merged_total="396" />
+    <optimization-time pass="2" time="0.0038" micro_passes="1" max_branch_merge="14" merged_total="97" />
     <code-generation-time time="0.0204" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="97648" />
-      <cpu system-cpu-time="0.0713" user-cpu-time="1.5137" />
-      <memory memory-max-rss-kb="73340" />
-      <system-events context-switches-involuntary="5" context-switches-voluntary="33" disk-input-blocks="0" disk-output-blocks="192" page-faults-major="0" page-faults-minor="17206" />
+      <cpu system-cpu-time="0.0779" user-cpu-time="1.5193" />
+      <memory memory-max-rss-kb="72952" />
+      <system-events context-switches-involuntary="9" context-switches-voluntary="33" disk-input-blocks="0" disk-output-blocks="192" page-faults-major="0" page-faults-minor="17119" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="__future__" finding="excluded" line="21" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -92,16 +92,16 @@
       <module_usage name="datetime" finding="excluded" line="128" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
     </module_usages>
   </module>
-  <module name="smto_site.content" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/9f1340543e2160bdcb179103549e0443975c3ab1422a66fa02633e5bc1c41305/smto_site/content.py">
-    <optimization-time pass="1" time="0.0648" micro_passes="5" max_branch_merge="20" merged_total="1294" />
-    <optimization-time pass="2" time="0.0128" micro_passes="1" max_branch_merge="20" merged_total="255" />
-    <code-generation-time time="0.0363" />
+  <module name="smto_site.content" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/smto_site/content.py">
+    <optimization-time pass="1" time="0.0658" micro_passes="5" max_branch_merge="20" merged_total="1294" />
+    <optimization-time pass="2" time="0.0109" micro_passes="1" max_branch_merge="20" merged_total="255" />
+    <code-generation-time time="0.0358" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="155664" />
-      <cpu system-cpu-time="0.0729" user-cpu-time="2.6874" />
-      <memory memory-max-rss-kb="91584" />
-      <system-events context-switches-involuntary="11" context-switches-voluntary="50" disk-input-blocks="0" disk-output-blocks="312" page-faults-major="0" page-faults-minor="22654" />
+      <cpu system-cpu-time="0.1021" user-cpu-time="2.5760" />
+      <memory memory-max-rss-kb="91612" />
+      <system-events context-switches-involuntary="7" context-switches-voluntary="50" disk-input-blocks="0" disk-output-blocks="312" page-faults-major="0" page-faults-minor="22609" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="__future__" finding="excluded" line="21" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -116,16 +116,16 @@
       <module_usage name="smto_site.markdown" finding="absolute" line="33" reason="import" />
     </module_usages>
   </module>
-  <module name="smto_site.discovery" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/9f1340543e2160bdcb179103549e0443975c3ab1422a66fa02633e5bc1c41305/smto_site/discovery.py">
-    <optimization-time pass="1" time="0.0247" micro_passes="5" max_branch_merge="10" merged_total="455" />
-    <optimization-time pass="2" time="0.0042" micro_passes="1" max_branch_merge="9" merged_total="92" />
-    <code-generation-time time="0.0134" />
+  <module name="smto_site.discovery" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/smto_site/discovery.py">
+    <optimization-time pass="1" time="0.0226" micro_passes="5" max_branch_merge="10" merged_total="455" />
+    <optimization-time pass="2" time="0.0035" micro_passes="1" max_branch_merge="9" merged_total="92" />
+    <code-generation-time time="0.0127" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="57160" />
-      <cpu system-cpu-time="0.0541" user-cpu-time="0.9799" />
-      <memory memory-max-rss-kb="61292" />
-      <system-events context-switches-involuntary="3" context-switches-voluntary="31" disk-input-blocks="0" disk-output-blocks="112" page-faults-major="0" page-faults-minor="13481" />
+      <cpu system-cpu-time="0.0621" user-cpu-time="0.9696" />
+      <memory memory-max-rss-kb="60796" />
+      <system-events context-switches-involuntary="2" context-switches-voluntary="31" disk-input-blocks="0" disk-output-blocks="112" page-faults-major="0" page-faults-minor="13450" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="datetime" finding="excluded" line="21" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -133,16 +133,16 @@
       <module_usage name="xml.etree.ElementTree" finding="absolute" line="23" reason="import" />
     </module_usages>
   </module>
-  <module name="smto_site.markdown" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/9f1340543e2160bdcb179103549e0443975c3ab1422a66fa02633e5bc1c41305/smto_site/markdown.py">
-    <optimization-time pass="1" time="0.0430" micro_passes="4" max_branch_merge="21" merged_total="909" />
-    <optimization-time pass="2" time="0.0106" micro_passes="1" max_branch_merge="20" merged_total="227" />
-    <code-generation-time time="0.0291" />
+  <module name="smto_site.markdown" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/smto_site/markdown.py">
+    <optimization-time pass="1" time="0.0442" micro_passes="4" max_branch_merge="21" merged_total="909" />
+    <optimization-time pass="2" time="0.0088" micro_passes="1" max_branch_merge="20" merged_total="227" />
+    <code-generation-time time="0.0267" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="121368" />
-      <cpu system-cpu-time="0.0730" user-cpu-time="2.0250" />
-      <memory memory-max-rss-kb="81080" />
-      <system-events context-switches-involuntary="4" context-switches-voluntary="32" disk-input-blocks="0" disk-output-blocks="240" page-faults-major="0" page-faults-minor="19933" />
+      <cpu system-cpu-time="0.0766" user-cpu-time="2.0284" />
+      <memory memory-max-rss-kb="80956" />
+      <system-events context-switches-involuntary="2" context-switches-voluntary="32" disk-input-blocks="0" disk-output-blocks="240" page-faults-major="0" page-faults-minor="19949" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="__future__" finding="excluded" line="21" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -154,16 +154,16 @@
       <module_usage name="smto_site.config" finding="absolute" line="30" reason="import" />
     </module_usages>
   </module>
-  <module name="smto_site.middleware" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/9f1340543e2160bdcb179103549e0443975c3ab1422a66fa02633e5bc1c41305/smto_site/middleware.py">
-    <optimization-time pass="1" time="0.0142" micro_passes="4" max_branch_merge="8" merged_total="168" />
-    <optimization-time pass="2" time="0.0038" micro_passes="1" max_branch_merge="7" merged_total="35" />
-    <code-generation-time time="0.0115" />
+  <module name="smto_site.middleware" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/smto_site/middleware.py">
+    <optimization-time pass="1" time="0.0124" micro_passes="4" max_branch_merge="8" merged_total="168" />
+    <optimization-time pass="2" time="0.0034" micro_passes="1" max_branch_merge="7" merged_total="35" />
+    <code-generation-time time="0.0103" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="49624" />
-      <cpu system-cpu-time="0.0536" user-cpu-time="0.7562" />
-      <memory memory-max-rss-kb="57004" />
-      <system-events context-switches-involuntary="4" context-switches-voluntary="26" disk-input-blocks="0" disk-output-blocks="104" page-faults-major="0" page-faults-minor="11583" />
+      <cpu system-cpu-time="0.0551" user-cpu-time="0.7499" />
+      <memory memory-max-rss-kb="56700" />
+      <system-events context-switches-involuntary="3" context-switches-voluntary="26" disk-input-blocks="0" disk-output-blocks="104" page-faults-major="0" page-faults-minor="11479" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="logging" finding="excluded" line="21" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -172,16 +172,16 @@
       <module_usage name="starlette.datastructures" finding="not-found" line="25" reason="import" />
     </module_usages>
   </module>
-  <module name="smto_site.pages" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/9f1340543e2160bdcb179103549e0443975c3ab1422a66fa02633e5bc1c41305/smto_site/pages.py">
-    <optimization-time pass="1" time="0.0306" micro_passes="4" max_branch_merge="15" merged_total="522" />
-    <optimization-time pass="2" time="0.0055" micro_passes="1" max_branch_merge="13" merged_total="104" />
-    <code-generation-time time="0.0210" />
+  <module name="smto_site.pages" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/smto_site/pages.py">
+    <optimization-time pass="1" time="0.0271" micro_passes="4" max_branch_merge="15" merged_total="522" />
+    <optimization-time pass="2" time="0.0050" micro_passes="1" max_branch_merge="13" merged_total="104" />
+    <code-generation-time time="0.0199" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="101680" />
-      <cpu system-cpu-time="0.0691" user-cpu-time="1.4886" />
-      <memory memory-max-rss-kb="73792" />
-      <system-events context-switches-involuntary="4" context-switches-voluntary="38" disk-input-blocks="0" disk-output-blocks="200" page-faults-major="0" page-faults-minor="16480" />
+      <cpu system-cpu-time="0.0680" user-cpu-time="1.5003" />
+      <memory memory-max-rss-kb="73096" />
+      <system-events context-switches-involuntary="11" context-switches-voluntary="38" disk-input-blocks="0" disk-output-blocks="200" page-faults-major="0" page-faults-minor="16577" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="base64" finding="excluded" line="21" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -195,16 +195,16 @@
       <module_usage name="smto_site.visuals" finding="absolute" line="31" reason="import" />
     </module_usages>
   </module>
-  <module name="smto_site.releases" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/9f1340543e2160bdcb179103549e0443975c3ab1422a66fa02633e5bc1c41305/smto_site/releases.py">
-    <optimization-time pass="1" time="0.0607" micro_passes="4" max_branch_merge="17" merged_total="1230" />
-    <optimization-time pass="2" time="0.0127" micro_passes="1" max_branch_merge="17" merged_total="290" />
-    <code-generation-time time="0.0450" />
+  <module name="smto_site.releases" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/smto_site/releases.py">
+    <optimization-time pass="1" time="0.0541" micro_passes="4" max_branch_merge="17" merged_total="1230" />
+    <optimization-time pass="2" time="0.0113" micro_passes="1" max_branch_merge="17" merged_total="290" />
+    <code-generation-time time="0.0438" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="176984" />
-      <cpu system-cpu-time="0.1215" user-cpu-time="3.1849" />
-      <memory memory-max-rss-kb="108588" />
-      <system-events context-switches-involuntary="33" context-switches-voluntary="69" disk-input-blocks="0" disk-output-blocks="352" page-faults-major="0" page-faults-minor="27078" />
+      <cpu system-cpu-time="0.1039" user-cpu-time="3.1565" />
+      <memory memory-max-rss-kb="108240" />
+      <system-events context-switches-involuntary="5" context-switches-voluntary="68" disk-input-blocks="0" disk-output-blocks="352" page-faults-major="0" page-faults-minor="27079" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="__future__" finding="excluded" line="21" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -219,16 +219,16 @@
       <module_usage name="smto_site.config" finding="absolute" line="33" reason="import" />
     </module_usages>
   </module>
-  <module name="smto_site.search" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/9f1340543e2160bdcb179103549e0443975c3ab1422a66fa02633e5bc1c41305/smto_site/search.py">
-    <optimization-time pass="1" time="0.0417" micro_passes="5" max_branch_merge="7" merged_total="603" />
-    <optimization-time pass="2" time="0.0068" micro_passes="1" max_branch_merge="6" merged_total="116" />
-    <code-generation-time time="0.0173" />
+  <module name="smto_site.search" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/smto_site/search.py">
+    <optimization-time pass="1" time="0.0410" micro_passes="5" max_branch_merge="7" merged_total="603" />
+    <optimization-time pass="2" time="0.0062" micro_passes="1" max_branch_merge="6" merged_total="116" />
+    <code-generation-time time="0.0166" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="78080" />
-      <cpu system-cpu-time="0.0629" user-cpu-time="1.2515" />
-      <memory memory-max-rss-kb="65680" />
-      <system-events context-switches-involuntary="3" context-switches-voluntary="52" disk-input-blocks="0" disk-output-blocks="160" page-faults-major="0" page-faults-minor="14621" />
+      <cpu system-cpu-time="0.0540" user-cpu-time="1.2424" />
+      <memory memory-max-rss-kb="65256" />
+      <system-events context-switches-involuntary="4" context-switches-voluntary="52" disk-input-blocks="0" disk-output-blocks="160" page-faults-major="0" page-faults-minor="14669" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="re" finding="excluded" line="21" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -237,16 +237,16 @@
       <module_usage name="smto_site.content" finding="absolute" line="24" reason="import" />
     </module_usages>
   </module>
-  <module name="smto_site.validation" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/9f1340543e2160bdcb179103549e0443975c3ab1422a66fa02633e5bc1c41305/smto_site/validation.py">
-    <optimization-time pass="1" time="0.0624" micro_passes="4" max_branch_merge="19" merged_total="1131" />
-    <optimization-time pass="2" time="0.0124" micro_passes="1" max_branch_merge="19" merged_total="266" />
-    <code-generation-time time="0.0446" />
+  <module name="smto_site.validation" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/smto_site/validation.py">
+    <optimization-time pass="1" time="0.0593" micro_passes="4" max_branch_merge="19" merged_total="1063" />
+    <optimization-time pass="2" time="0.0108" micro_passes="1" max_branch_merge="19" merged_total="247" />
+    <code-generation-time time="0.0417" />
     <c-compilation-resources>
       <c-cache tech="none" />
-      <object-file size="168352" />
-      <cpu system-cpu-time="0.1011" user-cpu-time="3.0357" />
-      <memory memory-max-rss-kb="100456" />
-      <system-events context-switches-involuntary="7" context-switches-voluntary="74" disk-input-blocks="0" disk-output-blocks="336" page-faults-major="0" page-faults-minor="26599" />
+      <object-file size="162776" />
+      <cpu system-cpu-time="0.1094" user-cpu-time="2.9203" />
+      <memory memory-max-rss-kb="98892" />
+      <system-events context-switches-involuntary="8" context-switches-voluntary="59" disk-input-blocks="0" disk-output-blocks="320" page-faults-major="0" page-faults-minor="25476" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="json" finding="excluded" line="21" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -257,19 +257,19 @@
       <module_usage name="urllib.parse" finding="absolute" line="25" reason="import" />
       <module_usage name="smto_site.config" finding="absolute" line="27" reason="import" />
       <module_usage name="smto_site.visuals" finding="absolute" line="28" reason="import" />
-      <module_usage name="smto_site.releases" finding="absolute" line="171" reason="import" />
+      <module_usage name="smto_site.releases" finding="absolute" line="163" reason="import" />
     </module_usages>
   </module>
-  <module name="smto_site.visuals" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/9f1340543e2160bdcb179103549e0443975c3ab1422a66fa02633e5bc1c41305/smto_site/visuals.py">
-    <optimization-time pass="1" time="0.0372" micro_passes="5" max_branch_merge="8" merged_total="703" />
-    <optimization-time pass="2" time="0.0053" micro_passes="1" max_branch_merge="7" merged_total="126" />
-    <code-generation-time time="0.0213" />
+  <module name="smto_site.visuals" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/smto_site/visuals.py">
+    <optimization-time pass="1" time="0.0371" micro_passes="5" max_branch_merge="8" merged_total="703" />
+    <optimization-time pass="2" time="0.0048" micro_passes="1" max_branch_merge="7" merged_total="126" />
+    <code-generation-time time="0.0212" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="83120" />
-      <cpu system-cpu-time="0.0710" user-cpu-time="1.4248" />
-      <memory memory-max-rss-kb="75384" />
-      <system-events context-switches-involuntary="10" context-switches-voluntary="32" disk-input-blocks="0" disk-output-blocks="168" page-faults-major="0" page-faults-minor="18209" />
+      <cpu system-cpu-time="0.0671" user-cpu-time="1.4800" />
+      <memory memory-max-rss-kb="74316" />
+      <system-events context-switches-involuntary="2" context-switches-voluntary="32" disk-input-blocks="0" disk-output-blocks="168" page-faults-major="0" page-faults-minor="18140" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="hashlib" finding="excluded" line="7" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -280,21 +280,21 @@
     </module_usages>
   </module>
   <linker-resources>
-    <cpu system-cpu-time="0.0117" user-cpu-time="0.0387" />
-    <memory memory-max-rss-kb="45480" />
-    <system-events context-switches-involuntary="3" context-switches-voluntary="7" disk-input-blocks="0" disk-output-blocks="3456" page-faults-major="0" page-faults-minor="4232" />
+    <cpu system-cpu-time="0.0190" user-cpu-time="0.0330" />
+    <memory memory-max-rss-kb="45172" />
+    <system-events context-switches-involuntary="1" context-switches-voluntary="7" disk-input-blocks="0" disk-output-blocks="3448" page-faults-major="0" page-faults-minor="4226" />
   </linker-resources>
   <performance>
-    <memory_usage name="after_launch" value="61292544" />
-    <memory_usage name="before_c_code_generation" value="64708608" />
-    <memory_usage name="before_running_scons" value="68378624" />
+    <memory_usage name="after_launch" value="61964288" />
+    <memory_usage name="before_c_code_generation" value="64782336" />
+    <memory_usage name="before_running_scons" value="68321280" />
   </performance>
-  <data_composer blob_size="88892" total="1816">
+  <data_composer blob_size="88647" total="1808">
     <module_data filename="__bytecode.const" blob_name=".bytecode" blob_size="3" input_size="0" />
     <module_data filename="__constants.const" blob_name="" blob_size="996" input_size="2454" />
     <module_data filename="module.smto_site.app.const" blob_name="smto_site.app" blob_size="8468" input_size="13215" />
     <module_data filename="module.smto_site.cli.const" blob_name="smto_site.cli" blob_size="1546" input_size="2794" />
-    <module_data filename="module.smto_site.config.const" blob_name="smto_site.config" blob_size="3965" input_size="6551" />
+    <module_data filename="module.smto_site.config.const" blob_name="smto_site.config" blob_size="3943" input_size="6529" />
     <module_data filename="module.smto_site.const" blob_name="smto_site" blob_size="826" input_size="1638" />
     <module_data filename="module.smto_site.content.const" blob_name="smto_site.content" blob_size="4527" input_size="8342" />
     <module_data filename="module.smto_site.discovery.const" blob_name="smto_site.discovery" blob_size="2770" input_size="4722" />
@@ -303,21 +303,21 @@
     <module_data filename="module.smto_site.pages.const" blob_name="smto_site.pages" blob_size="17107" input_size="19830" />
     <module_data filename="module.smto_site.releases.const" blob_name="smto_site.releases" blob_size="6541" input_size="11405" />
     <module_data filename="module.smto_site.search.const" blob_name="smto_site.search" blob_size="2074" input_size="4418" />
-    <module_data filename="module.smto_site.validation.const" blob_name="smto_site.validation" blob_size="4832" input_size="9013" />
+    <module_data filename="module.smto_site.validation.const" blob_name="smto_site.validation" blob_size="4609" input_size="8613" />
     <module_data filename="module.smto_site.visuals.const" blob_name="smto_site.visuals" blob_size="29468" input_size="32467" />
   </data_composer>
   <performance-totals>
-    <optimization-time pass="1" time="0.4802" module_count="13" />
-    <optimization-time pass="2" time="0.1008" module_count="13" />
-    <optimization-time pass="all" time="0.5809" module_count="13" />
-    <code-generation-time time="0.3564" module_count="13" />
-    <c-compilation-time user-cpu-time="23.7270" system-cpu-time="0.9715" module_count="13" />
-    <c-linking-time user-cpu-time="0.0387" system-cpu-time="0.0117" />
+    <optimization-time pass="1" time="0.4592" module_count="13" />
+    <optimization-time pass="2" time="0.0862" module_count="13" />
+    <optimization-time pass="all" time="0.5454" module_count="13" />
+    <code-generation-time time="0.3470" module_count="13" />
+    <c-compilation-time user-cpu-time="23.6193" system-cpu-time="1.0157" module_count="13" />
+    <c-linking-time user-cpu-time="0.0330" system-cpu-time="0.0190" />
   </performance-totals>
-  <python_binary filename="${cwd}/.build/compiled/targets/linux-x86_64/modules/smto_site/smto_site.cpython-312-x86_64-linux-gnu.so" backend_resource_mode="incbin" reproducible="yes" size="1759800" />
+  <python_binary filename="${cwd}/.build/compiled/targets/linux-x86_64/modules/smto_site/smto_site.cpython-312-x86_64-linux-gnu.so" backend_resource_mode="incbin" reproducible="yes" size="1755704" />
   <command_line>
     <option value="--mode=module" />
-    <option value="/workspace/.build/compiled/targets/linux-x86_64/sources/9f1340543e2160bdcb179103549e0443975c3ab1422a66fa02633e5bc1c41305/smto_site" />
+    <option value="/workspace/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/smto_site" />
     <option value="--include-package=smto_site" />
     <option value="--no-pyi-file" />
     <option value="--assume-yes-for-downloads" />
@@ -336,7 +336,7 @@
   <distributions />
   <python python_exe="${sys.prefix}/bin/python" python_flavor="Unknown" python_version="3.12.14" os_name="Linux" os_release="Ubuntu-Debian-22.04.5" arch_name="x86_64" filesystem_encoding="utf-8">
     <search_path>
-      <path value="${cwd}/.build/compiled/targets/linux-x86_64/sources/9f1340543e2160bdcb179103549e0443975c3ab1422a66fa02633e5bc1c41305" />
+      <path value="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f" />
       <path value="${cwd}" />
       <path value="${sys.real_prefix}/lib/python3.12" />
       <path value="${sys.real_prefix}/lib/python3.12/lib-dynload" />

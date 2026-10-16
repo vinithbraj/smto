@@ -19,11 +19,11 @@
       "name": "CPython",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "embedded"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -48,11 +48,11 @@
       "name": "zlib",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "embedded"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -77,11 +77,11 @@
       "name": "Nuitka compiler and generated runtime",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "build-tool-and-embedded-runtime"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -112,11 +112,11 @@
       "name": "cpython-3.12",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "python-incorporated"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -147,11 +147,11 @@
       "name": "bdb",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "python-incorporated"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -182,11 +182,11 @@
       "name": "bzip2",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "python-incorporated"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -217,11 +217,11 @@
       "name": "expat",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "python-incorporated"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -252,11 +252,11 @@
       "name": "libedit",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "python-incorporated"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -287,11 +287,11 @@
       "name": "libffi",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "python-incorporated"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -322,11 +322,11 @@
       "name": "libX11",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "python-incorporated"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -357,11 +357,11 @@
       "name": "libXau",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "python-incorporated"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -392,11 +392,11 @@
       "name": "libxcb",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "python-incorporated"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -427,11 +427,11 @@
       "name": "mpdecimal",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "python-incorporated"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -462,11 +462,11 @@
       "name": "ncurses",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "python-incorporated"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -497,11 +497,11 @@
       "name": "openssl-3.5",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "python-incorporated"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -532,11 +532,11 @@
       "name": "sqlite",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "python-incorporated"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -567,11 +567,11 @@
       "name": "tcl",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "python-incorporated"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -602,11 +602,11 @@
       "name": "uuid",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "python-incorporated"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -637,11 +637,11 @@
       "name": "xz",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "python-incorporated"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -672,11 +672,11 @@
       "name": "zlib",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "python-incorporated"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -707,11 +707,11 @@
       "name": "tcl-resource-terms",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "python-resources"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -742,11 +742,11 @@
       "name": "tk-resource-terms",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "python-resources"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -772,11 +772,11 @@
       "name": "pip",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "embedded-bootstrap"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -802,11 +802,11 @@
       "name": "Nuitka generated runtime",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "compiler-runtime"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -857,11 +857,11 @@
       "name": "libxcrypt (Ubuntu libcrypt1:amd64)",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "embedded-native"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -897,11 +897,11 @@
       "name": "mermaid",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -937,11 +937,11 @@
       "name": "jison",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -977,11 +977,11 @@
       "name": "@braintree/sanitize-url",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -1022,11 +1022,11 @@
       "name": "cytoscape",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -1062,11 +1062,11 @@
       "name": "heap",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -1102,11 +1102,11 @@
       "name": "lodash",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -1142,11 +1142,11 @@
       "name": "cytoscape-cose-bilkent",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -1182,11 +1182,11 @@
       "name": "cose-base",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -1222,11 +1222,11 @@
       "name": "layout-base",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -1262,11 +1262,11 @@
       "name": "d3",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -1302,11 +1302,11 @@
       "name": "d3-array",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -1342,11 +1342,11 @@
       "name": "internmap",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -1382,11 +1382,11 @@
       "name": "d3-axis",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -1422,11 +1422,11 @@
       "name": "d3-brush",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -1462,11 +1462,11 @@
       "name": "d3-dispatch",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -1502,11 +1502,11 @@
       "name": "d3-drag",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -1542,11 +1542,11 @@
       "name": "d3-selection",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -1582,11 +1582,11 @@
       "name": "d3-interpolate",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -1622,11 +1622,11 @@
       "name": "d3-color",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -1662,11 +1662,11 @@
       "name": "d3-transition",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -1702,11 +1702,11 @@
       "name": "d3-ease",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -1742,11 +1742,11 @@
       "name": "d3-timer",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -1782,11 +1782,11 @@
       "name": "d3-chord",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -1822,11 +1822,11 @@
       "name": "d3-path",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -1862,11 +1862,11 @@
       "name": "d3-contour",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -1902,11 +1902,11 @@
       "name": "d3-delaunay",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -1942,11 +1942,11 @@
       "name": "delaunator",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -1982,11 +1982,11 @@
       "name": "robust-predicates",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -2022,11 +2022,11 @@
       "name": "d3-dsv",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -2062,11 +2062,11 @@
       "name": "commander",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -2102,11 +2102,11 @@
       "name": "iconv-lite",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -2142,11 +2142,11 @@
       "name": "safer-buffer",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -2182,11 +2182,11 @@
       "name": "rw",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -2222,11 +2222,11 @@
       "name": "d3-fetch",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -2262,11 +2262,11 @@
       "name": "d3-force",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -2302,11 +2302,11 @@
       "name": "d3-quadtree",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -2342,11 +2342,11 @@
       "name": "d3-format",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -2382,11 +2382,11 @@
       "name": "d3-geo",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -2422,11 +2422,11 @@
       "name": "d3-hierarchy",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -2462,11 +2462,11 @@
       "name": "d3-polygon",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -2502,11 +2502,11 @@
       "name": "d3-random",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -2542,11 +2542,11 @@
       "name": "d3-scale",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -2582,11 +2582,11 @@
       "name": "d3-time",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -2622,11 +2622,11 @@
       "name": "d3-time-format",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -2662,11 +2662,11 @@
       "name": "d3-scale-chromatic",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -2702,11 +2702,11 @@
       "name": "d3-shape",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -2742,11 +2742,11 @@
       "name": "d3-zoom",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -2782,11 +2782,11 @@
       "name": "d3-sankey",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -2822,11 +2822,11 @@
       "name": "d3-array",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -2862,11 +2862,11 @@
       "name": "internmap",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -2902,11 +2902,11 @@
       "name": "d3-shape",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -2942,11 +2942,11 @@
       "name": "d3-path",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -2997,11 +2997,11 @@
       "name": "dagre-d3-es",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -3037,11 +3037,11 @@
       "name": "lodash-es",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -3077,11 +3077,11 @@
       "name": "dayjs",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -3117,11 +3117,11 @@
       "name": "dompurify",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -3162,11 +3162,11 @@
       "name": "elkjs",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -3202,11 +3202,11 @@
       "name": "katex",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -3242,11 +3242,11 @@
       "name": "commander",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -3282,11 +3282,11 @@
       "name": "khroma",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -3322,11 +3322,11 @@
       "name": "mdast-util-from-markdown",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -3362,11 +3362,11 @@
       "name": "decode-named-character-reference",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -3402,11 +3402,11 @@
       "name": "character-entities",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -3442,11 +3442,11 @@
       "name": "mdast-util-to-string",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -3482,11 +3482,11 @@
       "name": "micromark",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -3522,11 +3522,11 @@
       "name": "debug",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -3562,11 +3562,11 @@
       "name": "ms",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -3602,11 +3602,11 @@
       "name": "supports-color",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -3642,11 +3642,11 @@
       "name": "has-flag",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -3682,11 +3682,11 @@
       "name": "micromark-core-commonmark",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -3722,11 +3722,11 @@
       "name": "micromark-factory-destination",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -3762,11 +3762,11 @@
       "name": "micromark-util-character",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -3802,11 +3802,11 @@
       "name": "micromark-util-symbol",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -3842,11 +3842,11 @@
       "name": "micromark-util-types",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -3882,11 +3882,11 @@
       "name": "micromark-factory-label",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -3922,11 +3922,11 @@
       "name": "uvu",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -3962,11 +3962,11 @@
       "name": "dequal",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -3997,11 +3997,11 @@
       "name": "diff",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -4037,11 +4037,11 @@
       "name": "kleur",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -4077,11 +4077,11 @@
       "name": "sade",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -4117,11 +4117,11 @@
       "name": "mri",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -4157,11 +4157,11 @@
       "name": "micromark-factory-space",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -4197,11 +4197,11 @@
       "name": "micromark-factory-title",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -4237,11 +4237,11 @@
       "name": "micromark-factory-whitespace",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -4277,11 +4277,11 @@
       "name": "micromark-util-chunked",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -4317,11 +4317,11 @@
       "name": "micromark-util-classify-character",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -4357,11 +4357,11 @@
       "name": "micromark-util-html-tag-name",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -4397,11 +4397,11 @@
       "name": "micromark-util-normalize-identifier",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -4437,11 +4437,11 @@
       "name": "micromark-util-resolve-all",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -4477,11 +4477,11 @@
       "name": "micromark-util-subtokenize",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -4517,11 +4517,11 @@
       "name": "micromark-util-combine-extensions",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -4557,11 +4557,11 @@
       "name": "micromark-util-decode-numeric-character-reference",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -4597,11 +4597,11 @@
       "name": "micromark-util-encode",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -4637,11 +4637,11 @@
       "name": "micromark-util-sanitize-uri",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -4677,11 +4677,11 @@
       "name": "micromark-util-decode-string",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -4717,11 +4717,11 @@
       "name": "unist-util-stringify-position",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -4752,11 +4752,11 @@
       "name": "non-layered-tidy-tree-layout",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -4792,11 +4792,11 @@
       "name": "stylis",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -4832,11 +4832,11 @@
       "name": "ts-dedent",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -4872,11 +4872,11 @@
       "name": "uuid",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -4912,11 +4912,11 @@
       "name": "web-worker",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -4952,11 +4952,11 @@
       "name": "js-yaml",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -4992,11 +4992,11 @@
       "name": "argparse",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -5027,11 +5027,11 @@
       "name": "guava",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-java-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -5062,11 +5062,11 @@
       "name": "guava-gwt",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-java-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -5097,11 +5097,11 @@
       "name": "gwt-user",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-java-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -5137,11 +5137,11 @@
       "name": "emf-common",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-java-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -5177,11 +5177,11 @@
       "name": "emf-ecore",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-java-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -5217,11 +5217,11 @@
       "name": "org.eclipse.xtend.lib",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-java-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -5257,11 +5257,11 @@
       "name": "org.eclipse.xtext.xbase.lib",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "frontend-java-dependency-notices"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -5287,11 +5287,11 @@
       "name": "zlib (launcher)",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "embedded-launcher"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -5310,11 +5310,11 @@
       "name": "pip",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "embedded"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -5333,11 +5333,11 @@
       "name": "pip vendor: CacheControl",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "embedded"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -5356,11 +5356,11 @@
       "name": "pip vendor: distlib",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "embedded"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -5379,11 +5379,11 @@
       "name": "pip vendor: distro",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "embedded"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -5402,11 +5402,11 @@
       "name": "pip vendor: msgpack",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "embedded"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -5425,11 +5425,11 @@
       "name": "pip vendor: packaging",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "embedded"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -5448,11 +5448,11 @@
       "name": "pip vendor: platformdirs",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "embedded"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -5471,11 +5471,11 @@
       "name": "pip vendor: pyproject-hooks",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "embedded"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -5494,11 +5494,11 @@
       "name": "pip vendor: requests",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "embedded"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -5517,11 +5517,11 @@
       "name": "pip vendor: certifi",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "embedded"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -5540,11 +5540,11 @@
       "name": "pip vendor: idna",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "embedded"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -5563,11 +5563,11 @@
       "name": "pip vendor: urllib3",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "embedded"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -5586,11 +5586,11 @@
       "name": "pip vendor: rich",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "embedded"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -5609,11 +5609,11 @@
       "name": "pip vendor: pygments",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "embedded"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -5632,11 +5632,11 @@
       "name": "pip vendor: resolvelib",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "embedded"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -5655,11 +5655,11 @@
       "name": "pip vendor: setuptools",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "embedded"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -5678,11 +5678,11 @@
       "name": "pip vendor: tomli",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "embedded"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -5701,11 +5701,11 @@
       "name": "pip vendor: tomli-w",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "embedded"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -5724,11 +5724,11 @@
       "name": "pip vendor: truststore",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "embedded"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -5753,11 +5753,11 @@
       "name": "bin/python",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "embedded-native"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -5782,11 +5782,11 @@
       "name": "bin/python3",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "embedded-native"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -5811,11 +5811,11 @@
       "name": "bin/python3.12",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "embedded-native"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -5840,11 +5840,11 @@
       "name": "lib/itcl4.3.8/libtcl9itcl4.3.8.so",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "embedded-native"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -5869,11 +5869,11 @@
       "name": "lib/libpython3.12.so",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "embedded-native"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -5898,11 +5898,11 @@
       "name": "lib/libpython3.12.so.1.0",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "embedded-native"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -5927,11 +5927,11 @@
       "name": "lib/libpython3.so",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "embedded-native"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -5956,11 +5956,11 @@
       "name": "lib/libtcl9.0.so",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "embedded-native"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -5985,11 +5985,11 @@
       "name": "lib/libtcl9tk9.0.so",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "embedded-native"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -6001,36 +6001,7 @@
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "d8b34ade1d95c6243a48e90f2873d65399dfb0cd3fa4ee2af45afc9e6cb8642b"
-        }
-      ],
-      "licenses": [
-        {
-          "license": {
-            "name": "See native incorporated-library review"
-          }
-        }
-      ],
-      "name": "lib/openfabric-libs/libcrypt.so.1",
-      "properties": [
-        {
-          "name": "openfabric:delivery",
-          "value": "embedded-native"
-        },
-        {
-          "name": "openfabric:verdict",
-          "value": "REVIEW REQUIRED"
-        }
-      ],
-      "type": "library",
-      "version": "exact hash"
-    },
-    {
-      "bom-ref": "165",
-      "hashes": [
-        {
-          "alg": "SHA-256",
-          "content": "3d6b142c682760e2432613b55c8f902855c9cb2ba0837705384465f5bc5211bb"
+          "content": "c2f5c37b80f93fda6f234c0b84e63131a8023fdb12f197d7536d2ec12d9af610"
         }
       ],
       "licenses": [
@@ -6043,11 +6014,11 @@
       "name": "lib/python3.12/lib-dynload/_crypt.cpython-312-x86_64-linux-gnu.so",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "embedded-native"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -6055,7 +6026,7 @@
       "version": "exact hash"
     },
     {
-      "bom-ref": "166",
+      "bom-ref": "165",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -6072,11 +6043,11 @@
       "name": "lib/python3.12/lib-dynload/_dbm.cpython-312-x86_64-linux-gnu.so",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "embedded-native"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -6084,7 +6055,7 @@
       "version": "exact hash"
     },
     {
-      "bom-ref": "167",
+      "bom-ref": "166",
       "hashes": [
         {
           "alg": "SHA-256",
@@ -6101,11 +6072,40 @@
       "name": "lib/python3.12/lib-dynload/_tkinter.cpython-312-x86_64-linux-gnu.so",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "embedded-native"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
+          "value": "REVIEW REQUIRED"
+        }
+      ],
+      "type": "library",
+      "version": "exact hash"
+    },
+    {
+      "bom-ref": "167",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "d8b34ade1d95c6243a48e90f2873d65399dfb0cd3fa4ee2af45afc9e6cb8642b"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "See native incorporated-library review"
+          }
+        }
+      ],
+      "name": "lib/smto-libs/libcrypt.so.1",
+      "properties": [
+        {
+          "name": "smto:delivery",
+          "value": "embedded-native"
+        },
+        {
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -6130,11 +6130,11 @@
       "name": "lib/thread3.0.6/libtcl9thread3.0.6.so",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "embedded-native"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -6159,11 +6159,11 @@
       "name": "linux-docker-client",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -6188,11 +6188,11 @@
       "name": "linux-compose",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -6217,11 +6217,11 @@
       "name": "linux-buildx",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -6246,11 +6246,11 @@
       "name": "compose",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -6275,11 +6275,11 @@
       "name": "buildx",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -6304,11 +6304,11 @@
       "name": "homebrew-installer",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -6333,11 +6333,11 @@
       "name": "docker-client",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -6362,11 +6362,11 @@
       "name": "windows-git",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -6391,11 +6391,11 @@
       "name": "windows-7zip",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -6420,11 +6420,11 @@
       "name": "windows-tesseract",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -6449,11 +6449,11 @@
       "name": "windows-postgresql-clients",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -6478,11 +6478,11 @@
       "name": "postgresql-client-source",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -6507,11 +6507,11 @@
       "name": "annotated-doc",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -6536,11 +6536,11 @@
       "name": "annotated-types",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -6565,11 +6565,11 @@
       "name": "anyio",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -6594,11 +6594,11 @@
       "name": "astroid",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -6623,11 +6623,11 @@
       "name": "attrs",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -6652,11 +6652,11 @@
       "name": "bandit",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -6681,11 +6681,11 @@
       "name": "black",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -6710,11 +6710,11 @@
       "name": "boolean-py",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -6739,11 +6739,11 @@
       "name": "build",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -6768,11 +6768,11 @@
       "name": "cachecontrol",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -6797,11 +6797,11 @@
       "name": "certifi",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -6826,11 +6826,11 @@
       "name": "cffi",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -6855,11 +6855,11 @@
       "name": "cfgv",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -6884,11 +6884,11 @@
       "name": "charset-normalizer",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -6913,11 +6913,11 @@
       "name": "choreographer",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -6942,11 +6942,11 @@
       "name": "click",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -6971,11 +6971,11 @@
       "name": "contourpy",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -7000,11 +7000,11 @@
       "name": "coverage",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -7029,11 +7029,11 @@
       "name": "cryptography",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -7058,11 +7058,11 @@
       "name": "cycler",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -7087,11 +7087,11 @@
       "name": "cyclonedx-python-lib",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -7116,11 +7116,11 @@
       "name": "decorator",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -7145,11 +7145,11 @@
       "name": "defusedxml",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -7174,11 +7174,11 @@
       "name": "dill",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -7203,11 +7203,11 @@
       "name": "distlib",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -7232,11 +7232,11 @@
       "name": "docker",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -7261,11 +7261,11 @@
       "name": "docutils",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -7290,11 +7290,11 @@
       "name": "et-xmlfile",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -7319,11 +7319,11 @@
       "name": "fastapi",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -7348,11 +7348,11 @@
       "name": "filelock",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -7377,11 +7377,11 @@
       "name": "flake8",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -7406,11 +7406,11 @@
       "name": "fonttools",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -7435,11 +7435,11 @@
       "name": "google-auth",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -7464,11 +7464,11 @@
       "name": "greenlet",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -7493,11 +7493,11 @@
       "name": "gssapi",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -7522,11 +7522,11 @@
       "name": "h11",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -7551,11 +7551,11 @@
       "name": "httptools",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -7580,11 +7580,11 @@
       "name": "id",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -7609,11 +7609,11 @@
       "name": "identify",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -7638,11 +7638,11 @@
       "name": "idna",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -7667,11 +7667,11 @@
       "name": "imapclient",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -7696,11 +7696,11 @@
       "name": "iniconfig",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -7725,11 +7725,11 @@
       "name": "isort",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -7754,11 +7754,11 @@
       "name": "jaraco-classes",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -7783,11 +7783,11 @@
       "name": "jaraco-context",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -7812,11 +7812,11 @@
       "name": "jaraco-functools",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -7841,11 +7841,11 @@
       "name": "jeepney",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -7870,11 +7870,11 @@
       "name": "jinja2",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -7899,11 +7899,11 @@
       "name": "jsonschema",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -7928,11 +7928,11 @@
       "name": "jsonschema-specifications",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -7957,11 +7957,11 @@
       "name": "kaleido",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -7986,11 +7986,11 @@
       "name": "keyring",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -8015,11 +8015,11 @@
       "name": "kiwisolver",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -8044,11 +8044,11 @@
       "name": "librt",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -8073,11 +8073,11 @@
       "name": "license-expression",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -8102,11 +8102,11 @@
       "name": "logistro",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -8131,11 +8131,11 @@
       "name": "lxml",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -8160,11 +8160,11 @@
       "name": "markdown-it-py",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -8189,11 +8189,11 @@
       "name": "markupsafe",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -8218,11 +8218,11 @@
       "name": "matplotlib",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -8247,11 +8247,11 @@
       "name": "mccabe",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -8276,11 +8276,11 @@
       "name": "mdurl",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -8305,11 +8305,11 @@
       "name": "more-itertools",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -8334,11 +8334,11 @@
       "name": "msgpack",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -8363,11 +8363,11 @@
       "name": "mypy",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -8392,11 +8392,11 @@
       "name": "mypy-extensions",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -8421,11 +8421,11 @@
       "name": "narwhals",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -8450,11 +8450,11 @@
       "name": "nh3",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -8479,11 +8479,11 @@
       "name": "nodeenv",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -8508,11 +8508,11 @@
       "name": "nodejs-wheel-binaries",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -8537,11 +8537,11 @@
       "name": "numpy",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -8566,11 +8566,11 @@
       "name": "nvidia-ml-py",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -8595,11 +8595,11 @@
       "name": "openpyxl",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -8624,11 +8624,11 @@
       "name": "opentelemetry-api",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -8653,11 +8653,11 @@
       "name": "packageurl-python",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -8682,11 +8682,11 @@
       "name": "packaging",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -8711,11 +8711,11 @@
       "name": "pandas",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -8740,11 +8740,11 @@
       "name": "pathspec",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -8769,11 +8769,11 @@
       "name": "pillow",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -8798,11 +8798,11 @@
       "name": "pip",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -8827,11 +8827,11 @@
       "name": "pip-api",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -8856,11 +8856,11 @@
       "name": "pip-audit",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -8885,11 +8885,11 @@
       "name": "pip-requirements-parser",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -8914,11 +8914,11 @@
       "name": "pipdeptree",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -8943,11 +8943,11 @@
       "name": "platformdirs",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -8972,11 +8972,11 @@
       "name": "playwright",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -9001,11 +9001,11 @@
       "name": "plotly",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -9030,11 +9030,11 @@
       "name": "pluggy",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -9059,11 +9059,11 @@
       "name": "pre-commit",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -9088,11 +9088,11 @@
       "name": "psutil",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -9117,11 +9117,11 @@
       "name": "py-serializable",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -9146,11 +9146,11 @@
       "name": "pyarrow",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -9175,11 +9175,11 @@
       "name": "pyasn1",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -9204,11 +9204,11 @@
       "name": "pyasn1-modules",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -9233,11 +9233,11 @@
       "name": "pycairo",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -9262,11 +9262,11 @@
       "name": "pycodestyle",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -9291,11 +9291,11 @@
       "name": "pycparser",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -9320,11 +9320,11 @@
       "name": "pydantic",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -9349,11 +9349,11 @@
       "name": "pydantic-core",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -9378,11 +9378,11 @@
       "name": "pyee",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -9407,11 +9407,11 @@
       "name": "pyflakes",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -9436,11 +9436,11 @@
       "name": "pygments",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -9465,11 +9465,11 @@
       "name": "pygobject",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -9494,11 +9494,11 @@
       "name": "pyjwt",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -9523,11 +9523,11 @@
       "name": "pylint",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -9552,11 +9552,11 @@
       "name": "pyparsing",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -9581,11 +9581,11 @@
       "name": "pypdf",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -9610,11 +9610,11 @@
       "name": "pypdfium2",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -9639,11 +9639,11 @@
       "name": "pyproject-hooks",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -9668,11 +9668,11 @@
       "name": "pyright",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -9697,11 +9697,11 @@
       "name": "pyspnego",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -9726,11 +9726,11 @@
       "name": "pytest",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -9755,11 +9755,11 @@
       "name": "pytest-cov",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -9784,11 +9784,11 @@
       "name": "python-dateutil",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -9813,11 +9813,11 @@
       "name": "python-discovery",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -9842,11 +9842,11 @@
       "name": "python-docx",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -9871,11 +9871,11 @@
       "name": "python-dotenv",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -9900,11 +9900,11 @@
       "name": "python-pptx",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -9929,11 +9929,11 @@
       "name": "python-xlib",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -9958,11 +9958,11 @@
       "name": "pytokens",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -9987,11 +9987,11 @@
       "name": "pytz",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -10016,11 +10016,11 @@
       "name": "pyyaml",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -10045,11 +10045,11 @@
       "name": "readme-renderer",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -10074,11 +10074,11 @@
       "name": "referencing",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -10103,11 +10103,11 @@
       "name": "regex",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -10132,11 +10132,11 @@
       "name": "requests",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -10161,11 +10161,11 @@
       "name": "requests-gssapi",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -10190,11 +10190,11 @@
       "name": "requests-ntlm",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -10219,11 +10219,11 @@
       "name": "requests-toolbelt",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -10248,11 +10248,11 @@
       "name": "rfc3986",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -10277,11 +10277,11 @@
       "name": "rich",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -10306,11 +10306,11 @@
       "name": "rpds-py",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -10335,11 +10335,11 @@
       "name": "ruff",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -10364,11 +10364,11 @@
       "name": "secretstorage",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -10393,11 +10393,11 @@
       "name": "shellingham",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -10422,11 +10422,11 @@
       "name": "simplejson",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -10451,11 +10451,11 @@
       "name": "six",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -10480,11 +10480,11 @@
       "name": "sortedcontainers",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -10509,11 +10509,11 @@
       "name": "sqlglot",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -10538,11 +10538,11 @@
       "name": "starlette",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -10567,11 +10567,11 @@
       "name": "stevedore",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -10596,11 +10596,11 @@
       "name": "tomli",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -10625,11 +10625,11 @@
       "name": "tomli-w",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -10654,11 +10654,11 @@
       "name": "tomlkit",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -10683,11 +10683,11 @@
       "name": "twine",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -10712,11 +10712,11 @@
       "name": "typer",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -10741,11 +10741,11 @@
       "name": "typing-extensions",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -10770,11 +10770,11 @@
       "name": "typing-inspection",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -10799,11 +10799,11 @@
       "name": "tzdata",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -10828,11 +10828,11 @@
       "name": "urllib3",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -10857,11 +10857,11 @@
       "name": "uvicorn",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -10886,11 +10886,11 @@
       "name": "uvloop",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -10915,11 +10915,11 @@
       "name": "virtualenv",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -10944,11 +10944,11 @@
       "name": "watchfiles",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -10973,11 +10973,11 @@
       "name": "websockets",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -11002,11 +11002,11 @@
       "name": "xlsxwriter",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "CONDITIONAL"
         }
       ],
@@ -11031,11 +11031,11 @@
       "name": "cython",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "customer-build-tool"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -11060,11 +11060,11 @@
       "name": "meson",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "customer-build-tool"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -11089,11 +11089,11 @@
       "name": "meson-python",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "customer-build-tool"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -11118,11 +11118,11 @@
       "name": "ninja",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "customer-build-tool"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -11147,11 +11147,11 @@
       "name": "packaging",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "customer-build-tool"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -11176,11 +11176,11 @@
       "name": "pyproject-metadata",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "customer-build-tool"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -11205,11 +11205,11 @@
       "name": "setuptools",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "customer-build-tool"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -11234,11 +11234,11 @@
       "name": "wheel",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "customer-build-tool"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -11257,11 +11257,11 @@
       "name": "gcc",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -11280,11 +11280,11 @@
       "name": "pkg-config",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -11303,11 +11303,11 @@
       "name": "libcairo2-dev",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -11326,11 +11326,11 @@
       "name": "libgirepository1.0-dev",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -11349,11 +11349,11 @@
       "name": "libkrb5-dev",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -11372,11 +11372,11 @@
       "name": "gir1.2-atspi-2.0",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -11395,11 +11395,11 @@
       "name": "at-spi2-core",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -11418,11 +11418,11 @@
       "name": "tesseract-ocr",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -11441,11 +11441,11 @@
       "name": "tesseract-ocr-eng",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -11464,11 +11464,11 @@
       "name": "postgresql-client",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -11487,11 +11487,11 @@
       "name": "xclip",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -11510,11 +11510,11 @@
       "name": "wl-clipboard",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -11533,11 +11533,11 @@
       "name": "openssh-client",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -11556,11 +11556,11 @@
       "name": "rsync",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -11579,11 +11579,11 @@
       "name": "ripgrep",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -11602,11 +11602,11 @@
       "name": "git",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -11625,11 +11625,11 @@
       "name": "bubblewrap",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -11648,11 +11648,11 @@
       "name": "gcc",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -11671,11 +11671,11 @@
       "name": "pkgconf-pkg-config",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -11694,11 +11694,11 @@
       "name": "cairo-gobject-devel",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -11717,11 +11717,11 @@
       "name": "gobject-introspection-devel",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -11740,11 +11740,11 @@
       "name": "krb5-devel",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -11763,11 +11763,11 @@
       "name": "at-spi2-core",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -11786,11 +11786,11 @@
       "name": "tesseract",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -11809,11 +11809,11 @@
       "name": "tesseract-langpack-eng",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -11832,11 +11832,11 @@
       "name": "postgresql",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -11855,11 +11855,11 @@
       "name": "xclip",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -11878,11 +11878,11 @@
       "name": "wl-clipboard",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -11901,11 +11901,11 @@
       "name": "openssh-clients",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -11924,11 +11924,11 @@
       "name": "rsync",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -11947,11 +11947,11 @@
       "name": "ripgrep",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -11970,11 +11970,11 @@
       "name": "git",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -11993,11 +11993,11 @@
       "name": "bubblewrap",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12016,11 +12016,11 @@
       "name": "chromium",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12039,11 +12039,11 @@
       "name": "gcc",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12062,11 +12062,11 @@
       "name": "pkg-config",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12085,11 +12085,11 @@
       "name": "cairo-devel",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12108,11 +12108,11 @@
       "name": "gobject-introspection-devel",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12131,11 +12131,11 @@
       "name": "krb5-devel",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12154,11 +12154,11 @@
       "name": "at-spi2-core",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12177,11 +12177,11 @@
       "name": "tesseract-ocr",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12200,11 +12200,11 @@
       "name": "tesseract-ocr-traineddata-english",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12223,11 +12223,11 @@
       "name": "postgresql",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12246,11 +12246,11 @@
       "name": "xclip",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12269,11 +12269,11 @@
       "name": "wl-clipboard",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12292,11 +12292,11 @@
       "name": "openssh-clients",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12315,11 +12315,11 @@
       "name": "rsync",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12338,11 +12338,11 @@
       "name": "ripgrep",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12361,11 +12361,11 @@
       "name": "git",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12384,11 +12384,11 @@
       "name": "bubblewrap",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12407,11 +12407,11 @@
       "name": "chromium",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12430,11 +12430,11 @@
       "name": "gcc",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12453,11 +12453,11 @@
       "name": "pkgconf",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12476,11 +12476,11 @@
       "name": "cairo",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12499,11 +12499,11 @@
       "name": "gobject-introspection",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12522,11 +12522,11 @@
       "name": "krb5",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12545,11 +12545,11 @@
       "name": "at-spi2-core",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12568,11 +12568,11 @@
       "name": "tesseract",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12591,11 +12591,11 @@
       "name": "tesseract-data-eng",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12614,11 +12614,11 @@
       "name": "postgresql-libs",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12637,11 +12637,11 @@
       "name": "xclip",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12660,11 +12660,11 @@
       "name": "wl-clipboard",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12683,11 +12683,11 @@
       "name": "openssh",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12706,11 +12706,11 @@
       "name": "rsync",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12729,11 +12729,11 @@
       "name": "ripgrep",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12752,11 +12752,11 @@
       "name": "git",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12775,11 +12775,11 @@
       "name": "bubblewrap",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12798,11 +12798,11 @@
       "name": "chromium",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12821,11 +12821,11 @@
       "name": "7zip",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12844,11 +12844,11 @@
       "name": "pkgconf",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12867,11 +12867,11 @@
       "name": "tesseract",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12890,11 +12890,11 @@
       "name": "libpq",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12913,11 +12913,11 @@
       "name": "sevenzip",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12936,11 +12936,11 @@
       "name": "fd",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12959,11 +12959,11 @@
       "name": "git",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -12982,11 +12982,11 @@
       "name": "docker",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -13005,11 +13005,11 @@
       "name": "docker-compose",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -13028,11 +13028,11 @@
       "name": "docker-buildx",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -13051,11 +13051,11 @@
       "name": "pkgconfig",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -13074,11 +13074,11 @@
       "name": "tesseract",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -13097,11 +13097,11 @@
       "name": "tesseract-eng",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -13120,11 +13120,11 @@
       "name": "p7zip",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -13143,11 +13143,11 @@
       "name": "fd",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -13166,11 +13166,11 @@
       "name": "git",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -13189,11 +13189,11 @@
       "name": "docker",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -13212,11 +13212,11 @@
       "name": "docker-compose-plugin",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -13235,11 +13235,11 @@
       "name": "docker-buildx-plugin",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -13258,11 +13258,11 @@
       "name": "openssl3",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -13281,11 +13281,11 @@
       "name": "libedit",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -13304,11 +13304,11 @@
       "name": "zlib",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -13327,11 +13327,11 @@
       "name": "kerberos5",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -13350,11 +13350,11 @@
       "name": "lz4",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -13373,11 +13373,11 @@
       "name": "zstd",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -13396,11 +13396,11 @@
       "name": "bison",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -13419,11 +13419,11 @@
       "name": "flex",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -13442,11 +13442,11 @@
       "name": "Git.Git",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -13465,11 +13465,11 @@
       "name": "7zip.7zip",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -13488,11 +13488,11 @@
       "name": "UB-Mannheim.TesseractOCR",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -13511,11 +13511,11 @@
       "name": "PostgreSQL.PostgreSQL.17",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "system-package"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -13534,11 +13534,11 @@
       "name": "vLLM",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "external-service"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "OUTSIDE PAYLOAD"
         }
       ],
@@ -13557,11 +13557,11 @@
       "name": "llama.cpp",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "external-service"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "OUTSIDE PAYLOAD"
         }
       ],
@@ -13580,11 +13580,11 @@
       "name": "cloud inference",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "external-service"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "OUTSIDE PAYLOAD"
         }
       ],
@@ -13603,11 +13603,11 @@
       "name": "Docker engine",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "external-service"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "OUTSIDE PAYLOAD"
         }
       ],
@@ -13626,11 +13626,11 @@
       "name": "database servers",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "external-service"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "OUTSIDE PAYLOAD"
         }
       ],
@@ -13649,11 +13649,11 @@
       "name": "Proxmox generated API metadata",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "embedded"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -13672,11 +13672,11 @@
       "name": "Frontend vendor assets",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "embedded"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],
@@ -13695,11 +13695,11 @@
       "name": "Chromium and Playwright browser dependencies",
       "properties": [
         {
-          "name": "openfabric:delivery",
+          "name": "smto:delivery",
           "value": "upstream-download"
         },
         {
-          "name": "openfabric:verdict",
+          "name": "smto:verdict",
           "value": "REVIEW REQUIRED"
         }
       ],

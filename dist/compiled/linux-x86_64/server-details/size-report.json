@@ -1,7 +1,7 @@
 {
-  "application_extracted_bytes": 158814620,
-  "artifact": "openfabric-server",
-  "artifact_sha256": "0887515671660b071b1c04df07e0d058a3d50de47eaa30cd97b5843b24f2072a",
+  "application_extracted_bytes": 158840376,
+  "artifact": "smto-server",
+  "artifact_sha256": "1ec4c64c5de54b2e5249cf9222d3b31eb3f257d0548ba8fc9c01dcd086b6391c",
   "build_channel": "dev",
   "build_environment": {
     "base_image": "ubuntu:22.04@sha256:5ec03bb3441e8b0bf3b4f9cd4629a1ae763010dc3035bb8da3ae6cf026486401",
@@ -10,7 +10,7 @@
     "cpu_baseline": "x86-64",
     "cxx": "c++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0",
     "glibc": "glibc 2.35",
-    "image_id": "sha256:8c3766ae91281f80d91d1338f7926690be435b3c300ef9fb359bdd6232e46ebd",
+    "image_id": "sha256:c0755ed76be0811018a376f35f63851f5bac2941c3f2ead5e98dba94dd3d8026",
     "kernel": "6.17.0-41-generic",
     "machine": "x86_64",
     "maximum_glibc": "2.35",
@@ -227,10 +227,10 @@
     "schema_version": 1,
     "target": "linux-x86_64"
   },
-  "build_id": "139749fdc529de5f8e22e777",
-  "build_timestamp": "20261016T052758853968Z",
-  "build_version": "dev.465d538f649b.20261016.20261016T052758853968Z",
-  "built_at": "2026-10-16T05:27:58.853968Z",
+  "build_id": "11b611938df00a0886acd5e2",
+  "build_timestamp": "20261016T132827993981Z",
+  "build_version": "dev.93a3ac5edb4e.20261016.20261016T132827993981Z",
+  "built_at": "2026-10-16T13:28:27.993981Z",
   "cache_bytes": "Measured separately; platform cache directory",
   "commit_date": "20261016",
   "compatibility": {
@@ -245,7 +245,7 @@
     "maximum_glibc": "2.35",
     "status": "passed"
   },
-  "compiled_source_sha256": "86b408ea1fbbcda0e09c238bd193413f74f8b1214ef0ffd29bb38a1506518235",
+  "compiled_source_sha256": "4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f",
   "compliance_blockers": [
     "cpython-incorporated-libraries",
     "compiler-and-nuitka-runtime",
@@ -257,22 +257,22 @@
     "embedded-native-corresponding-source"
   ],
   "component": "server",
-  "download_bytes": 121334981,
+  "download_bytes": 121343400,
   "download_reduction_percent": 81.61,
   "legacy_download_bytes": 659793918,
   "packaging_backend": "compiled-shared-v1",
   "product_version": "0.10.0",
   "release_eligible": false,
-  "runtime_id": "cpython-3.12.14-linux-x86_64-c6f5e56b62942dc5",
+  "runtime_id": "cpython-3.12.14-linux-x86_64-d0eac962259e04aa",
   "shared_dependencies": "Measured on customer machine by --dependency-status --json",
-  "shared_python_bytes": 192942749,
+  "shared_python_bytes": 192942729,
   "signature": {
     "notarized": false,
     "signed": false
   },
-  "source_commit_timestamp": "2026-10-16T05:10:46Z",
-  "source_dirty": true,
-  "source_revision": "465d538f649b204646e1c64deadf92ae5a634043",
+  "source_commit_timestamp": "2026-10-16T13:17:47Z",
+  "source_dirty": false,
+  "source_revision": "93a3ac5edb4ea9af71e2dc98d9a27c0e5c2227d6",
   "target": "linux-x86_64",
   "target_arch": "x86_64",
   "target_os": "linux",
@@ -307,7 +307,7 @@
     "status": "passed",
     "storage": "/validation/home/install",
     "target": "linux-x86_64",
-    "validation_image": "sha256:224960310eeb65d28af4606fd37091e1a8ca896aa614f17dedc2eef543655b4a"
+    "validation_image": "sha256:610d301dcf891f37d18ca812100acce17647ff6ef2cf740e03b3dc5a9d3e73a0"
   },
-  "version": "dev.465d538f649b.20261016.20261016T052758853968Z"
+  "version": "dev.93a3ac5edb4e.20261016.20261016T132827993981Z"
 }

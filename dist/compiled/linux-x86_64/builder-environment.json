@@ -5,7 +5,7 @@
   "cpu_baseline": "x86-64",
   "cxx": "c++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0",
   "glibc": "glibc 2.35",
-  "image_id": "sha256:8c3766ae91281f80d91d1338f7926690be435b3c300ef9fb359bdd6232e46ebd",
+  "image_id": "sha256:c0755ed76be0811018a376f35f63851f5bac2941c3f2ead5e98dba94dd3d8026",
   "kernel": "6.17.0-41-generic",
   "machine": "x86_64",
   "maximum_glibc": "2.35",

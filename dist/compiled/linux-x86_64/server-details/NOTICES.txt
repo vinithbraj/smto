@@ -1039,10 +1039,6 @@ lib/libtcl9tk9.0.so — exact hash — embedded-native
 See native incorporated-library review
 Review native closure, notices and corresponding-source requirements.
 
-lib/openfabric-libs/libcrypt.so.1 — exact hash — embedded-native
-See native incorporated-library review
-Review native closure, notices and corresponding-source requirements.
-
 lib/python3.12/lib-dynload/_crypt.cpython-312-x86_64-linux-gnu.so — exact hash — embedded-native
 See native incorporated-library review
 Review native closure, notices and corresponding-source requirements.
@@ -1052,6 +1048,10 @@ See native incorporated-library review
 Review native closure, notices and corresponding-source requirements.
 
 lib/python3.12/lib-dynload/_tkinter.cpython-312-x86_64-linux-gnu.so — exact hash — embedded-native
+See native incorporated-library review
+Review native closure, notices and corresponding-source requirements.
+
+lib/smto-libs/libcrypt.so.1 — exact hash — embedded-native
 See native incorporated-library review
 Review native closure, notices and corresponding-source requirements.
 

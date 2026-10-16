@@ -5061,18 +5061,9 @@
     {
       "category": "embedded-native",
       "license": "See native incorporated-library review",
-      "name": "lib/openfabric-libs/libcrypt.so.1",
-      "obligations": "Review native closure, notices and corresponding-source requirements.",
-      "sha256": "d8b34ade1d95c6243a48e90f2873d65399dfb0cd3fa4ee2af45afc9e6cb8642b",
-      "verdict": "REVIEW REQUIRED",
-      "version": "exact hash"
-    },
-    {
-      "category": "embedded-native",
-      "license": "See native incorporated-library review",
       "name": "lib/python3.12/lib-dynload/_crypt.cpython-312-x86_64-linux-gnu.so",
       "obligations": "Review native closure, notices and corresponding-source requirements.",
-      "sha256": "3d6b142c682760e2432613b55c8f902855c9cb2ba0837705384465f5bc5211bb",
+      "sha256": "c2f5c37b80f93fda6f234c0b84e63131a8023fdb12f197d7536d2ec12d9af610",
       "verdict": "REVIEW REQUIRED",
       "version": "exact hash"
     },
@@ -5091,6 +5082,15 @@
       "name": "lib/python3.12/lib-dynload/_tkinter.cpython-312-x86_64-linux-gnu.so",
       "obligations": "Review native closure, notices and corresponding-source requirements.",
       "sha256": "a2ebc290ee8899420983b6cd5a185d04fb9a9dc53e76c2d661524567c9ac0128",
+      "verdict": "REVIEW REQUIRED",
+      "version": "exact hash"
+    },
+    {
+      "category": "embedded-native",
+      "license": "See native incorporated-library review",
+      "name": "lib/smto-libs/libcrypt.so.1",
+      "obligations": "Review native closure, notices and corresponding-source requirements.",
+      "sha256": "d8b34ade1d95c6243a48e90f2873d65399dfb0cd3fa4ee2af45afc9e6cb8642b",
       "verdict": "REVIEW REQUIRED",
       "version": "exact hash"
     },
@@ -9582,7 +9582,7 @@
       "version": "exact payload/profile"
     }
   ],
-  "evidence_sha256": "e9d6e198cebdf2f27ef8cbdf70428fb4e41331724ca82f75b5615ade8a9b4ae2",
+  "evidence_sha256": "699be6f84dffbed4b793a4edf9cfb85fb51d305deb0a7c3f2614eddef877cc93",
   "native": {
     "acquisitions": [
       {
@@ -9615,7 +9615,7 @@
           "2.34"
         ],
         "search_paths": [],
-        "sha256": "debf56709cca6b90a3f33de23b702c62e040782c6131e34e96699b4b3dbb6e38"
+        "sha256": "bc051b4f92370a2b3c13e65bb1fe46ea305a5bdb11f397a07e721e0312e9d2ad"
       },
       {
         "dependencies": [
@@ -9635,7 +9635,7 @@
           "2.34"
         ],
         "search_paths": [],
-        "sha256": "2e9c706d7db572696fd067fe6b03f7fdfd0f07f0414f4f5a8c07de6e5f50eb77"
+        "sha256": "b768a7625028a0a45c4fde293e1c2b93fa7b363d180450e9061e122b6b406146"
       },
       {
         "dependencies": [
@@ -9675,7 +9675,7 @@
           "2.34"
         ],
         "search_paths": [],
-        "sha256": "e4da86214e632de07c1e044777935a791cca0295985fbcffb037fa7699a10f70"
+        "sha256": "7c68cce50b6a38aa418c12c5e73cdaa26c82785a7d9fabb1463666f099752428"
       },
       {
         "dependencies": [
@@ -9735,14 +9735,14 @@
           "2.34"
         ],
         "search_paths": [],
-        "sha256": "461c4261d99d3ddec1e2175894b37fe8eacabb7698c9cd4801053f18cd832c1d"
+        "sha256": "d25237d7cefd769c6e7886f23ab22ccc97631595fcd8058f83729f104b6c7af8"
       },
       {
         "dependencies": [
           "libm.so.6",
           "libc.so.6"
         ],
-        "path": "modules/of_bootstrap.cpython-312-x86_64-linux-gnu.so",
+        "path": "modules/smto_bootstrap.cpython-312-x86_64-linux-gnu.so",
         "required_cpu_properties": [],
         "required_glibc_versions": [
           "2.2.5",
@@ -9755,14 +9755,14 @@
           "2.34"
         ],
         "search_paths": [],
-        "sha256": "1ea44b982c1afd09ec0f9177982ad7aa5c98c9f3fcfaf9d7deb598cddcd804ba"
+        "sha256": "bc1e6cbd916d2b4d1ccc1c82970461d29d81c083b6aadbcfeb22e0703cc7fbdc"
       },
       {
         "dependencies": [
           "libm.so.6",
           "libc.so.6"
         ],
-        "path": "modules/openfabric_runtime.cpython-312-x86_64-linux-gnu.so",
+        "path": "modules/smto_runtime.cpython-312-x86_64-linux-gnu.so",
         "required_cpu_properties": [],
         "required_glibc_versions": [
           "2.2.5",
@@ -9775,7 +9775,7 @@
           "2.34"
         ],
         "search_paths": [],
-        "sha256": "6af26c88b848ce0120d0792871c6db7468e4d646a7e8245b2fd7016f655af856"
+        "sha256": "68f314a6a2cde6c17536241367edb8a6ae3e75729b61131cf5ad3c6eb9799248"
       },
       {
         "dependencies": [
@@ -9795,7 +9795,7 @@
           "2.34"
         ],
         "search_paths": [],
-        "sha256": "8269c75f4fa7fd269cb1ab6b71a2afe8bea7720b712a5bc2040b0dfc03ffa08a"
+        "sha256": "4b0ece4585f2ebca436a82130ecd95ff36d49920afbf7223d783f03ec146644d"
       }
     ],
     "errors": [],
@@ -10055,22 +10055,6 @@
       },
       {
         "dependencies": [
-          "libc.so.6"
-        ],
-        "path": "lib/openfabric-libs/libcrypt.so.1",
-        "required_cpu_properties": [],
-        "required_glibc_versions": [
-          "2.2.5",
-          "2.3.4",
-          "2.4",
-          "2.14",
-          "2.25"
-        ],
-        "search_paths": [],
-        "sha256": "d8b34ade1d95c6243a48e90f2873d65399dfb0cd3fa4ee2af45afc9e6cb8642b"
-      },
-      {
-        "dependencies": [
           "libcrypt.so.1",
           "libpthread.so.0",
           "libc.so.6"
@@ -10082,9 +10066,9 @@
           "2.4"
         ],
         "search_paths": [
-          "$ORIGIN/../../openfabric-libs"
+          "$ORIGIN/../../smto-libs"
         ],
-        "sha256": "3d6b142c682760e2432613b55c8f902855c9cb2ba0837705384465f5bc5211bb"
+        "sha256": "c2f5c37b80f93fda6f234c0b84e63131a8023fdb12f197d7536d2ec12d9af610"
       },
       {
         "dependencies": [
@@ -10124,6 +10108,22 @@
           "$ORIGIN/../.."
         ],
         "sha256": "a2ebc290ee8899420983b6cd5a185d04fb9a9dc53e76c2d661524567c9ac0128"
+      },
+      {
+        "dependencies": [
+          "libc.so.6"
+        ],
+        "path": "lib/smto-libs/libcrypt.so.1",
+        "required_cpu_properties": [],
+        "required_glibc_versions": [
+          "2.2.5",
+          "2.3.4",
+          "2.4",
+          "2.14",
+          "2.25"
+        ],
+        "search_paths": [],
+        "sha256": "d8b34ade1d95c6243a48e90f2873d65399dfb0cd3fa4ee2af45afc9e6cb8642b"
       },
       {
         "dependencies": [
