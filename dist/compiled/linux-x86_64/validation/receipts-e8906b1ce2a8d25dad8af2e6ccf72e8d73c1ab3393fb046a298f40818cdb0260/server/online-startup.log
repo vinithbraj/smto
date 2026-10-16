@@ -1,78 +1,76 @@
-SMTO server dev.e103e9178883.20261015.20261015T172718448064Z
+SMTO server dev.465d538f649b.20261016.20261016T052758853968Z
 [SMTO server startup +0s] Verifying application download...
 [SMTO server startup +0s] Preparing shared private Python...
 [SMTO server startup +1s] Preparing compiled application...
 [SMTO server startup] Preparing HTTPS identity: starting (0.0s)
 [SMTO server startup] Preparing HTTPS identity: complete (0.0s)
-INFO:     Started server process [7218]
+INFO:     Started server process [7126]
 INFO:     Waiting for application startup.
 [SMTO server startup] Loading runtime modules: starting (0.0s)
 INFO:     Application startup complete.
-INFO:     Uvicorn running on http://127.0.0.1:57795 (Press CTRL+C to quit)
-INFO:     127.0.0.1:57422 - "GET /healthz HTTP/1.1" 503 Service Unavailable
-INFO:     127.0.0.1:57436 - "GET /healthz HTTP/1.1" 503 Service Unavailable
-INFO:     127.0.0.1:57442 - "GET /healthz HTTP/1.1" 503 Service Unavailable
-INFO:     127.0.0.1:57452 - "GET /healthz HTTP/1.1" 503 Service Unavailable
-INFO:     127.0.0.1:57460 - "GET /healthz HTTP/1.1" 503 Service Unavailable
-INFO:     127.0.0.1:57474 - "GET /healthz HTTP/1.1" 503 Service Unavailable
-INFO:     127.0.0.1:57476 - "GET /healthz HTTP/1.1" 503 Service Unavailable
-INFO:     127.0.0.1:57492 - "GET /healthz HTTP/1.1" 503 Service Unavailable
-INFO:     127.0.0.1:57494 - "GET /healthz HTTP/1.1" 503 Service Unavailable
-INFO:     127.0.0.1:57510 - "GET /healthz HTTP/1.1" 503 Service Unavailable
-[SMTO server startup] Loading runtime modules: complete (2.7s)
+INFO:     Uvicorn running on http://127.0.0.1:53879 (Press CTRL+C to quit)
+INFO:     127.0.0.1:43254 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:43256 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:43268 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:43282 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:43286 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:43292 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:43298 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:43304 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:43320 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+[SMTO server startup] Loading runtime modules: complete (2.6s)
 [SMTO server startup] Loading configuration: starting (0.0s)
 [SMTO server startup] Loading configuration: complete (0.0s)
 [SMTO server startup] Acquiring runtime ownership: starting (0.0s)
 [SMTO server startup] Acquiring runtime ownership: complete (0.0s)
 [SMTO server startup] Restoring runtime state: starting (0.0s)
-INFO:     127.0.0.1:57522 - "GET /healthz HTTP/1.1" 503 Service Unavailable
-INFO:     127.0.0.1:57526 - "GET /healthz HTTP/1.1" 503 Service Unavailable
-INFO:     127.0.0.1:57534 - "GET /healthz HTTP/1.1" 503 Service Unavailable
-INFO:     127.0.0.1:57538 - "GET /healthz HTTP/1.1" 503 Service Unavailable
-INFO:     127.0.0.1:57540 - "GET /healthz HTTP/1.1" 503 Service Unavailable
-INFO:     127.0.0.1:57552 - "GET /healthz HTTP/1.1" 503 Service Unavailable
-[SMTO server startup] Restoring runtime state: complete (1.5s)
+INFO:     127.0.0.1:43332 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:43342 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:43344 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:43350 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+[SMTO server startup] Restoring runtime state: complete (0.9s)
 [SMTO server startup] Initializing execution services: starting (0.0s)
-INFO:     127.0.0.1:57560 - "GET /healthz HTTP/1.1" 503 Service Unavailable
-INFO:     127.0.0.1:57562 - "GET /healthz HTTP/1.1" 503 Service Unavailable
-INFO:     127.0.0.1:57572 - "GET /healthz HTTP/1.1" 503 Service Unavailable
-INFO:     127.0.0.1:57584 - "GET /healthz HTTP/1.1" 503 Service Unavailable
-INFO:     127.0.0.1:57586 - "GET /healthz HTTP/1.1" 503 Service Unavailable
-INFO:     127.0.0.1:57590 - "GET /healthz HTTP/1.1" 503 Service Unavailable
-INFO:     127.0.0.1:57602 - "GET /healthz HTTP/1.1" 503 Service Unavailable
-INFO:     127.0.0.1:57616 - "GET /healthz HTTP/1.1" 503 Service Unavailable
-INFO:     127.0.0.1:48550 - "GET /healthz HTTP/1.1" 503 Service Unavailable
-INFO:     127.0.0.1:48562 - "GET /healthz HTTP/1.1" 503 Service Unavailable
-INFO:     127.0.0.1:48564 - "GET /healthz HTTP/1.1" 503 Service Unavailable
-INFO:     127.0.0.1:48570 - "GET /healthz HTTP/1.1" 503 Service Unavailable
-INFO:     127.0.0.1:48580 - "GET /healthz HTTP/1.1" 503 Service Unavailable
-INFO:     127.0.0.1:48582 - "GET /healthz HTTP/1.1" 503 Service Unavailable
-INFO:     127.0.0.1:48586 - "GET /healthz HTTP/1.1" 503 Service Unavailable
-INFO:     127.0.0.1:48594 - "GET /healthz HTTP/1.1" 503 Service Unavailable
-INFO:     127.0.0.1:48610 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:43358 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:43374 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:43382 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:43392 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:42610 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:42612 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:42622 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:42632 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:42638 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:42654 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:42658 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:42668 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:42676 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:42682 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:42688 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:42700 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:42708 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:42716 - "GET /healthz HTTP/1.1" 503 Service Unavailable
 [SMTO server startup] Initializing execution services: still working (5.0s)
-INFO:     127.0.0.1:48622 - "GET /healthz HTTP/1.1" 503 Service Unavailable
-[SMTO server startup] Initializing execution services: complete (5.1s)
+[SMTO server startup] Initializing execution services: complete (5.0s)
+INFO:     127.0.0.1:42718 - "GET /healthz HTTP/1.1" 503 Service Unavailable
 [SMTO server startup] Preparing API and user interface: starting (0.0s)
-INFO:     127.0.0.1:48632 - "GET /healthz HTTP/1.1" 503 Service Unavailable
-INFO:     127.0.0.1:48644 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:42724 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:42736 - "GET /healthz HTTP/1.1" 503 Service Unavailable
 [SMTO server startup] Preparing API and user interface: complete (0.5s)
 [SMTO server startup] Reconciling runtime work: starting (0.0s)
 [SMTO server startup] Reconciling runtime work: complete (0.0s)
 [SMTO server startup] Sealing restored state: starting (0.0s)
-INFO:     127.0.0.1:48656 - "GET /healthz HTTP/1.1" 503 Service Unavailable
-[SMTO server startup] Sealing restored state: complete (0.3s)
+[SMTO server startup] Sealing restored state: complete (0.2s)
 [SMTO server startup] Starting background services: starting (0.0s)
+INFO:     127.0.0.1:42746 - "GET /healthz HTTP/1.1" 503 Service Unavailable
 [SMTO server startup] Starting background services: complete (0.0s)
-INFO:     127.0.0.1:48658 - "GET /healthz HTTP/1.1" 200 OK
-INFO:     127.0.0.1:48670 - "GET /api/agent/version HTTP/1.1" 200 OK
-INFO:     127.0.0.1:48676 - "GET /agent-ui?ui=desktop HTTP/1.1" 200 OK
-INFO:     127.0.0.1:48680 - "GET /agent-ui?ui=mobile HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42748 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42764 - "GET /api/agent/version HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42780 - "GET /agent-ui?ui=desktop HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42792 - "GET /agent-ui?ui=mobile HTTP/1.1" 200 OK
 INFO:     Shutting down
 INFO:     Waiting for application shutdown.
 [SMTO server shutdown] Shutdown requested. Keep this terminal open; do not press Ctrl+C again or force-kill the server. (0.0s elapsed)
 [SMTO server shutdown] Stopping background services before the final SQL save... (0.0s elapsed)
 [SMTO server shutdown] Saving runtime data to SQL before exit. Please wait... (0.0s elapsed)
-[SMTO server shutdown] SQL save complete. Safe to close this terminal. (0.5s elapsed)
+[SMTO server shutdown] SQL save complete. Safe to close this terminal. (0.3s elapsed)
 INFO:     Application shutdown complete.
-INFO:     Finished server process [7218]
+INFO:     Finished server process [7126]

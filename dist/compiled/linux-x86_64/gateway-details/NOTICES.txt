@@ -1,6 +1,10 @@
 SMTO compiled distribution notices
 Application licensing does not replace third-party licenses.
 Exact dependency delivery and review decisions are in bom.json.
+Full collected notices: LICENSES/third-party/README.md.
+Exact upstream source links: LICENSES/third-party/SOURCE_LINKS.md.
+Publish the complete LICENSES directory alongside each executable.
+Linux-specific notice evidence does not approve unreviewed Windows/macOS components.
 
 CPython — 3.12.14 — embedded
 PSF-2.0 AND incorporated-library licenses
@@ -11,9 +15,918 @@ Zlib
 Retain zlib notice; mark source changes.
 
 Nuitka compiler and generated runtime — 4.3 — build-tool-and-embedded-runtime
-Apache-2.0 AND vendored-runtime licenses
+GNU Affero General Public License v3; compiled output: see Nuitka Runtime Library Exception in LICENSE-RUNTIME.txt
 Compiler-only components and generated runtime have separate obligations.
 
+cpython-3.12 — 3.12.14 — python-incorporated
+Python-2.0 AND CNRI-Python
+License metadata is missing, ambiguous, or requires review.
+
+https://www.python.org/ftp/python/3.12.14/Python-3.12.14.tar.xz
+https://github.com/astral-sh/python-build-standalone/archive/refs/tags/20260901.tar.gz
+bdb — 6.0.19 — python-incorporated
+Sleepycat
+License metadata is missing, ambiguous, or requires review.
+
+https://ftp.osuosl.org/pub/blfs/conglomeration/db/db-6.0.19.tar.gz
+https://github.com/astral-sh/python-build-standalone/archive/refs/tags/20260901.tar.gz
+bzip2 — 1.0.8 — python-incorporated
+bzip2-1.0.6
+License metadata is missing, ambiguous, or requires review.
+
+https://astral-sh.github.io/mirror/files/bzip2-1.0.8.tar.gz
+https://github.com/astral-sh/python-build-standalone/archive/refs/tags/20260901.tar.gz
+expat — 2.8.4 — python-incorporated
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://github.com/libexpat/libexpat/releases/download/R_2_8_4/expat-2.8.4.tar.xz
+https://github.com/astral-sh/python-build-standalone/archive/refs/tags/20260901.tar.gz
+libedit — 20240808-3.1 — python-incorporated
+BSD-3-Clause
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://thrysoee.dk/editline/libedit-20240808-3.1.tar.gz
+https://github.com/astral-sh/python-build-standalone/archive/refs/tags/20260901.tar.gz
+libffi — 3.4.8 — python-incorporated
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://github.com/libffi/libffi/releases/download/v3.4.8/libffi-3.4.8.tar.gz
+https://github.com/astral-sh/python-build-standalone/archive/refs/tags/20260901.tar.gz
+libX11 — 1.8.13 — python-incorporated
+MIT AND X11
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://www.x.org/releases/individual/lib/libX11-1.8.13.tar.gz
+https://github.com/astral-sh/python-build-standalone/archive/refs/tags/20260901.tar.gz
+libXau — 1.0.12 — python-incorporated
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://www.x.org/releases/individual/lib/libXau-1.0.12.tar.gz
+https://github.com/astral-sh/python-build-standalone/archive/refs/tags/20260901.tar.gz
+libxcb — 1.17.0 — python-incorporated
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://xcb.freedesktop.org/dist/libxcb-1.17.0.tar.gz
+https://github.com/astral-sh/python-build-standalone/archive/refs/tags/20260901.tar.gz
+mpdecimal — 4.0.0 — python-incorporated
+BSD-2-Clause
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://astral-sh.github.io/mirror/files/mpdecimal-4.0.0.tar.gz
+https://github.com/astral-sh/python-build-standalone/archive/refs/tags/20260901.tar.gz
+ncurses — 6.5 — python-incorporated
+X11
+License metadata is missing, ambiguous, or requires review.
+
+https://astral-sh.github.io/mirror/files/ncurses-6.5.tar.gz
+https://github.com/astral-sh/python-build-standalone/archive/refs/tags/20260901.tar.gz
+openssl-3.5 — 3.5.8 — python-incorporated
+Apache-2.0
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://github.com/openssl/openssl/releases/download/openssl-3.5.8/openssl-3.5.8.tar.gz
+https://github.com/astral-sh/python-build-standalone/archive/refs/tags/20260901.tar.gz
+sqlite — 3530100 — python-incorporated
+Public domain (see notice)
+License metadata is missing, ambiguous, or requires review.
+
+https://www.sqlite.org/2026/sqlite-autoconf-3530100.tar.gz
+https://github.com/astral-sh/python-build-standalone/archive/refs/tags/20260901.tar.gz
+tcl — 9.0.4 — python-incorporated
+TCL
+License metadata is missing, ambiguous, or requires review.
+
+https://prdownloads.sourceforge.net/tcl/tcl9.0.4-src.tar.gz
+https://github.com/astral-sh/python-build-standalone/archive/refs/tags/20260901.tar.gz
+uuid — 1.0.3 — python-incorporated
+BSD-3-Clause
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://sourceforge.net/projects/libuuid/files/libuuid-1.0.3.tar.gz
+https://github.com/astral-sh/python-build-standalone/archive/refs/tags/20260901.tar.gz
+xz — 5.8.3 — python-incorporated
+0BSD
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://github.com/tukaani-project/xz/releases/download/v5.8.3/xz-5.8.3.tar.gz
+https://github.com/astral-sh/python-build-standalone/archive/refs/tags/20260901.tar.gz
+zlib — 1.3.2 — python-incorporated
+Zlib
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://github.com/madler/zlib/releases/download/v1.3.2/zlib-1.3.2.tar.gz
+https://github.com/astral-sh/python-build-standalone/archive/refs/tags/20260901.tar.gz
+tcl-resource-terms — 9.0.4 — python-resources
+TCL
+License metadata is missing, ambiguous, or requires review.
+
+https://prdownloads.sourceforge.net/tcl/tcl9.0.4-src.tar.gz
+https://github.com/astral-sh/python-build-standalone/archive/refs/tags/20260901.tar.gz
+tk-resource-terms — 9.0.4 — python-resources
+TCL
+License metadata is missing, ambiguous, or requires review.
+
+https://prdownloads.sourceforge.net/tcl/tk9.0.4-src.tar.gz
+https://github.com/astral-sh/python-build-standalone/archive/refs/tags/20260901.tar.gz
+pip — 26.2.1 — embedded-bootstrap
+MIT AND vendored licenses
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://files.pythonhosted.org/packages/ae/15/4500e320e6b101ec3b719ae85b697d9940b6cda672bc555bd6016fc60c6f/pip-26.2.1.tar.gz
+Nuitka generated runtime — 4.3 — compiler-runtime
+AGPL-3.0 with Nuitka Runtime Library Exception
+Preserve the compiler runtime exception and notices; review separately licensed incorporated code.
+
+https://files.pythonhosted.org/packages/fa/5f/ba7cb858da0c98c24f85c54454a5ea18f2b784f658a91531fa051b2f2ee9/nuitka-4.3.tar.gz
+libxcrypt (Ubuntu libcrypt1:amd64) — 1:4.4.27-1 — embedded-native
+LGPL-2.1-or-later AND BSD and other per-file terms; LGPL-3.0 option selected
+Preserve applicable notices/source and practical library replacement; review modifications and linking.
+
+https://archive.ubuntu.com/ubuntu/pool/main/libx/libxcrypt/libxcrypt_4.4.27.orig.tar.xz
+https://archive.ubuntu.com/ubuntu/pool/main/libx/libxcrypt/libxcrypt_4.4.27-1.debian.tar.xz
+https://archive.ubuntu.com/ubuntu/pool/main/libx/libxcrypt/libxcrypt_4.4.27-1.dsc
+https://raw.githubusercontent.com/gcc-mirror/gcc/master/COPYING3.LIB
+https://raw.githubusercontent.com/gcc-mirror/gcc/master/COPYING3
+https://archive.ubuntu.com/ubuntu/pool/main/libx/libxcrypt/libcrypt1_4.4.27-1_amd64.deb
+mermaid — 10.9.3 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/mermaid/-/mermaid-10.9.3.tgz
+https://github.com/mermaid-js/mermaid
+https://raw.githubusercontent.com/mermaid-js/mermaid/v10.9.3/pnpm-lock.yaml
+jison — 0.4.18 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/jison/-/jison-0.4.18.tgz
+https://github.com/zaach/jison
+https://github.com/zaach/jison/archive/bcf986e180359aa2404b1b73ecbfef1df4c6b011.tar.gz
+@braintree/sanitize-url — 6.0.4 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/@braintree/sanitize-url/-/sanitize-url-6.0.4.tgz
+https://github.com/braintree/sanitize-url
+https://github.com/braintree/sanitize-url/archive/32c1f1e48c413e7ccd4ef2468d69e29ab237713d.tar.gz
+cytoscape — 3.28.1 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/cytoscape/-/cytoscape-3.28.1.tgz
+https://github.com/cytoscape/cytoscape.js
+https://github.com/cytoscape/cytoscape.js/archive/3eb3e1278c9f30b52deadc7c5b6d44df33fcc62f.tar.gz
+https://raw.githubusercontent.com/mermaid-js/mermaid/v10.9.3/patches/cytoscape%403.28.1.patch
+heap — 0.2.7 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/heap/-/heap-0.2.7.tgz
+https://github.com/qiao/heap.js
+https://github.com/qiao/heap.js/archive/21701c0b9c22039de6f948ed5f6d44e53ae79231.tar.gz
+lodash — 4.17.21 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz
+https://github.com/lodash/lodash
+https://github.com/lodash/lodash/archive/c6e281b878b315c7a10d90f9c2af4cdb112d9625.tar.gz
+cytoscape-cose-bilkent — 4.1.0 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/cytoscape-cose-bilkent/-/cytoscape-cose-bilkent-4.1.0.tgz
+https://github.com/cytoscape/cytoscape.js-cose-bilkent
+https://github.com/cytoscape/cytoscape.js-cose-bilkent/archive/999090a8438b4f14788d636ef4fd7a5355e29e8c.tar.gz
+cose-base — 1.0.3 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/cose-base/-/cose-base-1.0.3.tgz
+https://github.com/iVis-at-Bilkent/cose-base
+https://github.com/iVis-at-Bilkent/cose-base/archive/914bfe712991534af1d8b795d6f262687edc2563.tar.gz
+layout-base — 1.0.2 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/layout-base/-/layout-base-1.0.2.tgz
+https://github.com/iVis-at-Bilkent/layout-base
+https://github.com/iVis-at-Bilkent/layout-base/archive/836898aa4a88e2794774997d7128b383108a3d5a.tar.gz
+d3 — 7.8.5 — frontend-dependency-notices
+ISC
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/d3/-/d3-7.8.5.tgz
+https://github.com/d3/d3
+https://github.com/d3/d3/archive/d6f9341bc868e2c60df8c38cd636de739e592438.tar.gz
+d3-array — 3.2.4 — frontend-dependency-notices
+ISC
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/d3-array/-/d3-array-3.2.4.tgz
+https://github.com/d3/d3-array
+https://github.com/d3/d3-array/archive/94d4541626ae3ac6c847e3d4c6e31aca1a8879b4.tar.gz
+internmap — 2.0.3 — frontend-dependency-notices
+ISC
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/internmap/-/internmap-2.0.3.tgz
+https://github.com/mbostock/internmap
+https://github.com/mbostock/internmap/archive/78db0b387b951c036f7a8d6580d98afd8f416a5e.tar.gz
+d3-axis — 3.0.0 — frontend-dependency-notices
+ISC
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/d3-axis/-/d3-axis-3.0.0.tgz
+https://github.com/d3/d3-axis
+https://github.com/d3/d3-axis/archive/64372b12c9ba5c8a816277b3ad04ff813db5af97.tar.gz
+d3-brush — 3.0.0 — frontend-dependency-notices
+ISC
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/d3-brush/-/d3-brush-3.0.0.tgz
+https://github.com/d3/d3-brush
+https://github.com/d3/d3-brush/archive/ec2bce6f15074a9ead7f9a84c61335be51c123a3.tar.gz
+d3-dispatch — 3.0.1 — frontend-dependency-notices
+ISC
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/d3-dispatch/-/d3-dispatch-3.0.1.tgz
+https://github.com/d3/d3-dispatch
+https://github.com/d3/d3-dispatch/archive/904ddf22634bb642460685992f4ce22898f8aeb4.tar.gz
+d3-drag — 3.0.0 — frontend-dependency-notices
+ISC
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/d3-drag/-/d3-drag-3.0.0.tgz
+https://github.com/d3/d3-drag
+https://github.com/d3/d3-drag/archive/1b88d8a2d69fca86d4d90a8329987693b79ec506.tar.gz
+d3-selection — 3.0.0 — frontend-dependency-notices
+ISC
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/d3-selection/-/d3-selection-3.0.0.tgz
+https://github.com/d3/d3-selection
+https://github.com/d3/d3-selection/archive/91245ee124ec4dd491e498ecbdc9679d75332b49.tar.gz
+d3-interpolate — 3.0.1 — frontend-dependency-notices
+ISC
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/d3-interpolate/-/d3-interpolate-3.0.1.tgz
+https://github.com/d3/d3-interpolate
+https://github.com/d3/d3-interpolate/archive/6562b85040f7a9b96efe49b54a77eb6fceafa1c1.tar.gz
+d3-color — 3.1.0 — frontend-dependency-notices
+ISC
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/d3-color/-/d3-color-3.1.0.tgz
+https://github.com/d3/d3-color
+https://github.com/d3/d3-color/archive/7a1573ed260de4fd97d061975244841132adde92.tar.gz
+d3-transition — 3.0.1 — frontend-dependency-notices
+ISC
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/d3-transition/-/d3-transition-3.0.1.tgz
+https://github.com/d3/d3-transition
+https://github.com/d3/d3-transition/archive/c4c94c421e2ef9e9ffc253fab33ccf99f1434901.tar.gz
+d3-ease — 3.0.1 — frontend-dependency-notices
+BSD-3-Clause
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/d3-ease/-/d3-ease-3.0.1.tgz
+https://github.com/d3/d3-ease
+https://github.com/d3/d3-ease/archive/a0919680efc6f8e667275ba1d6330bf6a4cc9301.tar.gz
+d3-timer — 3.0.1 — frontend-dependency-notices
+ISC
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/d3-timer/-/d3-timer-3.0.1.tgz
+https://github.com/d3/d3-timer
+https://github.com/d3/d3-timer/archive/441e45b3f582762cd20035d47b40e9759ed1b235.tar.gz
+d3-chord — 3.0.1 — frontend-dependency-notices
+ISC
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/d3-chord/-/d3-chord-3.0.1.tgz
+https://github.com/d3/d3-chord
+https://github.com/d3/d3-chord/archive/57ac4d9029e66c025117356ae58ab36c7457a2d1.tar.gz
+d3-path — 3.1.0 — frontend-dependency-notices
+ISC
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/d3-path/-/d3-path-3.1.0.tgz
+https://github.com/d3/d3-path
+https://github.com/d3/d3-path/archive/58bce7a53df2b03f70092a9b00b78055c4ffee04.tar.gz
+d3-contour — 4.0.2 — frontend-dependency-notices
+ISC
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/d3-contour/-/d3-contour-4.0.2.tgz
+https://github.com/d3/d3-contour
+https://github.com/d3/d3-contour/archive/0ba2dd047ce4cc2980025eff5c4fea989bf2da85.tar.gz
+d3-delaunay — 6.0.4 — frontend-dependency-notices
+ISC
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/d3-delaunay/-/d3-delaunay-6.0.4.tgz
+https://github.com/d3/d3-delaunay
+https://github.com/d3/d3-delaunay/archive/c5a08b375cd57f4a314b07979e25e3e30387943f.tar.gz
+delaunator — 5.0.1 — frontend-dependency-notices
+ISC
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/delaunator/-/delaunator-5.0.1.tgz
+https://github.com/mapbox/delaunator
+https://github.com/mapbox/delaunator/archive/80ac079775bbe52ffec51df1394561d0e6e6e4a9.tar.gz
+robust-predicates — 3.0.2 — frontend-dependency-notices
+Unlicense
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/robust-predicates/-/robust-predicates-3.0.2.tgz
+https://github.com/mourner/robust-predicates
+https://github.com/mourner/robust-predicates/archive/c20b0ab9ab4c4f2969f3611908c41ce76aa0e7a7.tar.gz
+d3-dsv — 3.0.1 — frontend-dependency-notices
+ISC
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/d3-dsv/-/d3-dsv-3.0.1.tgz
+https://github.com/d3/d3-dsv
+https://github.com/d3/d3-dsv/archive/344677983ac44e7bbf0e2527ad7f0223d66a2f38.tar.gz
+commander — 7.2.0 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/commander/-/commander-7.2.0.tgz
+https://github.com/tj/commander.js
+https://github.com/tj/commander.js/archive/327a3ddd552f90d1dbd37f55fa7a88b9553468ae.tar.gz
+iconv-lite — 0.6.3 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.6.3.tgz
+https://github.com/ashtuchkin/iconv-lite
+https://github.com/ashtuchkin/iconv-lite/archive/d13de386c07a1574425811f8f219c181c633e88d.tar.gz
+safer-buffer — 2.1.2 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/safer-buffer/-/safer-buffer-2.1.2.tgz
+https://github.com/ChALkeR/safer-buffer
+https://github.com/ChALkeR/safer-buffer/archive/e8ac214944eda30e1e6c6b7d7e7f6a21cf7dce7c.tar.gz
+rw — 1.3.3 — frontend-dependency-notices
+BSD-3-Clause
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/rw/-/rw-1.3.3.tgz
+https://github.com/mbostock/rw
+https://github.com/mbostock/rw/archive/59819802cb6718a44aad42bb75ccb4f93f6efad5.tar.gz
+d3-fetch — 3.0.1 — frontend-dependency-notices
+ISC
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/d3-fetch/-/d3-fetch-3.0.1.tgz
+https://github.com/d3/d3-fetch
+https://github.com/d3/d3-fetch/archive/20a0b61b87a55c88e6b83580c927523b5c0448fe.tar.gz
+d3-force — 3.0.0 — frontend-dependency-notices
+ISC
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/d3-force/-/d3-force-3.0.0.tgz
+https://github.com/d3/d3-force
+https://github.com/d3/d3-force/archive/156712c8c3285d77cb487e1685c5adafcd0394a4.tar.gz
+d3-quadtree — 3.0.1 — frontend-dependency-notices
+ISC
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/d3-quadtree/-/d3-quadtree-3.0.1.tgz
+https://github.com/d3/d3-quadtree
+https://github.com/d3/d3-quadtree/archive/24d7ea88ea7099407cdce67e7fe548a3a1893d92.tar.gz
+d3-format — 3.1.0 — frontend-dependency-notices
+ISC
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/d3-format/-/d3-format-3.1.0.tgz
+https://github.com/d3/d3-format
+https://github.com/d3/d3-format/archive/08806c62aa8f7b3fe64925f3989f1491c950a71c.tar.gz
+d3-geo — 3.1.0 — frontend-dependency-notices
+ISC
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/d3-geo/-/d3-geo-3.1.0.tgz
+https://github.com/d3/d3-geo
+https://github.com/d3/d3-geo/archive/078f46d9a4b9079ddd6d382cfea81dd9c5a284ef.tar.gz
+d3-hierarchy — 3.1.2 — frontend-dependency-notices
+ISC
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/d3-hierarchy/-/d3-hierarchy-3.1.2.tgz
+https://github.com/d3/d3-hierarchy
+https://github.com/d3/d3-hierarchy/archive/7bea49efdc1093b28a8d60d2f8717d8a17803564.tar.gz
+d3-polygon — 3.0.1 — frontend-dependency-notices
+ISC
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/d3-polygon/-/d3-polygon-3.0.1.tgz
+https://github.com/d3/d3-polygon
+https://github.com/d3/d3-polygon/archive/be52ab24e723b5b0078e13f51003981839ad8134.tar.gz
+d3-random — 3.0.1 — frontend-dependency-notices
+ISC
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/d3-random/-/d3-random-3.0.1.tgz
+https://github.com/d3/d3-random
+https://github.com/d3/d3-random/archive/4a8ed7dd38cac562f924d69f475f9f058366240b.tar.gz
+d3-scale — 4.0.2 — frontend-dependency-notices
+ISC
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/d3-scale/-/d3-scale-4.0.2.tgz
+https://github.com/d3/d3-scale
+https://github.com/d3/d3-scale/archive/83555bd759c7314420bd4240642beda5e258db9e.tar.gz
+d3-time — 3.1.0 — frontend-dependency-notices
+ISC
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/d3-time/-/d3-time-3.1.0.tgz
+https://github.com/d3/d3-time
+https://github.com/d3/d3-time/archive/d66bba6f83801b2f3a3e6440dba8df3357669c73.tar.gz
+d3-time-format — 4.1.0 — frontend-dependency-notices
+ISC
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/d3-time-format/-/d3-time-format-4.1.0.tgz
+https://github.com/d3/d3-time-format
+https://github.com/d3/d3-time-format/archive/76cfef1da81b70404c0226ec9db9b0d56fa09461.tar.gz
+d3-scale-chromatic — 3.0.0 — frontend-dependency-notices
+ISC
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/d3-scale-chromatic/-/d3-scale-chromatic-3.0.0.tgz
+https://github.com/d3/d3-scale-chromatic
+https://github.com/d3/d3-scale-chromatic/archive/2aa3ad24197136a5adeb1647502270dba5d74668.tar.gz
+d3-shape — 3.2.0 — frontend-dependency-notices
+ISC
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/d3-shape/-/d3-shape-3.2.0.tgz
+https://github.com/d3/d3-shape
+https://github.com/d3/d3-shape/archive/8ec82658454750cfa29efb1e0ea514e3dd9b2297.tar.gz
+d3-zoom — 3.0.0 — frontend-dependency-notices
+ISC
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/d3-zoom/-/d3-zoom-3.0.0.tgz
+https://github.com/d3/d3-zoom
+https://github.com/d3/d3-zoom/archive/debbe3d76d86ea96965ed4cc61beb6bdf7238156.tar.gz
+d3-sankey — 0.12.3 — frontend-dependency-notices
+BSD-3-Clause
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/d3-sankey/-/d3-sankey-0.12.3.tgz
+https://github.com/d3/d3-sankey
+https://github.com/d3/d3-sankey/archive/bb7233ea0004669878d922e55fe83084ef3cb555.tar.gz
+d3-array — 2.12.1 — frontend-dependency-notices
+BSD-3-Clause
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/d3-array/-/d3-array-2.12.1.tgz
+https://github.com/d3/d3-array
+https://github.com/d3/d3-array/archive/6fda2773d31c2b3377d8b2dbd11a3e334a7cbc9e.tar.gz
+internmap — 1.0.1 — frontend-dependency-notices
+ISC
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/internmap/-/internmap-1.0.1.tgz
+https://github.com/mbostock/internmap
+https://github.com/mbostock/internmap/archive/566fee0b08e930c08e469f09f00f5be46dd7866f.tar.gz
+d3-shape — 1.3.7 — frontend-dependency-notices
+BSD-3-Clause
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/d3-shape/-/d3-shape-1.3.7.tgz
+https://github.com/d3/d3-shape
+https://github.com/d3/d3-shape/archive/246e232651631a78c4803430e3bac326b4a4147b.tar.gz
+d3-path — 1.0.9 — frontend-dependency-notices
+BSD-3-Clause
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/d3-path/-/d3-path-1.0.9.tgz
+https://github.com/d3/d3-path
+https://github.com/d3/d3-path/archive/151f962faa58f110993c6d71faefad57c174b66c.tar.gz
+dagre-d3-es — 7.0.10 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/dagre-d3-es/-/dagre-d3-es-7.0.10.tgz
+https://github.com/tbo47/dagre-es
+https://raw.githubusercontent.com/dagrejs/dagre-d3/v0.6.4/LICENSE
+https://raw.githubusercontent.com/dagrejs/dagre/v0.8.5/LICENSE
+https://raw.githubusercontent.com/dagrejs/graphlib/v2.1.8/LICENSE
+https://github.com/tbo47/dagre-es/archive/f14d9a1a7dd13d2448b86e4aa8e496e1e585596a.tar.gz
+lodash-es — 4.17.21 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/lodash-es/-/lodash-es-4.17.21.tgz
+https://github.com/lodash/lodash
+https://github.com/lodash/lodash/archive/11eb817cdfacf56c02d7005cbe520ffbeb0fe59a.tar.gz
+dayjs — 1.11.10 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/dayjs/-/dayjs-1.11.10.tgz
+https://github.com/iamkun/dayjs
+https://github.com/iamkun/dayjs/archive/e56a8703dcc3820196972f53990010daf248726b.tar.gz
+dompurify — 3.1.6 — frontend-dependency-notices
+Apache-2.0 (selected from Apache-2.0 OR MPL-2.0)
+Preserve applicable notices/source and practical library replacement; review modifications and linking.
+
+https://registry.npmjs.org/dompurify/-/dompurify-3.1.6.tgz
+https://github.com/cure53/DOMPurify
+https://github.com/cure53/DOMPurify/archive/90a10a14af3d407d4633093d7c3362b23ee4889f.tar.gz
+elkjs — 0.9.2 — frontend-dependency-notices
+EPL-2.0
+Preserve applicable notices/source and practical library replacement; review modifications and linking.
+
+https://registry.npmjs.org/elkjs/-/elkjs-0.9.2.tgz
+https://github.com/kieler/elkjs
+https://github.com/kieler/elkjs/archive/72b471e65f5c5d7b0e94450b14c14bdf12384f82.tar.gz
+https://github.com/eclipse/elk
+katex — 0.16.11 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/katex/-/katex-0.16.11.tgz
+https://github.com/KaTeX/KaTeX
+https://github.com/KaTeX/KaTeX/archive/fbbea3573439d51e6568356f5886053b111b1f88.tar.gz
+commander — 8.3.0 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/commander/-/commander-8.3.0.tgz
+https://github.com/tj/commander.js
+https://github.com/tj/commander.js/archive/43f4743864e2f670db5eebcf88c92aa4612c54f1.tar.gz
+khroma — 2.1.0 — frontend-dependency-notices
+NOASSERTION
+License metadata is missing, ambiguous, or requires review.
+
+https://registry.npmjs.org/khroma/-/khroma-2.1.0.tgz
+https://github.com/fabiospampinato/khroma
+https://github.com/fabiospampinato/khroma/archive/4968165afb0d3d09be66497e7985a34f7bfe6d42.tar.gz
+mdast-util-from-markdown — 1.3.1 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/mdast-util-from-markdown/-/mdast-util-from-markdown-1.3.1.tgz
+https://github.com/syntax-tree/mdast-util-from-markdown
+https://github.com/syntax-tree/mdast-util-from-markdown/archive/e30d9c8025d726360123ae95beb9cf011335b921.tar.gz
+decode-named-character-reference — 1.0.2 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/decode-named-character-reference/-/decode-named-character-reference-1.0.2.tgz
+https://github.com/wooorm/decode-named-character-reference
+https://github.com/wooorm/decode-named-character-reference/archive/ddb8cdf65a7ce4795c4fc45c8433495377b0f5ea.tar.gz
+character-entities — 2.0.2 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/character-entities/-/character-entities-2.0.2.tgz
+https://github.com/wooorm/character-entities
+https://github.com/wooorm/character-entities/archive/9231d7cd8935db394a8c10af7e069cec9a6743d9.tar.gz
+mdast-util-to-string — 3.2.0 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/mdast-util-to-string/-/mdast-util-to-string-3.2.0.tgz
+https://github.com/syntax-tree/mdast-util-to-string
+https://github.com/syntax-tree/mdast-util-to-string/archive/33aca2105f50fc60d57a781101e469e0325b7b53.tar.gz
+micromark — 3.2.0 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/micromark/-/micromark-3.2.0.tgz
+https://github.com/micromark/micromark.git#main
+https://github.com/micromark/micromark.git#main/archive/94b7679646bc0221899bba034f52f4abb3700f81.tar.gz
+debug — 4.3.4 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/debug/-/debug-4.3.4.tgz
+https://github.com/debug-js/debug
+https://github.com/debug-js/debug/archive/da66c86c5fd71ef570f36b5b1edfa4472149f1bc.tar.gz
+ms — 2.1.2 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/ms/-/ms-2.1.2.tgz
+https://github.com/zeit/ms
+https://github.com/zeit/ms/archive/7920885eb232fbe7a5efdab956d3e7c507c92ddf.tar.gz
+supports-color — 8.1.1 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/supports-color/-/supports-color-8.1.1.tgz
+https://github.com/chalk/supports-color
+https://github.com/chalk/supports-color/archive/1e7f117cda1284e741c3cbcd661c21412bf169eb.tar.gz
+has-flag — 4.0.0 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/has-flag/-/has-flag-4.0.0.tgz
+https://github.com/sindresorhus/has-flag
+https://github.com/sindresorhus/has-flag/archive/474aa39afca7333d356c022fc5be4d31732bbba3.tar.gz
+micromark-core-commonmark — 1.1.0 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/micromark-core-commonmark/-/micromark-core-commonmark-1.1.0.tgz
+https://github.com/micromark/micromark.git#main
+https://github.com/micromark/micromark.git#main/archive/94b7679646bc0221899bba034f52f4abb3700f81.tar.gz
+micromark-factory-destination — 1.1.0 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/micromark-factory-destination/-/micromark-factory-destination-1.1.0.tgz
+https://github.com/micromark/micromark.git#main
+https://github.com/micromark/micromark.git#main/archive/94b7679646bc0221899bba034f52f4abb3700f81.tar.gz
+micromark-util-character — 1.2.0 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/micromark-util-character/-/micromark-util-character-1.2.0.tgz
+https://github.com/micromark/micromark.git#main
+https://github.com/micromark/micromark.git#main/archive/94b7679646bc0221899bba034f52f4abb3700f81.tar.gz
+micromark-util-symbol — 1.1.0 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/micromark-util-symbol/-/micromark-util-symbol-1.1.0.tgz
+https://github.com/micromark/micromark.git#main
+https://github.com/micromark/micromark.git#main/archive/94b7679646bc0221899bba034f52f4abb3700f81.tar.gz
+micromark-util-types — 1.1.0 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/micromark-util-types/-/micromark-util-types-1.1.0.tgz
+https://github.com/micromark/micromark.git#main
+https://github.com/micromark/micromark.git#main/archive/94b7679646bc0221899bba034f52f4abb3700f81.tar.gz
+micromark-factory-label — 1.1.0 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/micromark-factory-label/-/micromark-factory-label-1.1.0.tgz
+https://github.com/micromark/micromark.git#main
+https://github.com/micromark/micromark.git#main/archive/94b7679646bc0221899bba034f52f4abb3700f81.tar.gz
+uvu — 0.5.6 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/uvu/-/uvu-0.5.6.tgz
+https://github.com/lukeed/uvu
+https://github.com/lukeed/uvu/archive/56e1cb25ecd76cbf5cd3fd28c7a4c07db405c5c3.tar.gz
+dequal — 2.0.3 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/dequal/-/dequal-2.0.3.tgz
+https://github.com/lukeed/dequal
+https://github.com/lukeed/dequal/archive/37d4f27de03fa6264e406cd03288cec8255fca4c.tar.gz
+diff — 5.1.0 — frontend-dependency-notices
+BSD-3-Clause
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/diff/-/diff-5.1.0.tgz
+https://github.com/kpdecker/jsdiff
+kleur — 4.1.5 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/kleur/-/kleur-4.1.5.tgz
+https://github.com/lukeed/kleur
+https://github.com/lukeed/kleur/archive/fa3454483899ddab550d08c18c028e6db1aab0e5.tar.gz
+sade — 1.8.1 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/sade/-/sade-1.8.1.tgz
+https://github.com/lukeed/sade
+https://github.com/lukeed/sade/archive/1cdf3e464ca899dcd6e758a50eb82cf7cf484771.tar.gz
+mri — 1.2.0 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/mri/-/mri-1.2.0.tgz
+https://github.com/lukeed/mri
+https://github.com/lukeed/mri/archive/e73e9f9d5b02124d14ac17dac2c4801687d3e99a.tar.gz
+micromark-factory-space — 1.1.0 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/micromark-factory-space/-/micromark-factory-space-1.1.0.tgz
+https://github.com/micromark/micromark.git#main
+https://github.com/micromark/micromark.git#main/archive/94b7679646bc0221899bba034f52f4abb3700f81.tar.gz
+micromark-factory-title — 1.1.0 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/micromark-factory-title/-/micromark-factory-title-1.1.0.tgz
+https://github.com/micromark/micromark.git#main
+https://github.com/micromark/micromark.git#main/archive/94b7679646bc0221899bba034f52f4abb3700f81.tar.gz
+micromark-factory-whitespace — 1.1.0 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/micromark-factory-whitespace/-/micromark-factory-whitespace-1.1.0.tgz
+https://github.com/micromark/micromark.git#main
+https://github.com/micromark/micromark.git#main/archive/94b7679646bc0221899bba034f52f4abb3700f81.tar.gz
+micromark-util-chunked — 1.1.0 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/micromark-util-chunked/-/micromark-util-chunked-1.1.0.tgz
+https://github.com/micromark/micromark.git#main
+https://github.com/micromark/micromark.git#main/archive/94b7679646bc0221899bba034f52f4abb3700f81.tar.gz
+micromark-util-classify-character — 1.1.0 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/micromark-util-classify-character/-/micromark-util-classify-character-1.1.0.tgz
+https://github.com/micromark/micromark.git#main
+https://github.com/micromark/micromark.git#main/archive/94b7679646bc0221899bba034f52f4abb3700f81.tar.gz
+micromark-util-html-tag-name — 1.2.0 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/micromark-util-html-tag-name/-/micromark-util-html-tag-name-1.2.0.tgz
+https://github.com/micromark/micromark.git#main
+https://github.com/micromark/micromark.git#main/archive/94b7679646bc0221899bba034f52f4abb3700f81.tar.gz
+micromark-util-normalize-identifier — 1.1.0 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/micromark-util-normalize-identifier/-/micromark-util-normalize-identifier-1.1.0.tgz
+https://github.com/micromark/micromark.git#main
+https://github.com/micromark/micromark.git#main/archive/94b7679646bc0221899bba034f52f4abb3700f81.tar.gz
+micromark-util-resolve-all — 1.1.0 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/micromark-util-resolve-all/-/micromark-util-resolve-all-1.1.0.tgz
+https://github.com/micromark/micromark.git#main
+https://github.com/micromark/micromark.git#main/archive/94b7679646bc0221899bba034f52f4abb3700f81.tar.gz
+micromark-util-subtokenize — 1.1.0 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/micromark-util-subtokenize/-/micromark-util-subtokenize-1.1.0.tgz
+https://github.com/micromark/micromark.git#main
+https://github.com/micromark/micromark.git#main/archive/94b7679646bc0221899bba034f52f4abb3700f81.tar.gz
+micromark-util-combine-extensions — 1.1.0 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/micromark-util-combine-extensions/-/micromark-util-combine-extensions-1.1.0.tgz
+https://github.com/micromark/micromark.git#main
+https://github.com/micromark/micromark.git#main/archive/94b7679646bc0221899bba034f52f4abb3700f81.tar.gz
+micromark-util-decode-numeric-character-reference — 1.1.0 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/micromark-util-decode-numeric-character-reference/-/micromark-util-decode-numeric-character-reference-1.1.0.tgz
+https://github.com/micromark/micromark.git#main
+https://github.com/micromark/micromark.git#main/archive/94b7679646bc0221899bba034f52f4abb3700f81.tar.gz
+micromark-util-encode — 1.1.0 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/micromark-util-encode/-/micromark-util-encode-1.1.0.tgz
+https://github.com/micromark/micromark.git#main
+https://github.com/micromark/micromark.git#main/archive/94b7679646bc0221899bba034f52f4abb3700f81.tar.gz
+micromark-util-sanitize-uri — 1.2.0 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/micromark-util-sanitize-uri/-/micromark-util-sanitize-uri-1.2.0.tgz
+https://github.com/micromark/micromark.git#main
+https://github.com/micromark/micromark.git#main/archive/94b7679646bc0221899bba034f52f4abb3700f81.tar.gz
+micromark-util-decode-string — 1.1.0 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/micromark-util-decode-string/-/micromark-util-decode-string-1.1.0.tgz
+https://github.com/micromark/micromark.git#main
+https://github.com/micromark/micromark.git#main/archive/94b7679646bc0221899bba034f52f4abb3700f81.tar.gz
+unist-util-stringify-position — 3.0.3 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/unist-util-stringify-position/-/unist-util-stringify-position-3.0.3.tgz
+https://github.com/syntax-tree/unist-util-stringify-position
+https://github.com/syntax-tree/unist-util-stringify-position/archive/e0cad5fc199831b457ce0efc1fab11dcdc097d11.tar.gz
+non-layered-tidy-tree-layout — 2.0.2 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/non-layered-tidy-tree-layout/-/non-layered-tidy-tree-layout-2.0.2.tgz
+https://github.com/stetrevor/non-layered-tidy-tree-layout
+stylis — 4.3.1 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/stylis/-/stylis-4.3.1.tgz
+https://github.com/thysultan/stylis.js
+https://github.com/thysultan/stylis.js/archive/c1f81ff815527d51d791fee9456840e32230ab23.tar.gz
+ts-dedent — 2.2.0 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/ts-dedent/-/ts-dedent-2.2.0.tgz
+https://github.com/tamino-martinius/node-ts-dedent
+https://github.com/tamino-martinius/node-ts-dedent/archive/70e153460de0141afd09ff402b50047103a4c409.tar.gz
+uuid — 9.0.1 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/uuid/-/uuid-9.0.1.tgz
+https://github.com/uuidjs/uuid
+https://github.com/uuidjs/uuid/archive/ca1d39d58a6308d5311bcb356a931aa818ec0ded.tar.gz
+web-worker — 1.3.0 — frontend-dependency-notices
+Apache-2.0
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/web-worker/-/web-worker-1.3.0.tgz
+https://github.com/developit/web-worker
+https://github.com/developit/web-worker/archive/b89a392aa178c70701ee89abef4a5d30f8c59527.tar.gz
+js-yaml — 4.1.0 — frontend-dependency-notices
+MIT
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://registry.npmjs.org/js-yaml/-/js-yaml-4.1.0.tgz
+https://github.com/nodeca/js-yaml
+https://github.com/nodeca/js-yaml/archive/2cef47bebf60da141b78b085f3dea3b5733dcc12.tar.gz
+argparse — 2.0.1 — frontend-dependency-notices
+Python-2.0
+License metadata is missing, ambiguous, or requires review.
+
+https://registry.npmjs.org/argparse/-/argparse-2.0.1.tgz
+https://github.com/nodeca/argparse
+https://github.com/nodeca/argparse/archive/e373563876f1c049826c21bd1c9388f6a5737a3e.tar.gz
+guava — 31.1-jre — frontend-java-dependency-notices
+Apache-2.0
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://repo.maven.apache.org/maven2/com/google/guava/guava/31.1-jre/guava-31.1-jre-sources.jar
+https://repo.maven.apache.org/maven2/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar
+guava-gwt — 31.1-jre — frontend-java-dependency-notices
+Apache-2.0
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://repo.maven.apache.org/maven2/com/google/guava/guava-gwt/31.1-jre/guava-gwt-31.1-jre-sources.jar
+https://repo.maven.apache.org/maven2/com/google/guava/guava-gwt/31.1-jre/guava-gwt-31.1-jre.jar
+gwt-user — 2.10.0 — frontend-java-dependency-notices
+Apache-2.0
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://repo.maven.apache.org/maven2/org/gwtproject/gwt-user/2.10.0/gwt-user-2.10.0-sources.jar
+https://repo.maven.apache.org/maven2/org/gwtproject/gwt-user/2.10.0/gwt-user-2.10.0.jar
+emf-common — 2.12.4 — frontend-java-dependency-notices
+EPL-1.0
+Preserve applicable notices/source and practical library replacement; review modifications and linking.
+
+https://repo.maven.apache.org/maven2/com/genmymodel/emf/gwt/emf-common/2.12.4/emf-common-2.12.4-sources.jar
+https://repo.maven.apache.org/maven2/com/genmymodel/emf/gwt/emf-common/2.12.4/emf-common-2.12.4.jar
+https://raw.githubusercontent.com/spdx/license-list-data/main/text/EPL-1.0.txt
+emf-ecore — 2.12.4 — frontend-java-dependency-notices
+EPL-1.0
+Preserve applicable notices/source and practical library replacement; review modifications and linking.
+
+https://repo.maven.apache.org/maven2/com/genmymodel/emf/gwt/emf-ecore/2.12.4/emf-ecore-2.12.4-sources.jar
+https://repo.maven.apache.org/maven2/com/genmymodel/emf/gwt/emf-ecore/2.12.4/emf-ecore-2.12.4.jar
+https://raw.githubusercontent.com/spdx/license-list-data/main/text/EPL-1.0.txt
+org.eclipse.xtend.lib — 2.28.0 — frontend-java-dependency-notices
+EPL-2.0
+Preserve applicable notices/source and practical library replacement; review modifications and linking.
+
+https://repo.maven.apache.org/maven2/org/eclipse/xtend/org.eclipse.xtend.lib/2.28.0/org.eclipse.xtend.lib-2.28.0-sources.jar
+https://repo.maven.apache.org/maven2/org/eclipse/xtend/org.eclipse.xtend.lib/2.28.0/org.eclipse.xtend.lib-2.28.0.jar
+https://raw.githubusercontent.com/spdx/license-list-data/main/text/EPL-2.0.txt
+org.eclipse.xtext.xbase.lib — 2.28.0 — frontend-java-dependency-notices
+EPL-2.0
+Preserve applicable notices/source and practical library replacement; review modifications and linking.
+
+https://repo.maven.apache.org/maven2/org/eclipse/xtext/org.eclipse.xtext.xbase.lib/2.28.0/org.eclipse.xtext.xbase.lib-2.28.0-sources.jar
+https://repo.maven.apache.org/maven2/org/eclipse/xtext/org.eclipse.xtext.xbase.lib/2.28.0/org.eclipse.xtext.xbase.lib-2.28.0.jar
+https://raw.githubusercontent.com/spdx/license-list-data/main/text/EPL-2.0.txt
+zlib (launcher) — 1.3.2 — embedded-launcher
+Zlib
+Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+https://zlib.net/zlib-1.3.2.tar.gz
 pip — 26.2.1 — embedded
 MIT
 Preserve embedded bootstrap package and vendored notices.
@@ -196,79 +1109,79 @@ Review pinned native tool/source and its dependency notices.
 
 annotated-doc — 0.0.5 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 annotated-types — 0.8.0 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 anyio — 4.15.1 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 astroid — 4.3.4 — upstream-download
 LGPL-2.1-or-later
-Preserve applicable notices/source and practical library replacement; review modifications and linking.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Preserve applicable notices/source and practical library replacement; review modifications and linking.
 
 attrs — 26.1.0 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 bandit — 1.9.4 — upstream-download
 Apache-2.0
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 black — 25.12.0 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 boolean-py — 5.0 — upstream-download
 BSD-2-Clause
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 build — 1.6.1 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 cachecontrol — 0.14.4 — upstream-download
 Apache-2.0
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 certifi — 2026.7.22 — upstream-download
 MPL-2.0
-Preserve applicable notices/source and practical library replacement; review modifications and linking.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Preserve applicable notices/source and practical library replacement; review modifications and linking.
 
 cffi — 2.1.1 — upstream-download
 MIT-0
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 cfgv — 3.5.0 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 charset-normalizer — 3.5.2 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 choreographer — 1.4.0 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 click — 8.5.0 — upstream-download
 BSD-3-Clause
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 contourpy — 1.4.0 — upstream-download
 BSD-3-Clause
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 coverage — 7.16.2 — upstream-download
 Apache-2.0
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 cryptography — 48.0.1 — upstream-download
 Apache-2.0 OR BSD-3-Clause
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 cycler — 0.12.1 — upstream-download
 Copyright (c) 2015, matplotlib project
@@ -298,123 +1211,127 @@ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
 CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-Preserve applicable notices/source and practical library replacement; review modifications and linking.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Preserve applicable notices/source and practical library replacement; review modifications and linking.
 
 cyclonedx-python-lib — 11.12.0 — upstream-download
 Apache-2.0
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 decorator — 5.3.1 — upstream-download
 BSD-2-Clause
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 defusedxml — 0.7.1 — upstream-download
 PSFL
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 dill — 0.4.1 — upstream-download
 BSD-3-Clause
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 distlib — 0.4.3 — upstream-download
 PSF-2.0
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 docker — 7.2.0 — upstream-download
 Apache-2.0
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 docutils — 0.23 — upstream-download
 License :: Public Domain; License :: OSI Approved :: BSD License; License :: OSI Approved :: GNU General Public License (GPL)
-Do not approve proprietary integration without reviewing the exact license and use.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Do not approve proprietary integration without reviewing the exact license and use.
 
 et-xmlfile — 2.0.0 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
-fastapi — 0.143.0 — upstream-download
+fastapi — 0.143.2 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
-filelock — 4.1.1 — upstream-download
+filelock — 4.2.0 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 flake8 — 7.4.1 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
-fonttools — 4.66.1 — upstream-download
+fonttools — 4.67.0 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 google-auth — 2.62.0 — upstream-download
 Apache 2.0
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 greenlet — 3.5.6 — upstream-download
 MIT AND PSF-2.0
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 gssapi — 1.10.1 — upstream-download
 ISC
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 h11 — 0.16.0 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 httptools — 0.9.0 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 id — 1.6.1 — upstream-download
 License :: OSI Approved :: Apache Software License
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 identify — 2.6.20 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 idna — 3.20 — upstream-download
 BSD-3-Clause
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+
+imapclient — 3.1.0 — upstream-download
+3-Clause BSD License
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 iniconfig — 2.3.1 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 isort — 6.1.0 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 jaraco-classes — 3.4.0 — upstream-download
 License :: OSI Approved :: MIT License
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 jaraco-context — 6.1.2 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 jaraco-functools — 4.6.0 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 jeepney — 0.9.0 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 jinja2 — 3.1.6 — upstream-download
 License :: OSI Approved :: BSD License
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 jsonschema — 4.26.0 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 jsonschema-specifications — 2025.9.1 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 kaleido — 1.5.0 — upstream-download
 The MIT License (MIT)
@@ -439,11 +1356,11 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-Preserve applicable notices/source and practical library replacement; review modifications and linking.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Preserve applicable notices/source and practical library replacement; review modifications and linking.
 
 keyring — 25.7.0 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 kiwisolver — 1.5.1 — upstream-download
 =========================
@@ -518,15 +1435,15 @@ to indicate the copyright and license terms:
 # The full license is in the file LICENSE, distributed with this software.
 #------------------------------------------------------------------------------
 
-Preserve applicable notices/source and practical library replacement; review modifications and linking.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Preserve applicable notices/source and practical library replacement; review modifications and linking.
 
 librt — 0.16.0 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 license-expression — 30.4.4 — upstream-download
 Apache-2.0
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 logistro — 2.0.1 — upstream-download
 MIT License
@@ -551,19 +1468,19 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-Preserve applicable notices/source and practical library replacement; review modifications and linking.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Preserve applicable notices/source and practical library replacement; review modifications and linking.
 
 lxml — 6.1.3 — upstream-download
 BSD-3-Clause
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 markdown-it-py — 3.0.0 — upstream-download
 License :: OSI Approved :: MIT License
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 markupsafe — 3.0.4 — upstream-download
 BSD-3-Clause
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 matplotlib — 3.11.2 — upstream-download
 License agreement for matplotlib versions 1.3.0 and later
@@ -1820,71 +2737,71 @@ License agreement for matplotlib versions 1.3.0 and later
    the X11R4 release, copyright M.I.T. -- the complete copyright notice
    may be found in the (unused) file Gist/host.c.
 
-Preserve applicable notices/source and practical library replacement; review modifications and linking.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Preserve applicable notices/source and practical library replacement; review modifications and linking.
 
 mccabe — 0.7.0 — upstream-download
 Expat license
-License metadata is missing, ambiguous, or requires review.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: License metadata is missing, ambiguous, or requires review.
 
 mdurl — 0.1.2 — upstream-download
 License :: OSI Approved :: MIT License
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
-more-itertools — 11.2.0 — upstream-download
+more-itertools — 11.2.1 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 msgpack — 1.2.3 — upstream-download
 Apache-2.0
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 mypy — 1.20.2 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 mypy-extensions — 1.1.0 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 narwhals — 2.27.1 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 nh3 — 0.3.7 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 nodeenv — 1.11.0 — upstream-download
 BSD
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 nodejs-wheel-binaries — 24.19.0 — upstream-download
 License :: OSI Approved :: MIT License
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 numpy — 2.5.4 — upstream-download
 BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 nvidia-ml-py — 13.615.71 — upstream-download
 BSD
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 openpyxl — 3.1.5 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 opentelemetry-api — 1.45.1 — upstream-download
 Apache-2.0
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 packageurl-python — 0.17.6 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 packaging — 26.3 — upstream-download
 Apache-2.0 OR BSD-2-Clause
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 pandas — 2.3.3 — upstream-download
 BSD 3-Clause License
@@ -3137,19 +4054,19 @@ BSD 3-Clause License
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
-Preserve applicable notices/source and practical library replacement; review modifications and linking.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Preserve applicable notices/source and practical library replacement; review modifications and linking.
 
 pathspec — 1.1.1 — upstream-download
 License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
-Preserve applicable notices/source and practical library replacement; review modifications and linking.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Preserve applicable notices/source and practical library replacement; review modifications and linking.
 
 pillow — 12.3.0 — upstream-download
 MIT-CMU
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 pip — 26.2.1 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 pip-api — 0.0.35 — upstream-download
 Apache License
@@ -3327,141 +4244,141 @@ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
    incurred by, or claims asserted against, such Contributor by reason
    of your accepting any such warranty or additional liability.
 
-Preserve applicable notices/source and practical library replacement; review modifications and linking.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Preserve applicable notices/source and practical library replacement; review modifications and linking.
 
 pip-audit — 2.10.1 — upstream-download
 License :: OSI Approved :: Apache Software License
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 pip-requirements-parser — 32.0.1 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 pipdeptree — 2.35.3 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
-platformdirs — 4.13.0 — upstream-download
+platformdirs — 4.13.3 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
-playwright — 1.63.0 — upstream-download
+playwright — 1.64.0 — upstream-download
 Apache-2.0
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 plotly — 6.9.0 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
-pluggy — 1.6.0 — upstream-download
+pluggy — 1.7.0 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 pre-commit — 4.7.0 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 psutil — 7.2.2 — upstream-download
 BSD-3-Clause
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 py-serializable — 2.1.0 — upstream-download
 Apache-2.0
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 pyarrow — 22.0.0 — upstream-download
 Apache Software License
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 pyasn1 — 0.6.4 — upstream-download
 BSD-2-Clause
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 pyasn1-modules — 0.4.2 — upstream-download
 BSD
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 pycairo — 1.29.0 — upstream-download
 LGPL-2.1-only OR MPL-1.1
-Preserve applicable notices/source and practical library replacement; review modifications and linking.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Preserve applicable notices/source and practical library replacement; review modifications and linking.
 
 pycodestyle — 2.15.0 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 pycparser — 3.11 — upstream-download
 BSD-3-Clause
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 pydantic — 2.14.1 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 pydantic-core — 2.50.1 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
-pyee — 13.0.1 — upstream-download
+pyee — 14.0.0 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 pyflakes — 4.0.3 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 pygments — 2.21.0 — upstream-download
 BSD-2-Clause
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 pygobject — 3.48.2 — upstream-download
 GNU Lesser General Public License v2.1 (LGPLv2.1)
-Preserve applicable notices/source and practical library replacement; review modifications and linking.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Preserve applicable notices/source and practical library replacement; review modifications and linking.
 
 pyjwt — 2.15.1 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 pylint — 4.1.3 — upstream-download
 GPL-2.0-or-later
-Keep the tool an independent process; comply with source/notices for anything redistributed.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Keep the tool an independent process; comply with source/notices for anything redistributed.
 
 pyparsing — 3.3.3 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 pypdf — 6.20.1 — upstream-download
 BSD-3-Clause
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 pypdfium2 — 5.14.0 — upstream-download
 BSD-3-Clause, Apache-2.0, dependency licenses
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 pyproject-hooks — 1.3.3 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 pyright — 1.1.414 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 pyspnego — 0.12.4 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 pytest — 9.1.1 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 pytest-cov — 7.1.0 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 python-dateutil — 2.9.0.post0 — upstream-download
 Dual License
-License metadata is missing, ambiguous, or requires review.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: License metadata is missing, ambiguous, or requires review.
 
-python-discovery — 1.6.2 — upstream-download
+python-discovery — 1.6.3 — upstream-download
 Permission is hereby granted, free of charge, to any person obtaining a
 copy of this software and associated documentation files (the
 "Software"), to deal in the Software without restriction, including
@@ -3480,23 +4397,23 @@ IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
 CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-Preserve applicable notices/source and practical library replacement; review modifications and linking.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Preserve applicable notices/source and practical library replacement; review modifications and linking.
 
 python-docx — 1.2.0 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 python-dotenv — 1.2.4 — upstream-download
 BSD-3-Clause
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 python-pptx — 1.0.2 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 python-xlib — 0.33 — upstream-download
 LGPLv2+
-Preserve applicable notices/source and practical library replacement; review modifications and linking.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Preserve applicable notices/source and practical library replacement; review modifications and linking.
 
 pytokens — 0.4.1 — upstream-download
 MIT License
@@ -3521,79 +4438,79 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-Preserve applicable notices/source and practical library replacement; review modifications and linking.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Preserve applicable notices/source and practical library replacement; review modifications and linking.
 
 pytz — 2026.5 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 pyyaml — 6.0.3 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 readme-renderer — 46.0 — upstream-download
 Apache-2.0
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 referencing — 0.37.0 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 regex — 2026.9.29 — upstream-download
 Apache-2.0 AND CNRI-Python
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 requests — 2.34.2 — upstream-download
 Apache-2.0
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 requests-gssapi — 1.4.0 — upstream-download
 ISC
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 requests-ntlm — 1.3.0 — upstream-download
 ISC
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 requests-toolbelt — 1.0.0 — upstream-download
 Apache 2.0
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 rfc3986 — 2.0.0 — upstream-download
 Apache 2.0
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 rich — 14.3.4 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 rpds-py — 2026.9.1 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
-ruff — 0.17.0 — upstream-download
+ruff — 0.17.1 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 secretstorage — 3.5.0 — upstream-download
 BSD-3-Clause
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 shellingham — 1.5.4 — upstream-download
 ISC License
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 simplejson — 4.2.0 — upstream-download
 MIT OR AFL-2.1
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 six — 1.17.0 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 sortedcontainers — 2.4.0 — upstream-download
 Apache 2.0
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 sqlglot — 26.33.0 — upstream-download
 MIT License
@@ -3618,75 +4535,75 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-Preserve applicable notices/source and practical library replacement; review modifications and linking.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Preserve applicable notices/source and practical library replacement; review modifications and linking.
 
 starlette — 1.8.0 — upstream-download
 BSD-3-Clause
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 stevedore — 5.9.1 — upstream-download
 Apache-2.0
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 tomli — 2.5.0 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 tomli-w — 1.2.0 — upstream-download
 License :: OSI Approved :: MIT License
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
-tomlkit — 0.15.1 — upstream-download
+tomlkit — 0.15.2 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 twine — 6.2.0 — upstream-download
 Apache-2.0
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 typer — 0.27.3 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 typing-extensions — 4.16.0 — upstream-download
 PSF-2.0
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 typing-inspection — 0.4.4 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 tzdata — 2026.5 — upstream-download
 Apache-2.0
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 urllib3 — 2.8.0 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 uvicorn — 0.54.0 — upstream-download
 BSD-3-Clause
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 uvloop — 0.23.0 — upstream-download
 MIT License
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
-virtualenv — 21.14.7 — upstream-download
+virtualenv — 21.14.8 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 watchfiles — 1.3.0 — upstream-download
 MIT
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 websockets — 16.1.1 — upstream-download
 BSD-3-Clause
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 xlsxwriter — 3.2.9 — upstream-download
 BSD-2-Clause
-Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
+Customer downloads directly from upstream; this payload does not redistribute this package. Integration review: Generally compatible with proprietary distribution; preserve notices and satisfy exact license terms.
 
 cython — 3.1.4 — customer-build-tool
 Apache-2.0

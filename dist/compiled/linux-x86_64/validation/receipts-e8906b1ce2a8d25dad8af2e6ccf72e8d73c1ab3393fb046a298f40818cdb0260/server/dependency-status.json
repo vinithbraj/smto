@@ -1,78 +1,78 @@
 {
   "disk_bytes": {
-    "applications": 153754378,
-    "browsers": 687912139,
-    "download_cache": 545312606,
-    "shared_environments": 975301184,
+    "applications": 158814620,
+    "browsers": 711303519,
+    "download_cache": 647906691,
+    "shared_environments": 976018090,
     "shared_runtimes": 192942749,
     "tools": 189896350
   },
-  "environment": "/validation/home/install/environments/c259ec22c9b1aa26ef723b2a477423883fd10c923ec2951c67ff8cad63315aab/4393059077134e7cac28cbe099096835",
+  "environment": "/validation/home/install/environments/727bd1e49676524bc7cb39a7ab6063fabfc0521c626bd640d80dd6ea1b7335ca/594d17e28c4c452d934683fc4640ac65",
   "events": [
     {
-      "at": 1792086397.2385824,
+      "at": 1792128672.8341599,
       "stage": "Preparing shared Python environment"
     },
     {
-      "at": 1792086400.8982668,
+      "at": 1792128676.4285624,
       "stage": "Installing core Python dependencies"
     },
     {
-      "at": 1792086407.1873872,
+      "at": 1792128679.3519015,
       "stage": "Installing system prerequisites (administrator access may be required)"
     },
     {
-      "at": 1792086538.7116354,
+      "at": 1792128813.0962641,
       "stage": "Installing additional Python dependencies"
     },
     {
-      "at": 1792086571.384622,
+      "at": 1792128827.759672,
       "stage": "Building gssapi"
     },
     {
-      "at": 1792086651.3657358,
+      "at": 1792128906.1817858,
       "stage": "Building pycairo"
     },
     {
-      "at": 1792086660.583313,
+      "at": 1792128915.1629221,
       "stage": "Building pygobject"
     },
     {
-      "at": 1792086671.8115866,
+      "at": 1792128926.078139,
       "stage": "Required native file finder"
     },
     {
-      "at": 1792086673.6110804,
+      "at": 1792128927.8861854,
       "stage": "Browser download"
     },
     {
-      "at": 1792086694.6181922,
+      "at": 1792128949.1351898,
       "stage": "Browser system libraries"
     },
     {
-      "at": 1792086713.2483327,
+      "at": 1792128967.6585596,
       "stage": "Browser verification"
     },
     {
-      "at": 1792086714.9187622,
+      "at": 1792128969.3300261,
       "stage": "Plotly PNG rendering"
     },
     {
-      "at": 1792086719.9274752,
+      "at": 1792128974.7021697,
       "stage": "Dependency consistency"
     },
     {
-      "at": 1792086720.9720562,
+      "at": 1792128975.7251232,
       "stage": "Feature verification"
     },
     {
-      "at": 1792086741.860751,
+      "at": 1792128996.504193,
       "stage": "Verifying mandatory application imports and file finder"
     }
   ],
   "failed_checks": [],
   "failed_steps": [],
-  "finished_at": 1792086748.7220616,
+  "finished_at": 1792129003.3288517,
   "native_clients": [
     {
       "name": "git",
@@ -1698,10 +1698,10 @@
       "version": "v0.28.0"
     }
   ],
-  "profile_id": "c259ec22c9b1aa26ef723b2a477423883fd10c923ec2951c67ff8cad63315aab",
+  "profile_id": "727bd1e49676524bc7cb39a7ab6063fabfc0521c626bd640d80dd6ea1b7335ca",
   "root": "/validation/home/install",
   "stage": "Verifying mandatory application imports and file finder",
-  "started_at": 1792086397.238579,
+  "started_at": 1792128672.8341568,
   "state": "ready",
   "summary": "All supported dependencies are installed and verified."
 }

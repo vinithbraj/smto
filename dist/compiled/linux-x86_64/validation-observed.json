@@ -1,33 +1,5 @@
 {
-  "8cd736ac20dd71480cf1be92a220255a56daff742cf38301a44ab0a1f4af3f70": {
-    "glibc": "glibc 2.35",
-    "kernel": "6.17.0-41-generic",
-    "not_exercised": [
-      "desktop-session-permissions",
-      "external-services-and-credentials",
-      "older-kernel-and-CPU-hardware"
-    ],
-    "os_release": "PRETTY_NAME=\"Ubuntu 22.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"22.04\"\nVERSION=\"22.04.5 LTS (Jammy Jellyfish)\"\nVERSION_CODENAME=jammy\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=jammy\n",
-    "passed": [
-      "fresh-no-system-python",
-      "core-setup",
-      "full-headless-feature-setup",
-      "help-version-status",
-      "compiled-workers",
-      "browser-visualization-ocr",
-      "startup-health-tls-and-shutdown",
-      "embedded-version-startup",
-      "source-free-inventory",
-      "controller-first",
-      "roles-share-environment",
-      "offline-reuse"
-    ],
-    "status": "passed",
-    "storage": "/validation/home/install",
-    "target": "linux-x86_64",
-    "validation_image": "sha256:224960310eeb65d28af4606fd37091e1a8ca896aa614f17dedc2eef543655b4a"
-  },
-  "ae463316ff1c72cf4b946fd0b4a72af9de6ba75af315e8f5e2dc3cc422109ed2": {
+  "0887515671660b071b1c04df07e0d058a3d50de47eaa30cd97b5843b24f2072a": {
     "glibc": "glibc 2.35",
     "kernel": "6.17.0-41-generic",
     "not_exercised": [
@@ -47,6 +19,42 @@
       "embedded-version-startup",
       "embedded-version-api-desktop-and-mobile-headers",
       "source-free-inventory",
+      "lifecycle-readonly-install-doctor-backup-uninstall-purge",
+      "lifecycle-shared-runtime-and-external-environment-preserved",
+      "lifecycle-installed-launcher-startup-and-shutdown",
+      "lifecycle-download-directory-auto-repair",
+      "controller-first",
+      "roles-share-environment",
+      "offline-reuse"
+    ],
+    "status": "passed",
+    "storage": "/validation/home/install",
+    "target": "linux-x86_64",
+    "validation_image": "sha256:224960310eeb65d28af4606fd37091e1a8ca896aa614f17dedc2eef543655b4a"
+  },
+  "473c0b0f474d1af536dd98dffe43afdeebe020deb93ede894faeff0f4762aff3": {
+    "glibc": "glibc 2.35",
+    "kernel": "6.17.0-41-generic",
+    "not_exercised": [
+      "desktop-session-permissions",
+      "external-services-and-credentials",
+      "older-kernel-and-CPU-hardware"
+    ],
+    "os_release": "PRETTY_NAME=\"Ubuntu 22.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"22.04\"\nVERSION=\"22.04.5 LTS (Jammy Jellyfish)\"\nVERSION_CODENAME=jammy\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=jammy\n",
+    "passed": [
+      "fresh-no-system-python",
+      "core-setup",
+      "full-headless-feature-setup",
+      "help-version-status",
+      "compiled-workers",
+      "browser-visualization-ocr",
+      "startup-health-tls-and-shutdown",
+      "embedded-version-startup",
+      "source-free-inventory",
+      "lifecycle-readonly-install-doctor-backup-uninstall-purge",
+      "lifecycle-shared-runtime-and-external-environment-preserved",
+      "lifecycle-installed-launcher-startup-and-shutdown",
+      "lifecycle-download-directory-auto-repair",
       "controller-first",
       "roles-share-environment",
       "offline-reuse"

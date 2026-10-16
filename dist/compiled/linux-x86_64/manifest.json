@@ -1,9 +1,9 @@
 {
   "artifacts": [
     {
-      "application_extracted_bytes": 153754378,
+      "application_extracted_bytes": 158814620,
       "artifact": "openfabric-server",
-      "artifact_sha256": "ae463316ff1c72cf4b946fd0b4a72af9de6ba75af315e8f5e2dc3cc422109ed2",
+      "artifact_sha256": "0887515671660b071b1c04df07e0d058a3d50de47eaa30cd97b5843b24f2072a",
       "build_channel": "dev",
       "build_environment": {
         "base_image": "ubuntu:22.04@sha256:5ec03bb3441e8b0bf3b4f9cd4629a1ae763010dc3035bb8da3ae6cf026486401",
@@ -229,25 +229,25 @@
         "schema_version": 1,
         "target": "linux-x86_64"
       },
-      "build_id": "8535f5b66d0b8f85ce6d1a37",
-      "build_timestamp": "20261015T172718448064Z",
-      "build_version": "dev.e103e9178883.20261015.20261015T172718448064Z",
-      "built_at": "2026-10-15T17:27:18.448064Z",
+      "build_id": "139749fdc529de5f8e22e777",
+      "build_timestamp": "20261016T052758853968Z",
+      "build_version": "dev.465d538f649b.20261016.20261016T052758853968Z",
+      "built_at": "2026-10-16T05:27:58.853968Z",
       "cache_bytes": "Measured separately; platform cache directory",
-      "commit_date": "20261015",
+      "commit_date": "20261016",
       "compatibility": {
         "dependency_lock": {
-          "lock_sha256": "5ffe45f06e08fc463c257a3b77388d26966fe3c52ed48a17988823ce6c92d691",
+          "lock_sha256": "88510788bb27b5ed363d078fadc9867fef2402e2f545d5537f8aae6cf1aec333",
           "maximum_glibc": "2.35",
           "python_abi": "3.12",
           "status": "passed",
-          "wheels": 160
+          "wheels": 161
         },
         "highest_glibc_symbol": "2.34",
         "maximum_glibc": "2.35",
         "status": "passed"
       },
-      "compiled_source_sha256": "9f1340543e2160bdcb179103549e0443975c3ab1422a66fa02633e5bc1c41305",
+      "compiled_source_sha256": "86b408ea1fbbcda0e09c238bd193413f74f8b1214ef0ffd29bb38a1506518235",
       "compliance_blockers": [
         "cpython-incorporated-libraries",
         "compiler-and-nuitka-runtime",
@@ -259,8 +259,8 @@
         "embedded-native-corresponding-source"
       ],
       "component": "server",
-      "download_bytes": 119672941,
-      "download_reduction_percent": 81.86,
+      "download_bytes": 121334981,
+      "download_reduction_percent": 81.61,
       "legacy_download_bytes": 659793918,
       "packaging_backend": "compiled-shared-v1",
       "product_version": "0.10.0",
@@ -272,9 +272,9 @@
         "notarized": false,
         "signed": false
       },
-      "source_commit_timestamp": "2026-10-15T10:33:42Z",
+      "source_commit_timestamp": "2026-10-16T05:10:46Z",
       "source_dirty": true,
-      "source_revision": "e103e9178883211f35cf2dad5d2896e6aa425c74",
+      "source_revision": "465d538f649b204646e1c64deadf92ae5a634043",
       "target": "linux-x86_64",
       "target_arch": "x86_64",
       "target_os": "linux",
@@ -298,6 +298,10 @@
           "embedded-version-startup",
           "embedded-version-api-desktop-and-mobile-headers",
           "source-free-inventory",
+          "lifecycle-readonly-install-doctor-backup-uninstall-purge",
+          "lifecycle-shared-runtime-and-external-environment-preserved",
+          "lifecycle-installed-launcher-startup-and-shutdown",
+          "lifecycle-download-directory-auto-repair",
           "controller-first",
           "roles-share-environment",
           "offline-reuse"
@@ -307,12 +311,12 @@
         "target": "linux-x86_64",
         "validation_image": "sha256:224960310eeb65d28af4606fd37091e1a8ca896aa614f17dedc2eef543655b4a"
       },
-      "version": "dev.e103e9178883.20261015.20261015T172718448064Z"
+      "version": "dev.465d538f649b.20261016.20261016T052758853968Z"
     },
     {
-      "application_extracted_bytes": 153754379,
+      "application_extracted_bytes": 158814621,
       "artifact": "openfabric-gateway",
-      "artifact_sha256": "8cd736ac20dd71480cf1be92a220255a56daff742cf38301a44ab0a1f4af3f70",
+      "artifact_sha256": "473c0b0f474d1af536dd98dffe43afdeebe020deb93ede894faeff0f4762aff3",
       "build_channel": "dev",
       "build_environment": {
         "base_image": "ubuntu:22.04@sha256:5ec03bb3441e8b0bf3b4f9cd4629a1ae763010dc3035bb8da3ae6cf026486401",
@@ -538,25 +542,25 @@
         "schema_version": 1,
         "target": "linux-x86_64"
       },
-      "build_id": "1ed89dbdac000920d68790b2",
-      "build_timestamp": "20261015T172718448064Z",
-      "build_version": "dev.e103e9178883.20261015.20261015T172718448064Z",
-      "built_at": "2026-10-15T17:27:18.448064Z",
+      "build_id": "d41b99dfeb8337a47f5004f1",
+      "build_timestamp": "20261016T052758853968Z",
+      "build_version": "dev.465d538f649b.20261016.20261016T052758853968Z",
+      "built_at": "2026-10-16T05:27:58.853968Z",
       "cache_bytes": "Measured separately; platform cache directory",
-      "commit_date": "20261015",
+      "commit_date": "20261016",
       "compatibility": {
         "dependency_lock": {
-          "lock_sha256": "5ffe45f06e08fc463c257a3b77388d26966fe3c52ed48a17988823ce6c92d691",
+          "lock_sha256": "88510788bb27b5ed363d078fadc9867fef2402e2f545d5537f8aae6cf1aec333",
           "maximum_glibc": "2.35",
           "python_abi": "3.12",
           "status": "passed",
-          "wheels": 160
+          "wheels": 161
         },
         "highest_glibc_symbol": "2.34",
         "maximum_glibc": "2.35",
         "status": "passed"
       },
-      "compiled_source_sha256": "9f1340543e2160bdcb179103549e0443975c3ab1422a66fa02633e5bc1c41305",
+      "compiled_source_sha256": "86b408ea1fbbcda0e09c238bd193413f74f8b1214ef0ffd29bb38a1506518235",
       "compliance_blockers": [
         "cpython-incorporated-libraries",
         "compiler-and-nuitka-runtime",
@@ -568,8 +572,8 @@
         "embedded-native-corresponding-source"
       ],
       "component": "gateway",
-      "download_bytes": 119672943,
-      "download_reduction_percent": 81.5,
+      "download_bytes": 121334985,
+      "download_reduction_percent": 81.24,
       "legacy_download_bytes": 646760277,
       "packaging_backend": "compiled-shared-v1",
       "product_version": "0.10.0",
@@ -581,9 +585,9 @@
         "notarized": false,
         "signed": false
       },
-      "source_commit_timestamp": "2026-10-15T10:33:42Z",
+      "source_commit_timestamp": "2026-10-16T05:10:46Z",
       "source_dirty": true,
-      "source_revision": "e103e9178883211f35cf2dad5d2896e6aa425c74",
+      "source_revision": "465d538f649b204646e1c64deadf92ae5a634043",
       "target": "linux-x86_64",
       "target_arch": "x86_64",
       "target_os": "linux",
@@ -606,6 +610,10 @@
           "startup-health-tls-and-shutdown",
           "embedded-version-startup",
           "source-free-inventory",
+          "lifecycle-readonly-install-doctor-backup-uninstall-purge",
+          "lifecycle-shared-runtime-and-external-environment-preserved",
+          "lifecycle-installed-launcher-startup-and-shutdown",
+          "lifecycle-download-directory-auto-repair",
           "controller-first",
           "roles-share-environment",
           "offline-reuse"
@@ -615,7 +623,7 @@
         "target": "linux-x86_64",
         "validation_image": "sha256:224960310eeb65d28af4606fd37091e1a8ca896aa614f17dedc2eef543655b4a"
       },
-      "version": "dev.e103e9178883.20261015.20261015T172718448064Z"
+      "version": "dev.465d538f649b.20261016.20261016T052758853968Z"
     }
   ],
   "schema_version": 1
