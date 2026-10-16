@@ -1,7 +1,7 @@
 # Binary release artifacts for SMTO (large files tracked with Git LFS)
 # NOTE: filenames use an underscore (linux-x86_64), not a dot, so the pattern must match that.
 LINUX/binary/smto-* filter=lfs diff=lfs store=lfs bump=lfs
-dist/compiled/linux-x86_64/openfabric-* filter=lfs diff=lfs store=lfs bump=lfs
+dist/compiled/linux-x86_64/smto-* filter=lfs diff=lfs store=lfs bump=lfs
 MACOS/binary/smto-agent-macos-x86_64 filter=lfs diff=lfs merge=lfs -text
 MACOS/binary/smto-server-macos-x86_64 filter=lfs diff=lfs merge=lfs -text
 MACOS/native/OpenFabric[[:space:]]Gateway.app.zip filter=lfs diff=lfs merge=lfs -text
