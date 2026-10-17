@@ -1,9 +1,9 @@
 {
   "artifacts": [
     {
-      "application_extracted_bytes": 158840376,
+      "application_extracted_bytes": 161394082,
       "artifact": "smto-server",
-      "artifact_sha256": "1ec4c64c5de54b2e5249cf9222d3b31eb3f257d0548ba8fc9c01dcd086b6391c",
+      "artifact_sha256": "7d8092459e3950dcc3100a907a43188e955b31aa9b3ce241453139aac61d68b3",
       "build_channel": "dev",
       "build_environment": {
         "base_image": "ubuntu:22.04@sha256:5ec03bb3441e8b0bf3b4f9cd4629a1ae763010dc3035bb8da3ae6cf026486401",
@@ -229,12 +229,12 @@
         "schema_version": 1,
         "target": "linux-x86_64"
       },
-      "build_id": "11b611938df00a0886acd5e2",
-      "build_timestamp": "20261016T132827993981Z",
-      "build_version": "dev.93a3ac5edb4e.20261016.20261016T132827993981Z",
-      "built_at": "2026-10-16T13:28:27.993981Z",
+      "build_id": "a0e389380b08a359cb35d4fa",
+      "build_timestamp": "20261017T061307818359Z",
+      "build_version": "dev.354badd602b9.20261017.20261017T061307818359Z",
+      "built_at": "2026-10-17T06:13:07.818359Z",
       "cache_bytes": "Measured separately; platform cache directory",
-      "commit_date": "20261016",
+      "commit_date": "20261017",
       "compatibility": {
         "dependency_lock": {
           "lock_sha256": "88510788bb27b5ed363d078fadc9867fef2402e2f545d5537f8aae6cf1aec333",
@@ -247,7 +247,7 @@
         "maximum_glibc": "2.35",
         "status": "passed"
       },
-      "compiled_source_sha256": "4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f",
+      "compiled_source_sha256": "fb86c79a2750a1da5c0b4efdba0459c4a200dfde59ada0dd1ba59f6562fa79f9",
       "compliance_blockers": [
         "cpython-incorporated-libraries",
         "compiler-and-nuitka-runtime",
@@ -259,8 +259,8 @@
         "embedded-native-corresponding-source"
       ],
       "component": "server",
-      "download_bytes": 121343400,
-      "download_reduction_percent": 81.61,
+      "download_bytes": 122226335,
+      "download_reduction_percent": 81.48,
       "legacy_download_bytes": 659793918,
       "packaging_backend": "compiled-shared-v1",
       "product_version": "0.10.0",
@@ -272,9 +272,9 @@
         "notarized": false,
         "signed": false
       },
-      "source_commit_timestamp": "2026-10-16T13:17:47Z",
+      "source_commit_timestamp": "2026-10-17T06:01:27Z",
       "source_dirty": false,
-      "source_revision": "93a3ac5edb4ea9af71e2dc98d9a27c0e5c2227d6",
+      "source_revision": "354badd602b9756a1406984fc98d6ae6e9cba87a",
       "target": "linux-x86_64",
       "target_arch": "x86_64",
       "target_os": "linux",
@@ -311,12 +311,12 @@
         "target": "linux-x86_64",
         "validation_image": "sha256:610d301dcf891f37d18ca812100acce17647ff6ef2cf740e03b3dc5a9d3e73a0"
       },
-      "version": "dev.93a3ac5edb4e.20261016.20261016T132827993981Z"
+      "version": "dev.354badd602b9.20261017.20261017T061307818359Z"
     },
     {
-      "application_extracted_bytes": 158840377,
+      "application_extracted_bytes": 161394083,
       "artifact": "smto-gateway",
-      "artifact_sha256": "aa747254843a0b072bb971cda88851cda1704738bf71c04a06ca6a769df701c6",
+      "artifact_sha256": "fbf2de855a2686b43d669caf0180fcecab9ee683852e3a45b2c8baf89405e62a",
       "build_channel": "dev",
       "build_environment": {
         "base_image": "ubuntu:22.04@sha256:5ec03bb3441e8b0bf3b4f9cd4629a1ae763010dc3035bb8da3ae6cf026486401",
@@ -542,12 +542,12 @@
         "schema_version": 1,
         "target": "linux-x86_64"
       },
-      "build_id": "fc7404e0063c80109a0ac30f",
-      "build_timestamp": "20261016T132827993981Z",
-      "build_version": "dev.93a3ac5edb4e.20261016.20261016T132827993981Z",
-      "built_at": "2026-10-16T13:28:27.993981Z",
+      "build_id": "91ddedcdf3a85e19c2ab88fe",
+      "build_timestamp": "20261017T061307818359Z",
+      "build_version": "dev.354badd602b9.20261017.20261017T061307818359Z",
+      "built_at": "2026-10-17T06:13:07.818359Z",
       "cache_bytes": "Measured separately; platform cache directory",
-      "commit_date": "20261016",
+      "commit_date": "20261017",
       "compatibility": {
         "dependency_lock": {
           "lock_sha256": "88510788bb27b5ed363d078fadc9867fef2402e2f545d5537f8aae6cf1aec333",
@@ -560,7 +560,7 @@
         "maximum_glibc": "2.35",
         "status": "passed"
       },
-      "compiled_source_sha256": "4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f",
+      "compiled_source_sha256": "fb86c79a2750a1da5c0b4efdba0459c4a200dfde59ada0dd1ba59f6562fa79f9",
       "compliance_blockers": [
         "cpython-incorporated-libraries",
         "compiler-and-nuitka-runtime",
@@ -572,8 +572,8 @@
         "embedded-native-corresponding-source"
       ],
       "component": "gateway",
-      "download_bytes": 121343404,
-      "download_reduction_percent": 81.24,
+      "download_bytes": 122226338,
+      "download_reduction_percent": 81.1,
       "legacy_download_bytes": 646760277,
       "packaging_backend": "compiled-shared-v1",
       "product_version": "0.10.0",
@@ -585,9 +585,9 @@
         "notarized": false,
         "signed": false
       },
-      "source_commit_timestamp": "2026-10-16T13:17:47Z",
+      "source_commit_timestamp": "2026-10-17T06:01:27Z",
       "source_dirty": false,
-      "source_revision": "93a3ac5edb4ea9af71e2dc98d9a27c0e5c2227d6",
+      "source_revision": "354badd602b9756a1406984fc98d6ae6e9cba87a",
       "target": "linux-x86_64",
       "target_arch": "x86_64",
       "target_os": "linux",
@@ -623,7 +623,7 @@
         "target": "linux-x86_64",
         "validation_image": "sha256:610d301dcf891f37d18ca812100acce17647ff6ef2cf740e03b3dc5a9d3e73a0"
       },
-      "version": "dev.93a3ac5edb4e.20261016.20261016T132827993981Z"
+      "version": "dev.354badd602b9.20261017.20261017T061307818359Z"
     }
   ],
   "schema_version": 1
