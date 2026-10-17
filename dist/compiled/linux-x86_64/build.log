@@ -1,7 +1,6 @@
-Build version: dev.354badd602b9.20261017.20261017T061307818359Z
+Build version: dev.a92e4c9d8e26.20261017.20261017T221814926554Z
 Compiling agent_runtime (log: /workspace/.build/compiled/targets/linux-x86_64/modules/agent_runtime/compile.log)
 Compiling gateway_core (log: /workspace/.build/compiled/targets/linux-x86_64/modules/gateway_core/compile.log)
-Compiling smto_runtime (log: /workspace/.build/compiled/targets/linux-x86_64/modules/smto_runtime/compile.log)
 Compiling smto_site (log: /workspace/.build/compiled/targets/linux-x86_64/modules/smto_site/compile.log)
 -- Configuring done
 -- Generating done
@@ -12,7 +11,7 @@ Consolidate compiler generated dependencies of target smto-launcher
 [ 89%] Building CXX object CMakeFiles/smto-launcher.dir/src/main.cpp.o
 [ 94%] Linking CXX executable smto-launcher
 [100%] Built target smto-launcher
-server: /workspace/dist/compiled/.staging/dev.354badd602b9.20261017.20261017T061307818359Z/smto-server (116.6 MiB)
+server: /workspace/dist/compiled/.staging/dev.a92e4c9d8e26.20261017.20261017T221814926554Z/smto-server (117.2 MiB)
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /workspace/.build/compiled/targets/linux-x86_64/gateway-launcher
@@ -22,4 +21,4 @@ Consolidate compiler generated dependencies of target smto-launcher
 [ 89%] Building CXX object CMakeFiles/smto-launcher.dir/src/main.cpp.o
 [ 94%] Linking CXX executable smto-launcher
 [100%] Built target smto-launcher
-gateway: /workspace/dist/compiled/.staging/dev.354badd602b9.20261017.20261017T061307818359Z/smto-gateway (116.6 MiB)
+gateway: /workspace/dist/compiled/.staging/dev.a92e4c9d8e26.20261017.20261017T221814926554Z/smto-gateway (117.2 MiB)
