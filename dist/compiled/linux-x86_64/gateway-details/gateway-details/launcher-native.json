@@ -1,0 +1,32 @@
+{
+  "errors": [],
+  "files": [
+    {
+      "dependencies": [
+        "libc.so.6",
+        "ld-linux-x86-64.so.2"
+      ],
+      "path": "smto-launcher",
+      "required_cpu_properties": [
+        "x86-64-baseline"
+      ],
+      "required_glibc_versions": [
+        "2.2.5",
+        "2.3",
+        "2.3.2",
+        "2.3.4",
+        "2.4",
+        "2.6",
+        "2.14",
+        "2.17",
+        "2.32",
+        "2.33",
+        "2.34"
+      ],
+      "search_paths": [],
+      "sha256": "3d6453d9597dc61c7cc60503652674b91879b19439f92a5e55a1c1e589b1942c"
+    }
+  ],
+  "highest_glibc_symbol": "2.34",
+  "target": "linux-x86_64"
+}

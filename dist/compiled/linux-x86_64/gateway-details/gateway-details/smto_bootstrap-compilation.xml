@@ -1,0 +1,457 @@
+<?xml version='1.0' encoding='utf8'?>
+<nuitka-compilation-report nuitka_version="4.3" nuitka_commercial_version="not installed" mode="module" completion="yes">
+  <scons_environment c_compiler="gcc" the_cc_name="gcc" the_compiler="gcc" c_flags="-march=x86-64 -mtune=generic" cxx_flags="-march=x86-64 -mtune=generic" />
+  <module name="smto_bootstrap" kind="CompiledPythonPackage" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/d873f4e88d327559dd53ba99b8e1fb168828eedcb75505832969d73cab798d85/smto_bootstrap/__init__.py">
+    <plugin-influence name="implicit-imports" influence="condition-used" condition="module_mode and plugin(&quot;pyside6&quot;)" tags_used="module_mode,plugin" result="false" />
+    <optimization-time pass="1" time="0.0603" micro_passes="4" max_branch_merge="63" merged_total="1021" />
+    <optimization-time pass="2" time="0.0123" micro_passes="1" max_branch_merge="62" merged_total="256" />
+    <code-generation-time time="0.0831" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="233872" />
+      <cpu system-cpu-time="0.1352" user-cpu-time="4.6222" />
+      <memory memory-max-rss-kb="117460" />
+      <system-events context-switches-involuntary="6" context-switches-voluntary="71" disk-input-blocks="0" disk-output-blocks="464" page-faults-major="0" page-faults-minor="36456" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="os" finding="excluded" line="1" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="__future__" finding="excluded" line="2" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="argparse" finding="excluded" line="4" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="importlib" finding="excluded" line="5" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="json" finding="excluded" line="6" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="os" finding="excluded" line="7" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="runpy" finding="excluded" line="8" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="subprocess" finding="excluded" line="9" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="sys" finding="absolute" line="10" reason="import" />
+      <module_usage name="pathlib" finding="excluded" line="11" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="smto_bootstrap.common" finding="relative" line="13" reason="import" />
+      <module_usage name="smto_bootstrap" finding="absolute" line="71" reason="import" />
+      <module_usage name="smto_bootstrap.interaction" finding="relative" line="71" reason="import fromlist" />
+      <module_usage name="smto_bootstrap" finding="absolute" line="90" reason="import" />
+      <module_usage name="smto_bootstrap.interaction" finding="relative" line="90" reason="import fromlist" />
+      <module_usage name="smto_bootstrap" finding="absolute" line="91" reason="import" />
+      <module_usage name="smto_bootstrap.lifecycle" finding="relative" line="91" reason="import fromlist" />
+      <module_usage name="smto_bootstrap" finding="absolute" line="92" reason="import" />
+      <module_usage name="smto_bootstrap.lifecycle_runtime" finding="relative" line="92" reason="import fromlist" />
+      <module_usage name="smto_bootstrap" finding="absolute" line="93" reason="import" />
+      <module_usage name="smto_bootstrap.lifecycle_store" finding="relative" line="93" reason="import fromlist" />
+      <module_usage name="smto_runtime.entrypoint" finding="absolute" line="141" reason="import" />
+      <module_usage name="smto_bootstrap.installer" finding="relative" line="167" reason="import" />
+      <module_usage name="smto_runtime.entrypoint" finding="absolute" line="176" reason="import" />
+    </module_usages>
+  </module>
+  <module name="smto_bootstrap.common" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/d873f4e88d327559dd53ba99b8e1fb168828eedcb75505832969d73cab798d85/smto_bootstrap/common.py">
+    <optimization-time pass="1" time="0.0644" micro_passes="5" max_branch_merge="11" merged_total="1305" />
+    <optimization-time pass="2" time="0.0110" micro_passes="1" max_branch_merge="9" merged_total="255" />
+    <code-generation-time time="0.0371" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="163384" />
+      <cpu system-cpu-time="0.1068" user-cpu-time="2.7935" />
+      <memory memory-max-rss-kb="95512" />
+      <system-events context-switches-involuntary="23" context-switches-voluntary="66" disk-input-blocks="0" disk-output-blocks="320" page-faults-major="0" page-faults-minor="23721" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="__future__" finding="excluded" line="2" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="contextlib" finding="excluded" line="4" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="hashlib" finding="excluded" line="5" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="json" finding="excluded" line="6" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="os" finding="excluded" line="7" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="shutil" finding="excluded" line="8" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="ssl" finding="excluded" line="9" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="stat" finding="excluded" line="10" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="sys" finding="absolute" line="11" reason="import" />
+      <module_usage name="tarfile" finding="excluded" line="12" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="tempfile" finding="excluded" line="13" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="time" finding="absolute" line="14" reason="import" />
+      <module_usage name="urllib.request" finding="absolute" line="15" reason="import" />
+      <module_usage name="zipfile" finding="excluded" line="16" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="pathlib" finding="excluded" line="17" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="smto_bootstrap.interaction" finding="relative" line="19" reason="import" />
+      <module_usage name="smto_bootstrap.permissions" finding="relative" line="53" reason="import" />
+      <module_usage name="smto_bootstrap.interaction" finding="relative" line="91" reason="import" />
+      <module_usage name="fcntl" finding="absolute" line="169" reason="import" />
+    </module_usages>
+  </module>
+  <module name="smto_bootstrap.installer" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/d873f4e88d327559dd53ba99b8e1fb168828eedcb75505832969d73cab798d85/smto_bootstrap/installer.py">
+    <optimization-time pass="1" time="0.1475" micro_passes="5" max_branch_merge="35" merged_total="2775" />
+    <optimization-time pass="2" time="0.0294" micro_passes="1" max_branch_merge="33" merged_total="522" />
+    <code-generation-time time="0.0925" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="380880" />
+      <cpu system-cpu-time="0.2020" user-cpu-time="7.0196" />
+      <memory memory-max-rss-kb="159660" />
+      <system-events context-switches-involuntary="52" context-switches-voluntary="143" disk-input-blocks="0" disk-output-blocks="744" page-faults-major="0" page-faults-minor="45808" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="__future__" finding="excluded" line="2" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="json" finding="excluded" line="4" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="os" finding="excluded" line="5" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="shutil" finding="excluded" line="6" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="subprocess" finding="excluded" line="7" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="sys" finding="absolute" line="8" reason="import" />
+      <module_usage name="time" finding="absolute" line="9" reason="import" />
+      <module_usage name="uuid" finding="excluded" line="10" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="pathlib" finding="excluded" line="11" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="smto_bootstrap.common" finding="relative" line="13" reason="import" />
+      <module_usage name="smto_bootstrap.permissions" finding="relative" line="15" reason="import" />
+      <module_usage name="smto_bootstrap" finding="absolute" line="16" reason="import" />
+      <module_usage name="smto_bootstrap.interaction" finding="relative" line="16" reason="import fromlist" />
+      <module_usage name="smto_bootstrap" finding="absolute" line="244" reason="import" />
+      <module_usage name="smto_bootstrap.worker_command" finding="not-found" line="244" reason="import fromlist" />
+      <module_usage name="smto_bootstrap.system" finding="relative" line="245" reason="import" />
+    </module_usages>
+  </module>
+  <module name="smto_bootstrap.interaction" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/d873f4e88d327559dd53ba99b8e1fb168828eedcb75505832969d73cab798d85/smto_bootstrap/interaction.py">
+    <optimization-time pass="1" time="0.0286" micro_passes="4" max_branch_merge="17" merged_total="598" />
+    <optimization-time pass="2" time="0.0043" micro_passes="1" max_branch_merge="15" merged_total="108" />
+    <code-generation-time time="0.0217" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="82328" />
+      <cpu system-cpu-time="0.0927" user-cpu-time="1.4008" />
+      <memory memory-max-rss-kb="71532" />
+      <system-events context-switches-involuntary="3" context-switches-voluntary="35" disk-input-blocks="0" disk-output-blocks="168" page-faults-major="0" page-faults-minor="16554" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="__future__" finding="excluded" line="3" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="contextlib" finding="excluded" line="5" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="contextvars" finding="excluded" line="6" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="os" finding="excluded" line="7" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="subprocess" finding="excluded" line="8" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="sys" finding="absolute" line="9" reason="import" />
+      <module_usage name="tempfile" finding="excluded" line="10" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="dataclasses" finding="excluded" line="11" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+    </module_usages>
+  </module>
+  <module name="smto_bootstrap.lifecycle" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/d873f4e88d327559dd53ba99b8e1fb168828eedcb75505832969d73cab798d85/smto_bootstrap/lifecycle.py">
+    <optimization-time pass="1" time="0.5434" micro_passes="6" max_branch_merge="47" merged_total="8865" />
+    <optimization-time pass="2" time="0.0876" micro_passes="1" max_branch_merge="40" merged_total="1480" />
+    <code-generation-time time="0.1913" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="646928" />
+      <cpu system-cpu-time="0.4671" user-cpu-time="13.0468" />
+      <memory memory-max-rss-kb="234564" />
+      <system-events context-switches-involuntary="21" context-switches-voluntary="161" disk-input-blocks="0" disk-output-blocks="1264" page-faults-major="0" page-faults-minor="65035" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="__future__" finding="excluded" line="3" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="argparse" finding="excluded" line="5" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="contextlib" finding="excluded" line="6" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="hashlib" finding="excluded" line="7" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="io" finding="excluded" line="8" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="json" finding="excluded" line="9" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="os" finding="excluded" line="10" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="shutil" finding="excluded" line="11" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="socket" finding="excluded" line="12" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="sys" finding="absolute" line="13" reason="import" />
+      <module_usage name="tarfile" finding="excluded" line="14" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="time" finding="absolute" line="15" reason="import" />
+      <module_usage name="pathlib" finding="excluded" line="16" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="smto_bootstrap" finding="absolute" line="18" reason="import" />
+      <module_usage name="smto_bootstrap.interaction" finding="relative" line="18" reason="import fromlist" />
+      <module_usage name="smto_bootstrap" finding="absolute" line="19" reason="import" />
+      <module_usage name="smto_bootstrap.lifecycle_runtime" finding="relative" line="19" reason="import fromlist" />
+      <module_usage name="smto_bootstrap" finding="absolute" line="20" reason="import" />
+      <module_usage name="smto_bootstrap.lifecycle_services" finding="relative" line="20" reason="import fromlist" />
+      <module_usage name="smto_bootstrap" finding="absolute" line="21" reason="import" />
+      <module_usage name="smto_bootstrap.lifecycle_store" finding="relative" line="21" reason="import fromlist" />
+      <module_usage name="smto_bootstrap.common" finding="relative" line="22" reason="import" />
+      <module_usage name="smto_bootstrap.permissions" finding="relative" line="23" reason="import" />
+      <module_usage name="smto_bootstrap.lifecycle_legacy" finding="relative" line="120" reason="import" />
+      <module_usage name="smto_bootstrap.lifecycle_legacy" finding="relative" line="297" reason="import" />
+      <module_usage name="smto_bootstrap.installer" finding="relative" line="372" reason="import" />
+      <module_usage name="smto_runtime.entrypoint" finding="absolute" line="434" reason="import" />
+      <module_usage name="smto_bootstrap.installer" finding="relative" line="436" reason="import" />
+      <module_usage name="smto_bootstrap.lifecycle_privilege" finding="relative" line="614" reason="import" />
+      <module_usage name="io" finding="excluded" line="732" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="smto_bootstrap.lifecycle_privilege" finding="relative" line="742" reason="import" />
+      <module_usage name="smto_bootstrap.lifecycle_privilege" finding="relative" line="765" reason="import" />
+      <module_usage name="smto_bootstrap.lifecycle_legacy" finding="relative" line="782" reason="import" />
+      <module_usage name="smto_bootstrap.lifecycle_privilege" finding="relative" line="814" reason="import" />
+      <module_usage name="smto_bootstrap.installer" finding="relative" line="934" reason="import" />
+    </module_usages>
+  </module>
+  <module name="smto_bootstrap.lifecycle_deferred" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/d873f4e88d327559dd53ba99b8e1fb168828eedcb75505832969d73cab798d85/smto_bootstrap/lifecycle_deferred.py">
+    <optimization-time pass="1" time="0.0176" micro_passes="4" max_branch_merge="20" merged_total="329" />
+    <optimization-time pass="2" time="0.0042" micro_passes="1" max_branch_merge="18" merged_total="80" />
+    <code-generation-time time="0.0163" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="80520" />
+      <cpu system-cpu-time="0.0687" user-cpu-time="1.3966" />
+      <memory memory-max-rss-kb="72080" />
+      <system-events context-switches-involuntary="4" context-switches-voluntary="25" disk-input-blocks="0" disk-output-blocks="160" page-faults-major="0" page-faults-minor="15932" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="__future__" finding="excluded" line="3" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="base64" finding="excluded" line="5" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="ctypes" finding="excluded" line="6" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="json" finding="excluded" line="7" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="os" finding="excluded" line="8" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="subprocess" finding="excluded" line="9" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="sys" finding="absolute" line="10" reason="import" />
+      <module_usage name="pathlib" finding="excluded" line="11" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="smto_bootstrap.common" finding="relative" line="13" reason="import" />
+      <module_usage name="ctypes.wintypes" finding="absolute" line="49" reason="import" />
+      <module_usage name="smto_bootstrap" finding="absolute" line="51" reason="import" />
+      <module_usage name="smto_bootstrap.lifecycle_store" finding="relative" line="51" reason="import fromlist" />
+      <module_usage name="smto_bootstrap.lifecycle_privilege" finding="relative" line="52" reason="import" />
+    </module_usages>
+  </module>
+  <module name="smto_bootstrap.lifecycle_legacy" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/d873f4e88d327559dd53ba99b8e1fb168828eedcb75505832969d73cab798d85/smto_bootstrap/lifecycle_legacy.py">
+    <optimization-time pass="1" time="0.0398" micro_passes="5" max_branch_merge="18" merged_total="648" />
+    <optimization-time pass="2" time="0.0086" micro_passes="1" max_branch_merge="18" merged_total="131" />
+    <code-generation-time time="0.0234" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="111552" />
+      <cpu system-cpu-time="0.0843" user-cpu-time="2.2557" />
+      <memory memory-max-rss-kb="86560" />
+      <system-events context-switches-involuntary="13" context-switches-voluntary="37" disk-input-blocks="0" disk-output-blocks="224" page-faults-major="0" page-faults-minor="21345" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="__future__" finding="excluded" line="3" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="json" finding="excluded" line="5" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="os" finding="excluded" line="6" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="subprocess" finding="excluded" line="7" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="pathlib" finding="excluded" line="8" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="smto_bootstrap" finding="absolute" line="10" reason="import" />
+      <module_usage name="smto_bootstrap.lifecycle_store" finding="relative" line="10" reason="import fromlist" />
+      <module_usage name="smto_bootstrap.common" finding="relative" line="11" reason="import" />
+      <module_usage name="smto_bootstrap.installer" finding="relative" line="19" reason="import" />
+    </module_usages>
+  </module>
+  <module name="smto_bootstrap.lifecycle_privilege" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/d873f4e88d327559dd53ba99b8e1fb168828eedcb75505832969d73cab798d85/smto_bootstrap/lifecycle_privilege.py">
+    <optimization-time pass="1" time="0.0296" micro_passes="4" max_branch_merge="21" merged_total="602" />
+    <optimization-time pass="2" time="0.0071" micro_passes="1" max_branch_merge="15" merged_total="140" />
+    <code-generation-time time="0.0210" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="105592" />
+      <cpu system-cpu-time="0.0882" user-cpu-time="1.8561" />
+      <memory memory-max-rss-kb="78220" />
+      <system-events context-switches-involuntary="1" context-switches-voluntary="32" disk-input-blocks="0" disk-output-blocks="208" page-faults-major="0" page-faults-minor="20205" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="__future__" finding="excluded" line="3" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="json" finding="excluded" line="5" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="os" finding="excluded" line="6" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="shutil" finding="excluded" line="7" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="subprocess" finding="excluded" line="8" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="sys" finding="absolute" line="9" reason="import" />
+      <module_usage name="tempfile" finding="excluded" line="10" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="pathlib" finding="excluded" line="11" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="smto_bootstrap.common" finding="relative" line="13" reason="import" />
+      <module_usage name="smto_bootstrap.lifecycle_store" finding="relative" line="18" reason="import" />
+      <module_usage name="smto_bootstrap" finding="absolute" line="25" reason="import" />
+      <module_usage name="smto_bootstrap.lifecycle_store" finding="relative" line="25" reason="import fromlist" />
+      <module_usage name="smto_bootstrap.lifecycle" finding="relative" line="30" reason="import" />
+      <module_usage name="smto_bootstrap.lifecycle_store" finding="relative" line="63" reason="import" />
+      <module_usage name="smto_bootstrap.lifecycle_store" finding="relative" line="73" reason="import" />
+      <module_usage name="smto_bootstrap.lifecycle" finding="relative" line="182" reason="import" />
+    </module_usages>
+  </module>
+  <module name="smto_bootstrap.lifecycle_runtime" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/d873f4e88d327559dd53ba99b8e1fb168828eedcb75505832969d73cab798d85/smto_bootstrap/lifecycle_runtime.py">
+    <optimization-time pass="1" time="0.0270" micro_passes="5" max_branch_merge="13" merged_total="463" />
+    <optimization-time pass="2" time="0.0046" micro_passes="1" max_branch_merge="8" merged_total="83" />
+    <code-generation-time time="0.0190" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="99856" />
+      <cpu system-cpu-time="0.0784" user-cpu-time="1.5278" />
+      <memory memory-max-rss-kb="73604" />
+      <system-events context-switches-involuntary="2" context-switches-voluntary="48" disk-input-blocks="0" disk-output-blocks="200" page-faults-major="0" page-faults-minor="16439" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="__future__" finding="excluded" line="3" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="contextlib" finding="excluded" line="5" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="ctypes" finding="excluded" line="6" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="os" finding="excluded" line="7" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="signal" finding="excluded" line="8" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="subprocess" finding="excluded" line="9" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="sys" finding="absolute" line="10" reason="import" />
+      <module_usage name="time" finding="absolute" line="11" reason="import" />
+      <module_usage name="pathlib" finding="excluded" line="12" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="smto_bootstrap.common" finding="relative" line="14" reason="import" />
+      <module_usage name="smto_bootstrap.lifecycle_store" finding="relative" line="15" reason="import" />
+      <module_usage name="json" finding="excluded" line="92" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+    </module_usages>
+  </module>
+  <module name="smto_bootstrap.lifecycle_services" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/d873f4e88d327559dd53ba99b8e1fb168828eedcb75505832969d73cab798d85/smto_bootstrap/lifecycle_services.py">
+    <optimization-time pass="1" time="0.0470" micro_passes="5" max_branch_merge="23" merged_total="888" />
+    <optimization-time pass="2" time="0.0079" micro_passes="1" max_branch_merge="16" merged_total="159" />
+    <code-generation-time time="0.0307" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="156336" />
+      <cpu system-cpu-time="0.1069" user-cpu-time="2.4069" />
+      <memory memory-max-rss-kb="88584" />
+      <system-events context-switches-involuntary="10" context-switches-voluntary="71" disk-input-blocks="0" disk-output-blocks="312" page-faults-major="0" page-faults-minor="20956" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="__future__" finding="excluded" line="3" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="os" finding="excluded" line="5" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="plistlib" finding="excluded" line="6" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="shutil" finding="excluded" line="7" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="subprocess" finding="excluded" line="8" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="sys" finding="absolute" line="9" reason="import" />
+      <module_usage name="tempfile" finding="excluded" line="10" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="time" finding="absolute" line="11" reason="import" />
+      <module_usage name="urllib.request" finding="absolute" line="12" reason="import" />
+      <module_usage name="xml.etree.ElementTree" finding="absolute" line="13" reason="import" />
+      <module_usage name="pathlib" finding="excluded" line="14" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="smto_bootstrap.common" finding="relative" line="16" reason="import" />
+      <module_usage name="smto_bootstrap.lifecycle_store" finding="relative" line="17" reason="import" />
+      <module_usage name="ssl" finding="excluded" line="278" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="smto_bootstrap.lifecycle_runtime" finding="relative" line="288" reason="import" />
+    </module_usages>
+  </module>
+  <module name="smto_bootstrap.lifecycle_store" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/d873f4e88d327559dd53ba99b8e1fb168828eedcb75505832969d73cab798d85/smto_bootstrap/lifecycle_store.py">
+    <optimization-time pass="1" time="0.0842" micro_passes="5" max_branch_merge="16" merged_total="1665" />
+    <optimization-time pass="2" time="0.0170" micro_passes="1" max_branch_merge="16" merged_total="322" />
+    <code-generation-time time="0.0485" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="217456" />
+      <cpu system-cpu-time="0.1138" user-cpu-time="3.6841" />
+      <memory memory-max-rss-kb="105788" />
+      <system-events context-switches-involuntary="7" context-switches-voluntary="85" disk-input-blocks="0" disk-output-blocks="432" page-faults-major="0" page-faults-minor="27471" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="__future__" finding="excluded" line="3" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="contextlib" finding="excluded" line="5" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="json" finding="excluded" line="6" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="os" finding="excluded" line="7" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="re" finding="excluded" line="8" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="stat" finding="excluded" line="9" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="sys" finding="absolute" line="10" reason="import" />
+      <module_usage name="time" finding="absolute" line="11" reason="import" />
+      <module_usage name="pathlib" finding="excluded" line="12" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="smto_bootstrap.common" finding="relative" line="14" reason="import" />
+      <module_usage name="smto_bootstrap.interaction" finding="relative" line="16" reason="import" />
+      <module_usage name="fcntl" finding="absolute" line="92" reason="import" />
+      <module_usage name="errno" finding="absolute" line="314" reason="import" />
+    </module_usages>
+  </module>
+  <module name="smto_bootstrap.permissions" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/d873f4e88d327559dd53ba99b8e1fb168828eedcb75505832969d73cab798d85/smto_bootstrap/permissions.py">
+    <optimization-time pass="1" time="0.0153" micro_passes="4" max_branch_merge="15" merged_total="204" />
+    <optimization-time pass="2" time="0.0028" micro_passes="1" max_branch_merge="11" merged_total="50" />
+    <code-generation-time time="0.0122" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="63552" />
+      <cpu system-cpu-time="0.0702" user-cpu-time="1.0632" />
+      <memory memory-max-rss-kb="64188" />
+      <system-events context-switches-involuntary="3" context-switches-voluntary="29" disk-input-blocks="0" disk-output-blocks="128" page-faults-major="0" page-faults-minor="14003" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="__future__" finding="excluded" line="2" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="contextlib" finding="excluded" line="4" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="contextvars" finding="excluded" line="5" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="os" finding="excluded" line="6" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="shutil" finding="excluded" line="7" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="stat" finding="excluded" line="8" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="subprocess" finding="excluded" line="9" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="sys" finding="absolute" line="10" reason="import" />
+      <module_usage name="smto_bootstrap.interaction" finding="relative" line="12" reason="import" />
+    </module_usages>
+  </module>
+  <module name="smto_bootstrap.system" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/d873f4e88d327559dd53ba99b8e1fb168828eedcb75505832969d73cab798d85/smto_bootstrap/system.py">
+    <optimization-time pass="1" time="0.1575" micro_passes="5" max_branch_merge="39" merged_total="2834" />
+    <optimization-time pass="2" time="0.0261" micro_passes="1" max_branch_merge="29" merged_total="518" />
+    <code-generation-time time="0.0781" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="288264" />
+      <cpu system-cpu-time="0.1455" user-cpu-time="5.1782" />
+      <memory memory-max-rss-kb="129020" />
+      <system-events context-switches-involuntary="15" context-switches-voluntary="78" disk-input-blocks="0" disk-output-blocks="568" page-faults-major="0" page-faults-minor="33551" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="__future__" finding="excluded" line="2" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="json" finding="excluded" line="4" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="os" finding="excluded" line="5" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="shutil" finding="excluded" line="6" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="subprocess" finding="excluded" line="7" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="sys" finding="absolute" line="8" reason="import" />
+      <module_usage name="tarfile" finding="excluded" line="9" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="zipfile" finding="excluded" line="10" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="pathlib" finding="excluded" line="11" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="smto_bootstrap.common" finding="relative" line="13" reason="import" />
+      <module_usage name="smto_bootstrap.interaction" finding="relative" line="15" reason="import" />
+      <module_usage name="smto_bootstrap.installer" finding="relative" line="33" reason="import" />
+      <module_usage name="platform" finding="excluded" line="142" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="ctypes" finding="excluded" line="199" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="ctypes.wintypes" finding="absolute" line="200" reason="import" />
+    </module_usages>
+  </module>
+  <linker-resources>
+    <cpu system-cpu-time="0.0196" user-cpu-time="0.0392" />
+    <memory memory-max-rss-kb="47640" />
+    <system-events context-switches-involuntary="1" context-switches-voluntary="7" disk-input-blocks="0" disk-output-blocks="4976" page-faults-major="0" page-faults-minor="4752" />
+  </linker-resources>
+  <performance>
+    <memory_usage name="after_launch" value="58552320" />
+    <memory_usage name="before_c_code_generation" value="68882432" />
+    <memory_usage name="before_running_scons" value="77312000" />
+  </performance>
+  <data_composer blob_size="56280" total="2663">
+    <module_data filename="__bytecode.const" blob_name=".bytecode" blob_size="3" input_size="0" />
+    <module_data filename="__constants.const" blob_name="" blob_size="996" input_size="2454" />
+    <module_data filename="module.smto_bootstrap.common.const" blob_name="smto_bootstrap.common" blob_size="2988" input_size="6547" />
+    <module_data filename="module.smto_bootstrap.const" blob_name="smto_bootstrap" blob_size="5434" input_size="9331" />
+    <module_data filename="module.smto_bootstrap.installer.const" blob_name="smto_bootstrap.installer" blob_size="9177" input_size="16166" />
+    <module_data filename="module.smto_bootstrap.interaction.const" blob_name="smto_bootstrap.interaction" blob_size="1278" input_size="3256" />
+    <module_data filename="module.smto_bootstrap.lifecycle.const" blob_name="smto_bootstrap.lifecycle" blob_size="10880" input_size="19119" />
+    <module_data filename="module.smto_bootstrap.lifecycle_deferred.const" blob_name="smto_bootstrap.lifecycle_deferred" blob_size="1806" input_size="3949" />
+    <module_data filename="module.smto_bootstrap.lifecycle_legacy.const" blob_name="smto_bootstrap.lifecycle_legacy" blob_size="2053" input_size="4667" />
+    <module_data filename="module.smto_bootstrap.lifecycle_privilege.const" blob_name="smto_bootstrap.lifecycle_privilege" blob_size="2391" input_size="4793" />
+    <module_data filename="module.smto_bootstrap.lifecycle_runtime.const" blob_name="smto_bootstrap.lifecycle_runtime" blob_size="1986" input_size="4624" />
+    <module_data filename="module.smto_bootstrap.lifecycle_services.const" blob_name="smto_bootstrap.lifecycle_services" blob_size="3306" input_size="7371" />
+    <module_data filename="module.smto_bootstrap.lifecycle_store.const" blob_name="smto_bootstrap.lifecycle_store" blob_size="4037" input_size="8420" />
+    <module_data filename="module.smto_bootstrap.permissions.const" blob_name="smto_bootstrap.permissions" blob_size="2489" input_size="4396" />
+    <module_data filename="module.smto_bootstrap.system.const" blob_name="smto_bootstrap.system" blob_size="7023" input_size="12896" />
+  </data_composer>
+  <performance-totals>
+    <optimization-time pass="1" time="1.2622" module_count="13" />
+    <optimization-time pass="2" time="0.2228" module_count="13" />
+    <optimization-time pass="all" time="1.4850" module_count="13" />
+    <code-generation-time time="0.6747" module_count="13" />
+    <c-compilation-time user-cpu-time="48.2515" system-cpu-time="1.7598" module_count="13" />
+    <c-linking-time user-cpu-time="0.0392" system-cpu-time="0.0196" />
+  </performance-totals>
+  <python_binary filename="${cwd}/.build/compiled/targets/linux-x86_64/modules/smto_bootstrap/smto_bootstrap.cpython-312-x86_64-linux-gnu.so" backend_resource_mode="incbin" reproducible="yes" size="2538392" />
+  <command_line>
+    <option value="--mode=module" />
+    <option value="/workspace/.build/compiled/targets/linux-x86_64/sources/d873f4e88d327559dd53ba99b8e1fb168828eedcb75505832969d73cab798d85/smto_bootstrap" />
+    <option value="--include-package=smto_bootstrap" />
+    <option value="--no-pyi-file" />
+    <option value="--assume-yes-for-downloads" />
+    <option value="--output-dir=/workspace/.build/compiled/targets/linux-x86_64/modules/smto_bootstrap" />
+    <option value="--jobs=8" />
+    <option value="--report=/workspace/.build/compiled/targets/linux-x86_64/modules/smto_bootstrap/compilation.xml" />
+  </command_line>
+  <plugins>
+    <plugin name="anti-bloat" user_enabled="no" />
+    <plugin name="gi" user_enabled="no" />
+    <plugin name="implicit-imports" user_enabled="no" />
+    <plugin name="options-nanny" user_enabled="no" />
+    <plugin name="pkg-resources" user_enabled="no" />
+    <plugin name="transformers" user_enabled="no" />
+  </plugins>
+  <distributions />
+  <python python_exe="${sys.prefix}/bin/python" python_flavor="Unknown" python_version="3.12.14" os_name="Linux" os_release="Ubuntu-Debian-22.04.5" arch_name="x86_64" filesystem_encoding="utf-8">
+    <search_path>
+      <path value="${cwd}/.build/compiled/targets/linux-x86_64/sources/d873f4e88d327559dd53ba99b8e1fb168828eedcb75505832969d73cab798d85" />
+      <path value="${cwd}" />
+      <path value="${sys.real_prefix}/lib/python3.12" />
+      <path value="${sys.real_prefix}/lib/python3.12/lib-dynload" />
+      <path value="${sys.prefix}/lib/python3.12/site-packages" />
+      <path value="${sys.prefix}/lib/python3.12/site-packages/setuptools/_vendor" />
+    </search_path>
+  </python>
+  <output run_filename="${cwd}/.build/compiled/targets/linux-x86_64/modules/smto_bootstrap/smto_bootstrap.cpython-312-x86_64-linux-gnu.so" />
+</nuitka-compilation-report>

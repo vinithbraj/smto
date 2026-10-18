@@ -1,9 +1,9 @@
 {
   "artifacts": [
     {
-      "application_extracted_bytes": 163472153,
+      "application_extracted_bytes": 165074088,
       "artifact": "smto-server",
-      "artifact_sha256": "19fd8b0fe5563a9a4aaf1818307f91cbdb983d8a6d11fd1ad6ec46c809c887a3",
+      "artifact_sha256": "760bfe4deeff447027b09f47768d718a85ea9152728653ee653bf9348e071f29",
       "build_channel": "dev",
       "build_environment": {
         "base_image": "ubuntu:22.04@sha256:5ec03bb3441e8b0bf3b4f9cd4629a1ae763010dc3035bb8da3ae6cf026486401",
@@ -229,12 +229,12 @@
         "schema_version": 1,
         "target": "linux-x86_64"
       },
-      "build_id": "5d04432658eac1ad9ff73f73",
-      "build_timestamp": "20261017T221814926554Z",
-      "build_version": "dev.a92e4c9d8e26.20261017.20261017T221814926554Z",
-      "built_at": "2026-10-17T22:18:14.926554Z",
+      "build_id": "96ad1f3b5327488ce39af4cb",
+      "build_timestamp": "20261018T190739292088Z",
+      "build_version": "dev.b83ef1986671.20261018.20261018T190739292088Z",
+      "built_at": "2026-10-18T19:07:39.292088Z",
       "cache_bytes": "Measured separately; platform cache directory",
-      "commit_date": "20261017",
+      "commit_date": "20261018",
       "compatibility": {
         "dependency_lock": {
           "lock_sha256": "88510788bb27b5ed363d078fadc9867fef2402e2f545d5537f8aae6cf1aec333",
@@ -247,8 +247,17 @@
         "maximum_glibc": "2.35",
         "status": "passed"
       },
-      "compiled_source_sha256": "59eae6c51e49deb272d0b37ef80482bd662ad79572a9aac66217f8763ef2ff8b",
+      "compiled_source_sha256": "dfb2073c1ac9457665f096bca27a197f71592c9d0622b6c79a18b24d2c4e9472",
       "compliance_blockers": [
+        "rights-holder and counsel approval of final terms",
+        "legal approval for exact source revision and target",
+        "reviewed contribution license scope",
+        "unverified scope entry: src/, assets/, build/, packaging/",
+        "unverified scope entry: build/config/EARLIER-APACHE-2.0.txt",
+        "unverified scope entry: licenses/",
+        "unverified scope entry: src/agent_runtime/skills/proxmox/generated/",
+        "human approval bound to exact legal document hashes",
+        "rights-holder/counsel evidence records",
         "cpython-incorporated-libraries",
         "compiler-and-nuitka-runtime",
         "frontend-vendor-assets",
@@ -259,8 +268,8 @@
         "embedded-native-corresponding-source"
       ],
       "component": "server",
-      "download_bytes": 122932910,
-      "download_reduction_percent": 81.37,
+      "download_bytes": 123455252,
+      "download_reduction_percent": 81.29,
       "legacy_download_bytes": 659793918,
       "packaging_backend": "compiled-shared-v1",
       "product_version": "0.10.0",
@@ -272,18 +281,51 @@
         "notarized": false,
         "signed": false
       },
-      "source_commit_timestamp": "2026-10-17T21:58:33Z",
+      "source_commit_timestamp": "2026-10-18T18:31:43Z",
       "source_dirty": false,
-      "source_revision": "a92e4c9d8e26e00ce0577e9f6aecf3d3a539a073",
+      "source_revision": "b83ef198667149e8d1dfb8be6dfda80c61e48c20",
       "target": "linux-x86_64",
       "target_arch": "x86_64",
       "target_os": "linux",
-      "version": "dev.a92e4c9d8e26.20261017.20261017T221814926554Z"
+      "validation": {
+        "glibc": "glibc 2.35",
+        "kernel": "6.17.0-41-generic",
+        "not_exercised": [
+          "desktop-session-permissions",
+          "external-services-and-credentials",
+          "older-kernel-and-CPU-hardware"
+        ],
+        "os_release": "PRETTY_NAME=\"Ubuntu 22.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"22.04\"\nVERSION=\"22.04.5 LTS (Jammy Jellyfish)\"\nVERSION_CODENAME=jammy\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=jammy\n",
+        "passed": [
+          "fresh-no-system-python",
+          "core-setup",
+          "full-headless-feature-setup",
+          "help-version-status",
+          "compiled-workers",
+          "browser-visualization-ocr",
+          "startup-health-tls-and-shutdown",
+          "embedded-version-startup",
+          "embedded-version-api-desktop-and-mobile-headers",
+          "source-free-inventory",
+          "lifecycle-readonly-install-doctor-backup-uninstall-purge",
+          "lifecycle-shared-runtime-and-external-environment-preserved",
+          "lifecycle-installed-launcher-startup-and-shutdown",
+          "lifecycle-download-directory-auto-repair",
+          "controller-first",
+          "roles-share-environment",
+          "offline-reuse"
+        ],
+        "status": "passed",
+        "storage": "/validation/home/install",
+        "target": "linux-x86_64",
+        "validation_image": "sha256:d1d0fb9f8b736f925a796c0083013585adad40f3912caf86418526faa558d946"
+      },
+      "version": "dev.b83ef1986671.20261018.20261018T190739292088Z"
     },
     {
-      "application_extracted_bytes": 163472154,
+      "application_extracted_bytes": 165074092,
       "artifact": "smto-gateway",
-      "artifact_sha256": "f3555ab0d58d5247c53d8a6460d0c4b91a57b247d0c7ec313dc816dad63b3cc4",
+      "artifact_sha256": "a058fefeabbc167e5c36c774b0488eaf2dbc01d83ab1573a31b597f8aa689452",
       "build_channel": "dev",
       "build_environment": {
         "base_image": "ubuntu:22.04@sha256:5ec03bb3441e8b0bf3b4f9cd4629a1ae763010dc3035bb8da3ae6cf026486401",
@@ -509,12 +551,12 @@
         "schema_version": 1,
         "target": "linux-x86_64"
       },
-      "build_id": "3d9433e3393d38a16b48443d",
-      "build_timestamp": "20261017T221814926554Z",
-      "build_version": "dev.a92e4c9d8e26.20261017.20261017T221814926554Z",
-      "built_at": "2026-10-17T22:18:14.926554Z",
+      "build_id": "248104c30db2fbc1331c648c",
+      "build_timestamp": "20261018T190739292088Z",
+      "build_version": "dev.b83ef1986671.20261018.20261018T190739292088Z",
+      "built_at": "2026-10-18T19:07:39.292088Z",
       "cache_bytes": "Measured separately; platform cache directory",
-      "commit_date": "20261017",
+      "commit_date": "20261018",
       "compatibility": {
         "dependency_lock": {
           "lock_sha256": "88510788bb27b5ed363d078fadc9867fef2402e2f545d5537f8aae6cf1aec333",
@@ -527,8 +569,17 @@
         "maximum_glibc": "2.35",
         "status": "passed"
       },
-      "compiled_source_sha256": "59eae6c51e49deb272d0b37ef80482bd662ad79572a9aac66217f8763ef2ff8b",
+      "compiled_source_sha256": "dfb2073c1ac9457665f096bca27a197f71592c9d0622b6c79a18b24d2c4e9472",
       "compliance_blockers": [
+        "rights-holder and counsel approval of final terms",
+        "legal approval for exact source revision and target",
+        "reviewed contribution license scope",
+        "unverified scope entry: src/, assets/, build/, packaging/",
+        "unverified scope entry: build/config/EARLIER-APACHE-2.0.txt",
+        "unverified scope entry: licenses/",
+        "unverified scope entry: src/agent_runtime/skills/proxmox/generated/",
+        "human approval bound to exact legal document hashes",
+        "rights-holder/counsel evidence records",
         "cpython-incorporated-libraries",
         "compiler-and-nuitka-runtime",
         "frontend-vendor-assets",
@@ -539,8 +590,8 @@
         "embedded-native-corresponding-source"
       ],
       "component": "gateway",
-      "download_bytes": 122932914,
-      "download_reduction_percent": 80.99,
+      "download_bytes": 123455259,
+      "download_reduction_percent": 80.91,
       "legacy_download_bytes": 646760277,
       "packaging_backend": "compiled-shared-v1",
       "product_version": "0.10.0",
@@ -552,13 +603,45 @@
         "notarized": false,
         "signed": false
       },
-      "source_commit_timestamp": "2026-10-17T21:58:33Z",
+      "source_commit_timestamp": "2026-10-18T18:31:43Z",
       "source_dirty": false,
-      "source_revision": "a92e4c9d8e26e00ce0577e9f6aecf3d3a539a073",
+      "source_revision": "b83ef198667149e8d1dfb8be6dfda80c61e48c20",
       "target": "linux-x86_64",
       "target_arch": "x86_64",
       "target_os": "linux",
-      "version": "dev.a92e4c9d8e26.20261017.20261017T221814926554Z"
+      "validation": {
+        "glibc": "glibc 2.35",
+        "kernel": "6.17.0-41-generic",
+        "not_exercised": [
+          "desktop-session-permissions",
+          "external-services-and-credentials",
+          "older-kernel-and-CPU-hardware"
+        ],
+        "os_release": "PRETTY_NAME=\"Ubuntu 22.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"22.04\"\nVERSION=\"22.04.5 LTS (Jammy Jellyfish)\"\nVERSION_CODENAME=jammy\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=jammy\n",
+        "passed": [
+          "fresh-no-system-python",
+          "core-setup",
+          "full-headless-feature-setup",
+          "help-version-status",
+          "compiled-workers",
+          "browser-visualization-ocr",
+          "startup-health-tls-and-shutdown",
+          "embedded-version-startup",
+          "source-free-inventory",
+          "lifecycle-readonly-install-doctor-backup-uninstall-purge",
+          "lifecycle-shared-runtime-and-external-environment-preserved",
+          "lifecycle-installed-launcher-startup-and-shutdown",
+          "lifecycle-download-directory-auto-repair",
+          "controller-first",
+          "roles-share-environment",
+          "offline-reuse"
+        ],
+        "status": "passed",
+        "storage": "/validation/home/install",
+        "target": "linux-x86_64",
+        "validation_image": "sha256:d1d0fb9f8b736f925a796c0083013585adad40f3912caf86418526faa558d946"
+      },
+      "version": "dev.b83ef1986671.20261018.20261018T190739292088Z"
     }
   ],
   "schema_version": 1
