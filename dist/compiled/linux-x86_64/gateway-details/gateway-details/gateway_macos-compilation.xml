@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='utf8'?>
+<nuitka-compilation-report nuitka_version="4.3" nuitka_commercial_version="not installed" mode="module" completion="yes">
+  <scons_environment c_compiler="gcc" the_cc_name="gcc" the_compiler="gcc" c_flags="-march=x86-64 -mtune=generic" cxx_flags="-march=x86-64 -mtune=generic" />
+  <module name="gateway_macos" kind="CompiledPythonPackage" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/gateway_macos/__init__.py">
+    <plugin-influence name="implicit-imports" influence="condition-used" condition="module_mode and plugin(&quot;pyside6&quot;)" tags_used="module_mode,plugin" result="false" />
+    <optimization-time pass="1" time="0.0013" micro_passes="2" />
+    <optimization-time pass="2" time="0.0004" micro_passes="1" />
+    <code-generation-time time="0.0259" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="16320" />
+      <cpu system-cpu-time="0.0372" user-cpu-time="0.2523" />
+      <memory memory-max-rss-kb="41544" />
+      <system-events context-switches-involuntary="0" context-switches-voluntary="13" disk-input-blocks="0" disk-output-blocks="32" page-faults-major="0" page-faults-minor="7326" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="os" finding="excluded" line="1" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="gateway_core" finding="absolute" line="28" reason="import" />
+      <module_usage name="gateway_core.__version__" finding="not-found" line="28" reason="import fromlist" />
+    </module_usages>
+  </module>
+  <module name="gateway_macos.app" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/gateway_macos/app.py">
+    <optimization-time pass="1" time="0.0043" micro_passes="3" max_branch_merge="3" merged_total="9" />
+    <optimization-time pass="2" time="0.0006" micro_passes="1" />
+    <code-generation-time time="0.0049" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="19880" />
+      <cpu system-cpu-time="0.0369" user-cpu-time="0.3275" />
+      <memory memory-max-rss-kb="44184" />
+      <system-events context-switches-involuntary="0" context-switches-voluntary="17" disk-input-blocks="0" disk-output-blocks="40" page-faults-major="0" page-faults-minor="8058" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="__future__" finding="excluded" line="30" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="fastapi" finding="not-found" line="32" reason="import" />
+      <module_usage name="gateway_core.app" finding="absolute" line="34" reason="import" />
+      <module_usage name="gateway_core.config" finding="absolute" line="35" reason="import" />
+      <module_usage name="gateway_macos.config" finding="absolute" line="36" reason="import" />
+      <module_usage name="gateway_core.lazy_app" finding="absolute" line="45" reason="import" />
+    </module_usages>
+  </module>
+  <module name="gateway_macos.config" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/gateway_macos/config.py">
+    <optimization-time pass="1" time="0.0100" micro_passes="3" max_branch_merge="5" merged_total="39" />
+    <optimization-time pass="2" time="0.0008" micro_passes="1" max_branch_merge="4" merged_total="12" />
+    <code-generation-time time="0.0066" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="35616" />
+      <cpu system-cpu-time="0.0406" user-cpu-time="0.5622" />
+      <memory memory-max-rss-kb="51524" />
+      <system-events context-switches-involuntary="1" context-switches-voluntary="23" disk-input-blocks="0" disk-output-blocks="72" page-faults-major="0" page-faults-minor="9837" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="__future__" finding="excluded" line="32" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="os" finding="excluded" line="34" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="platform" finding="excluded" line="35" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="subprocess" finding="excluded" line="36" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="functools" finding="excluded" line="37" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="agent_runtime.branding" finding="absolute" line="39" reason="import" />
+      <module_usage name="gateway_core.config" finding="absolute" line="40" reason="import" />
+    </module_usages>
+  </module>
+  <linker-resources>
+    <cpu system-cpu-time="0.0127" user-cpu-time="0.0283" />
+    <memory memory-max-rss-kb="38664" />
+    <system-events context-switches-involuntary="0" context-switches-voluntary="7" disk-input-blocks="0" disk-output-blocks="1880" page-faults-major="0" page-faults-minor="3602" />
+  </linker-resources>
+  <performance>
+    <memory_usage name="after_launch" value="61964288" />
+    <memory_usage name="before_c_code_generation" value="64684032" />
+    <memory_usage name="before_running_scons" value="64761856" />
+  </performance>
+  <data_composer blob_size="6069" total="194">
+    <module_data filename="__bytecode.const" blob_name=".bytecode" blob_size="3" input_size="0" />
+    <module_data filename="__constants.const" blob_name="" blob_size="996" input_size="2454" />
+    <module_data filename="module.gateway_macos.app.const" blob_name="gateway_macos.app" blob_size="1732" input_size="2695" />
+    <module_data filename="module.gateway_macos.config.const" blob_name="gateway_macos.config" blob_size="2185" input_size="3490" />
+    <module_data filename="module.gateway_macos.const" blob_name="gateway_macos" blob_size="1069" input_size="1803" />
+  </data_composer>
+  <performance-totals>
+    <optimization-time pass="1" time="0.0155" module_count="3" />
+    <optimization-time pass="2" time="0.0018" module_count="3" />
+    <optimization-time pass="all" time="0.0173" module_count="3" />
+    <code-generation-time time="0.0373" module_count="3" />
+    <c-compilation-time user-cpu-time="1.1420" system-cpu-time="0.1148" module_count="3" />
+    <c-linking-time user-cpu-time="0.0283" system-cpu-time="0.0127" />
+  </performance-totals>
+  <python_binary filename="${cwd}/.build/compiled/targets/linux-x86_64/modules/gateway_macos/gateway_macos.cpython-312-x86_64-linux-gnu.so" backend_resource_mode="incbin" reproducible="yes" size="951032" />
+  <command_line>
+    <option value="--mode=module" />
+    <option value="/workspace/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/gateway_macos" />
+    <option value="--include-package=gateway_macos" />
+    <option value="--no-pyi-file" />
+    <option value="--assume-yes-for-downloads" />
+    <option value="--output-dir=/workspace/.build/compiled/targets/linux-x86_64/modules/gateway_macos" />
+    <option value="--jobs=8" />
+    <option value="--report=/workspace/.build/compiled/targets/linux-x86_64/modules/gateway_macos/compilation.xml" />
+  </command_line>
+  <plugins>
+    <plugin name="anti-bloat" user_enabled="no" />
+    <plugin name="gi" user_enabled="no" />
+    <plugin name="implicit-imports" user_enabled="no" />
+    <plugin name="options-nanny" user_enabled="no" />
+    <plugin name="pkg-resources" user_enabled="no" />
+    <plugin name="transformers" user_enabled="no" />
+  </plugins>
+  <distributions />
+  <python python_exe="${sys.prefix}/bin/python" python_flavor="Unknown" python_version="3.12.14" os_name="Linux" os_release="Ubuntu-Debian-22.04.5" arch_name="x86_64" filesystem_encoding="utf-8">
+    <search_path>
+      <path value="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f" />
+      <path value="${cwd}" />
+      <path value="${sys.real_prefix}/lib/python3.12" />
+      <path value="${sys.real_prefix}/lib/python3.12/lib-dynload" />
+      <path value="${sys.prefix}/lib/python3.12/site-packages" />
+      <path value="${sys.prefix}/lib/python3.12/site-packages/setuptools/_vendor" />
+    </search_path>
+  </python>
+  <output run_filename="${cwd}/.build/compiled/targets/linux-x86_64/modules/gateway_macos/gateway_macos.cpython-312-x86_64-linux-gnu.so" />
+</nuitka-compilation-report>

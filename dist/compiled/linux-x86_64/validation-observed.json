@@ -1,5 +1,5 @@
 {
-  "7d8092459e3950dcc3100a907a43188e955b31aa9b3ce241453139aac61d68b3": {
+  "760bfe4deeff447027b09f47768d718a85ea9152728653ee653bf9348e071f29": {
     "glibc": "glibc 2.35",
     "kernel": "6.17.0-41-generic",
     "not_exercised": [
@@ -30,9 +30,9 @@
     "status": "passed",
     "storage": "/validation/home/install",
     "target": "linux-x86_64",
-    "validation_image": "sha256:610d301dcf891f37d18ca812100acce17647ff6ef2cf740e03b3dc5a9d3e73a0"
+    "validation_image": "sha256:d1d0fb9f8b736f925a796c0083013585adad40f3912caf86418526faa558d946"
   },
-  "fbf2de855a2686b43d669caf0180fcecab9ee683852e3a45b2c8baf89405e62a": {
+  "a058fefeabbc167e5c36c774b0488eaf2dbc01d83ab1573a31b597f8aa689452": {
     "glibc": "glibc 2.35",
     "kernel": "6.17.0-41-generic",
     "not_exercised": [
@@ -62,6 +62,6 @@
     "status": "passed",
     "storage": "/validation/home/install",
     "target": "linux-x86_64",
-    "validation_image": "sha256:610d301dcf891f37d18ca812100acce17647ff6ef2cf740e03b3dc5a9d3e73a0"
+    "validation_image": "sha256:d1d0fb9f8b736f925a796c0083013585adad40f3912caf86418526faa558d946"
   }
 }

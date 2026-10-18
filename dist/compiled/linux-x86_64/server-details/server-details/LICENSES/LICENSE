@@ -1,0 +1,28 @@
+SMTO Proprietary Software License
+Effective for new proprietary contributions and compiled distributions designated
+as proprietary on or after 2026-10-13.
+
+Copyright (c) SMTO authors. All rights reserved except as expressly granted.
+
+Subject to the applicable SMTO End User License Agreement and any separate
+written agreement with the rights holder, the recipient may install and run the
+provided object-code application for the recipient's authorized use and keep
+reasonable backup copies. No right to redistribute, sublicense, publish, or
+create derivative works of the proprietary portions is granted by this notice.
+
+This notice does not withdraw or restrict any rights already granted under the
+Apache License 2.0 or another license for earlier releases or contributions.
+The earlier Apache license is preserved in build/config/EARLIER-APACHE-2.0.txt.
+Separately identified third-party components remain under their own licenses;
+their notices and any corresponding source obligations take precedence for
+those components. No third-party component is relicensed by this notice.
+
+Nothing in this license prohibits replacement, modification, or reverse
+engineering of third-party libraries to the extent required by their licenses,
+including debugging modifications to LGPL-covered libraries. The custom-runtime
+option permits compatible replacement libraries. Mandatory statutory rights
+also remain unaffected.
+
+THE SOFTWARE IS PROVIDED AS IS, WITHOUT WARRANTIES OF ANY KIND, TO THE MAXIMUM
+EXTENT PERMITTED BY LAW. LIABILITY AND AUTOMATION RISKS ARE ADDRESSED IN THE
+ACCOMPANYING END USER LICENSE AGREEMENT.

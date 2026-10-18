@@ -1,0 +1,4338 @@
+{
+  "schema_version": 1,
+  "collected_on": "2026-10-15",
+  "coverage_targets": [
+    "linux-x86_64"
+  ],
+  "inputs": {
+    "build/config/toolchains.json": "ebd3232e2f0c286da9edb7d1930fe496404807ae499e078f74c3d4b7cd2321ca",
+    "src/manual/static/vendor/mermaid/mermaid.min.js": "5a8ec91820bd55afef049068489369910e5d6ce70c8103952f27e29d3e76e8bc"
+  },
+  "native_inputs": {
+    "linux-x86_64": [
+      {
+        "path": "lib/smto-libs/libcrypt.so.1",
+        "sha256": "d8b34ade1d95c6243a48e90f2873d65399dfb0cd3fa4ee2af45afc9e6cb8642b"
+      }
+    ]
+  },
+  "files": {
+    "README.md": "ba36516d951933a82afd1c64c0e2ab1412b8717fceb4a12014413520338d577a",
+    "SOURCE_LINKS.md": "1031b7e25593f27a8f87c59f5ee1d714286ae13d15cd5248b7ad14eb424c2e22",
+    "cpython/COMPONENTS.md": "369ca7805a4f113312b5ce6fd1fa592bbaadb36b9aef4cf50b1179b0cece35f3",
+    "cpython/LICENSE.bdb.txt": "3bdff06e69991c94664f2ef5c5f8096f60b7dbec071756ea6cc26b445e06ec5b",
+    "cpython/LICENSE.bzip2.txt": "1f38bbc7caacafd65169276d759c0d88c991b753b643ce35d0e45ea1971dd441",
+    "cpython/LICENSE.cpython.txt": "86e61415828a8b5b06ec8d024e6f086ce155a8b85fd0c419c0ba4dc004e74fdd",
+    "cpython/LICENSE.expat.txt": "122f2c27000472a201d337b9b31f7eb2b52d091b02857061a8880371612d9534",
+    "cpython/LICENSE.libX11.txt": "2daec087a88e7c9b8082557cdeebad5bbb8155a4137472f0b22e269cd99d0c1e",
+    "cpython/LICENSE.libXau.txt": "56abe29bb1d9806a9e04fa9f80fed2c0f18027594df3f098148d814aef6bddfa",
+    "cpython/LICENSE.libedit.txt": "29cea33c32bbc9785142386377915612a2fa786482c46843383384aded2e09b1",
+    "cpython/LICENSE.libffi.txt": "deaf3a42effb551a5b140fa9afefed183a27f1341c6d1bf430d106a5e6931fc0",
+    "cpython/LICENSE.liblzma.txt": "9a4062de0a2c388a98cf35a35d348b62fa97c838a71c3c28ee1a2d7d0a565b02",
+    "cpython/LICENSE.libuuid.txt": "122ee1f7e258f2c3c0e538a75c037684f420454bf3850ddc74ce750bbf5fe86b",
+    "cpython/LICENSE.libxcb.txt": "c5ffbfeaa501071ceeb97b7de2c0d703fdaa35de01c0fb6cbac1c28453a3e9fd",
+    "cpython/LICENSE.mpdecimal.txt": "669512af7219f58be03a398766d7c9da11a3b3df9d3f05cb74c5ceca25c8da3b",
+    "cpython/LICENSE.ncurses.txt": "87a4c4442337b8968ef956031c406b74f9cb7149b7ba87311bdaba534816201c",
+    "cpython/LICENSE.openssl-3.txt": "7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a",
+    "cpython/LICENSE.sqlite.txt": "38bef3d28b24f145ea293bd3b6eb4b20396982abc8303128fb493986ea5bc719",
+    "cpython/LICENSE.tcl.txt": "c0a69a2bfd757361ec7e6143973b103c90409316b49e9c88db26ad6388e79f16",
+    "cpython/LICENSE.zlib.txt": "818922b2620f12801a12bf78e399644a30990e66824abd8ca8ec24d451d6f92c",
+    "cpython/tcl/license.terms": "c0a69a2bfd757361ec7e6143973b103c90409316b49e9c88db26ad6388e79f16",
+    "cpython/tcl/pkgs/itcl4.3.8/doc/license.terms": "ad02cfa25db921ee30a1ab68d30e2ad8bf2e174c394237eb55ddd6968ded8032",
+    "cpython/tcl/pkgs/itcl4.3.8/license.terms": "b61edfaeead97546bc62b1f205b046f2e440b83bfc517bc0932b93bc3d505865",
+    "cpython/tcl/pkgs/thread3.0.6/license.terms": "0a03981c40f7813ce6ddbdfce9882020bcfd696ea044b21ef07619ed9b86abae",
+    "cpython/tk/license.terms": "2cde822b93ca16ae535c954b7dfe658b4ad10df2a193628d1b358f1765e8b198",
+    "libxcrypt/COPYING.LIB.txt": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551",
+    "libxcrypt/GPL-3.0.txt": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+    "libxcrypt/LGPL-3.0.txt": "a853c2ffec17057872340eee242ae4d96cbf2b520ae27d903e1b2fef1a5f9d1c",
+    "libxcrypt/LICENSING.txt": "f9b48b0bc67a92b752780710aa774cf08b62ec2ebaa3f4aebd00069fba6effd2",
+    "libxcrypt/Ubuntu-copyright.txt": "5a5e7ca0e9f3f9679977e3a3e9ede45ad92885a3297ea78e766979f9866c5a16",
+    "mermaid/@braintree__sanitize-url@6.0.4/LICENSE": "0984740e0c3d725c8044dec7edcefe1dbce180ef5a7bc710c251e19607000158",
+    "mermaid/BUNDLE-NOTICES.txt": "669696d3ee77345b82f98e964fdc474aa108e636f101c6af698d72c477aa91bb",
+    "mermaid/argparse@2.0.1/LICENSE": "de4d1f2d2ad5ad0cfd1657a106476b31cb5db5ef9d1ff842b237c0c81f0c8a23",
+    "mermaid/character-entities@2.0.2/license": "63cb98b3f6abfb3c3592c16f88253c1bdc834087bf52671e8ce5609e4eb693cf",
+    "mermaid/commander@7.2.0/LICENSE": "04512a63dce4d2d506ad612dc0bd7681ccf6e3655f7b6eaef7dfac8323d1ec0b",
+    "mermaid/commander@8.3.0/LICENSE": "04512a63dce4d2d506ad612dc0bd7681ccf6e3655f7b6eaef7dfac8323d1ec0b",
+    "mermaid/cose-base@1.0.3/LICENSE": "5fb3cf4a14c3c5af6e473a192df8bca10c77754e3a0c6492c79fb92a76a5478a",
+    "mermaid/cytoscape-cose-bilkent@4.1.0/LICENSE": "440fc58a56a12814e417d2b341da89b050da052dc75bdb235607d37ec5fe74ef",
+    "mermaid/cytoscape@3.28.1/LICENSE": "ac2a446d6e1b489d9568def4ba7790ab81f5023ebba335d49a77dbff1960232e",
+    "mermaid/d3-array@2.12.1/LICENSE": "0747bebeb06b10954913149be9b9a8bdf6fad3e6fdcbd9f9524e7a94c13d2cea",
+    "mermaid/d3-array@3.2.4/LICENSE": "3e6849627f74ff73c257a3ae1efb574015d94fc1035c05ec3c15805165efcbc4",
+    "mermaid/d3-axis@3.0.0/LICENSE": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee",
+    "mermaid/d3-brush@3.0.0/LICENSE": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee",
+    "mermaid/d3-chord@3.0.1/LICENSE": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee",
+    "mermaid/d3-color@3.1.0/LICENSE": "faa682e3e430941f958d26180458f5934a62f58dac4d70ccdd15608c15d0f884",
+    "mermaid/d3-contour@4.0.2/LICENSE": "e51cba0e4fa1d8c078e15319868f2b90188f413f9ce9dac1043b62db32901e93",
+    "mermaid/d3-delaunay@6.0.4/LICENSE": "582c3022bd01942336095f92b58a90b1be624dc547d987555c6c956512dd24c1",
+    "mermaid/d3-dispatch@3.0.1/LICENSE": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee",
+    "mermaid/d3-drag@3.0.0/LICENSE": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee",
+    "mermaid/d3-dsv@3.0.1/LICENSE": "7842a82012622e5a37bfe4f6c1b67cd3bae6350716b5bf87f36cea0bdc1319dc",
+    "mermaid/d3-ease@3.0.1/LICENSE": "b989d9085148d21ff64a75e14462aefa06b2589a55553b07b1460c70081c7d08",
+    "mermaid/d3-fetch@3.0.1/LICENSE": "ffdc17dc9040006bddeb891c95bfbb492e86d6bc64a4a4233666febab1be35e0",
+    "mermaid/d3-force@3.0.0/LICENSE": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee",
+    "mermaid/d3-format@3.1.0/LICENSE": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee",
+    "mermaid/d3-geo@3.1.0/LICENSE": "c53822a70309da589d4a7821c3a0dfc9449bbb4429cecaa295e0cb0461b950c9",
+    "mermaid/d3-hierarchy@3.1.2/LICENSE": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee",
+    "mermaid/d3-interpolate@3.0.1/LICENSE": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee",
+    "mermaid/d3-path@1.0.9/LICENSE": "b8265327ab678f554800e71188b1cc6b1ff57522e292d2b1c0be66f27cf328b6",
+    "mermaid/d3-path@3.1.0/LICENSE": "a09b0d6d76e768fca2085fad05743ee81ddd11946bcda160a3cf5e1081a479aa",
+    "mermaid/d3-polygon@3.0.1/LICENSE": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee",
+    "mermaid/d3-quadtree@3.0.1/LICENSE": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee",
+    "mermaid/d3-random@3.0.1/LICENSE": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee",
+    "mermaid/d3-sankey@0.12.3/LICENSE": "2bf785e778d67a4f5266cffcd4f2cc5bb98cde73791666e7efeb8002ba32dfa5",
+    "mermaid/d3-scale-chromatic@3.0.0/LICENSE": "dadb5ea138eef5ab133854c3d26bd0a158f649d0bd433b3eebe177f6d981730e",
+    "mermaid/d3-scale@4.0.2/LICENSE": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee",
+    "mermaid/d3-selection@3.0.0/LICENSE": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee",
+    "mermaid/d3-shape@1.3.7/LICENSE": "7eea8533ea92bd8c32a901e89ecb0305890905bb12711449565ddff96891146d",
+    "mermaid/d3-shape@3.2.0/LICENSE": "faa682e3e430941f958d26180458f5934a62f58dac4d70ccdd15608c15d0f884",
+    "mermaid/d3-time-format@4.1.0/LICENSE": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee",
+    "mermaid/d3-time@3.1.0/LICENSE": "faa682e3e430941f958d26180458f5934a62f58dac4d70ccdd15608c15d0f884",
+    "mermaid/d3-timer@3.0.1/LICENSE": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee",
+    "mermaid/d3-transition@3.0.1/LICENSE": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee",
+    "mermaid/d3-zoom@3.0.0/LICENSE": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee",
+    "mermaid/d3@7.8.5/LICENSE": "3e6849627f74ff73c257a3ae1efb574015d94fc1035c05ec3c15805165efcbc4",
+    "mermaid/dagre-d3-es@7.0.10/NOTICE.txt": "0b6f4817c0ad3c16215b63859c910f428f3c8407c4edd4e9e6aa62f8e494cb4f",
+    "mermaid/dagre-d3-es@7.0.10/dagre-LICENSE.txt": "6a349742a6cb219d5a2fc8d0844f6d89a6efc62e20c664450d884fc7ff2d6015",
+    "mermaid/dagre-d3-es@7.0.10/dagre-d3-LICENSE.txt": "6561c1da473f6d143cc203866ceafa66b35a3a15c3bbd9352b8275cf684fc52d",
+    "mermaid/dagre-d3-es@7.0.10/graphlib-LICENSE.txt": "6a349742a6cb219d5a2fc8d0844f6d89a6efc62e20c664450d884fc7ff2d6015",
+    "mermaid/dayjs@1.11.10/LICENSE": "5faab7526d055651be3aab769d58897be6bd91f3d39d137f25f12dba1b31d5dc",
+    "mermaid/debug@4.3.4/LICENSE": "3a61c6c96caf5c1d9b623fb9b04c822b783dfcb78aa7e49c76a3f643e6ed7f95",
+    "mermaid/decode-named-character-reference@1.0.2/license": "807a88522a850092aece49486207c17c313c4d5708ac276524840fe1caa0b0fa",
+    "mermaid/delaunator@5.0.1/LICENSE": "b8878372a0d7d1c303f48659ddbd6881807cd2196e4af2f548d8da0c0f7c4d71",
+    "mermaid/dequal@2.0.3/license": "306fa513e39b23a6e8747520de761809d206b99800ef41907b530226574c59ae",
+    "mermaid/diff@5.1.0/LICENSE": "152f0fb43e953fcf5c56c5bfa4c834bb96b1603e4026319c613dd3e734f305cf",
+    "mermaid/dompurify@3.1.6/LICENSE": "7de658e2401fe36e2a3965a5a11a560d2fffe768194849718a4b58c75bf84bda",
+    "mermaid/elkjs-java/emf-common@2.12.4/COPYRIGHT-NOTICES.txt": "b04fa9ecfdc220ff8be45c380ce96361afd9f5acdc2672f9df99b0415d8c3004",
+    "mermaid/elkjs-java/emf-common@2.12.4/LICENSE.txt": "f3d8dc494be2e7ea9cd31ac2fb902e35dce7ff8181b9b30d05861b47c339cb25",
+    "mermaid/elkjs-java/emf-ecore@2.12.4/COPYRIGHT-NOTICES.txt": "cd22d95049143dcd811720969549cf26e68d35761f9a202a8f3d6031c36ebfb7",
+    "mermaid/elkjs-java/emf-ecore@2.12.4/LICENSE.txt": "f3d8dc494be2e7ea9cd31ac2fb902e35dce7ff8181b9b30d05861b47c339cb25",
+    "mermaid/elkjs-java/guava-gwt@31.1-jre/COPYRIGHT-NOTICES.txt": "b8cc074d3c17aaa3bea9d299601680157ad6956184b9ed6d47e6fdc8a20d1eae",
+    "mermaid/elkjs-java/guava-gwt@31.1-jre/LICENSE.txt": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9",
+    "mermaid/elkjs-java/guava@31.1-jre/COPYRIGHT-NOTICES.txt": "5553dacdd176101861ddf84a46c972534c987bf7f07d200a9448da1fd87050d2",
+    "mermaid/elkjs-java/guava@31.1-jre/LICENSE.txt": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9",
+    "mermaid/elkjs-java/gwt-user@2.10.0/COPYRIGHT-NOTICES.txt": "b1f88c523333c73057b85ccc3257c4d5a19d9d2ac7c58e04634a3383a5c754c4",
+    "mermaid/elkjs-java/gwt-user@2.10.0/LICENSE.txt": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9",
+    "mermaid/elkjs-java/gwt-user@2.10.0/com__google__gwt__core__COPYING.txt": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9",
+    "mermaid/elkjs-java/gwt-user@2.10.0/com__google__gwt__emul__COPYING.txt": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9",
+    "mermaid/elkjs-java/gwt-user@2.10.0/com__google__gwt__i18n__COPYING.txt": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9",
+    "mermaid/elkjs-java/gwt-user@2.10.0/com__google__gwt__json__COPYING.txt": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9",
+    "mermaid/elkjs-java/gwt-user@2.10.0/com__google__gwt__user__COPYING.txt": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9",
+    "mermaid/elkjs-java/gwt-user@2.10.0/com__google__gwt__xml__COPYING.txt": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9",
+    "mermaid/elkjs-java/org.eclipse.xtend.lib@2.28.0/COPYRIGHT-NOTICES.txt": "2b9d0af15a2a4c2555089fdaa030d90e3fb23a4d8a2a29a264b9cf5b411bc824",
+    "mermaid/elkjs-java/org.eclipse.xtend.lib@2.28.0/LICENSE.txt": "61616a4066701bc7888ad910de1633dbc55eb4d4d30d930feef55afb9492e33c",
+    "mermaid/elkjs-java/org.eclipse.xtend.lib@2.28.0/about_org.eclipse.xtend.lib.html.txt": "0eaf27c17e674e6aba8222ef845b936bcea446761400d4065c35bd6d52fa3d0b",
+    "mermaid/elkjs-java/org.eclipse.xtext.xbase.lib@2.28.0/COPYRIGHT-NOTICES.txt": "c36993075fa02de514fd5feb45ab0a4918e1f986b432317ada7e88f66742fd74",
+    "mermaid/elkjs-java/org.eclipse.xtext.xbase.lib@2.28.0/LICENSE.txt": "61616a4066701bc7888ad910de1633dbc55eb4d4d30d930feef55afb9492e33c",
+    "mermaid/elkjs-java/org.eclipse.xtext.xbase.lib@2.28.0/about_org.eclipse.xtext.xbase.lib.html.txt": "0eaf27c17e674e6aba8222ef845b936bcea446761400d4065c35bd6d52fa3d0b",
+    "mermaid/elkjs@0.9.2/LICENSE.md": "89591d4578fb1ebd91501312a3d25f021bd865a2e436641c1cf7b1bc7e3c1617",
+    "mermaid/elkjs@0.9.2/NOTICE.txt": "99157c124d3b4cb5c10fac8f5b191f0f71b37e619a16b4c48c2e34082d740a9d",
+    "mermaid/has-flag@4.0.0/license": "48da2f39e100d4085767e94966b43f4fa95ff6a0698fba57ed460914e35f94a0",
+    "mermaid/heap@0.2.7/LICENSE": "e78f28382ac236a42dcbc16caaaaf2e76da55ddc67053a8bcb3aabdfc72df9cc",
+    "mermaid/iconv-lite@0.6.3/LICENSE": "ac779f7314c74f232ef847ea86e714abe25cf6eeb5cc97b69451b74e2af6492d",
+    "mermaid/internmap@1.0.1/LICENSE": "9ea8903938dab5f12c4572d60725069bec2d1b0dc3bcc210b09bae946a5ebb1f",
+    "mermaid/internmap@2.0.3/LICENSE": "9ea8903938dab5f12c4572d60725069bec2d1b0dc3bcc210b09bae946a5ebb1f",
+    "mermaid/jison@0.4.18/LICENSE.txt": "0720307bf0679b677520510fc5b45797718a9ef1dd712b8785e3bf7baa019700",
+    "mermaid/js-yaml@4.1.0/LICENSE": "a07bc24468b9654ce76a547d47a2db282d07733b715db4c73a98bd63961f9550",
+    "mermaid/katex@0.16.11/LICENSE": "766ccc1f306c885aa45542a9846bbd0a505b27a0374f146778171c2254ce18e3",
+    "mermaid/khroma@2.1.0/license": "66b333b0f66759a0b710459e03f7029abe17f4358114a128d2c972e642961b49",
+    "mermaid/kleur@4.1.5/license": "306fa513e39b23a6e8747520de761809d206b99800ef41907b530226574c59ae",
+    "mermaid/layout-base@1.0.2/LICENSE": "eabb762d8a95109a39c9be3247325529a5239a7aca327d909c3ccdc41f3a06bf",
+    "mermaid/lodash-es@4.17.21/LICENSE": "f71e8ed126b46346494aad5486874cd8f0aafe95092ed67d2e3cb6110f939abc",
+    "mermaid/lodash@4.17.21/LICENSE": "f71e8ed126b46346494aad5486874cd8f0aafe95092ed67d2e3cb6110f939abc",
+    "mermaid/mdast-util-from-markdown@1.3.1/license": "536804b3adbff17dbbb9ed0d2bf9655b78f07640278581e37e3d7475282d5e61",
+    "mermaid/mdast-util-to-string@3.2.0/license": "63cb98b3f6abfb3c3592c16f88253c1bdc834087bf52671e8ce5609e4eb693cf",
+    "mermaid/mermaid@10.9.3/LICENSE": "ec9fb67dcb25eccc416ed56e1aab819222c805a2a4bfe4cb19e7556bf2ffde80",
+    "mermaid/micromark-core-commonmark@1.1.0/README-LICENSE.txt": "24d300c093e3b60899792f28877d030c9c070f93f20a50fe3257b40459578dda",
+    "mermaid/micromark-factory-destination@1.1.0/README-LICENSE.txt": "6a1df76e7fcc919da88cafc932bb5faf097fecdcf85b0ceb7fcdb8ba05b49217",
+    "mermaid/micromark-factory-label@1.1.0/README-LICENSE.txt": "99e1c337fbdb2e5e02ed32c4ab3e4dac6e14c84bbb5818a0dd793e646e96ab58",
+    "mermaid/micromark-factory-space@1.1.0/README-LICENSE.txt": "cac71a9b6b29507732e6067792b5917a8990764457d27f293a16a583fff49475",
+    "mermaid/micromark-factory-title@1.1.0/README-LICENSE.txt": "0c68e0938c129ced11aae4cc9ce3c86fd6237ed081b4d132258803f837b6a942",
+    "mermaid/micromark-factory-whitespace@1.1.0/README-LICENSE.txt": "c4006b743528bbcb99537cacd34e95d2517d13e5722fcb91bef4dd394292c31f",
+    "mermaid/micromark-util-character@1.2.0/README-LICENSE.txt": "f6069ed14b554e24177c1615ab4c7f5ae12ee1c3083b30ca1db697748fe86a1b",
+    "mermaid/micromark-util-chunked@1.1.0/README-LICENSE.txt": "20a7a5c3e3b4b7a7b2d6f52851d5bba96455859400192f0ab09da51e43b0b83f",
+    "mermaid/micromark-util-classify-character@1.1.0/README-LICENSE.txt": "8742a924418e9611829fc150a16fabb7f9f8aea2b4c1058b5f9e497beeacac7f",
+    "mermaid/micromark-util-combine-extensions@1.1.0/README-LICENSE.txt": "31e3cdb684a8a33609ca6573b33778f85f56f4eb928c075744df1fc6c2b432b6",
+    "mermaid/micromark-util-decode-numeric-character-reference@1.1.0/README-LICENSE.txt": "fd9e46b23beae6268b0e3bd6b2969b2de1c61b367147d77b578130e5ef82a85e",
+    "mermaid/micromark-util-decode-string@1.1.0/README-LICENSE.txt": "87dc7447a92a4a599d776cf613fd622c96f01d405781ed70f56afc3777ae21f7",
+    "mermaid/micromark-util-encode@1.1.0/README-LICENSE.txt": "6e4f383f4bdf0fda68e0ff029182863b1752fcce69530eec3185c3bda9c3de05",
+    "mermaid/micromark-util-html-tag-name@1.2.0/README-LICENSE.txt": "5587c937e1e1dbec2542c3cbad67443a25700d78d4d6fe40afe141eb77e595b2",
+    "mermaid/micromark-util-normalize-identifier@1.1.0/README-LICENSE.txt": "a0d89f2b842644e737c1bb4fe94add9adb33032c3e940e7ce62af6687d7fc4e0",
+    "mermaid/micromark-util-resolve-all@1.1.0/README-LICENSE.txt": "ce354f05cea6861c71417a68302320a0bf859a5298f1188abe5c3a0d9a4f5fa8",
+    "mermaid/micromark-util-sanitize-uri@1.2.0/README-LICENSE.txt": "0118e1f1c8e121308ff2be553943ffa154693cfac0e6039325e1545c8bd1feac",
+    "mermaid/micromark-util-subtokenize@1.1.0/README-LICENSE.txt": "e4478ddda294109e83ecb36e3f224e77966e4337a82a9ae8eaef9714ce8ac4db",
+    "mermaid/micromark-util-symbol@1.1.0/README-LICENSE.txt": "98a066b2b9e76f3e3938912b3f0ceba33a93d315e1513ae3999c7d63f66dee91",
+    "mermaid/micromark-util-types@1.1.0/README-LICENSE.txt": "9fb3b5b985ba3f9b0d7fe48eea8e62d05a2479788215010dc46f27dafe8fed71",
+    "mermaid/micromark@3.2.0/README-LICENSE.txt": "966fe48d96a747b6bc33dfa44b990afae04797234c63e5c0883602e8a49f30bd",
+    "mermaid/mri@1.2.0/license.md": "306fa513e39b23a6e8747520de761809d206b99800ef41907b530226574c59ae",
+    "mermaid/ms@2.1.2/license.md": "6652830c2607c722b66f1b57de15877ab8fc5dca406cc5b335afeb365d0f32c1",
+    "mermaid/non-layered-tidy-tree-layout@2.0.2/LICENSE": "4f2be5251c6ca29343617220bce48bbbe814de871dc42435164442a0c007d11e",
+    "mermaid/robust-predicates@3.0.2/LICENSE": "88d9b4eb60579c191ec391ca04c16130572d7eedc4a86daa58bf28c6e14c9bcd",
+    "mermaid/rw@1.3.3/LICENSE": "e273680c43c2ab5bb3b50af28de6a08000b333396834db7bf6129cd6f130c9cd",
+    "mermaid/sade@1.8.1/license": "ba573393f24555ac0528612ad39665fab5bdcc80330a61096024bbf5f736526d",
+    "mermaid/safer-buffer@2.1.2/LICENSE": "4bc935e71be198c67ddf3c2b5fddb195f6edc182bfc155a96a6db61b44b494b9",
+    "mermaid/stylis@4.3.1/LICENSE": "88c579c6ee44b41137a21321190d177982e5b17d4fa1b83a4a2e3ea325a8fc9a",
+    "mermaid/supports-color@8.1.1/license": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3",
+    "mermaid/ts-dedent@2.2.0/LICENSE": "eff13095d9d762c3bd9dda74370c81e2130c28f2691bc455603abf973bac25b9",
+    "mermaid/unist-util-stringify-position@3.0.3/license": "ca4662cb5d1b738fbe5350c0d5485ba11773b4b7208974082ae6e129a52d631d",
+    "mermaid/uuid@9.0.1/LICENSE.md": "beaa6b04fb82e41dd2ad679e19e27953afb5999b1abbb455b6564e78ebfeb332",
+    "mermaid/uvu@0.5.6/license": "306fa513e39b23a6e8747520de761809d206b99800ef41907b530226574c59ae",
+    "mermaid/web-worker@1.3.0/LICENSE": "43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
+    "nuitka/LICENSE-RUNTIME.txt": "20ff0ae581adf436a7b06e50e67a6c8913aec1ea4e60dba138d0a0bee7ee520c",
+    "nuitka/LICENSE.txt": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+    "nuitka/NOTICE.txt": "b6ba5212864ec9f98842220e01b2485a2ebeb8eafa192b016b36032355c8a98d",
+    "nuitka/runtime/build/inline_copy/appdirs/LICENSE.txt": "36ddb4d0a745a93ab203203d7190814b1b89727d254caff48c7a7afbbd47000b",
+    "nuitka/runtime/build/inline_copy/jinja2/LICENSE.rst": "4c9523d519ddac94bbae62fa8498d42c60f29019b15485bebd88052688f25b09",
+    "nuitka/runtime/build/inline_copy/markupsafe/LICENSE.rst": "3c07d607f4c182ece78b76df78e75bcf8eee1cb7df47cd4e2e621abe5198d65d",
+    "nuitka/runtime/build/inline_copy/python_hacl/LICENSE.txt": "c5accbbd8546e94c34aed24afe689a617627d18eed5a6c48277e48db57c23851",
+    "nuitka/runtime/build/inline_copy/yaml/LICENSE": "8d3928f9dc4490fd635707cb88eb26bd764102a7282954307d3e5167a577e8a4",
+    "nuitka/runtime/build/inline_copy/zlib/LICENSE": "845efc77857d485d91fb3e0b884aaa929368c717ae8186b66fe1ed2495753243",
+    "nuitka/runtime/build/inline_copy/zstd/LICENSE.txt": "2c1a7fa704df8f3a606f6fc010b8b5aaebf403f3aeec339a12048f1ba7331a0b",
+    "pip/AUTHORS.txt": "4eb1fb1705e2def898e81bcba19c3aac80620d27ba3569d6a6df7b4629d1b5c2",
+    "pip/LICENSE.txt": "634300a669d49aeae65b12c6c48c924c51a4cdf3d1ff086dc3456dc8bcaa2104",
+    "pip/src/pip/_vendor/cachecontrol/LICENSE.txt": "86eeee87be2a43f3ff1f56496f451f69243926f025fedbb033666c304c4c161b",
+    "pip/src/pip/_vendor/certifi/LICENSE": "e93716da6b9c0d5a4a1df60fe695b370f0695603d21f6f83f053e42cfc10caf7",
+    "pip/src/pip/_vendor/distlib/LICENSE.txt": "808e10c8a6ab8deb149ff9b3fb19f447a808094606d712a9ca57fead3552599d",
+    "pip/src/pip/_vendor/distro/LICENSE": "cb5e8e7e5f4a3988e1063c142c60dc2df75605f4c46515e776e3aca6df976e14",
+    "pip/src/pip/_vendor/idna/LICENSE.md": "1a9a4f0e3d479a27240ddd59a9137a66ab4a0f9dfdc8ca6188cc0bfd85187f04",
+    "pip/src/pip/_vendor/msgpack/COPYING": "492dedba85da5872f78e6091bcd1fea474d660d35acb4dee964b8aab3f007427",
+    "pip/src/pip/_vendor/packaging/LICENSE": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48",
+    "pip/src/pip/_vendor/packaging/LICENSE.APACHE": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+    "pip/src/pip/_vendor/packaging/LICENSE.BSD": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5",
+    "pip/src/pip/_vendor/pkg_resources/LICENSE": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741",
+    "pip/src/pip/_vendor/platformdirs/LICENSE": "29e0fd62e929850e86eb28c3fdccf0cefdf4fa94879011cffb3d0d4bed6d4db6",
+    "pip/src/pip/_vendor/pygments/LICENSE": "a9d66f1d526df02e29dce73436d34e56e8632f46c275bbdffc70569e882f9f17",
+    "pip/src/pip/_vendor/pyproject_hooks/LICENSE": "1b22b049b5267d6dfc23a67bf4a84d8ec04b9fdfb1a51d360e42b4342c8b4154",
+    "pip/src/pip/_vendor/requests/LICENSE": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b",
+    "pip/src/pip/_vendor/resolvelib/LICENSE": "f388fd38cad13112c1dc0f669bbe80e7f84541edbafb72f3030d2ca7642c3c9d",
+    "pip/src/pip/_vendor/rich/LICENSE": "deed7c17a4318158190a3ea239cc879a5a50271cebb98ae7025f48fbe58dca15",
+    "pip/src/pip/_vendor/tomli/LICENSE": "b80816b0d530b8accb4c2211783790984a6e3b61922c2b5ee92f3372ab2742fe",
+    "pip/src/pip/_vendor/tomli_w/LICENSE": "b80816b0d530b8accb4c2211783790984a6e3b61922c2b5ee92f3372ab2742fe",
+    "pip/src/pip/_vendor/truststore/LICENSE": "33be7b7e8fa4fd19b1760e1a8ed8a668bdab852c91b692dd41424bcb725a9fca",
+    "pip/src/pip/_vendor/urllib3/LICENSE.txt": "130e3a64d5fdd5d096a752694634a7d9df284469de86e5732100268041e3d686"
+  },
+  "components": [
+    {
+      "name": "cpython-3.12",
+      "version": "3.12.14",
+      "license": "Python-2.0 AND CNRI-Python",
+      "category": "python-incorporated",
+      "notices": [
+        {
+          "path": "cpython/LICENSE.cpython.txt",
+          "sha256": "86e61415828a8b5b06ec8d024e6f086ce155a8b85fd0c419c0ba4dc004e74fdd"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.python.org/ftp/python/3.12.14/Python-3.12.14.tar.xz",
+          "sha256": "5c8462af5790baf43a321a1559dbe0db06d1be4300fb85fb53c40060668e548a",
+          "kind": "upstream-source"
+        },
+        {
+          "url": "https://github.com/astral-sh/python-build-standalone/archive/refs/tags/20260901.tar.gz",
+          "kind": "build-recipes-and-patches"
+        }
+      ],
+      "targets": [
+        "linux-x86_64"
+      ],
+      "provenance": {
+        "url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.12.14+20260901-x86_64-unknown-linux-gnu-pgo+lto-full.tar.zst",
+        "sha256": "f2e7bf187eaa66f88432b13cc560528c328b51d452de2fd0875561c82f7168e7",
+        "archive_path": "python/licenses/LICENSE.cpython.txt"
+      }
+    },
+    {
+      "name": "bdb",
+      "version": "6.0.19",
+      "license": "Sleepycat",
+      "category": "python-incorporated",
+      "notices": [
+        {
+          "path": "cpython/LICENSE.bdb.txt",
+          "sha256": "3bdff06e69991c94664f2ef5c5f8096f60b7dbec071756ea6cc26b445e06ec5b"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://ftp.osuosl.org/pub/blfs/conglomeration/db/db-6.0.19.tar.gz",
+          "sha256": "2917c28f60903908c2ca4587ded1363b812c4e830a5326aaa77c9879d13ae18e",
+          "kind": "upstream-source"
+        },
+        {
+          "url": "https://github.com/astral-sh/python-build-standalone/archive/refs/tags/20260901.tar.gz",
+          "kind": "build-recipes-and-patches"
+        }
+      ],
+      "targets": [
+        "linux-x86_64"
+      ],
+      "provenance": {
+        "url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.12.14+20260901-x86_64-unknown-linux-gnu-pgo+lto-full.tar.zst",
+        "sha256": "f2e7bf187eaa66f88432b13cc560528c328b51d452de2fd0875561c82f7168e7",
+        "archive_path": "python/licenses/LICENSE.bdb.txt"
+      }
+    },
+    {
+      "name": "bzip2",
+      "version": "1.0.8",
+      "license": "bzip2-1.0.6",
+      "category": "python-incorporated",
+      "notices": [
+        {
+          "path": "cpython/LICENSE.bzip2.txt",
+          "sha256": "1f38bbc7caacafd65169276d759c0d88c991b753b643ce35d0e45ea1971dd441"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://astral-sh.github.io/mirror/files/bzip2-1.0.8.tar.gz",
+          "sha256": "ab5a03176ee106d3f0fa90e381da478ddae405918153cca248e682cd0c4a2269",
+          "kind": "upstream-source"
+        },
+        {
+          "url": "https://github.com/astral-sh/python-build-standalone/archive/refs/tags/20260901.tar.gz",
+          "kind": "build-recipes-and-patches"
+        }
+      ],
+      "targets": [
+        "linux-x86_64"
+      ],
+      "provenance": {
+        "url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.12.14+20260901-x86_64-unknown-linux-gnu-pgo+lto-full.tar.zst",
+        "sha256": "f2e7bf187eaa66f88432b13cc560528c328b51d452de2fd0875561c82f7168e7",
+        "archive_path": "python/licenses/LICENSE.bzip2.txt"
+      }
+    },
+    {
+      "name": "expat",
+      "version": "2.8.4",
+      "license": "MIT",
+      "category": "python-incorporated",
+      "notices": [
+        {
+          "path": "cpython/LICENSE.expat.txt",
+          "sha256": "122f2c27000472a201d337b9b31f7eb2b52d091b02857061a8880371612d9534"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/libexpat/libexpat/releases/download/R_2_8_4/expat-2.8.4.tar.xz",
+          "sha256": "656ae1cc8da3b4ea513bb4e254f33e6243938084c0ec6239da873376b09985a7",
+          "kind": "upstream-source"
+        },
+        {
+          "url": "https://github.com/astral-sh/python-build-standalone/archive/refs/tags/20260901.tar.gz",
+          "kind": "build-recipes-and-patches"
+        }
+      ],
+      "targets": [
+        "linux-x86_64"
+      ],
+      "provenance": {
+        "url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.12.14+20260901-x86_64-unknown-linux-gnu-pgo+lto-full.tar.zst",
+        "sha256": "f2e7bf187eaa66f88432b13cc560528c328b51d452de2fd0875561c82f7168e7",
+        "archive_path": "python/licenses/LICENSE.expat.txt"
+      }
+    },
+    {
+      "name": "libedit",
+      "version": "20240808-3.1",
+      "license": "BSD-3-Clause",
+      "category": "python-incorporated",
+      "notices": [
+        {
+          "path": "cpython/LICENSE.libedit.txt",
+          "sha256": "29cea33c32bbc9785142386377915612a2fa786482c46843383384aded2e09b1"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://thrysoee.dk/editline/libedit-20240808-3.1.tar.gz",
+          "sha256": "5f0573349d77c4a48967191cdd6634dd7aa5f6398c6a57fe037cc02696d6099f",
+          "kind": "upstream-source"
+        },
+        {
+          "url": "https://github.com/astral-sh/python-build-standalone/archive/refs/tags/20260901.tar.gz",
+          "kind": "build-recipes-and-patches"
+        }
+      ],
+      "targets": [
+        "linux-x86_64"
+      ],
+      "provenance": {
+        "url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.12.14+20260901-x86_64-unknown-linux-gnu-pgo+lto-full.tar.zst",
+        "sha256": "f2e7bf187eaa66f88432b13cc560528c328b51d452de2fd0875561c82f7168e7",
+        "archive_path": "python/licenses/LICENSE.libedit.txt"
+      }
+    },
+    {
+      "name": "libffi",
+      "version": "3.4.8",
+      "license": "MIT",
+      "category": "python-incorporated",
+      "notices": [
+        {
+          "path": "cpython/LICENSE.libffi.txt",
+          "sha256": "deaf3a42effb551a5b140fa9afefed183a27f1341c6d1bf430d106a5e6931fc0"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/libffi/libffi/releases/download/v3.4.8/libffi-3.4.8.tar.gz",
+          "sha256": "bc9842a18898bfacb0ed1252c4febcc7e78fa139fd27fdc7a3e30d9d9356119b",
+          "kind": "upstream-source"
+        },
+        {
+          "url": "https://github.com/astral-sh/python-build-standalone/archive/refs/tags/20260901.tar.gz",
+          "kind": "build-recipes-and-patches"
+        }
+      ],
+      "targets": [
+        "linux-x86_64"
+      ],
+      "provenance": {
+        "url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.12.14+20260901-x86_64-unknown-linux-gnu-pgo+lto-full.tar.zst",
+        "sha256": "f2e7bf187eaa66f88432b13cc560528c328b51d452de2fd0875561c82f7168e7",
+        "archive_path": "python/licenses/LICENSE.libffi.txt"
+      }
+    },
+    {
+      "name": "libX11",
+      "version": "1.8.13",
+      "license": "MIT AND X11",
+      "category": "python-incorporated",
+      "notices": [
+        {
+          "path": "cpython/LICENSE.libX11.txt",
+          "sha256": "2daec087a88e7c9b8082557cdeebad5bbb8155a4137472f0b22e269cd99d0c1e"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.x.org/releases/individual/lib/libX11-1.8.13.tar.gz",
+          "sha256": "acf0e7cd7541110e6330ecb539441a2d53061f386ec7be6906dfde0de2598470",
+          "kind": "upstream-source"
+        },
+        {
+          "url": "https://github.com/astral-sh/python-build-standalone/archive/refs/tags/20260901.tar.gz",
+          "kind": "build-recipes-and-patches"
+        }
+      ],
+      "targets": [
+        "linux-x86_64"
+      ],
+      "provenance": {
+        "url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.12.14+20260901-x86_64-unknown-linux-gnu-pgo+lto-full.tar.zst",
+        "sha256": "f2e7bf187eaa66f88432b13cc560528c328b51d452de2fd0875561c82f7168e7",
+        "archive_path": "python/licenses/LICENSE.libX11.txt"
+      }
+    },
+    {
+      "name": "libXau",
+      "version": "1.0.12",
+      "license": "MIT",
+      "category": "python-incorporated",
+      "notices": [
+        {
+          "path": "cpython/LICENSE.libXau.txt",
+          "sha256": "56abe29bb1d9806a9e04fa9f80fed2c0f18027594df3f098148d814aef6bddfa"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.x.org/releases/individual/lib/libXau-1.0.12.tar.gz",
+          "sha256": "2402dd938da4d0a332349ab3d3586606175e19cb32cb9fe013c19f1dc922dcee",
+          "kind": "upstream-source"
+        },
+        {
+          "url": "https://github.com/astral-sh/python-build-standalone/archive/refs/tags/20260901.tar.gz",
+          "kind": "build-recipes-and-patches"
+        }
+      ],
+      "targets": [
+        "linux-x86_64"
+      ],
+      "provenance": {
+        "url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.12.14+20260901-x86_64-unknown-linux-gnu-pgo+lto-full.tar.zst",
+        "sha256": "f2e7bf187eaa66f88432b13cc560528c328b51d452de2fd0875561c82f7168e7",
+        "archive_path": "python/licenses/LICENSE.libXau.txt"
+      }
+    },
+    {
+      "name": "libxcb",
+      "version": "1.17.0",
+      "license": "MIT",
+      "category": "python-incorporated",
+      "notices": [
+        {
+          "path": "cpython/LICENSE.libxcb.txt",
+          "sha256": "c5ffbfeaa501071ceeb97b7de2c0d703fdaa35de01c0fb6cbac1c28453a3e9fd"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://xcb.freedesktop.org/dist/libxcb-1.17.0.tar.gz",
+          "sha256": "2c69287424c9e2128cb47ffe92171e10417041ec2963bceafb65cb3fcf8f0b85",
+          "kind": "upstream-source"
+        },
+        {
+          "url": "https://github.com/astral-sh/python-build-standalone/archive/refs/tags/20260901.tar.gz",
+          "kind": "build-recipes-and-patches"
+        }
+      ],
+      "targets": [
+        "linux-x86_64"
+      ],
+      "provenance": {
+        "url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.12.14+20260901-x86_64-unknown-linux-gnu-pgo+lto-full.tar.zst",
+        "sha256": "f2e7bf187eaa66f88432b13cc560528c328b51d452de2fd0875561c82f7168e7",
+        "archive_path": "python/licenses/LICENSE.libxcb.txt"
+      }
+    },
+    {
+      "name": "mpdecimal",
+      "version": "4.0.0",
+      "license": "BSD-2-Clause",
+      "category": "python-incorporated",
+      "notices": [
+        {
+          "path": "cpython/LICENSE.mpdecimal.txt",
+          "sha256": "669512af7219f58be03a398766d7c9da11a3b3df9d3f05cb74c5ceca25c8da3b"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://astral-sh.github.io/mirror/files/mpdecimal-4.0.0.tar.gz",
+          "sha256": "942445c3245b22730fd41a67a7c5c231d11cb1b9936b9c0f76334fb7d0b4468c",
+          "kind": "upstream-source"
+        },
+        {
+          "url": "https://github.com/astral-sh/python-build-standalone/archive/refs/tags/20260901.tar.gz",
+          "kind": "build-recipes-and-patches"
+        }
+      ],
+      "targets": [
+        "linux-x86_64"
+      ],
+      "provenance": {
+        "url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.12.14+20260901-x86_64-unknown-linux-gnu-pgo+lto-full.tar.zst",
+        "sha256": "f2e7bf187eaa66f88432b13cc560528c328b51d452de2fd0875561c82f7168e7",
+        "archive_path": "python/licenses/LICENSE.mpdecimal.txt"
+      }
+    },
+    {
+      "name": "ncurses",
+      "version": "6.5",
+      "license": "X11",
+      "category": "python-incorporated",
+      "notices": [
+        {
+          "path": "cpython/LICENSE.ncurses.txt",
+          "sha256": "87a4c4442337b8968ef956031c406b74f9cb7149b7ba87311bdaba534816201c"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://astral-sh.github.io/mirror/files/ncurses-6.5.tar.gz",
+          "sha256": "136d91bc269a9a5785e5f9e980bc76ab57428f604ce3e5a5a90cebc767971cc6",
+          "kind": "upstream-source"
+        },
+        {
+          "url": "https://github.com/astral-sh/python-build-standalone/archive/refs/tags/20260901.tar.gz",
+          "kind": "build-recipes-and-patches"
+        }
+      ],
+      "targets": [
+        "linux-x86_64"
+      ],
+      "provenance": {
+        "url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.12.14+20260901-x86_64-unknown-linux-gnu-pgo+lto-full.tar.zst",
+        "sha256": "f2e7bf187eaa66f88432b13cc560528c328b51d452de2fd0875561c82f7168e7",
+        "archive_path": "python/licenses/LICENSE.ncurses.txt"
+      }
+    },
+    {
+      "name": "openssl-3.5",
+      "version": "3.5.8",
+      "license": "Apache-2.0",
+      "category": "python-incorporated",
+      "notices": [
+        {
+          "path": "cpython/LICENSE.openssl-3.txt",
+          "sha256": "7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/openssl/openssl/releases/download/openssl-3.5.8/openssl-3.5.8.tar.gz",
+          "sha256": "a8f84a39918ec6415ce765d9b429d313ba97b8143169c172e734b9514464f5b2",
+          "kind": "upstream-source"
+        },
+        {
+          "url": "https://github.com/astral-sh/python-build-standalone/archive/refs/tags/20260901.tar.gz",
+          "kind": "build-recipes-and-patches"
+        }
+      ],
+      "targets": [
+        "linux-x86_64"
+      ],
+      "provenance": {
+        "url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.12.14+20260901-x86_64-unknown-linux-gnu-pgo+lto-full.tar.zst",
+        "sha256": "f2e7bf187eaa66f88432b13cc560528c328b51d452de2fd0875561c82f7168e7",
+        "archive_path": "python/licenses/LICENSE.openssl-3.txt"
+      }
+    },
+    {
+      "name": "sqlite",
+      "version": "3530100",
+      "license": "Public domain (see notice)",
+      "category": "python-incorporated",
+      "notices": [
+        {
+          "path": "cpython/LICENSE.sqlite.txt",
+          "sha256": "38bef3d28b24f145ea293bd3b6eb4b20396982abc8303128fb493986ea5bc719"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.sqlite.org/2026/sqlite-autoconf-3530100.tar.gz",
+          "sha256": "83e6b2020a034e9a7ad4a72feea59e1ad52f162e09cbd26735a3ffb98359fc4f",
+          "kind": "upstream-source"
+        },
+        {
+          "url": "https://github.com/astral-sh/python-build-standalone/archive/refs/tags/20260901.tar.gz",
+          "kind": "build-recipes-and-patches"
+        }
+      ],
+      "targets": [
+        "linux-x86_64"
+      ],
+      "provenance": {
+        "url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.12.14+20260901-x86_64-unknown-linux-gnu-pgo+lto-full.tar.zst",
+        "sha256": "f2e7bf187eaa66f88432b13cc560528c328b51d452de2fd0875561c82f7168e7",
+        "archive_path": "python/licenses/LICENSE.sqlite.txt"
+      }
+    },
+    {
+      "name": "tcl",
+      "version": "9.0.4",
+      "license": "TCL",
+      "category": "python-incorporated",
+      "notices": [
+        {
+          "path": "cpython/LICENSE.tcl.txt",
+          "sha256": "c0a69a2bfd757361ec7e6143973b103c90409316b49e9c88db26ad6388e79f16"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://prdownloads.sourceforge.net/tcl/tcl9.0.4-src.tar.gz",
+          "sha256": "d0aed49230bc02a65c1e0229e65f34590a4b037ec40d546f32573b467f7551ea",
+          "kind": "upstream-source"
+        },
+        {
+          "url": "https://github.com/astral-sh/python-build-standalone/archive/refs/tags/20260901.tar.gz",
+          "kind": "build-recipes-and-patches"
+        }
+      ],
+      "targets": [
+        "linux-x86_64"
+      ],
+      "provenance": {
+        "url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.12.14+20260901-x86_64-unknown-linux-gnu-pgo+lto-full.tar.zst",
+        "sha256": "f2e7bf187eaa66f88432b13cc560528c328b51d452de2fd0875561c82f7168e7",
+        "archive_path": "python/licenses/LICENSE.tcl.txt"
+      }
+    },
+    {
+      "name": "uuid",
+      "version": "1.0.3",
+      "license": "BSD-3-Clause",
+      "category": "python-incorporated",
+      "notices": [
+        {
+          "path": "cpython/LICENSE.libuuid.txt",
+          "sha256": "122ee1f7e258f2c3c0e538a75c037684f420454bf3850ddc74ce750bbf5fe86b"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://sourceforge.net/projects/libuuid/files/libuuid-1.0.3.tar.gz",
+          "sha256": "46af3275291091009ad7f1b899de3d0cea0252737550e7919d17237997db5644",
+          "kind": "upstream-source"
+        },
+        {
+          "url": "https://github.com/astral-sh/python-build-standalone/archive/refs/tags/20260901.tar.gz",
+          "kind": "build-recipes-and-patches"
+        }
+      ],
+      "targets": [
+        "linux-x86_64"
+      ],
+      "provenance": {
+        "url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.12.14+20260901-x86_64-unknown-linux-gnu-pgo+lto-full.tar.zst",
+        "sha256": "f2e7bf187eaa66f88432b13cc560528c328b51d452de2fd0875561c82f7168e7",
+        "archive_path": "python/licenses/LICENSE.libuuid.txt"
+      }
+    },
+    {
+      "name": "xz",
+      "version": "5.8.3",
+      "license": "0BSD",
+      "category": "python-incorporated",
+      "notices": [
+        {
+          "path": "cpython/LICENSE.liblzma.txt",
+          "sha256": "9a4062de0a2c388a98cf35a35d348b62fa97c838a71c3c28ee1a2d7d0a565b02"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/tukaani-project/xz/releases/download/v5.8.3/xz-5.8.3.tar.gz",
+          "sha256": "3d3a1b973af218114f4f889bbaa2f4c037deaae0c8e815eec381c3d546b974a0",
+          "kind": "upstream-source"
+        },
+        {
+          "url": "https://github.com/astral-sh/python-build-standalone/archive/refs/tags/20260901.tar.gz",
+          "kind": "build-recipes-and-patches"
+        }
+      ],
+      "targets": [
+        "linux-x86_64"
+      ],
+      "provenance": {
+        "url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.12.14+20260901-x86_64-unknown-linux-gnu-pgo+lto-full.tar.zst",
+        "sha256": "f2e7bf187eaa66f88432b13cc560528c328b51d452de2fd0875561c82f7168e7",
+        "archive_path": "python/licenses/LICENSE.liblzma.txt"
+      }
+    },
+    {
+      "name": "zlib",
+      "version": "1.3.2",
+      "license": "Zlib",
+      "category": "python-incorporated",
+      "notices": [
+        {
+          "path": "cpython/LICENSE.zlib.txt",
+          "sha256": "818922b2620f12801a12bf78e399644a30990e66824abd8ca8ec24d451d6f92c"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/madler/zlib/releases/download/v1.3.2/zlib-1.3.2.tar.gz",
+          "sha256": "bb329a0a2cd0274d05519d61c667c062e06990d72e125ee2dfa8de64f0119d16",
+          "kind": "upstream-source"
+        },
+        {
+          "url": "https://github.com/astral-sh/python-build-standalone/archive/refs/tags/20260901.tar.gz",
+          "kind": "build-recipes-and-patches"
+        }
+      ],
+      "targets": [
+        "linux-x86_64"
+      ],
+      "provenance": {
+        "url": "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.12.14+20260901-x86_64-unknown-linux-gnu-pgo+lto-full.tar.zst",
+        "sha256": "f2e7bf187eaa66f88432b13cc560528c328b51d452de2fd0875561c82f7168e7",
+        "archive_path": "python/licenses/LICENSE.zlib.txt"
+      }
+    },
+    {
+      "name": "tcl-resource-terms",
+      "version": "9.0.4",
+      "license": "TCL",
+      "category": "python-resources",
+      "notices": [
+        {
+          "path": "cpython/tcl/pkgs/thread3.0.6/license.terms",
+          "sha256": "0a03981c40f7813ce6ddbdfce9882020bcfd696ea044b21ef07619ed9b86abae"
+        },
+        {
+          "path": "cpython/tcl/pkgs/itcl4.3.8/license.terms",
+          "sha256": "b61edfaeead97546bc62b1f205b046f2e440b83bfc517bc0932b93bc3d505865"
+        },
+        {
+          "path": "cpython/tcl/pkgs/itcl4.3.8/doc/license.terms",
+          "sha256": "ad02cfa25db921ee30a1ab68d30e2ad8bf2e174c394237eb55ddd6968ded8032"
+        },
+        {
+          "path": "cpython/tcl/license.terms",
+          "sha256": "c0a69a2bfd757361ec7e6143973b103c90409316b49e9c88db26ad6388e79f16"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://prdownloads.sourceforge.net/tcl/tcl9.0.4-src.tar.gz",
+          "sha256": "d0aed49230bc02a65c1e0229e65f34590a4b037ec40d546f32573b467f7551ea",
+          "kind": "upstream-source"
+        },
+        {
+          "url": "https://github.com/astral-sh/python-build-standalone/archive/refs/tags/20260901.tar.gz",
+          "kind": "build-recipes-and-patches"
+        }
+      ],
+      "targets": [
+        "linux-x86_64"
+      ],
+      "scope": "Tcl 9.0.4 including Itcl 4.3.8 and Thread 3.0.6; Tk 9.0.4"
+    },
+    {
+      "name": "tk-resource-terms",
+      "version": "9.0.4",
+      "license": "TCL",
+      "category": "python-resources",
+      "notices": [
+        {
+          "path": "cpython/tk/license.terms",
+          "sha256": "2cde822b93ca16ae535c954b7dfe658b4ad10df2a193628d1b358f1765e8b198"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://prdownloads.sourceforge.net/tcl/tk9.0.4-src.tar.gz",
+          "sha256": "d7a146d2917eb8b5cc95276dbf0e3d03c7464d2b19c1675357857c989301dbb4",
+          "kind": "upstream-source"
+        },
+        {
+          "url": "https://github.com/astral-sh/python-build-standalone/archive/refs/tags/20260901.tar.gz",
+          "kind": "build-recipes-and-patches"
+        }
+      ],
+      "targets": [
+        "linux-x86_64"
+      ],
+      "scope": "Tk 9.0.4 resources"
+    },
+    {
+      "name": "pip",
+      "version": "26.2.1",
+      "license": "MIT AND vendored licenses",
+      "category": "embedded-bootstrap",
+      "notices": [
+        {
+          "path": "pip/AUTHORS.txt",
+          "sha256": "4eb1fb1705e2def898e81bcba19c3aac80620d27ba3569d6a6df7b4629d1b5c2"
+        },
+        {
+          "path": "pip/LICENSE.txt",
+          "sha256": "634300a669d49aeae65b12c6c48c924c51a4cdf3d1ff086dc3456dc8bcaa2104"
+        },
+        {
+          "path": "pip/src/pip/_vendor/cachecontrol/LICENSE.txt",
+          "sha256": "86eeee87be2a43f3ff1f56496f451f69243926f025fedbb033666c304c4c161b"
+        },
+        {
+          "path": "pip/src/pip/_vendor/certifi/LICENSE",
+          "sha256": "e93716da6b9c0d5a4a1df60fe695b370f0695603d21f6f83f053e42cfc10caf7"
+        },
+        {
+          "path": "pip/src/pip/_vendor/distlib/LICENSE.txt",
+          "sha256": "808e10c8a6ab8deb149ff9b3fb19f447a808094606d712a9ca57fead3552599d"
+        },
+        {
+          "path": "pip/src/pip/_vendor/distro/LICENSE",
+          "sha256": "cb5e8e7e5f4a3988e1063c142c60dc2df75605f4c46515e776e3aca6df976e14"
+        },
+        {
+          "path": "pip/src/pip/_vendor/idna/LICENSE.md",
+          "sha256": "1a9a4f0e3d479a27240ddd59a9137a66ab4a0f9dfdc8ca6188cc0bfd85187f04"
+        },
+        {
+          "path": "pip/src/pip/_vendor/msgpack/COPYING",
+          "sha256": "492dedba85da5872f78e6091bcd1fea474d660d35acb4dee964b8aab3f007427"
+        },
+        {
+          "path": "pip/src/pip/_vendor/packaging/LICENSE",
+          "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48"
+        },
+        {
+          "path": "pip/src/pip/_vendor/packaging/LICENSE.APACHE",
+          "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+        },
+        {
+          "path": "pip/src/pip/_vendor/packaging/LICENSE.BSD",
+          "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5"
+        },
+        {
+          "path": "pip/src/pip/_vendor/pkg_resources/LICENSE",
+          "sha256": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741"
+        },
+        {
+          "path": "pip/src/pip/_vendor/platformdirs/LICENSE",
+          "sha256": "29e0fd62e929850e86eb28c3fdccf0cefdf4fa94879011cffb3d0d4bed6d4db6"
+        },
+        {
+          "path": "pip/src/pip/_vendor/pygments/LICENSE",
+          "sha256": "a9d66f1d526df02e29dce73436d34e56e8632f46c275bbdffc70569e882f9f17"
+        },
+        {
+          "path": "pip/src/pip/_vendor/pyproject_hooks/LICENSE",
+          "sha256": "1b22b049b5267d6dfc23a67bf4a84d8ec04b9fdfb1a51d360e42b4342c8b4154"
+        },
+        {
+          "path": "pip/src/pip/_vendor/requests/LICENSE",
+          "sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b"
+        },
+        {
+          "path": "pip/src/pip/_vendor/resolvelib/LICENSE",
+          "sha256": "f388fd38cad13112c1dc0f669bbe80e7f84541edbafb72f3030d2ca7642c3c9d"
+        },
+        {
+          "path": "pip/src/pip/_vendor/rich/LICENSE",
+          "sha256": "deed7c17a4318158190a3ea239cc879a5a50271cebb98ae7025f48fbe58dca15"
+        },
+        {
+          "path": "pip/src/pip/_vendor/tomli/LICENSE",
+          "sha256": "b80816b0d530b8accb4c2211783790984a6e3b61922c2b5ee92f3372ab2742fe"
+        },
+        {
+          "path": "pip/src/pip/_vendor/tomli_w/LICENSE",
+          "sha256": "b80816b0d530b8accb4c2211783790984a6e3b61922c2b5ee92f3372ab2742fe"
+        },
+        {
+          "path": "pip/src/pip/_vendor/truststore/LICENSE",
+          "sha256": "33be7b7e8fa4fd19b1760e1a8ed8a668bdab852c91b692dd41424bcb725a9fca"
+        },
+        {
+          "path": "pip/src/pip/_vendor/urllib3/LICENSE.txt",
+          "sha256": "130e3a64d5fdd5d096a752694634a7d9df284469de86e5732100268041e3d686"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://files.pythonhosted.org/packages/ae/15/4500e320e6b101ec3b719ae85b697d9940b6cda672bc555bd6016fc60c6f/pip-26.2.1.tar.gz",
+          "sha256": "f6ad667e89a1fe78046c8f13232b247200f5258d7828f3f7883d660878e0813f",
+          "kind": "upstream-source"
+        }
+      ],
+      "targets": [
+        "linux-x86_64"
+      ],
+      "vendored_versions": "CacheControl==0.14.4\ndistlib==0.4.2\ndistro==1.9.0\nmsgpack==1.1.2\npackaging==26.2\nplatformdirs==4.10.0\npyproject-hooks==1.2.0\nrequests==2.34.2\n    certifi==2026.6.17\n    idna==3.18\n    urllib3==2.7.0\nrich==14.2.0\n    pygments==2.20.0\nresolvelib==1.2.1\nsetuptools==70.3.0\ntomli==2.4.1\ntomli-w==1.2.0\ntruststore==0.10.4\n"
+    },
+    {
+      "name": "Nuitka generated runtime",
+      "version": "4.3",
+      "license": "AGPL-3.0 with Nuitka Runtime Library Exception",
+      "category": "compiler-runtime",
+      "notices": [
+        {
+          "path": "nuitka/LICENSE-RUNTIME.txt",
+          "sha256": "20ff0ae581adf436a7b06e50e67a6c8913aec1ea4e60dba138d0a0bee7ee520c"
+        },
+        {
+          "path": "nuitka/LICENSE.txt",
+          "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+        },
+        {
+          "path": "nuitka/NOTICE.txt",
+          "sha256": "b6ba5212864ec9f98842220e01b2485a2ebeb8eafa192b016b36032355c8a98d"
+        },
+        {
+          "path": "nuitka/runtime/build/inline_copy/appdirs/LICENSE.txt",
+          "sha256": "36ddb4d0a745a93ab203203d7190814b1b89727d254caff48c7a7afbbd47000b"
+        },
+        {
+          "path": "nuitka/runtime/build/inline_copy/jinja2/LICENSE.rst",
+          "sha256": "4c9523d519ddac94bbae62fa8498d42c60f29019b15485bebd88052688f25b09"
+        },
+        {
+          "path": "nuitka/runtime/build/inline_copy/markupsafe/LICENSE.rst",
+          "sha256": "3c07d607f4c182ece78b76df78e75bcf8eee1cb7df47cd4e2e621abe5198d65d"
+        },
+        {
+          "path": "nuitka/runtime/build/inline_copy/python_hacl/LICENSE.txt",
+          "sha256": "c5accbbd8546e94c34aed24afe689a617627d18eed5a6c48277e48db57c23851"
+        },
+        {
+          "path": "nuitka/runtime/build/inline_copy/yaml/LICENSE",
+          "sha256": "8d3928f9dc4490fd635707cb88eb26bd764102a7282954307d3e5167a577e8a4"
+        },
+        {
+          "path": "nuitka/runtime/build/inline_copy/zlib/LICENSE",
+          "sha256": "845efc77857d485d91fb3e0b884aaa929368c717ae8186b66fe1ed2495753243"
+        },
+        {
+          "path": "nuitka/runtime/build/inline_copy/zstd/LICENSE.txt",
+          "sha256": "2c1a7fa704df8f3a606f6fc010b8b5aaebf403f3aeec339a12048f1ba7331a0b"
+        }
+      ],
+      "sources": [
+        {
+          "version": "4.3",
+          "url": "https://files.pythonhosted.org/packages/fa/5f/ba7cb858da0c98c24f85c54454a5ea18f2b784f658a91531fa051b2f2ee9/nuitka-4.3.tar.gz",
+          "sha256": "8b102c6bf30d9504e82e69674d396972729092b25cefa680e8fd05678fdfa30b",
+          "kind": "upstream-source"
+        }
+      ],
+      "scope": "Compiler not shipped; see explicit proprietary-output exception in LICENSE-RUNTIME.txt."
+    },
+    {
+      "name": "libxcrypt (Ubuntu libcrypt1:amd64)",
+      "version": "1:4.4.27-1",
+      "license": "LGPL-2.1-or-later AND BSD and other per-file terms; LGPL-3.0 option selected",
+      "category": "embedded-native",
+      "notices": [
+        {
+          "path": "libxcrypt/COPYING.LIB.txt",
+          "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551"
+        },
+        {
+          "path": "libxcrypt/LICENSING.txt",
+          "sha256": "f9b48b0bc67a92b752780710aa774cf08b62ec2ebaa3f4aebd00069fba6effd2"
+        },
+        {
+          "path": "libxcrypt/LGPL-3.0.txt",
+          "sha256": "a853c2ffec17057872340eee242ae4d96cbf2b520ae27d903e1b2fef1a5f9d1c"
+        },
+        {
+          "path": "libxcrypt/GPL-3.0.txt",
+          "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+        },
+        {
+          "path": "libxcrypt/Ubuntu-copyright.txt",
+          "sha256": "5a5e7ca0e9f3f9679977e3a3e9ede45ad92885a3297ea78e766979f9866c5a16"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://archive.ubuntu.com/ubuntu/pool/main/libx/libxcrypt/libxcrypt_4.4.27.orig.tar.xz",
+          "sha256": "cc0762a751224a5cb45329fb731f25016a8d8292749d8b4010f4b68144db6961",
+          "kind": "corresponding-source"
+        },
+        {
+          "url": "https://archive.ubuntu.com/ubuntu/pool/main/libx/libxcrypt/libxcrypt_4.4.27-1.debian.tar.xz",
+          "sha256": "92565f123e1e3bd5ebc53bc6b50dda46dc30e952fd02bb5b081bf9c113b733e8",
+          "kind": "corresponding-source"
+        },
+        {
+          "url": "https://archive.ubuntu.com/ubuntu/pool/main/libx/libxcrypt/libxcrypt_4.4.27-1.dsc",
+          "sha256": "1ffc1194e44330552a28d42a84c6b638b4939f0172d2bc84f58055406546edf9",
+          "kind": "source-package-manifest"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gcc-mirror/gcc/master/COPYING3.LIB",
+          "sha256": "a853c2ffec17057872340eee242ae4d96cbf2b520ae27d903e1b2fef1a5f9d1c",
+          "kind": "license-text"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gcc-mirror/gcc/master/COPYING3",
+          "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+          "kind": "license-text"
+        },
+        {
+          "url": "https://archive.ubuntu.com/ubuntu/pool/main/libx/libxcrypt/libcrypt1_4.4.27-1_amd64.deb",
+          "sha256": "3fa566e9f861a08736cbc5a97562d9d6e4f0c00450fbeafcb6d7583423b04a98",
+          "kind": "binary-package-notice-provenance"
+        }
+      ],
+      "targets": [
+        "linux-x86_64"
+      ],
+      "payload_sha256": "d8b34ade1d95c6243a48e90f2873d65399dfb0cd3fa4ee2af45afc9e6cb8642b",
+      "scope": "Use both source archives with the signed .dsc for the exact Ubuntu package. Practical replacement/relinking review remains deferred; source links are not a release approval."
+    },
+    {
+      "name": "mermaid",
+      "version": "10.9.3",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/mermaid@10.9.3/LICENSE",
+          "sha256": "ec9fb67dcb25eccc416ed56e1aab819222c805a2a4bfe4cb19e7556bf2ffde80"
+        },
+        {
+          "path": "mermaid/BUNDLE-NOTICES.txt",
+          "sha256": "669696d3ee77345b82f98e964fdc474aa108e636f101c6af698d72c477aa91bb"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/mermaid/-/mermaid-10.9.3.tgz",
+          "sha256": "d9458cd3744b9f30ebafd6afb07e075fe1def8a4d1dba486c9a4c518143692b3",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/mermaid-js/mermaid",
+          "kind": "upstream-repository",
+          "revision": "unrecorded"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/mermaid-js/mermaid/v10.9.3/pnpm-lock.yaml",
+          "sha256": "a3d9e621ed8ad4e89dea942fc163fd72a17ecfa1030590cb67b740e784413163",
+          "kind": "dependency-lock"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies.",
+      "payload_sha256": "5a8ec91820bd55afef049068489369910e5d6ce70c8103952f27e29d3e76e8bc"
+    },
+    {
+      "name": "jison",
+      "version": "0.4.18",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/jison@0.4.18/LICENSE.txt",
+          "sha256": "0720307bf0679b677520510fc5b45797718a9ef1dd712b8785e3bf7baa019700"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/jison/-/jison-0.4.18.tgz",
+          "sha256": "b3b241d97c27514766524d8e455020b038dcffc1c1232689d8f65876c057d4c9",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/zaach/jison",
+          "kind": "upstream-repository",
+          "revision": "bcf986e180359aa2404b1b73ecbfef1df4c6b011"
+        },
+        {
+          "url": "https://github.com/zaach/jison/archive/bcf986e180359aa2404b1b73ecbfef1df4c6b011.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "@braintree/sanitize-url",
+      "version": "6.0.4",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/@braintree__sanitize-url@6.0.4/LICENSE",
+          "sha256": "0984740e0c3d725c8044dec7edcefe1dbce180ef5a7bc710c251e19607000158"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/@braintree/sanitize-url/-/sanitize-url-6.0.4.tgz",
+          "sha256": "7fc4ac129a9d4357d84e96484012e3da57e695338fd555ffa7375730b89c51dc",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/braintree/sanitize-url",
+          "kind": "upstream-repository",
+          "revision": "32c1f1e48c413e7ccd4ef2468d69e29ab237713d"
+        },
+        {
+          "url": "https://github.com/braintree/sanitize-url/archive/32c1f1e48c413e7ccd4ef2468d69e29ab237713d.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "cytoscape",
+      "version": "3.28.1",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/cytoscape@3.28.1/LICENSE",
+          "sha256": "ac2a446d6e1b489d9568def4ba7790ab81f5023ebba335d49a77dbff1960232e"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/cytoscape/-/cytoscape-3.28.1.tgz",
+          "sha256": "7bdd6c216ef1c9d4aa6cd6ef0e868adf10e7e2953ba9499d6be86ee256eae8f2",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/cytoscape/cytoscape.js",
+          "kind": "upstream-repository",
+          "revision": "3eb3e1278c9f30b52deadc7c5b6d44df33fcc62f"
+        },
+        {
+          "url": "https://github.com/cytoscape/cytoscape.js/archive/3eb3e1278c9f30b52deadc7c5b6d44df33fcc62f.tar.gz",
+          "kind": "upstream-source-revision"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/mermaid-js/mermaid/v10.9.3/patches/cytoscape%403.28.1.patch",
+          "sha256": "bf3ffc4978d344ad108364bd2b40ddc44d0906658400e11c5b4cfe0bb009b738",
+          "kind": "upstream-patch"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies. The upstream Mermaid build applies the linked patch; SMTO has not modified the published Mermaid bundle."
+    },
+    {
+      "name": "heap",
+      "version": "0.2.7",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/heap@0.2.7/LICENSE",
+          "sha256": "e78f28382ac236a42dcbc16caaaaf2e76da55ddc67053a8bcb3aabdfc72df9cc"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/heap/-/heap-0.2.7.tgz",
+          "sha256": "091e62101e93e9a8089ca14c833c958fb1b8225f59086bb6e2b72110ec1de42a",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/qiao/heap.js",
+          "kind": "upstream-repository",
+          "revision": "21701c0b9c22039de6f948ed5f6d44e53ae79231"
+        },
+        {
+          "url": "https://github.com/qiao/heap.js/archive/21701c0b9c22039de6f948ed5f6d44e53ae79231.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "lodash",
+      "version": "4.17.21",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/lodash@4.17.21/LICENSE",
+          "sha256": "f71e8ed126b46346494aad5486874cd8f0aafe95092ed67d2e3cb6110f939abc"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz",
+          "sha256": "6a087ac9e5702a0c9d60fbcd48696012646ec8df1491dea472b150e79fcaf804",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/lodash/lodash",
+          "kind": "upstream-repository",
+          "revision": "c6e281b878b315c7a10d90f9c2af4cdb112d9625"
+        },
+        {
+          "url": "https://github.com/lodash/lodash/archive/c6e281b878b315c7a10d90f9c2af4cdb112d9625.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "cytoscape-cose-bilkent",
+      "version": "4.1.0",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/cytoscape-cose-bilkent@4.1.0/LICENSE",
+          "sha256": "440fc58a56a12814e417d2b341da89b050da052dc75bdb235607d37ec5fe74ef"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/cytoscape-cose-bilkent/-/cytoscape-cose-bilkent-4.1.0.tgz",
+          "sha256": "9df46b10952452b1d2a5d4cd942f70709a037bc6b7ef25cf1d9fb70be73bb950",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/cytoscape/cytoscape.js-cose-bilkent",
+          "kind": "upstream-repository",
+          "revision": "999090a8438b4f14788d636ef4fd7a5355e29e8c"
+        },
+        {
+          "url": "https://github.com/cytoscape/cytoscape.js-cose-bilkent/archive/999090a8438b4f14788d636ef4fd7a5355e29e8c.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "cose-base",
+      "version": "1.0.3",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/cose-base@1.0.3/LICENSE",
+          "sha256": "5fb3cf4a14c3c5af6e473a192df8bca10c77754e3a0c6492c79fb92a76a5478a"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/cose-base/-/cose-base-1.0.3.tgz",
+          "sha256": "a20640fb8c1a2cf226eb9195785e9f714ba1cce1e80cb8f48d131d1bc0909d18",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/iVis-at-Bilkent/cose-base",
+          "kind": "upstream-repository",
+          "revision": "914bfe712991534af1d8b795d6f262687edc2563"
+        },
+        {
+          "url": "https://github.com/iVis-at-Bilkent/cose-base/archive/914bfe712991534af1d8b795d6f262687edc2563.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "layout-base",
+      "version": "1.0.2",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/layout-base@1.0.2/LICENSE",
+          "sha256": "eabb762d8a95109a39c9be3247325529a5239a7aca327d909c3ccdc41f3a06bf"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/layout-base/-/layout-base-1.0.2.tgz",
+          "sha256": "efea1306903d9d043c42c1e7931b2d97b4f519cff04b1347fa308032a52eebab",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/iVis-at-Bilkent/layout-base",
+          "kind": "upstream-repository",
+          "revision": "836898aa4a88e2794774997d7128b383108a3d5a"
+        },
+        {
+          "url": "https://github.com/iVis-at-Bilkent/layout-base/archive/836898aa4a88e2794774997d7128b383108a3d5a.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "d3",
+      "version": "7.8.5",
+      "license": "ISC",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/d3@7.8.5/LICENSE",
+          "sha256": "3e6849627f74ff73c257a3ae1efb574015d94fc1035c05ec3c15805165efcbc4"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/d3/-/d3-7.8.5.tgz",
+          "sha256": "4112c55e94689de4af27d3f5856878a7cdc95a729acc980a05381d80e945a6af",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/d3/d3",
+          "kind": "upstream-repository",
+          "revision": "d6f9341bc868e2c60df8c38cd636de739e592438"
+        },
+        {
+          "url": "https://github.com/d3/d3/archive/d6f9341bc868e2c60df8c38cd636de739e592438.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "d3-array",
+      "version": "3.2.4",
+      "license": "ISC",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/d3-array@3.2.4/LICENSE",
+          "sha256": "3e6849627f74ff73c257a3ae1efb574015d94fc1035c05ec3c15805165efcbc4"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/d3-array/-/d3-array-3.2.4.tgz",
+          "sha256": "6dbf3f2be39e48f86775be6e166a5d3e5a585ca7144453cd6ad1912f5ae4417f",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/d3/d3-array",
+          "kind": "upstream-repository",
+          "revision": "94d4541626ae3ac6c847e3d4c6e31aca1a8879b4"
+        },
+        {
+          "url": "https://github.com/d3/d3-array/archive/94d4541626ae3ac6c847e3d4c6e31aca1a8879b4.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "internmap",
+      "version": "2.0.3",
+      "license": "ISC",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/internmap@2.0.3/LICENSE",
+          "sha256": "9ea8903938dab5f12c4572d60725069bec2d1b0dc3bcc210b09bae946a5ebb1f"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/internmap/-/internmap-2.0.3.tgz",
+          "sha256": "39d1936831a4d3f2bd6e088db28a10de4458d823f652c36b2c808bf5b978c48d",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/mbostock/internmap",
+          "kind": "upstream-repository",
+          "revision": "78db0b387b951c036f7a8d6580d98afd8f416a5e"
+        },
+        {
+          "url": "https://github.com/mbostock/internmap/archive/78db0b387b951c036f7a8d6580d98afd8f416a5e.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "d3-axis",
+      "version": "3.0.0",
+      "license": "ISC",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/d3-axis@3.0.0/LICENSE",
+          "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/d3-axis/-/d3-axis-3.0.0.tgz",
+          "sha256": "b5ca6e00b9a2503d6b473485684670564a370733cdc8565a45b63f9fb4d944f6",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/d3/d3-axis",
+          "kind": "upstream-repository",
+          "revision": "64372b12c9ba5c8a816277b3ad04ff813db5af97"
+        },
+        {
+          "url": "https://github.com/d3/d3-axis/archive/64372b12c9ba5c8a816277b3ad04ff813db5af97.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "d3-brush",
+      "version": "3.0.0",
+      "license": "ISC",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/d3-brush@3.0.0/LICENSE",
+          "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/d3-brush/-/d3-brush-3.0.0.tgz",
+          "sha256": "fde88a49b16f92d067401df00abf88bf07eec3e091343eb902caf9cab02bdf2a",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/d3/d3-brush",
+          "kind": "upstream-repository",
+          "revision": "ec2bce6f15074a9ead7f9a84c61335be51c123a3"
+        },
+        {
+          "url": "https://github.com/d3/d3-brush/archive/ec2bce6f15074a9ead7f9a84c61335be51c123a3.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "d3-dispatch",
+      "version": "3.0.1",
+      "license": "ISC",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/d3-dispatch@3.0.1/LICENSE",
+          "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/d3-dispatch/-/d3-dispatch-3.0.1.tgz",
+          "sha256": "3d1a0b5c003e0e9608ad57f6ca21a0c8368031fcbe5f5317fe4e50b3f797ea23",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/d3/d3-dispatch",
+          "kind": "upstream-repository",
+          "revision": "904ddf22634bb642460685992f4ce22898f8aeb4"
+        },
+        {
+          "url": "https://github.com/d3/d3-dispatch/archive/904ddf22634bb642460685992f4ce22898f8aeb4.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "d3-drag",
+      "version": "3.0.0",
+      "license": "ISC",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/d3-drag@3.0.0/LICENSE",
+          "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/d3-drag/-/d3-drag-3.0.0.tgz",
+          "sha256": "a3ccc9d31d85135f35a4eda3ec0fae6ac22435d4e3fe2d2e0c73b5246460d4db",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/d3/d3-drag",
+          "kind": "upstream-repository",
+          "revision": "1b88d8a2d69fca86d4d90a8329987693b79ec506"
+        },
+        {
+          "url": "https://github.com/d3/d3-drag/archive/1b88d8a2d69fca86d4d90a8329987693b79ec506.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "d3-selection",
+      "version": "3.0.0",
+      "license": "ISC",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/d3-selection@3.0.0/LICENSE",
+          "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/d3-selection/-/d3-selection-3.0.0.tgz",
+          "sha256": "a1f872f30dca23b76de89cae9e882f56c325433e7f3aee87b95fa830d12789f3",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/d3/d3-selection",
+          "kind": "upstream-repository",
+          "revision": "91245ee124ec4dd491e498ecbdc9679d75332b49"
+        },
+        {
+          "url": "https://github.com/d3/d3-selection/archive/91245ee124ec4dd491e498ecbdc9679d75332b49.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "d3-interpolate",
+      "version": "3.0.1",
+      "license": "ISC",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/d3-interpolate@3.0.1/LICENSE",
+          "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/d3-interpolate/-/d3-interpolate-3.0.1.tgz",
+          "sha256": "7e8df78d233cd102a0bb518658dc0b7d5c38442b6f2dbc8b95ffc14ba87c7c33",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/d3/d3-interpolate",
+          "kind": "upstream-repository",
+          "revision": "6562b85040f7a9b96efe49b54a77eb6fceafa1c1"
+        },
+        {
+          "url": "https://github.com/d3/d3-interpolate/archive/6562b85040f7a9b96efe49b54a77eb6fceafa1c1.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "d3-color",
+      "version": "3.1.0",
+      "license": "ISC",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/d3-color@3.1.0/LICENSE",
+          "sha256": "faa682e3e430941f958d26180458f5934a62f58dac4d70ccdd15608c15d0f884"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/d3-color/-/d3-color-3.1.0.tgz",
+          "sha256": "d41bbcd99dd4f00e696546bffc73fed9b8fb6c3354905b6ea1721bff25f33b42",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/d3/d3-color",
+          "kind": "upstream-repository",
+          "revision": "7a1573ed260de4fd97d061975244841132adde92"
+        },
+        {
+          "url": "https://github.com/d3/d3-color/archive/7a1573ed260de4fd97d061975244841132adde92.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "d3-transition",
+      "version": "3.0.1",
+      "license": "ISC",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/d3-transition@3.0.1/LICENSE",
+          "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/d3-transition/-/d3-transition-3.0.1.tgz",
+          "sha256": "260eb8eaed565581afc00634ec83c83fd3b7e830e2a6b73b49f3f744dce0254c",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/d3/d3-transition",
+          "kind": "upstream-repository",
+          "revision": "c4c94c421e2ef9e9ffc253fab33ccf99f1434901"
+        },
+        {
+          "url": "https://github.com/d3/d3-transition/archive/c4c94c421e2ef9e9ffc253fab33ccf99f1434901.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "d3-ease",
+      "version": "3.0.1",
+      "license": "BSD-3-Clause",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/d3-ease@3.0.1/LICENSE",
+          "sha256": "b989d9085148d21ff64a75e14462aefa06b2589a55553b07b1460c70081c7d08"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/d3-ease/-/d3-ease-3.0.1.tgz",
+          "sha256": "b249afe4aa8b741beeaf2d14f625ccf49270adb645e3f1c755d11476c1fdbe2a",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/d3/d3-ease",
+          "kind": "upstream-repository",
+          "revision": "a0919680efc6f8e667275ba1d6330bf6a4cc9301"
+        },
+        {
+          "url": "https://github.com/d3/d3-ease/archive/a0919680efc6f8e667275ba1d6330bf6a4cc9301.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "d3-timer",
+      "version": "3.0.1",
+      "license": "ISC",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/d3-timer@3.0.1/LICENSE",
+          "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/d3-timer/-/d3-timer-3.0.1.tgz",
+          "sha256": "05cdf901e1876a7f24f4c365a879252752e22e3cc52b131ca616639f07e8ed05",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/d3/d3-timer",
+          "kind": "upstream-repository",
+          "revision": "441e45b3f582762cd20035d47b40e9759ed1b235"
+        },
+        {
+          "url": "https://github.com/d3/d3-timer/archive/441e45b3f582762cd20035d47b40e9759ed1b235.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "d3-chord",
+      "version": "3.0.1",
+      "license": "ISC",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/d3-chord@3.0.1/LICENSE",
+          "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/d3-chord/-/d3-chord-3.0.1.tgz",
+          "sha256": "84c47d193e5e8c5fd3a28783a55b34f08dfaa1c8d764e96d9b49c78a3b6b40b5",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/d3/d3-chord",
+          "kind": "upstream-repository",
+          "revision": "57ac4d9029e66c025117356ae58ab36c7457a2d1"
+        },
+        {
+          "url": "https://github.com/d3/d3-chord/archive/57ac4d9029e66c025117356ae58ab36c7457a2d1.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "d3-path",
+      "version": "3.1.0",
+      "license": "ISC",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/d3-path@3.1.0/LICENSE",
+          "sha256": "a09b0d6d76e768fca2085fad05743ee81ddd11946bcda160a3cf5e1081a479aa"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/d3-path/-/d3-path-3.1.0.tgz",
+          "sha256": "94e9b69f82f113ed4ada36703c05f6b7406723c55affe2a443d69729d6d5da14",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/d3/d3-path",
+          "kind": "upstream-repository",
+          "revision": "58bce7a53df2b03f70092a9b00b78055c4ffee04"
+        },
+        {
+          "url": "https://github.com/d3/d3-path/archive/58bce7a53df2b03f70092a9b00b78055c4ffee04.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "d3-contour",
+      "version": "4.0.2",
+      "license": "ISC",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/d3-contour@4.0.2/LICENSE",
+          "sha256": "e51cba0e4fa1d8c078e15319868f2b90188f413f9ce9dac1043b62db32901e93"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/d3-contour/-/d3-contour-4.0.2.tgz",
+          "sha256": "fa347e237c259a987fc3cfd890e2fcb0f2ec42ed125a2c9363854509e86db8f4",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/d3/d3-contour",
+          "kind": "upstream-repository",
+          "revision": "0ba2dd047ce4cc2980025eff5c4fea989bf2da85"
+        },
+        {
+          "url": "https://github.com/d3/d3-contour/archive/0ba2dd047ce4cc2980025eff5c4fea989bf2da85.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "d3-delaunay",
+      "version": "6.0.4",
+      "license": "ISC",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/d3-delaunay@6.0.4/LICENSE",
+          "sha256": "582c3022bd01942336095f92b58a90b1be624dc547d987555c6c956512dd24c1"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/d3-delaunay/-/d3-delaunay-6.0.4.tgz",
+          "sha256": "935113ffa78d545505c8f1accf95be0e48594737eab34db8f50c9d6319907971",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/d3/d3-delaunay",
+          "kind": "upstream-repository",
+          "revision": "c5a08b375cd57f4a314b07979e25e3e30387943f"
+        },
+        {
+          "url": "https://github.com/d3/d3-delaunay/archive/c5a08b375cd57f4a314b07979e25e3e30387943f.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "delaunator",
+      "version": "5.0.1",
+      "license": "ISC",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/delaunator@5.0.1/LICENSE",
+          "sha256": "b8878372a0d7d1c303f48659ddbd6881807cd2196e4af2f548d8da0c0f7c4d71"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/delaunator/-/delaunator-5.0.1.tgz",
+          "sha256": "6b30e6cf0aa49bf7882a3fb6dd2b5d3c33478d3693356d8a74a88f65df411f55",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/mapbox/delaunator",
+          "kind": "upstream-repository",
+          "revision": "80ac079775bbe52ffec51df1394561d0e6e6e4a9"
+        },
+        {
+          "url": "https://github.com/mapbox/delaunator/archive/80ac079775bbe52ffec51df1394561d0e6e6e4a9.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "robust-predicates",
+      "version": "3.0.2",
+      "license": "Unlicense",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/robust-predicates@3.0.2/LICENSE",
+          "sha256": "88d9b4eb60579c191ec391ca04c16130572d7eedc4a86daa58bf28c6e14c9bcd"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/robust-predicates/-/robust-predicates-3.0.2.tgz",
+          "sha256": "962cacbec5dc58976307fa534c335331c11a1f8f315fc698776c4e1fc931e17e",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/mourner/robust-predicates",
+          "kind": "upstream-repository",
+          "revision": "c20b0ab9ab4c4f2969f3611908c41ce76aa0e7a7"
+        },
+        {
+          "url": "https://github.com/mourner/robust-predicates/archive/c20b0ab9ab4c4f2969f3611908c41ce76aa0e7a7.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "d3-dsv",
+      "version": "3.0.1",
+      "license": "ISC",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/d3-dsv@3.0.1/LICENSE",
+          "sha256": "7842a82012622e5a37bfe4f6c1b67cd3bae6350716b5bf87f36cea0bdc1319dc"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/d3-dsv/-/d3-dsv-3.0.1.tgz",
+          "sha256": "fdafcae0362205e2fc63fe3e87fed54822227d9370ce5150914f863ec36153cb",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/d3/d3-dsv",
+          "kind": "upstream-repository",
+          "revision": "344677983ac44e7bbf0e2527ad7f0223d66a2f38"
+        },
+        {
+          "url": "https://github.com/d3/d3-dsv/archive/344677983ac44e7bbf0e2527ad7f0223d66a2f38.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "commander",
+      "version": "7.2.0",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/commander@7.2.0/LICENSE",
+          "sha256": "04512a63dce4d2d506ad612dc0bd7681ccf6e3655f7b6eaef7dfac8323d1ec0b"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/commander/-/commander-7.2.0.tgz",
+          "sha256": "cbb0895e31309d01f270ba9e94a0bea386acab0165672f6a1539df8b3a6448f6",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/tj/commander.js",
+          "kind": "upstream-repository",
+          "revision": "327a3ddd552f90d1dbd37f55fa7a88b9553468ae"
+        },
+        {
+          "url": "https://github.com/tj/commander.js/archive/327a3ddd552f90d1dbd37f55fa7a88b9553468ae.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "iconv-lite",
+      "version": "0.6.3",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/iconv-lite@0.6.3/LICENSE",
+          "sha256": "ac779f7314c74f232ef847ea86e714abe25cf6eeb5cc97b69451b74e2af6492d"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.6.3.tgz",
+          "sha256": "7127ec148f994f031eff658a50dc0629f6010775a8202213b0526ec5e30fc8f4",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/ashtuchkin/iconv-lite",
+          "kind": "upstream-repository",
+          "revision": "d13de386c07a1574425811f8f219c181c633e88d"
+        },
+        {
+          "url": "https://github.com/ashtuchkin/iconv-lite/archive/d13de386c07a1574425811f8f219c181c633e88d.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "safer-buffer",
+      "version": "2.1.2",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/safer-buffer@2.1.2/LICENSE",
+          "sha256": "4bc935e71be198c67ddf3c2b5fddb195f6edc182bfc155a96a6db61b44b494b9"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/safer-buffer/-/safer-buffer-2.1.2.tgz",
+          "sha256": "78812f65ae3b98071ce1c9bacbe0666f4220d0b2753c2a11530eb27df440a3b3",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/ChALkeR/safer-buffer",
+          "kind": "upstream-repository",
+          "revision": "e8ac214944eda30e1e6c6b7d7e7f6a21cf7dce7c"
+        },
+        {
+          "url": "https://github.com/ChALkeR/safer-buffer/archive/e8ac214944eda30e1e6c6b7d7e7f6a21cf7dce7c.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "rw",
+      "version": "1.3.3",
+      "license": "BSD-3-Clause",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/rw@1.3.3/LICENSE",
+          "sha256": "e273680c43c2ab5bb3b50af28de6a08000b333396834db7bf6129cd6f130c9cd"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/rw/-/rw-1.3.3.tgz",
+          "sha256": "2dcde28200167d3774d1f0f2b66942790c762dc37ad211fb1135959e87fb85fb",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/mbostock/rw",
+          "kind": "upstream-repository",
+          "revision": "59819802cb6718a44aad42bb75ccb4f93f6efad5"
+        },
+        {
+          "url": "https://github.com/mbostock/rw/archive/59819802cb6718a44aad42bb75ccb4f93f6efad5.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "d3-fetch",
+      "version": "3.0.1",
+      "license": "ISC",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/d3-fetch@3.0.1/LICENSE",
+          "sha256": "ffdc17dc9040006bddeb891c95bfbb492e86d6bc64a4a4233666febab1be35e0"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/d3-fetch/-/d3-fetch-3.0.1.tgz",
+          "sha256": "8a3d61af2bed2b4899df1a90dfed41c0e10ad79d1bea93a18155f5d4e11a526f",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/d3/d3-fetch",
+          "kind": "upstream-repository",
+          "revision": "20a0b61b87a55c88e6b83580c927523b5c0448fe"
+        },
+        {
+          "url": "https://github.com/d3/d3-fetch/archive/20a0b61b87a55c88e6b83580c927523b5c0448fe.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "d3-force",
+      "version": "3.0.0",
+      "license": "ISC",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/d3-force@3.0.0/LICENSE",
+          "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/d3-force/-/d3-force-3.0.0.tgz",
+          "sha256": "deacfa7ecb466f88717fe1863347dd65e5a5422d9f8c893d771cb2a7f987fa15",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/d3/d3-force",
+          "kind": "upstream-repository",
+          "revision": "156712c8c3285d77cb487e1685c5adafcd0394a4"
+        },
+        {
+          "url": "https://github.com/d3/d3-force/archive/156712c8c3285d77cb487e1685c5adafcd0394a4.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "d3-quadtree",
+      "version": "3.0.1",
+      "license": "ISC",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/d3-quadtree@3.0.1/LICENSE",
+          "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/d3-quadtree/-/d3-quadtree-3.0.1.tgz",
+          "sha256": "d4145e9cecca8a6077e1099de96375ec9923b0de0df4004bd98aafa17c2d557f",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/d3/d3-quadtree",
+          "kind": "upstream-repository",
+          "revision": "24d7ea88ea7099407cdce67e7fe548a3a1893d92"
+        },
+        {
+          "url": "https://github.com/d3/d3-quadtree/archive/24d7ea88ea7099407cdce67e7fe548a3a1893d92.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "d3-format",
+      "version": "3.1.0",
+      "license": "ISC",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/d3-format@3.1.0/LICENSE",
+          "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/d3-format/-/d3-format-3.1.0.tgz",
+          "sha256": "5439103fc9b6f033e02bf68fbeb13ecd2c33442f77ea772a4b2b1bc4f4cee5ba",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/d3/d3-format",
+          "kind": "upstream-repository",
+          "revision": "08806c62aa8f7b3fe64925f3989f1491c950a71c"
+        },
+        {
+          "url": "https://github.com/d3/d3-format/archive/08806c62aa8f7b3fe64925f3989f1491c950a71c.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "d3-geo",
+      "version": "3.1.0",
+      "license": "ISC",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/d3-geo@3.1.0/LICENSE",
+          "sha256": "c53822a70309da589d4a7821c3a0dfc9449bbb4429cecaa295e0cb0461b950c9"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/d3-geo/-/d3-geo-3.1.0.tgz",
+          "sha256": "10a7a2339c3c29680698876146dd6389704bf554f2d64f66329969e7ca35d518",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/d3/d3-geo",
+          "kind": "upstream-repository",
+          "revision": "078f46d9a4b9079ddd6d382cfea81dd9c5a284ef"
+        },
+        {
+          "url": "https://github.com/d3/d3-geo/archive/078f46d9a4b9079ddd6d382cfea81dd9c5a284ef.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "d3-hierarchy",
+      "version": "3.1.2",
+      "license": "ISC",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/d3-hierarchy@3.1.2/LICENSE",
+          "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/d3-hierarchy/-/d3-hierarchy-3.1.2.tgz",
+          "sha256": "7681875f06440c088afda1fd834d853dd560166c945e731382ee0c636332360b",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/d3/d3-hierarchy",
+          "kind": "upstream-repository",
+          "revision": "7bea49efdc1093b28a8d60d2f8717d8a17803564"
+        },
+        {
+          "url": "https://github.com/d3/d3-hierarchy/archive/7bea49efdc1093b28a8d60d2f8717d8a17803564.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "d3-polygon",
+      "version": "3.0.1",
+      "license": "ISC",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/d3-polygon@3.0.1/LICENSE",
+          "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/d3-polygon/-/d3-polygon-3.0.1.tgz",
+          "sha256": "6a33e6b083bd596a08e6f9e973fdb0d098f9ac8348cdc86346bb3e9c15614aca",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/d3/d3-polygon",
+          "kind": "upstream-repository",
+          "revision": "be52ab24e723b5b0078e13f51003981839ad8134"
+        },
+        {
+          "url": "https://github.com/d3/d3-polygon/archive/be52ab24e723b5b0078e13f51003981839ad8134.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "d3-random",
+      "version": "3.0.1",
+      "license": "ISC",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/d3-random@3.0.1/LICENSE",
+          "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/d3-random/-/d3-random-3.0.1.tgz",
+          "sha256": "c35794d70beff4e2e2da799cd7fb0e3e763574f24c0fad38c1841770c12b99e8",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/d3/d3-random",
+          "kind": "upstream-repository",
+          "revision": "4a8ed7dd38cac562f924d69f475f9f058366240b"
+        },
+        {
+          "url": "https://github.com/d3/d3-random/archive/4a8ed7dd38cac562f924d69f475f9f058366240b.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "d3-scale",
+      "version": "4.0.2",
+      "license": "ISC",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/d3-scale@4.0.2/LICENSE",
+          "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/d3-scale/-/d3-scale-4.0.2.tgz",
+          "sha256": "bf50a1f34ba0e6fa25cb7ae902abe0b9e2f85ced39fdca7b18fbe863fbaa39a7",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/d3/d3-scale",
+          "kind": "upstream-repository",
+          "revision": "83555bd759c7314420bd4240642beda5e258db9e"
+        },
+        {
+          "url": "https://github.com/d3/d3-scale/archive/83555bd759c7314420bd4240642beda5e258db9e.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "d3-time",
+      "version": "3.1.0",
+      "license": "ISC",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/d3-time@3.1.0/LICENSE",
+          "sha256": "faa682e3e430941f958d26180458f5934a62f58dac4d70ccdd15608c15d0f884"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/d3-time/-/d3-time-3.1.0.tgz",
+          "sha256": "a9f2c8e177b76e7068e7c9c77722c4924c71c9e54f9b1e245d27ef11b28dbc08",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/d3/d3-time",
+          "kind": "upstream-repository",
+          "revision": "d66bba6f83801b2f3a3e6440dba8df3357669c73"
+        },
+        {
+          "url": "https://github.com/d3/d3-time/archive/d66bba6f83801b2f3a3e6440dba8df3357669c73.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "d3-time-format",
+      "version": "4.1.0",
+      "license": "ISC",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/d3-time-format@4.1.0/LICENSE",
+          "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/d3-time-format/-/d3-time-format-4.1.0.tgz",
+          "sha256": "46f1492ef6be8afe04a844876a644a4a964da7f87937e90e93f9585acff9d30e",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/d3/d3-time-format",
+          "kind": "upstream-repository",
+          "revision": "76cfef1da81b70404c0226ec9db9b0d56fa09461"
+        },
+        {
+          "url": "https://github.com/d3/d3-time-format/archive/76cfef1da81b70404c0226ec9db9b0d56fa09461.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "d3-scale-chromatic",
+      "version": "3.0.0",
+      "license": "ISC",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/d3-scale-chromatic@3.0.0/LICENSE",
+          "sha256": "dadb5ea138eef5ab133854c3d26bd0a158f649d0bd433b3eebe177f6d981730e"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/d3-scale-chromatic/-/d3-scale-chromatic-3.0.0.tgz",
+          "sha256": "17d3368477bcdbaa8ae698df4467aabed83bc5cecdfd8d478c3cc2a6d7f18b58",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/d3/d3-scale-chromatic",
+          "kind": "upstream-repository",
+          "revision": "2aa3ad24197136a5adeb1647502270dba5d74668"
+        },
+        {
+          "url": "https://github.com/d3/d3-scale-chromatic/archive/2aa3ad24197136a5adeb1647502270dba5d74668.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "d3-shape",
+      "version": "3.2.0",
+      "license": "ISC",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/d3-shape@3.2.0/LICENSE",
+          "sha256": "faa682e3e430941f958d26180458f5934a62f58dac4d70ccdd15608c15d0f884"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/d3-shape/-/d3-shape-3.2.0.tgz",
+          "sha256": "8b4b2bc9daa99a957abe17656c5944fd3f28efb88f788e6b4fdba346cb80e602",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/d3/d3-shape",
+          "kind": "upstream-repository",
+          "revision": "8ec82658454750cfa29efb1e0ea514e3dd9b2297"
+        },
+        {
+          "url": "https://github.com/d3/d3-shape/archive/8ec82658454750cfa29efb1e0ea514e3dd9b2297.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "d3-zoom",
+      "version": "3.0.0",
+      "license": "ISC",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/d3-zoom@3.0.0/LICENSE",
+          "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/d3-zoom/-/d3-zoom-3.0.0.tgz",
+          "sha256": "846d28725c4889d6a2069c6cf084ca7e7730ee917a9b87960ecc53247f840f85",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/d3/d3-zoom",
+          "kind": "upstream-repository",
+          "revision": "debbe3d76d86ea96965ed4cc61beb6bdf7238156"
+        },
+        {
+          "url": "https://github.com/d3/d3-zoom/archive/debbe3d76d86ea96965ed4cc61beb6bdf7238156.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "d3-sankey",
+      "version": "0.12.3",
+      "license": "BSD-3-Clause",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/d3-sankey@0.12.3/LICENSE",
+          "sha256": "2bf785e778d67a4f5266cffcd4f2cc5bb98cde73791666e7efeb8002ba32dfa5"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/d3-sankey/-/d3-sankey-0.12.3.tgz",
+          "sha256": "6bd8cdb143d4088ff38179def70954419868d4b95f136c168ffef2dad004ff22",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/d3/d3-sankey",
+          "kind": "upstream-repository",
+          "revision": "bb7233ea0004669878d922e55fe83084ef3cb555"
+        },
+        {
+          "url": "https://github.com/d3/d3-sankey/archive/bb7233ea0004669878d922e55fe83084ef3cb555.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "d3-array",
+      "version": "2.12.1",
+      "license": "BSD-3-Clause",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/d3-array@2.12.1/LICENSE",
+          "sha256": "0747bebeb06b10954913149be9b9a8bdf6fad3e6fdcbd9f9524e7a94c13d2cea"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/d3-array/-/d3-array-2.12.1.tgz",
+          "sha256": "3795da9bd345fc440b82be032400c538298e021b559ca48342fe9647e44bb86b",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/d3/d3-array",
+          "kind": "upstream-repository",
+          "revision": "6fda2773d31c2b3377d8b2dbd11a3e334a7cbc9e"
+        },
+        {
+          "url": "https://github.com/d3/d3-array/archive/6fda2773d31c2b3377d8b2dbd11a3e334a7cbc9e.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "internmap",
+      "version": "1.0.1",
+      "license": "ISC",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/internmap@1.0.1/LICENSE",
+          "sha256": "9ea8903938dab5f12c4572d60725069bec2d1b0dc3bcc210b09bae946a5ebb1f"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/internmap/-/internmap-1.0.1.tgz",
+          "sha256": "284029c70c1dd2df59dac1eaa5adb5e8cf8585a01011b86341ba61505eaa4324",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/mbostock/internmap",
+          "kind": "upstream-repository",
+          "revision": "566fee0b08e930c08e469f09f00f5be46dd7866f"
+        },
+        {
+          "url": "https://github.com/mbostock/internmap/archive/566fee0b08e930c08e469f09f00f5be46dd7866f.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "d3-shape",
+      "version": "1.3.7",
+      "license": "BSD-3-Clause",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/d3-shape@1.3.7/LICENSE",
+          "sha256": "7eea8533ea92bd8c32a901e89ecb0305890905bb12711449565ddff96891146d"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/d3-shape/-/d3-shape-1.3.7.tgz",
+          "sha256": "d19261dad8ff192357db2720d57c1786dbfb8c9f42eafe577cb7c4d5b473fd0e",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/d3/d3-shape",
+          "kind": "upstream-repository",
+          "revision": "246e232651631a78c4803430e3bac326b4a4147b"
+        },
+        {
+          "url": "https://github.com/d3/d3-shape/archive/246e232651631a78c4803430e3bac326b4a4147b.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "d3-path",
+      "version": "1.0.9",
+      "license": "BSD-3-Clause",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/d3-path@1.0.9/LICENSE",
+          "sha256": "b8265327ab678f554800e71188b1cc6b1ff57522e292d2b1c0be66f27cf328b6"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/d3-path/-/d3-path-1.0.9.tgz",
+          "sha256": "2c10702bad9be578f0827d00e45010ae59cb67165f65462e5c781913a5505db1",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/d3/d3-path",
+          "kind": "upstream-repository",
+          "revision": "151f962faa58f110993c6d71faefad57c174b66c"
+        },
+        {
+          "url": "https://github.com/d3/d3-path/archive/151f962faa58f110993c6d71faefad57c174b66c.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "dagre-d3-es",
+      "version": "7.0.10",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/dagre-d3-es@7.0.10/dagre-d3-LICENSE.txt",
+          "sha256": "6561c1da473f6d143cc203866ceafa66b35a3a15c3bbd9352b8275cf684fc52d"
+        },
+        {
+          "path": "mermaid/dagre-d3-es@7.0.10/dagre-LICENSE.txt",
+          "sha256": "6a349742a6cb219d5a2fc8d0844f6d89a6efc62e20c664450d884fc7ff2d6015"
+        },
+        {
+          "path": "mermaid/dagre-d3-es@7.0.10/graphlib-LICENSE.txt",
+          "sha256": "6a349742a6cb219d5a2fc8d0844f6d89a6efc62e20c664450d884fc7ff2d6015"
+        },
+        {
+          "path": "mermaid/dagre-d3-es@7.0.10/NOTICE.txt",
+          "sha256": "0b6f4817c0ad3c16215b63859c910f428f3c8407c4edd4e9e6aa62f8e494cb4f"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/dagre-d3-es/-/dagre-d3-es-7.0.10.tgz",
+          "sha256": "ff73fc4f7ac5e1e5c990dc0973131afee6e19e1efb5da1197e2b9223f1dd01f5",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/tbo47/dagre-es",
+          "kind": "upstream-repository",
+          "revision": "f14d9a1a7dd13d2448b86e4aa8e496e1e585596a"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/dagrejs/dagre-d3/v0.6.4/LICENSE",
+          "sha256": "6561c1da473f6d143cc203866ceafa66b35a3a15c3bbd9352b8275cf684fc52d",
+          "kind": "inherited-license-text"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/dagrejs/dagre/v0.8.5/LICENSE",
+          "sha256": "6a349742a6cb219d5a2fc8d0844f6d89a6efc62e20c664450d884fc7ff2d6015",
+          "kind": "inherited-license-text"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/dagrejs/graphlib/v2.1.8/LICENSE",
+          "sha256": "6a349742a6cb219d5a2fc8d0844f6d89a6efc62e20c664450d884fc7ff2d6015",
+          "kind": "inherited-license-text"
+        },
+        {
+          "url": "https://github.com/tbo47/dagre-es/archive/f14d9a1a7dd13d2448b86e4aa8e496e1e585596a.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies. Upstream fork omits a standalone license file; inherited MIT notices and package metadata retained."
+    },
+    {
+      "name": "lodash-es",
+      "version": "4.17.21",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/lodash-es@4.17.21/LICENSE",
+          "sha256": "f71e8ed126b46346494aad5486874cd8f0aafe95092ed67d2e3cb6110f939abc"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/lodash-es/-/lodash-es-4.17.21.tgz",
+          "sha256": "777598ac703f02b403ef678cd11bce2150ad788f35c774ea7c9cc241a892cb7b",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/lodash/lodash",
+          "kind": "upstream-repository",
+          "revision": "11eb817cdfacf56c02d7005cbe520ffbeb0fe59a"
+        },
+        {
+          "url": "https://github.com/lodash/lodash/archive/11eb817cdfacf56c02d7005cbe520ffbeb0fe59a.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "dayjs",
+      "version": "1.11.10",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/dayjs@1.11.10/LICENSE",
+          "sha256": "5faab7526d055651be3aab769d58897be6bd91f3d39d137f25f12dba1b31d5dc"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/dayjs/-/dayjs-1.11.10.tgz",
+          "sha256": "9bb274e616ba03807b8bf126bf4af5b78004524e82c755bf2f8d4da5279e6d01",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/iamkun/dayjs",
+          "kind": "upstream-repository",
+          "revision": "e56a8703dcc3820196972f53990010daf248726b"
+        },
+        {
+          "url": "https://github.com/iamkun/dayjs/archive/e56a8703dcc3820196972f53990010daf248726b.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "dompurify",
+      "version": "3.1.6",
+      "license": "Apache-2.0 (selected from Apache-2.0 OR MPL-2.0)",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/dompurify@3.1.6/LICENSE",
+          "sha256": "7de658e2401fe36e2a3965a5a11a560d2fffe768194849718a4b58c75bf84bda"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/dompurify/-/dompurify-3.1.6.tgz",
+          "sha256": "385981ebd0366fcce5313c1801019af737260ca29fe60d38a97f956d5ff1013a",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/cure53/DOMPurify",
+          "kind": "upstream-repository",
+          "revision": "90a10a14af3d407d4633093d7c3362b23ee4889f"
+        },
+        {
+          "url": "https://github.com/cure53/DOMPurify/archive/90a10a14af3d407d4633093d7c3362b23ee4889f.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "elkjs",
+      "version": "0.9.2",
+      "license": "EPL-2.0",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/elkjs@0.9.2/LICENSE.md",
+          "sha256": "89591d4578fb1ebd91501312a3d25f021bd865a2e436641c1cf7b1bc7e3c1617"
+        },
+        {
+          "path": "mermaid/elkjs@0.9.2/NOTICE.txt",
+          "sha256": "99157c124d3b4cb5c10fac8f5b191f0f71b37e619a16b4c48c2e34082d740a9d"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/elkjs/-/elkjs-0.9.2.tgz",
+          "sha256": "6774dbc047318f1787cc0ea461fd3ddacddc2b2d901ac52c7fb76a7f7edf2887",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/kieler/elkjs",
+          "kind": "upstream-repository",
+          "revision": "72b471e65f5c5d7b0e94450b14c14bdf12384f82"
+        },
+        {
+          "url": "https://github.com/kieler/elkjs/archive/72b471e65f5c5d7b0e94450b14c14bdf12384f82.tar.gz",
+          "kind": "upstream-source-revision"
+        },
+        {
+          "url": "https://github.com/eclipse/elk",
+          "kind": "underlying-java-repository",
+          "note": "Exact ELK revision is not established by the published ELKJS metadata."
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies. ELKJS includes Java compiled to JavaScript; exact ELK and GWT transitive source mapping has not been approved."
+    },
+    {
+      "name": "katex",
+      "version": "0.16.11",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/katex@0.16.11/LICENSE",
+          "sha256": "766ccc1f306c885aa45542a9846bbd0a505b27a0374f146778171c2254ce18e3"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/katex/-/katex-0.16.11.tgz",
+          "sha256": "8c5494c5f7d8e8bf73ff3fe64d4bd09a340e4878b7eec9bbd9ef8d8f3e24193f",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/KaTeX/KaTeX",
+          "kind": "upstream-repository",
+          "revision": "fbbea3573439d51e6568356f5886053b111b1f88"
+        },
+        {
+          "url": "https://github.com/KaTeX/KaTeX/archive/fbbea3573439d51e6568356f5886053b111b1f88.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "commander",
+      "version": "8.3.0",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/commander@8.3.0/LICENSE",
+          "sha256": "04512a63dce4d2d506ad612dc0bd7681ccf6e3655f7b6eaef7dfac8323d1ec0b"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/commander/-/commander-8.3.0.tgz",
+          "sha256": "1b38e65f9229a84060ca5d041a58e3bc1ea374da6d933f9060ca86a67949c10b",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/tj/commander.js",
+          "kind": "upstream-repository",
+          "revision": "43f4743864e2f670db5eebcf88c92aa4612c54f1"
+        },
+        {
+          "url": "https://github.com/tj/commander.js/archive/43f4743864e2f670db5eebcf88c92aa4612c54f1.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "khroma",
+      "version": "2.1.0",
+      "license": "NOASSERTION",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/khroma@2.1.0/license",
+          "sha256": "66b333b0f66759a0b710459e03f7029abe17f4358114a128d2c972e642961b49"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/khroma/-/khroma-2.1.0.tgz",
+          "sha256": "8963d209f3a682374d7f7e45e5fa361a58fc060c8528df6656fae0fc7c508110",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/fabiospampinato/khroma",
+          "kind": "upstream-repository",
+          "revision": "4968165afb0d3d09be66497e7985a34f7bfe6d42"
+        },
+        {
+          "url": "https://github.com/fabiospampinato/khroma/archive/4968165afb0d3d09be66497e7985a34f7bfe6d42.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "mdast-util-from-markdown",
+      "version": "1.3.1",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/mdast-util-from-markdown@1.3.1/license",
+          "sha256": "536804b3adbff17dbbb9ed0d2bf9655b78f07640278581e37e3d7475282d5e61"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/mdast-util-from-markdown/-/mdast-util-from-markdown-1.3.1.tgz",
+          "sha256": "bf465a7f059ef7d69f86bacb7f1121817e892a29dff78907bf2c54ca723cd477",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/syntax-tree/mdast-util-from-markdown",
+          "kind": "upstream-repository",
+          "revision": "e30d9c8025d726360123ae95beb9cf011335b921"
+        },
+        {
+          "url": "https://github.com/syntax-tree/mdast-util-from-markdown/archive/e30d9c8025d726360123ae95beb9cf011335b921.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "decode-named-character-reference",
+      "version": "1.0.2",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/decode-named-character-reference@1.0.2/license",
+          "sha256": "807a88522a850092aece49486207c17c313c4d5708ac276524840fe1caa0b0fa"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/decode-named-character-reference/-/decode-named-character-reference-1.0.2.tgz",
+          "sha256": "0d7bfd698800f21b894d5581f212a5272bb81760721291d9c0dbf21cd7a962e9",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/wooorm/decode-named-character-reference",
+          "kind": "upstream-repository",
+          "revision": "ddb8cdf65a7ce4795c4fc45c8433495377b0f5ea"
+        },
+        {
+          "url": "https://github.com/wooorm/decode-named-character-reference/archive/ddb8cdf65a7ce4795c4fc45c8433495377b0f5ea.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "character-entities",
+      "version": "2.0.2",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/character-entities@2.0.2/license",
+          "sha256": "63cb98b3f6abfb3c3592c16f88253c1bdc834087bf52671e8ce5609e4eb693cf"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/character-entities/-/character-entities-2.0.2.tgz",
+          "sha256": "0805c120e1147a250a87ed8752265b3bce7a76c44e9728dec1d11380e21fbc3d",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/wooorm/character-entities",
+          "kind": "upstream-repository",
+          "revision": "9231d7cd8935db394a8c10af7e069cec9a6743d9"
+        },
+        {
+          "url": "https://github.com/wooorm/character-entities/archive/9231d7cd8935db394a8c10af7e069cec9a6743d9.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "mdast-util-to-string",
+      "version": "3.2.0",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/mdast-util-to-string@3.2.0/license",
+          "sha256": "63cb98b3f6abfb3c3592c16f88253c1bdc834087bf52671e8ce5609e4eb693cf"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/mdast-util-to-string/-/mdast-util-to-string-3.2.0.tgz",
+          "sha256": "51f64dd90efc81d9178fc6f9a64879a82f0b6fdfbc3e4eb13050587ffe1ce0a5",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/syntax-tree/mdast-util-to-string",
+          "kind": "upstream-repository",
+          "revision": "33aca2105f50fc60d57a781101e469e0325b7b53"
+        },
+        {
+          "url": "https://github.com/syntax-tree/mdast-util-to-string/archive/33aca2105f50fc60d57a781101e469e0325b7b53.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "micromark",
+      "version": "3.2.0",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/micromark@3.2.0/README-LICENSE.txt",
+          "sha256": "966fe48d96a747b6bc33dfa44b990afae04797234c63e5c0883602e8a49f30bd"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/micromark/-/micromark-3.2.0.tgz",
+          "sha256": "afe5375e20cb20d9f3ccd3ea99762a618c898b02664cb5a72225895e69e53cf5",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/micromark/micromark.git#main",
+          "kind": "upstream-repository",
+          "revision": "94b7679646bc0221899bba034f52f4abb3700f81"
+        },
+        {
+          "url": "https://github.com/micromark/micromark.git#main/archive/94b7679646bc0221899bba034f52f4abb3700f81.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "debug",
+      "version": "4.3.4",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/debug@4.3.4/LICENSE",
+          "sha256": "3a61c6c96caf5c1d9b623fb9b04c822b783dfcb78aa7e49c76a3f643e6ed7f95"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/debug/-/debug-4.3.4.tgz",
+          "sha256": "04922c9b2e37a6858df2b870a278d1d3a8aaad7ec4c3bd84427f0d53cbf28bcf",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/debug-js/debug",
+          "kind": "upstream-repository",
+          "revision": "da66c86c5fd71ef570f36b5b1edfa4472149f1bc"
+        },
+        {
+          "url": "https://github.com/debug-js/debug/archive/da66c86c5fd71ef570f36b5b1edfa4472149f1bc.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "ms",
+      "version": "2.1.2",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/ms@2.1.2/license.md",
+          "sha256": "6652830c2607c722b66f1b57de15877ab8fc5dca406cc5b335afeb365d0f32c1"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/ms/-/ms-2.1.2.tgz",
+          "sha256": "1157a6e30d3ffe1b9fcaf3a39caf159f8dc981199a3380c78ddd89f73bcefb48",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/zeit/ms",
+          "kind": "upstream-repository",
+          "revision": "7920885eb232fbe7a5efdab956d3e7c507c92ddf"
+        },
+        {
+          "url": "https://github.com/zeit/ms/archive/7920885eb232fbe7a5efdab956d3e7c507c92ddf.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "supports-color",
+      "version": "8.1.1",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/supports-color@8.1.1/license",
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/supports-color/-/supports-color-8.1.1.tgz",
+          "sha256": "ea69d9b5801e109932f9f12b5499c06de3fde936119a21c5941b2759d4364fb0",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/chalk/supports-color",
+          "kind": "upstream-repository",
+          "revision": "1e7f117cda1284e741c3cbcd661c21412bf169eb"
+        },
+        {
+          "url": "https://github.com/chalk/supports-color/archive/1e7f117cda1284e741c3cbcd661c21412bf169eb.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "has-flag",
+      "version": "4.0.0",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/has-flag@4.0.0/license",
+          "sha256": "48da2f39e100d4085767e94966b43f4fa95ff6a0698fba57ed460914e35f94a0"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/has-flag/-/has-flag-4.0.0.tgz",
+          "sha256": "77a7eb1411d927bb8a5ca7069dbe168886d63c88f446f0b81500a2cf23ddb5b1",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/sindresorhus/has-flag",
+          "kind": "upstream-repository",
+          "revision": "474aa39afca7333d356c022fc5be4d31732bbba3"
+        },
+        {
+          "url": "https://github.com/sindresorhus/has-flag/archive/474aa39afca7333d356c022fc5be4d31732bbba3.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "micromark-core-commonmark",
+      "version": "1.1.0",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/micromark-core-commonmark@1.1.0/README-LICENSE.txt",
+          "sha256": "24d300c093e3b60899792f28877d030c9c070f93f20a50fe3257b40459578dda"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/micromark-core-commonmark/-/micromark-core-commonmark-1.1.0.tgz",
+          "sha256": "48c6813f8cd7afc54c1c36bd71bce625b245106e5527212a5a3811fbc6f58a75",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/micromark/micromark.git#main",
+          "kind": "upstream-repository",
+          "revision": "94b7679646bc0221899bba034f52f4abb3700f81"
+        },
+        {
+          "url": "https://github.com/micromark/micromark.git#main/archive/94b7679646bc0221899bba034f52f4abb3700f81.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "micromark-factory-destination",
+      "version": "1.1.0",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/micromark-factory-destination@1.1.0/README-LICENSE.txt",
+          "sha256": "6a1df76e7fcc919da88cafc932bb5faf097fecdcf85b0ceb7fcdb8ba05b49217"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/micromark-factory-destination/-/micromark-factory-destination-1.1.0.tgz",
+          "sha256": "ee7f226d7d32ea620d03f978c280bd2b4a8f2b7de4f478341601d052afae7f6b",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/micromark/micromark.git#main",
+          "kind": "upstream-repository",
+          "revision": "94b7679646bc0221899bba034f52f4abb3700f81"
+        },
+        {
+          "url": "https://github.com/micromark/micromark.git#main/archive/94b7679646bc0221899bba034f52f4abb3700f81.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "micromark-util-character",
+      "version": "1.2.0",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/micromark-util-character@1.2.0/README-LICENSE.txt",
+          "sha256": "f6069ed14b554e24177c1615ab4c7f5ae12ee1c3083b30ca1db697748fe86a1b"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/micromark-util-character/-/micromark-util-character-1.2.0.tgz",
+          "sha256": "5e78d2a9a98e8da46e2a10a42493921ccd953eac0711baaaf92630bf8f9b77a2",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/micromark/micromark.git#main",
+          "kind": "upstream-repository",
+          "revision": "94b7679646bc0221899bba034f52f4abb3700f81"
+        },
+        {
+          "url": "https://github.com/micromark/micromark.git#main/archive/94b7679646bc0221899bba034f52f4abb3700f81.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "micromark-util-symbol",
+      "version": "1.1.0",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/micromark-util-symbol@1.1.0/README-LICENSE.txt",
+          "sha256": "98a066b2b9e76f3e3938912b3f0ceba33a93d315e1513ae3999c7d63f66dee91"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/micromark-util-symbol/-/micromark-util-symbol-1.1.0.tgz",
+          "sha256": "1b30907c7b417a45218202e6eb6bf7e9e6b28e3015ec53b42a1a3154cdf58c30",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/micromark/micromark.git#main",
+          "kind": "upstream-repository",
+          "revision": "94b7679646bc0221899bba034f52f4abb3700f81"
+        },
+        {
+          "url": "https://github.com/micromark/micromark.git#main/archive/94b7679646bc0221899bba034f52f4abb3700f81.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "micromark-util-types",
+      "version": "1.1.0",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/micromark-util-types@1.1.0/README-LICENSE.txt",
+          "sha256": "9fb3b5b985ba3f9b0d7fe48eea8e62d05a2479788215010dc46f27dafe8fed71"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/micromark-util-types/-/micromark-util-types-1.1.0.tgz",
+          "sha256": "51d8ba688571e6581f86b98b12cc4e9d6224e0f752c9e957a69c173d30adda64",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/micromark/micromark.git#main",
+          "kind": "upstream-repository",
+          "revision": "94b7679646bc0221899bba034f52f4abb3700f81"
+        },
+        {
+          "url": "https://github.com/micromark/micromark.git#main/archive/94b7679646bc0221899bba034f52f4abb3700f81.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "micromark-factory-label",
+      "version": "1.1.0",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/micromark-factory-label@1.1.0/README-LICENSE.txt",
+          "sha256": "99e1c337fbdb2e5e02ed32c4ab3e4dac6e14c84bbb5818a0dd793e646e96ab58"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/micromark-factory-label/-/micromark-factory-label-1.1.0.tgz",
+          "sha256": "ae45d5f2f48d4c1965a091ff9ee9818094ab17bbcc71840472b4d19e5c0f0d4a",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/micromark/micromark.git#main",
+          "kind": "upstream-repository",
+          "revision": "94b7679646bc0221899bba034f52f4abb3700f81"
+        },
+        {
+          "url": "https://github.com/micromark/micromark.git#main/archive/94b7679646bc0221899bba034f52f4abb3700f81.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "uvu",
+      "version": "0.5.6",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/uvu@0.5.6/license",
+          "sha256": "306fa513e39b23a6e8747520de761809d206b99800ef41907b530226574c59ae"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/uvu/-/uvu-0.5.6.tgz",
+          "sha256": "f917b3c3ffc079fb488621aa82da5a6e9c3e23d682bdcc8ed9cca6162c0ffe69",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/lukeed/uvu",
+          "kind": "upstream-repository",
+          "revision": "56e1cb25ecd76cbf5cd3fd28c7a4c07db405c5c3"
+        },
+        {
+          "url": "https://github.com/lukeed/uvu/archive/56e1cb25ecd76cbf5cd3fd28c7a4c07db405c5c3.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "dequal",
+      "version": "2.0.3",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/dequal@2.0.3/license",
+          "sha256": "306fa513e39b23a6e8747520de761809d206b99800ef41907b530226574c59ae"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/dequal/-/dequal-2.0.3.tgz",
+          "sha256": "941d90d6629878167d10d2a05d8c6df8f8fa13acc826616abb49db63ac6a5c35",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/lukeed/dequal",
+          "kind": "upstream-repository",
+          "revision": "37d4f27de03fa6264e406cd03288cec8255fca4c"
+        },
+        {
+          "url": "https://github.com/lukeed/dequal/archive/37d4f27de03fa6264e406cd03288cec8255fca4c.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "diff",
+      "version": "5.1.0",
+      "license": "BSD-3-Clause",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/diff@5.1.0/LICENSE",
+          "sha256": "152f0fb43e953fcf5c56c5bfa4c834bb96b1603e4026319c613dd3e734f305cf"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/diff/-/diff-5.1.0.tgz",
+          "sha256": "12aff874d7101f88787522a56781f38240fe668a545ef02d3bc5fa502bda6a4f",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/kpdecker/jsdiff",
+          "kind": "upstream-repository",
+          "revision": "9254a6dd61715be97a0143d66da9c459b32df6e2"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "kleur",
+      "version": "4.1.5",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/kleur@4.1.5/license",
+          "sha256": "306fa513e39b23a6e8747520de761809d206b99800ef41907b530226574c59ae"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/kleur/-/kleur-4.1.5.tgz",
+          "sha256": "0d99562acf82fca4afce2a57b687289a524ac6755dcaf1fdf82a147473091469",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/lukeed/kleur",
+          "kind": "upstream-repository",
+          "revision": "fa3454483899ddab550d08c18c028e6db1aab0e5"
+        },
+        {
+          "url": "https://github.com/lukeed/kleur/archive/fa3454483899ddab550d08c18c028e6db1aab0e5.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "sade",
+      "version": "1.8.1",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/sade@1.8.1/license",
+          "sha256": "ba573393f24555ac0528612ad39665fab5bdcc80330a61096024bbf5f736526d"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/sade/-/sade-1.8.1.tgz",
+          "sha256": "73dfd051a36ea90daf95c811ba503bb5230b24f86afbe755c254736dad5d045e",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/lukeed/sade",
+          "kind": "upstream-repository",
+          "revision": "1cdf3e464ca899dcd6e758a50eb82cf7cf484771"
+        },
+        {
+          "url": "https://github.com/lukeed/sade/archive/1cdf3e464ca899dcd6e758a50eb82cf7cf484771.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "mri",
+      "version": "1.2.0",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/mri@1.2.0/license.md",
+          "sha256": "306fa513e39b23a6e8747520de761809d206b99800ef41907b530226574c59ae"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/mri/-/mri-1.2.0.tgz",
+          "sha256": "9e383990963c167baa471cc928a02eb1768ee2ffabf8117082a09b5213f9a575",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/lukeed/mri",
+          "kind": "upstream-repository",
+          "revision": "e73e9f9d5b02124d14ac17dac2c4801687d3e99a"
+        },
+        {
+          "url": "https://github.com/lukeed/mri/archive/e73e9f9d5b02124d14ac17dac2c4801687d3e99a.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "micromark-factory-space",
+      "version": "1.1.0",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/micromark-factory-space@1.1.0/README-LICENSE.txt",
+          "sha256": "cac71a9b6b29507732e6067792b5917a8990764457d27f293a16a583fff49475"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/micromark-factory-space/-/micromark-factory-space-1.1.0.tgz",
+          "sha256": "2360c6dbf2988afef74bf4c0153c42a9aa4f1860fbdabd4fa8c2c9ebdc5bc8f6",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/micromark/micromark.git#main",
+          "kind": "upstream-repository",
+          "revision": "94b7679646bc0221899bba034f52f4abb3700f81"
+        },
+        {
+          "url": "https://github.com/micromark/micromark.git#main/archive/94b7679646bc0221899bba034f52f4abb3700f81.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "micromark-factory-title",
+      "version": "1.1.0",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/micromark-factory-title@1.1.0/README-LICENSE.txt",
+          "sha256": "0c68e0938c129ced11aae4cc9ce3c86fd6237ed081b4d132258803f837b6a942"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/micromark-factory-title/-/micromark-factory-title-1.1.0.tgz",
+          "sha256": "baf6362dcfed49901eb511531f6cc83705c0486b45285c9e290c574345713b40",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/micromark/micromark.git#main",
+          "kind": "upstream-repository",
+          "revision": "94b7679646bc0221899bba034f52f4abb3700f81"
+        },
+        {
+          "url": "https://github.com/micromark/micromark.git#main/archive/94b7679646bc0221899bba034f52f4abb3700f81.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "micromark-factory-whitespace",
+      "version": "1.1.0",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/micromark-factory-whitespace@1.1.0/README-LICENSE.txt",
+          "sha256": "c4006b743528bbcb99537cacd34e95d2517d13e5722fcb91bef4dd394292c31f"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/micromark-factory-whitespace/-/micromark-factory-whitespace-1.1.0.tgz",
+          "sha256": "425e7dbbad0fc6ee4a45fea0d45427cb766a30d749e79198d9f0b784690b6b75",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/micromark/micromark.git#main",
+          "kind": "upstream-repository",
+          "revision": "94b7679646bc0221899bba034f52f4abb3700f81"
+        },
+        {
+          "url": "https://github.com/micromark/micromark.git#main/archive/94b7679646bc0221899bba034f52f4abb3700f81.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "micromark-util-chunked",
+      "version": "1.1.0",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/micromark-util-chunked@1.1.0/README-LICENSE.txt",
+          "sha256": "20a7a5c3e3b4b7a7b2d6f52851d5bba96455859400192f0ab09da51e43b0b83f"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/micromark-util-chunked/-/micromark-util-chunked-1.1.0.tgz",
+          "sha256": "af9a0784a5680fc35c80e2a426e776a8c487f8658b9d3e3ff9b3637a2aaad0ff",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/micromark/micromark.git#main",
+          "kind": "upstream-repository",
+          "revision": "94b7679646bc0221899bba034f52f4abb3700f81"
+        },
+        {
+          "url": "https://github.com/micromark/micromark.git#main/archive/94b7679646bc0221899bba034f52f4abb3700f81.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "micromark-util-classify-character",
+      "version": "1.1.0",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/micromark-util-classify-character@1.1.0/README-LICENSE.txt",
+          "sha256": "8742a924418e9611829fc150a16fabb7f9f8aea2b4c1058b5f9e497beeacac7f"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/micromark-util-classify-character/-/micromark-util-classify-character-1.1.0.tgz",
+          "sha256": "c93f3f1095eb6ba10c45e459453ea991103c56112cbbc7da4d039763d4c8df94",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/micromark/micromark.git#main",
+          "kind": "upstream-repository",
+          "revision": "94b7679646bc0221899bba034f52f4abb3700f81"
+        },
+        {
+          "url": "https://github.com/micromark/micromark.git#main/archive/94b7679646bc0221899bba034f52f4abb3700f81.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "micromark-util-html-tag-name",
+      "version": "1.2.0",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/micromark-util-html-tag-name@1.2.0/README-LICENSE.txt",
+          "sha256": "5587c937e1e1dbec2542c3cbad67443a25700d78d4d6fe40afe141eb77e595b2"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/micromark-util-html-tag-name/-/micromark-util-html-tag-name-1.2.0.tgz",
+          "sha256": "4cddd8a5eaa91034ad63be05c42f6cce11daea635a40866e2c14e6adca59dd08",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/micromark/micromark.git#main",
+          "kind": "upstream-repository",
+          "revision": "94b7679646bc0221899bba034f52f4abb3700f81"
+        },
+        {
+          "url": "https://github.com/micromark/micromark.git#main/archive/94b7679646bc0221899bba034f52f4abb3700f81.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "micromark-util-normalize-identifier",
+      "version": "1.1.0",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/micromark-util-normalize-identifier@1.1.0/README-LICENSE.txt",
+          "sha256": "a0d89f2b842644e737c1bb4fe94add9adb33032c3e940e7ce62af6687d7fc4e0"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/micromark-util-normalize-identifier/-/micromark-util-normalize-identifier-1.1.0.tgz",
+          "sha256": "3ab60be80f226f0a3c12982cf0052006e7902ff5c896f1824705abd1eff9d23c",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/micromark/micromark.git#main",
+          "kind": "upstream-repository",
+          "revision": "94b7679646bc0221899bba034f52f4abb3700f81"
+        },
+        {
+          "url": "https://github.com/micromark/micromark.git#main/archive/94b7679646bc0221899bba034f52f4abb3700f81.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "micromark-util-resolve-all",
+      "version": "1.1.0",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/micromark-util-resolve-all@1.1.0/README-LICENSE.txt",
+          "sha256": "ce354f05cea6861c71417a68302320a0bf859a5298f1188abe5c3a0d9a4f5fa8"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/micromark-util-resolve-all/-/micromark-util-resolve-all-1.1.0.tgz",
+          "sha256": "cc3f5a352cd0841a121cf12b9449c547bd97aa7c1bf7fb69701cf8fffd06397c",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/micromark/micromark.git#main",
+          "kind": "upstream-repository",
+          "revision": "94b7679646bc0221899bba034f52f4abb3700f81"
+        },
+        {
+          "url": "https://github.com/micromark/micromark.git#main/archive/94b7679646bc0221899bba034f52f4abb3700f81.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "micromark-util-subtokenize",
+      "version": "1.1.0",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/micromark-util-subtokenize@1.1.0/README-LICENSE.txt",
+          "sha256": "e4478ddda294109e83ecb36e3f224e77966e4337a82a9ae8eaef9714ce8ac4db"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/micromark-util-subtokenize/-/micromark-util-subtokenize-1.1.0.tgz",
+          "sha256": "11e2512f4b1312af67e002d7eae557d40f30d362f205bfc65316f2f5867673d3",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/micromark/micromark.git#main",
+          "kind": "upstream-repository",
+          "revision": "94b7679646bc0221899bba034f52f4abb3700f81"
+        },
+        {
+          "url": "https://github.com/micromark/micromark.git#main/archive/94b7679646bc0221899bba034f52f4abb3700f81.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "micromark-util-combine-extensions",
+      "version": "1.1.0",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/micromark-util-combine-extensions@1.1.0/README-LICENSE.txt",
+          "sha256": "31e3cdb684a8a33609ca6573b33778f85f56f4eb928c075744df1fc6c2b432b6"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/micromark-util-combine-extensions/-/micromark-util-combine-extensions-1.1.0.tgz",
+          "sha256": "c45b808f4fd6e4660def25b648fe03935564abff09d50b9ac7048581e2592ed6",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/micromark/micromark.git#main",
+          "kind": "upstream-repository",
+          "revision": "94b7679646bc0221899bba034f52f4abb3700f81"
+        },
+        {
+          "url": "https://github.com/micromark/micromark.git#main/archive/94b7679646bc0221899bba034f52f4abb3700f81.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "micromark-util-decode-numeric-character-reference",
+      "version": "1.1.0",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/micromark-util-decode-numeric-character-reference@1.1.0/README-LICENSE.txt",
+          "sha256": "fd9e46b23beae6268b0e3bd6b2969b2de1c61b367147d77b578130e5ef82a85e"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/micromark-util-decode-numeric-character-reference/-/micromark-util-decode-numeric-character-reference-1.1.0.tgz",
+          "sha256": "1b93670653cff5fe7ddeca92867fbe94a6e7b3a15b93247e0d35c39c675130c9",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/micromark/micromark.git#main",
+          "kind": "upstream-repository",
+          "revision": "94b7679646bc0221899bba034f52f4abb3700f81"
+        },
+        {
+          "url": "https://github.com/micromark/micromark.git#main/archive/94b7679646bc0221899bba034f52f4abb3700f81.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "micromark-util-encode",
+      "version": "1.1.0",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/micromark-util-encode@1.1.0/README-LICENSE.txt",
+          "sha256": "6e4f383f4bdf0fda68e0ff029182863b1752fcce69530eec3185c3bda9c3de05"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/micromark-util-encode/-/micromark-util-encode-1.1.0.tgz",
+          "sha256": "c525c828e5e16c2f8e77a36d45ce4867cc085f583b2a1e88d1518f6dfc8e243f",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/micromark/micromark.git#main",
+          "kind": "upstream-repository",
+          "revision": "94b7679646bc0221899bba034f52f4abb3700f81"
+        },
+        {
+          "url": "https://github.com/micromark/micromark.git#main/archive/94b7679646bc0221899bba034f52f4abb3700f81.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "micromark-util-sanitize-uri",
+      "version": "1.2.0",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/micromark-util-sanitize-uri@1.2.0/README-LICENSE.txt",
+          "sha256": "0118e1f1c8e121308ff2be553943ffa154693cfac0e6039325e1545c8bd1feac"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/micromark-util-sanitize-uri/-/micromark-util-sanitize-uri-1.2.0.tgz",
+          "sha256": "ec390e18f93d0e8b2906f47142492d493cef6c950c445ace956487eb80794f94",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/micromark/micromark.git#main",
+          "kind": "upstream-repository",
+          "revision": "94b7679646bc0221899bba034f52f4abb3700f81"
+        },
+        {
+          "url": "https://github.com/micromark/micromark.git#main/archive/94b7679646bc0221899bba034f52f4abb3700f81.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "micromark-util-decode-string",
+      "version": "1.1.0",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/micromark-util-decode-string@1.1.0/README-LICENSE.txt",
+          "sha256": "87dc7447a92a4a599d776cf613fd622c96f01d405781ed70f56afc3777ae21f7"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/micromark-util-decode-string/-/micromark-util-decode-string-1.1.0.tgz",
+          "sha256": "673727036cde2a3fd6a82cc04b0cb30ee2bf308d997e90f437f717d0b7920ccd",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/micromark/micromark.git#main",
+          "kind": "upstream-repository",
+          "revision": "94b7679646bc0221899bba034f52f4abb3700f81"
+        },
+        {
+          "url": "https://github.com/micromark/micromark.git#main/archive/94b7679646bc0221899bba034f52f4abb3700f81.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "unist-util-stringify-position",
+      "version": "3.0.3",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/unist-util-stringify-position@3.0.3/license",
+          "sha256": "ca4662cb5d1b738fbe5350c0d5485ba11773b4b7208974082ae6e129a52d631d"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/unist-util-stringify-position/-/unist-util-stringify-position-3.0.3.tgz",
+          "sha256": "60be966c7e35fea057a9c1c4c2304a72fd92de7a472373866ebbc1f94f374b60",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/syntax-tree/unist-util-stringify-position",
+          "kind": "upstream-repository",
+          "revision": "e0cad5fc199831b457ce0efc1fab11dcdc097d11"
+        },
+        {
+          "url": "https://github.com/syntax-tree/unist-util-stringify-position/archive/e0cad5fc199831b457ce0efc1fab11dcdc097d11.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "non-layered-tidy-tree-layout",
+      "version": "2.0.2",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/non-layered-tidy-tree-layout@2.0.2/LICENSE",
+          "sha256": "4f2be5251c6ca29343617220bce48bbbe814de871dc42435164442a0c007d11e"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/non-layered-tidy-tree-layout/-/non-layered-tidy-tree-layout-2.0.2.tgz",
+          "sha256": "1e7fbc3c779ea3626e3783042717df64abab7814a1e8be670a4dfb60836a2a72",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/stetrevor/non-layered-tidy-tree-layout",
+          "kind": "upstream-repository",
+          "revision": "unrecorded"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "stylis",
+      "version": "4.3.1",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/stylis@4.3.1/LICENSE",
+          "sha256": "88c579c6ee44b41137a21321190d177982e5b17d4fa1b83a4a2e3ea325a8fc9a"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/stylis/-/stylis-4.3.1.tgz",
+          "sha256": "0569cb13e6cab05d8ecfecf0a9921c2f2ab24dafdd6db21a143021dfa82c6995",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/thysultan/stylis.js",
+          "kind": "upstream-repository",
+          "revision": "c1f81ff815527d51d791fee9456840e32230ab23"
+        },
+        {
+          "url": "https://github.com/thysultan/stylis.js/archive/c1f81ff815527d51d791fee9456840e32230ab23.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "ts-dedent",
+      "version": "2.2.0",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/ts-dedent@2.2.0/LICENSE",
+          "sha256": "eff13095d9d762c3bd9dda74370c81e2130c28f2691bc455603abf973bac25b9"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/ts-dedent/-/ts-dedent-2.2.0.tgz",
+          "sha256": "f04cddc15ce3aad91287aebdcb0d6b6997b85222769c35c910038f59bfd2234d",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/tamino-martinius/node-ts-dedent",
+          "kind": "upstream-repository",
+          "revision": "70e153460de0141afd09ff402b50047103a4c409"
+        },
+        {
+          "url": "https://github.com/tamino-martinius/node-ts-dedent/archive/70e153460de0141afd09ff402b50047103a4c409.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "uuid",
+      "version": "9.0.1",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/uuid@9.0.1/LICENSE.md",
+          "sha256": "beaa6b04fb82e41dd2ad679e19e27953afb5999b1abbb455b6564e78ebfeb332"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/uuid/-/uuid-9.0.1.tgz",
+          "sha256": "9fa6f415a7d9f7f8ea48e45beeb567686261da85cd395901c54c3515589e3f7e",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/uuidjs/uuid",
+          "kind": "upstream-repository",
+          "revision": "ca1d39d58a6308d5311bcb356a931aa818ec0ded"
+        },
+        {
+          "url": "https://github.com/uuidjs/uuid/archive/ca1d39d58a6308d5311bcb356a931aa818ec0ded.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "web-worker",
+      "version": "1.3.0",
+      "license": "Apache-2.0",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/web-worker@1.3.0/LICENSE",
+          "sha256": "43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/web-worker/-/web-worker-1.3.0.tgz",
+          "sha256": "db77b38e89414e730d1afac184f6e13245ec6757d4cd4e8b53e3062657153c58",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/developit/web-worker",
+          "kind": "upstream-repository",
+          "revision": "b89a392aa178c70701ee89abef4a5d30f8c59527"
+        },
+        {
+          "url": "https://github.com/developit/web-worker/archive/b89a392aa178c70701ee89abef4a5d30f8c59527.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "js-yaml",
+      "version": "4.1.0",
+      "license": "MIT",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/js-yaml@4.1.0/LICENSE",
+          "sha256": "a07bc24468b9654ce76a547d47a2db282d07733b715db4c73a98bd63961f9550"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/js-yaml/-/js-yaml-4.1.0.tgz",
+          "sha256": "0dae332559cf22b21c26ea70e732afd8303ff99412f9c3d9d209faa8882cf2ca",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/nodeca/js-yaml",
+          "kind": "upstream-repository",
+          "revision": "2cef47bebf60da141b78b085f3dea3b5733dcc12"
+        },
+        {
+          "url": "https://github.com/nodeca/js-yaml/archive/2cef47bebf60da141b78b085f3dea3b5733dcc12.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "argparse",
+      "version": "2.0.1",
+      "license": "Python-2.0",
+      "category": "frontend-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/argparse@2.0.1/LICENSE",
+          "sha256": "de4d1f2d2ad5ad0cfd1657a106476b31cb5db5ef9d1ff842b237c0c81f0c8a23"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://registry.npmjs.org/argparse/-/argparse-2.0.1.tgz",
+          "sha256": "27903847fc8215e6fc5a33e81490f7baba66403f8aade33771b988cca097728c",
+          "kind": "published-package"
+        },
+        {
+          "url": "https://github.com/nodeca/argparse",
+          "kind": "upstream-repository",
+          "revision": "e373563876f1c049826c21bd1c9388f6a5737a3e"
+        },
+        {
+          "url": "https://github.com/nodeca/argparse/archive/e373563876f1c049826c21bd1c9388f6a5737a3e.tar.gz",
+          "kind": "upstream-source-revision"
+        }
+      ],
+      "scope": "Mermaid 10.9.3 runtime dependency closure plus js-yaml and generated Jison parser; may include tree-shaken dependencies."
+    },
+    {
+      "name": "guava",
+      "version": "31.1-jre",
+      "license": "Apache-2.0",
+      "category": "frontend-java-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/elkjs-java/guava@31.1-jre/COPYRIGHT-NOTICES.txt",
+          "sha256": "5553dacdd176101861ddf84a46c972534c987bf7f07d200a9448da1fd87050d2"
+        },
+        {
+          "path": "mermaid/elkjs-java/guava@31.1-jre/LICENSE.txt",
+          "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://repo.maven.apache.org/maven2/com/google/guava/guava/31.1-jre/guava-31.1-jre-sources.jar",
+          "sha256": "8ab1853cdaf936ec88be80c17302b7c20abafbd4f54d4fb54d7011c529e3a44a",
+          "kind": "upstream-source"
+        },
+        {
+          "url": "https://repo.maven.apache.org/maven2/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar",
+          "sha256": "a42edc9cab792e39fe39bb94f3fca655ed157ff87a8af78e1d6ba5b07c4a00ab",
+          "kind": "upstream-build-dependency"
+        }
+      ],
+      "scope": "Declared ELKJS build dependency; this inventory does not prove exact transitive composition of the published JavaScript bundle."
+    },
+    {
+      "name": "guava-gwt",
+      "version": "31.1-jre",
+      "license": "Apache-2.0",
+      "category": "frontend-java-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/elkjs-java/guava-gwt@31.1-jre/COPYRIGHT-NOTICES.txt",
+          "sha256": "b8cc074d3c17aaa3bea9d299601680157ad6956184b9ed6d47e6fdc8a20d1eae"
+        },
+        {
+          "path": "mermaid/elkjs-java/guava-gwt@31.1-jre/LICENSE.txt",
+          "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://repo.maven.apache.org/maven2/com/google/guava/guava-gwt/31.1-jre/guava-gwt-31.1-jre-sources.jar",
+          "sha256": "d7e52f41ac6ea010787b5b3c8db7ffb54375d8d0c39c98c2badc9c38de7bf14b",
+          "kind": "upstream-source"
+        },
+        {
+          "url": "https://repo.maven.apache.org/maven2/com/google/guava/guava-gwt/31.1-jre/guava-gwt-31.1-jre.jar",
+          "sha256": "1f84944b947395d6a4302475284ccfedc5876be354e0926fbe794e41f8acfd23",
+          "kind": "upstream-build-dependency"
+        }
+      ],
+      "scope": "Declared ELKJS build dependency; this inventory does not prove exact transitive composition of the published JavaScript bundle."
+    },
+    {
+      "name": "gwt-user",
+      "version": "2.10.0",
+      "license": "Apache-2.0",
+      "category": "frontend-java-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/elkjs-java/gwt-user@2.10.0/com__google__gwt__core__COPYING.txt",
+          "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9"
+        },
+        {
+          "path": "mermaid/elkjs-java/gwt-user@2.10.0/com__google__gwt__emul__COPYING.txt",
+          "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9"
+        },
+        {
+          "path": "mermaid/elkjs-java/gwt-user@2.10.0/com__google__gwt__i18n__COPYING.txt",
+          "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9"
+        },
+        {
+          "path": "mermaid/elkjs-java/gwt-user@2.10.0/com__google__gwt__json__COPYING.txt",
+          "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9"
+        },
+        {
+          "path": "mermaid/elkjs-java/gwt-user@2.10.0/com__google__gwt__user__COPYING.txt",
+          "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9"
+        },
+        {
+          "path": "mermaid/elkjs-java/gwt-user@2.10.0/com__google__gwt__xml__COPYING.txt",
+          "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9"
+        },
+        {
+          "path": "mermaid/elkjs-java/gwt-user@2.10.0/COPYRIGHT-NOTICES.txt",
+          "sha256": "b1f88c523333c73057b85ccc3257c4d5a19d9d2ac7c58e04634a3383a5c754c4"
+        },
+        {
+          "path": "mermaid/elkjs-java/gwt-user@2.10.0/LICENSE.txt",
+          "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://repo.maven.apache.org/maven2/org/gwtproject/gwt-user/2.10.0/gwt-user-2.10.0-sources.jar",
+          "sha256": "731ff22188418a1dfaca30c8956ea107e87219ba7c4fb32d2f059ede317660b9",
+          "kind": "upstream-source"
+        },
+        {
+          "url": "https://repo.maven.apache.org/maven2/org/gwtproject/gwt-user/2.10.0/gwt-user-2.10.0.jar",
+          "sha256": "b51edadffd969cda823e1fa3dcc4e43b3d9e5a338ba7f190c7ac3db8919f9b9d",
+          "kind": "upstream-build-dependency"
+        }
+      ],
+      "scope": "Declared ELKJS build dependency; this inventory does not prove exact transitive composition of the published JavaScript bundle."
+    },
+    {
+      "name": "emf-common",
+      "version": "2.12.4",
+      "license": "EPL-1.0",
+      "category": "frontend-java-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/elkjs-java/emf-common@2.12.4/COPYRIGHT-NOTICES.txt",
+          "sha256": "b04fa9ecfdc220ff8be45c380ce96361afd9f5acdc2672f9df99b0415d8c3004"
+        },
+        {
+          "path": "mermaid/elkjs-java/emf-common@2.12.4/LICENSE.txt",
+          "sha256": "f3d8dc494be2e7ea9cd31ac2fb902e35dce7ff8181b9b30d05861b47c339cb25"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://repo.maven.apache.org/maven2/com/genmymodel/emf/gwt/emf-common/2.12.4/emf-common-2.12.4-sources.jar",
+          "sha256": "8dfc4e97ca8eee5474927e2b0c5f3bdbd9a52dcd5dff8c0b433b1e938b843bbe",
+          "kind": "upstream-source"
+        },
+        {
+          "url": "https://repo.maven.apache.org/maven2/com/genmymodel/emf/gwt/emf-common/2.12.4/emf-common-2.12.4.jar",
+          "sha256": "25264841bf995061ee87ab0516dc98697cc2bd66d3a1771d56349b0a314a1e48",
+          "kind": "upstream-build-dependency"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/spdx/license-list-data/main/text/EPL-1.0.txt",
+          "sha256": "f3d8dc494be2e7ea9cd31ac2fb902e35dce7ff8181b9b30d05861b47c339cb25",
+          "kind": "license-text"
+        }
+      ],
+      "scope": "Declared ELKJS build dependency; this inventory does not prove exact transitive composition of the published JavaScript bundle."
+    },
+    {
+      "name": "emf-ecore",
+      "version": "2.12.4",
+      "license": "EPL-1.0",
+      "category": "frontend-java-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/elkjs-java/emf-ecore@2.12.4/COPYRIGHT-NOTICES.txt",
+          "sha256": "cd22d95049143dcd811720969549cf26e68d35761f9a202a8f3d6031c36ebfb7"
+        },
+        {
+          "path": "mermaid/elkjs-java/emf-ecore@2.12.4/LICENSE.txt",
+          "sha256": "f3d8dc494be2e7ea9cd31ac2fb902e35dce7ff8181b9b30d05861b47c339cb25"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://repo.maven.apache.org/maven2/com/genmymodel/emf/gwt/emf-ecore/2.12.4/emf-ecore-2.12.4-sources.jar",
+          "sha256": "dd3b8c1c3bd0a27c1fbba908bcf0ff21a999148da4e68b3546bcde1dbce7b13a",
+          "kind": "upstream-source"
+        },
+        {
+          "url": "https://repo.maven.apache.org/maven2/com/genmymodel/emf/gwt/emf-ecore/2.12.4/emf-ecore-2.12.4.jar",
+          "sha256": "c80e2eaaf65ab95ebd8a3997ce1778dec018946c034f9600f7441159f0f343a3",
+          "kind": "upstream-build-dependency"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/spdx/license-list-data/main/text/EPL-1.0.txt",
+          "sha256": "f3d8dc494be2e7ea9cd31ac2fb902e35dce7ff8181b9b30d05861b47c339cb25",
+          "kind": "license-text"
+        }
+      ],
+      "scope": "Declared ELKJS build dependency; this inventory does not prove exact transitive composition of the published JavaScript bundle."
+    },
+    {
+      "name": "org.eclipse.xtend.lib",
+      "version": "2.28.0",
+      "license": "EPL-2.0",
+      "category": "frontend-java-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/elkjs-java/org.eclipse.xtend.lib@2.28.0/about_org.eclipse.xtend.lib.html.txt",
+          "sha256": "0eaf27c17e674e6aba8222ef845b936bcea446761400d4065c35bd6d52fa3d0b"
+        },
+        {
+          "path": "mermaid/elkjs-java/org.eclipse.xtend.lib@2.28.0/COPYRIGHT-NOTICES.txt",
+          "sha256": "2b9d0af15a2a4c2555089fdaa030d90e3fb23a4d8a2a29a264b9cf5b411bc824"
+        },
+        {
+          "path": "mermaid/elkjs-java/org.eclipse.xtend.lib@2.28.0/LICENSE.txt",
+          "sha256": "61616a4066701bc7888ad910de1633dbc55eb4d4d30d930feef55afb9492e33c"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://repo.maven.apache.org/maven2/org/eclipse/xtend/org.eclipse.xtend.lib/2.28.0/org.eclipse.xtend.lib-2.28.0-sources.jar",
+          "sha256": "899f1ffb8d761f11bb5f7b74e46cdd790bd8f9bc398221cd62524eea9344d926",
+          "kind": "upstream-source"
+        },
+        {
+          "url": "https://repo.maven.apache.org/maven2/org/eclipse/xtend/org.eclipse.xtend.lib/2.28.0/org.eclipse.xtend.lib-2.28.0.jar",
+          "sha256": "e18b609a3f99ece787443efd231504232f4b6179e9cc1c7b0905361dd31c8fdf",
+          "kind": "upstream-build-dependency"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/spdx/license-list-data/main/text/EPL-2.0.txt",
+          "sha256": "61616a4066701bc7888ad910de1633dbc55eb4d4d30d930feef55afb9492e33c",
+          "kind": "license-text"
+        }
+      ],
+      "scope": "Declared ELKJS build dependency; this inventory does not prove exact transitive composition of the published JavaScript bundle."
+    },
+    {
+      "name": "org.eclipse.xtext.xbase.lib",
+      "version": "2.28.0",
+      "license": "EPL-2.0",
+      "category": "frontend-java-dependency-notices",
+      "notices": [
+        {
+          "path": "mermaid/elkjs-java/org.eclipse.xtext.xbase.lib@2.28.0/about_org.eclipse.xtext.xbase.lib.html.txt",
+          "sha256": "0eaf27c17e674e6aba8222ef845b936bcea446761400d4065c35bd6d52fa3d0b"
+        },
+        {
+          "path": "mermaid/elkjs-java/org.eclipse.xtext.xbase.lib@2.28.0/COPYRIGHT-NOTICES.txt",
+          "sha256": "c36993075fa02de514fd5feb45ab0a4918e1f986b432317ada7e88f66742fd74"
+        },
+        {
+          "path": "mermaid/elkjs-java/org.eclipse.xtext.xbase.lib@2.28.0/LICENSE.txt",
+          "sha256": "61616a4066701bc7888ad910de1633dbc55eb4d4d30d930feef55afb9492e33c"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://repo.maven.apache.org/maven2/org/eclipse/xtext/org.eclipse.xtext.xbase.lib/2.28.0/org.eclipse.xtext.xbase.lib-2.28.0-sources.jar",
+          "sha256": "2b35e9ccd4308f605e213371bb26f458b6a84bbd1e3a13cecaac0eba607db69f",
+          "kind": "upstream-source"
+        },
+        {
+          "url": "https://repo.maven.apache.org/maven2/org/eclipse/xtext/org.eclipse.xtext.xbase.lib/2.28.0/org.eclipse.xtext.xbase.lib-2.28.0.jar",
+          "sha256": "2e81c2ad0b4e48b0b1ba2e5873a06bb877dfbbcb0651c1ed0988ee15c6ebbdfe",
+          "kind": "upstream-build-dependency"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/spdx/license-list-data/main/text/EPL-2.0.txt",
+          "sha256": "61616a4066701bc7888ad910de1633dbc55eb4d4d30d930feef55afb9492e33c",
+          "kind": "license-text"
+        }
+      ],
+      "scope": "Declared ELKJS build dependency; this inventory does not prove exact transitive composition of the published JavaScript bundle."
+    },
+    {
+      "name": "zlib (launcher)",
+      "version": "1.3.2",
+      "license": "Zlib",
+      "category": "embedded-launcher",
+      "notices": [
+        {
+          "path": "cpython/LICENSE.zlib.txt",
+          "sha256": "818922b2620f12801a12bf78e399644a30990e66824abd8ca8ec24d451d6f92c"
+        }
+      ],
+      "sources": [
+        {
+          "version": "1.3.2",
+          "url": "https://zlib.net/zlib-1.3.2.tar.gz",
+          "sha256": "bb329a0a2cd0274d05519d61c667c062e06990d72e125ee2dfa8de64f0119d16",
+          "kind": "upstream-source"
+        }
+      ]
+    }
+  ]
+}

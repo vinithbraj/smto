@@ -1,0 +1,72 @@
+SMTO server dev.93a3ac5edb4e.20261016.20261016T132827993981Z
+[SMTO server startup +0s] Verifying application download...
+[SMTO server startup +0s] Preparing shared private Python...
+[SMTO server startup +1s] Preparing compiled application...
+[SMTO server startup] Preparing HTTPS identity: starting (0.0s)
+[SMTO server startup] Preparing HTTPS identity: complete (0.0s)
+INFO:     Started server process [7948]
+INFO:     Waiting for application startup.
+[SMTO server startup] Loading runtime modules: starting (0.0s)
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:46061 (Press CTRL+C to quit)
+INFO:     127.0.0.1:41612 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:41620 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:41624 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:41628 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:41644 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:41654 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:41658 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:41666 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:41678 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+[SMTO server startup] Loading runtime modules: complete (2.4s)
+[SMTO server startup] Loading configuration: starting (0.0s)
+[SMTO server startup] Loading configuration: complete (0.0s)
+[SMTO server startup] Acquiring runtime ownership: starting (0.0s)
+[SMTO server startup] Acquiring runtime ownership: complete (0.0s)
+[SMTO server startup] Restoring runtime state: starting (0.0s)
+INFO:     127.0.0.1:41688 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:41692 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+[SMTO server startup] Restoring runtime state: complete (0.5s)
+[SMTO server startup] Initializing execution services: starting (0.0s)
+INFO:     127.0.0.1:41698 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:41712 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:41718 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:41726 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:41732 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:41736 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:41750 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:41754 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:41764 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:41766 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:41782 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:41798 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:41814 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:41824 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:41838 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:41850 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:41854 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:41860 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+[SMTO server startup] Initializing execution services: complete (4.9s)
+[SMTO server startup] Preparing API and user interface: starting (0.0s)
+INFO:     127.0.0.1:41862 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:41864 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+[SMTO server startup] Preparing API and user interface: complete (0.5s)
+[SMTO server startup] Reconciling runtime work: starting (0.0s)
+[SMTO server startup] Reconciling runtime work: complete (0.0s)
+[SMTO server startup] Sealing restored state: starting (0.0s)
+INFO:     127.0.0.1:41874 - "GET /healthz HTTP/1.1" 503 Service Unavailable
+[SMTO server startup] Sealing restored state: complete (0.2s)
+[SMTO server startup] Starting background services: starting (0.0s)
+[SMTO server startup] Starting background services: complete (0.0s)
+INFO:     127.0.0.1:41884 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41892 - "GET /api/agent/version HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41904 - "GET /agent-ui?ui=desktop HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41920 - "GET /agent-ui?ui=mobile HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+[SMTO server shutdown] Shutdown requested. Keep this terminal open; do not press Ctrl+C again or force-kill the server. (0.0s elapsed)
+[SMTO server shutdown] Stopping background services before the final SQL save... (0.0s elapsed)
+[SMTO server shutdown] Saving runtime data to SQL before exit. Please wait... (0.0s elapsed)
+[SMTO server shutdown] SQL save complete. Safe to close this terminal. (0.1s elapsed)
+INFO:     Application shutdown complete.
+INFO:     Finished server process [7948]

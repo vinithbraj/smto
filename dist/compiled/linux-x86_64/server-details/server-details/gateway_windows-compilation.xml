@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='utf8'?>
+<nuitka-compilation-report nuitka_version="4.3" nuitka_commercial_version="not installed" mode="module" completion="yes">
+  <scons_environment c_compiler="gcc" the_cc_name="gcc" the_compiler="gcc" c_flags="-march=x86-64 -mtune=generic" cxx_flags="-march=x86-64 -mtune=generic" />
+  <module name="gateway_windows" kind="CompiledPythonPackage" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/gateway_windows/__init__.py">
+    <plugin-influence name="implicit-imports" influence="condition-used" condition="module_mode and plugin(&quot;pyside6&quot;)" tags_used="module_mode,plugin" result="false" />
+    <optimization-time pass="1" time="0.0006" micro_passes="2" />
+    <optimization-time pass="2" time="0.0002" micro_passes="1" />
+    <code-generation-time time="0.0271" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="15440" />
+      <cpu system-cpu-time="0.0332" user-cpu-time="0.2472" />
+      <memory memory-max-rss-kb="41484" />
+      <system-events context-switches-involuntary="0" context-switches-voluntary="13" disk-input-blocks="0" disk-output-blocks="32" page-faults-major="0" page-faults-minor="7290" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="os" finding="excluded" line="1" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+    </module_usages>
+  </module>
+  <module name="gateway_windows.app" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/gateway_windows/app.py">
+    <optimization-time pass="1" time="0.0045" micro_passes="3" max_branch_merge="3" merged_total="9" />
+    <optimization-time pass="2" time="0.0006" micro_passes="1" />
+    <code-generation-time time="0.0053" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="19896" />
+      <cpu system-cpu-time="0.0389" user-cpu-time="0.3200" />
+      <memory memory-max-rss-kb="44076" />
+      <system-events context-switches-involuntary="0" context-switches-voluntary="16" disk-input-blocks="0" disk-output-blocks="40" page-faults-major="0" page-faults-minor="8054" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="__future__" finding="excluded" line="30" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="fastapi" finding="not-found" line="32" reason="import" />
+      <module_usage name="gateway_core.app" finding="absolute" line="34" reason="import" />
+      <module_usage name="gateway_core.config" finding="absolute" line="35" reason="import" />
+      <module_usage name="gateway_windows.config" finding="absolute" line="36" reason="import" />
+      <module_usage name="gateway_core.lazy_app" finding="absolute" line="45" reason="import" />
+    </module_usages>
+  </module>
+  <module name="gateway_windows.config" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/gateway_windows/config.py">
+    <optimization-time pass="1" time="0.0077" micro_passes="3" max_branch_merge="3" merged_total="11" />
+    <optimization-time pass="2" time="0.0008" micro_passes="1" max_branch_merge="2" merged_total="3" />
+    <code-generation-time time="0.0054" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="30488" />
+      <cpu system-cpu-time="0.0386" user-cpu-time="0.4799" />
+      <memory memory-max-rss-kb="48296" />
+      <system-events context-switches-involuntary="2" context-switches-voluntary="22" disk-input-blocks="0" disk-output-blocks="64" page-faults-major="0" page-faults-minor="9069" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="__future__" finding="excluded" line="32" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="os" finding="excluded" line="34" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="platform" finding="excluded" line="35" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="functools" finding="excluded" line="36" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="agent_runtime.branding" finding="absolute" line="38" reason="import" />
+      <module_usage name="gateway_core.config" finding="absolute" line="39" reason="import" />
+    </module_usages>
+  </module>
+  <module name="gateway_windows.executor" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/gateway_windows/executor.py">
+    <optimization-time pass="1" time="0.0015" micro_passes="2" max_branch_merge="5" merged_total="10" />
+    <optimization-time pass="2" time="0.0003" micro_passes="1" max_branch_merge="5" merged_total="5" />
+    <code-generation-time time="0.0020" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="11712" />
+      <cpu system-cpu-time="0.0391" user-cpu-time="0.2198" />
+      <memory memory-max-rss-kb="40180" />
+      <system-events context-switches-involuntary="10" context-switches-voluntary="12" disk-input-blocks="0" disk-output-blocks="24" page-faults-major="0" page-faults-minor="6979" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="gateway_core.executor" finding="absolute" line="29" reason="import" />
+    </module_usages>
+  </module>
+  <module name="gateway_windows.models" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/gateway_windows/models.py">
+    <optimization-time pass="1" time="0.0023" micro_passes="2" max_branch_merge="20" merged_total="40" />
+    <optimization-time pass="2" time="0.0007" micro_passes="1" max_branch_merge="20" merged_total="20" />
+    <code-generation-time time="0.0031" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="16304" />
+      <cpu system-cpu-time="0.0355" user-cpu-time="0.2603" />
+      <memory memory-max-rss-kb="42124" />
+      <system-events context-switches-involuntary="3" context-switches-voluntary="14" disk-input-blocks="0" disk-output-blocks="32" page-faults-major="0" page-faults-minor="7527" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="gateway_core.models" finding="absolute" line="29" reason="import" />
+    </module_usages>
+  </module>
+  <module name="gateway_windows.terminal" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/gateway_windows/terminal.py">
+    <optimization-time pass="1" time="0.0033" micro_passes="2" max_branch_merge="11" merged_total="22" />
+    <optimization-time pass="2" time="0.0005" micro_passes="1" max_branch_merge="11" merged_total="11" />
+    <code-generation-time time="0.0024" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="13536" />
+      <cpu system-cpu-time="0.0379" user-cpu-time="0.2295" />
+      <memory memory-max-rss-kb="40964" />
+      <system-events context-switches-involuntary="2" context-switches-voluntary="14" disk-input-blocks="0" disk-output-blocks="32" page-faults-major="0" page-faults-minor="7157" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="gateway_core.terminal_windows" finding="absolute" line="3" reason="import" />
+    </module_usages>
+  </module>
+  <linker-resources>
+    <cpu system-cpu-time="0.0152" user-cpu-time="0.0275" />
+    <memory memory-max-rss-kb="39184" />
+    <system-events context-switches-involuntary="1" context-switches-voluntary="7" disk-input-blocks="0" disk-output-blocks="1904" page-faults-major="0" page-faults-minor="3644" />
+  </linker-resources>
+  <performance>
+    <memory_usage name="after_launch" value="61964288" />
+    <memory_usage name="before_c_code_generation" value="64720896" />
+    <memory_usage name="before_running_scons" value="64720896" />
+  </performance>
+  <data_composer blob_size="10690" total="247">
+    <module_data filename="__bytecode.const" blob_name=".bytecode" blob_size="3" input_size="0" />
+    <module_data filename="__constants.const" blob_name="" blob_size="996" input_size="2454" />
+    <module_data filename="module.gateway_windows.app.const" blob_name="gateway_windows.app" blob_size="1746" input_size="2715" />
+    <module_data filename="module.gateway_windows.config.const" blob_name="gateway_windows.config" blob_size="2098" input_size="3348" />
+    <module_data filename="module.gateway_windows.const" blob_name="gateway_windows" blob_size="1003" input_size="1723" />
+    <module_data filename="module.gateway_windows.executor.const" blob_name="gateway_windows.executor" blob_size="1367" input_size="2055" />
+    <module_data filename="module.gateway_windows.models.const" blob_name="gateway_windows.models" blob_size="2310" input_size="2777" />
+    <module_data filename="module.gateway_windows.terminal.const" blob_name="gateway_windows.terminal" blob_size="992" input_size="1524" />
+  </data_composer>
+  <performance-totals>
+    <optimization-time pass="1" time="0.0199" module_count="6" />
+    <optimization-time pass="2" time="0.0031" module_count="6" />
+    <optimization-time pass="all" time="0.0230" module_count="6" />
+    <code-generation-time time="0.0452" module_count="6" />
+    <c-compilation-time user-cpu-time="1.7568" system-cpu-time="0.2231" module_count="6" />
+    <c-linking-time user-cpu-time="0.0275" system-cpu-time="0.0152" />
+  </performance-totals>
+  <python_binary filename="${cwd}/.build/compiled/targets/linux-x86_64/modules/gateway_windows/gateway_windows.cpython-312-x86_64-linux-gnu.so" backend_resource_mode="incbin" reproducible="yes" size="963664" />
+  <command_line>
+    <option value="--mode=module" />
+    <option value="/workspace/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/gateway_windows" />
+    <option value="--include-package=gateway_windows" />
+    <option value="--no-pyi-file" />
+    <option value="--assume-yes-for-downloads" />
+    <option value="--output-dir=/workspace/.build/compiled/targets/linux-x86_64/modules/gateway_windows" />
+    <option value="--jobs=8" />
+    <option value="--report=/workspace/.build/compiled/targets/linux-x86_64/modules/gateway_windows/compilation.xml" />
+  </command_line>
+  <plugins>
+    <plugin name="anti-bloat" user_enabled="no" />
+    <plugin name="gi" user_enabled="no" />
+    <plugin name="implicit-imports" user_enabled="no" />
+    <plugin name="options-nanny" user_enabled="no" />
+    <plugin name="pkg-resources" user_enabled="no" />
+    <plugin name="transformers" user_enabled="no" />
+  </plugins>
+  <distributions />
+  <python python_exe="${sys.prefix}/bin/python" python_flavor="Unknown" python_version="3.12.14" os_name="Linux" os_release="Ubuntu-Debian-22.04.5" arch_name="x86_64" filesystem_encoding="utf-8">
+    <search_path>
+      <path value="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f" />
+      <path value="${cwd}" />
+      <path value="${sys.real_prefix}/lib/python3.12" />
+      <path value="${sys.real_prefix}/lib/python3.12/lib-dynload" />
+      <path value="${sys.prefix}/lib/python3.12/site-packages" />
+      <path value="${sys.prefix}/lib/python3.12/site-packages/setuptools/_vendor" />
+    </search_path>
+  </python>
+  <output run_filename="${cwd}/.build/compiled/targets/linux-x86_64/modules/gateway_windows/gateway_windows.cpython-312-x86_64-linux-gnu.so" />
+</nuitka-compilation-report>
