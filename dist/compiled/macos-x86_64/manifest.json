@@ -3,12 +3,12 @@
     {
       "application_extracted_bytes": 131985605,
       "artifact": "SMTO-server.zip",
-      "artifact_sha256": "2151386e5bab768c6bccf6f735cbadcc3a1ef7a838330f740f29540063a9288f",
+      "artifact_sha256": "9738bdb4b2100193e0b65baa5b135982a86f442d601e1d4dd6f3cf15adf88959",
       "build_channel": "dev",
-      "build_id": "596449773659322478e7bd41",
-      "build_timestamp": "20261017T170312646995Z",
-      "build_version": "dev.d5931ab54d33.20261016.20261017T170312646995Z",
-      "built_at": "2026-10-17T17:03:12.646995Z",
+      "build_id": "d5d778fc0edb07e80b8a04dd",
+      "build_timestamp": "20261018T193858267066Z",
+      "build_version": "dev.d5931ab54d33.20261016.20261018T193858267066Z",
+      "built_at": "2026-10-18T19:38:58.267066Z",
       "cache_bytes": "Measured separately; platform cache directory",
       "commit_date": "20261016",
       "compiled_source_sha256": "4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f",
@@ -40,7 +40,7 @@
         "embedded-native-corresponding-source"
       ],
       "component": "server",
-      "download_bytes": 80426493,
+      "download_bytes": 80426489,
       "download_reduction_percent": null,
       "legacy_download_bytes": null,
       "packaging_backend": "compiled-shared-v1",
@@ -59,17 +59,17 @@
       "target": "macos-x86_64",
       "target_arch": "x86_64",
       "target_os": "macos",
-      "version": "dev.d5931ab54d33.20261016.20261017T170312646995Z"
+      "version": "dev.d5931ab54d33.20261016.20261018T193858267066Z"
     },
     {
       "application_extracted_bytes": 131985606,
       "artifact": "SMTO-gateway.zip",
-      "artifact_sha256": "e2d9c4283c7ac02d73048abb1374daee196fa8523ade122a6353babcec769e23",
+      "artifact_sha256": "e9346ddf7a9ac86ac4dfe75cd83584d69a973ec889142949d0b43241d333b656",
       "build_channel": "dev",
-      "build_id": "41be25e1ec676605f263492e",
-      "build_timestamp": "20261017T170312646995Z",
-      "build_version": "dev.d5931ab54d33.20261016.20261017T170312646995Z",
-      "built_at": "2026-10-17T17:03:12.646995Z",
+      "build_id": "452246b44aec371e68d33c08",
+      "build_timestamp": "20261018T193858267066Z",
+      "build_version": "dev.d5931ab54d33.20261016.20261018T193858267066Z",
+      "built_at": "2026-10-18T19:38:58.267066Z",
       "cache_bytes": "Measured separately; platform cache directory",
       "commit_date": "20261016",
       "compiled_source_sha256": "4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f",
@@ -101,7 +101,7 @@
         "embedded-native-corresponding-source"
       ],
       "component": "gateway",
-      "download_bytes": 80432694,
+      "download_bytes": 80432702,
       "download_reduction_percent": null,
       "legacy_download_bytes": null,
       "packaging_backend": "compiled-shared-v1",
@@ -120,7 +120,7 @@
       "target": "macos-x86_64",
       "target_arch": "x86_64",
       "target_os": "macos",
-      "version": "dev.d5931ab54d33.20261016.20261017T170312646995Z"
+      "version": "dev.d5931ab54d33.20261016.20261018T193858267066Z"
     }
   ],
   "schema_version": 1
