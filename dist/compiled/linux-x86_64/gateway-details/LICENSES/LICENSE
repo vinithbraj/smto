@@ -1,28 +1,118 @@
-SMTO Proprietary Software License
-Effective for new proprietary contributions and compiled distributions designated
-as proprietary on or after 2026-10-13.
+SMTO PERSONAL USE LICENSE
+Personal-Use Source and Object-Code Grant and Open-Source Rights Preservation
+Document version: 2026-10-18.3
+Licensor: SMTO authors
 
-Copyright (c) SMTO authors. All rights reserved except as expressly granted.
+Copyright (c) 2026 SMTO authors.
+All rights reserved solely as to the Proprietary Material defined below,
+except as expressly licensed or required by applicable law.
 
-Subject to the applicable SMTO End User License Agreement and any separate
-written agreement with the rights holder, the recipient may install and run the
-provided object-code application for the recipient's authorized use and keep
-reasonable backup copies. No right to redistribute, sublicense, publish, or
-create derivative works of the proprietary portions is granted by this notice.
+"SMTO authors" means the applicable copyright holder or holders licensing the
+Proprietary Material defined below.
 
-This notice does not withdraw or restrict any rights already granted under the
-Apache License 2.0 or another license for earlier releases or contributions.
-The earlier Apache license is preserved in build/config/EARLIER-APACHE-2.0.txt.
-Separately identified third-party components remain under their own licenses;
-their notices and any corresponding source obligations take precedence for
-those components. No third-party component is relicensed by this notice.
+1. WHAT THIS NOTICE COVERS
 
-Nothing in this license prohibits replacement, modification, or reverse
-engineering of third-party libraries to the extent required by their licenses,
-including debugging modifications to LGPL-covered libraries. The custom-runtime
-option permits compatible replacement libraries. Mandatory statutory rights
-also remain unaffected.
+"SMTO" means the software distribution identified in its accompanying
+release manifest. "Proprietary Material" means only original software,
+modifications, documentation, and assets for which the identified copyright
+holder has the necessary licensing rights and which are expressly designated
+as proprietary in the distribution's license-scope record.
 
-THE SOFTWARE IS PROVIDED AS IS, WITHOUT WARRANTIES OF ANY KIND, TO THE MAXIMUM
-EXTENT PERMITTED BY LAW. LIABILITY AND AUTOMATION RISKS ARE ADDRESSED IN THE
-ACCOMPANYING END USER LICENSE AGREEMENT.
+This notice may be applied prospectively to eligible new contributions and
+compiled distributions expressly designated proprietary on or after
+October 13, 2026. A date alone does not change the license of any file,
+contribution, past release, or third-party component. The particular release
+manifest identifies what is covered.
+
+2. LIMITED PERMISSION TO USE PROPRIETARY MATERIAL
+
+Subject to the SMTO End User License Agreement supplied with the applicable
+proprietary distribution and any separate written agreement with the rights
+holder, the recipient is granted a limited, nonexclusive, nontransferable
+license to install and run the supplied source-code or object-code application for
+personal, noncommercial use only and to keep reasonable backup copies.
+
+Personal use means use by an individual solely for private hobbies,
+experimentation, and personal learning, and not for the benefit of an employer,
+client, business, or other organization. Employment, consulting, paid work,
+commercial evaluation, internal business operations, and use for a nonprofit,
+educational institution, or government organization require a separate written
+license from the rights holder before that use begins. No free commercial
+trial or organizational-use permission is granted by this notice.
+
+Free for personal, noncommercial use only. Commercial and organizational use
+requires a separate license. Visit https://smtorch.com for details.
+Accepting this notice or the EULA does not itself grant commercial rights.
+A separate written license controls its expressly covered subject matter.
+
+No permission is granted by this notice to redistribute, publish, sublicense,
+sell, or prepare derivative works of Proprietary Material without the rights
+holder's prior written permission, except where expressly permitted by an
+applicable separate license, this notice, or nonwaivable law.
+
+3. EARLIER OPEN-SOURCE RIGHTS ARE PRESERVED
+
+Nothing here revokes, narrows, supersedes, or conditions rights previously
+granted under Apache License, Version 2.0, or any other applicable
+open-source license for earlier releases or contributions. A previously
+Apache-licensed portion remains Apache-licensed even if that portion is
+included in a later proprietary distribution. Proprietary terms in this
+notice govern only separately eligible Proprietary Material; they do not
+replace the rights attached to earlier open-source material.
+
+The historical project notice is preserved separately for attribution and
+provenance. The complete, unmodified Apache License, Version 2.0 text must
+also accompany a distribution to the extent required by that license.
+
+4. THIRD-PARTY COMPONENTS AND LICENSE PRIORITY
+
+Third-party components remain subject to their own applicable licenses,
+notices, copyright statements, and source-availability obligations. They are
+not relicensed as proprietary by this notice. Recipients retain all rights
+provided by those licenses, even where those rights include modification,
+redistribution, access to corresponding source, or replacement of libraries.
+
+If any restriction in this notice conflicts with an applicable open-source
+license governing a component, that component's license controls for that
+component. The recipient must comply with all applicable component-specific
+conditions.
+
+5. LIBRARY REPLACEMENT AND MANDATORY RIGHTS
+
+Nothing in this notice prohibits modification or replacement of a third-party
+library, or reverse engineering undertaken to debug modifications to that
+library, to the extent that the library's applicable license requires such
+rights, including where the GNU Lesser General Public License applies.
+This notice also does not restrict rights that cannot lawfully be waived.
+
+A product's technical support for an alternate runtime or library is a
+separate factual matter that must be established by testing; this notice
+does not itself establish that a particular compiled distribution meets
+relinking, replacement, corresponding-source, or installation-information
+obligations.
+
+6. AI MODELS, PROVIDERS, AND CONNECTED SERVICES
+
+This notice licenses only eligible SMTO Proprietary Material. It grants no
+right to third-party models, model weights, services, APIs, operating systems,
+or data. Their separate terms continue to apply.
+
+7. WARRANTY
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, PROPRIETARY MATERIAL IS
+PROVIDED "AS IS" AND "AS AVAILABLE," WITHOUT WARRANTIES OF ANY KIND,
+EXPRESS OR IMPLIED. ANY NONWAIVABLE STATUTORY WARRANTIES OR REMEDIES REMAIN
+UNAFFECTED. ADDITIONAL AGREED TERMS AND AUTOMATION-RISK DISCLOSURES APPEAR
+IN THE APPLICABLE VERSIONED SMTO END USER LICENSE AGREEMENT.
+
+8. SCOPE AND DOCUMENT PRECEDENCE
+
+This notice does not itself transfer copyright ownership, relicense earlier
+material, or waive third-party license rights. A distribution's license-scope
+record and component notices identify the materials covered. A separately
+accepted End User License Agreement may impose contractual conditions for
+eligible Proprietary Material but cannot reduce rights independently granted
+by third-party or earlier open-source licenses, or nonwaivable law.
+
+Document provenance: this is version 2026-10-18.3. Revisions to legally
+operative terms require a new version and new document hash.

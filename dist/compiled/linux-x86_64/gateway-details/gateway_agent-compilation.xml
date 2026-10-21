@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='utf8'?>
 <nuitka-compilation-report nuitka_version="4.3" nuitka_commercial_version="not installed" mode="module" completion="yes">
   <scons_environment c_compiler="gcc" the_cc_name="gcc" the_compiler="gcc" c_flags="-march=x86-64 -mtune=generic" cxx_flags="-march=x86-64 -mtune=generic" />
-  <module name="gateway_agent" kind="CompiledPythonPackage" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/gateway_agent/__init__.py">
+  <module name="gateway_agent" kind="CompiledPythonPackage" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/32dd56c5a011f6b20f8ec12aae67b5d5924a95d9ab899fbb6591797f000ccae7/gateway_agent/__init__.py">
     <plugin-influence name="implicit-imports" influence="condition-used" condition="module_mode and plugin(&quot;pyside6&quot;)" tags_used="module_mode,plugin" result="false" />
     <optimization-time pass="1" time="0.0016" micro_passes="2" />
     <optimization-time pass="2" time="0.0004" micro_passes="1" />
-    <code-generation-time time="0.0308" />
+    <code-generation-time time="0.0303" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="30096" />
-      <cpu system-cpu-time="0.0587" user-cpu-time="0.4590" />
-      <memory memory-max-rss-kb="49796" />
-      <system-events context-switches-involuntary="1" context-switches-voluntary="23" disk-input-blocks="0" disk-output-blocks="64" page-faults-major="0" page-faults-minor="9065" />
+      <cpu system-cpu-time="0.0506" user-cpu-time="0.4512" />
+      <memory memory-max-rss-kb="49908" />
+      <system-events context-switches-involuntary="2" context-switches-voluntary="23" disk-input-blocks="0" disk-output-blocks="64" page-faults-major="0" page-faults-minor="9124" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="os" finding="excluded" line="1" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -19,16 +19,16 @@
       <module_usage name="gateway_core.__version__" finding="not-found" line="28" reason="import fromlist" />
     </module_usages>
   </module>
-  <module name="gateway_agent.app" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/gateway_agent/app.py">
-    <optimization-time pass="1" time="0.0049" micro_passes="3" max_branch_merge="3" merged_total="15" />
+  <module name="gateway_agent.app" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/32dd56c5a011f6b20f8ec12aae67b5d5924a95d9ab899fbb6591797f000ccae7/gateway_agent/app.py">
+    <optimization-time pass="1" time="0.0048" micro_passes="3" max_branch_merge="3" merged_total="15" />
     <optimization-time pass="2" time="0.0007" micro_passes="1" max_branch_merge="2" merged_total="2" />
-    <code-generation-time time="0.0054" />
+    <code-generation-time time="0.0053" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="19872" />
-      <cpu system-cpu-time="0.0452" user-cpu-time="0.3180" />
-      <memory memory-max-rss-kb="44564" />
-      <system-events context-switches-involuntary="1" context-switches-voluntary="16" disk-input-blocks="0" disk-output-blocks="40" page-faults-major="0" page-faults-minor="8068" />
+      <cpu system-cpu-time="0.0392" user-cpu-time="0.3198" />
+      <memory memory-max-rss-kb="44392" />
+      <system-events context-switches-involuntary="3" context-switches-voluntary="16" disk-input-blocks="0" disk-output-blocks="40" page-faults-major="0" page-faults-minor="8031" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="__future__" finding="excluded" line="30" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -38,16 +38,16 @@
       <module_usage name="gateway_core.lazy_app" finding="absolute" line="44" reason="import" />
     </module_usages>
   </module>
-  <module name="gateway_agent.config" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/gateway_agent/config.py">
-    <optimization-time pass="1" time="0.0143" micro_passes="3" max_branch_merge="9" merged_total="193" />
+  <module name="gateway_agent.config" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/32dd56c5a011f6b20f8ec12aae67b5d5924a95d9ab899fbb6591797f000ccae7/gateway_agent/config.py">
+    <optimization-time pass="1" time="0.0139" micro_passes="3" max_branch_merge="9" merged_total="193" />
     <optimization-time pass="2" time="0.0014" micro_passes="1" max_branch_merge="9" merged_total="26" />
-    <code-generation-time time="0.0075" />
+    <code-generation-time time="0.0072" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="33304" />
-      <cpu system-cpu-time="0.0542" user-cpu-time="0.5184" />
-      <memory memory-max-rss-kb="50948" />
-      <system-events context-switches-involuntary="8" context-switches-voluntary="21" disk-input-blocks="0" disk-output-blocks="72" page-faults-major="0" page-faults-minor="9903" />
+      <cpu system-cpu-time="0.0451" user-cpu-time="0.5232" />
+      <memory memory-max-rss-kb="51300" />
+      <system-events context-switches-involuntary="1" context-switches-voluntary="22" disk-input-blocks="0" disk-output-blocks="72" page-faults-major="0" page-faults-minor="9794" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="__future__" finding="excluded" line="31" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -56,60 +56,60 @@
       <module_usage name="gateway_core.config" finding="absolute" line="36" reason="import" />
     </module_usages>
   </module>
-  <module name="gateway_agent.executor" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/gateway_agent/executor.py">
+  <module name="gateway_agent.executor" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/32dd56c5a011f6b20f8ec12aae67b5d5924a95d9ab899fbb6591797f000ccae7/gateway_agent/executor.py">
     <optimization-time pass="1" time="0.0016" micro_passes="2" max_branch_merge="5" merged_total="10" />
     <optimization-time pass="2" time="0.0003" micro_passes="1" max_branch_merge="5" merged_total="5" />
     <code-generation-time time="0.0019" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="11696" />
-      <cpu system-cpu-time="0.0378" user-cpu-time="0.2211" />
-      <memory memory-max-rss-kb="40352" />
-      <system-events context-switches-involuntary="7" context-switches-voluntary="12" disk-input-blocks="0" disk-output-blocks="24" page-faults-major="0" page-faults-minor="6951" />
+      <cpu system-cpu-time="0.0463" user-cpu-time="0.2141" />
+      <memory memory-max-rss-kb="40308" />
+      <system-events context-switches-involuntary="1" context-switches-voluntary="12" disk-input-blocks="0" disk-output-blocks="24" page-faults-major="0" page-faults-minor="6955" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="gateway_core.executor" finding="absolute" line="29" reason="import" />
     </module_usages>
   </module>
-  <module name="gateway_agent.models" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/gateway_agent/models.py">
-    <optimization-time pass="1" time="0.0025" micro_passes="2" max_branch_merge="20" merged_total="40" />
-    <optimization-time pass="2" time="0.0008" micro_passes="1" max_branch_merge="20" merged_total="20" />
-    <code-generation-time time="0.0032" />
+  <module name="gateway_agent.models" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/32dd56c5a011f6b20f8ec12aae67b5d5924a95d9ab899fbb6591797f000ccae7/gateway_agent/models.py">
+    <optimization-time pass="1" time="0.0024" micro_passes="2" max_branch_merge="20" merged_total="40" />
+    <optimization-time pass="2" time="0.0007" micro_passes="1" max_branch_merge="20" merged_total="20" />
+    <code-generation-time time="0.0030" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="16288" />
-      <cpu system-cpu-time="0.0483" user-cpu-time="0.2451" />
-      <memory memory-max-rss-kb="42076" />
-      <system-events context-switches-involuntary="0" context-switches-voluntary="14" disk-input-blocks="0" disk-output-blocks="32" page-faults-major="0" page-faults-minor="7529" />
+      <cpu system-cpu-time="0.0438" user-cpu-time="0.2486" />
+      <memory memory-max-rss-kb="42092" />
+      <system-events context-switches-involuntary="1" context-switches-voluntary="14" disk-input-blocks="0" disk-output-blocks="32" page-faults-major="0" page-faults-minor="7536" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="gateway_core.models" finding="absolute" line="29" reason="import" />
     </module_usages>
   </module>
-  <module name="gateway_agent.terminal" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/gateway_agent/terminal.py">
-    <optimization-time pass="1" time="0.0033" micro_passes="2" max_branch_merge="10" merged_total="20" />
-    <optimization-time pass="2" time="0.0004" micro_passes="1" max_branch_merge="10" merged_total="10" />
-    <code-generation-time time="0.0025" />
+  <module name="gateway_agent.terminal" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/32dd56c5a011f6b20f8ec12aae67b5d5924a95d9ab899fbb6591797f000ccae7/gateway_agent/terminal.py">
+    <optimization-time pass="1" time="0.0032" micro_passes="2" max_branch_merge="10" merged_total="20" />
+    <optimization-time pass="2" time="0.0005" micro_passes="1" max_branch_merge="10" merged_total="10" />
+    <code-generation-time time="0.0023" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="13232" />
-      <cpu system-cpu-time="0.0489" user-cpu-time="0.2206" />
-      <memory memory-max-rss-kb="40820" />
-      <system-events context-switches-involuntary="3" context-switches-voluntary="12" disk-input-blocks="0" disk-output-blocks="32" page-faults-major="0" page-faults-minor="7148" />
+      <cpu system-cpu-time="0.0400" user-cpu-time="0.2357" />
+      <memory memory-max-rss-kb="40844" />
+      <system-events context-switches-involuntary="1" context-switches-voluntary="12" disk-input-blocks="0" disk-output-blocks="32" page-faults-major="0" page-faults-minor="7157" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="gateway_core.terminal" finding="absolute" line="3" reason="import" />
     </module_usages>
   </module>
   <linker-resources>
-    <cpu system-cpu-time="0.0155" user-cpu-time="0.0277" />
-    <memory memory-max-rss-kb="39124" />
-    <system-events context-switches-involuntary="0" context-switches-voluntary="7" disk-input-blocks="0" disk-output-blocks="1928" page-faults-major="0" page-faults-minor="3660" />
+    <cpu system-cpu-time="0.0131" user-cpu-time="0.0291" />
+    <memory memory-max-rss-kb="39032" />
+    <system-events context-switches-involuntary="1" context-switches-voluntary="7" disk-input-blocks="0" disk-output-blocks="1928" page-faults-major="0" page-faults-minor="3658" />
   </linker-resources>
   <performance>
-    <memory_usage name="after_launch" value="61964288" />
-    <memory_usage name="before_c_code_generation" value="64495616" />
-    <memory_usage name="before_running_scons" value="64495616" />
+    <memory_usage name="after_launch" value="61857792" />
+    <memory_usage name="before_c_code_generation" value="64622592" />
+    <memory_usage name="before_running_scons" value="64622592" />
   </performance>
   <data_composer blob_size="10598" total="246">
     <module_data filename="__bytecode.const" blob_name=".bytecode" blob_size="3" input_size="0" />
@@ -122,17 +122,17 @@
     <module_data filename="module.gateway_agent.terminal.const" blob_name="gateway_agent.terminal" blob_size="902" input_size="1449" />
   </data_composer>
   <performance-totals>
-    <optimization-time pass="1" time="0.0281" module_count="6" />
+    <optimization-time pass="1" time="0.0275" module_count="6" />
     <optimization-time pass="2" time="0.0040" module_count="6" />
-    <optimization-time pass="all" time="0.0321" module_count="6" />
-    <code-generation-time time="0.0512" module_count="6" />
-    <c-compilation-time user-cpu-time="1.9822" system-cpu-time="0.2932" module_count="6" />
-    <c-linking-time user-cpu-time="0.0277" system-cpu-time="0.0155" />
+    <optimization-time pass="all" time="0.0316" module_count="6" />
+    <code-generation-time time="0.0501" module_count="6" />
+    <c-compilation-time user-cpu-time="1.9925" system-cpu-time="0.2650" module_count="6" />
+    <c-linking-time user-cpu-time="0.0291" system-cpu-time="0.0131" />
   </performance-totals>
   <python_binary filename="${cwd}/.build/compiled/targets/linux-x86_64/modules/gateway_agent/gateway_agent.cpython-312-x86_64-linux-gnu.so" backend_resource_mode="incbin" reproducible="yes" size="976088" />
   <command_line>
     <option value="--mode=module" />
-    <option value="/workspace/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/gateway_agent" />
+    <option value="/workspace/.build/compiled/targets/linux-x86_64/sources/32dd56c5a011f6b20f8ec12aae67b5d5924a95d9ab899fbb6591797f000ccae7/gateway_agent" />
     <option value="--include-package=gateway_agent" />
     <option value="--no-pyi-file" />
     <option value="--assume-yes-for-downloads" />
@@ -151,7 +151,7 @@
   <distributions />
   <python python_exe="${sys.prefix}/bin/python" python_flavor="Unknown" python_version="3.12.14" os_name="Linux" os_release="Ubuntu-Debian-22.04.5" arch_name="x86_64" filesystem_encoding="utf-8">
     <search_path>
-      <path value="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f" />
+      <path value="${cwd}/.build/compiled/targets/linux-x86_64/sources/32dd56c5a011f6b20f8ec12aae67b5d5924a95d9ab899fbb6591797f000ccae7" />
       <path value="${cwd}" />
       <path value="${sys.real_prefix}/lib/python3.12" />
       <path value="${sys.real_prefix}/lib/python3.12/lib-dynload" />

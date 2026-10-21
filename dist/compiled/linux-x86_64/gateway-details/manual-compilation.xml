@@ -1,32 +1,32 @@
 <?xml version='1.0' encoding='utf8'?>
 <nuitka-compilation-report nuitka_version="4.3" nuitka_commercial_version="not installed" mode="module" completion="yes">
   <scons_environment c_compiler="gcc" the_cc_name="gcc" the_compiler="gcc" c_flags="-march=x86-64 -mtune=generic" cxx_flags="-march=x86-64 -mtune=generic" />
-  <module name="manual" kind="CompiledPythonPackage" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/manual/__init__.py">
+  <module name="manual" kind="CompiledPythonPackage" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/cd4fea78215d2c70e5a4965d3653f7533f209147a59d9f72234b6d0ccdef978a/manual/__init__.py">
     <plugin-influence name="implicit-imports" influence="condition-used" condition="module_mode and plugin(&quot;pyside6&quot;)" tags_used="module_mode,plugin" result="false" />
-    <optimization-time pass="1" time="0.0006" micro_passes="2" />
+    <optimization-time pass="1" time="0.0007" micro_passes="2" />
     <optimization-time pass="2" time="0.0003" micro_passes="1" />
-    <code-generation-time time="0.0337" />
+    <code-generation-time time="0.0362" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="44960" />
-      <cpu system-cpu-time="0.0580" user-cpu-time="0.6655" />
-      <memory memory-max-rss-kb="53980" />
-      <system-events context-switches-involuntary="2" context-switches-voluntary="30" disk-input-blocks="0" disk-output-blocks="88" page-faults-major="0" page-faults-minor="10241" />
+      <cpu system-cpu-time="0.0462" user-cpu-time="0.6852" />
+      <memory memory-max-rss-kb="54084" />
+      <system-events context-switches-involuntary="4" context-switches-voluntary="31" disk-input-blocks="0" disk-output-blocks="88" page-faults-major="0" page-faults-minor="10380" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="os" finding="excluded" line="1" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
     </module_usages>
   </module>
-  <module name="manual.app" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/manual/app.py">
-    <optimization-time pass="1" time="0.0380" micro_passes="5" max_branch_merge="32" merged_total="610" />
-    <optimization-time pass="2" time="0.0078" micro_passes="1" max_branch_merge="27" merged_total="116" />
-    <code-generation-time time="0.0339" />
+  <module name="manual.app" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/cd4fea78215d2c70e5a4965d3653f7533f209147a59d9f72234b6d0ccdef978a/manual/app.py">
+    <optimization-time pass="1" time="0.0456" micro_passes="5" max_branch_merge="33" merged_total="641" />
+    <optimization-time pass="2" time="0.0082" micro_passes="1" max_branch_merge="27" merged_total="122" />
+    <code-generation-time time="0.0379" />
     <c-compilation-resources>
       <c-cache tech="none" />
-      <object-file size="159792" />
-      <cpu system-cpu-time="0.0910" user-cpu-time="2.3384" />
-      <memory memory-max-rss-kb="92104" />
-      <system-events context-switches-involuntary="7" context-switches-voluntary="66" disk-input-blocks="0" disk-output-blocks="320" page-faults-major="0" page-faults-minor="22480" />
+      <object-file size="153288" />
+      <cpu system-cpu-time="0.0868" user-cpu-time="2.2850" />
+      <memory memory-max-rss-kb="89748" />
+      <system-events context-switches-involuntary="4" context-switches-voluntary="67" disk-input-blocks="0" disk-output-blocks="304" page-faults-major="0" page-faults-minor="21498" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="__future__" finding="excluded" line="32" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -40,41 +40,59 @@
       <module_usage name="agent_runtime.branding_web" finding="absolute" line="44" reason="import" />
       <module_usage name="manual" finding="absolute" line="45" reason="import" />
       <module_usage name="manual.__version__" finding="not-found" line="45" reason="import fromlist" />
-      <module_usage name="manual.documents" finding="absolute" line="46" reason="import" />
-      <module_usage name="manual.corpus" finding="absolute" line="55" reason="import" />
-      <module_usage name="manual.search" finding="absolute" line="56" reason="import" />
-      <module_usage name="error_catalog.http_boundary" finding="absolute" line="118" reason="import" />
+      <module_usage name="manual.assets" finding="absolute" line="46" reason="import" />
+      <module_usage name="manual.documents" finding="absolute" line="47" reason="import" />
+      <module_usage name="manual.corpus" finding="absolute" line="56" reason="import" />
+      <module_usage name="manual.search" finding="absolute" line="57" reason="import" />
+      <module_usage name="error_catalog.http_boundary" finding="absolute" line="119" reason="import" />
     </module_usages>
   </module>
-  <module name="manual.cli" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/manual/cli.py">
-    <optimization-time pass="1" time="0.0057" micro_passes="3" max_branch_merge="9" merged_total="78" />
-    <optimization-time pass="2" time="0.0016" micro_passes="1" max_branch_merge="9" merged_total="26" />
-    <code-generation-time time="0.0071" />
+  <module name="manual.assets" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/cd4fea78215d2c70e5a4965d3653f7533f209147a59d9f72234b6d0ccdef978a/manual/assets.py">
+    <optimization-time pass="1" time="0.0003" micro_passes="2" />
+    <optimization-time pass="2" time="0.0001" micro_passes="1" />
+    <code-generation-time time="0.0016" />
     <c-compilation-resources>
       <c-cache tech="none" />
-      <object-file size="34088" />
-      <cpu system-cpu-time="0.0392" user-cpu-time="0.5933" />
-      <memory memory-max-rss-kb="51988" />
-      <system-events context-switches-involuntary="7" context-switches-voluntary="22" disk-input-blocks="0" disk-output-blocks="72" page-faults-major="0" page-faults-minor="10167" />
+      <object-file size="9416" />
+      <cpu system-cpu-time="0.0408" user-cpu-time="0.2031" />
+      <memory memory-max-rss-kb="39556" />
+      <system-events context-switches-involuntary="0" context-switches-voluntary="11" disk-input-blocks="0" disk-output-blocks="24" page-faults-major="0" page-faults-minor="6710" />
+    </c-compilation-resources>
+    <module_usages />
+  </module>
+  <module name="manual.cli" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/cd4fea78215d2c70e5a4965d3653f7533f209147a59d9f72234b6d0ccdef978a/manual/cli.py">
+    <optimization-time pass="1" time="0.0095" micro_passes="3" max_branch_merge="12" merged_total="126" />
+    <optimization-time pass="2" time="0.0021" micro_passes="1" max_branch_merge="12" merged_total="43" />
+    <code-generation-time time="0.0123" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="46384" />
+      <cpu system-cpu-time="0.0536" user-cpu-time="0.7152" />
+      <memory memory-max-rss-kb="55056" />
+      <system-events context-switches-involuntary="2" context-switches-voluntary="25" disk-input-blocks="0" disk-output-blocks="96" page-faults-major="0" page-faults-minor="11115" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="argparse" finding="excluded" line="16" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
       <module_usage name="os" finding="excluded" line="17" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
       <module_usage name="pathlib" finding="excluded" line="18" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
       <module_usage name="manual.app" finding="absolute" line="23" reason="import" />
-      <module_usage name="uvicorn" finding="not-found" line="46" reason="import" />
+      <module_usage name="manual.app" finding="absolute" line="30" reason="import" />
+      <module_usage name="manual.corpus" finding="absolute" line="31" reason="import" />
+      <module_usage name="manual.documents" finding="absolute" line="32" reason="import" />
+      <module_usage name="manual.reference_resource" finding="absolute" line="33" reason="import" />
+      <module_usage name="uvicorn" finding="not-found" line="66" reason="import" />
     </module_usages>
   </module>
-  <module name="manual.corpus" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/manual/corpus.py">
-    <optimization-time pass="1" time="0.1397" micro_passes="5" max_branch_merge="26" merged_total="3248" />
-    <optimization-time pass="2" time="0.0291" micro_passes="1" max_branch_merge="23" merged_total="617" />
-    <code-generation-time time="0.0842" />
+  <module name="manual.corpus" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/cd4fea78215d2c70e5a4965d3653f7533f209147a59d9f72234b6d0ccdef978a/manual/corpus.py">
+    <optimization-time pass="1" time="0.1679" micro_passes="5" max_branch_merge="26" merged_total="3248" />
+    <optimization-time pass="2" time="0.0288" micro_passes="1" max_branch_merge="23" merged_total="617" />
+    <code-generation-time time="0.1043" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="343304" />
-      <cpu system-cpu-time="0.1595" user-cpu-time="5.6225" />
-      <memory memory-max-rss-kb="142276" />
-      <system-events context-switches-involuntary="17" context-switches-voluntary="122" disk-input-blocks="0" disk-output-blocks="672" page-faults-major="0" page-faults-minor="36081" />
+      <cpu system-cpu-time="0.1496" user-cpu-time="5.6665" />
+      <memory memory-max-rss-kb="142544" />
+      <system-events context-switches-involuntary="47" context-switches-voluntary="122" disk-input-blocks="0" disk-output-blocks="672" page-faults-major="0" page-faults-minor="36205" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="__future__" finding="excluded" line="17" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -97,16 +115,16 @@
       <module_usage name="smto_runtime.context" finding="not-found" line="488" reason="import fromlist" />
     </module_usages>
   </module>
-  <module name="manual.documentation_audit" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/manual/documentation_audit.py">
-    <optimization-time pass="1" time="0.2196" micro_passes="6" max_branch_merge="33" merged_total="4243" />
-    <optimization-time pass="2" time="0.0428" micro_passes="1" max_branch_merge="33" merged_total="711" />
-    <code-generation-time time="0.0721" />
+  <module name="manual.documentation_audit" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/cd4fea78215d2c70e5a4965d3653f7533f209147a59d9f72234b6d0ccdef978a/manual/documentation_audit.py">
+    <optimization-time pass="1" time="0.2727" micro_passes="6" max_branch_merge="37" merged_total="4510" />
+    <optimization-time pass="2" time="0.0483" micro_passes="1" max_branch_merge="37" merged_total="757" />
+    <code-generation-time time="0.0979" />
     <c-compilation-resources>
       <c-cache tech="none" />
-      <object-file size="282928" />
-      <cpu system-cpu-time="0.1441" user-cpu-time="5.7847" />
-      <memory memory-max-rss-kb="147152" />
-      <system-events context-switches-involuntary="17" context-switches-voluntary="111" disk-input-blocks="0" disk-output-blocks="560" page-faults-major="0" page-faults-minor="39414" />
+      <object-file size="304192" />
+      <cpu system-cpu-time="0.1400" user-cpu-time="5.9813" />
+      <memory memory-max-rss-kb="154952" />
+      <system-events context-switches-involuntary="42" context-switches-voluntary="123" disk-input-blocks="0" disk-output-blocks="600" page-faults-major="0" page-faults-minor="40494" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="__future__" finding="excluded" line="26" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -120,22 +138,24 @@
       <module_usage name="itertools" finding="absolute" line="33" reason="import" />
       <module_usage name="pathlib" finding="excluded" line="34" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
       <module_usage name="manual.documentation_links" finding="absolute" line="36" reason="import" />
-      <module_usage name="manual.source_contracts" finding="absolute" line="37" reason="import" />
-      <module_usage name="error_catalog" finding="absolute" line="100" reason="import" />
-      <module_usage name="error_catalog.iter_error_definitions" finding="not-found" line="100" reason="import fromlist" />
-      <module_usage name="error_catalog.manual_doc_id" finding="not-found" line="100" reason="import fromlist" />
+      <module_usage name="manual.native_source" finding="absolute" line="37" reason="import" />
+      <module_usage name="manual.native_source" finding="absolute" line="38" reason="import" />
+      <module_usage name="manual.source_contracts" finding="absolute" line="39" reason="import" />
+      <module_usage name="error_catalog" finding="absolute" line="112" reason="import" />
+      <module_usage name="error_catalog.iter_error_definitions" finding="not-found" line="112" reason="import fromlist" />
+      <module_usage name="error_catalog.manual_doc_id" finding="not-found" line="112" reason="import fromlist" />
     </module_usages>
   </module>
-  <module name="manual.documentation_links" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/manual/documentation_links.py">
-    <optimization-time pass="1" time="0.0218" micro_passes="5" max_branch_merge="17" merged_total="516" />
-    <optimization-time pass="2" time="0.0041" micro_passes="1" max_branch_merge="16" merged_total="103" />
-    <code-generation-time time="0.0153" />
+  <module name="manual.documentation_links" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/cd4fea78215d2c70e5a4965d3653f7533f209147a59d9f72234b6d0ccdef978a/manual/documentation_links.py">
+    <optimization-time pass="1" time="0.0225" micro_passes="5" max_branch_merge="17" merged_total="516" />
+    <optimization-time pass="2" time="0.0042" micro_passes="1" max_branch_merge="16" merged_total="103" />
+    <code-generation-time time="0.0181" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="71608" />
-      <cpu system-cpu-time="0.0590" user-cpu-time="1.3139" />
-      <memory memory-max-rss-kb="69124" />
-      <system-events context-switches-involuntary="4" context-switches-voluntary="37" disk-input-blocks="0" disk-output-blocks="144" page-faults-major="0" page-faults-minor="15768" />
+      <cpu system-cpu-time="0.0645" user-cpu-time="1.2549" />
+      <memory memory-max-rss-kb="69040" />
+      <system-events context-switches-involuntary="6" context-switches-voluntary="37" disk-input-blocks="0" disk-output-blocks="144" page-faults-major="0" page-faults-minor="15719" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="__future__" finding="excluded" line="25" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -145,16 +165,16 @@
       <module_usage name="manual.source_contracts" finding="absolute" line="31" reason="import" />
     </module_usages>
   </module>
-  <module name="manual.documents" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/manual/documents.py">
-    <optimization-time pass="1" time="0.1976" micro_passes="7" max_branch_merge="59" merged_total="4750" />
-    <optimization-time pass="2" time="0.0296" micro_passes="1" max_branch_merge="51" merged_total="662" />
-    <code-generation-time time="0.0931" />
+  <module name="manual.documents" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/cd4fea78215d2c70e5a4965d3653f7533f209147a59d9f72234b6d0ccdef978a/manual/documents.py">
+    <optimization-time pass="1" time="0.2205" micro_passes="7" max_branch_merge="59" merged_total="4679" />
+    <optimization-time pass="2" time="0.0309" micro_passes="1" max_branch_merge="51" merged_total="652" />
+    <code-generation-time time="0.1077" />
     <c-compilation-resources>
       <c-cache tech="none" />
-      <object-file size="422464" />
-      <cpu system-cpu-time="0.1639" user-cpu-time="7.0317" />
-      <memory memory-max-rss-kb="169328" />
-      <system-events context-switches-involuntary="46" context-switches-voluntary="163" disk-input-blocks="0" disk-output-blocks="832" page-faults-major="0" page-faults-minor="44492" />
+      <object-file size="419088" />
+      <cpu system-cpu-time="0.1810" user-cpu-time="7.0015" />
+      <memory memory-max-rss-kb="168444" />
+      <system-events context-switches-involuntary="27" context-switches-voluntary="169" disk-input-blocks="0" disk-output-blocks="824" page-faults-major="0" page-faults-minor="44194" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="__future__" finding="excluded" line="32" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -167,21 +187,20 @@
       <module_usage name="manual.source_catalog" finding="absolute" line="395" reason="import" />
       <module_usage name="smto_runtime" finding="absolute" line="396" reason="import" />
       <module_usage name="smto_runtime.context" finding="not-found" line="396" reason="import fromlist" />
-      <module_usage name="json" finding="excluded" line="400" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
-      <module_usage name="manual.source_catalog" finding="absolute" line="401" reason="import" />
-      <module_usage name="markdown_it" finding="not-found" line="628" reason="import" />
+      <module_usage name="manual.reference_resource" finding="absolute" line="400" reason="import" />
+      <module_usage name="markdown_it" finding="not-found" line="626" reason="import" />
     </module_usages>
   </module>
-  <module name="manual.generated_cache" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/manual/generated_cache.py">
-    <optimization-time pass="1" time="0.0903" micro_passes="4" max_branch_merge="17" merged_total="1001" />
-    <optimization-time pass="2" time="0.0099" micro_passes="1" max_branch_merge="17" merged_total="246" />
-    <code-generation-time time="0.0319" />
+  <module name="manual.generated_cache" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/cd4fea78215d2c70e5a4965d3653f7533f209147a59d9f72234b6d0ccdef978a/manual/generated_cache.py">
+    <optimization-time pass="1" time="0.0542" micro_passes="4" max_branch_merge="17" merged_total="941" />
+    <optimization-time pass="2" time="0.0110" micro_passes="1" max_branch_merge="17" merged_total="231" />
+    <code-generation-time time="0.0366" />
     <c-compilation-resources>
       <c-cache tech="none" />
-      <object-file size="148632" />
-      <cpu system-cpu-time="0.0869" user-cpu-time="2.5119" />
-      <memory memory-max-rss-kb="92484" />
-      <system-events context-switches-involuntary="4" context-switches-voluntary="48" disk-input-blocks="0" disk-output-blocks="296" page-faults-major="0" page-faults-minor="22351" />
+      <object-file size="141872" />
+      <cpu system-cpu-time="0.0982" user-cpu-time="2.4264" />
+      <memory memory-max-rss-kb="90544" />
+      <system-events context-switches-involuntary="11" context-switches-voluntary="43" disk-input-blocks="0" disk-output-blocks="280" page-faults-major="0" page-faults-minor="21677" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="__future__" finding="excluded" line="16" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -197,23 +216,40 @@
       <module_usage name="dataclasses" finding="excluded" line="27" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
       <module_usage name="pathlib" finding="excluded" line="28" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
       <module_usage name="manual.documents" finding="absolute" line="30" reason="import" />
-      <module_usage name="manual.source_contracts" finding="absolute" line="45" reason="import" />
-      <module_usage name="fcntl" finding="absolute" line="95" reason="import" />
-      <module_usage name="manual.source_catalog" finding="absolute" line="109" reason="import" />
-      <module_usage name="smto_runtime" finding="absolute" line="149" reason="import" />
-      <module_usage name="smto_runtime.context" finding="not-found" line="149" reason="import fromlist" />
+      <module_usage name="manual.reference_resource" finding="absolute" line="31" reason="import" />
+      <module_usage name="manual.source_contracts" finding="absolute" line="46" reason="import" />
+      <module_usage name="fcntl" finding="absolute" line="96" reason="import" />
+      <module_usage name="smto_runtime" finding="absolute" line="142" reason="import" />
+      <module_usage name="smto_runtime.context" finding="not-found" line="142" reason="import fromlist" />
     </module_usages>
   </module>
-  <module name="manual.reference_builder" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/manual/reference_builder.py">
-    <optimization-time pass="1" time="0.0040" micro_passes="4" max_branch_merge="8" merged_total="79" />
+  <module name="manual.native_source" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/cd4fea78215d2c70e5a4965d3653f7533f209147a59d9f72234b6d0ccdef978a/manual/native_source.py">
+    <optimization-time pass="1" time="0.0504" micro_passes="5" max_branch_merge="24" merged_total="1025" />
+    <optimization-time pass="2" time="0.0098" micro_passes="1" max_branch_merge="23" merged_total="202" />
+    <code-generation-time time="0.0296" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="119888" />
+      <cpu system-cpu-time="0.0858" user-cpu-time="1.9763" />
+      <memory memory-max-rss-kb="82752" />
+      <system-events context-switches-involuntary="5" context-switches-voluntary="52" disk-input-blocks="0" disk-output-blocks="240" page-faults-major="0" page-faults-minor="19755" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="__future__" finding="excluded" line="15" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="re" finding="excluded" line="17" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="typing" finding="excluded" line="18" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+    </module_usages>
+  </module>
+  <module name="manual.reference_builder" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/cd4fea78215d2c70e5a4965d3653f7533f209147a59d9f72234b6d0ccdef978a/manual/reference_builder.py">
+    <optimization-time pass="1" time="0.0039" micro_passes="4" max_branch_merge="8" merged_total="79" />
     <optimization-time pass="2" time="0.0010" micro_passes="1" max_branch_merge="8" merged_total="20" />
-    <code-generation-time time="0.0035" />
+    <code-generation-time time="0.0040" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="23544" />
-      <cpu system-cpu-time="0.0506" user-cpu-time="0.3936" />
-      <memory memory-max-rss-kb="48736" />
-      <system-events context-switches-involuntary="6" context-switches-voluntary="19" disk-input-blocks="0" disk-output-blocks="48" page-faults-major="0" page-faults-minor="8990" />
+      <cpu system-cpu-time="0.0496" user-cpu-time="0.4015" />
+      <memory memory-max-rss-kb="48788" />
+      <system-events context-switches-involuntary="1" context-switches-voluntary="19" disk-input-blocks="0" disk-output-blocks="48" page-faults-major="0" page-faults-minor="8997" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="json" finding="excluded" line="16" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -222,16 +258,33 @@
       <module_usage name="manual.source_catalog" finding="absolute" line="23" reason="import" />
     </module_usages>
   </module>
-  <module name="manual.search" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/manual/search.py">
-    <optimization-time pass="1" time="0.2184" micro_passes="7" max_branch_merge="23" merged_total="4389" />
-    <optimization-time pass="2" time="0.0297" micro_passes="1" max_branch_merge="19" merged_total="611" />
-    <code-generation-time time="0.0658" />
+  <module name="manual.reference_resource" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/cd4fea78215d2c70e5a4965d3653f7533f209147a59d9f72234b6d0ccdef978a/manual/reference_resource.py">
+    <optimization-time pass="1" time="0.0049" micro_passes="4" max_branch_merge="8" merged_total="74" />
+    <optimization-time pass="2" time="0.0011" micro_passes="1" max_branch_merge="7" merged_total="18" />
+    <code-generation-time time="0.0041" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="23208" />
+      <cpu system-cpu-time="0.0479" user-cpu-time="0.4026" />
+      <memory memory-max-rss-kb="48692" />
+      <system-events context-switches-involuntary="6" context-switches-voluntary="17" disk-input-blocks="0" disk-output-blocks="48" page-faults-major="0" page-faults-minor="8979" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="json" finding="excluded" line="15" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="pathlib" finding="excluded" line="16" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="manual.source_catalog" finding="absolute" line="21" reason="import" />
+    </module_usages>
+  </module>
+  <module name="manual.search" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/cd4fea78215d2c70e5a4965d3653f7533f209147a59d9f72234b6d0ccdef978a/manual/search.py">
+    <optimization-time pass="1" time="0.2826" micro_passes="7" max_branch_merge="23" merged_total="4389" />
+    <optimization-time pass="2" time="0.0308" micro_passes="1" max_branch_merge="19" merged_total="611" />
+    <code-generation-time time="0.0727" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="263760" />
-      <cpu system-cpu-time="0.1131" user-cpu-time="4.7772" />
-      <memory memory-max-rss-kb="127940" />
-      <system-events context-switches-involuntary="6" context-switches-voluntary="103" disk-input-blocks="0" disk-output-blocks="520" page-faults-major="0" page-faults-minor="32684" />
+      <cpu system-cpu-time="0.1411" user-cpu-time="4.5205" />
+      <memory memory-max-rss-kb="127508" />
+      <system-events context-switches-involuntary="21" context-switches-voluntary="104" disk-input-blocks="0" disk-output-blocks="520" page-faults-major="0" page-faults-minor="33342" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="__future__" finding="excluded" line="30" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -243,16 +296,16 @@
       <module_usage name="manual.documents" finding="absolute" line="38" reason="import" />
     </module_usages>
   </module>
-  <module name="manual.sections" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/manual/sections.py">
-    <optimization-time pass="1" time="0.0399" micro_passes="5" max_branch_merge="18" merged_total="895" />
-    <optimization-time pass="2" time="0.0063" micro_passes="1" max_branch_merge="17" merged_total="169" />
-    <code-generation-time time="0.0203" />
+  <module name="manual.sections" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/cd4fea78215d2c70e5a4965d3653f7533f209147a59d9f72234b6d0ccdef978a/manual/sections.py">
+    <optimization-time pass="1" time="0.0432" micro_passes="5" max_branch_merge="18" merged_total="895" />
+    <optimization-time pass="2" time="0.0070" micro_passes="1" max_branch_merge="17" merged_total="169" />
+    <code-generation-time time="0.0239" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="98656" />
-      <cpu system-cpu-time="0.0736" user-cpu-time="1.5585" />
-      <memory memory-max-rss-kb="74672" />
-      <system-events context-switches-involuntary="13" context-switches-voluntary="29" disk-input-blocks="0" disk-output-blocks="200" page-faults-major="0" page-faults-minor="17818" />
+      <cpu system-cpu-time="0.0760" user-cpu-time="1.5931" />
+      <memory memory-max-rss-kb="74728" />
+      <system-events context-switches-involuntary="3" context-switches-voluntary="29" disk-input-blocks="0" disk-output-blocks="200" page-faults-major="0" page-faults-minor="17798" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="__future__" finding="excluded" line="16" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -264,16 +317,16 @@
       <module_usage name="error_catalog.get_error_details" finding="not-found" line="38" reason="import fromlist" />
     </module_usages>
   </module>
-  <module name="manual.source_catalog" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/manual/source_catalog.py">
-    <optimization-time pass="1" time="0.1870" micro_passes="6" max_branch_merge="16" merged_total="3524" />
-    <optimization-time pass="2" time="0.0269" micro_passes="1" max_branch_merge="16" merged_total="582" />
-    <code-generation-time time="0.0664" />
+  <module name="manual.source_catalog" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/cd4fea78215d2c70e5a4965d3653f7533f209147a59d9f72234b6d0ccdef978a/manual/source_catalog.py">
+    <optimization-time pass="1" time="0.2034" micro_passes="6" max_branch_merge="18" merged_total="3614" />
+    <optimization-time pass="2" time="0.0309" micro_passes="1" max_branch_merge="18" merged_total="597" />
+    <code-generation-time time="0.0803" />
     <c-compilation-resources>
       <c-cache tech="none" />
-      <object-file size="281072" />
-      <cpu system-cpu-time="0.1371" user-cpu-time="5.3395" />
-      <memory memory-max-rss-kb="134164" />
-      <system-events context-switches-involuntary="7" context-switches-voluntary="96" disk-input-blocks="0" disk-output-blocks="552" page-faults-major="0" page-faults-minor="35391" />
+      <object-file size="283384" />
+      <cpu system-cpu-time="0.1421" user-cpu-time="5.2797" />
+      <memory memory-max-rss-kb="135952" />
+      <system-events context-switches-involuntary="7" context-switches-voluntary="95" disk-input-blocks="0" disk-output-blocks="560" page-faults-major="0" page-faults-minor="35889" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="__future__" finding="excluded" line="32" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -285,21 +338,22 @@
       <module_usage name="pathlib" finding="excluded" line="38" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
       <module_usage name="manual.source_contracts" finding="absolute" line="40" reason="import" />
       <module_usage name="manual.documentation_audit" finding="absolute" line="171" reason="import" />
-      <module_usage name="agent_runtime.skills" finding="absolute" line="415" reason="import" />
-      <module_usage name="agent_runtime.skills.build_native_registry" finding="not-found" line="415" reason="import fromlist" />
-      <module_usage name="error_catalog.manual_projection" finding="absolute" line="489" reason="import" />
+      <module_usage name="manual.native_source" finding="absolute" line="178" reason="import" />
+      <module_usage name="agent_runtime.skills" finding="absolute" line="422" reason="import" />
+      <module_usage name="agent_runtime.skills.build_native_registry" finding="not-found" line="422" reason="import fromlist" />
+      <module_usage name="error_catalog.manual_projection" finding="absolute" line="496" reason="import" />
     </module_usages>
   </module>
-  <module name="manual.source_contracts" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/manual/source_contracts.py">
-    <optimization-time pass="1" time="0.0918" micro_passes="5" max_branch_merge="21" merged_total="1989" />
-    <optimization-time pass="2" time="0.0172" micro_passes="1" max_branch_merge="21" merged_total="399" />
-    <code-generation-time time="0.0527" />
+  <module name="manual.source_contracts" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/cd4fea78215d2c70e5a4965d3653f7533f209147a59d9f72234b6d0ccdef978a/manual/source_contracts.py">
+    <optimization-time pass="1" time="0.1169" micro_passes="5" max_branch_merge="32" merged_total="2230" />
+    <optimization-time pass="2" time="0.0207" micro_passes="1" max_branch_merge="32" merged_total="445" />
+    <code-generation-time time="0.0703" />
     <c-compilation-resources>
       <c-cache tech="none" />
-      <object-file size="240672" />
-      <cpu system-cpu-time="0.1234" user-cpu-time="4.0387" />
-      <memory memory-max-rss-kb="115640" />
-      <system-events context-switches-involuntary="16" context-switches-voluntary="109" disk-input-blocks="0" disk-output-blocks="472" page-faults-major="0" page-faults-minor="29165" />
+      <object-file size="266648" />
+      <cpu system-cpu-time="0.1082" user-cpu-time="4.4602" />
+      <memory memory-max-rss-kb="123232" />
+      <system-events context-switches-involuntary="26" context-switches-voluntary="121" disk-input-blocks="0" disk-output-blocks="528" page-faults-major="0" page-faults-minor="30003" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="__future__" finding="excluded" line="24" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -314,49 +368,52 @@
     </module_usages>
   </module>
   <linker-resources>
-    <cpu system-cpu-time="0.0182" user-cpu-time="0.0393" />
-    <memory memory-max-rss-kb="48384" />
-    <system-events context-switches-involuntary="2" context-switches-voluntary="7" disk-input-blocks="0" disk-output-blocks="4688" page-faults-major="0" page-faults-minor="4642" />
+    <cpu system-cpu-time="0.0234" user-cpu-time="0.0350" />
+    <memory memory-max-rss-kb="44560" />
+    <system-events context-switches-involuntary="0" context-switches-voluntary="7" disk-input-blocks="0" disk-output-blocks="4912" page-faults-major="0" page-faults-minor="4756" />
   </linker-resources>
   <performance>
-    <memory_usage name="after_launch" value="61964288" />
-    <memory_usage name="before_c_code_generation" value="68808704" />
-    <memory_usage name="before_running_scons" value="75030528" />
+    <memory_usage name="after_launch" value="59006976" />
+    <memory_usage name="before_c_code_generation" value="69312512" />
+    <memory_usage name="before_running_scons" value="75362304" />
   </performance>
-  <data_composer blob_size="82643" total="2542">
+  <data_composer blob_size="90824" total="2728">
     <module_data filename="__bytecode.const" blob_name=".bytecode" blob_size="3" input_size="0" />
     <module_data filename="__constants.const" blob_name="" blob_size="996" input_size="2454" />
-    <module_data filename="module.manual.app.const" blob_name="manual.app" blob_size="7512" input_size="10920" />
-    <module_data filename="module.manual.cli.const" blob_name="manual.cli" blob_size="1921" input_size="3288" />
+    <module_data filename="module.manual.app.const" blob_name="manual.app" blob_size="6837" input_size="10033" />
+    <module_data filename="module.manual.assets.const" blob_name="manual.assets" blob_size="911" input_size="1623" />
+    <module_data filename="module.manual.cli.const" blob_name="manual.cli" blob_size="2736" input_size="4211" />
     <module_data filename="module.manual.const" blob_name="manual" blob_size="1132" input_size="1951" />
     <module_data filename="module.manual.corpus.const" blob_name="manual.corpus" blob_size="9538" input_size="16219" />
-    <module_data filename="module.manual.documentation_audit.const" blob_name="manual.documentation_audit" blob_size="9343" input_size="14947" />
+    <module_data filename="module.manual.documentation_audit.const" blob_name="manual.documentation_audit" blob_size="9995" input_size="16003" />
     <module_data filename="module.manual.documentation_links.const" blob_name="manual.documentation_links" blob_size="3002" input_size="4953" />
-    <module_data filename="module.manual.documents.const" blob_name="manual.documents" blob_size="11418" input_size="19571" />
-    <module_data filename="module.manual.generated_cache.const" blob_name="manual.generated_cache" blob_size="4083" input_size="7177" />
+    <module_data filename="module.manual.documents.const" blob_name="manual.documents" blob_size="11447" input_size="19572" />
+    <module_data filename="module.manual.generated_cache.const" blob_name="manual.generated_cache" blob_size="3999" input_size="6972" />
+    <module_data filename="module.manual.native_source.const" blob_name="manual.native_source" blob_size="4331" input_size="7145" />
     <module_data filename="module.manual.reference_builder.const" blob_name="manual.reference_builder" blob_size="1312" input_size="2285" />
+    <module_data filename="module.manual.reference_resource.const" blob_name="manual.reference_resource" blob_size="1235" input_size="2232" />
     <module_data filename="module.manual.search.const" blob_name="manual.search" blob_size="8284" input_size="12837" />
     <module_data filename="module.manual.sections.const" blob_name="manual.sections" blob_size="3131" input_size="5340" />
-    <module_data filename="module.manual.source_catalog.const" blob_name="manual.source_catalog" blob_size="11720" input_size="17489" />
-    <module_data filename="module.manual.source_contracts.const" blob_name="manual.source_contracts" blob_size="8939" input_size="14777" />
+    <module_data filename="module.manual.source_catalog.const" blob_name="manual.source_catalog" blob_size="11820" input_size="17608" />
+    <module_data filename="module.manual.source_contracts.const" blob_name="manual.source_contracts" blob_size="9733" input_size="16108" />
   </data_composer>
   <performance-totals>
-    <optimization-time pass="1" time="1.2545" module_count="13" />
-    <optimization-time pass="2" time="0.2063" module_count="13" />
-    <optimization-time pass="all" time="1.4608" module_count="13" />
-    <code-generation-time time="0.5799" module_count="13" />
-    <c-compilation-time user-cpu-time="41.9695" system-cpu-time="1.2994" module_count="13" />
-    <c-linking-time user-cpu-time="0.0393" system-cpu-time="0.0182" />
+    <optimization-time pass="1" time="1.4992" module_count="16" />
+    <optimization-time pass="2" time="0.2353" module_count="16" />
+    <optimization-time pass="all" time="1.7345" module_count="16" />
+    <code-generation-time time="0.7376" module_count="16" />
+    <c-compilation-time user-cpu-time="44.8528" system-cpu-time="1.5115" module_count="16" />
+    <c-linking-time user-cpu-time="0.0350" system-cpu-time="0.0234" />
   </performance-totals>
-  <python_binary filename="${cwd}/.build/compiled/targets/linux-x86_64/modules/manual/manual.cpython-312-x86_64-linux-gnu.so" backend_resource_mode="incbin" reproducible="yes" size="2390968" />
+  <python_binary filename="${cwd}/.build/compiled/targets/linux-x86_64/modules/manual/manual.cpython-312-x86_64-linux-gnu.so" backend_resource_mode="incbin" reproducible="yes" size="2506104" />
   <command_line>
     <option value="--mode=module" />
-    <option value="/workspace/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/manual" />
+    <option value="/workspace/.build/compiled/targets/linux-x86_64/sources/cd4fea78215d2c70e5a4965d3653f7533f209147a59d9f72234b6d0ccdef978a/manual" />
     <option value="--include-package=manual" />
     <option value="--no-pyi-file" />
     <option value="--assume-yes-for-downloads" />
     <option value="--output-dir=/workspace/.build/compiled/targets/linux-x86_64/modules/manual" />
-    <option value="--jobs=8" />
+    <option value="--jobs=4" />
     <option value="--report=/workspace/.build/compiled/targets/linux-x86_64/modules/manual/compilation.xml" />
   </command_line>
   <plugins>
@@ -370,7 +427,7 @@
   <distributions />
   <python python_exe="${sys.prefix}/bin/python" python_flavor="Unknown" python_version="3.12.14" os_name="Linux" os_release="Ubuntu-Debian-22.04.5" arch_name="x86_64" filesystem_encoding="utf-8">
     <search_path>
-      <path value="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f" />
+      <path value="${cwd}/.build/compiled/targets/linux-x86_64/sources/cd4fea78215d2c70e5a4965d3653f7533f209147a59d9f72234b6d0ccdef978a" />
       <path value="${cwd}" />
       <path value="${sys.real_prefix}/lib/python3.12" />
       <path value="${sys.real_prefix}/lib/python3.12/lib-dynload" />

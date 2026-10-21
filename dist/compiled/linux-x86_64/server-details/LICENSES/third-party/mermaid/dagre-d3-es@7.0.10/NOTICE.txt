@@ -1,8 +1,0 @@
-dagre-d3-es 7.0.10
-Published package author: Thibaut Lassalle
-Published package license declaration: MIT
-The upstream README identifies this as an ES module fork of dagre-d3.
-The npm archive and its recorded git revision omit a separate license file.
-Inherited dagre-d3, dagre, and graphlib MIT notices are retained here.
-This preserves known attribution; the fork's missing standalone notice remains
-a provenance limitation in the engineering review.

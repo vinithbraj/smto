@@ -1,5 +1,15 @@
 {
   "blockers": [
+    "rights-holder and counsel approval of final terms",
+    "legal approval for exact source revision and target",
+    "reviewed contribution license scope",
+    "unverified scope entry: src/, assets/, build/, packaging/",
+    "stale scope evidence: LICENSE",
+    "unverified scope entry: build/config/EARLIER-APACHE-2.0.txt",
+    "unverified scope entry: licenses/",
+    "unverified scope entry: src/agent_runtime/skills/proxmox/generated/",
+    "human approval bound to exact legal document hashes",
+    "rights-holder/counsel evidence records",
     "cpython-incorporated-libraries",
     "compiler-and-nuitka-runtime",
     "frontend-vendor-assets",
@@ -9582,7 +9592,7 @@
       "version": "exact payload/profile"
     }
   ],
-  "evidence_sha256": "755de202a7e01e2202293824f4c744cbeefd6c4fbd75b700bb8205fbe8dfa262",
+  "evidence_sha256": "7264f9d7e69173939809aa99a956b1e71401c70bca9f2a224c81f6210f44f4ae",
   "native": {
     "acquisitions": [
       {
@@ -9615,7 +9625,7 @@
           "2.34"
         ],
         "search_paths": [],
-        "sha256": "bc051b4f92370a2b3c13e65bb1fe46ea305a5bdb11f397a07e721e0312e9d2ad"
+        "sha256": "4a47f2b5304c6ef3449911aceb49c3bc8d19a80b22757c6c86366331b8fe9abe"
       },
       {
         "dependencies": [
@@ -9635,7 +9645,7 @@
           "2.34"
         ],
         "search_paths": [],
-        "sha256": "b768a7625028a0a45c4fde293e1c2b93fa7b363d180450e9061e122b6b406146"
+        "sha256": "273d293d85d804a699461e75be0315cccf3d3e7d67c598db4fba4a2d4f974288"
       },
       {
         "dependencies": [
@@ -9675,7 +9685,7 @@
           "2.34"
         ],
         "search_paths": [],
-        "sha256": "7c68cce50b6a38aa418c12c5e73cdaa26c82785a7d9fabb1463666f099752428"
+        "sha256": "5744671f41eccacd82138f8c2a018ce9aabfd33cfa860bef8659454b5ccb00e9"
       },
       {
         "dependencies": [
@@ -9735,7 +9745,7 @@
           "2.34"
         ],
         "search_paths": [],
-        "sha256": "d25237d7cefd769c6e7886f23ab22ccc97631595fcd8058f83729f104b6c7af8"
+        "sha256": "f2d9067f91a0bef3ffe845400b7bb03ddb393de9382d7f7492ffcd3dde31b048"
       },
       {
         "dependencies": [
@@ -9755,7 +9765,27 @@
           "2.34"
         ],
         "search_paths": [],
-        "sha256": "bc1e6cbd916d2b4d1ccc1c82970461d29d81c083b6aadbcfeb22e0703cc7fbdc"
+        "sha256": "92d39e4f0fef0e9d64dd3df1d97d53c37cc62b2437d4368927162cc775505b45"
+      },
+      {
+        "dependencies": [
+          "libm.so.6",
+          "libc.so.6"
+        ],
+        "path": "modules/smto_legal.cpython-312-x86_64-linux-gnu.so",
+        "required_cpu_properties": [],
+        "required_glibc_versions": [
+          "2.2.5",
+          "2.3",
+          "2.3.4",
+          "2.4",
+          "2.14",
+          "2.29",
+          "2.33",
+          "2.34"
+        ],
+        "search_paths": [],
+        "sha256": "a93ba41d68666611609a680d51bee4c4e2258189e1f8cc8f3c8f9eddacda2d98"
       },
       {
         "dependencies": [
@@ -9775,7 +9805,7 @@
           "2.34"
         ],
         "search_paths": [],
-        "sha256": "68f314a6a2cde6c17536241367edb8a6ae3e75729b61131cf5ad3c6eb9799248"
+        "sha256": "dcaf69f360fbfa0fa603370ab9c2b25f766a10a31e4fe1cc3df632e8db0e27b0"
       },
       {
         "dependencies": [
@@ -9795,7 +9825,7 @@
           "2.34"
         ],
         "search_paths": [],
-        "sha256": "4b0ece4585f2ebca436a82130ecd95ff36d49920afbf7223d783f03ec146644d"
+        "sha256": "6d8d823e89f6846f095e1289ccc839fc1e20c4e5b6e45bc4254cf27ed4350f62"
       }
     ],
     "errors": [],

@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='utf8'?>
 <nuitka-compilation-report nuitka_version="4.3" nuitka_commercial_version="not installed" mode="module" completion="yes">
   <scons_environment c_compiler="gcc" the_cc_name="gcc" the_compiler="gcc" c_flags="-march=x86-64 -mtune=generic" cxx_flags="-march=x86-64 -mtune=generic" />
-  <module name="error_catalog" kind="CompiledPythonPackage" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/error_catalog/__init__.py">
+  <module name="error_catalog" kind="CompiledPythonPackage" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/cd4fea78215d2c70e5a4965d3653f7533f209147a59d9f72234b6d0ccdef978a/error_catalog/__init__.py">
     <plugin-influence name="implicit-imports" influence="condition-used" condition="module_mode and plugin(&quot;pyside6&quot;)" tags_used="module_mode,plugin" result="false" />
-    <optimization-time pass="1" time="0.0019" micro_passes="2" max_branch_merge="5" merged_total="20" />
-    <optimization-time pass="2" time="0.0007" micro_passes="1" max_branch_merge="5" merged_total="10" />
-    <code-generation-time time="0.0273" />
+    <optimization-time pass="1" time="0.0021" micro_passes="2" max_branch_merge="5" merged_total="20" />
+    <optimization-time pass="2" time="0.0009" micro_passes="1" max_branch_merge="5" merged_total="10" />
+    <code-generation-time time="0.0308" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="31280" />
-      <cpu system-cpu-time="0.0522" user-cpu-time="0.4559" />
-      <memory memory-max-rss-kb="50132" />
-      <system-events context-switches-involuntary="4" context-switches-voluntary="22" disk-input-blocks="0" disk-output-blocks="64" page-faults-major="0" page-faults-minor="9360" />
+      <cpu system-cpu-time="0.0491" user-cpu-time="0.4767" />
+      <memory memory-max-rss-kb="50120" />
+      <system-events context-switches-involuntary="0" context-switches-voluntary="22" disk-input-blocks="0" disk-output-blocks="64" page-faults-major="0" page-faults-minor="9331" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="os" finding="excluded" line="1" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -20,16 +20,16 @@
       <module_usage name="error_catalog.resolver" finding="relative" line="18" reason="import" />
     </module_usages>
   </module>
-  <module name="error_catalog.__main__" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/error_catalog/__main__.py">
-    <optimization-time pass="1" time="0.0089" micro_passes="4" max_branch_merge="19" merged_total="157" />
-    <optimization-time pass="2" time="0.0017" micro_passes="1" max_branch_merge="15" merged_total="38" />
-    <code-generation-time time="0.0074" />
+  <module name="error_catalog.__main__" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/cd4fea78215d2c70e5a4965d3653f7533f209147a59d9f72234b6d0ccdef978a/error_catalog/__main__.py">
+    <optimization-time pass="1" time="0.0092" micro_passes="4" max_branch_merge="19" merged_total="157" />
+    <optimization-time pass="2" time="0.0020" micro_passes="1" max_branch_merge="15" merged_total="38" />
+    <code-generation-time time="0.0086" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="39240" />
-      <cpu system-cpu-time="0.0467" user-cpu-time="0.6620" />
-      <memory memory-max-rss-kb="56284" />
-      <system-events context-switches-involuntary="5" context-switches-voluntary="22" disk-input-blocks="0" disk-output-blocks="80" page-faults-major="0" page-faults-minor="11424" />
+      <cpu system-cpu-time="0.0532" user-cpu-time="0.6784" />
+      <memory memory-max-rss-kb="56332" />
+      <system-events context-switches-involuntary="6" context-switches-voluntary="22" disk-input-blocks="0" disk-output-blocks="80" page-faults-major="0" page-faults-minor="11424" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="json" finding="excluded" line="15" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -37,16 +37,16 @@
       <module_usage name="error_catalog.resolver" finding="relative" line="17" reason="import" />
     </module_usages>
   </module>
-  <module name="error_catalog.audit" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/error_catalog/audit.py">
-    <optimization-time pass="1" time="0.5326" micro_passes="5" max_branch_merge="139" merged_total="8500" />
-    <optimization-time pass="2" time="0.0973" micro_passes="1" max_branch_merge="137" merged_total="1742" />
-    <code-generation-time time="0.1899" />
+  <module name="error_catalog.audit" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/cd4fea78215d2c70e5a4965d3653f7533f209147a59d9f72234b6d0ccdef978a/error_catalog/audit.py">
+    <optimization-time pass="1" time="0.6639" micro_passes="5" max_branch_merge="139" merged_total="9053" />
+    <optimization-time pass="2" time="0.1156" micro_passes="1" max_branch_merge="137" merged_total="1850" />
+    <code-generation-time time="0.2092" />
     <c-compilation-resources>
       <c-cache tech="none" />
-      <object-file size="598456" />
-      <cpu system-cpu-time="0.4019" user-cpu-time="20.5821" />
-      <memory memory-max-rss-kb="309096" />
-      <system-events context-switches-involuntary="122" context-switches-voluntary="153" disk-input-blocks="0" disk-output-blocks="1176" page-faults-major="0" page-faults-minor="126773" />
+      <object-file size="654680" />
+      <cpu system-cpu-time="0.3627" user-cpu-time="21.8361" />
+      <memory memory-max-rss-kb="339808" />
+      <system-events context-switches-involuntary="170" context-switches-voluntary="177" disk-input-blocks="0" disk-output-blocks="1280" page-faults-major="0" page-faults-minor="110954" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="ast" finding="excluded" line="15" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -57,20 +57,22 @@
       <module_usage name="collections" finding="excluded" line="20" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
       <module_usage name="collections.Counter" finding="not-found" line="20" reason="import fromlist" />
       <module_usage name="pathlib" finding="excluded" line="21" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
-      <module_usage name="error_catalog.registry" finding="relative" line="22" reason="import" />
-      <module_usage name="error_catalog.resolver" finding="relative" line="493" reason="import" />
+      <module_usage name="manual.native_source" finding="absolute" line="22" reason="import" />
+      <module_usage name="manual.source_contracts" finding="absolute" line="23" reason="import" />
+      <module_usage name="error_catalog.registry" finding="relative" line="24" reason="import" />
+      <module_usage name="error_catalog.resolver" finding="relative" line="573" reason="import" />
     </module_usages>
   </module>
-  <module name="error_catalog.compatibility" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/error_catalog/compatibility.py">
-    <optimization-time pass="1" time="0.0465" micro_passes="5" max_branch_merge="15" merged_total="1049" />
-    <optimization-time pass="2" time="0.0085" micro_passes="1" max_branch_merge="11" merged_total="201" />
-    <code-generation-time time="0.0295" />
+  <module name="error_catalog.compatibility" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/cd4fea78215d2c70e5a4965d3653f7533f209147a59d9f72234b6d0ccdef978a/error_catalog/compatibility.py">
+    <optimization-time pass="1" time="0.0480" micro_passes="5" max_branch_merge="15" merged_total="1049" />
+    <optimization-time pass="2" time="0.0094" micro_passes="1" max_branch_merge="11" merged_total="201" />
+    <code-generation-time time="0.0299" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="123432" />
-      <cpu system-cpu-time="0.0728" user-cpu-time="2.0689" />
-      <memory memory-max-rss-kb="81804" />
-      <system-events context-switches-involuntary="3" context-switches-voluntary="70" disk-input-blocks="0" disk-output-blocks="248" page-faults-major="0" page-faults-minor="19429" />
+      <cpu system-cpu-time="0.0801" user-cpu-time="2.0040" />
+      <memory memory-max-rss-kb="81736" />
+      <system-events context-switches-involuntary="6" context-switches-voluntary="70" disk-input-blocks="0" disk-output-blocks="248" page-faults-major="0" page-faults-minor="19441" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="error_catalog.registry" finding="relative" line="15" reason="import" />
@@ -81,16 +83,16 @@
       <module_usage name="error_catalog.renderer" finding="relative" line="105" reason="import" />
     </module_usages>
   </module>
-  <module name="error_catalog.http_boundary" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/error_catalog/http_boundary.py">
-    <optimization-time pass="1" time="0.0689" micro_passes="4" max_branch_merge="26" merged_total="1300" />
-    <optimization-time pass="2" time="0.0174" micro_passes="1" max_branch_merge="25" merged_total="321" />
-    <code-generation-time time="0.0490" />
+  <module name="error_catalog.http_boundary" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/cd4fea78215d2c70e5a4965d3653f7533f209147a59d9f72234b6d0ccdef978a/error_catalog/http_boundary.py">
+    <optimization-time pass="1" time="0.0726" micro_passes="4" max_branch_merge="26" merged_total="1300" />
+    <optimization-time pass="2" time="0.0213" micro_passes="1" max_branch_merge="25" merged_total="321" />
+    <code-generation-time time="0.0542" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="191952" />
-      <cpu system-cpu-time="0.1035" user-cpu-time="2.9865" />
-      <memory memory-max-rss-kb="98700" />
-      <system-events context-switches-involuntary="7" context-switches-voluntary="83" disk-input-blocks="0" disk-output-blocks="376" page-faults-major="0" page-faults-minor="24301" />
+      <cpu system-cpu-time="0.0862" user-cpu-time="3.0544" />
+      <memory memory-max-rss-kb="98988" />
+      <system-events context-switches-involuntary="8" context-switches-voluntary="83" disk-input-blocks="0" disk-output-blocks="376" page-faults-major="0" page-faults-minor="24357" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="json" finding="excluded" line="15" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -105,32 +107,32 @@
       <module_usage name="starlette.requests" finding="not-found" line="129" reason="import" />
     </module_usages>
   </module>
-  <module name="error_catalog.manual_projection" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/error_catalog/manual_projection.py">
-    <optimization-time pass="1" time="0.0238" micro_passes="4" max_branch_merge="52" merged_total="558" />
-    <optimization-time pass="2" time="0.0058" micro_passes="1" max_branch_merge="42" merged_total="136" />
-    <code-generation-time time="0.0217" />
+  <module name="error_catalog.manual_projection" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/cd4fea78215d2c70e5a4965d3653f7533f209147a59d9f72234b6d0ccdef978a/error_catalog/manual_projection.py">
+    <optimization-time pass="1" time="0.0303" micro_passes="4" max_branch_merge="52" merged_total="558" />
+    <optimization-time pass="2" time="0.0065" micro_passes="1" max_branch_merge="42" merged_total="136" />
+    <code-generation-time time="0.0241" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="89072" />
-      <cpu system-cpu-time="0.0752" user-cpu-time="2.0213" />
-      <memory memory-max-rss-kb="83864" />
-      <system-events context-switches-involuntary="12" context-switches-voluntary="29" disk-input-blocks="0" disk-output-blocks="176" page-faults-major="0" page-faults-minor="21334" />
+      <cpu system-cpu-time="0.0922" user-cpu-time="1.9380" />
+      <memory memory-max-rss-kb="83588" />
+      <system-events context-switches-involuntary="15" context-switches-voluntary="31" disk-input-blocks="0" disk-output-blocks="176" page-faults-major="0" page-faults-minor="21874" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="error_catalog.registry" finding="relative" line="16" reason="import" />
       <module_usage name="error_catalog.resolver" finding="relative" line="28" reason="import" />
     </module_usages>
   </module>
-  <module name="error_catalog.models" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/error_catalog/models.py">
-    <optimization-time pass="1" time="0.0191" micro_passes="4" max_branch_merge="13" merged_total="540" />
-    <optimization-time pass="2" time="0.0042" micro_passes="1" max_branch_merge="13" merged_total="117" />
-    <code-generation-time time="0.0150" />
+  <module name="error_catalog.models" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/cd4fea78215d2c70e5a4965d3653f7533f209147a59d9f72234b6d0ccdef978a/error_catalog/models.py">
+    <optimization-time pass="1" time="0.0222" micro_passes="4" max_branch_merge="13" merged_total="540" />
+    <optimization-time pass="2" time="0.0048" micro_passes="1" max_branch_merge="13" merged_total="117" />
+    <code-generation-time time="0.0173" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="80400" />
-      <cpu system-cpu-time="0.0711" user-cpu-time="1.3040" />
-      <memory memory-max-rss-kb="68896" />
-      <system-events context-switches-involuntary="3" context-switches-voluntary="46" disk-input-blocks="0" disk-output-blocks="160" page-faults-major="0" page-faults-minor="15619" />
+      <cpu system-cpu-time="0.0703" user-cpu-time="1.3069" />
+      <memory memory-max-rss-kb="68844" />
+      <system-events context-switches-involuntary="4" context-switches-voluntary="46" disk-input-blocks="0" disk-output-blocks="160" page-faults-major="0" page-faults-minor="15516" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="collections.abc" finding="absolute" line="16" reason="import" />
@@ -138,16 +140,16 @@
       <module_usage name="types" finding="excluded" line="18" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
     </module_usages>
   </module>
-  <module name="error_catalog.redaction" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/error_catalog/redaction.py">
-    <optimization-time pass="1" time="0.0570" micro_passes="5" max_branch_merge="35" merged_total="1142" />
-    <optimization-time pass="2" time="0.0101" micro_passes="1" max_branch_merge="31" merged_total="225" />
-    <code-generation-time time="0.0271" />
+  <module name="error_catalog.redaction" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/cd4fea78215d2c70e5a4965d3653f7533f209147a59d9f72234b6d0ccdef978a/error_catalog/redaction.py">
+    <optimization-time pass="1" time="0.0601" micro_passes="5" max_branch_merge="35" merged_total="1142" />
+    <optimization-time pass="2" time="0.0110" micro_passes="1" max_branch_merge="31" merged_total="225" />
+    <code-generation-time time="0.0299" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="130160" />
-      <cpu system-cpu-time="0.0672" user-cpu-time="2.1004" />
-      <memory memory-max-rss-kb="81712" />
-      <system-events context-switches-involuntary="7" context-switches-voluntary="51" disk-input-blocks="0" disk-output-blocks="256" page-faults-major="0" page-faults-minor="19596" />
+      <cpu system-cpu-time="0.0749" user-cpu-time="2.0602" />
+      <memory memory-max-rss-kb="81504" />
+      <system-events context-switches-involuntary="8" context-switches-voluntary="51" disk-input-blocks="0" disk-output-blocks="256" page-faults-major="0" page-faults-minor="19598" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="math" finding="absolute" line="16" reason="import" />
@@ -158,16 +160,16 @@
       <module_usage name="urllib.parse" finding="absolute" line="21" reason="import" />
     </module_usages>
   </module>
-  <module name="error_catalog.registry" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/error_catalog/registry.py">
-    <optimization-time pass="1" time="0.0253" micro_passes="5" max_branch_merge="10" merged_total="282" />
-    <optimization-time pass="2" time="0.0027" micro_passes="1" max_branch_merge="9" merged_total="51" />
-    <code-generation-time time="0.0124" />
+  <module name="error_catalog.registry" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/cd4fea78215d2c70e5a4965d3653f7533f209147a59d9f72234b6d0ccdef978a/error_catalog/registry.py">
+    <optimization-time pass="1" time="0.0248" micro_passes="5" max_branch_merge="10" merged_total="282" />
+    <optimization-time pass="2" time="0.0031" micro_passes="1" max_branch_merge="9" merged_total="51" />
+    <code-generation-time time="0.0140" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="78048" />
-      <cpu system-cpu-time="0.0605" user-cpu-time="1.2371" />
-      <memory memory-max-rss-kb="66024" />
-      <system-events context-switches-involuntary="8" context-switches-voluntary="49" disk-input-blocks="0" disk-output-blocks="160" page-faults-major="0" page-faults-minor="14588" />
+      <cpu system-cpu-time="0.0550" user-cpu-time="1.2300" />
+      <memory memory-max-rss-kb="65944" />
+      <system-events context-switches-involuntary="8" context-switches-voluntary="49" disk-input-blocks="0" disk-output-blocks="160" page-faults-major="0" page-faults-minor="14888" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="json" finding="excluded" line="16" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -181,31 +183,31 @@
       <module_usage name="error_catalog" finding="absolute" line="30" reason="importlib.resources.files call" />
     </module_usages>
   </module>
-  <module name="error_catalog.remediation" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/error_catalog/remediation.py">
-    <optimization-time pass="1" time="0.0175" micro_passes="5" max_branch_merge="18" merged_total="310" />
-    <optimization-time pass="2" time="0.0031" micro_passes="1" max_branch_merge="13" merged_total="60" />
-    <code-generation-time time="0.0088" />
+  <module name="error_catalog.remediation" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/cd4fea78215d2c70e5a4965d3653f7533f209147a59d9f72234b6d0ccdef978a/error_catalog/remediation.py">
+    <optimization-time pass="1" time="0.0205" micro_passes="5" max_branch_merge="18" merged_total="310" />
+    <optimization-time pass="2" time="0.0036" micro_passes="1" max_branch_merge="13" merged_total="60" />
+    <code-generation-time time="0.0083" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="39640" />
-      <cpu system-cpu-time="0.0466" user-cpu-time="0.6939" />
-      <memory memory-max-rss-kb="55564" />
-      <system-events context-switches-involuntary="1" context-switches-voluntary="22" disk-input-blocks="0" disk-output-blocks="80" page-faults-major="0" page-faults-minor="11074" />
+      <cpu system-cpu-time="0.0531" user-cpu-time="0.6884" />
+      <memory memory-max-rss-kb="55324" />
+      <system-events context-switches-involuntary="1" context-switches-voluntary="22" disk-input-blocks="0" disk-output-blocks="80" page-faults-major="0" page-faults-minor="10998" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="error_catalog.registry" finding="relative" line="15" reason="import" />
     </module_usages>
   </module>
-  <module name="error_catalog.renderer" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/error_catalog/renderer.py">
-    <optimization-time pass="1" time="0.0425" micro_passes="4" max_branch_merge="54" merged_total="1181" />
-    <optimization-time pass="2" time="0.0090" micro_passes="1" max_branch_merge="45" merged_total="290" />
-    <code-generation-time time="0.0412" />
+  <module name="error_catalog.renderer" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/cd4fea78215d2c70e5a4965d3653f7533f209147a59d9f72234b6d0ccdef978a/error_catalog/renderer.py">
+    <optimization-time pass="1" time="0.0436" micro_passes="4" max_branch_merge="54" merged_total="1181" />
+    <optimization-time pass="2" time="0.0101" micro_passes="1" max_branch_merge="45" merged_total="290" />
+    <code-generation-time time="0.0405" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="156040" />
-      <cpu system-cpu-time="0.0946" user-cpu-time="2.4716" />
-      <memory memory-max-rss-kb="94408" />
-      <system-events context-switches-involuntary="6" context-switches-voluntary="59" disk-input-blocks="0" disk-output-blocks="312" page-faults-major="0" page-faults-minor="23495" />
+      <cpu system-cpu-time="0.1291" user-cpu-time="2.6186" />
+      <memory memory-max-rss-kb="94384" />
+      <system-events context-switches-involuntary="6" context-switches-voluntary="58" disk-input-blocks="0" disk-output-blocks="312" page-faults-major="0" page-faults-minor="23470" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="re" finding="excluded" line="16" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -215,16 +217,16 @@
       <module_usage name="error_catalog.redaction" finding="relative" line="52" reason="import" />
     </module_usages>
   </module>
-  <module name="error_catalog.resolver" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/error_catalog/resolver.py">
-    <optimization-time pass="1" time="0.1400" micro_passes="6" max_branch_merge="54" merged_total="3198" />
-    <optimization-time pass="2" time="0.0239" micro_passes="1" max_branch_merge="52" merged_total="540" />
-    <code-generation-time time="0.0590" />
+  <module name="error_catalog.resolver" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/cd4fea78215d2c70e5a4965d3653f7533f209147a59d9f72234b6d0ccdef978a/error_catalog/resolver.py">
+    <optimization-time pass="1" time="0.1513" micro_passes="6" max_branch_merge="54" merged_total="3198" />
+    <optimization-time pass="2" time="0.0244" micro_passes="1" max_branch_merge="52" merged_total="540" />
+    <code-generation-time time="0.0612" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="247376" />
-      <cpu system-cpu-time="0.1586" user-cpu-time="4.2636" />
-      <memory memory-max-rss-kb="117696" />
-      <system-events context-switches-involuntary="5" context-switches-voluntary="59" disk-input-blocks="0" disk-output-blocks="488" page-faults-major="0" page-faults-minor="32000" />
+      <cpu system-cpu-time="0.1147" user-cpu-time="4.5565" />
+      <memory memory-max-rss-kb="117508" />
+      <system-events context-switches-involuntary="10" context-switches-voluntary="58" disk-input-blocks="0" disk-output-blocks="488" page-faults-major="0" page-faults-minor="31937" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="collections.abc" finding="absolute" line="16" reason="import" />
@@ -236,16 +238,16 @@
       <module_usage name="error_catalog.renderer" finding="relative" line="41" reason="import" />
     </module_usages>
   </module>
-  <module name="error_catalog.schema" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/error_catalog/schema.py">
-    <optimization-time pass="1" time="0.0999" micro_passes="5" max_branch_merge="54" merged_total="1602" />
-    <optimization-time pass="2" time="0.0191" micro_passes="1" max_branch_merge="54" merged_total="333" />
-    <code-generation-time time="0.0441" />
+  <module name="error_catalog.schema" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/cd4fea78215d2c70e5a4965d3653f7533f209147a59d9f72234b6d0ccdef978a/error_catalog/schema.py">
+    <optimization-time pass="1" time="0.1196" micro_passes="5" max_branch_merge="54" merged_total="1602" />
+    <optimization-time pass="2" time="0.0211" micro_passes="1" max_branch_merge="54" merged_total="333" />
+    <code-generation-time time="0.0453" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="190784" />
-      <cpu system-cpu-time="0.1898" user-cpu-time="5.6747" />
-      <memory memory-max-rss-kb="139920" />
-      <system-events context-switches-involuntary="9" context-switches-voluntary="53" disk-input-blocks="0" disk-output-blocks="376" page-faults-major="0" page-faults-minor="49195" />
+      <cpu system-cpu-time="0.1643" user-cpu-time="5.9672" />
+      <memory memory-max-rss-kb="138808" />
+      <system-events context-switches-involuntary="9" context-switches-voluntary="51" disk-input-blocks="0" disk-output-blocks="376" page-faults-major="0" page-faults-minor="49621" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="re" finding="excluded" line="16" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -254,16 +256,16 @@
       <module_usage name="error_catalog.redaction" finding="relative" line="110" reason="import" />
     </module_usages>
   </module>
-  <module name="error_catalog.startup" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/error_catalog/startup.py">
-    <optimization-time pass="1" time="0.0283" micro_passes="5" max_branch_merge="12" merged_total="571" />
-    <optimization-time pass="2" time="0.0043" micro_passes="1" max_branch_merge="10" merged_total="101" />
-    <code-generation-time time="0.0143" />
+  <module name="error_catalog.startup" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/cd4fea78215d2c70e5a4965d3653f7533f209147a59d9f72234b6d0ccdef978a/error_catalog/startup.py">
+    <optimization-time pass="1" time="0.0272" micro_passes="5" max_branch_merge="12" merged_total="571" />
+    <optimization-time pass="2" time="0.0045" micro_passes="1" max_branch_merge="10" merged_total="101" />
+    <code-generation-time time="0.0141" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="65296" />
-      <cpu system-cpu-time="0.0739" user-cpu-time="1.0830" />
-      <memory memory-max-rss-kb="63640" />
-      <system-events context-switches-involuntary="6" context-switches-voluntary="28" disk-input-blocks="0" disk-output-blocks="128" page-faults-major="0" page-faults-minor="13502" />
+      <cpu system-cpu-time="0.0621" user-cpu-time="1.1147" />
+      <memory memory-max-rss-kb="63112" />
+      <system-events context-switches-involuntary="7" context-switches-voluntary="28" disk-input-blocks="0" disk-output-blocks="128" page-faults-major="0" page-faults-minor="13356" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="errno" finding="absolute" line="28" reason="import" />
@@ -274,20 +276,20 @@
     </module_usages>
   </module>
   <linker-resources>
-    <cpu system-cpu-time="0.0189" user-cpu-time="0.0382" />
-    <memory memory-max-rss-kb="46708" />
-    <system-events context-switches-involuntary="0" context-switches-voluntary="7" disk-input-blocks="0" disk-output-blocks="4336" page-faults-major="0" page-faults-minor="4537" />
+    <cpu system-cpu-time="0.0185" user-cpu-time="0.0397" />
+    <memory memory-max-rss-kb="42720" />
+    <system-events context-switches-involuntary="2" context-switches-voluntary="7" disk-input-blocks="0" disk-output-blocks="4408" page-faults-major="0" page-faults-minor="4565" />
   </linker-resources>
   <performance>
-    <memory_usage name="after_launch" value="61964288" />
-    <memory_usage name="before_c_code_generation" value="69394432" />
-    <memory_usage name="before_running_scons" value="77570048" />
+    <memory_usage name="after_launch" value="59006976" />
+    <memory_usage name="before_c_code_generation" value="69779456" />
+    <memory_usage name="before_running_scons" value="78557184" />
   </performance>
-  <data_composer blob_size="69724" total="1986">
+  <data_composer blob_size="71408" total="2035">
     <module_data filename="__bytecode.const" blob_name=".bytecode" blob_size="3" input_size="0" />
     <module_data filename="__constants.const" blob_name="" blob_size="996" input_size="2454" />
     <module_data filename="module.error_catalog.__main__.const" blob_name="error_catalog.__main__" blob_size="1698" input_size="3099" />
-    <module_data filename="module.error_catalog.audit.const" blob_name="error_catalog.audit" blob_size="15758" input_size="23396" />
+    <module_data filename="module.error_catalog.audit.const" blob_name="error_catalog.audit" blob_size="17442" input_size="26042" />
     <module_data filename="module.error_catalog.compatibility.const" blob_name="error_catalog.compatibility" blob_size="3454" input_size="6468" />
     <module_data filename="module.error_catalog.const" blob_name="error_catalog" blob_size="1603" input_size="2328" />
     <module_data filename="module.error_catalog.http_boundary.const" blob_name="error_catalog.http_boundary" blob_size="6871" input_size="10675" />
@@ -302,22 +304,22 @@
     <module_data filename="module.error_catalog.startup.const" blob_name="error_catalog.startup" blob_size="3872" input_size="5757" />
   </data_composer>
   <performance-totals>
-    <optimization-time pass="1" time="1.1122" module_count="14" />
-    <optimization-time pass="2" time="0.2078" module_count="14" />
-    <optimization-time pass="all" time="1.3200" module_count="14" />
-    <code-generation-time time="0.5466" module_count="14" />
-    <c-compilation-time user-cpu-time="47.6051" system-cpu-time="1.5147" module_count="14" />
-    <c-linking-time user-cpu-time="0.0382" system-cpu-time="0.0189" />
+    <optimization-time pass="1" time="1.2953" module_count="14" />
+    <optimization-time pass="2" time="0.2382" module_count="14" />
+    <optimization-time pass="all" time="1.5335" module_count="14" />
+    <code-generation-time time="0.5874" module_count="14" />
+    <c-compilation-time user-cpu-time="49.5302" system-cpu-time="1.4471" module_count="14" />
+    <c-linking-time user-cpu-time="0.0397" system-cpu-time="0.0185" />
   </performance-totals>
-  <python_binary filename="${cwd}/.build/compiled/targets/linux-x86_64/modules/error_catalog/error_catalog.cpython-312-x86_64-linux-gnu.so" backend_resource_mode="incbin" reproducible="yes" size="2210520" />
+  <python_binary filename="${cwd}/.build/compiled/targets/linux-x86_64/modules/error_catalog/error_catalog.cpython-312-x86_64-linux-gnu.so" backend_resource_mode="incbin" reproducible="yes" size="2247416" />
   <command_line>
     <option value="--mode=module" />
-    <option value="/workspace/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/error_catalog" />
+    <option value="/workspace/.build/compiled/targets/linux-x86_64/sources/cd4fea78215d2c70e5a4965d3653f7533f209147a59d9f72234b6d0ccdef978a/error_catalog" />
     <option value="--include-package=error_catalog" />
     <option value="--no-pyi-file" />
     <option value="--assume-yes-for-downloads" />
     <option value="--output-dir=/workspace/.build/compiled/targets/linux-x86_64/modules/error_catalog" />
-    <option value="--jobs=8" />
+    <option value="--jobs=4" />
     <option value="--report=/workspace/.build/compiled/targets/linux-x86_64/modules/error_catalog/compilation.xml" />
   </command_line>
   <plugins>
@@ -331,7 +333,7 @@
   <distributions />
   <python python_exe="${sys.prefix}/bin/python" python_flavor="Unknown" python_version="3.12.14" os_name="Linux" os_release="Ubuntu-Debian-22.04.5" arch_name="x86_64" filesystem_encoding="utf-8">
     <search_path>
-      <path value="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f" />
+      <path value="${cwd}/.build/compiled/targets/linux-x86_64/sources/cd4fea78215d2c70e5a4965d3653f7533f209147a59d9f72234b6d0ccdef978a" />
       <path value="${cwd}" />
       <path value="${sys.real_prefix}/lib/python3.12" />
       <path value="${sys.real_prefix}/lib/python3.12/lib-dynload" />

@@ -1,16 +1,90 @@
-Build version: dev.b83ef1986671.20261018.20261018T190739292088Z
-Compiling agent_runtime (log: /workspace/.build/compiled/targets/linux-x86_64/modules/agent_runtime/compile.log)
-Compiling smto_site (log: /workspace/.build/compiled/targets/linux-x86_64/modules/smto_site/compile.log)
+Build version: dev.7058d9b785b5.20261021.20261021T054014684537Z
 -- Configuring done
 -- Generating done
--- Build files have been written to: /workspace/.build/compiled/targets/linux-x86_64/server-launcher
+-- Build files have been written to: /workspace/.build/compiled/targets/linux-x86_64/profiles/server-inference/server-launcher
 Consolidate compiler generated dependencies of target zlibstatic
 [ 84%] Built target zlibstatic
 Consolidate compiler generated dependencies of target smto-launcher
 [ 89%] Building CXX object CMakeFiles/smto-launcher.dir/src/main.cpp.o
 [ 94%] Linking CXX executable smto-launcher
 [100%] Built target smto-launcher
-server: /workspace/dist/compiled/.staging/dev.b83ef1986671.20261018.20261018T190739292088Z/smto-server (117.7 MiB)
+server: /workspace/dist/compiled/.staging/dev.7058d9b785b5.20261021.20261021T054014684537Z/smto-server-inference (122.6 MiB)
+Build version: dev.7058d9b785b5.20261021.20261021T054014684537Z
+Compiling agent_runtime (log: /workspace/.build/compiled/targets/linux-x86_64/profiles/server-external/modules/agent_runtime/compile.log)
+Compiling gateway_core (log: /workspace/.build/compiled/targets/linux-x86_64/profiles/server-external/modules/gateway_core/compile.log)
+Compiling gateway_agent (log: /workspace/.build/compiled/targets/linux-x86_64/profiles/server-external/modules/gateway_agent/compile.log)
+Compiling gateway_windows (log: /workspace/.build/compiled/targets/linux-x86_64/profiles/server-external/modules/gateway_windows/compile.log)
+Compiling gateway_macos (log: /workspace/.build/compiled/targets/linux-x86_64/profiles/server-external/modules/gateway_macos/compile.log)
+Compiling smto_runtime (log: /workspace/.build/compiled/targets/linux-x86_64/profiles/server-external/modules/smto_runtime/compile.log)
+Compiling error_catalog (log: /workspace/.build/compiled/targets/linux-x86_64/profiles/server-external/modules/error_catalog/compile.log)
+Compiling manual (log: /workspace/.build/compiled/targets/linux-x86_64/profiles/server-external/modules/manual/compile.log)
+Compiling smto_site (log: /workspace/.build/compiled/targets/linux-x86_64/profiles/server-external/modules/smto_site/compile.log)
+Compiling smto_legal (log: /workspace/.build/compiled/targets/linux-x86_64/profiles/server-external/modules/smto_legal/compile.log)
+Compiling smto_bootstrap (log: /workspace/.build/compiled/targets/linux-x86_64/profiles/server-external/modules/smto_bootstrap/compile.log)
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of off64_t
+-- Check size of off64_t - done
+-- Looking for fseeko
+-- Looking for fseeko - found
+-- Looking for stdarg.h
+-- Looking for stdarg.h - found
+-- Looking for unistd.h
+-- Looking for unistd.h - found
+-- Performing Test HAVE___ATTR__VIS_HIDDEN
+-- Performing Test HAVE___ATTR__VIS_HIDDEN - Failed
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /workspace/.build/compiled/targets/linux-x86_64/profiles/server-external/server-launcher
+[  5%] Building C object zlib/CMakeFiles/zlibstatic.dir/adler32.c.o
+[ 10%] Building C object zlib/CMakeFiles/zlibstatic.dir/compress.c.o
+[ 15%] Building C object zlib/CMakeFiles/zlibstatic.dir/crc32.c.o
+[ 21%] Building C object zlib/CMakeFiles/zlibstatic.dir/deflate.c.o
+[ 31%] Building C object zlib/CMakeFiles/zlibstatic.dir/gzclose.c.o
+[ 31%] Building C object zlib/CMakeFiles/zlibstatic.dir/gzlib.c.o
+[ 36%] Building C object zlib/CMakeFiles/zlibstatic.dir/gzread.c.o
+[ 42%] Building C object zlib/CMakeFiles/zlibstatic.dir/gzwrite.c.o
+[ 47%] Building C object zlib/CMakeFiles/zlibstatic.dir/inflate.c.o
+[ 52%] Building C object zlib/CMakeFiles/zlibstatic.dir/infback.c.o
+[ 57%] Building C object zlib/CMakeFiles/zlibstatic.dir/inftrees.c.o
+[ 63%] Building C object zlib/CMakeFiles/zlibstatic.dir/inffast.c.o
+[ 68%] Building C object zlib/CMakeFiles/zlibstatic.dir/trees.c.o
+[ 73%] Building C object zlib/CMakeFiles/zlibstatic.dir/uncompr.c.o
+[ 78%] Building C object zlib/CMakeFiles/zlibstatic.dir/zutil.c.o
+[ 84%] Linking C static library libz.a
+[ 84%] Built target zlibstatic
+[ 89%] Building CXX object CMakeFiles/smto-launcher.dir/src/main.cpp.o
+[ 94%] Building CXX object CMakeFiles/smto-launcher.dir/src/posix.cpp.o
+[100%] Linking CXX executable smto-launcher
+[100%] Built target smto-launcher
+server: /workspace/dist/compiled/.staging/dev.7058d9b785b5.20261021.20261021T054014684537Z/smto-server-external (119.9 MiB)
+Build version: dev.7058d9b785b5.20261021.20261021T054014684537Z
+Compiling agent_runtime (log: /workspace/.build/compiled/targets/linux-x86_64/modules/agent_runtime/compile.log)
+Compiling gateway_core (log: /workspace/.build/compiled/targets/linux-x86_64/modules/gateway_core/compile.log)
+Compiling smto_runtime (log: /workspace/.build/compiled/targets/linux-x86_64/modules/smto_runtime/compile.log)
+Compiling smto_site (log: /workspace/.build/compiled/targets/linux-x86_64/modules/smto_site/compile.log)
+Compiling smto_bootstrap (log: /workspace/.build/compiled/targets/linux-x86_64/modules/smto_bootstrap/compile.log)
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /workspace/.build/compiled/targets/linux-x86_64/gateway-launcher
@@ -20,4 +94,17 @@ Consolidate compiler generated dependencies of target smto-launcher
 [ 89%] Building CXX object CMakeFiles/smto-launcher.dir/src/main.cpp.o
 [ 94%] Linking CXX executable smto-launcher
 [100%] Built target smto-launcher
-gateway: /workspace/dist/compiled/.staging/dev.b83ef1986671.20261018.20261018T190739292088Z/smto-gateway (117.7 MiB)
+gateway: /workspace/dist/compiled/.staging/dev.7058d9b785b5.20261021.20261021T054014684537Z/smto-gateway (119.9 MiB)
+Build version: dev.7058d9b785b5.20261021.20261021T054014684537Z
+Compiling inference_portal (log: /workspace/.build/compiled/targets/linux-x86_64/profiles/inference-portal/modules/inference_portal/compile.log)
+Compiling smto_bootstrap (log: /workspace/.build/compiled/targets/linux-x86_64/profiles/inference-portal/modules/smto_bootstrap/compile.log)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /workspace/.build/compiled/targets/linux-x86_64/profiles/inference-portal/inference-portal-launcher
+Consolidate compiler generated dependencies of target zlibstatic
+[ 84%] Built target zlibstatic
+Consolidate compiler generated dependencies of target smto-launcher
+[ 89%] Building CXX object CMakeFiles/smto-launcher.dir/src/main.cpp.o
+[ 94%] Linking CXX executable smto-launcher
+[100%] Built target smto-launcher
+inference-portal: /workspace/dist/compiled/.staging/dev.7058d9b785b5.20261021.20261021T054014684537Z/smto-inference-portal (71.1 MiB)

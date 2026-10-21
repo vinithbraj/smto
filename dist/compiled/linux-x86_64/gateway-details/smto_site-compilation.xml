@@ -1,66 +1,71 @@
 <?xml version='1.0' encoding='utf8'?>
 <nuitka-compilation-report nuitka_version="4.3" nuitka_commercial_version="not installed" mode="module" completion="yes">
   <scons_environment c_compiler="gcc" the_cc_name="gcc" the_compiler="gcc" c_flags="-march=x86-64 -mtune=generic" cxx_flags="-march=x86-64 -mtune=generic" />
-  <module name="smto_site" kind="CompiledPythonPackage" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/smto_site/__init__.py">
+  <module name="smto_site" kind="CompiledPythonPackage" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/08bd9e98075669e504f26057294f2daa184afb6f05fbd0ede9c717d681c85bae/smto_site/__init__.py">
     <plugin-influence name="implicit-imports" influence="condition-used" condition="module_mode and plugin(&quot;pyside6&quot;)" tags_used="module_mode,plugin" result="false" />
     <optimization-time pass="1" time="0.0007" micro_passes="2" />
     <optimization-time pass="2" time="0.0002" micro_passes="1" />
-    <code-generation-time time="0.0322" />
+    <code-generation-time time="0.0350" />
     <c-compilation-resources>
       <c-cache tech="none" />
-      <object-file size="41696" />
-      <cpu system-cpu-time="0.0602" user-cpu-time="0.6439" />
-      <memory memory-max-rss-kb="53280" />
-      <system-events context-switches-involuntary="0" context-switches-voluntary="28" disk-input-blocks="0" disk-output-blocks="88" page-faults-major="0" page-faults-minor="10512" />
+      <object-file size="47728" />
+      <cpu system-cpu-time="0.0392" user-cpu-time="0.7644" />
+      <memory memory-max-rss-kb="54776" />
+      <system-events context-switches-involuntary="6" context-switches-voluntary="35" disk-input-blocks="0" disk-output-blocks="96" page-faults-major="0" page-faults-minor="10714" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="os" finding="excluded" line="1" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
     </module_usages>
   </module>
-  <module name="smto_site.app" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/smto_site/app.py">
-    <optimization-time pass="1" time="0.0658" micro_passes="4" max_branch_merge="58" merged_total="1189" />
-    <optimization-time pass="2" time="0.0162" micro_passes="1" max_branch_merge="48" merged_total="296" />
-    <code-generation-time time="0.0593" />
+  <module name="smto_site.app" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/08bd9e98075669e504f26057294f2daa184afb6f05fbd0ede9c717d681c85bae/smto_site/app.py">
+    <optimization-time pass="1" time="0.0794" micro_passes="4" max_branch_merge="62" merged_total="1245" />
+    <optimization-time pass="2" time="0.0188" micro_passes="1" max_branch_merge="45" merged_total="308" />
+    <code-generation-time time="0.0664" />
     <c-compilation-resources>
       <c-cache tech="none" />
-      <object-file size="222696" />
-      <cpu system-cpu-time="0.1153" user-cpu-time="4.1500" />
-      <memory memory-max-rss-kb="120292" />
-      <system-events context-switches-involuntary="19" context-switches-voluntary="74" disk-input-blocks="0" disk-output-blocks="440" page-faults-major="0" page-faults-minor="29879" />
+      <object-file size="239544" />
+      <cpu system-cpu-time="0.1173" user-cpu-time="4.1559" />
+      <memory memory-max-rss-kb="125644" />
+      <system-events context-switches-involuntary="11" context-switches-voluntary="83" disk-input-blocks="0" disk-output-blocks="472" page-faults-major="0" page-faults-minor="33036" />
     </c-compilation-resources>
     <module_usages>
-      <module_usage name="__future__" finding="excluded" line="21" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
-      <module_usage name="hashlib" finding="excluded" line="23" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
-      <module_usage name="mimetypes" finding="excluded" line="24" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
-      <module_usage name="contextlib" finding="excluded" line="25" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
-      <module_usage name="pathlib" finding="excluded" line="26" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
-      <module_usage name="fastapi" finding="not-found" line="28" reason="import" />
-      <module_usage name="fastapi.responses" finding="not-found" line="29" reason="import" />
-      <module_usage name="markupsafe" finding="not-found" line="30" reason="import" />
-      <module_usage name="starlette.exceptions" finding="not-found" line="31" reason="import" />
-      <module_usage name="starlette.staticfiles" finding="not-found" line="32" reason="import" />
-      <module_usage name="smto_site" finding="absolute" line="34" reason="import" />
-      <module_usage name="smto_site.__version__" finding="not-found" line="34" reason="import fromlist" />
-      <module_usage name="smto_site.config" finding="absolute" line="35" reason="import" />
-      <module_usage name="smto_site.content" finding="absolute" line="36" reason="import" />
-      <module_usage name="smto_site.discovery" finding="absolute" line="37" reason="import" />
-      <module_usage name="smto_site.middleware" finding="absolute" line="38" reason="import" />
-      <module_usage name="smto_site.pages" finding="absolute" line="39" reason="import" />
-      <module_usage name="smto_site.releases" finding="absolute" line="40" reason="import" />
-      <module_usage name="smto_site.search" finding="absolute" line="41" reason="import" />
-      <module_usage name="smto_site.visuals" finding="absolute" line="42" reason="import" />
+      <module_usage name="__future__" finding="excluded" line="22" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="asyncio" finding="excluded" line="24" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="hashlib" finding="excluded" line="25" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="mimetypes" finding="excluded" line="26" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="os" finding="excluded" line="27" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="contextlib" finding="excluded" line="28" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="pathlib" finding="excluded" line="29" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="fastapi" finding="not-found" line="31" reason="import" />
+      <module_usage name="fastapi.responses" finding="not-found" line="32" reason="import" />
+      <module_usage name="starlette.exceptions" finding="not-found" line="33" reason="import" />
+      <module_usage name="starlette.staticfiles" finding="not-found" line="34" reason="import" />
+      <module_usage name="smto_site" finding="absolute" line="36" reason="import" />
+      <module_usage name="smto_site.__version__" finding="not-found" line="36" reason="import fromlist" />
+      <module_usage name="smto_site.config" finding="absolute" line="37" reason="import" />
+      <module_usage name="smto_site.content" finding="absolute" line="38" reason="import" />
+      <module_usage name="smto_site.discovery" finding="absolute" line="39" reason="import" />
+      <module_usage name="smto_site.faq" finding="absolute" line="40" reason="import" />
+      <module_usage name="smto_site.legal" finding="absolute" line="41" reason="import" />
+      <module_usage name="smto_site.middleware" finding="absolute" line="42" reason="import" />
+      <module_usage name="smto_site.pages" finding="absolute" line="43" reason="import" />
+      <module_usage name="smto_site.releases" finding="absolute" line="44" reason="import" />
+      <module_usage name="smto_site.routing" finding="absolute" line="45" reason="import" />
+      <module_usage name="smto_site.search" finding="absolute" line="46" reason="import" />
+      <module_usage name="smto_site.visuals" finding="absolute" line="47" reason="import" />
+      <module_usage name="smto_site.cms.asgi" finding="absolute" line="313" reason="import" />
     </module_usages>
   </module>
-  <module name="smto_site.cli" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/smto_site/cli.py">
-    <optimization-time pass="1" time="0.0096" micro_passes="5" max_branch_merge="8" merged_total="136" />
-    <optimization-time pass="2" time="0.0014" micro_passes="1" max_branch_merge="8" merged_total="26" />
-    <code-generation-time time="0.0063" />
+  <module name="smto_site.cli" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/08bd9e98075669e504f26057294f2daa184afb6f05fbd0ede9c717d681c85bae/smto_site/cli.py">
+    <optimization-time pass="1" time="0.0093" micro_passes="5" max_branch_merge="8" merged_total="136" />
+    <optimization-time pass="2" time="0.0019" micro_passes="1" max_branch_merge="8" merged_total="26" />
+    <code-generation-time time="0.0069" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="37416" />
-      <cpu system-cpu-time="0.0639" user-cpu-time="0.6826" />
-      <memory memory-max-rss-kb="57724" />
-      <system-events context-switches-involuntary="4" context-switches-voluntary="23" disk-input-blocks="0" disk-output-blocks="80" page-faults-major="0" page-faults-minor="11553" />
+      <cpu system-cpu-time="0.0561" user-cpu-time="0.6821" />
+      <memory memory-max-rss-kb="57416" />
+      <system-events context-switches-involuntary="2" context-switches-voluntary="22" disk-input-blocks="0" disk-output-blocks="80" page-faults-major="0" page-faults-minor="11549" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="argparse" finding="excluded" line="21" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -70,16 +75,374 @@
       <module_usage name="uvicorn" finding="not-found" line="45" reason="import" />
     </module_usages>
   </module>
-  <module name="smto_site.config" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/smto_site/config.py">
-    <optimization-time pass="1" time="0.0195" micro_passes="4" max_branch_merge="19" merged_total="396" />
-    <optimization-time pass="2" time="0.0038" micro_passes="1" max_branch_merge="14" merged_total="97" />
-    <code-generation-time time="0.0204" />
+  <module name="smto_site.cms" kind="CompiledPythonPackage" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/08bd9e98075669e504f26057294f2daa184afb6f05fbd0ede9c717d681c85bae/smto_site/cms/__init__.py">
+    <optimization-time pass="1" time="0.0005" micro_passes="2" />
+    <optimization-time pass="2" time="0.0003" micro_passes="1" />
+    <code-generation-time time="0.0021" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="11744" />
+      <cpu system-cpu-time="0.0495" user-cpu-time="0.2326" />
+      <memory memory-max-rss-kb="41844" />
+      <system-events context-switches-involuntary="1" context-switches-voluntary="12" disk-input-blocks="0" disk-output-blocks="24" page-faults-major="0" page-faults-minor="7095" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="os" finding="excluded" line="1" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+    </module_usages>
+  </module>
+  <module name="smto_site.cms.apps" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/08bd9e98075669e504f26057294f2daa184afb6f05fbd0ede9c717d681c85bae/smto_site/cms/apps.py">
+    <optimization-time pass="1" time="0.0025" micro_passes="2" max_branch_merge="9" merged_total="57" />
+    <optimization-time pass="2" time="0.0012" micro_passes="1" max_branch_merge="9" merged_total="28" />
+    <code-generation-time time="0.0041" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="21352" />
+      <cpu system-cpu-time="0.0480" user-cpu-time="0.3639" />
+      <memory memory-max-rss-kb="45796" />
+      <system-events context-switches-involuntary="5" context-switches-voluntary="17" disk-input-blocks="0" disk-output-blocks="48" page-faults-major="0" page-faults-minor="8709" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="django.apps" finding="not-found" line="1" reason="import" />
+    </module_usages>
+  </module>
+  <module name="smto_site.cms.asgi" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/08bd9e98075669e504f26057294f2daa184afb6f05fbd0ede9c717d681c85bae/smto_site/cms/asgi.py">
+    <optimization-time pass="1" time="0.0145" micro_passes="4" max_branch_merge="12" merged_total="198" />
+    <optimization-time pass="2" time="0.0039" micro_passes="1" max_branch_merge="12" merged_total="49" />
+    <code-generation-time time="0.0120" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="48008" />
+      <cpu system-cpu-time="0.0521" user-cpu-time="0.7379" />
+      <memory memory-max-rss-kb="55136" />
+      <system-events context-switches-involuntary="2" context-switches-voluntary="27" disk-input-blocks="0" disk-output-blocks="96" page-faults-major="0" page-faults-minor="11147" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="os" finding="excluded" line="3" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="re" finding="excluded" line="4" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="starlette.responses" finding="not-found" line="6" reason="import" />
+      <module_usage name="django.conf" finding="not-found" line="11" reason="import" />
+      <module_usage name="django.core.asgi" finding="not-found" line="12" reason="import" />
+      <module_usage name="smto_site.cms.publishing" finding="absolute" line="15" reason="import" />
+      <module_usage name="smto_site.middleware" finding="absolute" line="16" reason="import" />
+    </module_usages>
+  </module>
+  <module name="smto_site.cms.blocks" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/08bd9e98075669e504f26057294f2daa184afb6f05fbd0ede9c717d681c85bae/smto_site/cms/blocks.py">
+    <optimization-time pass="1" time="0.0549" micro_passes="4" max_branch_merge="12" merged_total="1290" />
+    <optimization-time pass="2" time="0.0186" micro_passes="1" max_branch_merge="12" merged_total="314" />
+    <code-generation-time time="0.0398" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="146576" />
+      <cpu system-cpu-time="0.0970" user-cpu-time="2.5774" />
+      <memory memory-max-rss-kb="95876" />
+      <system-events context-switches-involuntary="10" context-switches-voluntary="61" disk-input-blocks="0" disk-output-blocks="288" page-faults-major="0" page-faults-minor="22957" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="json" finding="excluded" line="3" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="re" finding="excluded" line="4" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="urllib.parse" finding="absolute" line="5" reason="import" />
+      <module_usage name="django.core.exceptions" finding="not-found" line="7" reason="import" />
+      <module_usage name="wagtail" finding="not-found" line="8" reason="import" />
+      <module_usage name="wagtail.images.blocks" finding="not-found" line="9" reason="import" />
+      <module_usage name="smto_site.config" finding="absolute" line="11" reason="import" />
+    </module_usages>
+  </module>
+  <module name="smto_site.cms.manage" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/08bd9e98075669e504f26057294f2daa184afb6f05fbd0ede9c717d681c85bae/smto_site/cms/manage.py">
+    <optimization-time pass="1" time="0.0026" micro_passes="3" max_branch_merge="3" merged_total="12" />
+    <optimization-time pass="2" time="0.0010" micro_passes="1" max_branch_merge="3" merged_total="4" />
+    <code-generation-time time="0.0029" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="15304" />
+      <cpu system-cpu-time="0.0412" user-cpu-time="0.2665" />
+      <memory memory-max-rss-kb="41676" />
+      <system-events context-switches-involuntary="3" context-switches-voluntary="14" disk-input-blocks="0" disk-output-blocks="32" page-faults-major="0" page-faults-minor="7322" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="os" finding="excluded" line="3" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="sys" finding="absolute" line="4" reason="import" />
+      <module_usage name="django.core.management" finding="not-found" line="9" reason="import" />
+    </module_usages>
+  </module>
+  <module name="smto_site.cms.management" kind="CompiledPythonPackage" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/08bd9e98075669e504f26057294f2daa184afb6f05fbd0ede9c717d681c85bae/smto_site/cms/management/__init__.py">
+    <optimization-time pass="1" time="0.0005" micro_passes="2" />
+    <optimization-time pass="2" time="0.0002" micro_passes="1" />
+    <code-generation-time time="0.0022" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="12728" />
+      <cpu system-cpu-time="0.0352" user-cpu-time="0.2562" />
+      <memory memory-max-rss-kb="42596" />
+      <system-events context-switches-involuntary="1" context-switches-voluntary="13" disk-input-blocks="0" disk-output-blocks="32" page-faults-major="0" page-faults-minor="7292" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="os" finding="excluded" line="1" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+    </module_usages>
+  </module>
+  <module name="smto_site.cms.management.commands" kind="CompiledPythonPackage" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/08bd9e98075669e504f26057294f2daa184afb6f05fbd0ede9c717d681c85bae/smto_site/cms/management/commands/__init__.py">
+    <optimization-time pass="1" time="0.0006" micro_passes="2" />
+    <optimization-time pass="2" time="0.0003" micro_passes="1" />
+    <code-generation-time time="0.0023" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="13760" />
+      <cpu system-cpu-time="0.0307" user-cpu-time="0.2787" />
+      <memory memory-max-rss-kb="43120" />
+      <system-events context-switches-involuntary="1" context-switches-voluntary="13" disk-input-blocks="0" disk-output-blocks="32" page-faults-major="0" page-faults-minor="7476" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="os" finding="excluded" line="1" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+    </module_usages>
+  </module>
+  <module name="smto_site.cms.management.commands.bootstrap_admin" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/08bd9e98075669e504f26057294f2daa184afb6f05fbd0ede9c717d681c85bae/smto_site/cms/management/commands/bootstrap_admin.py">
+    <optimization-time pass="1" time="0.0101" micro_passes="4" max_branch_merge="8" merged_total="152" />
+    <optimization-time pass="2" time="0.0035" micro_passes="1" max_branch_merge="8" merged_total="35" />
+    <code-generation-time time="0.0086" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="42720" />
+      <cpu system-cpu-time="0.0569" user-cpu-time="0.6464" />
+      <memory memory-max-rss-kb="54996" />
+      <system-events context-switches-involuntary="10" context-switches-voluntary="22" disk-input-blocks="0" disk-output-blocks="88" page-faults-major="0" page-faults-minor="11089" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="sys" finding="absolute" line="1" reason="import" />
+      <module_usage name="django.contrib.auth" finding="not-found" line="3" reason="import" />
+      <module_usage name="django.core.management" finding="not-found" line="4" reason="import" />
+      <module_usage name="django.core.management.base" finding="not-found" line="5" reason="import" />
+    </module_usages>
+  </module>
+  <module name="smto_site.cms.management.commands.publish_snapshot" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/08bd9e98075669e504f26057294f2daa184afb6f05fbd0ede9c717d681c85bae/smto_site/cms/management/commands/publish_snapshot.py">
+    <optimization-time pass="1" time="0.0083" micro_passes="3" max_branch_merge="8" merged_total="103" />
+    <optimization-time pass="2" time="0.0023" micro_passes="1" max_branch_merge="8" merged_total="34" />
+    <code-generation-time time="0.0075" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="39632" />
+      <cpu system-cpu-time="0.0499" user-cpu-time="0.6257" />
+      <memory memory-max-rss-kb="52500" />
+      <system-events context-switches-involuntary="2" context-switches-voluntary="22" disk-input-blocks="0" disk-output-blocks="80" page-faults-major="0" page-faults-minor="10397" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="django.core.management.base" finding="not-found" line="1" reason="import" />
+      <module_usage name="smto_site.cms.publishing" finding="absolute" line="3" reason="import" />
+      <module_usage name="smto_site.config" finding="absolute" line="4" reason="import" />
+      <module_usage name="smto_site.pages" finding="absolute" line="5" reason="import" />
+      <module_usage name="smto_site.visuals" finding="absolute" line="6" reason="import" />
+    </module_usages>
+  </module>
+  <module name="smto_site.cms.management.commands.seed_website" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/08bd9e98075669e504f26057294f2daa184afb6f05fbd0ede9c717d681c85bae/smto_site/cms/management/commands/seed_website.py">
+    <optimization-time pass="1" time="0.0163" micro_passes="4" max_branch_merge="16" merged_total="298" />
+    <optimization-time pass="2" time="0.0052" micro_passes="1" max_branch_merge="16" merged_total="76" />
+    <code-generation-time time="0.0133" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="63672" />
+      <cpu system-cpu-time="0.0651" user-cpu-time="1.0653" />
+      <memory memory-max-rss-kb="64064" />
+      <system-events context-switches-involuntary="5" context-switches-voluntary="27" disk-input-blocks="0" disk-output-blocks="128" page-faults-major="0" page-faults-minor="14339" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="urllib.parse" finding="absolute" line="3" reason="import" />
+      <module_usage name="django.conf" finding="not-found" line="5" reason="import" />
+      <module_usage name="django.core.management.base" finding="not-found" line="6" reason="import" />
+      <module_usage name="django.db" finding="not-found" line="7" reason="import" />
+      <module_usage name="wagtail.models" finding="not-found" line="8" reason="import" />
+      <module_usage name="smto_site.cms.blocks" finding="absolute" line="10" reason="import" />
+      <module_usage name="smto_site.cms.models" finding="absolute" line="11" reason="import" />
+    </module_usages>
+  </module>
+  <module name="smto_site.cms.migrations" kind="CompiledPythonPackage" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/08bd9e98075669e504f26057294f2daa184afb6f05fbd0ede9c717d681c85bae/smto_site/cms/migrations/__init__.py">
+    <optimization-time pass="1" time="0.0006" micro_passes="2" />
+    <optimization-time pass="2" time="0.0003" micro_passes="1" />
+    <code-generation-time time="0.0022" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="12728" />
+      <cpu system-cpu-time="0.0377" user-cpu-time="0.2514" />
+      <memory memory-max-rss-kb="42552" />
+      <system-events context-switches-involuntary="0" context-switches-voluntary="13" disk-input-blocks="0" disk-output-blocks="32" page-faults-major="0" page-faults-minor="7294" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="os" finding="excluded" line="1" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+    </module_usages>
+  </module>
+  <module name="smto_site.cms.migrations.0001_initial" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/08bd9e98075669e504f26057294f2daa184afb6f05fbd0ede9c717d681c85bae/smto_site/cms/migrations/0001_initial.py">
+    <optimization-time pass="1" time="0.0071" micro_passes="2" max_branch_merge="9" merged_total="57" />
+    <optimization-time pass="2" time="0.0040" micro_passes="1" max_branch_merge="9" merged_total="28" />
+    <code-generation-time time="0.0481" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="96560" />
+      <cpu system-cpu-time="0.0923" user-cpu-time="2.3885" />
+      <memory memory-max-rss-kb="90536" />
+      <system-events context-switches-involuntary="8" context-switches-voluntary="24" disk-input-blocks="0" disk-output-blocks="192" page-faults-major="0" page-faults-minor="27798" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="django.db.models.deletion" finding="not-found" line="4" reason="import" />
+      <module_usage name="django.utils.timezone" finding="not-found" line="5" reason="import" />
+      <module_usage name="wagtail.fields" finding="not-found" line="6" reason="import" />
+      <module_usage name="django.db" finding="not-found" line="7" reason="import" />
+      <module_usage name="smto_site.cms.blocks" finding="absolute" line="9" reason="import" />
+      <module_usage name="smto_site.cms.models" finding="absolute" line="10" reason="import" />
+    </module_usages>
+  </module>
+  <module name="smto_site.cms.migrations.0002_homepage_demo_duration_homepage_demo_label_and_more" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/08bd9e98075669e504f26057294f2daa184afb6f05fbd0ede9c717d681c85bae/smto_site/cms/migrations/0002_homepage_demo_duration_homepage_demo_label_and_more.py">
+    <optimization-time pass="1" time="0.0030" micro_passes="2" max_branch_merge="8" merged_total="53" />
+    <optimization-time pass="2" time="0.0015" micro_passes="1" max_branch_merge="8" merged_total="26" />
+    <code-generation-time time="0.0068" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="34400" />
+      <cpu system-cpu-time="0.0389" user-cpu-time="0.5713" />
+      <memory memory-max-rss-kb="53848" />
+      <system-events context-switches-involuntary="4" context-switches-voluntary="23" disk-input-blocks="0" disk-output-blocks="72" page-faults-major="0" page-faults-minor="10965" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="django.db" finding="not-found" line="4" reason="import" />
+    </module_usages>
+  </module>
+  <module name="smto_site.cms.models" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/08bd9e98075669e504f26057294f2daa184afb6f05fbd0ede9c717d681c85bae/smto_site/cms/models.py">
+    <optimization-time pass="1" time="0.0312" micro_passes="4" max_branch_merge="18" merged_total="561" />
+    <optimization-time pass="2" time="0.0086" micro_passes="1" max_branch_merge="18" merged_total="136" />
+    <code-generation-time time="0.0256" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="103896" />
+      <cpu system-cpu-time="0.0781" user-cpu-time="2.1151" />
+      <memory memory-max-rss-kb="87456" />
+      <system-events context-switches-involuntary="6" context-switches-voluntary="39" disk-input-blocks="0" disk-output-blocks="208" page-faults-major="0" page-faults-minor="23795" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="django.core.exceptions" finding="not-found" line="3" reason="import" />
+      <module_usage name="django.db" finding="not-found" line="4" reason="import" />
+      <module_usage name="django.utils" finding="not-found" line="5" reason="import" />
+      <module_usage name="wagtail.admin.panels" finding="not-found" line="6" reason="import" />
+      <module_usage name="wagtail.fields" finding="not-found" line="7" reason="import" />
+      <module_usage name="wagtail.models" finding="not-found" line="8" reason="import" />
+      <module_usage name="smto_site.cms.blocks" finding="relative" line="10" reason="import" />
+      <module_usage name="smto_site.cms.publishing" finding="relative" line="15" reason="import" />
+    </module_usages>
+  </module>
+  <module name="smto_site.cms.publishing" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/08bd9e98075669e504f26057294f2daa184afb6f05fbd0ede9c717d681c85bae/smto_site/cms/publishing.py">
+    <optimization-time pass="1" time="0.2027" micro_passes="5" max_branch_merge="28" merged_total="2224" />
+    <optimization-time pass="2" time="0.0283" micro_passes="1" max_branch_merge="26" merged_total="431" />
+    <code-generation-time time="0.0661" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="250232" />
+      <cpu system-cpu-time="0.1258" user-cpu-time="4.4692" />
+      <memory memory-max-rss-kb="126076" />
+      <system-events context-switches-involuntary="18" context-switches-voluntary="89" disk-input-blocks="0" disk-output-blocks="496" page-faults-major="0" page-faults-minor="32450" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="base64" finding="excluded" line="3" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="hashlib" finding="excluded" line="4" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="json" finding="excluded" line="5" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="logging" finding="excluded" line="6" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="os" finding="excluded" line="7" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="tempfile" finding="excluded" line="8" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="time" finding="absolute" line="9" reason="import" />
+      <module_usage name="io" finding="excluded" line="10" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="xml.etree.ElementTree" finding="absolute" line="11" reason="import" />
+      <module_usage name="nh3" finding="not-found" line="13" reason="import" />
+      <module_usage name="django.conf" finding="not-found" line="14" reason="import" />
+      <module_usage name="django.db" finding="not-found" line="15" reason="import" />
+      <module_usage name="django.http" finding="not-found" line="16" reason="import" />
+      <module_usage name="markdown_it" finding="not-found" line="17" reason="import" />
+      <module_usage name="markupsafe" finding="not-found" line="18" reason="import" />
+      <module_usage name="smto_site.config" finding="absolute" line="20" reason="import" />
+      <module_usage name="smto_site.discovery" finding="absolute" line="21" reason="import" />
+      <module_usage name="smto_site.pages" finding="absolute" line="22" reason="import" />
+      <module_usage name="smto_site.pages" finding="absolute" line="23" reason="import" />
+      <module_usage name="smto_site.visuals" finding="absolute" line="24" reason="import" />
+      <module_usage name="smto_site.cms.blocks" finding="relative" line="26" reason="import" />
+      <module_usage name="django.core.management" finding="not-found" line="240" reason="import" />
+      <module_usage name="wagtail.models" finding="not-found" line="241" reason="import" />
+      <module_usage name="smto_site.cms.models" finding="relative" line="243" reason="import" />
+      <module_usage name="smto_site.cms.models" finding="relative" line="329" reason="import" />
+    </module_usages>
+  </module>
+  <module name="smto_site.cms.security" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/08bd9e98075669e504f26057294f2daa184afb6f05fbd0ede9c717d681c85bae/smto_site/cms/security.py">
+    <optimization-time pass="1" time="0.0266" micro_passes="4" max_branch_merge="10" merged_total="433" />
+    <optimization-time pass="2" time="0.0055" micro_passes="1" max_branch_merge="8" merged_total="101" />
+    <code-generation-time time="0.0163" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="74728" />
+      <cpu system-cpu-time="0.0670" user-cpu-time="1.1993" />
+      <memory memory-max-rss-kb="65040" />
+      <system-events context-switches-involuntary="6" context-switches-voluntary="44" disk-input-blocks="0" disk-output-blocks="152" page-faults-major="0" page-faults-minor="14149" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="ipaddress" finding="excluded" line="3" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="os" finding="excluded" line="4" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="django.http" finding="not-found" line="6" reason="import" />
+    </module_usages>
+  </module>
+  <module name="smto_site.cms.settings" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/08bd9e98075669e504f26057294f2daa184afb6f05fbd0ede9c717d681c85bae/smto_site/cms/settings.py">
+    <optimization-time pass="1" time="0.0097" micro_passes="4" max_branch_merge="3" merged_total="60" />
+    <optimization-time pass="2" time="0.0019" micro_passes="1" max_branch_merge="3" merged_total="14" />
+    <code-generation-time time="0.0109" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="43136" />
+      <cpu system-cpu-time="0.0465" user-cpu-time="0.6189" />
+      <memory memory-max-rss-kb="56928" />
+      <system-events context-switches-involuntary="2" context-switches-voluntary="22" disk-input-blocks="0" disk-output-blocks="88" page-faults-major="0" page-faults-minor="11798" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="os" finding="excluded" line="3" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="datetime" finding="excluded" line="4" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="pathlib" finding="excluded" line="5" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="urllib.parse" finding="absolute" line="6" reason="import" />
+    </module_usages>
+  </module>
+  <module name="smto_site.cms.urls" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/08bd9e98075669e504f26057294f2daa184afb6f05fbd0ede9c717d681c85bae/smto_site/cms/urls.py">
+    <optimization-time pass="1" time="0.0032" micro_passes="2" max_branch_merge="2" merged_total="4" />
+    <optimization-time pass="2" time="0.0011" micro_passes="1" max_branch_merge="2" merged_total="2" />
+    <code-generation-time time="0.0024" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="15248" />
+      <cpu system-cpu-time="0.0301" user-cpu-time="0.2804" />
+      <memory memory-max-rss-kb="43396" />
+      <system-events context-switches-involuntary="2" context-switches-voluntary="14" disk-input-blocks="0" disk-output-blocks="32" page-faults-major="0" page-faults-minor="7559" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="django.urls" finding="not-found" line="1" reason="import" />
+      <module_usage name="wagtail.admin" finding="not-found" line="2" reason="import" />
+      <module_usage name="smto_site.cms.views" finding="relative" line="4" reason="import" />
+    </module_usages>
+  </module>
+  <module name="smto_site.cms.views" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/08bd9e98075669e504f26057294f2daa184afb6f05fbd0ede9c717d681c85bae/smto_site/cms/views.py">
+    <optimization-time pass="1" time="0.0052" micro_passes="3" max_branch_merge="4" merged_total="21" />
+    <optimization-time pass="2" time="0.0020" micro_passes="1" max_branch_merge="4" merged_total="7" />
+    <code-generation-time time="0.0043" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="24608" />
+      <cpu system-cpu-time="0.0392" user-cpu-time="0.3971" />
+      <memory memory-max-rss-kb="47148" />
+      <system-events context-switches-involuntary="2" context-switches-voluntary="20" disk-input-blocks="0" disk-output-blocks="56" page-faults-major="0" page-faults-minor="8712" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="pathlib" finding="excluded" line="1" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="django.conf" finding="not-found" line="3" reason="import" />
+      <module_usage name="django.contrib.auth.decorators" finding="not-found" line="4" reason="import" />
+      <module_usage name="django.http" finding="not-found" line="5" reason="import" />
+    </module_usages>
+  </module>
+  <module name="smto_site.config" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/08bd9e98075669e504f26057294f2daa184afb6f05fbd0ede9c717d681c85bae/smto_site/config.py">
+    <optimization-time pass="1" time="0.0225" micro_passes="4" max_branch_merge="19" merged_total="396" />
+    <optimization-time pass="2" time="0.0043" micro_passes="1" max_branch_merge="14" merged_total="97" />
+    <code-generation-time time="0.0214" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="97648" />
-      <cpu system-cpu-time="0.0779" user-cpu-time="1.5193" />
-      <memory memory-max-rss-kb="72952" />
-      <system-events context-switches-involuntary="9" context-switches-voluntary="33" disk-input-blocks="0" disk-output-blocks="192" page-faults-major="0" page-faults-minor="17119" />
+      <cpu system-cpu-time="0.0741" user-cpu-time="1.5211" />
+      <memory memory-max-rss-kb="72724" />
+      <system-events context-switches-involuntary="3" context-switches-voluntary="33" disk-input-blocks="0" disk-output-blocks="192" page-faults-major="0" page-faults-minor="17195" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="__future__" finding="excluded" line="21" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -92,16 +455,38 @@
       <module_usage name="datetime" finding="excluded" line="128" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
     </module_usages>
   </module>
-  <module name="smto_site.content" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/smto_site/content.py">
-    <optimization-time pass="1" time="0.0658" micro_passes="5" max_branch_merge="20" merged_total="1294" />
-    <optimization-time pass="2" time="0.0109" micro_passes="1" max_branch_merge="20" merged_total="255" />
-    <code-generation-time time="0.0358" />
+  <module name="smto_site.container" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/08bd9e98075669e504f26057294f2daa184afb6f05fbd0ede9c717d681c85bae/smto_site/container.py">
+    <optimization-time pass="1" time="0.0543" micro_passes="5" max_branch_merge="13" merged_total="995" />
+    <optimization-time pass="2" time="0.0096" micro_passes="1" max_branch_merge="12" merged_total="198" />
+    <code-generation-time time="0.0206" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="92848" />
+      <cpu system-cpu-time="0.0774" user-cpu-time="1.7475" />
+      <memory memory-max-rss-kb="79300" />
+      <system-events context-switches-involuntary="6" context-switches-voluntary="36" disk-input-blocks="0" disk-output-blocks="184" page-faults-major="0" page-faults-minor="18156" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="argparse" finding="excluded" line="14" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="json" finding="excluded" line="15" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="os" finding="excluded" line="16" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="signal" finding="excluded" line="17" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="subprocess" finding="excluded" line="18" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="sys" finding="absolute" line="19" reason="import" />
+      <module_usage name="time" finding="absolute" line="20" reason="import" />
+      <module_usage name="urllib.request" finding="absolute" line="21" reason="import" />
+    </module_usages>
+  </module>
+  <module name="smto_site.content" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/08bd9e98075669e504f26057294f2daa184afb6f05fbd0ede9c717d681c85bae/smto_site/content.py">
+    <optimization-time pass="1" time="0.0702" micro_passes="5" max_branch_merge="20" merged_total="1294" />
+    <optimization-time pass="2" time="0.0135" micro_passes="1" max_branch_merge="20" merged_total="255" />
+    <code-generation-time time="0.0380" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="155664" />
-      <cpu system-cpu-time="0.1021" user-cpu-time="2.5760" />
-      <memory memory-max-rss-kb="91612" />
-      <system-events context-switches-involuntary="7" context-switches-voluntary="50" disk-input-blocks="0" disk-output-blocks="312" page-faults-major="0" page-faults-minor="22609" />
+      <cpu system-cpu-time="0.0792" user-cpu-time="2.6988" />
+      <memory memory-max-rss-kb="90916" />
+      <system-events context-switches-involuntary="33" context-switches-voluntary="49" disk-input-blocks="0" disk-output-blocks="312" page-faults-major="0" page-faults-minor="22366" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="__future__" finding="excluded" line="21" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -116,16 +501,16 @@
       <module_usage name="smto_site.markdown" finding="absolute" line="33" reason="import" />
     </module_usages>
   </module>
-  <module name="smto_site.discovery" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/smto_site/discovery.py">
-    <optimization-time pass="1" time="0.0226" micro_passes="5" max_branch_merge="10" merged_total="455" />
-    <optimization-time pass="2" time="0.0035" micro_passes="1" max_branch_merge="9" merged_total="92" />
-    <code-generation-time time="0.0127" />
+  <module name="smto_site.discovery" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/08bd9e98075669e504f26057294f2daa184afb6f05fbd0ede9c717d681c85bae/smto_site/discovery.py">
+    <optimization-time pass="1" time="0.0192" micro_passes="4" max_branch_merge="10" merged_total="316" />
+    <optimization-time pass="2" time="0.0038" micro_passes="1" max_branch_merge="9" merged_total="78" />
+    <code-generation-time time="0.0121" />
     <c-compilation-resources>
       <c-cache tech="none" />
-      <object-file size="57160" />
-      <cpu system-cpu-time="0.0621" user-cpu-time="0.9696" />
-      <memory memory-max-rss-kb="60796" />
-      <system-events context-switches-involuntary="2" context-switches-voluntary="31" disk-input-blocks="0" disk-output-blocks="112" page-faults-major="0" page-faults-minor="13450" />
+      <object-file size="52280" />
+      <cpu system-cpu-time="0.0573" user-cpu-time="0.8844" />
+      <memory memory-max-rss-kb="59924" />
+      <system-events context-switches-involuntary="1" context-switches-voluntary="26" disk-input-blocks="0" disk-output-blocks="104" page-faults-major="0" page-faults-minor="12314" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="datetime" finding="excluded" line="21" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -133,16 +518,59 @@
       <module_usage name="xml.etree.ElementTree" finding="absolute" line="23" reason="import" />
     </module_usages>
   </module>
-  <module name="smto_site.markdown" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/smto_site/markdown.py">
-    <optimization-time pass="1" time="0.0442" micro_passes="4" max_branch_merge="21" merged_total="909" />
-    <optimization-time pass="2" time="0.0088" micro_passes="1" max_branch_merge="20" merged_total="227" />
-    <code-generation-time time="0.0267" />
+  <module name="smto_site.faq" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/08bd9e98075669e504f26057294f2daa184afb6f05fbd0ede9c717d681c85bae/smto_site/faq.py">
+    <optimization-time pass="1" time="0.0258" micro_passes="4" max_branch_merge="12" merged_total="513" />
+    <optimization-time pass="2" time="0.0061" micro_passes="1" max_branch_merge="11" merged_total="127" />
+    <code-generation-time time="0.0190" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="86520" />
+      <cpu system-cpu-time="0.0672" user-cpu-time="1.6710" />
+      <memory memory-max-rss-kb="76892" />
+      <system-events context-switches-involuntary="6" context-switches-voluntary="30" disk-input-blocks="0" disk-output-blocks="176" page-faults-major="0" page-faults-minor="17762" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="pathlib" finding="excluded" line="22" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="typing" finding="excluded" line="23" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="pydantic" finding="not-found" line="25" reason="import" />
+      <module_usage name="smto_legal" finding="absolute" line="27" reason="import" />
+      <module_usage name="smto_legal.usage_policy" finding="not-found" line="27" reason="import fromlist" />
+      <module_usage name="smto_site.config" finding="absolute" line="28" reason="import" />
+      <module_usage name="smto_site.markdown" finding="absolute" line="29" reason="import" />
+    </module_usages>
+  </module>
+  <module name="smto_site.legal" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/08bd9e98075669e504f26057294f2daa184afb6f05fbd0ede9c717d681c85bae/smto_site/legal.py">
+    <optimization-time pass="1" time="0.0109" micro_passes="4" max_branch_merge="10" merged_total="132" />
+    <optimization-time pass="2" time="0.0029" micro_passes="1" max_branch_merge="10" merged_total="33" />
+    <code-generation-time time="0.0070" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="42024" />
+      <cpu system-cpu-time="0.0523" user-cpu-time="0.7704" />
+      <memory memory-max-rss-kb="59176" />
+      <system-events context-switches-involuntary="2" context-switches-voluntary="23" disk-input-blocks="0" disk-output-blocks="88" page-faults-major="0" page-faults-minor="12046" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="smto_legal" finding="absolute" line="2" reason="import" />
+      <module_usage name="smto_legal.current_eula_version" finding="not-found" line="2" reason="import fromlist" />
+      <module_usage name="smto_legal.document_bytes" finding="not-found" line="2" reason="import fromlist" />
+      <module_usage name="smto_legal.document_sha256" finding="not-found" line="2" reason="import fromlist" />
+      <module_usage name="smto_legal.license_version" finding="not-found" line="2" reason="import fromlist" />
+      <module_usage name="smto_legal.usage_policy" finding="not-found" line="2" reason="import fromlist" />
+      <module_usage name="smto_site.pages" finding="absolute" line="3" reason="import" />
+      <module_usage name="smto_site.markdown" finding="absolute" line="4" reason="import" />
+    </module_usages>
+  </module>
+  <module name="smto_site.markdown" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/08bd9e98075669e504f26057294f2daa184afb6f05fbd0ede9c717d681c85bae/smto_site/markdown.py">
+    <optimization-time pass="1" time="0.0418" micro_passes="4" max_branch_merge="21" merged_total="909" />
+    <optimization-time pass="2" time="0.0109" micro_passes="1" max_branch_merge="20" merged_total="227" />
+    <code-generation-time time="0.0299" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="121368" />
-      <cpu system-cpu-time="0.0766" user-cpu-time="2.0284" />
-      <memory memory-max-rss-kb="80956" />
-      <system-events context-switches-involuntary="2" context-switches-voluntary="32" disk-input-blocks="0" disk-output-blocks="240" page-faults-major="0" page-faults-minor="19949" />
+      <cpu system-cpu-time="0.0883" user-cpu-time="2.1327" />
+      <memory memory-max-rss-kb="80492" />
+      <system-events context-switches-involuntary="41" context-switches-voluntary="32" disk-input-blocks="0" disk-output-blocks="240" page-faults-major="0" page-faults-minor="19866" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="__future__" finding="excluded" line="21" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -154,16 +582,16 @@
       <module_usage name="smto_site.config" finding="absolute" line="30" reason="import" />
     </module_usages>
   </module>
-  <module name="smto_site.middleware" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/smto_site/middleware.py">
-    <optimization-time pass="1" time="0.0124" micro_passes="4" max_branch_merge="8" merged_total="168" />
-    <optimization-time pass="2" time="0.0034" micro_passes="1" max_branch_merge="7" merged_total="35" />
-    <code-generation-time time="0.0103" />
+  <module name="smto_site.middleware" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/08bd9e98075669e504f26057294f2daa184afb6f05fbd0ede9c717d681c85bae/smto_site/middleware.py">
+    <optimization-time pass="1" time="0.0134" micro_passes="4" max_branch_merge="8" merged_total="168" />
+    <optimization-time pass="2" time="0.0038" micro_passes="1" max_branch_merge="7" merged_total="35" />
+    <code-generation-time time="0.0116" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="49624" />
-      <cpu system-cpu-time="0.0551" user-cpu-time="0.7499" />
-      <memory memory-max-rss-kb="56700" />
-      <system-events context-switches-involuntary="3" context-switches-voluntary="26" disk-input-blocks="0" disk-output-blocks="104" page-faults-major="0" page-faults-minor="11479" />
+      <cpu system-cpu-time="0.0510" user-cpu-time="0.7790" />
+      <memory memory-max-rss-kb="56516" />
+      <system-events context-switches-involuntary="4" context-switches-voluntary="26" disk-input-blocks="0" disk-output-blocks="104" page-faults-major="0" page-faults-minor="11468" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="logging" finding="excluded" line="21" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -172,39 +600,43 @@
       <module_usage name="starlette.datastructures" finding="not-found" line="25" reason="import" />
     </module_usages>
   </module>
-  <module name="smto_site.pages" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/smto_site/pages.py">
-    <optimization-time pass="1" time="0.0271" micro_passes="4" max_branch_merge="15" merged_total="522" />
-    <optimization-time pass="2" time="0.0050" micro_passes="1" max_branch_merge="13" merged_total="104" />
-    <code-generation-time time="0.0199" />
+  <module name="smto_site.pages" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/08bd9e98075669e504f26057294f2daa184afb6f05fbd0ede9c717d681c85bae/smto_site/pages.py">
+    <optimization-time pass="1" time="0.0348" micro_passes="4" max_branch_merge="17" merged_total="590" />
+    <optimization-time pass="2" time="0.0073" micro_passes="1" max_branch_merge="14" merged_total="120" />
+    <code-generation-time time="0.0286" />
     <c-compilation-resources>
       <c-cache tech="none" />
-      <object-file size="101680" />
-      <cpu system-cpu-time="0.0680" user-cpu-time="1.5003" />
-      <memory memory-max-rss-kb="73096" />
-      <system-events context-switches-involuntary="11" context-switches-voluntary="38" disk-input-blocks="0" disk-output-blocks="200" page-faults-major="0" page-faults-minor="16577" />
+      <object-file size="118200" />
+      <cpu system-cpu-time="0.0859" user-cpu-time="1.8122" />
+      <memory memory-max-rss-kb="76920" />
+      <system-events context-switches-involuntary="6" context-switches-voluntary="47" disk-input-blocks="0" disk-output-blocks="232" page-faults-major="0" page-faults-minor="18830" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="base64" finding="excluded" line="21" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
       <module_usage name="hashlib" finding="excluded" line="22" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
-      <module_usage name="dataclasses" finding="excluded" line="23" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
-      <module_usage name="jinja2" finding="not-found" line="25" reason="import" />
-      <module_usage name="jinja2.utils" finding="not-found" line="26" reason="import" />
-      <module_usage name="smto_site.config" finding="absolute" line="28" reason="import" />
-      <module_usage name="smto_site.markdown" finding="absolute" line="29" reason="import" />
-      <module_usage name="smto_site.middleware" finding="absolute" line="30" reason="import" />
-      <module_usage name="smto_site.visuals" finding="absolute" line="31" reason="import" />
+      <module_usage name="json" finding="excluded" line="23" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="os" finding="excluded" line="24" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="dataclasses" finding="excluded" line="25" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+      <module_usage name="jinja2" finding="not-found" line="27" reason="import" />
+      <module_usage name="jinja2.utils" finding="not-found" line="28" reason="import" />
+      <module_usage name="smto_site.config" finding="absolute" line="30" reason="import" />
+      <module_usage name="smto_legal" finding="absolute" line="31" reason="import" />
+      <module_usage name="smto_legal.usage_policy" finding="not-found" line="31" reason="import fromlist" />
+      <module_usage name="smto_site.markdown" finding="absolute" line="32" reason="import" />
+      <module_usage name="smto_site.middleware" finding="absolute" line="33" reason="import" />
+      <module_usage name="smto_site.visuals" finding="absolute" line="34" reason="import" />
     </module_usages>
   </module>
-  <module name="smto_site.releases" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/smto_site/releases.py">
-    <optimization-time pass="1" time="0.0541" micro_passes="4" max_branch_merge="17" merged_total="1230" />
-    <optimization-time pass="2" time="0.0113" micro_passes="1" max_branch_merge="17" merged_total="290" />
-    <code-generation-time time="0.0438" />
+  <module name="smto_site.releases" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/08bd9e98075669e504f26057294f2daa184afb6f05fbd0ede9c717d681c85bae/smto_site/releases.py">
+    <optimization-time pass="1" time="0.0629" micro_passes="4" max_branch_merge="18" merged_total="1234" />
+    <optimization-time pass="2" time="0.0138" micro_passes="1" max_branch_merge="18" merged_total="291" />
+    <code-generation-time time="0.0504" />
     <c-compilation-resources>
       <c-cache tech="none" />
-      <object-file size="176984" />
-      <cpu system-cpu-time="0.1039" user-cpu-time="3.1565" />
-      <memory memory-max-rss-kb="108240" />
-      <system-events context-switches-involuntary="5" context-switches-voluntary="68" disk-input-blocks="0" disk-output-blocks="352" page-faults-major="0" page-faults-minor="27079" />
+      <object-file size="179584" />
+      <cpu system-cpu-time="0.1068" user-cpu-time="3.1261" />
+      <memory memory-max-rss-kb="109092" />
+      <system-events context-switches-involuntary="26" context-switches-voluntary="66" disk-input-blocks="0" disk-output-blocks="352" page-faults-major="0" page-faults-minor="27998" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="__future__" finding="excluded" line="21" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -219,16 +651,31 @@
       <module_usage name="smto_site.config" finding="absolute" line="33" reason="import" />
     </module_usages>
   </module>
-  <module name="smto_site.search" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/smto_site/search.py">
-    <optimization-time pass="1" time="0.0410" micro_passes="5" max_branch_merge="7" merged_total="603" />
-    <optimization-time pass="2" time="0.0062" micro_passes="1" max_branch_merge="6" merged_total="116" />
-    <code-generation-time time="0.0166" />
+  <module name="smto_site.routing" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/08bd9e98075669e504f26057294f2daa184afb6f05fbd0ede9c717d681c85bae/smto_site/routing.py">
+    <optimization-time pass="1" time="0.0065" micro_passes="4" max_branch_merge="7" merged_total="122" />
+    <optimization-time pass="2" time="0.0015" micro_passes="1" max_branch_merge="7" merged_total="31" />
+    <code-generation-time time="0.0053" />
+    <c-compilation-resources>
+      <c-cache tech="none" />
+      <object-file size="33848" />
+      <cpu system-cpu-time="0.0491" user-cpu-time="0.6066" />
+      <memory memory-max-rss-kb="53968" />
+      <system-events context-switches-involuntary="4" context-switches-voluntary="22" disk-input-blocks="0" disk-output-blocks="72" page-faults-major="0" page-faults-minor="10625" />
+    </c-compilation-resources>
+    <module_usages>
+      <module_usage name="types" finding="excluded" line="3" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
+    </module_usages>
+  </module>
+  <module name="smto_site.search" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/08bd9e98075669e504f26057294f2daa184afb6f05fbd0ede9c717d681c85bae/smto_site/search.py">
+    <optimization-time pass="1" time="0.0411" micro_passes="5" max_branch_merge="7" merged_total="603" />
+    <optimization-time pass="2" time="0.0072" micro_passes="1" max_branch_merge="6" merged_total="116" />
+    <code-generation-time time="0.0179" />
     <c-compilation-resources>
       <c-cache tech="none" />
       <object-file size="78080" />
-      <cpu system-cpu-time="0.0540" user-cpu-time="1.2424" />
-      <memory memory-max-rss-kb="65256" />
-      <system-events context-switches-involuntary="4" context-switches-voluntary="52" disk-input-blocks="0" disk-output-blocks="160" page-faults-major="0" page-faults-minor="14669" />
+      <cpu system-cpu-time="0.0587" user-cpu-time="1.2483" />
+      <memory memory-max-rss-kb="65172" />
+      <system-events context-switches-involuntary="13" context-switches-voluntary="48" disk-input-blocks="0" disk-output-blocks="160" page-faults-major="0" page-faults-minor="14134" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="re" finding="excluded" line="21" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -237,16 +684,16 @@
       <module_usage name="smto_site.content" finding="absolute" line="24" reason="import" />
     </module_usages>
   </module>
-  <module name="smto_site.validation" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/smto_site/validation.py">
-    <optimization-time pass="1" time="0.0593" micro_passes="4" max_branch_merge="19" merged_total="1063" />
-    <optimization-time pass="2" time="0.0108" micro_passes="1" max_branch_merge="19" merged_total="247" />
-    <code-generation-time time="0.0417" />
+  <module name="smto_site.validation" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/08bd9e98075669e504f26057294f2daa184afb6f05fbd0ede9c717d681c85bae/smto_site/validation.py">
+    <optimization-time pass="1" time="0.0676" micro_passes="4" max_branch_merge="21" merged_total="1174" />
+    <optimization-time pass="2" time="0.0142" micro_passes="1" max_branch_merge="21" merged_total="274" />
+    <code-generation-time time="0.0489" />
     <c-compilation-resources>
       <c-cache tech="none" />
-      <object-file size="162776" />
-      <cpu system-cpu-time="0.1094" user-cpu-time="2.9203" />
-      <memory memory-max-rss-kb="98892" />
-      <system-events context-switches-involuntary="8" context-switches-voluntary="59" disk-input-blocks="0" disk-output-blocks="320" page-faults-major="0" page-faults-minor="25476" />
+      <object-file size="179656" />
+      <cpu system-cpu-time="0.1199" user-cpu-time="3.1832" />
+      <memory memory-max-rss-kb="109632" />
+      <system-events context-switches-involuntary="18" context-switches-voluntary="65" disk-input-blocks="0" disk-output-blocks="352" page-faults-major="0" page-faults-minor="29606" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="json" finding="excluded" line="21" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -257,19 +704,19 @@
       <module_usage name="urllib.parse" finding="absolute" line="25" reason="import" />
       <module_usage name="smto_site.config" finding="absolute" line="27" reason="import" />
       <module_usage name="smto_site.visuals" finding="absolute" line="28" reason="import" />
-      <module_usage name="smto_site.releases" finding="absolute" line="163" reason="import" />
+      <module_usage name="smto_site.releases" finding="absolute" line="193" reason="import" />
     </module_usages>
   </module>
-  <module name="smto_site.visuals" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/smto_site/visuals.py">
-    <optimization-time pass="1" time="0.0371" micro_passes="5" max_branch_merge="8" merged_total="703" />
-    <optimization-time pass="2" time="0.0048" micro_passes="1" max_branch_merge="7" merged_total="126" />
-    <code-generation-time time="0.0212" />
+  <module name="smto_site.visuals" kind="CompiledPythonModule" usage="root_module" reason="Root module" source_path="${cwd}/.build/compiled/targets/linux-x86_64/sources/08bd9e98075669e504f26057294f2daa184afb6f05fbd0ede9c717d681c85bae/smto_site/visuals.py">
+    <optimization-time pass="1" time="0.0416" micro_passes="5" max_branch_merge="8" merged_total="784" />
+    <optimization-time pass="2" time="0.0065" micro_passes="1" max_branch_merge="7" merged_total="142" />
+    <code-generation-time time="0.0242" />
     <c-compilation-resources>
       <c-cache tech="none" />
-      <object-file size="83120" />
-      <cpu system-cpu-time="0.0671" user-cpu-time="1.4800" />
-      <memory memory-max-rss-kb="74316" />
-      <system-events context-switches-involuntary="2" context-switches-voluntary="32" disk-input-blocks="0" disk-output-blocks="168" page-faults-major="0" page-faults-minor="18140" />
+      <object-file size="91616" />
+      <cpu system-cpu-time="0.0722" user-cpu-time="1.5710" />
+      <memory memory-max-rss-kb="77892" />
+      <system-events context-switches-involuntary="8" context-switches-voluntary="41" disk-input-blocks="0" disk-output-blocks="184" page-faults-major="0" page-faults-minor="17952" />
     </c-compilation-resources>
     <module_usages>
       <module_usage name="hashlib" finding="excluded" line="7" reason="import" exclusion_reason="Not following into stdlib unless standalone or requested to follow into stdlib." />
@@ -280,44 +727,67 @@
     </module_usages>
   </module>
   <linker-resources>
-    <cpu system-cpu-time="0.0190" user-cpu-time="0.0330" />
-    <memory memory-max-rss-kb="45172" />
-    <system-events context-switches-involuntary="1" context-switches-voluntary="7" disk-input-blocks="0" disk-output-blocks="3448" page-faults-major="0" page-faults-minor="4226" />
+    <cpu system-cpu-time="0.0228" user-cpu-time="0.0404" />
+    <memory memory-max-rss-kb="47344" />
+    <system-events context-switches-involuntary="1" context-switches-voluntary="7" disk-input-blocks="0" disk-output-blocks="4952" page-faults-major="0" page-faults-minor="5005" />
   </linker-resources>
   <performance>
-    <memory_usage name="after_launch" value="61964288" />
-    <memory_usage name="before_c_code_generation" value="64782336" />
-    <memory_usage name="before_running_scons" value="68321280" />
+    <memory_usage name="after_launch" value="405413888" />
+    <memory_usage name="before_c_code_generation" value="405413888" />
+    <memory_usage name="before_running_scons" value="405413888" />
   </performance>
-  <data_composer blob_size="88647" total="1808">
+  <data_composer blob_size="141049" total="3455">
     <module_data filename="__bytecode.const" blob_name=".bytecode" blob_size="3" input_size="0" />
     <module_data filename="__constants.const" blob_name="" blob_size="996" input_size="2454" />
-    <module_data filename="module.smto_site.app.const" blob_name="smto_site.app" blob_size="8468" input_size="13215" />
+    <module_data filename="module.smto_site.app.const" blob_name="smto_site.app" blob_size="8556" input_size="13635" />
     <module_data filename="module.smto_site.cli.const" blob_name="smto_site.cli" blob_size="1546" input_size="2794" />
+    <module_data filename="module.smto_site.cms.apps.const" blob_name="smto_site.cms.apps" blob_size="353" input_size="1346" />
+    <module_data filename="module.smto_site.cms.asgi.const" blob_name="smto_site.cms.asgi" blob_size="1472" input_size="2969" />
+    <module_data filename="module.smto_site.cms.blocks.const" blob_name="smto_site.cms.blocks" blob_size="2629" input_size="5730" />
+    <module_data filename="module.smto_site.cms.const" blob_name="smto_site.cms" blob_size="262" input_size="1015" />
+    <module_data filename="module.smto_site.cms.manage.const" blob_name="smto_site.cms.manage" blob_size="343" input_size="1215" />
+    <module_data filename="module.smto_site.cms.management.commands.bootstrap_admin.const" blob_name="smto_site.cms.management.commands.bootstrap_admin" blob_size="1252" input_size="3051" />
+    <module_data filename="module.smto_site.cms.management.commands.const" blob_name="smto_site.cms.management.commands" blob_size="379" input_size="1213" />
+    <module_data filename="module.smto_site.cms.management.commands.publish_snapshot.const" blob_name="smto_site.cms.management.commands.publish_snapshot" blob_size="867" input_size="2309" />
+    <module_data filename="module.smto_site.cms.management.commands.seed_website.const" blob_name="smto_site.cms.management.commands.seed_website" blob_size="1743" input_size="3574" />
+    <module_data filename="module.smto_site.cms.management.const" blob_name="smto_site.cms.management" blob_size="275" input_size="1064" />
+    <module_data filename="module.smto_site.cms.migrations.0001_initial.const" blob_name="smto_site.cms.migrations.0001_initial" blob_size="20829" input_size="25007" />
+    <module_data filename="module.smto_site.cms.migrations.0002_homepage_demo_duration_homepage_demo_label_and_more.const" blob_name="smto_site.cms.migrations.0002_homepage_demo_duration_homepage_demo_label_and_more" blob_size="980" input_size="2358" />
+    <module_data filename="module.smto_site.cms.migrations.const" blob_name="smto_site.cms.migrations" blob_size="275" input_size="1064" />
+    <module_data filename="module.smto_site.cms.models.const" blob_name="smto_site.cms.models" blob_size="2304" input_size="4837" />
+    <module_data filename="module.smto_site.cms.publishing.const" blob_name="smto_site.cms.publishing" blob_size="5254" input_size="10270" />
+    <module_data filename="module.smto_site.cms.security.const" blob_name="smto_site.cms.security" blob_size="1753" input_size="3906" />
+    <module_data filename="module.smto_site.cms.settings.const" blob_name="smto_site.cms.settings" blob_size="3998" input_size="6542" />
+    <module_data filename="module.smto_site.cms.urls.const" blob_name="smto_site.cms.urls" blob_size="211" input_size="1001" />
+    <module_data filename="module.smto_site.cms.views.const" blob_name="smto_site.cms.views" blob_size="427" input_size="1462" />
     <module_data filename="module.smto_site.config.const" blob_name="smto_site.config" blob_size="3943" input_size="6529" />
     <module_data filename="module.smto_site.const" blob_name="smto_site" blob_size="826" input_size="1638" />
-    <module_data filename="module.smto_site.content.const" blob_name="smto_site.content" blob_size="4527" input_size="8342" />
-    <module_data filename="module.smto_site.discovery.const" blob_name="smto_site.discovery" blob_size="2770" input_size="4722" />
+    <module_data filename="module.smto_site.container.const" blob_name="smto_site.container" blob_size="2412" input_size="4470" />
+    <module_data filename="module.smto_site.content.const" blob_name="smto_site.content" blob_size="4533" input_size="8349" />
+    <module_data filename="module.smto_site.discovery.const" blob_name="smto_site.discovery" blob_size="2557" input_size="4362" />
+    <module_data filename="module.smto_site.faq.const" blob_name="smto_site.faq" blob_size="2294" input_size="4208" />
+    <module_data filename="module.smto_site.legal.const" blob_name="smto_site.legal" blob_size="2478" input_size="3699" />
     <module_data filename="module.smto_site.markdown.const" blob_name="smto_site.markdown" blob_size="3237" input_size="6113" />
     <module_data filename="module.smto_site.middleware.const" blob_name="smto_site.middleware" blob_size="2237" input_size="3904" />
-    <module_data filename="module.smto_site.pages.const" blob_name="smto_site.pages" blob_size="17107" input_size="19830" />
-    <module_data filename="module.smto_site.releases.const" blob_name="smto_site.releases" blob_size="6541" input_size="11405" />
+    <module_data filename="module.smto_site.pages.const" blob_name="smto_site.pages" blob_size="13995" input_size="17230" />
+    <module_data filename="module.smto_site.releases.const" blob_name="smto_site.releases" blob_size="6798" input_size="11767" />
+    <module_data filename="module.smto_site.routing.const" blob_name="smto_site.routing" blob_size="889" input_size="1943" />
     <module_data filename="module.smto_site.search.const" blob_name="smto_site.search" blob_size="2074" input_size="4418" />
-    <module_data filename="module.smto_site.validation.const" blob_name="smto_site.validation" blob_size="4609" input_size="8613" />
-    <module_data filename="module.smto_site.visuals.const" blob_name="smto_site.visuals" blob_size="29468" input_size="32467" />
+    <module_data filename="module.smto_site.validation.const" blob_name="smto_site.validation" blob_size="5328" input_size="9596" />
+    <module_data filename="module.smto_site.visuals.const" blob_name="smto_site.visuals" blob_size="29709" input_size="32978" />
   </data_composer>
   <performance-totals>
-    <optimization-time pass="1" time="0.4592" module_count="13" />
-    <optimization-time pass="2" time="0.0862" module_count="13" />
-    <optimization-time pass="all" time="0.5454" module_count="13" />
-    <code-generation-time time="0.3470" module_count="13" />
-    <c-compilation-time user-cpu-time="23.6193" system-cpu-time="1.0157" module_count="13" />
-    <c-linking-time user-cpu-time="0.0330" system-cpu-time="0.0190" />
+    <optimization-time pass="1" time="1.0024" module_count="36" />
+    <optimization-time pass="2" time="0.2163" module_count="36" />
+    <optimization-time pass="all" time="1.2187" module_count="36" />
+    <code-generation-time time="0.7208" module_count="36" />
+    <c-compilation-time user-cpu-time="48.6968" system-cpu-time="2.3332" module_count="36" />
+    <c-linking-time user-cpu-time="0.0404" system-cpu-time="0.0228" />
   </performance-totals>
-  <python_binary filename="${cwd}/.build/compiled/targets/linux-x86_64/modules/smto_site/smto_site.cpython-312-x86_64-linux-gnu.so" backend_resource_mode="incbin" reproducible="yes" size="1755704" />
+  <python_binary filename="${cwd}/.build/compiled/targets/linux-x86_64/modules/smto_site/smto_site.cpython-312-x86_64-linux-gnu.so" backend_resource_mode="incbin" reproducible="yes" size="2525208" />
   <command_line>
     <option value="--mode=module" />
-    <option value="/workspace/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f/smto_site" />
+    <option value="/workspace/.build/compiled/targets/linux-x86_64/sources/08bd9e98075669e504f26057294f2daa184afb6f05fbd0ede9c717d681c85bae/smto_site" />
     <option value="--include-package=smto_site" />
     <option value="--no-pyi-file" />
     <option value="--assume-yes-for-downloads" />
@@ -336,7 +806,7 @@
   <distributions />
   <python python_exe="${sys.prefix}/bin/python" python_flavor="Unknown" python_version="3.12.14" os_name="Linux" os_release="Ubuntu-Debian-22.04.5" arch_name="x86_64" filesystem_encoding="utf-8">
     <search_path>
-      <path value="${cwd}/.build/compiled/targets/linux-x86_64/sources/4a06d1fe60be3e0205727b286084b34704dec796656689f7e6c31f0dc2a2b78f" />
+      <path value="${cwd}/.build/compiled/targets/linux-x86_64/sources/08bd9e98075669e504f26057294f2daa184afb6f05fbd0ede9c717d681c85bae" />
       <path value="${cwd}" />
       <path value="${sys.real_prefix}/lib/python3.12" />
       <path value="${sys.real_prefix}/lib/python3.12/lib-dynload" />
