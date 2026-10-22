@@ -4,7 +4,7 @@
 
 This repository ships the **pre-built native binaries** for [OpenFabric](https://github.com/vinithbraj/openfabric) (also called **smTO** — *Simple Model Task Orchestrator*). Instead of installing Python, building everything from source, and configuring a virtual environment, you download a single executable per component and run it.
 
-- 🐧 **Linux x86_64** — `smto-server` and `smto-gateway` (self-contained executables) in `dist/compiled/linux-x86_64/`
+- 🐧 **Linux x86_64** — self-contained executables in `dist/compiled/linux-x86_64/`: the Server in two variants (`smto-server-inference`, `smto-server-external`), the Inference Portal (`smto-inference-portal`), and the Gateway (`smto-gateway`). See [The Linux binaries](#-linux-binaries-explained).
 - 🍎 **macOS x86_64** — `SMTO-server.zip` and `SMTO-gateway.zip` in `dist/compiled/macos-x86_64/`
 - ✅ Each artifact folder ships a machine-readable `manifest.json`, build logs, a license inventory, and an artifact SHA-256 so you can verify exactly what you downloaded.
 
@@ -48,16 +48,65 @@ USER → MODEL → TOOL → EXECUTION → REAL RESULT + RECEIPT → MODEL
 
 The model drives the conversation; the runtime guarantees that what the model *says* it did actually *happened* — safely, with authorization checks, scoped credentials, and a durable record it can look back on later.
 
-### Two moving parts
+### The moving parts
 
-OpenFabric runs as two cooperating services:
+OpenFabric runs as three cooperating pieces. On Linux you get a separate binary for each:
 
 | Component | What it is | Default port | This repo's binary |
 | --- | --- | --- | --- |
-| **Server** | The API + web UI you interact with. Serves the chat interface, the manual, and the diagnostic console. | `8011` (UI) · `8013` (manual) · `8015` (console) | `smto-server` |
+| **Server** | The API + web UI you interact with. Serves the chat interface, the manual, and the diagnostic console. | `8011` (UI) · `8013` (manual) · `8015` (console) | `smto-server-inference` or `smto-server-external` |
 | **Gateway** | The "hands." Runs on the machine that actually executes tools (shell, files, browser, etc.). | `8787` | `smto-gateway` |
+| **Inference Portal** | The local model server. Runs as a system service and manages the vLLM / llama.cpp inference servers and their workers on a host. | — | `smto-inference-portal` |
 
-You typically run **both**: the Gateway does the work on your machine, and the Server talks to you and to a model.
+You typically run **both** the Gateway and the Server; and, if you run models locally, the Inference Portal too. See [The Linux binaries](#-linux-binaries-explained) below for exactly what each one does and which one you need.
+
+---
+
+## 🐧 Linux binaries explained
+
+On Linux this release ships **four** self-contained executables in `dist/compiled/linux-x86_64/`. Three of them are the pieces of the **Server + Inference** stack, and one is the **Gateway**. Here is what each one actually is and which one you need.
+
+### `smto-server-inference` — the Server **with** inference
+
+This is the main piece you talk to — the **API + web UI** that serves the chat interface, the manual, and the diagnostic console (ports `8011` UI, `8013` manual, `8015` console). The `-inference` variant **includes the Inference management subsystem compiled in** (`features.inference: true`), so its **`/inference`** area can manage local models (vLLM and llama.cpp) directly from the controller.
+
+- Choose this if you want an all-in-one Server that also handles local model inference.
+- It still needs a **Gateway** (`smto-gateway`) for the actual tool execution, and — if you run models locally — the **Inference Portal** (`smto-inference-portal`) below.
+- Size: ~122 MiB.
+
+### `smto-server-external` — the Server **without** inference
+
+This is the **same** Server (same web UI, same ports), but **without** the local Inference subsystem (`features.inference: false`). It is built for the case where your **model lives elsewhere** — a remote vLLM endpoint or another external model provider — so the Server just points at an external provider instead of managing models on this machine.
+
+- Choose this if your model runs on a different host, in the cloud, or at a remote endpoint, and you don't need to manage local vLLM or llama.cpp from this box.
+- Everything else (chat, tools via the Gateway, manual, console) works exactly the same; only the local Inference controller is omitted.
+- Size: ~120 MiB.
+
+> **In short:** `server-inference` and `server-external` are the **same Server**. They differ only in whether the local Inference management subsystem is compiled in. Pick `external` to reduce surface area and point at a remote model; pick `inference` to manage local models from the UI.
+
+### `smto-inference-portal` — the local model server service
+
+This is a **separate, standalone process** (entry point `inference_portal.__main__`) that runs as a **system service** (`inference-portal.service`) and **manages your local model inference servers** — vLLM and llama.cpp — on a host (the "Trace host"). It owns the **job workers** and the **cgroup runner** that actually run the models, and the Server's `/inference` area reports on the resources it manages (CPU/RAM per host, RPC and Ray workers, etc.).
+
+- Install and run it once, as a service:
+  ```bash
+  sudo ./smto-inference-portal --install --service --user "$USER"
+  ```
+- Choose this if you run models **locally** (on this machine or a host you manage) and want them supervised as a service. You do **not** need it if you only use an external/remote model provider.
+- Size: ~71 MiB.
+
+### `smto-gateway` — the "hands"
+
+Runs on the machine that actually **executes tools** — shell, files, Python, browser, and so on — on port `8787`. Every deployment that runs tools needs one, regardless of which Server variant or Inference Portal you pick.
+- Size: ~120 MiB.
+
+### Which combination do I run?
+
+| Your setup | Server | Gateway | Inference Portal |
+| --- | --- | --- | --- |
+| Local models, manage them from the UI | `smto-server-inference` | ✅ required | ✅ recommended |
+| Remote / external model provider | `smto-server-external` | ✅ required | ❌ not needed |
+| Just want to try it (no local models) | `smto-server-inference` or `smto-server-external` | ✅ required | ❌ not needed |
 
 ---
 
@@ -69,15 +118,16 @@ The release artifacts live under `dist/compiled/<target>/`. Each target folder i
 .
 ├── dist/
 │   ├── linux-x86_64/                     # Self-contained Linux executables (no Python install needed)
-│   │   ├── smto-server                   # The Server (API + web UI)  [Git LFS]
+│   │   ├── smto-server-inference         # The Server WITH local inference (vLLM/llama.cpp)  [Git LFS]
+│   │   ├── smto-server-external          # The Server WITHOUT local inference (external model)  [Git LFS]
+│   │   ├── smto-inference-portal         # The Inference Portal service (manages local model servers)  [Git LFS]
 │   │   ├── smto-gateway                  # The Gateway (the "hands")  [Git LFS]
-│   │   ├── manifest.json                 # Build metadata + artifact SHA-256 + signature status
-│   │   ├── build.log                     # Full build transcript
-│   │   ├── builder-environment.json      # Base image, toolchain, glibc, Python archive hash
-│   │   ├── validation-observed.json      # Machine-observed clean-machine validation results
-│   │   ├── server-details/               # Server build inventory (compilation XMLs, size report)
+│   │   ├── SHA256SUMS                    # Expected SHA-256 for each binary — verify your download
+│   │   ├── server-inference-details/     # server-inference build inventory (compilation XMLs, size report)
+│   │   ├── server-external-details/      # server-external build inventory (compilation XMLs, size report)
+│   │   ├── inference-portal-details/     # inference-portal build inventory (NOTICES.txt, LICENSES/)
 │   │   ├── gateway-details/              # Gateway build inventory (NOTICES.txt, LICENSES/)
-│   │   └── validation/                   # Per-job validation logs & receipts (server + gateway)
+│   │   └── validation/                   # Per-job validation logs & receipts
 │   └── macos-x86_64/                     # macOS distribution (zipped app bundles)
 │       ├── SMTO-server.zip               # The Server (.app bundle)
 │       ├── SMTO-gateway.zip              # The Gateway (.app bundle)
@@ -93,14 +143,14 @@ Unlike older release layouts, this checkout ships **one** style of artifact: a *
 
 | | **Linux x86_64** (`dist/compiled/linux-x86_64/`) | **macOS x86_64** (`dist/compiled/macos-x86_64/`) |
 | --- | --- | --- |
-| **What it is** | Two self-contained executables with a private bundled Python interpreter — **no Python install required.** | Two `.app` bundles zipped up, with a private bundled Python interpreter — **no Python install required.** |
-| **Files** | `smto-server`, `smto-gateway` | `SMTO-server.zip`, `SMTO-gateway.zip` |
+| **What it is** | Four self-contained executables (three Server/Inference variants + the Gateway), each with a private bundled Python interpreter — **no Python install required.** | Two `.app` bundles zipped up, with a private bundled Python interpreter — **no Python install required.** |
+| **Files** | `smto-server-inference`, `smto-server-external`, `smto-inference-portal`, `smto-gateway` | `SMTO-server.zip`, `SMTO-gateway.zip` |
 | **Size** | ~117 MiB each | ~77 MiB each (zip) |
 | **Packaging backend** | `compiled-shared-v1` | `compiled-shared-v1` |
 | **Bundled runtime** | CPython 3.12.14 (Linux x86_64) | CPython 3.12.14 (macOS x86_64) |
 | **Build base** | Ubuntu 22.04 container (glibc 2.35, GCC/Clang 11.4.0, CMake 3.22.1) | macOS x86_64 |
 
-> **Note on Git LFS:** The Linux executables (`smto-server`, `smto-gateway`) are tracked with **Git LFS**; the macOS `.zip` bundles are committed as regular blobs. See [Git LFS](#-git-lfs--large-file-support) below.
+> **Note on Git LFS:** The Linux executables (`smto-server-inference`, `smto-server-external`, `smto-inference-portal`, `smto-gateway`) are tracked with **Git LFS**; the macOS `.zip` bundles are committed as regular blobs. See [Git LFS](#-git-lfs--large-file-support) below.
 
 ---
 
@@ -120,7 +170,7 @@ Unlike older release layouts, this checkout ships **one** style of artifact: a *
 
 ## 🚀 Quick start (Linux)
 
-1. **Download** `smto-server` and `smto-gateway` from the `dist/compiled/linux-x86_64/` folder of this repo.
+1. **Download** the binaries you need from the `dist/compiled/linux-x86_64/` folder of this repo — at minimum `smto-gateway` and one Server variant (`smto-server-inference` or `smto-server-external`; add `smto-inference-portal` if you run local models). See [The Linux binaries](#-linux-binaries-explained).
 
 2. **Verify** the download (highly recommended — see [Verifying integrity](#-verifying-your-download-integrity)):
 
@@ -133,14 +183,16 @@ Unlike older release layouts, this checkout ships **one** style of artifact: a *
 3. **Make them executable** and run them:
 
    ```bash
-   chmod +x smto-server smto-gateway
+   chmod +x smto-server-inference smto-server-external smto-inference-portal smto-gateway
 
    # Terminal 1 — the Gateway (the hands) runs on port 8787
    ./smto-gateway --host 127.0.0.1 --port 8787
 
    # Terminal 2 — the Server (the face you talk to) runs on port 8011
-   ./smto-server --host 127.0.0.1 --port 8011 --manual-port 8013
+   ./smto-server-inference --host 127.0.0.1 --port 8011 --manual-port 8013
    ```
+
+   > **Pick your Server variant:** run `./smto-server-inference` if you want the local Inference management built in, or `./smto-server-external` if your model is remote. If you run models locally, also install and start the `smto-inference-portal` service (see [The Linux binaries](#-linux-binaries-explained)).
 
 4. **Open your browser** to `http://127.0.0.1:8011` and you'll see the OpenFabric UI.
 
@@ -260,12 +312,13 @@ Capabilities are **selected/authorized separately** from installing their depend
 
 **Always verify.** Each artifact folder ships a `manifest.json` that records the artifact's `artifact_sha256`, source revision, compiler, Python version, payload sizes, signature status, and `release_eligible`.
 
-**Linux (compare against `manifest.json`):**
+**Linux (compare against `SHA256SUMS`):**
 
 ```bash
 cd dist/compiled/linux-x86_64
-sha256sum smto-server smto-gateway
-# compare against the "artifact_sha256" values in manifest.json
+sha256sum -c SHA256SUMS
+# or: sha256sum smto-server-inference smto-server-external smto-inference-portal smto-gateway
+# and compare against the hashes listed in SHA256SUMS
 ```
 
 **macOS (compare against `manifest.json`):**
