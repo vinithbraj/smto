@@ -1,0 +1,33 @@
+{
+  "artifacts": [
+    {
+      "artifact": "smto-server-inference",
+      "artifact_sha256": "ac6b4407774b07890fdf7d1f75a6758c41298741bb644b63dc8538e55214b724",
+      "target": "linux-x86_64"
+    },
+    {
+      "artifact": "smto-server-external",
+      "artifact_sha256": "137260a136de8683bdd1dd42da9e55b7b6c009b9e9ccff43dc7d4be972374d7c",
+      "target": "linux-x86_64"
+    },
+    {
+      "artifact": "smto-gateway",
+      "artifact_sha256": "b024d4fd0f9f46f9d69a596e240f975d9a736dd654bc091472387351c552961b",
+      "target": "linux-x86_64"
+    },
+    {
+      "artifact": "smto-inference-portal",
+      "artifact_sha256": "b2a992a9468a0112b6b0a2c3a59d4a12050d13851181fa0e476331acfa36ac7f",
+      "target": "linux-x86_64"
+    }
+  ],
+  "build_started": "2026-10-31T07:46:25.706205+00:00",
+  "build_version": "dev.0e33e786b47b.20261031.20261031T074625706205Z",
+  "builder_image": "sha256:e2b942edff13a568f99782abdd66133d3b4f6c4489b4dbbce0472c2656b06e64",
+  "source_branch": "main",
+  "source_commit": "0e33e786b47b04783bbcd1a88e4ffea099157cb5",
+  "source_repository": "https://github.com/vinithbraj/openfabric.git",
+  "validation": {
+    "status": "skipped"
+  }
+}
