@@ -1,0 +1,16 @@
+name: Code mode Linux qualification
+on:
+  push:
+    branches: ['codex/code-mode-v2-qualification-20261110']
+permissions:
+  contents: read
+jobs:
+  linux:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          sparse-checkout: qualification/code-mode-v2
+          lfs: false
+      - run: python3 -m unittest discover -s qualification/code-mode-v2 -v
