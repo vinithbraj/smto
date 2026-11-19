@@ -1,0 +1,82 @@
+{
+  "artifacts": [
+    {
+      "artifact": "smto-server-inference",
+      "artifact_sha256": "a2a9dd569cffa5c2a7edb12f25235add5d9eab7d3c6450b58a0b5c781b7cf445",
+      "target": "linux-x86_64"
+    },
+    {
+      "artifact": "smto-server-external",
+      "artifact_sha256": "0d577cc16b3417dd00def42a7987cce8bc88dc033278313b15390097c1e98e95",
+      "target": "linux-x86_64"
+    },
+    {
+      "artifact": "smto-gateway",
+      "artifact_sha256": "a0aa328b82c30641b48864644588e178e8dc17da4db92621df7f6437286e34e8",
+      "target": "linux-x86_64"
+    },
+    {
+      "artifact": "smto-inference-portal",
+      "artifact_sha256": "c51917477e3ac020b822f2283fac3ae4c564fda95b491ebfa16fabc8fe531c9d",
+      "target": "linux-x86_64"
+    }
+  ],
+  "build_started": "2026-11-19T04:59:27.834663+00:00",
+  "build_version": "dev.1ce43f7d0f3b.20261119.20261119T045927834663Z",
+  "builder_image": "sha256:178749e680408071e37a3ada27c5d5ae73a2809df4dc1e09bb645b77a3d3f700",
+  "native_packages": {
+    "packages": [
+      {
+        "artifact": "smto-gateway_20261119.45927.834663-1_amd64.deb",
+        "artifact_sha256": "b4d3e1b884a1e2a9831509250dc9ecb6da3a4d96d9e246a4d0d3085454820177",
+        "build_version": "dev.1ce43f7d0f3b.20261119.20261119T045927834663Z",
+        "component": "gateway",
+        "download_url": "https://github.com/vinithbraj/smto/releases/download/release.1ce43f7d0f3bba954b759dd67c3709b19ce9dbe2/smto-gateway_20261119.45927.834663-1_amd64.deb",
+        "native_signing": "not-provided",
+        "online_setup_required": true,
+        "package_format": "deb",
+        "package_id": "smto-gateway",
+        "package_version": "20261119.45927.834663",
+        "size_bytes": 147458874,
+        "source_revision": "1ce43f7d0f3bba954b759dd67c3709b19ce9dbe2",
+        "target": "linux-x86_64",
+        "variant": "gateway"
+      },
+      {
+        "artifact": "smto-server_20261119.45927.834663-1_amd64.deb",
+        "artifact_sha256": "fcb5558c4c49cd37c190016be5335df9841bdf389ac0fb46c95f165b6775e319",
+        "build_version": "dev.1ce43f7d0f3b.20261119.20261119T045927834663Z",
+        "component": "server",
+        "download_url": "https://github.com/vinithbraj/smto/releases/download/release.1ce43f7d0f3bba954b759dd67c3709b19ce9dbe2/smto-server_20261119.45927.834663-1_amd64.deb",
+        "native_signing": "not-provided",
+        "online_setup_required": true,
+        "package_format": "deb",
+        "package_id": "smto-server",
+        "package_version": "20261119.45927.834663",
+        "size_bytes": 151870454,
+        "source_revision": "1ce43f7d0f3bba954b759dd67c3709b19ce9dbe2",
+        "target": "linux-x86_64",
+        "variant": "server-inference"
+      }
+    ],
+    "schema_version": 1,
+    "source_revision": "1ce43f7d0f3bba954b759dd67c3709b19ce9dbe2",
+    "target": "linux-x86_64",
+    "validation": {
+      "extraction_and_launcher": "skipped",
+      "not_exercised": [
+        "OS-install-upgrade-remove",
+        "boot-login-services",
+        "desktop-permissions",
+        "Gatekeeper"
+      ],
+      "structure": "passed"
+    }
+  },
+  "source_branch": "main",
+  "source_commit": "1ce43f7d0f3bba954b759dd67c3709b19ce9dbe2",
+  "source_repository": "https://github.com/vinithbraj/openfabric.git",
+  "validation": {
+    "status": "skipped"
+  }
+}
