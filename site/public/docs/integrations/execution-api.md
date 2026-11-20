@@ -132,11 +132,11 @@ defaults to `execute` and accepts only:
 Other operation values receive HTTP 422. Optional `instruction` supplies prompt
 context, and the compatibility `approval_mode` defaults to `manual`; execution-engine
 checks remain authoritative. This route has no integration response-wait field.
-See [Parameter Store and databases](https://manual.smtorch.com/manual#doc=parameter-store-context-sql) for profile setup.
+See Parameter Store and databases for profile setup.
 
 Implementation owners are
 [IntegrationRoutes](https://github.com/vinithbraj/smto/blob/main/src/agent_runtime/api/agent_ui_support/route_groups/integrations.py),
 [request/response models](https://github.com/vinithbraj/smto/blob/main/src/agent_runtime/api/agent_ui_support/models.py) and
 [the retained SQL route](https://github.com/vinithbraj/smto/blob/main/src/agent_runtime/api/app.py). The
-[request lifecycle](https://manual.smtorch.com/manual#doc=architecture-request-lifecycle) explains ordinary admission
+request lifecycle explains ordinary admission
 and continuation ownership.

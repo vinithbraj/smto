@@ -1,10 +1,10 @@
 # SMTO website: GitHub Pages edition
 
-This folder holds the static edition of the SMTO public website (`smtorch.com`) and the SMTO product manual (`manual.smtorch.com`), published with GitHub Pages:
+This folder holds the static edition of the SMTO public website and product manual, published with GitHub Pages:
 
 **https://vinithbraj.github.io/smto/**
 
-> **Status:** the static manual (`/manual/`) and the product screenshots in the Gallery are still being added. Until they land, the site's manual links go to `manual.smtorch.com`, and `tools/export_manual.py` and `tools/capture_product.py` don't exist yet.
+> **Status:** the static manual (`/manual/`) and the product screenshots in the Gallery are still being added. Until they land, the site has no Manuals link, and `tools/export_manual.py` and `tools/capture_product.py` aren't committed yet.
 
 The pages are not a hand-made copy. `tools/build_site.py` imports the real website from the openfabric source (`src/smto_site`), renders every public page through the site's own templates, content files and fingerprinted assets, and writes the result to [`public/`](public/). GitHub serves `public/` as it is.
 
@@ -87,7 +87,7 @@ git commit -m "Update website"
 git push            # the workflow deploys site/public
 ```
 
-The build ends by running `check_site.py`. A broken link, a missing asset, a leftover root-relative URL or a link to the offline manual host fails the build.
+The build ends by running `check_site.py`. A broken link, a missing asset, a leftover root-relative URL or any link to `smtorch.com` fails the build.
 
 To preview locally, run `capture_site.py`; it serves the site at a `/smto/` sub-path, exactly like GitHub. To browse by hand, run `python3 -m http.server -d site/public 8000` and open http://127.0.0.1:8000/. Relative links work at any base path.
 
@@ -110,11 +110,11 @@ Optional: under **Settings → General → About**, set the repository's website
 
 ### Custom domain
 
-To serve the site from your own domain (for example `smtorch.com`) instead of `github.io`:
+To serve the site from your own domain instead of `github.io`:
 
 ```bash
 $PY site/tools/build_site.py --source ~/Desktop/openfabric \
-    --site-url https://smtorch.com --cname smtorch.com
+    --site-url https://www.example.com --cname www.example.com
 ```
 
 Then set the same domain under **Settings → Pages → Custom domain** and point DNS at GitHub Pages. Canonical URLs, the sitemap, the feed and `robots.txt` all follow `--site-url`. The deploy workflow refuses to publish when they don't match the Pages URL GitHub reports.
@@ -127,10 +127,11 @@ GitHub Pages serves files and can't run the website's FastAPI server, so a few b
 | --- | --- |
 | Security headers (CSP, frame and referrer policy) on every response | The same Content-Security-Policy is a `<meta>` tag in each page, with hashes recomputed for the final JSON-LD. Header-only directives such as `frame-ancestors` can't be set from a page. |
 | 308 redirects for legacy URLs | Small redirect pages (`meta refresh` plus a canonical link) that go to the same home-page section |
-| `/manual` served by a separate process at `manual.smtorch.com` | Static manual at `/manual/`. Its JSON API answers are precomputed files and search runs in the browser. Manual links on the site point here. |
+| `/manual` served by a separate manual process | Static manual at `/manual/`. Its JSON API answers are precomputed files and search runs in the browser. Manual links on the site point here. |
 | Root-relative links (`/faq`) | Relative links (`faq/`), so the site works under `/smto/`; `404.html` uses `/smto/…` because GitHub serves it at any depth |
 | `X-Robots-Tag: noindex` on Markdown and text resources | Not possible on static hosting; these files are left out of the sitemap |
 | Optional visitor counter and optional CMS | Not included; both need a server. The site's privacy text already describes the counter as optional. |
-| Canonical origin `https://smtorch.com` | Canonical URLs point to the GitHub Pages URL. Change it with `--site-url`. |
+| Canonical origin is the server's own domain | Canonical URLs point to the GitHub Pages URL. Change it with `--site-url`. |
+| Links to the `smtorch.com` domain (footer "SMTO website", legal page headers, FAQ answers, Manuals menu) | Removed, together with the "Visit smtorch.com for details" sentences that only point there |
 
-Copy, content and legal text are unchanged. The only additions are the Gallery page and its navigation item. Links to `smtorch.com` that appear in the licensing text and FAQ answers are left exactly as written.
+The additions are the Gallery page and its navigation item. The removals are the `smtorch.com` links and sentences listed above; `build_site.py` (`SMTORCH_REMOVALS`) lists each one. The binding legal documents (`/legal/eula/`, `/legal/proprietary-license/` and their `.txt` files) are published byte-for-byte as shipped with the product, so the address still appears there as plain text, not as a link. All other copy and content is unchanged.

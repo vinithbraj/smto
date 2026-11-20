@@ -66,6 +66,30 @@ MARKDOWN_LINK = re.compile(r"(\]\()(/[^)\s]*)")
 MARKDOWN_REFERENCE = re.compile(r"^(\[[^\]]+\]:[ \t]*)(/\S+)", re.M)
 INLINE_SCRIPT = re.compile(r"<script(?![^>]*\ssrc=)[^>]*>(.*?)</script>", re.S)
 
+# smtorch.com is not used by this edition. Remove every link to it, and the sentences
+# that only send readers there, from the rendered pages. The binding legal documents
+# (legal/eula, legal/proprietary-license and their .txt) are published byte-for-byte
+# and keep their wording; they contain the address as plain text, not as a link.
+SMTORCH = r"https://smtorch\.com/?"
+SMTORCH_REMOVALS = (
+    # Licensing summary (footer, Get SMTO section, FAQ answers, license page).
+    (r"\s*Visit smtorch\.com for details\.", ""),
+    # "SMTO website" links (footer, legal page headers, download section).
+    (rf'\s*<a href="{SMTORCH}">SMTO website</a>', ""),
+    # FAQ answers and the license page.
+    (rf'\s*<a href="{SMTORCH}">Visit smtorch\.com</a>\.', ""),
+    (rf'Visit <a href="{SMTORCH}">smtorch\.com</a> for commercial licensing information\.\s*', ""),
+    (rf'\s*Commercial licensing information is maintained at <a href="{SMTORCH}">smtorch\.com</a>\.', ""),
+)
+MARKDOWN_MANUAL_LINK = re.compile(r"\[([^\]]+)\]\(https://manual\.smtorch\.com[^)]*\)")
+
+
+def remove_smtorch(document: str, counts: dict) -> str:
+    for pattern, replacement in SMTORCH_REMOVALS:
+        document, n = re.subn(pattern, replacement, document)
+        counts[pattern] = counts.get(pattern, 0) + n
+    return document
+
 GALLERY_COPY = {
     "title": "See SMTO at work",
     "description": (
@@ -114,8 +138,11 @@ def git_info(source: Path) -> dict:
 # --------------------------------------------------------------------------------------
 
 
-def load_website(source: Path):
-    """Create the public website app in production mode; return (app, renderer)."""
+def load_website(source: Path, manual: bool):
+    """Create the public website app in production mode; return (app, renderer).
+
+    manual: whether the static manual is part of this build. Without it, the
+    navigation's link to the (offline) manual host is dropped."""
     sys.path.insert(0, str(source / "src"))
     # The optional CMS replaces the reviewed public pages; the static edition never uses it.
     os.environ.pop("SMTO_CMS_ENABLED", None)
@@ -139,7 +166,10 @@ def load_website(source: Path):
         navigation.insert(
             position, {"label": "Gallery", "href": GALLERY_ROUTE, "cms_only": False, "button": False}
         )
+        if not manual:
+            navigation[:] = [item for item in navigation if "smtorch.com" not in item["href"]]
         self.env.globals["site_copy"] = site_copy
+        self.env.globals["manual_available"] = manual
         renderers.append(self)
 
     pages_module.Renderer.__init__ = init_with_gallery
@@ -402,11 +432,18 @@ def build(args) -> dict:
     if not (source / "src" / "smto_site" / "app.py").is_file():
         raise SystemExit(f"{source} does not look like an openfabric checkout (src/smto_site missing)")
 
-    app, renderer = load_website(source)
+    safe_reset(out)
+    # The manual goes first: whether it exists decides the site's manual links.
+    manual_summary = None
+    if not args.no_manual:
+        manual_summary = export_manual_into(source, out / "manual")
+        if manual_summary is None:
+            print("warning: tools/export_manual.py not found; building without the manual", file=sys.stderr)
+
+    app, renderer = load_website(source, manual=manual_summary is not None)
     from smto_site.config import PACKAGE
 
     pages = app.state.pages
-    safe_reset(out)
 
     # 1. Collect every published output in memory first, so links can be checked as they
     #    are rewritten.
@@ -445,12 +482,6 @@ def build(args) -> dict:
         redirects.setdefault(alias, redirects.get(target, target))
     redirects = {k: v for k, v in redirects.items() if k not in html_pages}
 
-    manual_summary = None
-    if not args.no_manual:
-        manual_summary = export_manual_into(source, out / "manual")
-        if manual_summary is None:
-            print("warning: tools/export_manual.py not found; manual links stay external", file=sys.stderr)
-
     linker = Linker(
         site_url,
         html_routes=set(html_pages) | set(redirects),
@@ -458,10 +489,12 @@ def build(args) -> dict:
         manual=manual_summary is not None,
     )
 
-    # 2. HTML pages: relative links + meta CSP.
+    # 2. HTML pages: relative links, no smtorch.com links, meta CSP.
+    removal_counts: dict = {}
     for route, page in html_pages.items():
         target = published_file(route)
         document = linker.rewrite_html(page.body.decode("utf-8"), depth_prefix(target))
+        document = remove_smtorch(document, removal_counts)
         document = add_meta_csp(document, meta_csp(page.csp, document))
         files[target] = document.encode("utf-8")
 
@@ -476,7 +509,11 @@ def build(args) -> dict:
     # 404.html is served for any missing path at any depth, so it needs absolute paths.
     not_found = renderer.error(404)
     document = linker.rewrite_html(not_found.body.decode("utf-8"), linker.base_path)
+    document = remove_smtorch(document, removal_counts)
     files["404.html"] = add_meta_csp(document, meta_csp(not_found.csp, document)).encode("utf-8")
+    for pattern, count in removal_counts.items():
+        if count == 0:  # upstream wording changed; check_site.py catches anything left over
+            print(f"warning: smtorch.com removal pattern matched nothing: {pattern}", file=sys.stderr)
 
     # 3. Text resources get absolute URLs (they are read outside the site's pages).
     for path in list(files):
@@ -484,7 +521,10 @@ def build(args) -> dict:
         if isinstance(content, Path) or path.startswith("legal/"):
             continue  # assets and legal texts are published byte-for-byte
         if path.endswith(".md"):
-            files[path] = linker.rewrite_text(content.decode("utf-8"), markdown=True).encode("utf-8")
+            text = content.decode("utf-8")
+            if manual_summary is None:  # no manual in this build: keep the label, drop the link
+                text = MARKDOWN_MANUAL_LINK.sub(r"\1", text)
+            files[path] = linker.rewrite_text(text, markdown=True).encode("utf-8")
         elif path.endswith((".txt", ".xml")) and not path.endswith("robots.txt"):
             files[path] = linker.rewrite_text(content.decode("utf-8")).encode("utf-8")
 

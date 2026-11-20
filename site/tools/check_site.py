@@ -13,7 +13,8 @@ Checks
 * same-site #fragments point at an element id that exists in the target page;
 * no root-relative URLs outside 404.html (they would break under /smto/);
 * CSS url(...) references resolve;
-* no rendering-origin placeholder or link to the offline manual host is left behind;
+* no rendering-origin placeholder and no link to smtorch.com (or its manual host) is left;
+  smtorch.com may appear as text only inside the legal documents;
 * required GitHub Pages files exist and the sitemap uses the configured URL.
 
 Exits non-zero and lists every problem when anything fails.
@@ -32,7 +33,7 @@ URL_ATTRIBUTES = {"href", "src", "poster", "action", "formaction"}
 FILE_LIKE = re.compile(r"\.(?:html|css|js|svg|png|webp|jpe?g|avif|gif|ico|txt|md|xml|json)(?:[?#]|$)", re.I)
 CSS_URL = re.compile(r"url\(\s*['\"]?([^'\")]+)['\"]?\s*\)")
 SENTINEL = "smto-static-export.invalid"
-OFFLINE_HOSTS = ("manual.smtorch.com",)
+OFFLINE_HOSTS = ("smtorch.com",)  # covers manual.smtorch.com
 REQUIRED = ("index.html", "404.html", ".nojekyll", "faq/index.html", "gallery/index.html",
             "robots.txt", "sitemap.xml")
 
@@ -85,9 +86,6 @@ def check(root: Path, site_url: str | None = None) -> list[str]:
         if not (root / required).exists():
             problems.append(f"missing required file: {required}")
 
-    # Once the static manual is part of the build, every manual link must point at it.
-    # Without it, links to the manual host are the only way to reach the manual.
-    manual_built = (root / "manual" / "index.html").is_file()
     html_files = sorted(root.rglob("*.html"))
     ids: dict[Path, set[str]] = {}
     scans: dict[Path, PageScan] = {}
@@ -103,8 +101,7 @@ def check(root: Path, site_url: str | None = None) -> list[str]:
         for attribute, value in scan.urls:
             label = f"{relative_page}: {attribute}={value!r}"
             if any(host in value for host in OFFLINE_HOSTS):
-                if manual_built:
-                    problems.append(f"{label} links to the manual host; it should point at manual/")
+                problems.append(f"{label} links to smtorch.com, which this edition does not use")
                 continue
             parts = urlsplit(value)
             if parts.scheme in {"http", "https", "mailto", "tel", "data", "javascript"} or value.startswith("//"):
@@ -141,8 +138,13 @@ def check(root: Path, site_url: str | None = None) -> list[str]:
 
     for path in sorted(root.rglob("*")):
         if path.is_file() and path.suffix in {".html", ".txt", ".md", ".xml", ".json", ".js", ".css"}:
-            if SENTINEL in path.read_text(encoding="utf-8", errors="replace"):
-                problems.append(f"{path.relative_to(root)} still contains the rendering placeholder origin")
+            text = path.read_text(encoding="utf-8", errors="replace")
+            relative = path.relative_to(root).as_posix()
+            if SENTINEL in text:
+                problems.append(f"{relative} still contains the rendering placeholder origin")
+            # The binding legal documents keep their wording; nothing else mentions smtorch.com.
+            if "smtorch.com" in text and not relative.startswith("legal/"):
+                problems.append(f"{relative} mentions smtorch.com")
 
     sitemap = root / "sitemap.xml"
     if site_url and sitemap.is_file():

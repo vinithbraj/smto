@@ -11,7 +11,7 @@ For ready-made downloads, visit the
 the folder for your operating system. Follow the instructions supplied with those
 files; the commands below apply to a source checkout. For compiled dependency setup,
 status and repair, use the [compiled installation instructions](https://github.com/vinithbraj/smto/blob/main/build/README.md#first-start-and-storage).
-The [dependency flow guide](https://manual.smtorch.com/manual#doc=architecture-compiled-dependency-flows) explains
+The dependency flow guide explains
 what happens internally and how interrupted setup resumes.
 
 SMTO has a main program that manages tasks and a Gateway program that runs tools
@@ -113,7 +113,7 @@ runs tools; they are not instructions for installing the main SMTO program on Wi
 ### Set up portal sign-in
 
 The Server installer asks you to create a local owner account and preserves an
-existing valid account. Follow [Portal owner sign-in](https://manual.smtorch.com/manual#doc=install-startup&heading=account-sign-in-and-user-administration) below
+existing valid account. Follow Portal owner sign-in below
 for private password-file input, local setup/reset commands and password changes.
 Gateway-only installation uses its separate pairing workflow.
 
@@ -238,7 +238,7 @@ step and recovery instructions instead of continuing the loading animation.
 Expand the report to inspect measured phases and work counts. An unknown total or
 missing remaining-time estimate is left unknown; it does not mean progress has
 stopped. `/diagnostics/startup` retains this process's startup report after it is
-ready. See [Server lifecycle ownership](https://manual.smtorch.com/manual#doc=architecture-server-lifecycle) for
+ready. See Server lifecycle ownership for
 the implementation boundaries, history limits and shutdown guarantees.
 
 For advanced setup, `AOR_MANUAL_AUTOSTART=0` and `AOR_CONSOLE_AUTOSTART=0` turn off
