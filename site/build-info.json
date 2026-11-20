@@ -1,0 +1,34 @@
+{
+  "site_url": "https://vinithbraj.github.io/smto/",
+  "source": {
+    "repository": "openfabric",
+    "commit": "cbab46d263da94706d77a2ca01e65fe6e6b4feb9",
+    "commit_date": "2026-11-19T16:09:47-08:00",
+    "branch": "V494_CODE_FREEZE_REVIEW_AND_AUDIT",
+    "dirty": false
+  },
+  "html_pages": [
+    "/",
+    "/changelog",
+    "/faq",
+    "/gallery",
+    "/legal/apache-2.0",
+    "/legal/earlier-apache-notice",
+    "/legal/eula",
+    "/legal/proprietary-license",
+    "/legal/third-party",
+    "/license",
+    "/releases"
+  ],
+  "redirect_pages": 26,
+  "files_written": 147,
+  "bytes_written": 1103422,
+  "gallery": {
+    "desktop": 0,
+    "phone": 0,
+    "diagrams": 15
+  },
+  "manual": null,
+  "skipped_routes": [],
+  "unresolved_links": []
+}

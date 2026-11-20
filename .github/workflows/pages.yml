@@ -1,0 +1,57 @@
+# Publish the SMTO website (site/public) to GitHub Pages.
+#
+# site/public is generated locally by site/tools/build_site.py from the openfabric
+# source and committed; this workflow only checks it and publishes it. It checks out
+# site/ alone (sparse), so the Git LFS release binaries are never downloaded.
+#
+# One-time setup: repository Settings -> Pages -> Build and deployment -> Source:
+# "GitHub Actions". See site/README.md.
+name: Deploy website to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "site/public/**"
+      - "site/tools/check_site.py"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deployment at a time; never cancel a deployment that is already running.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out the website only
+        uses: actions/checkout@v5
+        with:
+          sparse-checkout: site
+          lfs: false
+
+      - name: Configure GitHub Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Check links, assets and URLs
+        run: python3 site/tools/check_site.py site/public --site-url "${{ steps.pages.outputs.base_url }}"
+
+      - name: Upload the site
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: site/public
+
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

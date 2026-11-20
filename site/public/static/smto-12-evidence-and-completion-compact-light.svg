@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="372" viewBox="0 0 720 372" role="img" aria-labelledby="title desc" lang="en">
+  <title id="title">Finished work should leave a record.</title>
+  <desc id="desc">Recorded operations provide tool results, errors and output references. Supported completion checks can inspect required outputs and unresolved operations, human input or work still in progress. An optional Task Contract records intended requirements but is not a proof of success. The outcome report should distinguish complete work, partial work, failure and cancellation as appropriate; these are explanatory categories, not exact internal enum names. The model remains responsible for much of the semantic assessment, and the user should compare important results with the original task. Activity history is not the model's private reasoning.</desc>
+  <defs>
+    <marker id="arrow-blue" markerWidth="9" markerHeight="9" refX="7.6" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#3F63CF" />
+    </marker>
+    <marker id="arrow-teal" markerWidth="9" markerHeight="9" refX="7.6" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#166C59" />
+    </marker>
+    <marker id="arrow-violet" markerWidth="9" markerHeight="9" refX="7.6" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#6751A7" />
+    </marker>
+    <marker id="arrow-amber" markerWidth="9" markerHeight="9" refX="7.6" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#835800" />
+    </marker>
+    <marker id="arrow-red" markerWidth="9" markerHeight="9" refX="7.6" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#B02D3A" />
+    </marker>
+    <marker id="arrow-muted" markerWidth="9" markerHeight="9" refX="7.6" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#526078" />
+    </marker>
+  </defs>
+  <rect width="720" height="372" fill="#FFFFFF" />
+  <rect x="20" y="20" width="330" height="156" rx="16" fill="#F5F7FB" stroke="#D6DDE8" />
+  <g transform="translate(42,38) scale(0.625)" fill="none" stroke="#3F63CF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M17 8h24l10 10v38H17zM41 8v11h10M25 28h17m-17 9h17m-17 9h9" />
+    <path d="m4 27 4 4 7-8m-11 22 4 4 7-8" />
+  </g>
+  <text x="42" y="116" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#202020">Recorded</text>
+  <text x="42" y="154" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#202020">operations</text>
+  <rect x="370" y="20" width="330" height="156" rx="16" fill="#F5F7FB" stroke="#D6DDE8" />
+  <g transform="translate(392,38) scale(0.625)" fill="none" stroke="#166C59" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M13 15V7h26l12 12v31H22M39 7v13h12" />
+    <path d="M8 15h18l6 7h19v34H8zM16 34h26m-26 9h20" />
+  </g>
+  <text x="392" y="116" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#202020">Required</text>
+  <text x="392" y="154" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#202020">results</text>
+  <rect x="20" y="196" width="330" height="156" rx="16" fill="#F5F7FB" stroke="#D6DDE8" />
+  <g transform="translate(42,214) scale(0.625)" fill="none" stroke="#6751A7" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="32" cy="32" r="25" />
+    <path d="M24 21v22m16-22v22" />
+  </g>
+  <text x="42" y="292" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#202020">Outstanding</text>
+  <text x="42" y="330" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#202020">work</text>
+  <rect x="370" y="196" width="330" height="156" rx="16" fill="#F5F7FB" stroke="#D6DDE8" />
+  <g transform="translate(392,214) scale(0.625)" fill="none" stroke="#835800" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="32" cy="32" r="25" />
+    <path d="m18 32 10 10 19-22" />
+  </g>
+  <text x="392" y="292" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#202020">Outcome report</text>
+</svg>

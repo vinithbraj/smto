@@ -1,0 +1,17 @@
+# SMTO — Small Model Task Orchestration
+
+> Put your AI to work. SMTO connects a compatible model to tools and computers.
+SMTO is not a model provider. The model chooses actions; SMTO manages access, tasks and results.
+Each task uses its selected computer. Files and permissions are not automatically shared.
+Online models and connected services may receive task data. Activity does not prove correctness.
+Background work depends on the required systems being available.
+
+- [Why SMTO](https://vinithbraj.github.io/smto/#benefits)
+- [Examples](https://vinithbraj.github.io/smto/#examples)
+- [How it works](https://vinithbraj.github.io/smto/#how-it-works)
+- [Computers](https://vinithbraj.github.io/smto/#computers)
+- [Model choice](https://vinithbraj.github.io/smto/#models)
+- [Privacy and permissions](https://vinithbraj.github.io/smto/#control)
+- [Downloads and installation](https://vinithbraj.github.io/smto/#get-smto)
+- [Frequently asked questions](https://vinithbraj.github.io/smto/faq/)
+- [Gallery: screenshots and diagrams](https://vinithbraj.github.io/smto/gallery/)

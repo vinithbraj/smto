@@ -1,0 +1,96 @@
+{#- Gallery page for the GitHub Pages edition of the SMTO website.
+    Rendered by site/tools/build_site.py through the website's own Renderer, so it
+    inherits base.html (header, footer, theme picker, fonts and tokens) unchanged.
+    No inline scripts or style attributes: the page ships with the site's CSP. -#}
+{% extends "base.html" %}
+{% from "_visuals.html" import science_figure %}
+{% macro shot_image(variant, css_class, eager) -%}
+<img class="{{ css_class }}" src="{{ variant.src }}" alt="{{ variant.alt }}"
+     width="{{ variant.width }}" height="{{ variant.height }}"
+     loading="{{ 'eager' if eager else 'lazy' }}" decoding="async">
+{%- endmacro %}
+{% macro shot_figure(shot, eager=false) -%}
+<figure class="shot shot--{{ shot.viewport }}{% if shot.light and shot.dark %} shot--themed{% endif %}" id="shot-{{ shot.slug }}">
+  <a class="shot__frame" href="{{ (shot.light or shot.dark).src }}" data-shot-open
+     data-shot-title="{{ shot.title }}" data-shot-caption="{{ shot.caption }}"
+     {% if shot.light %}data-shot-light="{{ shot.light.src }}" data-shot-light-alt="{{ shot.light.alt }}"{% endif %}
+     {% if shot.dark %}data-shot-dark="{{ shot.dark.src }}" data-shot-dark-alt="{{ shot.dark.alt }}"{% endif %}
+     aria-label="Open full-size screenshot: {{ shot.title }}">
+    {% if shot.light and shot.dark %}
+    {{ shot_image(shot.light, 'shot__img shot__img--light', eager) }}
+    {{ shot_image(shot.dark, 'shot__img shot__img--dark', eager) }}
+    {% else %}
+    {{ shot_image(shot.light or shot.dark, 'shot__img', eager) }}
+    {% endif %}
+  </a>
+  <figcaption><strong>{{ shot.title }}</strong> {{ shot.caption }}</figcaption>
+</figure>
+{%- endmacro %}
+{% block body %}
+<link rel="stylesheet" href="{{ gallery_assets['gallery.css'] }}">
+<script src="{{ gallery_assets['gallery.js'] }}" defer></script>
+<div class="shell section gallery-page">
+  <div class="reading">
+    <p class="eyebrow">Gallery</p>
+    <h1>{{ title }}</h1>
+    <p class="lede">{{ lede }}</p>
+    <nav class="gallery-jump" aria-label="On this page">
+      {% if screenshots %}<a href="#screenshots">Product screenshots</a>{% endif %}
+      {% if mobile_screenshots %}<a href="#on-your-phone">On your phone</a>{% endif %}
+      {% if diagrams %}<a href="#diagrams">Diagrams</a>{% endif %}
+    </nav>
+  </div>
+
+  {% if screenshots %}
+  <section class="gallery-section" id="screenshots" aria-labelledby="screenshots-title">
+    <div class="gallery-section__head reading">
+      <h2 id="screenshots-title">The workspace</h2>
+      <p>{{ screenshots_note }}</p>
+    </div>
+    {% set hero = screenshots[0] %}
+    <div class="shot-hero">{{ shot_figure(hero, eager=true) }}</div>
+    <div class="shot-grid">
+      {% for shot in screenshots[1:] %}{{ shot_figure(shot) }}{% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if mobile_screenshots %}
+  <section class="gallery-section" id="on-your-phone" aria-labelledby="phone-title">
+    <div class="gallery-section__head reading">
+      <h2 id="phone-title">On your phone</h2>
+      <p>The same workspace adapts to narrow screens, so you can check on a task, answer a question or approve a step from a phone browser.</p>
+    </div>
+    <div class="shot-grid shot-grid--phone">
+      {% for shot in mobile_screenshots %}{{ shot_figure(shot) }}{% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if diagrams %}
+  <section class="gallery-section" id="diagrams" aria-labelledby="diagrams-title">
+    <div class="gallery-section__head reading">
+      <h2 id="diagrams-title">How the pieces fit</h2>
+      <p>Reference diagrams of the SMTO architecture and task lifecycle. Each one follows your light or dark theme; use <em>View diagram</em> to open the full-size artwork.</p>
+    </div>
+    <div class="diagram-grid">
+      {% for visual_id, visual in diagrams %}{{ science_figure(visual, assets, 'gallery-visual-' + visual_id) }}{% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  <div class="actions gallery-actions">
+    <a class="button" href="/#get-smto">Get SMTO</a>
+    <a class="text-link" href="https://manual.smtorch.com">Read the manual</a>
+    <a class="text-link" href="/faq">Frequently asked questions</a>
+  </div>
+</div>
+<dialog class="shot-dialog" aria-labelledby="shot-dialog-title">
+  <form method="dialog" class="shot-dialog__bar">
+    <p id="shot-dialog-title" class="shot-dialog__title"></p>
+    <button class="shot-dialog__close" type="submit" aria-label="Close screenshot">Close</button>
+  </form>
+  <img class="shot-dialog__img" alt="">
+  <p class="shot-dialog__caption"></p>
+</dialog>
+{% endblock %}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /smto/docs/search
+Sitemap: https://vinithbraj.github.io/smto/sitemap.xml

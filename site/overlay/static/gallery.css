@@ -1,0 +1,85 @@
+/* Gallery page styles for the GitHub Pages edition of the SMTO website.
+ * Uses only the design tokens defined in site.css (--smto-*, --space-*, --radius-*),
+ * so light, dark and automatic themes behave exactly like the rest of the site. */
+
+.gallery-page { padding-block-start: var(--space-10); }
+.gallery-jump { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: var(--space-6); }
+.gallery-jump a {
+  display: inline-flex; align-items: center; min-height: 40px; padding: .4rem .9rem;
+  border: 1px solid var(--smto-border); border-radius: 999px; background: var(--smto-surface);
+  color: var(--smto-text); font-size: .85rem; font-weight: 500; text-decoration: none;
+}
+.gallery-jump a:hover { border-color: var(--smto-accent); color: var(--smto-accent-text); }
+
+.gallery-section { margin-top: var(--space-11); }
+.gallery-section__head { margin-bottom: var(--space-7); }
+.gallery-section__head h2 { margin-bottom: var(--space-3); }
+.gallery-section__head p { color: var(--smto-text-muted); }
+
+/* Screenshot cards ------------------------------------------------------- */
+.shot { margin: 0; display: flex; flex-direction: column; gap: var(--space-4); min-width: 0; }
+.shot__frame {
+  display: block; overflow: hidden; border: 1px solid var(--smto-border);
+  border-radius: var(--radius-lg); background: var(--smto-surface-raised);
+  box-shadow: var(--smto-shadow-small); transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+  cursor: zoom-in;
+}
+.shot__frame:hover { transform: translateY(-2px); box-shadow: var(--smto-shadow); border-color: color-mix(in srgb, var(--smto-accent) 40%, var(--smto-border)); }
+.shot__frame:focus-visible { outline: 3px solid var(--smto-focus); outline-offset: 3px; }
+.shot__img { display: block; width: 100%; height: auto; }
+.shot figcaption { color: var(--smto-text-muted); font-size: .9rem; line-height: 1.65; max-width: 70ch; }
+.shot figcaption strong { display: block; margin-bottom: .15rem; color: var(--smto-text); font-size: .98rem; }
+
+.shot-hero .shot figcaption { font-size: .98rem; }
+.shot-hero .shot figcaption strong { font-size: 1.1rem; }
+.shot-grid {
+  display: grid; gap: var(--space-9) var(--space-7); margin-top: var(--space-9);
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 30rem), 1fr));
+}
+.shot-grid--phone { grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr)); margin-top: 0; }
+.shot--phone .shot__frame { border-radius: 26px; max-width: 20rem; }
+
+/* Theme-matched pairs: show the variant matching the active site theme. */
+.shot--themed .shot__img--dark { display: none; }
+:root[data-theme="dark"] .shot--themed .shot__img--light { display: none; }
+:root[data-theme="dark"] .shot--themed .shot__img--dark { display: block; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) .shot--themed .shot__img--light { display: none; }
+  :root:not([data-theme]) .shot--themed .shot__img--dark { display: block; }
+}
+
+/* Diagrams: two columns on wide screens; the figure's container query then selects
+ * its compact artwork automatically. */
+.diagram-grid { display: grid; gap: var(--space-7); grid-template-columns: repeat(auto-fill, minmax(min(100%, 32rem), 1fr)); align-items: start; }
+.diagram-grid .smto-visual { margin: 0; }
+
+.gallery-actions { margin-top: var(--space-11); }
+
+/* Lightbox (progressive enhancement; without JavaScript the link opens the image). */
+.shot-dialog {
+  width: min(96vw, 1680px); max-height: 94vh; padding: 0; overflow: auto;
+  border: 1px solid var(--smto-border); border-radius: var(--radius-lg);
+  background: var(--smto-surface); color: var(--smto-text); box-shadow: var(--smto-shadow);
+}
+.shot-dialog::backdrop { background: rgba(8, 11, 18, .72); }
+.shot-dialog__bar {
+  position: sticky; top: 0; z-index: 1; display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  margin: 0; padding: .65rem .65rem .65rem 1.1rem; border-bottom: 1px solid var(--smto-border); background: var(--smto-surface);
+}
+.shot-dialog__title { margin: 0; font-weight: 600; font-size: .95rem; }
+.shot-dialog__close {
+  min-height: 40px; padding: .4rem .9rem; border: 1px solid var(--smto-border); border-radius: 10px;
+  background: var(--smto-surface-raised); color: var(--smto-text); font: inherit; font-size: .85rem; cursor: pointer;
+}
+.shot-dialog__img { display: block; width: 100%; height: auto; }
+.shot-dialog__caption { margin: 0; padding: .9rem 1.1rem 1.1rem; color: var(--smto-text-muted); font-size: .9rem; }
+
+@media (max-width: 40rem) {
+  .gallery-page { padding-block-start: var(--space-8); }
+  .gallery-section { margin-top: var(--space-10); }
+  .shot--phone .shot__frame { max-width: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .shot__frame { transition: none; }
+  .shot__frame:hover { transform: none; }
+}
