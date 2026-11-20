@@ -591,7 +591,9 @@ def main() -> int:
     summary = build(args)
     if args.require_manual and summary["manual"] is None:
         raise SystemExit("Manual export was required but did not run")
-    (SITE_DIR / "build-info.json").write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
+    # build-info.json is committed: never record local paths (they contain the user name).
+    record = json.dumps(summary, indent=2).replace(str(Path.home()), "~")
+    (SITE_DIR / "build-info.json").write_text(record + "\n", encoding="utf-8")
     print(json.dumps({k: v for k, v in summary.items() if k != "html_pages"}, indent=2))
     if not args.skip_check:
         sys.path.insert(0, str(TOOLS_DIR))

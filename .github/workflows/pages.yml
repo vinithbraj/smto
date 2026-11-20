@@ -3,8 +3,8 @@
 #
 # site/public is generated locally by site/tools/build_site.py from the openfabric
 # source and committed to main; this workflow only checks it and publishes it. It
-# checks out site/ alone (sparse), so the Git LFS release binaries are never
-# downloaded. gh-pages always holds exactly one commit: the current site.
+# checks out site/ alone (sparse checkout). gh-pages always holds exactly one
+# commit: the current site.
 #
 # Manual fallback (same result, from your machine): site/tools/publish_gh_pages.sh
 name: Publish website

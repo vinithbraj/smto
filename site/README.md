@@ -4,7 +4,7 @@ This folder holds the static edition of the SMTO public website and product manu
 
 **https://vinithbraj.github.io/smto/**
 
-> **Status:** the static manual (`/manual/`) and the product screenshots in the Gallery are still being added. Until they land, the site has no Manuals link, and `tools/export_manual.py` and `tools/capture_product.py` aren't committed yet.
+> **Status:** product screenshots for the Gallery are still being captured and reviewed. Until they're added, the Gallery shows the reference diagrams only.
 
 The pages are not a hand-made copy. `tools/build_site.py` imports the real website from the openfabric source (`src/smto_site`), renders every public page through the site's own templates, content files and fingerprinted assets, and writes the result to [`public/`](public/). GitHub serves `public/` as it is.
 
@@ -12,6 +12,7 @@ The pages are not a hand-made copy. `tools/build_site.py` imports the real websi
 | --- | --- |
 | ![SMTO home page in light mode](screenshots/home-desktop-light.webp) | ![SMTO home page in dark mode](screenshots/home-desktop-dark.webp) |
 | ![Gallery page](screenshots/gallery-desktop-light.webp) | ![Gallery diagrams in dark mode](screenshots/gallery-diagrams-dark.webp) |
+| ![Product manual](screenshots/manual-desktop-light.webp) | ![Install and startup in the manual, dark mode](screenshots/manual-desktop-dark.webp) |
 
 <details>
 <summary>More screenshots: home page sections, FAQ, legal, phone</summary>
@@ -36,7 +37,7 @@ The pages are not a hand-made copy. `tools/build_site.py` imports the real websi
 | `/` | Home page: why SMTO, examples, comparison, how it works, computers, models, privacy, downloads | `src/smto_site/templates/home.html` and `content/*.json` |
 | `/faq/` | Frequently asked questions with in-page search | `content/faq.json` |
 | `/gallery/` | **New on this edition.** Product screenshots and the site's 15 reference diagrams | `site/templates/gallery.html` (this folder); the diagrams come from `src/smto_site/visuals.py` |
-| `/manual/` | The full product manual, including search and deep links (`#doc=…&heading=…`) | `src/manual` |
+| `/manual/` | The full product manual (2,141 documents, about 37 MB): search, deep links (`#doc=…&heading=…`), diagrams, light and dark | `src/manual` |
 | `/license/`, `/legal/*` | License, EULA, Apache notices, third-party notices, as HTML and `.txt` | `src/smto_legal` |
 | `/releases/`, `/changelog/` | Release index; it is empty until `release_data/releases.json` lists a release | `src/smto_site/release_data` |
 | `/docs/*.md`, `/learn/*.md`, `/security.md` | Markdown support documents linked from the home page and FAQ | `content/public_docs.json` |
@@ -59,12 +60,14 @@ site/
 └── tools/
     ├── build_site.py    # render the website and manual into public/
     ├── export_manual.py # static export of the product manual (called by build_site.py)
-    ├── check_site.py    # link/asset/URL checks; also runs in the deploy workflow
+    ├── export_manual_shim.js  # browser shim that answers the manual's API from static files
+    ├── check_site.py    # link/asset/URL checks; also runs in the publish workflow
     ├── capture_site.py  # browser check of every page + the README screenshots
-    └── capture_product.py  # stage and capture the product UI screenshots
+    ├── capture_product.py  # stage and capture the product UI screenshots
+    └── publish_gh_pages.sh # manual fallback: publish public/ to gh-pages from your machine
 ```
 
-The deploy workflow is in [`../.github/workflows/pages.yml`](../.github/workflows/pages.yml). GitHub only runs workflows from that folder.
+The publish workflow is in [`../.github/workflows/pages.yml`](../.github/workflows/pages.yml). GitHub only runs workflows from that folder.
 
 ## Rebuild after the website changes
 
@@ -84,8 +87,10 @@ $PY site/tools/capture_site.py
 # 3. Publish
 git add site .github/workflows/pages.yml
 git commit -m "Update website"
-git push            # the workflow deploys site/public
+git push            # the workflow publishes site/public
 ```
+
+A full build takes about two minutes, most of it the manual export.
 
 The build ends by running `check_site.py`. A broken link, a missing asset, a leftover root-relative URL or any link to `smtorch.com` fails the build.
 
@@ -100,11 +105,13 @@ $PY site/tools/build_site.py --source ~/Desktop/openfabric
 
 The capture starts an isolated SMTO controller with scripted model responses and sample files. It never uses your own conversations, settings or running services. `manifest.json` in that folder holds the title, caption and alt text for each image, and the gallery pairs light and dark captures so each visitor sees the version that matches their theme.
 
-## One-time GitHub setup
+## How publishing works
 
-1. Push this folder and `.github/workflows/pages.yml` to `main`.
-2. Open **Settings → Pages → Build and deployment** and set **Source** to **GitHub Actions**.
-3. The **Deploy website to GitHub Pages** workflow runs on every push that changes `site/public/`; you can also start it from the **Actions** tab. The site appears at https://vinithbraj.github.io/smto/.
+GitHub Pages serves the `gh-pages` branch, which always holds a single commit: a copy of `site/public/`. No repository setting needs changing; GitHub turned Pages on when that branch was first pushed.
+
+- Every push to `main` that changes `site/public/` runs the **Publish website** workflow. It runs `check_site.py`, then force-pushes `site/public/` to `gh-pages`. You can also start it from the **Actions** tab.
+- The site updates at https://vinithbraj.github.io/smto/ a minute or two later.
+- If the workflow can't run, `site/tools/publish_gh_pages.sh` does the same from your machine over SSH.
 
 Optional: under **Settings → General → About**, set the repository's website to the Pages URL so it shows on the repo home page.
 
@@ -117,7 +124,7 @@ $PY site/tools/build_site.py --source ~/Desktop/openfabric \
     --site-url https://www.example.com --cname www.example.com
 ```
 
-Then set the same domain under **Settings → Pages → Custom domain** and point DNS at GitHub Pages. Canonical URLs, the sitemap, the feed and `robots.txt` all follow `--site-url`. The deploy workflow refuses to publish when they don't match the Pages URL GitHub reports.
+Then set the same domain under **Settings → Pages → Custom domain** and point DNS at GitHub Pages. Canonical URLs, the sitemap, the feed and `robots.txt` all follow `--site-url`. The publish workflow refuses to publish when they don't match the domain in `public/CNAME` (or the `github.io` URL when there is none).
 
 ## How this edition differs from the server-hosted site
 
@@ -134,4 +141,6 @@ GitHub Pages serves files and can't run the website's FastAPI server, so a few b
 | Canonical origin is the server's own domain | Canonical URLs point to the GitHub Pages URL. Change it with `--site-url`. |
 | Links to the `smtorch.com` domain (footer "SMTO website", legal page headers, FAQ answers, Manuals menu) | Removed, together with the "Visit smtorch.com for details" sentences that only point there |
 
-The additions are the Gallery page and its navigation item. The removals are the `smtorch.com` links and sentences listed above; `build_site.py` (`SMTORCH_REMOVALS`) lists each one. The binding legal documents (`/legal/eula/`, `/legal/proprietary-license/` and their `.txt` files) are published byte-for-byte as shipped with the product, so the address still appears there as plain text, not as a link. All other copy and content is unchanged.
+The additions are the Gallery page and its navigation item. The removals are the `smtorch.com` links and sentences listed above; `build_site.py` (`SMTORCH_REMOVALS`) lists each one. The binding legal documents (`/legal/eula/`, `/legal/proprietary-license/` and their `.txt` files) are published byte-for-byte as shipped with the product, so the address still appears there as plain text, not as a link. The manual's *Install and startup* guide also names it, as plain text, in its section on running the public manual server. All other copy and content is unchanged.
+
+In the manual, `export_manual.py` also repairs links that don't work in the server-hosted manual either: relative `.md` links become `#doc=` links, and links to repository source files keep their text but lose the link.

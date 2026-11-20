@@ -1,0 +1,7 @@
+/* Static manual only (site/tools/export_manual.py): no SMTO installation is reachable, so
+   destinations that need one are dropped from the App navigation, and the header wordmark
+   links back to the site root. */
+#product-navigation-menu [aria-disabled="true"] { display: none; }
+#product-navigation-menu .product-navigation-group:not(:has(a[href])) { display: none; }
+.product-navigation-brand a.static-home-link { color: inherit; text-decoration: none; }
+.product-navigation-brand a.static-home-link:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; border-radius: 4px; }

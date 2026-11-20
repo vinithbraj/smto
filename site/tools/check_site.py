@@ -142,9 +142,13 @@ def check(root: Path, site_url: str | None = None) -> list[str]:
             relative = path.relative_to(root).as_posix()
             if SENTINEL in text:
                 problems.append(f"{relative} still contains the rendering placeholder origin")
-            # The binding legal documents keep their wording; nothing else mentions smtorch.com.
-            if "smtorch.com" in text and not relative.startswith("legal/"):
-                problems.append(f"{relative} mentions smtorch.com")
+            # The binding legal documents and the manual's operator guide (which documents the
+            # server deployment) keep their wording as plain text. Nothing may link there.
+            if "smtorch.com" in text:
+                if not relative.startswith(("legal/", "manual/api/manual/document/")):
+                    problems.append(f"{relative} mentions smtorch.com")
+                elif re.search(r"""(?:href=\\?["']|\]\()https?://[\w.-]*smtorch\.com""", text):
+                    problems.append(f"{relative} links to smtorch.com")
 
     sitemap = root / "sitemap.xml"
     if site_url and sitemap.is_file():

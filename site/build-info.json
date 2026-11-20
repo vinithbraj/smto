@@ -21,14 +21,52 @@
     "/releases"
   ],
   "redirect_pages": 26,
-  "files_written": 147,
-  "bytes_written": 1100031,
+  "files_written": 4474,
+  "bytes_written": 38177559,
   "gallery": {
     "desktop": 0,
     "phone": 0,
     "diagrams": 15
   },
-  "manual": null,
+  "manual": {
+    "docs": 2141,
+    "files": 4327,
+    "bytes": 37075969,
+    "kinds": {
+      "manual": 32,
+      "architecture": 87,
+      "guide": 2,
+      "generated": 1980,
+      "legacy": 40
+    },
+    "bytes_by_area": {
+      "documents": 25460653,
+      "related": 853904,
+      "catalog": 4030571,
+      "search_index": 2654220,
+      "static": 3710466,
+      "error_catalog": 334709
+    },
+    "links": {
+      "external": 105,
+      "heading": 6,
+      "manual": 4776,
+      "markdown": 816,
+      "unlinked": 1240
+    },
+    "documents_mentioning_public_host": [
+      "install-startup"
+    ],
+    "inline_scripts_moved": [
+      "static/page-inline-1.js",
+      "static/page-inline-2.js"
+    ],
+    "revision": "90099a2a048e5849",
+    "fingerprint": "d0602743c18548da",
+    "notes": [],
+    "seconds": 67.5,
+    "out_dir": "~/Desktop/smto_release/site/public/manual"
+  },
   "skipped_routes": [],
   "unresolved_links": []
 }

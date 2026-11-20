@@ -1,0 +1,209 @@
+/* Shared header and disclosure. Opt-in selectors leave Chat and local toolbars alone. */
+header[data-product-surface] {
+  display: flex !important; align-items: center; justify-content: space-between;
+  flex-wrap: wrap !important; gap: 12px; min-width: 0; box-sizing: border-box;
+  padding: 8px 16px; position: relative; overflow: visible;
+  color: var(--text, inherit); background: var(--surface, var(--bg));
+  border-bottom: 1px solid var(--border, currentColor);
+}
+[data-product-surface] .product-navigation-brand {
+  display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 12px;
+  flex: 1 1 min-content; min-width: min-content; max-width: 100%;
+  overflow-wrap: normal; line-height: 1.4;
+}
+[data-product-surface] .product-navigation-brand > strong { font-size: .875rem; }
+[data-product-surface] .product-navigation-brand h1 { overflow-wrap:normal; word-break:normal; min-width:min-content; margin: 0; font-size: calc(15px * var(--ui-font-scale, 1)); font-weight: 650; letter-spacing: -.012em; line-height: 1.4; }
+[data-product-surface] .product-navigation-controls { display: flex; align-items: center; gap: 4px; flex: 0 0 auto; margin-inline-start: auto; }
+[data-product-surface] .product-navigation-controls > button {
+  display: inline-flex; align-items: center; justify-content: center; flex: 0 0 36px;
+  width: 36px; height: 36px; min-width: 36px; min-height: 36px; margin: 0; padding: 8px;
+  border: 1px solid transparent; border-radius: 8px;
+  color: var(--text-secondary, inherit); background: transparent; font: inherit; cursor: pointer;
+  transition: background-color 120ms ease, color 120ms ease;
+}
+[data-product-surface] .product-navigation-controls > button:hover { color: var(--text, inherit); background: var(--surface-hover, ButtonFace); }
+[data-product-surface] .product-navigation-controls > button[aria-pressed="true"],
+[data-product-surface] .product-navigation-controls > button[aria-expanded="true"] { color: var(--text, inherit); background: var(--surface-strong, ButtonFace); }
+[data-product-surface] .day-night-switch span { display: none; }
+[data-product-surface] .product-navigation-controls svg {
+  width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.6;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+/* One navigation slot; contextual DOM is moved here, never cloned. */
+.product-sidebar { padding:0; margin:0; width: 280px; box-sizing: border-box; color: var(--text, CanvasText); background: var(--surface, Canvas); border-inline-end: 1px solid var(--border, GrayText); display:flex; flex-direction:column; min-height:0; overflow:hidden; }
+body > .product-sidebar { position:fixed; inset-block:0; inset-inline-start:0; z-index:90; }
+@media(min-width:1100px) { body.product-sidebar-docked { padding-inline-start:280px; box-sizing:border-box; } }
+.product-sidebar-heading { display:flex; align-items:center; justify-content:space-between; gap:8px; min-height:var(--header-height, 52px); padding:8px 12px 8px 20px; box-sizing:border-box; }
+.product-sidebar-heading :is(h1,h2,strong) { margin:0; font-size:calc(13px * var(--ui-font-scale,1)); font-weight:650; letter-spacing:-.005em; }
+.product-sidebar-heading button { display:inline-grid; place-items:center; flex:0 0 auto; width:30px; height:30px; min-height:30px; padding:0; background:transparent; color:var(--text-secondary, inherit); border:0; border-radius:7px; cursor:pointer; transition:background-color 120ms ease, color 120ms ease; }
+.product-sidebar-heading button:hover { background:var(--surface-hover, ButtonFace); color:var(--text, inherit); }
+.product-sidebar-heading button svg, .history-drawer .drawer-header .icon-button svg { width:17px; height:17px; fill:none; stroke:currentColor; stroke-linecap:round; stroke-linejoin:round; stroke-width:1.65; }
+/* A native-style segmented control: one inset track, the selected segment raised. */
+.product-sidebar-tabs { display:flex; gap:2px; margin:0 12px 12px; padding:2px; flex-shrink:0; border-radius:9px; background:color-mix(in srgb, var(--text, CanvasText) 7%, transparent); }
+.product-sidebar-tabs button { flex:1; font:inherit; font-size:calc(13px * var(--ui-font-scale,1)); font-weight:500; min-width:0; min-height:30px; padding:4px 8px; border:0; border-radius:7px; background:transparent; color:var(--text-secondary, inherit); cursor:pointer; transition:background-color 120ms ease, color 120ms ease, box-shadow 120ms ease; }
+.product-sidebar-tabs button:not([aria-selected=true]):hover { color:var(--text, inherit); }
+.product-sidebar-tabs [aria-selected=true] { background:var(--bg, Canvas); color:var(--text, inherit); font-weight:600; box-shadow:0 1px 2px rgb(0 0 0 / .12), 0 0 0 .5px rgb(0 0 0 / .06); }
+:root[data-theme="dark"] .product-sidebar-tabs [aria-selected=true] { background:color-mix(in srgb, var(--text, CanvasText) 16%, var(--surface, Canvas)); box-shadow:0 1px 2px rgb(0 0 0 / .35); }
+.product-navigation-menu, .product-sidebar-context { flex:1; min-height:0; overflow:auto; overscroll-behavior:contain; padding:8px 12px; }
+.product-navigation-menu { display:flex; flex-direction:column; flex-wrap:nowrap; align-items:stretch; gap:9px; margin:0; font:inherit; font-size:calc(14px * var(--ui-font-scale,1)); }
+/* Sections: a hairline rule between groups, a disclosure header, then its destinations.
+   An expanded section becomes a card tinted with the active theme's accent. */
+/* Depth: the sliding thumb of every segmented switch, navigation cards and header bands. */
+:root {
+  --segmented-thumb-shadow:0 0 0 .5px rgb(0 0 0 / .07), 0 1px 1px rgb(0 0 0 / .06), 0 2px 5px rgb(0 0 0 / .10), 0 5px 12px -3px rgb(0 0 0 / .14), inset 0 1px 0 rgb(255 255 255 / .75);
+  --product-navigation-card-shadow:0 0 0 .5px rgb(0 0 0 / .05), 0 1px 2px rgb(0 0 0 / .06), 0 4px 12px -4px rgb(0 0 0 / .12);
+  --product-navigation-header-shadow:0 1px 1.5px rgb(0 0 0 / .07), inset 0 1px 0 rgb(255 255 255 / .4);
+}
+:root[data-theme="dark"] {
+  --segmented-thumb-shadow:0 0 0 .5px rgb(255 255 255 / .07), 0 1px 2px rgb(0 0 0 / .5), 0 3px 8px rgb(0 0 0 / .38), 0 6px 14px -4px rgb(0 0 0 / .45), inset 0 1px 0 rgb(255 255 255 / .09);
+  --product-navigation-card-shadow:0 0 0 .5px rgb(255 255 255 / .05), 0 1px 2px rgb(0 0 0 / .4), 0 5px 14px -5px rgb(0 0 0 / .5);
+  --product-navigation-header-shadow:0 1px 2px rgb(0 0 0 / .35), inset 0 1px 0 rgb(255 255 255 / .06);
+}
+.product-sidebar, .history-drawer {
+  --product-navigation-section-bg:color-mix(in srgb, var(--accent, Highlight) 10%, var(--surface, Canvas));
+  --product-navigation-header-bg:color-mix(in srgb, var(--button, Highlight) 30%, color-mix(in srgb, var(--text, CanvasText) 6%, var(--surface, Canvas)));
+  --product-navigation-header-hover:color-mix(in srgb, var(--button, Highlight) 38%, var(--surface, Canvas));
+}
+:root[data-theme="dark"] :is(.product-sidebar, .history-drawer) {
+  --product-navigation-section-bg:color-mix(in srgb, var(--accent, Highlight) 14%, var(--surface, Canvas));
+}
+.product-navigation-group { position:relative; display:grid; padding:4px; border-radius:10px; transition:background-color 200ms ease; }
+.product-navigation-group + .product-navigation-group::before { content:""; position:absolute; inset-inline:6px; top:-5px; border-top:1px solid var(--border, GrayText); pointer-events:none; }
+.product-navigation-group { transition:background-color 200ms ease, box-shadow 200ms ease; }
+.product-navigation-group:not(.is-collapsed) { background:var(--product-navigation-section-bg); box-shadow:var(--product-navigation-card-shadow); }
+.product-navigation-panel { display:grid; grid-template-rows:1fr; transition:grid-template-rows 200ms ease, opacity 160ms ease, visibility 0s; }
+.product-navigation-group.is-collapsed .product-navigation-panel { grid-template-rows:0fr; opacity:0; visibility:hidden; transition:grid-template-rows 200ms ease, opacity 160ms ease, visibility 0s 200ms; }
+.product-navigation-group h2 { margin:0; font:inherit; }
+.product-navigation-group:not(.is-collapsed) .product-navigation-items { padding-top:3px; }
+.product-navigation-items { display:grid; gap:1px; min-height:0; overflow:hidden; padding-top:1px; }
+@media (prefers-reduced-motion: reduce) { .product-navigation-toggle::before, .product-navigation-toggle, .product-navigation-group, .product-navigation-panel { transition:none; } }
+.product-navigation-group small { color:var(--text-secondary, GrayText); font-size:calc(11px * var(--ui-font-scale,1)); font-weight:500; }
+.product-sidebar :focus-visible { outline:2px solid var(--accent, Highlight); outline-offset:-2px; }
+.product-sidebar-dialog { position:fixed; inset:0 auto 0 0; padding:0; margin:0; max-width:calc(100vw - 16px); max-height:100dvh; height:100dvh; border:0; color:inherit; background:transparent; overflow:visible; }
+.product-sidebar-dialog > .product-sidebar { height:100%; width:min(320px,calc(100vw - 16px)); }
+.product-sidebar-dialog::backdrop { background:rgb(0 0 0 / .4); }
+.product-sidebar [hidden], .product-sidebar[hidden] { display:none !important; }
+.product-sidebar-context > :is(nav,aside) { display:block !important; width:auto !important; max-height:none !important; padding:4px !important; border:0 !important; background:transparent !important; overflow:visible !important; position:static !important; height:auto !important; }
+body[data-product-context-moved] .mission-settings-layout, body[data-product-context-moved=runtime] .runtime-layout { grid-template-columns:minmax(0,1fr); }
+body[data-product-context-moved=appearance] .theme-layout { grid-template-columns:minmax(0,1fr) minmax(260px,340px); }
+body[data-product-context-moved=manual] .manual-layout { grid-template-columns:minmax(0,1fr) minmax(220px,280px); }
+@media(max-width:1099px),(pointer:coarse) { .product-sidebar :is(button,a,[role=tab]), .product-sidebar-tabs button, .product-navigation-items > :is(a,button,span) { min-height:44px; } }
+@media(max-width:980px) { body[data-product-context-moved=appearance] .theme-layout, body[data-product-context-moved=manual] .manual-layout { grid-template-columns:minmax(0,1fr); } }
+@media(forced-colors:active) { .product-sidebar [aria-current],.product-sidebar [aria-selected=true] { outline:1px solid Highlight; } }
+.product-page-toolbar { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; padding: 8px 16px; min-width: 0; }
+.product-page-toolbar input { max-width: 100%; box-sizing: border-box; }
+.mission-settings-shell:has(> .product-page-toolbar) { grid-template-rows: auto auto auto minmax(0, 1fr) auto; }
+.console-shell:has(> [data-product-surface]) { grid-template-rows: auto auto auto 1fr auto; }
+.directory-shell:has(> [data-product-surface]) { grid-template-rows: auto auto auto minmax(0, 1fr); }
+@media (max-width: 980px), (pointer: coarse) {
+  [data-product-surface] .product-navigation-controls > button { flex-basis: 44px; width: 44px; height: 44px; min-width: 44px; min-height: 44px; }
+  .product-navigation-menu > :is(a, button, span) { min-height: 44px; padding-block: 8px; }
+}
+@media (max-width: 600px) {
+  header[data-product-surface] { padding: 8px; gap: 8px; }
+  [data-product-surface] .product-navigation-brand { display: block; }
+  .product-page-toolbar { padding: 8px; }
+}
+@media (forced-colors: active) {
+  .product-navigation-menu { background: Canvas; color: CanvasText; border-color: CanvasText; }
+  .product-navigation-menu > [aria-current] { outline: 1px solid Highlight; }
+}
+
+/* Chat retains its existing resize/docking owner and live history list, but its pane
+   uses the product sidebar's surface, heading, insets and tabs exactly. */
+.history-drawer.history-drawer { padding:0; background:var(--surface, Canvas); }
+.history-drawer .drawer-header { display:flex; align-items:center; justify-content:space-between; gap:8px; height:auto; min-height:var(--header-height, 52px); margin:0; padding:8px 12px 8px 20px; border:0; box-sizing:border-box; }
+.history-drawer .drawer-header h2 { margin:0; font-size:calc(13px * var(--ui-font-scale,1)); font-weight:650; letter-spacing:-.005em; }
+.history-drawer .drawer-header .icon-button { width:30px; height:30px; border-radius:7px; color:var(--text-secondary, inherit); }
+.history-drawer .drawer-header .icon-button:hover { color:var(--text, inherit); }
+.history-drawer > .product-sidebar-context { display:flex; flex-direction:column; padding:0 12px 12px; overflow:hidden; }
+.product-history-context { display:flex; flex:1; min-height:0; flex-direction:column; }
+.history-drawer > .product-navigation-menu { font-size:calc(14px * var(--ui-font-scale,1)); }
+.history-drawer > .product-sidebar-tabs { margin:0 12px 12px; }
+
+body[data-product-context-moved=runtime] .runtime-layout { grid-template-rows:minmax(0,1fr); }
+
+/* Sections tab = App tab. Contextual lists moved into the sidebar (Settings, Inference,
+   Appearance, Runtime, Health, Manual, Directory) reuse the App tab's cards, header bands,
+   chevron, dividers and rows exactly. Native details keep owning expansion. */
+.product-sidebar-context > :is(nav,aside) { padding:0 !important; }
+.product-sidebar-context nav:has(> .navigation-group) { display:flex !important; flex-direction:column; gap:9px; }
+:root .product-sidebar-context details.navigation-group { position:relative; margin:0; padding:4px; border:0; border-radius:10px; background:transparent; transition:background-color 200ms ease; }
+:root .product-sidebar-context details.navigation-group { transition:background-color 200ms ease, box-shadow 200ms ease; }
+:root .product-sidebar-context details.navigation-group[open] { background:var(--product-navigation-section-bg); box-shadow:var(--product-navigation-card-shadow); }
+:root .product-sidebar-context details.navigation-group ~ details.navigation-group::before { content:""; position:absolute; inset-inline:6px; top:-5px; border-top:1px solid var(--border, GrayText); pointer-events:none; }
+/* One header band for App toggles and Sections summaries. The toggle selector outranks
+   page-wide control sizing (e.g. Settings' 36px buttons) so both bands are always equal. */
+:root :is(.product-sidebar, .history-drawer) .product-navigation-toggle.product-navigation-toggle,
+:root .product-sidebar-context details.navigation-group > summary:is(.ui-disclosure-trigger, *) {
+  display:flex; align-items:center; justify-content:space-between; gap:8px; width:100%; box-sizing:border-box;
+  min-width:0; height:auto; min-height:28px; margin:0; padding:4px 6px 4px 10px; border:0; border-radius:7px;
+  box-shadow:var(--product-navigation-header-shadow);
+  background:var(--product-navigation-header-bg); color:var(--text, CanvasText); list-style:none; cursor:pointer;
+  font:650 calc(11px * var(--ui-font-scale,1))/1.4 var(--ui-font, inherit); letter-spacing:.02em; text-align:start;
+  transition:background-color 120ms ease, box-shadow 120ms ease;
+}
+:root :is(.product-sidebar, .history-drawer) .product-navigation-toggle.product-navigation-toggle > span { min-width:0; font:inherit; line-height:inherit; }
+:root :is(.product-sidebar, .history-drawer) .product-navigation-toggle.product-navigation-toggle:not(:disabled):hover,
+:root .product-sidebar-context details.navigation-group > summary:is(.ui-disclosure-trigger, *):hover { background:var(--product-navigation-header-hover); color:var(--text, CanvasText); }
+:root .product-sidebar-context details.navigation-group > summary > :is(h2,h3,h4) { flex:1 1 auto; min-width:0; margin:0; color:inherit; font:inherit; letter-spacing:inherit; }
+/* One trailing chevron for App and Sections headers: the product's canonical disclosure
+   marker (right when closed, down when open, mirrored for right-to-left). */
+:root .product-navigation-toggle::before,
+:root .product-sidebar-context details.navigation-group > summary:is(.ui-disclosure-trigger, *)::before {
+  content:""; order:2; display:inline-block; box-sizing:border-box; flex:0 0 auto;
+  width:calc(var(--ui-disclosure-size, 12px) * .6); height:calc(var(--ui-disclosure-size, 12px) * .6);
+  margin:0 5px 0 0; padding:0; border:0; border-right:1.5px solid currentColor; border-bottom:1.5px solid currentColor;
+  background:none; opacity:1; color:var(--text-secondary, GrayText); pointer-events:none;
+  transform:rotate(-45deg); transform-origin:center; transition:transform 160ms ease;
+}
+:root .product-navigation-toggle:dir(rtl)::before,
+:root .product-sidebar-context details.navigation-group > summary:is(.ui-disclosure-trigger, *):dir(rtl)::before { transform:rotate(135deg); margin:0 0 0 5px; }
+:root .product-navigation-toggle[aria-expanded="true"]::before,
+:root .product-sidebar-context details.navigation-group[open] > summary:is(.ui-disclosure-trigger, *)::before { transform:rotate(45deg); }
+:root :is(.product-sidebar, .history-drawer) .product-navigation-toggle:focus-visible,
+:root .product-sidebar-context details.navigation-group > summary:focus-visible { outline:2px solid var(--accent, Highlight); outline-offset:-2px; }
+:root .product-sidebar-context details.navigation-group > .navigation-group-items { display:grid; gap:1px; margin:0; padding:3px 0 0; }
+/* A flat contextual list (no categories) is one card without a header. */
+:root .product-sidebar-context nav:has(> a):not(:has(> .navigation-group)) { display:grid !important; gap:1px; padding:4px !important; border-radius:10px; background:var(--product-navigation-section-bg) !important; box-shadow:var(--product-navigation-card-shadow); }
+/* One row style for every destination in either tab. */
+:root .product-navigation-items > :is(a,button,span),
+:root .product-sidebar-context :is(nav .navigation-group-items > a, nav > a) {
+  display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:4px 8px; width:100%; box-sizing:border-box;
+  min-height:34px; margin:0; padding:6px 10px; border:0; border-radius:7px; color:var(--text, CanvasText); background:transparent;
+  font:400 calc(14px * var(--ui-font-scale,1))/1.35 var(--ui-font, inherit); text-align:start; text-decoration:none;
+  white-space:normal; overflow-wrap:anywhere; transition:background-color 120ms ease;
+}
+:root .product-navigation-items > :is(a,button):hover,
+:root .product-sidebar-context :is(nav .navigation-group-items > a, nav > a):hover { background:var(--surface-hover, ButtonFace); cursor:pointer; }
+:root .product-navigation-items > [aria-current],
+:root .product-sidebar-context :is(nav .navigation-group-items > a, nav > a):is([aria-current], .active) { background:var(--surface-strong, ButtonFace); font-weight:600; }
+@media (prefers-reduced-motion: reduce) {
+  :root .product-sidebar-context details.navigation-group, :root .product-sidebar-context details.navigation-group > summary::before { transition:none; }
+}
+@media(max-width:1099px),(pointer:coarse) {
+  :root .product-navigation-items > :is(a,button,span),
+  :root .product-sidebar-context :is(nav .navigation-group-items > a, nav > a) { min-height:44px; }
+  :root :is(.product-sidebar, .history-drawer) .product-navigation-toggle.product-navigation-toggle,
+  :root .product-sidebar-context details.navigation-group > summary:is(.ui-disclosure-trigger, *) { min-height:44px; }
+}
+@media(forced-colors:active) {
+  .product-sidebar-tabs { outline:1px solid CanvasText; }
+  :root :is(.product-sidebar, .history-drawer) .product-navigation-toggle.product-navigation-toggle,
+  :root .product-sidebar-context details.navigation-group > summary:is(.ui-disclosure-trigger, *) { border:1px solid CanvasText; }
+  :root :is(.product-navigation-toggle, .product-sidebar-context details.navigation-group > summary)::before { color:CanvasText; }
+  :root .product-sidebar-context :is(nav .navigation-group-items > a, nav > a):is([aria-current], .active) { outline:1px solid Highlight; }
+}
+
+/* Segmented switches with a sliding thumb (see segmented() in product_navigation.js). The
+   thumb carries the raised "selected" look; the selected button itself stays transparent. */
+[data-segmented-motion] { position:relative; isolation:isolate; }
+[data-segmented-motion] > :is(button, label) { position:relative; z-index:1; }
+[data-segmented-motion] > :is(button, label):is([aria-selected="true"], [aria-pressed="true"], :has(> input:checked)) { background:transparent !important; border-color:transparent !important; box-shadow:none !important; outline-color:transparent; }
+.segmented-thumb { position:absolute; top:0; left:0; z-index:0; border-radius:7px; pointer-events:none; opacity:0;
+  background:var(--bg, Canvas); box-shadow:var(--segmented-thumb-shadow);
+  transition:transform 260ms cubic-bezier(.3,.8,.25,1), width 260ms cubic-bezier(.3,.8,.25,1), height 260ms cubic-bezier(.3,.8,.25,1), opacity 120ms ease; }
+.segmented-thumb.is-instant { transition:none; }
+:root[data-theme="dark"] .segmented-thumb { background:color-mix(in srgb, var(--text, CanvasText) 16%, var(--surface, Canvas)); box-shadow:var(--segmented-thumb-shadow); }
+@media (prefers-reduced-motion: reduce) { .segmented-thumb { transition:opacity 120ms ease; } }
+@media (forced-colors: active) { .segmented-thumb { display:none; } [data-segmented-motion] > :is(button, label):is([aria-selected="true"], [aria-pressed="true"], :has(> input:checked)) { outline:1px solid Highlight; } }

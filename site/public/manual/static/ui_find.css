@@ -1,0 +1,44 @@
+/* A shared desktop Find surface; highlight ranges never alter document markup. */
+::highlight(smto-find), ::highlight(smto-filter) { background-color: #ffeb66; color: #1a1a1a; }
+::highlight(smto-find-active) { background-color: #ffc53d; color: #1a1a1a; text-decoration: underline; }
+.ui-find-trigger {
+  display: inline-flex; align-items: center; justify-content: center;
+  flex: none; min-width: 36px; min-height: var(--ui-control-height, 36px); padding: 4px 10px;
+  border: 1px solid transparent; border-radius: var(--ui-control-border-radius, 8px);
+  background: transparent; color: var(--text-secondary, var(--text, #222)); font: inherit; font-size: calc(13px * var(--ui-font-scale, 1)); cursor: pointer;
+  transition: background-color 120ms ease, color 120ms ease;
+}
+.ui-find-trigger:hover, .ui-find-trigger[aria-expanded="true"] { background: var(--surface-hover, #eee); color: var(--text, #222); }
+.ui-find-trigger svg {
+  width: 17px; height: 17px; fill: none; stroke: currentColor;
+  stroke-width: 1.65; stroke-linecap: round; stroke-linejoin: round;
+}
+.ui-find-bar {
+  position: fixed; z-index: 10000; top: 12px; right: 16px;
+  display: flex; flex-wrap: wrap; align-items: center; gap: 6px;
+  box-sizing: border-box; width: min(520px, calc(100% - 32px)); padding: 10px;
+  border: 1px solid var(--border, #777); border-radius: 12px;
+  background: color-mix(in srgb, var(--bg, #fff) 90%, transparent); color: var(--text, #222);
+  -webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px);
+  box-shadow: var(--shadow, 0 4px 24px #0003); font: calc(13px * var(--ui-font-scale, 1))/1.4 var(--ui-font, system-ui, sans-serif);
+}
+.ui-find-bar[hidden] { display: none !important; }
+.ui-find-scope { flex: 0 0 100%; font-size: calc(12px * var(--ui-font-scale, 1)); overflow-wrap: anywhere; }
+.ui-find-bar input { flex: 1 1 100px; width: 100px; min-width: 0; min-height: var(--ui-control-height, 36px); box-sizing: border-box;
+  padding: 5px 10px; border: 1px solid var(--border-strong, #777); border-radius: 8px;
+  color: inherit; background: var(--bg, #fff); font: inherit; }
+.ui-find-count { min-width: 68px; font-variant-numeric: tabular-nums; text-align: center; }
+.ui-find-bar button { flex: 0 0 36px; width: 36px; min-height: var(--ui-control-height, 36px); padding: 0; border: 1px solid var(--border, #777);
+  border-radius: 8px; color: inherit; background: var(--surface, #fff); font: calc(17px * var(--ui-font-scale, 1))/1 var(--ui-font, system-ui, sans-serif); cursor: pointer; }
+.ui-find-bar button:not(:disabled):hover { background: var(--surface-hover, #eee); }
+.ui-find-bar button:disabled { opacity: .4; cursor: default; }
+.ui-find-trigger:focus-visible, .ui-find-bar :is(button, input):focus-visible { outline: 2px solid var(--accent, #2879dc); outline-offset: 2px; }
+dialog > .ui-find-bar, [role="dialog"] > .ui-find-bar { position: sticky; top: 4px; margin: 4px 0 8px auto; max-width: 100%; }
+@media (max-width: 980px), (pointer: coarse) {
+  .ui-find-trigger, .ui-find-bar button { min-width: 44px; min-height: 44px; }
+  .ui-find-bar button { flex-basis: 44px; }
+  .ui-find-bar input { min-height: 44px; font-size: max(16px, 1em); }
+}
+@media (forced-colors: active) {
+  ::highlight(smto-find), ::highlight(smto-filter), ::highlight(smto-find-active) { background-color: Highlight; color: HighlightText; }
+}

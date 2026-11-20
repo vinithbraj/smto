@@ -8,7 +8,7 @@ An optional **Vision** connection in Settings → Model routing serves explicit 
 and image-analysis calls. With Vision unassigned, those routes use Main. The active
 endpoint must advertise image input; names alone do not establish capability. Each
 Vision task uses its captured configuration and normal inference budget. See
-attachments and Vision for
+[attachments and Vision](https://vinithbraj.github.io/smto/manual/#doc=attachments-vision&heading=configure-and-use-vision) for
 authorized sources, dependency placement and coverage limits.
 
 The composer follows the global configuration. Its thinking and output controls tune agent decisions without changing model assignments.
@@ -61,7 +61,7 @@ reservation. Increasing it leaves less room for input within the same context wi
 
 If a request does not fit, inspect the selected model's context ceiling and output
 settings together. A large output allowance does not increase the model's context
-capacity. See context and memory for how
+capacity. See [context and memory](https://vinithbraj.github.io/smto/manual/#doc=context-compaction-kv) for how
 retained conversation material is projected into a request.
 
 ## Thinking effort and budget
@@ -74,7 +74,7 @@ to the provider.
 
 Task Contract compilation and recovery use their own saved thinking policies.
 Changing normal execution settings does not replace those policies. See
-Task Contract thinking
+[Task Contract thinking](https://vinithbraj.github.io/smto/manual/#doc=task-contract-compiler&heading=thinking-during-task-contract-generation)
 for the compilation-specific controls.
 
 **Force budget and stop thinking** is off by default. When enabled, the next normal
@@ -156,6 +156,6 @@ The optional **Local AI Runtimes** skill manages model servers on the selected
 Gateway using accepted Parameter profiles. Starting one leaves model assignments
 unchanged. Its explicit preview/activate/restore workflow can update Main through
 revisioned routing for future work; accepted tasks retain their configuration.
-See Gateway Local AI runtimes for setup,
+See [Gateway Local AI runtimes](https://vinithbraj.github.io/smto/manual/#doc=architecture-gateway-local-ai) for setup,
 provider limits, credential/reachability requirements and recovery. The controller's
 [Inference area](https://vinithbraj.github.io/smto/docs/configuration/inference/) owns its separate installation and instance UI.

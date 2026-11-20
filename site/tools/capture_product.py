@@ -226,10 +226,8 @@ def main(argv=None):
 # Everything below runs inside pytest, with the openfabric test fixtures active.
 
 SCENES = [
-    ("start", "Empty conversation with a prompt in the composer"),
-    ("activity", "Completed disk-space task with its activity expanded"),
-    ("approval", "Permission approval for a cleanup command"),
-    ("verified", "Approved cleanup and verification"),
+    ("conversation", "Disk-space task: start, answer, approval and verification"),
+    ("activity", "The same task in Debug mode, with commands and output expanded"),
 ]
 
 if __name__ != "__main__" and os.environ.get(ENV):
@@ -542,45 +540,100 @@ if __name__ != "__main__" and os.environ.get(ENV):
         expect(page.locator(".assistant-answer")).to_have_count(0)
 
     def submit_prompt(page, text):
-        # Submitting before the agreement status has loaded opens the agreement dialog.
+        """Type and send a prompt once the composer reports it is ready to submit."""
+        # Sending before the agreement status and conversation settings have loaded is
+        # refused by the UI (agreement dialog or "Your message can't be sent yet").
         page.wait_for_function("window.SMTOLegal && window.SMTOLegal.canExecute()")
         prompt = page.locator("#prompt-input")
-        prompt.click()
-        prompt.fill(text)
-        prompt.press("Enter")
+        for _ in range(4):
+            page.wait_for_function(
+                """() => {
+                    const composer = document.querySelector('#composer');
+                    const status = document.querySelector('#composer-profile-status');
+                    return composer && !composer.hasAttribute('data-profile-loading')
+                        && composer.getAttribute('aria-busy') !== 'true'
+                        && !(status && status.textContent.trim());
+                }"""
+            )
+            prompt.click()
+            prompt.fill(text)
+            prompt.press("Enter")
+            try:
+                expect(prompt).to_have_value("", timeout=5000)
+                return
+            except AssertionError:
+                close = page.locator("#toast").get_by_role("button", name=re.compile("Close|Dismiss"))
+                if close.count():
+                    close.first.click()
+                page.wait_for_timeout(1500)
+        raise AssertionError(f"The composer did not accept the prompt {text!r}")
 
     # ------------------------------------------------------------------ scenes
 
-    def test_start(tmp_path, browser):
-        owner, _, _ = disk_runtime(tmp_path)
-        with _live_agent_ui_ctx(tmp_path, owner, configure_app=seed_history) as base:
-            for order, theme in ((10, "light"), (11, "dark")):
-                shot = Shot(browser, theme=theme)
-                page = shot.page
-                shot.open(base + "/agent-ui")
-                new_chat(page)
-                set_theme(page, theme)
-                page.locator("#prompt-input").fill(DISK_PROMPT)
-                shot.capture(
-                    f"start-{theme}",
-                    scene="start",
-                    order=order,
-                    theme=theme,
-                    title="Start a task",
-                    caption=(
-                        "The start screen with a request typed into the composer. The chip "
-                        "below the prompt shows which computer (Gateway) the task will run on."
-                    ),
-                    alt=(
-                        "SMTO web UI start screen: navigation sidebar on the left, the heading "
-                        "'What can I help you do?' and a composer containing the request "
-                        f"'{DISK_PROMPT}', with suggestion buttons below."
-                    ),
-                )
-                shot.close()
+    def scroll_into_view(locator, offset=12):
+        """Scroll the element's scroll container so the element starts near its top."""
+        locator.evaluate(
+            """(el, offset) => {
+                el.scrollIntoView({block: 'start'});
+                let parent = el.parentElement;
+                while (parent && !(parent.scrollHeight > parent.clientHeight
+                        && /(auto|scroll)/.test(getComputedStyle(parent).overflowY))) {
+                    parent = parent.parentElement;
+                }
+                if (parent) parent.scrollTop -= offset;
+            }""",
+            offset,
+        )
+        locator.page.wait_for_timeout(600)
 
-    def test_activity(tmp_path, browser):
-        owner, _, gateway = disk_runtime(tmp_path)
+    def open_details(details):
+        """Open a <details> disclosure through its summary, as a click would."""
+        if not details.evaluate("el => el.open"):
+            details.locator(":scope > summary").click()
+            expect(details).to_have_attribute("open", "")
+
+    def view_switch(page, name, on):
+        """Flip a switch in the conversation View panel, the way a user does."""
+        page.get_by_role("button", name="Conversation view settings", exact=True).click()
+        switch = page.get_by_role("switch", name=name, exact=True)
+        expect(switch).to_be_visible()
+        if switch.is_checked() != on:
+            switch.click()
+        page.keyboard.press("Escape")
+        page.wait_for_timeout(800)
+
+    def place(locator, y):
+        """Scroll the element's scroll container so the element's top is at viewport y."""
+        locator.evaluate(
+            """(el, y) => {
+                let parent = el.parentElement;
+                while (parent && !(parent.scrollHeight > parent.clientHeight
+                        && /(auto|scroll)/.test(getComputedStyle(parent).overflowY))) {
+                    parent = parent.parentElement;
+                }
+                if (parent) parent.scrollTop += el.getBoundingClientRect().top - y;
+            }""",
+            y,
+        )
+        locator.page.wait_for_timeout(600)
+
+    def both_themes(shot, name, order, **meta):
+        """Capture light, then switch with the theme button and capture dark."""
+        for offset, theme in enumerate(("light", "dark")):
+            set_theme(shot.page, theme)
+            shot.capture(f"{name}-{theme}", order=order + offset, theme=theme, **meta)
+        set_theme(shot.page, "light")
+
+    def run_disk_task(page):
+        new_chat(page)
+        submit_prompt(page, DISK_PROMPT)
+        expect(page.locator(".assistant-answer").last).to_contain_text(
+            "I haven't deleted anything", timeout=30000
+        )
+        page.wait_for_timeout(1500)
+
+    def test_conversation(tmp_path, browser):
+        owner, model, gateway = disk_runtime(tmp_path)
         with _live_agent_ui_ctx(
             tmp_path, owner, configure_app=seed_history, use_installation_defaults=True
         ) as base:
@@ -588,27 +641,104 @@ if __name__ != "__main__" and os.environ.get(ENV):
             page = shot.page
             shot.open(base + "/agent-ui")
             new_chat(page)
-            submit_prompt(page, DISK_PROMPT)
+            page.locator("#prompt-input").fill(DISK_PROMPT)
+            both_themes(
+                shot,
+                "start",
+                10,
+                scene="conversation",
+                title="Start a task",
+                caption=(
+                    "A new conversation with a request typed into the composer. The chip under "
+                    "the prompt shows the computer (Gateway) the task will run on; earlier "
+                    "conversations are listed on the left."
+                ),
+                alt=(
+                    "SMTO web UI start screen. A navigation sidebar lists earlier conversations; "
+                    "the main area shows the heading 'What can I help you do?' and a composer "
+                    f"containing the request '{DISK_PROMPT}' with a 'localhost' Gateway chip."
+                ),
+            )
+            page.locator("#prompt-input").fill("")
+            run_disk_task(page)
+            place(page.locator("article.turn").last, 122)
+            both_themes(
+                shot,
+                "answer",
+                20,
+                scene="conversation",
+                png=True,
+                title="A completed task",
+                caption=(
+                    "The model's plan and progress notes, followed by its answer: a summary table "
+                    "built from the commands it ran. It reports that nothing was deleted."
+                ),
+                alt=(
+                    f"SMTO conversation. The request '{DISK_PROMPT}' is followed by the plan "
+                    "'Checking free space on the root filesystem first', the note 'Measuring the "
+                    "largest items in ~/Downloads' and an answer stating that ~/Downloads holds "
+                    "about 33 GB with 14 GB free on the root filesystem, with a table of the "
+                    "five largest items."
+                ),
+            )
+            submit_prompt(page, CLEAN_PROMPT)
+            page.wait_for_timeout(6000)
+            shot.debug("approval-wait")
+            with open(RAW.parent / "debug" / "model.txt", "w") as f:
+                f.write(repr([(c[0], c[1]) for c in gateway.calls]) + "\n")
+                for m in model.requests[-1][0][-6:]:
+                    f.write("MSG %s %s\n" % (m.get("role"), str(m.get("content"))[:1500]))
+            (RAW.parent / "debug" / "approval.html").write_text(
+                page.locator("article.turn").last.evaluate("e => e.outerHTML"))
+            page.reload()
+            page.wait_for_timeout(5000)
+            shot.debug("approval-reload")
+            expect(page.locator(".approval-card")).to_be_visible(timeout=30000)
+            page.wait_for_timeout(1500)
+            shot.debug("approval")
+            page.get_by_role("button", name="Approve once", exact=True).click()
             expect(page.locator(".assistant-answer").last).to_contain_text(
-                "I haven't deleted anything", timeout=30000
+                "14 GB to 25 GB", timeout=30000
             )
             page.wait_for_timeout(1500)
-            page.get_by_role("button", name="Conversation view settings", exact=True).click()
-            page.wait_for_timeout(500)
-            shot.debug("imm-view")
-            for label in ("Show execution",):
-                toggle = page.get_by_text(label, exact=True)
-                if toggle.count():
-                    toggle.first.click()
-            page.wait_for_timeout(300)
-            page.keyboard.press("Escape")
-            page.wait_for_timeout(1000)
-            shot.debug("imm-exec")
-            page.locator("article.turn").last.evaluate("e => e.scrollIntoView({block: 'start'})")
+            shot.debug("verified")
+            place(page.locator("article.turn").last, 122)
+            shot.debug("verified-top")
+            shot.close()
+
+    def test_activity(tmp_path, browser):
+        owner, _, _ = disk_runtime(tmp_path)
+        # Debug mode (the full activity view) is on from the first page load here.
+        with _live_agent_ui_ctx(tmp_path, owner, configure_app=seed_history) as base:
+            shot = Shot(browser)
+            page = shot.page
+            shot.open(base + "/agent-ui")
+            run_disk_task(page)
+            groups = page.locator(".work-disclosure details.prose-activity:has(.command-row)")
+            for index in range(groups.count()):
+                open_details(groups.nth(index))
+            page.locator(".command-row").last.locator(
+                ".activity-section-toggle", has_text="Tool output"
+            ).click()
             page.wait_for_timeout(800)
-            shot.debug("imm-exec-top")
-            (RAW.parent / "debug" / "imm.html").write_text(
-                page.locator("#conversation").evaluate("e => e.outerHTML")
+            place(groups.first, 122)
+            both_themes(
+                shot,
+                "activity",
+                30,
+                scene="activity",
+                title="Activity and receipts",
+                caption=(
+                    "The same task with Debug mode on. Each step shows the shell command the "
+                    "model chose, where it ran (Gateway and folder), its exit status and the "
+                    "captured output."
+                ),
+                alt=(
+                    "SMTO conversation in Debug mode. An expanded activity group, 'Measuring the "
+                    "largest items in ~/Downloads', lists two completed shell steps, 'df -h /' and "
+                    "'du -sh ./* | sort -rh | head -n 8', each with exit 0, and the du output: "
+                    "vm-images 18G, two Ubuntu ISO files and smaller items."
+                ),
             )
             shot.close()
 

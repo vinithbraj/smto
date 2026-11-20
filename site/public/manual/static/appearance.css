@@ -1,0 +1,250 @@
+@import url("mission_switch.css?v=20261108-toggle-indicators");
+/* Shared appearance overlays; base themes retain their existing default presentation. */
+/* Type scale (Apple-style steps). Every UI font size uses one of these values, multiplied by
+   the person's text size. 16px is reserved for touch text inputs so iOS never zooms them. */
+:root {
+  --type-micro: calc(10px * var(--ui-font-scale, 1));
+  --type-caption: calc(11px * var(--ui-font-scale, 1));
+  --type-footnote: calc(12px * var(--ui-font-scale, 1));
+  --type-callout: calc(13px * var(--ui-font-scale, 1));
+  --type-body: calc(14px * var(--ui-font-scale, 1));
+  --type-headline: calc(15px * var(--ui-font-scale, 1));
+  --type-title3: calc(17px * var(--ui-font-scale, 1));
+  --type-title2: calc(20px * var(--ui-font-scale, 1));
+  --type-title1: calc(24px * var(--ui-font-scale, 1));
+  --type-large-title: calc(30px * var(--ui-font-scale, 1));
+  /* Space between collapsible boxes that follow one another, on every page and at every level. */
+  --ui-stack-gap: 2px;
+}
+.appearance-themes-link { display: block; margin-bottom: 20px; color: var(--accent); }
+html[data-font-scale] { font-size: calc(100% * var(--ui-font-scale, 1)); }
+html[data-font-scale][data-mobile-appearance] { font-size: var(--mobile-text-body); }
+.appearance-stepper { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; min-width: 0; }
+.appearance-stepper output { min-width: 4ch; text-align: center; font-variant-numeric: tabular-nums; }
+.appearance-stepper button, .appearance-editor > button, .appearance-dialog-header button, .appearance-font-picker button {
+  min-height: 44px; padding: 8px 12px; border: 1px solid var(--border-strong, var(--line));
+  border-radius: 8px; font: inherit; line-height: 1.4; color: var(--text); background: var(--surface);
+  cursor: pointer; white-space: normal;
+}
+.appearance-stepper button:disabled { opacity: .6; cursor: default; }
+.appearance-label { font-weight: 600; margin: 0 0 10px; }
+.appearance-font-picker { display: grid; gap: 8px; width: 100%; min-width: 0; }
+.appearance-font-picker select, .appearance-font-picker input {
+  width: 100%; min-width: 0; min-height: 44px; padding: 8px 12px;
+  border: 1px solid var(--border-strong, var(--line)); border-radius: 8px;
+  font: inherit; color: var(--text); background: var(--surface);
+}
+.appearance-font-picker .appearance-help { margin: 0; }
+.appearance-font-manual summary { cursor: pointer; padding: 8px 0; }
+@media (max-width: 980px), (pointer: coarse) {
+  .appearance-font-manual summary { min-height: 44px; box-sizing: border-box; }
+}
+.appearance-custom-font { display: flex; flex-wrap: wrap; gap: 8px; min-width: 0; }
+.appearance-custom-font input { flex: 1 1 140px; width: 0; }
+.sheet-body > .appearance-editor { margin-top: 24px; }
+.appearance-stepper [aria-pressed="true"] { border-color: var(--text); box-shadow: inset 0 0 0 1px var(--text); }
+.appearance-contrast { display: flex; align-items: center; gap: 10px; min-height: 44px; margin-top: 16px; }
+.appearance-help, .appearance-status { color: var(--text-secondary, var(--muted)); line-height: 1.5; overflow-wrap: anywhere; }
+.appearance-status:empty { display: none; }
+.appearance-dialog {
+  width: min(480px, calc(100vw - 24px)); max-width: calc(100vw - 24px); max-height: calc(100dvh - 24px);
+  overflow: auto; padding: 20px; border: 1px solid var(--border); border-radius: 14px;
+  background: var(--bg); color: var(--text); font: inherit; box-shadow: var(--shadow);
+}
+.appearance-dialog::backdrop { background: rgb(0 0 0 / .32); -webkit-backdrop-filter: blur(2px); backdrop-filter: blur(2px); }
+.appearance-dialog-header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 20px; }
+.appearance-dialog-header h2 { font-size: 1.15em; margin: 0; }
+.appearance-dialog-header button { flex: none; min-width: 44px; padding: 4px 8px; }
+.ui-confirm-dialog { border-radius: var(--ui-radius-dialog, 12px); }
+.ui-confirm-dialog h2 { margin: 0 0 12px; font-size: calc(17px * var(--ui-font-scale, 1)); }
+.ui-confirm-dialog p { white-space: pre-line; overflow-wrap: anywhere; }
+.ui-confirm-dialog label { display: grid; gap: 8px; }
+.ui-confirm-dialog input { width: 100%; }
+.ui-confirm-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px; margin-top: 20px; }
+.ui-confirm-actions button { min-height: 44px; padding: 8px 12px; border: 1px solid var(--border-strong, var(--line)); border-radius: 8px; font: inherit; color: var(--text); background: var(--surface); cursor: pointer; }
+.ui-confirm-actions button:hover { background: var(--surface-hover); }
+.ui-confirm-actions .ui-confirm-accept[data-destructive="true"] { color: var(--danger); border-color: var(--danger); }
+.ui-confirm-dialog :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* Text may grow without shrinking touch targets or turning the whole app into a zoomed canvas. */
+html[data-font-enlarged="true"] :is(input:not([type="checkbox"]):not([type="radio"]):not([type="range"]), select) {
+  min-height: max(var(--ui-control-height, 34px), 2.2em);
+}
+html[data-font-enlarged="true"] :is(button, summary, select) { max-width: 100%; }
+html[data-font-enlarged="true"] .app-shell { --header-height: max(52px, calc(52px * var(--ui-font-scale))); }
+html[data-font-enlarged="true"] .app-header { flex-wrap: wrap; height: max-content; min-height: var(--header-height); }
+html[data-font-enlarged="true"] :is(.chat-field-control, .stream-token-series) { height: auto; min-height: 2.2em; }
+html[data-font-enlarged="true"] :is(.composer-toolbar, .composer-action-bar, .stream-toolbar, .sheet-head) { flex-wrap: wrap; }
+html[data-font-enlarged="true"] :is(.product-title, .product-brand, .mission-settings-brand) { overflow-wrap: anywhere; }
+html[data-font-enlarged="true"] :is(.mission-setting-control, .mission-setting-copy, .appearance-editor) { min-width: 0; }
+html[data-font-enlarged="true"] .mission-setting-control:has(.appearance-stepper) { flex-basis: 100%; }
+html[data-font-enlarged="true"] :is(.mission-settings-statusbar, .mission-settings-footer) { flex-wrap: wrap; }
+html[data-font-enlarged="true"] :is(.sheet, .appearance-dialog, .mission-setting-description) { overflow-wrap: anywhere; }
+html[data-font-enlarged="true"] :is(dialog, .page-heading, .page-heading > div) { overflow-wrap: anywhere; min-width: 0; }
+html[data-font-enlarged="true"] :is(.management-topbar nav, .notification-filters, .notification-controls, .parameter-tabs) { flex-wrap: wrap; min-width: 0; }
+html[data-font-enlarged="true"] .management-topbar nav a { min-width: 0; overflow-wrap: anywhere; }
+html[data-font-enlarged="true"] :is(.behavior-button, .prompt-options-control) { height: auto; min-height: 2.2em; white-space: normal; }
+html[data-font-enlarged="true"] .run-activity { grid-template-rows: auto; }
+html[data-font-enlarged="true"] .prose-activity-status { width: 1.85em; height: 1.85em; flex-basis: 1.85em; }
+html[data-font-enlarged="true"] #status-strip { height: auto; min-height: 44px; flex-wrap: wrap; }
+
+@media (forced-colors: none) {
+  :root[data-contrast="high"] {
+    --hc-bg: #fff; --hc-surface: #f5f5f5; --hc-hover: #ebebeb; --hc-strong: #dedede;
+    /* Light high contrast uses black for body, secondary, link, and status text. */
+    --hc-text: #000; --hc-secondary: #000; --hc-border: #646464;
+    --hc-accent: #000; --hc-danger: #000; --hc-warning: #000; --hc-success: #000;
+    --bg: var(--hc-bg); --surface: var(--hc-surface); --surface-hover: var(--hc-hover); --surface-strong: var(--hc-strong);
+    --text: var(--hc-text); --text-secondary: var(--hc-secondary); --text-tertiary: var(--hc-secondary);
+    --trace-text: var(--hc-secondary); --muted: var(--hc-secondary); --subtle: var(--hc-secondary);
+    --border: var(--hc-border); --border-strong: var(--hc-border); --line: var(--hc-border);
+    --border-soft: var(--hc-border); --raised: var(--hc-surface);
+    --button: var(--hc-text); --button-text: var(--hc-bg); --on-accent: var(--hc-bg);
+    --accent: var(--hc-accent); --danger: var(--hc-danger); --error: var(--hc-danger);
+    --warning: var(--hc-warning); --success: var(--hc-success); --code-bg: var(--hc-surface);
+    --topbar-bg: var(--hc-bg); --shadow: none;
+  }
+  :root[data-contrast="high"][data-theme="dark"] {
+    --hc-bg: #000; --hc-surface: #101010; --hc-hover: #202020; --hc-strong: #292929;
+    --hc-text: #fff; --hc-secondary: #e6e6e6; --hc-border: #adadad;
+    --hc-accent: #b5d1ff; --hc-danger: #ffbac5; --hc-warning: #ffdb80; --hc-success: #a7efbd;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root[data-contrast="high"]:not([data-theme="light"]):not([data-theme="dark"]) {
+      --hc-bg: #000; --hc-surface: #101010; --hc-hover: #202020; --hc-strong: #292929;
+      --hc-text: #fff; --hc-secondary: #e6e6e6; --hc-border: #adadad;
+      --hc-accent: #b5d1ff; --hc-danger: #ffbac5; --hc-warning: #ffdb80; --hc-success: #a7efbd;
+    }
+  }
+  :root[data-contrast="high"] :focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  :root[data-contrast="high"] :is(#message, #prompt-input):focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  :root[data-contrast="high"] ::placeholder { color: var(--text-secondary); opacity: 1; }
+  :root[data-contrast="high"] :is(.app-header, .topbar, .product-topbar) { background: var(--bg); backdrop-filter: none; }
+  :root[data-contrast="high"] :is(a, .link-button) { text-decoration: underline; text-underline-offset: .15em; }
+  :root[data-contrast="high"] :is(button, input, select, textarea, summary, [role="button"]):not(:disabled) { opacity: 1; }
+  :root[data-contrast="high"] :is(input, textarea, select):not([type="checkbox"]):not([type="radio"]):not([type="range"]) { border-color: var(--border-strong); }
+  :root[data-contrast="high"] :is(.llm-stream-activity, [data-stream-palette]) {
+    --wavelet-input-color: var(--success); --wavelet-color: var(--accent); --wavelet-context-color: var(--warning);
+  }
+  :root[data-contrast="high"] :is(.prose-activity-status, .history-run-state) { border-color: currentColor; background: var(--bg); }
+  :root[data-contrast="high"] .steering-milestone { --steering-ink: var(--success); background: var(--bg); border-color: var(--success); }
+  :root[data-contrast="high"] .prose-activity > summary::after { opacity: 1; }
+  :root[data-contrast="high"] .llm-stream-activity[data-live="false"] .rolling-history { opacity: 1; }
+  :root[data-contrast="high"] .submit-button:hover { background: var(--button); }
+}
+@media (max-width: 600px) {
+  html[data-font-enlarged="true"] .app-header { align-content: center; gap: 4px; }
+  html[data-font-enlarged="true"] .app-shell { --header-height: max(72px, calc(52px * var(--ui-font-scale))); }
+  html[data-font-enlarged="true"] .mission-settings-shell { min-height: 100dvh; height: auto; }
+  html[data-font-enlarged="true"] body.mission-settings-body { overflow-y: auto; }
+  html[data-font-enlarged="true"] .mission-settings-layout { min-height: 50dvh; }
+  html[data-font-enlarged="true"] #compose { display: grid; grid-template-columns: 44px 44px minmax(0, 1fr) 44px 44px; }
+  html[data-font-enlarged="true"] #compose .steering-input { grid-column: 1 / -1; grid-row: 1; width: 100%; }
+  html[data-font-enlarged="true"] #compose > button { grid-row: 2; }
+  html[data-font-enlarged="true"] #thinking-quick-toggle { grid-column: 4; }
+  html[data-font-enlarged="true"] #send { grid-column: 5; }
+  html[data-font-enlarged="true"] .model-parameter-row { grid-template-columns: minmax(0, 1fr) 36px; }
+  html[data-font-enlarged="true"] .model-parameter-value { grid-column: 1; }
+}
+/* Let native controls follow the forced system palette. An explicit application
+   dark scheme otherwise leaves the native search-clear icon white on a light
+   forced-colors canvas, even though the input's text and border are adjusted. */
+@media (forced-colors: active) {
+  :root { color-scheme: light dark !important; }
+}
+
+/* Keep the original large mark beside the name/version, with the tagline below. */
+.product-identity {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  max-width: 100%;
+}
+.product-identity [data-brand-mark] {
+  display: block;
+  width: 36px;
+  height: 36px;
+  flex: none;
+  object-fit: contain;
+}
+.product-identity [data-brand-mark][hidden] { display: none; }
+.product-identity-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  text-align: left;
+}
+.product-name {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: calc(20px * var(--ui-font-scale, 1));
+  line-height: 1.15;
+}
+.topbar .product-name {
+  font-size: calc(15px * var(--ui-font-scale, 1));
+  line-height: 1;
+}
+.product-name-accent { color: #4b72e6; }
+.product-build-version {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+  color: var(--text-secondary, var(--muted));
+  font-size: calc(10px * var(--ui-font-scale, 1));
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0;
+  user-select: text;
+}
+.product-build-version:empty { display: none; }
+
+/* Finish shared by every shell: macOS-style scrollbars, selection and text rendering.
+   Chromium/Safari draw an inset rounded thumb without arrow buttons; browsers without
+   ::-webkit-scrollbar (Firefox) use the standard thin, colored scrollbar. Elements that
+   hide their scrollbar keep `scrollbar-width: none`, which still takes precedence. */
+:root {
+  --scrollbar-thumb: color-mix(in srgb, var(--text, CanvasText) 22%, transparent);
+  --scrollbar-thumb-hover: color-mix(in srgb, var(--text, CanvasText) 40%, transparent);
+}
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-kerning: normal;
+  font-optical-sizing: auto;
+}
+::selection { background: color-mix(in srgb, var(--accent, Highlight) 28%, transparent); }
+::-webkit-scrollbar { width: 12px; height: 12px; background: transparent; }
+::-webkit-scrollbar-track, ::-webkit-scrollbar-corner { background: transparent; }
+::-webkit-scrollbar-button { display: none; width: 0; height: 0; }
+::-webkit-scrollbar-thumb {
+  min-width: 32px; min-height: 32px;
+  border: 3px solid transparent; border-radius: 999px;
+  background-color: var(--scrollbar-thumb); background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover, ::-webkit-scrollbar-thumb:active { background-color: var(--scrollbar-thumb-hover); }
+@supports not selector(::-webkit-scrollbar) {
+  /* scrollbar-color inherits; width stays per element so `none` keeps working. */
+  :root { scrollbar-width: thin; scrollbar-color: var(--scrollbar-thumb) transparent; }
+}
+/* Pressed controls darken briefly, like native push buttons; no layout movement. */
+:root button:not(:disabled):active { filter: brightness(.94); }
+:root[data-theme="dark"] button:not(:disabled):active { filter: brightness(1.15); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) button:not(:disabled):active { filter: brightness(1.15); }
+}
+/* Headings and regions focused only to move the reading position (tabindex=-1) are not
+   controls; they announce to assistive technology without drawing a ring. */
+:root :is(h1, h2, h3, h4, main, section, article, [role="region"], [role="main"])[tabindex="-1"]:focus { outline: none; }
+/* Numbers that update in place keep a stable width. */
+:root :is(time, .message-timestamp, .ui-disclosure-meta, output, [role="status"]) { font-variant-numeric: tabular-nums; }
+@media (forced-colors: active) {
+  ::-webkit-scrollbar-thumb { background-color: CanvasText; }
+  :root button:not(:disabled):active { filter: none; }
+}

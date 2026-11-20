@@ -15,3 +15,4 @@ Background work depends on the required systems being available.
 - [Downloads and installation](https://vinithbraj.github.io/smto/#get-smto)
 - [Frequently asked questions](https://vinithbraj.github.io/smto/faq/)
 - [Gallery: screenshots and diagrams](https://vinithbraj.github.io/smto/gallery/)
+- [Product manual](https://vinithbraj.github.io/smto/manual/)
