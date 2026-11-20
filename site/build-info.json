@@ -21,11 +21,11 @@
     "/releases"
   ],
   "redirect_pages": 26,
-  "files_written": 4474,
-  "bytes_written": 38177559,
+  "files_written": 4494,
+  "bytes_written": 40433096,
   "gallery": {
-    "desktop": 0,
-    "phone": 0,
+    "desktop": 12,
+    "phone": 3,
     "diagrams": 15
   },
   "manual": {
@@ -64,7 +64,7 @@
     "revision": "90099a2a048e5849",
     "fingerprint": "d0602743c18548da",
     "notes": [],
-    "seconds": 67.5,
+    "seconds": 65.2,
     "out_dir": "~/Desktop/smto_release/site/public/manual"
   },
   "skipped_routes": [],

@@ -223,8 +223,11 @@ def gallery_screenshots(overlay: Path) -> tuple[list, list]:
                 "light": None,
                 "dark": None,
                 "index": index,
+                "hero": False,
             },
         )
+        # The capture marks its hero scene by also saving a PNG; the gallery leads with it.
+        group["hero"] = group["hero"] or bool(entry.get("png_file"))
         if group[theme] is None:
             group[theme] = {
                 "src": f"/{SCREENSHOT_DIR.as_posix()}/{entry['file']}?v={fingerprint(data)}",
@@ -232,7 +235,7 @@ def gallery_screenshots(overlay: Path) -> tuple[list, list]:
                 "width": width,
                 "height": height,
             }
-    shots = sorted(groups.values(), key=lambda g: g["index"])
+    shots = sorted(groups.values(), key=lambda g: (not g["hero"], g["index"]))
     return [s for s in shots if s["viewport"] == "desktop"], [s for s in shots if s["viewport"] == "phone"]
 
 

@@ -4,8 +4,6 @@ This folder holds the static edition of the SMTO public website and product manu
 
 **https://vinithbraj.github.io/smto/**
 
-> **Status:** product screenshots for the Gallery are still being captured and reviewed. Until they're added, the Gallery shows the reference diagrams only.
-
 The pages are not a hand-made copy. `tools/build_site.py` imports the real website from the openfabric source (`src/smto_site`), renders every public page through the site's own templates, content files and fingerprinted assets, and writes the result to [`public/`](public/). GitHub serves `public/` as it is.
 
 | Light | Dark |
@@ -36,7 +34,7 @@ The pages are not a hand-made copy. `tools/build_site.py` imports the real websi
 | --- | --- | --- |
 | `/` | Home page: why SMTO, examples, comparison, how it works, computers, models, privacy, downloads | `src/smto_site/templates/home.html` and `content/*.json` |
 | `/faq/` | Frequently asked questions with in-page search | `content/faq.json` |
-| `/gallery/` | **New on this edition.** Product screenshots and the site's 15 reference diagrams | `site/templates/gallery.html` (this folder); the diagrams come from `src/smto_site/visuals.py` |
+| `/gallery/` | **New on this edition.** 15 product screenshots (desktop and phone, light and dark, with a full-size viewer) and the site's 15 reference diagrams | `site/templates/gallery.html` (this folder); the diagrams come from `src/smto_site/visuals.py` |
 | `/manual/` | The full product manual (2,141 documents, about 37 MB): search, deep links (`#doc=…&heading=…`), diagrams, light and dark | `src/manual` |
 | `/license/`, `/legal/*` | License, EULA, Apache notices, third-party notices, as HTML and `.txt` | `src/smto_legal` |
 | `/releases/`, `/changelog/` | Release index; it is empty until `release_data/releases.json` lists a release | `src/smto_site/release_data` |

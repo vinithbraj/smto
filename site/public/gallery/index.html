@@ -80,14 +80,243 @@
     <h1>See SMTO at work</h1>
     <p class="lede">A look at the SMTO workspace: asking for a task, following the tool activity, approving access, and reviewing what actually happened. Below the screenshots are the reference diagrams behind the design.</p>
     <nav class="gallery-jump" aria-label="On this page">
-      
-      
+      <a href="#screenshots">Product screenshots</a>
+      <a href="#on-your-phone">On your phone</a>
       <a href="#diagrams">Diagrams</a>
     </nav>
   </div>
 
   
+  <section class="gallery-section" id="screenshots" aria-labelledby="screenshots-title">
+    <div class="gallery-section__head reading">
+      <h2 id="screenshots-title">The workspace</h2>
+      <p>Captured from a local SMTO installation with sample files and scripted model responses, so every screen is reproducible. Your own tasks, models and computers will look different. Select an image to view it full size.</p>
+    </div>
+    
+    <div class="shot-hero"><figure class="shot shot--desktop shot--themed" id="shot-a-completed-task-desktop">
+  <a class="shot__frame" href="../screenshots/product/answer-light.webp?v=abe46fbc6b0f5b73" data-shot-open
+     data-shot-title="A completed task" data-shot-caption="The model's plan and progress notes, followed by its answer: a table of the largest items and a note that nothing was changed."
+     data-shot-light="../screenshots/product/answer-light.webp?v=abe46fbc6b0f5b73" data-shot-light-alt="SMTO conversation. The request 'Find what's using disk space in ~/Downloads and summarise it' is followed by the plan 'Checking free space on the root filesystem first', the note 'Measuring the largest items in ~/Downloads' and an answer stating that ~/Downloads holds about 33 GB with 14 GB free on the root filesystem, with a table of the five largest items."
+     data-shot-dark="../screenshots/product/answer-dark.webp?v=1406e73bcb5d5f1d" data-shot-dark-alt="SMTO conversation. The request 'Find what's using disk space in ~/Downloads and summarise it' is followed by the plan 'Checking free space on the root filesystem first', the note 'Measuring the largest items in ~/Downloads' and an answer stating that ~/Downloads holds about 33 GB with 14 GB free on the root filesystem, with a table of the five largest items."
+     aria-label="Open full-size screenshot: A completed task">
+    
+    <img class="shot__img shot__img--light" src="../screenshots/product/answer-light.webp?v=abe46fbc6b0f5b73" alt="SMTO conversation. The request &#39;Find what&#39;s using disk space in ~/Downloads and summarise it&#39; is followed by the plan &#39;Checking free space on the root filesystem first&#39;, the note &#39;Measuring the largest items in ~/Downloads&#39; and an answer stating that ~/Downloads holds about 33 GB with 14 GB free on the root filesystem, with a table of the five largest items."
+     width="2880" height="1800"
+     loading="eager" decoding="async">
+    <img class="shot__img shot__img--dark" src="../screenshots/product/answer-dark.webp?v=1406e73bcb5d5f1d" alt="SMTO conversation. The request &#39;Find what&#39;s using disk space in ~/Downloads and summarise it&#39; is followed by the plan &#39;Checking free space on the root filesystem first&#39;, the note &#39;Measuring the largest items in ~/Downloads&#39; and an answer stating that ~/Downloads holds about 33 GB with 14 GB free on the root filesystem, with a table of the five largest items."
+     width="2880" height="1800"
+     loading="eager" decoding="async">
+    
+  </a>
+  <figcaption><strong>A completed task</strong> The model&#39;s plan and progress notes, followed by its answer: a table of the largest items and a note that nothing was changed.</figcaption>
+</figure></div>
+    <div class="shot-grid">
+      <figure class="shot shot--desktop shot--themed" id="shot-start-a-task-desktop">
+  <a class="shot__frame" href="../screenshots/product/start-light.webp?v=51ad4bf514bde77d" data-shot-open
+     data-shot-title="Start a task" data-shot-caption="A new conversation with a request typed into the composer. The chip under the prompt shows the computer (Gateway) the task will run on; earlier conversations are listed on the left."
+     data-shot-light="../screenshots/product/start-light.webp?v=51ad4bf514bde77d" data-shot-light-alt="SMTO web UI start screen. A navigation sidebar lists earlier conversations; the main area shows the heading 'What can I help you do?' and a composer containing the request 'Find what's using disk space in ~/Downloads and summarise it' with a 'localhost' Gateway chip."
+     data-shot-dark="../screenshots/product/start-dark.webp?v=ad82c2914e051a75" data-shot-dark-alt="SMTO web UI start screen. A navigation sidebar lists earlier conversations; the main area shows the heading 'What can I help you do?' and a composer containing the request 'Find what's using disk space in ~/Downloads and summarise it' with a 'localhost' Gateway chip."
+     aria-label="Open full-size screenshot: Start a task">
+    
+    <img class="shot__img shot__img--light" src="../screenshots/product/start-light.webp?v=51ad4bf514bde77d" alt="SMTO web UI start screen. A navigation sidebar lists earlier conversations; the main area shows the heading &#39;What can I help you do?&#39; and a composer containing the request &#39;Find what&#39;s using disk space in ~/Downloads and summarise it&#39; with a &#39;localhost&#39; Gateway chip."
+     width="2880" height="1800"
+     loading="lazy" decoding="async">
+    <img class="shot__img shot__img--dark" src="../screenshots/product/start-dark.webp?v=ad82c2914e051a75" alt="SMTO web UI start screen. A navigation sidebar lists earlier conversations; the main area shows the heading &#39;What can I help you do?&#39; and a composer containing the request &#39;Find what&#39;s using disk space in ~/Downloads and summarise it&#39; with a &#39;localhost&#39; Gateway chip."
+     width="2880" height="1800"
+     loading="lazy" decoding="async">
+    
+  </a>
+  <figcaption><strong>Start a task</strong> A new conversation with a request typed into the composer. The chip under the prompt shows the computer (Gateway) the task will run on; earlier conversations are listed on the left.</figcaption>
+</figure><figure class="shot shot--desktop shot--themed" id="shot-activity-and-receipts-desktop">
+  <a class="shot__frame" href="../screenshots/product/activity-light.webp?v=74d97a8f9ad9f243" data-shot-open
+     data-shot-title="Activity and receipts" data-shot-caption="The same task with Debug mode on. Each step shows the shell command the model chose, where it ran (Gateway and folder), its exit status and the captured output."
+     data-shot-light="../screenshots/product/activity-light.webp?v=74d97a8f9ad9f243" data-shot-light-alt="SMTO conversation in Debug mode. An expanded activity group, 'Measuring the largest items in ~/Downloads', lists two completed shell steps, 'df -h /' and 'du -sh ./* | sort -rh | head -n 8', each with exit 0, and the du output: vm-images 18G, two Ubuntu ISO files and smaller items."
+     data-shot-dark="../screenshots/product/activity-dark.webp?v=0a094ea8bad5f394" data-shot-dark-alt="SMTO conversation in Debug mode. An expanded activity group, 'Measuring the largest items in ~/Downloads', lists two completed shell steps, 'df -h /' and 'du -sh ./* | sort -rh | head -n 8', each with exit 0, and the du output: vm-images 18G, two Ubuntu ISO files and smaller items."
+     aria-label="Open full-size screenshot: Activity and receipts">
+    
+    <img class="shot__img shot__img--light" src="../screenshots/product/activity-light.webp?v=74d97a8f9ad9f243" alt="SMTO conversation in Debug mode. An expanded activity group, &#39;Measuring the largest items in ~/Downloads&#39;, lists two completed shell steps, &#39;df -h /&#39; and &#39;du -sh ./* | sort -rh | head -n 8&#39;, each with exit 0, and the du output: vm-images 18G, two Ubuntu ISO files and smaller items."
+     width="2880" height="1800"
+     loading="lazy" decoding="async">
+    <img class="shot__img shot__img--dark" src="../screenshots/product/activity-dark.webp?v=0a094ea8bad5f394" alt="SMTO conversation in Debug mode. An expanded activity group, &#39;Measuring the largest items in ~/Downloads&#39;, lists two completed shell steps, &#39;df -h /&#39; and &#39;du -sh ./* | sort -rh | head -n 8&#39;, each with exit 0, and the du output: vm-images 18G, two Ubuntu ISO files and smaller items."
+     width="2880" height="1800"
+     loading="lazy" decoding="async">
+    
+  </a>
+  <figcaption><strong>Activity and receipts</strong> The same task with Debug mode on. Each step shows the shell command the model chose, where it ran (Gateway and folder), its exit status and the captured output.</figcaption>
+</figure><figure class="shot shot--desktop shot--themed" id="shot-approve-before-files-change-desktop">
+  <a class="shot__frame" href="../screenshots/product/approval-light.webp?v=c5e2ae7db0a954dc" data-shot-open
+     data-shot-title="Approve before files change" data-shot-caption="A follow-up request that moves files. The task pauses on an approval card showing the exact command, with a choice of how widely the decision applies."
+     data-shot-light="../screenshots/product/approval-light.webp?v=c5e2ae7db0a954dc" data-shot-light-alt="SMTO conversation with the request 'Move the two Ubuntu ISOs to /mnt/backup/isos, then check free space again'. An 'Approval needed' card shows the shell command 'mv -- ubuntu-24.04.1-desktop-amd64.iso ubuntu-22.04.4-desktop-amd64.iso /mnt/backup/isos/', an 'Apply decision to' selector set to 'This action', and the buttons 'Approve once', 'Deny / stop task' and 'Open Permissions'."
+     data-shot-dark="../screenshots/product/approval-dark.webp?v=f886ba1980a81c28" data-shot-dark-alt="SMTO conversation with the request 'Move the two Ubuntu ISOs to /mnt/backup/isos, then check free space again'. An 'Approval needed' card shows the shell command 'mv -- ubuntu-24.04.1-desktop-amd64.iso ubuntu-22.04.4-desktop-amd64.iso /mnt/backup/isos/', an 'Apply decision to' selector set to 'This action', and the buttons 'Approve once', 'Deny / stop task' and 'Open Permissions'."
+     aria-label="Open full-size screenshot: Approve before files change">
+    
+    <img class="shot__img shot__img--light" src="../screenshots/product/approval-light.webp?v=c5e2ae7db0a954dc" alt="SMTO conversation with the request &#39;Move the two Ubuntu ISOs to /mnt/backup/isos, then check free space again&#39;. An &#39;Approval needed&#39; card shows the shell command &#39;mv -- ubuntu-24.04.1-desktop-amd64.iso ubuntu-22.04.4-desktop-amd64.iso /mnt/backup/isos/&#39;, an &#39;Apply decision to&#39; selector set to &#39;This action&#39;, and the buttons &#39;Approve once&#39;, &#39;Deny / stop task&#39; and &#39;Open Permissions&#39;."
+     width="2880" height="1800"
+     loading="lazy" decoding="async">
+    <img class="shot__img shot__img--dark" src="../screenshots/product/approval-dark.webp?v=f886ba1980a81c28" alt="SMTO conversation with the request &#39;Move the two Ubuntu ISOs to /mnt/backup/isos, then check free space again&#39;. An &#39;Approval needed&#39; card shows the shell command &#39;mv -- ubuntu-24.04.1-desktop-amd64.iso ubuntu-22.04.4-desktop-amd64.iso /mnt/backup/isos/&#39;, an &#39;Apply decision to&#39; selector set to &#39;This action&#39;, and the buttons &#39;Approve once&#39;, &#39;Deny / stop task&#39; and &#39;Open Permissions&#39;."
+     width="2880" height="1800"
+     loading="lazy" decoding="async">
+    
+  </a>
+  <figcaption><strong>Approve before files change</strong> A follow-up request that moves files. The task pauses on an approval card showing the exact command, with a choice of how widely the decision applies.</figcaption>
+</figure><figure class="shot shot--desktop" id="shot-approved-change-then-verification-desktop">
+  <a class="shot__frame" href="../screenshots/product/verified-light.webp?v=119fe4cdacd8c8c1" data-shot-open
+     data-shot-title="Approved change, then verification" data-shot-caption="After approval the task moves the files, checks free space again and reports the before-and-after numbers from that second check."
+     data-shot-light="../screenshots/product/verified-light.webp?v=119fe4cdacd8c8c1" data-shot-light-alt="SMTO conversation with the request 'Move the two Ubuntu ISOs to /mnt/backup/isos, then check free space again'. The plan note says the move needs approval, a later note reads 'Checking free space again to confirm the result', and the answer says both ISO files were moved to /mnt/backup/isos/ and free space on / went from 14 GB to 25 GB."
+     
+     aria-label="Open full-size screenshot: Approved change, then verification">
+    
+    <img class="shot__img" src="../screenshots/product/verified-light.webp?v=119fe4cdacd8c8c1" alt="SMTO conversation with the request &#39;Move the two Ubuntu ISOs to /mnt/backup/isos, then check free space again&#39;. The plan note says the move needs approval, a later note reads &#39;Checking free space again to confirm the result&#39;, and the answer says both ISO files were moved to /mnt/backup/isos/ and free space on / went from 14 GB to 25 GB."
+     width="2880" height="1800"
+     loading="lazy" decoding="async">
+    
+  </a>
+  <figcaption><strong>Approved change, then verification</strong> After approval the task moves the files, checks free space again and reports the before-and-after numbers from that second check.</figcaption>
+</figure><figure class="shot shot--desktop" id="shot-the-model-asks-before-choosing-desktop">
+  <a class="shot__frame" href="../screenshots/product/ask-user-light.webp?v=87b59620367f06c3" data-shot-open
+     data-shot-title="The model asks before choosing" data-shot-caption="When a choice belongs to the user, the model asks. The question card offers suggested answers and a free-text field, and the task waits for the reply."
+     data-shot-light="../screenshots/product/ask-user-light.webp?v=87b59620367f06c3" data-shot-light-alt="SMTO conversation with the request 'Read meeting-notes.md and save the action items to action-items.md'. After two progress notes, a question card asks how to save 4 new action items because action-items.md already lists 2, with three suggested answers (append, replace, save to a new dated file) and an 'Other answer' field."
+     
+     aria-label="Open full-size screenshot: The model asks before choosing">
+    
+    <img class="shot__img" src="../screenshots/product/ask-user-light.webp?v=87b59620367f06c3" alt="SMTO conversation with the request &#39;Read meeting-notes.md and save the action items to action-items.md&#39;. After two progress notes, a question card asks how to save 4 new action items because action-items.md already lists 2, with three suggested answers (append, replace, save to a new dated file) and an &#39;Other answer&#39; field."
+     width="2880" height="1800"
+     loading="lazy" decoding="async">
+    
+  </a>
+  <figcaption><strong>The model asks before choosing</strong> When a choice belongs to the user, the model asks. The question card offers suggested answers and a free-text field, and the task waits for the reply.</figcaption>
+</figure><figure class="shot shot--desktop" id="shot-capabilities-desktop">
+  <a class="shot__frame" href="../screenshots/product/capabilities-light.webp?v=445ed506b1605a46" data-shot-open
+     data-shot-title="Capabilities" data-shot-caption="The Capabilities dialog lists the skills and tools the model may use, with include and exclude controls and an 'Apply to' scope selector."
+     data-shot-light="../screenshots/product/capabilities-light.webp?v=445ed506b1605a46" data-shot-light-alt="SMTO Capabilities dialog over the chat: an 'Automatic Capability Selection' switch, an 'Apply to' selector set to Global, and skills such as Artifacts, Agent Introspection, Task Context and Docs, each with include and exclude controls or marked 'Built in · Always enabled'."
+     
+     aria-label="Open full-size screenshot: Capabilities">
+    
+    <img class="shot__img" src="../screenshots/product/capabilities-light.webp?v=445ed506b1605a46" alt="SMTO Capabilities dialog over the chat: an &#39;Automatic Capability Selection&#39; switch, an &#39;Apply to&#39; selector set to Global, and skills such as Artifacts, Agent Introspection, Task Context and Docs, each with include and exclude controls or marked &#39;Built in · Always enabled&#39;."
+     width="2880" height="1800"
+     loading="lazy" decoding="async">
+    
+  </a>
+  <figcaption><strong>Capabilities</strong> The Capabilities dialog lists the skills and tools the model may use, with include and exclude controls and an &#39;Apply to&#39; scope selector.</figcaption>
+</figure><figure class="shot shot--desktop" id="shot-model-routing-desktop">
+  <a class="shot__frame" href="../screenshots/product/settings-models-light.webp?v=30c09e4fa1100462" data-shot-open
+     data-shot-title="Model routing" data-shot-caption="Model routing in Settings. The Main model entry is open, showing its endpoint, automatic model selection, API key and generation profile."
+     data-shot-light="../screenshots/product/settings-models-light.webp?v=30c09e4fa1100462" data-shot-light-alt="SMTO Settings page with the Model routing section open. The Main model entry shows the endpoint http://127.0.0.1:8080/v1, an Auto-select model switch turned on, an empty API key field and the 'smTO recommended' generation profile; a list of settings sections is on the left."
+     
+     aria-label="Open full-size screenshot: Model routing">
+    
+    <img class="shot__img" src="../screenshots/product/settings-models-light.webp?v=30c09e4fa1100462" alt="SMTO Settings page with the Model routing section open. The Main model entry shows the endpoint http://127.0.0.1:8080/v1, an Auto-select model switch turned on, an empty API key field and the &#39;smTO recommended&#39; generation profile; a list of settings sections is on the left."
+     width="2880" height="1800"
+     loading="lazy" decoding="async">
+    
+  </a>
+  <figcaption><strong>Model routing</strong> Model routing in Settings. The Main model entry is open, showing its endpoint, automatic model selection, API key and generation profile.</figcaption>
+</figure><figure class="shot shot--desktop" id="shot-gateways-desktop">
+  <a class="shot__frame" href="../screenshots/product/settings-gateways-dark.webp?v=efaf2f22da8ecb7f" data-shot-open
+     data-shot-title="Gateways" data-shot-caption="The Gateways section lists the computers SMTO can run tasks on, with their connection status, an on/off switch and software update status."
+     
+     data-shot-dark="../screenshots/product/settings-gateways-dark.webp?v=efaf2f22da8ecb7f" data-shot-dark-alt="SMTO Settings page in dark mode with the Gateways section: a table with two Gateways, 'localhost' and 'LocalMachine', both Connected and enabled, and buttons to add a Gateway and check for updates."
+     aria-label="Open full-size screenshot: Gateways">
+    
+    <img class="shot__img" src="../screenshots/product/settings-gateways-dark.webp?v=efaf2f22da8ecb7f" alt="SMTO Settings page in dark mode with the Gateways section: a table with two Gateways, &#39;localhost&#39; and &#39;LocalMachine&#39;, both Connected and enabled, and buttons to add a Gateway and check for updates."
+     width="2880" height="1800"
+     loading="lazy" decoding="async">
+    
+  </a>
+  <figcaption><strong>Gateways</strong> The Gateways section lists the computers SMTO can run tasks on, with their connection status, an on/off switch and software update status.</figcaption>
+</figure><figure class="shot shot--desktop" id="shot-workflows-desktop">
+  <a class="shot__frame" href="../screenshots/product/workflows-light.webp?v=736f5c0cee14f05b" data-shot-open
+     data-shot-title="Workflows" data-shot-caption="Saved workflows are reusable requests. Each card can be run now, scheduled, edited or opened to see its run history."
+     data-shot-light="../screenshots/product/workflows-light.webp?v=736f5c0cee14f05b" data-shot-light-alt="SMTO Workflows page listing three saved workflows, 'Weekly disk space report', 'Nightly backup check' and 'Meeting notes to action items', each with its prompt and buttons including Run now, Schedule, Edit and History."
+     
+     aria-label="Open full-size screenshot: Workflows">
+    
+    <img class="shot__img" src="../screenshots/product/workflows-light.webp?v=736f5c0cee14f05b" alt="SMTO Workflows page listing three saved workflows, &#39;Weekly disk space report&#39;, &#39;Nightly backup check&#39; and &#39;Meeting notes to action items&#39;, each with its prompt and buttons including Run now, Schedule, Edit and History."
+     width="2880" height="1800"
+     loading="lazy" decoding="async">
+    
+  </a>
+  <figcaption><strong>Workflows</strong> Saved workflows are reusable requests. Each card can be run now, scheduled, edited or opened to see its run history.</figcaption>
+</figure><figure class="shot shot--desktop" id="shot-schedules-desktop">
+  <a class="shot__frame" href="../screenshots/product/schedules-dark.webp?v=4c2437e7f6b9548e" data-shot-open
+     data-shot-title="Schedules" data-shot-caption="Scheduled tasks and reminders with their recurrence, status and most recent run. Schedules can be paused, edited or run on demand."
+     
+     data-shot-dark="../screenshots/product/schedules-dark.webp?v=4c2437e7f6b9548e" data-shot-dark-alt="SMTO Schedules page in dark mode listing four schedules: 'Weekly disk space report', 'Nightly backup check', a paused 'Rotate old build archives' and a 'Stretch break' reminder, each with recurrence and status."
+     aria-label="Open full-size screenshot: Schedules">
+    
+    <img class="shot__img" src="../screenshots/product/schedules-dark.webp?v=4c2437e7f6b9548e" alt="SMTO Schedules page in dark mode listing four schedules: &#39;Weekly disk space report&#39;, &#39;Nightly backup check&#39;, a paused &#39;Rotate old build archives&#39; and a &#39;Stretch break&#39; reminder, each with recurrence and status."
+     width="2880" height="1800"
+     loading="lazy" decoding="async">
+    
+  </a>
+  <figcaption><strong>Schedules</strong> Scheduled tasks and reminders with their recurrence, status and most recent run. Schedules can be paused, edited or run on demand.</figcaption>
+</figure><figure class="shot shot--desktop" id="shot-built-in-manual-desktop">
+  <a class="shot__frame" href="../screenshots/product/manual-light.webp?v=0438886af1a4acdd" data-shot-open
+     data-shot-title="Built-in manual" data-shot-caption="The product manual ships with SMTO and is searchable. Pages are listed on the left, with an outline and related pages on the right."
+     data-shot-light="../screenshots/product/manual-light.webp?v=0438886af1a4acdd" data-shot-light-alt="SMTO Manual home page: a list of manual pages on the left including 'Install and startup' and 'Configuration and storage', the 'smTO Manual' introduction in the centre, and outline and related-page panels on the right."
+     
+     aria-label="Open full-size screenshot: Built-in manual">
+    
+    <img class="shot__img" src="../screenshots/product/manual-light.webp?v=0438886af1a4acdd" alt="SMTO Manual home page: a list of manual pages on the left including &#39;Install and startup&#39; and &#39;Configuration and storage&#39;, the &#39;smTO Manual&#39; introduction in the centre, and outline and related-page panels on the right."
+     width="2880" height="1800"
+     loading="lazy" decoding="async">
+    
+  </a>
+  <figcaption><strong>Built-in manual</strong> The product manual ships with SMTO and is searchable. Pages are listed on the left, with an outline and related pages on the right.</figcaption>
+</figure>
+    </div>
+  </section>
+  
 
+  
+  <section class="gallery-section" id="on-your-phone" aria-labelledby="phone-title">
+    <div class="gallery-section__head reading">
+      <h2 id="phone-title">On your phone</h2>
+      <p>The same workspace adapts to narrow screens, so you can check on a task, answer a question or approve a step from a phone browser.</p>
+    </div>
+    <div class="shot-grid shot-grid--phone">
+      <figure class="shot shot--phone" id="shot-on-a-phone-phone">
+  <a class="shot__frame" href="../screenshots/product/phone-start-light.webp?v=68ba26d27ce6468a" data-shot-open
+     data-shot-title="On a phone" data-shot-caption="The phone layout of the same web UI, with a request typed into the message box."
+     data-shot-light="../screenshots/product/phone-start-light.webp?v=68ba26d27ce6468a" data-shot-light-alt="SMTO on a phone-width screen: the heading 'What can I help you do?' and a message box containing 'Find what's using disk space in ~/Downloads and summarise it' with a send button."
+     
+     aria-label="Open full-size screenshot: On a phone">
+    
+    <img class="shot__img" src="../screenshots/product/phone-start-light.webp?v=68ba26d27ce6468a" alt="SMTO on a phone-width screen: the heading &#39;What can I help you do?&#39; and a message box containing &#39;Find what&#39;s using disk space in ~/Downloads and summarise it&#39; with a send button."
+     width="780" height="1688"
+     loading="lazy" decoding="async">
+    
+  </a>
+  <figcaption><strong>On a phone</strong> The phone layout of the same web UI, with a request typed into the message box.</figcaption>
+</figure><figure class="shot shot--phone" id="shot-answers-on-a-phone-phone">
+  <a class="shot__frame" href="../screenshots/product/phone-answer-dark.webp?v=0e0f73c70ba8fb38" data-shot-open
+     data-shot-title="Answers on a phone" data-shot-caption="A completed task on a phone in dark mode: the answer, built from the commands the model ran, and a box to continue the conversation."
+     
+     data-shot-dark="../screenshots/product/phone-answer-dark.webp?v=0e0f73c70ba8fb38" data-shot-dark-alt="SMTO phone layout in dark mode: an answer saying ~/Downloads holds about 33 GB with 14 GB free on /, a short list of the largest items, and a 'Continue this conversation' box with Continue and Queue buttons."
+     aria-label="Open full-size screenshot: Answers on a phone">
+    
+    <img class="shot__img" src="../screenshots/product/phone-answer-dark.webp?v=0e0f73c70ba8fb38" alt="SMTO phone layout in dark mode: an answer saying ~/Downloads holds about 33 GB with 14 GB free on /, a short list of the largest items, and a &#39;Continue this conversation&#39; box with Continue and Queue buttons."
+     width="780" height="1688"
+     loading="lazy" decoding="async">
+    
+  </a>
+  <figcaption><strong>Answers on a phone</strong> A completed task on a phone in dark mode: the answer, built from the commands the model ran, and a box to continue the conversation.</figcaption>
+</figure><figure class="shot shot--phone" id="shot-conversations-on-a-phone-phone">
+  <a class="shot__frame" href="../screenshots/product/phone-navigation-light.webp?v=93a703e6806b9795" data-shot-open
+     data-shot-title="Conversations on a phone" data-shot-caption="The navigation drawer on a phone, with New chat, search and the list of conversations."
+     data-shot-light="../screenshots/product/phone-navigation-light.webp?v=93a703e6806b9795" data-shot-light-alt="SMTO phone navigation drawer with App and Conversations tabs, a New chat button, a 'Search chats' field and four conversations, the newest being the disk-space request."
+     
+     aria-label="Open full-size screenshot: Conversations on a phone">
+    
+    <img class="shot__img" src="../screenshots/product/phone-navigation-light.webp?v=93a703e6806b9795" alt="SMTO phone navigation drawer with App and Conversations tabs, a New chat button, a &#39;Search chats&#39; field and four conversations, the newest being the disk-space request."
+     width="780" height="1688"
+     loading="lazy" decoding="async">
+    
+  </a>
+  <figcaption><strong>Conversations on a phone</strong> The navigation drawer on a phone, with New chat, search and the list of conversations.</figcaption>
+</figure>
+    </div>
+  </section>
   
 
   
