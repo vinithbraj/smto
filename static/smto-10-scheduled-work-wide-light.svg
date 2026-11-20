@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="690" viewBox="0 0 1536 690" role="img" aria-labelledby="title desc" lang="en">
+  <title id="title">Schedule the work. Keep its context.</title>
+  <desc id="desc">A task is saved with the context accepted for that work, including its selected target and model settings. A scheduled event can later make the task eligible to run. The controller drives the task using that context and the required execution checks. The selected Gateway or other execution route performs allowed work, and its results become part of the task record. Closing a browser tab does not stop the controller service. This does not promise execution while the controller is powered off, automatic target substitution, crash-time authorization revalidation, or an exact trigger time.</desc>
+  <defs>
+    <marker id="arrow-blue" markerWidth="9" markerHeight="9" refX="7.6" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#3F63CF" />
+    </marker>
+    <marker id="arrow-teal" markerWidth="9" markerHeight="9" refX="7.6" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#166C59" />
+    </marker>
+    <marker id="arrow-violet" markerWidth="9" markerHeight="9" refX="7.6" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#6751A7" />
+    </marker>
+    <marker id="arrow-amber" markerWidth="9" markerHeight="9" refX="7.6" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#835800" />
+    </marker>
+    <marker id="arrow-red" markerWidth="9" markerHeight="9" refX="7.6" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#B02D3A" />
+    </marker>
+    <marker id="arrow-muted" markerWidth="9" markerHeight="9" refX="7.6" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#526078" />
+    </marker>
+  </defs>
+  <rect width="1536" height="690" fill="#FFFFFF" />
+  <g transform="translate(-32,-202)">
+    <path d="M172,370 L1390,370" fill="none" stroke="#D6DDE8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="197" cy="370" r="60" fill="#EDF2FF" stroke="#3F63CF" stroke-width="2" />
+    <g transform="translate(163,336) scale(1.0625)" fill="none" stroke="#3F63CF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M13 15V7h26l12 12v31H22M39 7v13h12" />
+      <path d="M8 15h18l6 7h19v34H8zM16 34h26m-26 9h20" />
+    </g>
+    <text x="197" y="499.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="27" font-weight="700" text-anchor="middle" fill="#202020">Save the task</text>
+    <text x="197" y="544.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#526078">Accepted context</text>
+    <path d="M258,370 H504" fill="none" stroke="#3F63CF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-blue)" />
+    <circle cx="577" cy="370" r="60" fill="#EDF2FF" stroke="#3F63CF" stroke-width="2" />
+    <g transform="translate(543,336) scale(1.0625)" fill="none" stroke="#3F63CF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="32" cy="32" r="24" />
+      <path d="M32 16v18l12 7M32 8v3m24 21h-3M32 56v-3M8 32h3" />
+    </g>
+    <text x="577" y="499.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="27" font-weight="700" text-anchor="middle" fill="#202020">Wait for schedule</text>
+    <text x="577" y="544.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#526078">Controller remains available</text>
+    <path d="M638,370 H884" fill="none" stroke="#3F63CF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-blue)" />
+    <circle cx="957" cy="370" r="60" fill="#EDF2FF" stroke="#3F63CF" stroke-width="2" />
+    <g transform="translate(923,336) scale(1.0625)" fill="none" stroke="#3F63CF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="13" y="13" width="38" height="38" rx="10" />
+      <path d="M23 23h18v18H23zM23 5v8m9-8v8m9-8v8M23 51v8m9-8v8m9-8v8M5 23h8m-8 9h8m-8 9h8m38-18h8m-8 9h8m-8 9h8" />
+    </g>
+    <text x="957" y="499.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="27" font-weight="700" text-anchor="middle" fill="#202020">Resume work</text>
+    <text x="957" y="544.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#526078">Use saved task context</text>
+    <path d="M1018,370 H1264" fill="none" stroke="#3F63CF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-blue)" />
+    <circle cx="1337" cy="370" r="60" fill="#EDF2FF" stroke="#3F63CF" stroke-width="2" />
+    <g transform="translate(1303,336) scale(1.0625)" fill="none" stroke="#3F63CF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M17 8h24l10 10v38H17zM41 8v11h10M25 28h17m-17 9h17m-17 9h9" />
+      <path d="m4 27 4 4 7-8m-11 22 4 4 7-8" />
+    </g>
+    <text x="1337" y="499.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="27" font-weight="700" text-anchor="middle" fill="#202020">Record results</text>
+    <text x="1337" y="544.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#526078">Review output and status</text>
+    <rect x="100" y="661" width="1400" height="161" rx="20" fill="#F5F7FB" stroke="#D6DDE8" stroke-width="1.5" />
+    <text x="140" y="704.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-weight="700" text-anchor="start" fill="#3F63CF">WHAT MUST STILL BE AVAILABLE</text>
+    <g transform="translate(140,729) scale(0.71875)" fill="none" stroke="#3F63CF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="13" y="13" width="38" height="38" rx="10" />
+      <path d="M23 23h18v18H23zM23 5v8m9-8v8m9-8v8M23 51v8m9-8v8m9-8v8M5 23h8m-8 9h8m-8 9h8m38-18h8m-8 9h8m-8 9h8" />
+    </g>
+    <text x="200" y="760.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="700" text-anchor="start" fill="#202020">Controller</text>
+    <g transform="translate(480,729) scale(0.71875)" fill="none" stroke="#3F63CF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M31 11c-8-10-20-2-17 8-10 1-12 16-4 21-5 10 8 20 17 14l5-6V15c3-12 17-12 20-2 7 2 9 12 4 17 10 9 3 23-7 21-3 10-15 8-17 0M20 16c0 6 4 10 10 10M12 31c8-2 12 2 12 9M17 50c6 0 10-4 10-9M43 17c-4 4-4 9 0 13M50 39c-8-1-11 3-11 9" />
+    </g>
+    <text x="540" y="760.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="700" text-anchor="start" fill="#202020">Model connection</text>
+    <g transform="translate(875,729) scale(0.71875)" fill="none" stroke="#3F63CF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="8" y="8" width="48" height="48" rx="8" />
+      <path d="M32 8v48M16 25h22m-6-6 6 6-6 6M48 40H26m6-6-6 6 6 6" />
+    </g>
+    <text x="935" y="760.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="700" text-anchor="start" fill="#202020">Selected target</text>
+    <g transform="translate(1220,729) scale(0.71875)" fill="none" stroke="#3F63CF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M32 6 53 14v17c0 12-9 22-21 28C20 53 11 43 11 31V14z" />
+      <path d="m22 31 7 7 14-15" />
+    </g>
+    <text x="1280" y="760.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="700" text-anchor="start" fill="#202020">Allowed tools</text>
+  </g>
+</svg>

@@ -1,0 +1,56 @@
+/* Map theme_palette.js semantic colors onto the existing desktop, mobile,
+ * auxiliary, login and standalone page variables. Unmodified Default leaves
+ * these selectors inactive; high contrast bypasses the application color bridge
+ * and forced colors supplies system colors. The font override is independent.
+ * Message and sign-in selectors cover surfaces with their own original styles. */
+/* Explicit text-weight choices include headings, controls and rendered content.
+ * Keep editor previews independent of the currently applied theme's weight. */
+:root[data-palette-font-weight] :is(body, body *):not(:where(.theme-preview, .theme-preview *)) {
+  font-weight: var(--palette-font-weight) !important;
+}
+.theme-preview { font-weight: 400; }
+.theme-preview[data-font-weight-preview], .theme-preview[data-font-weight-preview] * {
+  font-weight: var(--preview-font-weight) !important;
+}
+:root[data-palette-active]:not([data-contrast="high"]), .theme-preview {
+  --bg: var(--palette-bg); --surface: var(--palette-surface);
+  --surface-hover: var(--palette-hover); --surface-strong: var(--palette-strong);
+  --text: var(--palette-text); --text-secondary: var(--palette-secondary); --text-tertiary: var(--palette-secondary);
+  --muted: var(--palette-secondary); --subtle: var(--palette-secondary);
+  --border: var(--palette-border); --border-strong: var(--palette-border-strong); --border-soft: var(--palette-border-soft);
+  --line: var(--palette-border-soft); --input-border: var(--palette-border-strong);
+  --button: var(--palette-button); --button-text: var(--palette-buttonText);
+  --accent: var(--palette-accent); --on-accent: var(--palette-buttonText);
+  --danger: var(--palette-danger); --error: var(--palette-danger);
+  --warning: var(--palette-warning); --success: var(--palette-success);
+  --code-bg: var(--palette-code); --panel: var(--palette-bg); --panel-alt: var(--palette-surface);
+  --trace-panel: var(--palette-code); --raised: var(--palette-surface); --topbar-bg: var(--palette-bg);
+  --user-bubble: var(--palette-userBg); --user-text: var(--palette-userText);
+  --conversation-user-bg: var(--palette-userBg); --conversation-answer-bg: var(--palette-answerBg);
+}
+:root[data-palette-font] { --ui-font: var(--palette-font) !important; font-family: var(--palette-font); }
+/* The sign-in page keeps its original default styling, but participates in custom palettes. */
+:root[data-palette-active]:not([data-contrast="high"]) .login-header ~ form button[type="submit"] {
+  background: var(--button); color: var(--button-text);
+}
+:root[data-palette-active]:not([data-contrast="high"]) :is(#conversation, #messages) :is(.user-message, .conversation-message[data-role="user"] > .conversation-message-body) {
+  background: var(--palette-userBg); color: var(--palette-userText);
+}
+:root[data-palette-active]:not([data-contrast="high"]) :is(#conversation, #messages) :is(.assistant-answer, .answer, .conversation-message[aria-label="Agent answer"] > .conversation-message-body):not(:empty) {
+  background: var(--palette-answerBg); color: var(--palette-answerText);
+}
+:root[data-palette-active]:not([data-contrast="high"]) #mobile-app .primary {
+  background: var(--button); color: var(--button-text);
+}
+@media (forced-colors: active) {
+  :root[data-palette-active], .theme-preview {
+    --bg: Canvas; --surface: Canvas; --surface-hover: Canvas; --surface-strong: Canvas;
+    --text: CanvasText; --text-secondary: CanvasText; --text-tertiary: CanvasText;
+    --muted: CanvasText; --subtle: CanvasText; --line: CanvasText; --border: CanvasText;
+    --border-strong: CanvasText; --border-soft: CanvasText; --input-border: CanvasText;
+    --button: ButtonFace; --button-text: ButtonText; --accent: LinkText; --on-accent: ButtonText;
+    --panel: Canvas; --panel-alt: Canvas; --raised: Canvas; --topbar-bg: Canvas; --code-bg: Canvas;
+    --conversation-user-bg: Canvas; --conversation-answer-bg: Canvas;
+    --palette-userBg: Canvas; --palette-answerBg: Canvas; --palette-userText: CanvasText; --palette-answerText: CanvasText;
+  }
+}

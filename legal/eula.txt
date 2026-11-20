@@ -1,0 +1,110 @@
+# SMTO End User License Agreement & Automation Risk Acknowledgment
+
+**Document version:** 2026-10-18.3
+**Licensor:** SMTO authors
+**Effective for a recipient:** when this version is offered with an eligible proprietary SMTO distribution and affirmatively accepted; the document date alone is not retroactive consent.
+
+## 1. Acceptance and scope
+
+By affirmatively accepting in the installer or selecting **“I Agree”** in the application, you affirmatively agree to this End User License Agreement and Automation Risk Acknowledgment for the SMTO distribution identified with this agreement. If you are agreeing on behalf of an organization, you represent that you have authority to do so.
+
+If you do not agree, do not use the proprietary portions of that distribution. You may still exercise rights independently granted under earlier Apache License 2.0 releases, other open-source licenses, and mandatory applicable law. Viewing a website, downloading a file, or using an earlier open-source release is not, by itself, acceptance of this version.
+
+## 2. What SMTO is
+
+SMTO is software for coordinating work performed with the AI models you select, configure, or provide access to. **SMTO is not itself an AI model provider.** You may connect supported locally run models or online model providers. SMTO uses responses from those models to help determine and carry out tasks. Model intelligence, availability, accuracy, pricing, and terms are determined separately from the SMTO software.
+
+Depending on the capabilities, resources, and permissions configured, SMTO can instruct or enable tools to work with files, processes, networks, commands, APIs, databases, repositories, services, connected computers, and scheduled tasks. Actions may be performed in multiple steps and may continue without a person watching each step.
+
+## 3. License to eligible proprietary software
+
+Subject to the SMTO Personal Use License version **2026-10-18.3** included with the distribution, you may install and run the supplied source-code or object-code application for personal, noncommercial use only and retain reasonable backup copies.
+
+**Free for personal, noncommercial use only. Commercial and organizational use requires a separate license. Visit https://smtorch.com for details.**
+
+Personal use means an individual's private hobbies, experimentation, and personal learning. It excludes employment, consulting, paid or client work, commercial evaluation, internal business operations, and use for or on behalf of businesses, nonprofits, educational institutions, or government organizations. Those uses require a separate written license from the rights holder before they begin, even if the software is downloaded without charge or used on a personally owned computer. There is no automatic commercial evaluation allowance. Acceptance of this EULA does not itself grant commercial-use rights. You receive a limited, nonexclusive, nontransferable license to **eligible Proprietary Material** identified in the accompanying release license-scope record. You do not acquire ownership of that Proprietary Material.
+
+Unless the rights holder separately authorizes it in writing or a law or different applicable license permits it, this agreement grants no permission to redistribute, sublicense, publish, sell, or create derivative works of Proprietary Material. These restrictions do not apply to earlier Apache-licensed material or separately licensed third-party components except as their own terms permit.
+
+## 4. Existing open-source rights and third-party notices
+
+Earlier grants made under Apache License, Version 2.0 or other applicable licenses remain effective for the material to which they apply, including that material when embedded in a newer proprietary distribution. This agreement does not revoke or narrow those grants. Open-source components remain under their respective licenses, attribution and notice obligations, and any corresponding-source or library-replacement requirements.
+
+Nothing in this agreement prohibits replacing or modifying a separately licensed third-party library, or reverse engineering portions necessary to debug such modifications, to the extent required by the applicable license, including the GNU Lesser General Public License. Nonwaivable statutory rights remain unaffected. Availability of an alternate runtime option does not alone establish compliance with library-replacement or source-delivery requirements.
+
+## 5. Automation and operational risks
+
+SMTO may, when authorized and properly configured, perform actions such as:
+
+- creating, reading, changing, moving, or deleting files;
+- starting, stopping, or modifying computer processes;
+- installing or removing software and changing system settings;
+- executing shell commands, scripts, or tasks on connected computers;
+- interacting with remote services, APIs, repositories, and databases;
+- using credentials or configured connections; and
+- performing scheduled or unattended work.
+
+These actions can cause data loss, corruption, system damage, downtime, configuration changes, financial expense, security incidents, or other consequences, including irreversible consequences. Safety controls and approvals can reduce risk but cannot guarantee harmless or correct results.
+
+The AI models you select, configure, or provide access to may misunderstand requests or generate inaccurate, incomplete, fabricated, or unsafe responses, including instructions, commands, code, and tool calls. SMTO may use those responses to select and perform actions through connected tools and resources, including autonomously or without review of each individual step. Incorrect or inappropriate model responses can therefore cause unintended or harmful actions. A model's apparent confidence, prior successful results, or suitability for another task does not guarantee safe or correct operation.
+
+## 6. Your permissions, authorization, and responsibilities
+
+You are responsible for configuring which resources and capabilities are available, granting only permissions you are authorized to grant, maintaining appropriate backups, protecting credentials, and independently reviewing important results before relying on them. You must have permission to access and change the systems, information, and services connected to SMTO.
+
+A permission control, activity log, completion message, or successful tool execution does not establish that the underlying result is correct, lawful, secure, or suitable for a particular purpose.
+
+## 7. Scheduled and unattended work
+
+If you enable scheduling or unattended work, SMTO may use the configured permissions while you are not actively interacting with the product. Review scheduled tasks, connected resources, and applicable credentials before enabling unattended execution. Interruptions and partial completion remain possible.
+
+## 8. Third-party models, services, and costs
+
+Third-party models, websites, applications, APIs, operating systems, and other connected resources are governed by their providers' terms and may charge fees. You are responsible for understanding any charges and authorization requirements associated with the providers you choose.
+
+If you connect a remote AI provider or a networked tool, information needed to perform a request may be sent to that third party. Do not assume all information stays on your own computer merely because SMTO can operate locally. Consult the specific provider's policies and your SMTO configuration.
+
+## 9. Sensitive information, security, and professional decisions
+
+You are responsible for deciding whether sensitive, confidential, regulated, or protected information should be processed through the connected models, tools, and services. Do not assume SMTO or any external model provider satisfies a particular regulatory requirement merely by using this software.
+
+AI-generated information is not a substitute for qualified professional judgment. Independently review important legal, medical, financial, engineering, security, operational, and compliance decisions.
+
+## 10. No warranty
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, SMTO AND ELIGIBLE PROPRIETARY MATERIAL ARE PROVIDED **“AS IS”** AND **“AS AVAILABLE”**, WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT WHERE SUCH EXCLUSIONS ARE PERMITTED. THE LICENSOR DOES NOT WARRANT ERROR-FREE OPERATION, CONTINUOUS AVAILABILITY, DATA PRESERVATION, CORRECT OUTPUTS, OR SUCCESSFUL RECOVERY FROM INTERRUPTIONS.
+
+THIS SECTION DOES NOT EXCLUDE WARRANTIES OR REMEDIES THAT CANNOT LAWFULLY BE EXCLUDED. THIRD-PARTY OPEN-SOURCE COMPONENTS RETAIN THE WARRANTY TERMS OF THEIR OWN LICENSES.
+
+## 11. Limits on liability
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSOR WILL NOT BE LIABLE UNDER THIS AGREEMENT FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, OR FOR LOST PROFITS, LOST REVENUE, LOSS OF GOODWILL, OR BUSINESS INTERRUPTION, ARISING FROM USE OF THE PROPRIETARY SMTO SOFTWARE, EVEN IF ADVISED THAT SUCH LOSS WAS POSSIBLE.
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE LICENSOR DISCLAIMS LIABILITY ARISING FROM INCORRECT AI OUTPUTS AND AUTHORIZED AUTOMATED ACTIONS, INCLUDING DATA LOSS, DATA CORRUPTION, SYSTEM DAMAGE, AND SECURITY INCIDENTS. THIS CLAUSE DOES NOT EXCLUDE LIABILITY WHERE EXCLUSION IS PROHIBITED BY LAW, AND DOES NOT CHANGE THIRD-PARTY LICENSE RIGHTS OR REMEDIES.
+
+## 12. Updates and new agreement versions
+
+The text and SHA-256 of each accepted agreement version are retained as historical evidence. If the operative terms change, a newly versioned agreement may be presented for affirmative acceptance before admission of new proprietary-product work. Existing consent to a different document is not consent to this one; merely continuing to visit the website or use earlier open-source code is not acceptance.
+
+An update must not rewrite prior acceptance records or silently change the rights associated with a prior release.
+
+## 13. Controlling documents and mandatory rights
+
+This agreement applies only to the proprietary distribution and eligible material identified in its release manifest. If this agreement conflicts with a third-party component's applicable open-source license, that open-source license controls for the component. Previously granted open-source rights and mandatory statutory rights are preserved. A separate written agreement signed or otherwise validly agreed with the rights holder may govern its own covered subject matter.
+
+## 14. Acknowledgment
+
+By affirmatively accepting in the installer or selecting **“I Agree”** in the application, you acknowledge that:
+
+- SMTO uses the AI models you select, configure, or provide access to, and may act on their responses;
+- SMTO can autonomously use tools to take real actions on systems you authorize, including without review of each individual step;
+- those actions may modify or destroy data or system state;
+- model responses and automated results may be wrong or incomplete, and incorrect or inappropriate model responses can lead to unintended or harmful actions;
+- you are responsible for maintaining appropriate backups, configuring permissions appropriately, protecting credentials, and independently reviewing important results before relying on them;
+- you understand and accept the risks of using an automation agent described in this agreement, subject to applicable law and without waiving rights that cannot lawfully be waived;
+- free use is limited to personal, noncommercial activities and other use requires a separate license; and
+- you agree to the applicable terms for the proprietary distribution identified with this agreement.
+
+---
+
+**Any revision to these terms requires a new agreement version and renewed acceptance.**

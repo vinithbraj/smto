@@ -1,0 +1,80 @@
+@import url("disclosure_controls.css?v=20261112-disclosures");
+/**
+ * @file src/agent_runtime/api/static/agent_ui/error_presenter.css
+ * @brief Share responsive error presentation across Agent surfaces.
+ * @details
+ * Responsibilities: Keep identities, links and diagnostics readable at narrow widths.
+ * Boundaries: Uses inherited theme colors without changing application palettes.
+ * Lifecycle: Loaded with the shared presenter; no mutable state.
+ * State: CSS layout only.
+ * Security: Long diagnostic strings wrap within their host.
+ * Collaborators: error_presenter.js creates the semantic elements.
+ * Public surface: of-error-* classes.
+ * Compatibility: No overrides of existing answer or activity classes.
+ * @see src/agent_runtime/api/static/agent_ui/error_presenter.js
+ */
+.of-error-card {
+  /* Mobile owns --line/--muted; desktop, Console and Manual own --border/--text-secondary. */
+  --of-error-border: var(--border, var(--line));
+  --of-error-muted: var(--text-secondary, var(--muted));
+  box-sizing: border-box;
+  min-width: 0;
+  max-width: 100%;
+  max-block-size: calc(100dvh - 48px);
+  overflow: auto;
+  margin-block: 12px;
+  padding: 12px;
+  border: 1px solid var(--of-error-border);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--ui-font, inherit);
+  font-size: calc(13px * var(--ui-font-scale, 1));
+  font-weight: 400;
+  line-height: 1.6;
+  text-align: start;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.of-recovery-actions { display:flex; flex-wrap:wrap; align-items:center; gap:.65rem; margin:.6rem 0; }
+.of-recovery-actions a, .of-recovery-actions button { white-space:normal; overflow-wrap:anywhere; }
+.of-recovery-actions [hidden] { display:none; }
+.of-error-impact { color:var(--text-secondary,var(--muted)); }
+.of-error-card > p { margin: 8px 0 0; }
+.of-error-card .of-error-title { display: block; color: var(--text); font-size: inherit; font-weight: 600; line-height: 1.5; }
+.of-error-card .of-error-identity { margin-top: 4px; color: var(--of-error-muted); font-family: var(--mono-font, ui-monospace, monospace); font-size: calc(11px * var(--ui-font-scale, 1)); user-select: text; }
+.of-error-card .of-error-fix { color: var(--of-error-muted); }
+.of-error-card .of-error-caution { color: var(--text); font-weight: 500; }
+.of-error-heading { display: block; margin-top: 12px; }
+.of-error-steps { padding-inline-start: 24px; margin-block: 8px 12px; }
+.of-error-steps li { padding-inline-start: 3px; margin-bottom: 10px; }
+.of-error-steps p { margin: 2px 0; }
+.of-error-why { color: var(--of-error-muted); }
+.of-error-copy { border: 1px solid var(--of-error-border); border-radius: 4px; background: transparent; color: var(--text); padding: 5px 9px; font: inherit; cursor: pointer; }
+.of-error-copy-text { box-sizing: border-box; width: 100%; min-width: 0; padding: 8px; color: var(--text); background: var(--code-bg, var(--surface)); border: 1px solid var(--of-error-border); font: inherit; }
+.of-error-actions { display: flex; gap: 4px 14px; flex-wrap: wrap; align-items: center; margin-top: 8px; }
+.of-error-actions > a { display: inline-flex; align-items: center; min-height: 28px; max-width: 100%; padding-block: 3px; border-radius: 4px; color: var(--of-error-muted); font-size: calc(12px * var(--ui-font-scale, 1)); line-height: 1.5; text-decoration: none; }
+.of-error-actions > a:hover { color: var(--text); text-decoration: underline; text-underline-offset: 3px; }
+.of-error-actions > span { flex-basis: 100%; color: var(--of-error-muted); font-size: calc(12px * var(--ui-font-scale, 1)); }
+.of-error-card > details { margin-top: 8px; border-top: 1px solid var(--of-error-border); }
+.of-error-card > details > summary { display: flex; align-items: center; gap: 8px; padding-block: 8px; border-radius: 4px; color: var(--of-error-muted); font-size: calc(12px * var(--ui-font-scale, 1)); font-weight: 400; list-style: none; cursor: pointer; }
+.of-error-card > details > summary::-webkit-details-marker { display: none; }
+
+
+.of-error-card > details > summary:hover { color: var(--text); }
+.of-error-card > details > p { margin: 4px 0 8px; color: var(--of-error-muted); }
+.of-error-card pre { box-sizing: border-box; margin: 4px 0 8px; padding: 10px; border: 1px solid var(--of-error-border); border-radius: 6px; background: var(--code-bg, var(--surface)); color: var(--text); font: calc(12px * var(--ui-font-scale, 1))/1.6 var(--mono-font, ui-monospace, monospace); white-space: pre-wrap; overflow-wrap: anywhere; max-width: 100%; max-height: 20rem; overflow: auto; }
+.of-error-card a:focus-visible, .of-error-card summary:focus-visible, .of-error-card button:focus-visible, .of-error-card textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.of-error-compact { padding: 10px 12px; }
+/* Existing notification rows and toasts already provide their own surface and border. */
+.of-error-notification, .of-error-toast { padding: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; }
+.of-error-notification { margin: 12px 0 0; padding-top: 12px; border-top: 1px solid var(--of-error-border); }
+.of-error-toast { margin: 0; font-size: inherit; }
+.toast:has(.of-error-card) { max-height: calc(100dvh - 48px); overflow-y: auto; }
+.error-setting-focus { outline: 2px solid var(--accent); outline-offset: 4px; }
+@media (max-width: 560px) {
+  .of-error-card { padding: 10px 12px; }
+  .of-error-actions > a, .of-error-card > details > summary { min-height: 36px; }
+  .of-error-notification, .of-error-toast { padding: 0; }
+  .of-error-notification { padding-top: 12px; font-size: calc(12px * var(--ui-font-scale, 1)); }
+}

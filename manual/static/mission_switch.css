@@ -1,0 +1,118 @@
+/* Shared toggle presentation. Native checked/indeterminate state owns the thumb
+   and green on indicator, including programmatic updates and form resets. */
+label.mission-switch-row { display: flex; align-items: center; gap: 8px; min-height: 44px; cursor: pointer; }
+label.mission-switch-row[hidden] { display: none; }
+/* Selection and acknowledgement remain native checkboxes, including in rows
+   that use the same spacing and touch target as boolean settings. */
+input[type="checkbox"].mission-selection {
+  appearance: auto;
+  flex: 0 0 auto;
+  width: 18px;
+  height: 18px;
+  min-height: 18px;
+  margin: 0;
+  accent-color: var(--accent);
+}
+input[type="checkbox"].mission-switch, .mission-switch-preview {
+  box-sizing: border-box;
+  position: relative;
+  appearance: none;
+  display: inline-block;
+  flex: 0 0 35.2px;
+  width: 35.2px;
+  height: 19.2px;
+  min-height: 19.2px;
+  margin: 0;
+  padding: 1.4px;
+  border: 1px solid var(--border-strong, var(--line));
+  border-radius: 999px;
+  background: var(--surface-strong, var(--surface));
+  cursor: pointer;
+  vertical-align: middle;
+  transition: background var(--ui-transition, 140ms ease), border-color var(--ui-transition, 140ms ease);
+}
+input[type="checkbox"].mission-switch[hidden] { display: none; }
+
+input[type="checkbox"].mission-switch::before, .mission-switch-preview::before {
+  content: "";
+  display: block;
+  width: 14.4px;
+  height: 14.4px;
+  border-radius: 50%;
+  background: var(--muted, var(--text-secondary));
+  transition: transform var(--ui-transition, 140ms ease), background var(--ui-transition, 140ms ease);
+}
+
+input[type="checkbox"].mission-switch:checked, .mission-switch-preview[data-checked="true"] {
+  border-color: var(--success, var(--green));
+  background: color-mix(in srgb, var(--success, var(--green)) 18%, var(--surface, var(--bg)));
+}
+
+input[type="checkbox"].mission-switch:checked::before, .mission-switch-preview[data-checked="true"]::before {
+  transform: translateX(16px);
+  background: var(--text, var(--ink));
+}
+
+/* A second, compact on cue supplements the thumb position without changing
+   labels, form values or the spacing around existing controls. */
+input[type="checkbox"].mission-switch::after, .mission-switch-preview::after {
+  content: "";
+  position: absolute;
+  inset-inline-start: 5px;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--success, var(--green));
+  transform: translateY(-50%);
+  opacity: 0;
+  pointer-events: none;
+}
+input[type="checkbox"].mission-switch:checked:not(:indeterminate)::after,
+.mission-switch-preview[data-checked="true"]::after { opacity: 1; }
+input[type="checkbox"].mission-switch:indeterminate { background: var(--surface-strong, var(--surface)); border-color: var(--border-strong, var(--line)); }
+input[type="checkbox"].mission-switch:indeterminate::before { transform: translateX(8px); background: var(--muted, var(--text-secondary)); }
+label.mission-switch-row > input[type="checkbox"].mission-switch { order: -1; }
+
+.setting-state-button::after,
+.setting-enabled::after,
+.setting-state-dot {
+  content: ""; display: inline-block; width: 6px; height: 6px; flex: 0 0 6px;
+  margin-inline-start: 6px; border-radius: 50%; background: var(--success, var(--green));
+  vertical-align: middle; opacity: 0; pointer-events: none;
+}
+.setting-state-button:is([aria-pressed="true"], [aria-checked="true"])::after,
+.setting-enabled::after,
+label:has(select option[data-setting-on]:checked) .setting-state-dot { opacity: 1; }
+.setting-state-button:is(.icon-button, .composer-icon, .thinking-quick-toggle) { position: relative; }
+/* Icon buttons (conversations dock, pin header, width, activity details, Thinking brain) show
+   their on state with their own pressed styling, so they carry no corner dot. Switches and
+   text toggles keep the dot. */
+.setting-state-button:is(.icon-button, .composer-icon, .thinking-quick-toggle)::after { content: none; display: none; }
+.setting-choice-label { position: relative; }
+.setting-choice-label .setting-state-dot { position: absolute; inset-inline-end: 0; top: 7px; }
+
+input[type="checkbox"].mission-switch:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+input[type="checkbox"].mission-switch:disabled { opacity: .5; cursor: not-allowed; }
+
+@media (prefers-reduced-motion: reduce) {
+  input[type="checkbox"].mission-switch,
+  input[type="checkbox"].mission-switch::before,
+  .mission-switch-preview, .mission-switch-preview::before { transition: none; }
+}
+
+@media (forced-colors: active) {
+  input[type="checkbox"].mission-switch { border-color: ButtonText; }
+  input[type="checkbox"].mission-switch:checked { background: Highlight; border-color: Highlight; }
+  input[type="checkbox"].mission-switch::before { background: ButtonText; }
+  input[type="checkbox"].mission-switch:checked::before { background: HighlightText; }
+  input[type="checkbox"].mission-switch::after,
+  .setting-state-button::after, .setting-enabled::after, .setting-state-dot { background: Highlight; forced-color-adjust: none; }
+  input[type="checkbox"].mission-switch:checked::after { background: HighlightText; }
+  input[type="checkbox"].mission-switch,
+  input[type="checkbox"].mission-switch::before { forced-color-adjust: none; }
+}

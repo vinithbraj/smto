@@ -1,0 +1,616 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-ihPIAdwF8pX2Jh+LmRi1xxl1vOosPbsJWuTvELo4WuI='; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'; frame-src https://www.youtube-nocookie.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#fafbfd" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#11141b" media="(prefers-color-scheme: dark)">
+  <title>SMTO — Put your AI to work</title>
+  <meta name="description" content="SMTO (Small Model Task Orchestration) gives the AI model you choose tools and a workspace to investigate problems, run tasks, and show its work.">
+  <link rel="canonical" href="https://vinithbraj.github.io/smto/">
+  <meta property="og:title" content="Put your AI to work — SMTO">
+  <meta property="og:description" content="Your AI model. Your tools. Your computers. One workspace for real work.">
+  <meta property="og:url" content="https://vinithbraj.github.io/smto/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://vinithbraj.github.io/smto/static/social.png?v=475ad43273647267">
+  <meta property="og:image:alt" content="SMTO: a model chooses steps, the controller manages work, and selected tools act.">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <link rel="icon" href="static/favicon.svg?v=aaa2c8cdddadf04a" type="image/svg+xml">
+  <script src="static/theme-init.js?v=b2874f15afde4b2d"></script>
+  <link rel="stylesheet" href="static/site.css?v=8bb107672657d85b">
+  <link rel="stylesheet" href="static/disclosure_controls.css?v=ac3352ad86afea1f">
+  
+  <link rel="stylesheet" href="static/home.css?v=a12543f0a481a8cb">
+  
+  <link rel="alternate" type="application/rss+xml" title="SMTO releases" href="feed.xml">
+  <script src="static/site.js?v=ccc0b3d0747c8387" defer></script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "applicationCategory": "ProductivityApplication", "description": "SMTO (Small Model Task Orchestration) gives the AI model you choose tools and a workspace to investigate problems, run tasks, and show its work.", "name": "SMTO", "url": "https://vinithbraj.github.io/smto/"}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="shell header-row">
+    <a class="wordmark" href="./" aria-label="SMTO — Small Model Task Orchestration home"><img class="brand-mark" src="static/favicon.svg?v=aaa2c8cdddadf04a" width="42" height="42" alt=""><span class="wordmark-copy"><span>sm<span class="wordmark-accent">TO</span></span><span class="wordmark-detail">Small Model Task Orchestration</span></span></a>
+    <div class="theme-picker" hidden>
+      <button class="theme-toggle" type="button" aria-label="Choose theme" title="Choose theme" aria-expanded="false" aria-controls="theme-options">
+        <svg class="theme-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5" /></svg>
+        <svg class="theme-moon" viewBox="0 0 24 24" aria-hidden="true" hidden><path d="M20.5 13.5A8.5 8.5 0 0 1 10.5 3.5a8.5 8.5 0 1 0 10 10Z" /></svg>
+      </button>
+      <div id="theme-options" class="theme-options" hidden>
+        <fieldset>
+          <legend>Theme</legend>
+          <label><input type="radio" name="theme" value="auto" checked> Automatic</label>
+          <label><input type="radio" name="theme" value="light"> Light</label>
+          <label><input type="radio" name="theme" value="dark"> Dark</label>
+        </fieldset>
+      </div>
+    </div>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" hidden>Menu</button>
+    <nav id="primary-nav" aria-label="Main navigation">
+      
+      <a href="#benefits">Why SMTO</a>
+      
+      <a href="#examples">Examples</a>
+      
+      <a href="#how-it-works">How it works</a>
+      
+      <a href="gallery/">Gallery</a>
+      
+      <a href="manual/">Manuals</a>
+      
+      <a href="faq/">FAQ</a>
+      
+      <a href="#get-smto" class="button small">Download</a>
+      
+    </nav>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+<div class="one-page">
+    <section id="top" class="hero section-shell" aria-labelledby="hero-title">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="little-bar" aria-hidden="true"></span> YOUR MODEL. YOUR TOOLS. YOUR CONTROL.</div>
+          <h1 id="hero-title">Put your AI <span class="hero-line">to work.</span></h1>
+          <p class="lead">An AI model can answer a question. Getting work done takes tools, task continuity, and clear boundaries. SMTO brings those pieces together around the model you choose.</p>
+          <p class="hero-note"><strong>SMTO</strong> stands for <strong>Small Model Task Orchestration</strong>. It’s a workspace for the AI model you connect, not another model provider.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#get-smto">Download SMTO <span aria-hidden="true">↗</span></a>
+            <a class="btn btn-secondary" href="#examples">See examples <span aria-hidden="true">→</span></a>
+          </div>
+          <p class="fineprint licensing-summary">Free for personal, noncommercial use only. Commercial and organizational use requires a separate license.</p>
+        </div>
+
+        <section id="benefits" class="hero-principles" aria-labelledby="hero-principles-heading">
+          <h2 id="hero-principles-heading" class="eyebrow">WHY SMTO</h2>
+          <div class="hero-principles-grid">
+            <article>
+              <h3>Privacy on your terms.</h3>
+              <p>Run compatible AI models locally and choose which computers, files, and services they can access. Online models and connected tools may send task data to their providers.</p>
+            </article>
+            <article>
+              <h3>Built for smaller models.</h3>
+              <p>Focused context, relevant tools, and saved task progress help smaller models manage multi-step work without needing everything in one prompt.</p>
+            </article>
+            <article>
+              <h3>Real work. Clear guardrails.</h3>
+              <p>SMTO checks access, requests approval when needed, and records actions so you can review what happened—not just read the final answer.</p>
+            </article>
+          </div>
+        </section>
+
+        <div class="hero-stage">
+          <div class="spot-grid" aria-hidden="true"></div>
+          <figure class="app-frame">
+            <div class="app-top">
+              <div class="app-logo"><img class="mini-mark" src="static/favicon.svg?v=aaa2c8cdddadf04a" width="25" height="25" alt=""><strong>SMTO</strong><span aria-hidden="true">·</span><span>Task activity</span></div>
+              <span class="context-label"><span class="tiny-circle"></span> Illustrative example</span>
+            </div>
+            <div class="app-body">
+              <div class="user-bubble"><span class="bubble-label">YOU ASK</span><p>My computer is running out of space. Find out why and show me what I can safely clean up.</p></div>
+              <div class="activity-list">
+                <div class="activity-title" id="activity-label">TASK ACTIVITY <span>4 steps</span></div>
+<ol class="activity-steps" aria-labelledby="activity-label">
+                <li class="activity"><span class="done" aria-hidden="true">✓</span><span>Checked available storage</span><small>Done</small></li>
+                <li class="activity"><span class="done" aria-hidden="true">✓</span><span>Inspected large folders</span><small>Done</small></li>
+                <li class="activity"><span class="done" aria-hidden="true">✓</span><span>Identified build files and caches</span><small>Done</small></li>
+                <li class="activity"><span class="done" aria-hidden="true">✓</span><span>Prepared cleanup recommendations</span><small>Done</small></li>
+              </ol></div>
+              <div class="result-card"><span class="result-icon" aria-hidden="true">✓</span><div><strong>Investigation complete</strong><p>Found several large folders worth reviewing. Nothing was deleted.</p></div></div>
+            </div>
+            <figcaption>Example activity. Real results depend on the model, available tools and permissions.</figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="examples" class="page-section examples-section" aria-labelledby="examples-heading">
+      <div class="shell">
+        <div class="section-intro"><div class="eyebrow">IN PRACTICE</div><h2 id="examples-heading">See what SMTO can do.</h2><p>Watch an actual SMTO task, then explore other things your AI can do with the right model, tools, and permissions.</p></div>
+        <div class="example-layout">
+          <article class="feature-example" aria-labelledby="disk-demo-heading">
+            <div class="feature-top"><span class="chip">REAL TASK · 2-MINUTE VIDEO</span></div>
+            <h3 id="disk-demo-heading">From disk-space investigation to approved cleanup.</h3>
+            <p class="smto-demo-lede">Watch SMTO investigate a Linux computer running low on storage, identify what was consuming space, present cleanup options, wait for approval, and verify what changed.</p>
+            <div class="smto-demo-player" data-smto-demo="disk-cleanup" data-video-id="xl3EEOI3dW4" data-video-title="SMTO disk-space investigation, approved cleanup, and verification — real task video">
+              <a class="smto-demo-poster" href="https://youtu.be/xl3EEOI3dW4" target="_blank" rel="noopener noreferrer" aria-label="Play the 2-minute SMTO demo (loads YouTube)" aria-describedby="smto-demo-privacy">
+                <img src="static/smto-disk-investigation-demo-poster.webp?v=def09737adc9c6d1" width="1280" height="720" loading="lazy" decoding="async" alt="Real SMTO disk-space investigation video showing the agent working in its task interface">
+                <span class="smto-demo-play" aria-hidden="true"><span>▶</span> Play the 2-minute demo</span>
+                <span class="smto-demo-duration" aria-hidden="true">2:00</span>
+              </a>
+            </div>
+            <div class="smto-demo-support">
+              <p><a href="https://youtu.be/xl3EEOI3dW4" target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a></p>
+              <p class="smto-demo-disclosure" id="smto-demo-privacy">YouTube loads only when you press Play. YouTube may receive information about your visit when the player opens.</p>
+            </div>
+            <ol class="smto-demo-steps" aria-label="Recorded workflow">
+              <li>Investigate</li><li>Recommend</li><li>Ask for approval</li><li>Clean up</li><li>Verify</li>
+            </ol>
+            <p class="smto-demo-result">About 3.5 GB was reclaimed. SMTO verified the disk-space change and reported that an empty directory remained because removing it required elevated permission.</p>
+            <p class="smto-demo-footnote">Real screen recording, edited to remove waiting time. Results depend on the model, available tools, and permissions.</p>
+          </article>
+          <div class="example-tiles">
+            <article class="example-tile"><span class="tile-icon" aria-hidden="true">⌘</span><h3>Handle repetitive project work</h3><p class="example-quote">“Create the next version of this project, preserve my unfinished changes, and publish the new branch.”</p><p class="tile-outcome">Check the repository, determine the next version, make the branch, and verify it was published.</p></article>
+            <article class="example-tile"><span class="tile-icon" aria-hidden="true">▧</span><h3>Work across computers</h3><p class="example-quote">“Build this project on my other computer and prepare the finished files for release.”</p><p class="tile-outcome">Use the chosen computer, follow build progress, and inspect the results.</p></article>
+            <article class="example-tile"><span class="tile-icon" aria-hidden="true">✳</span><h3>Investigate an application issue</h3><p class="example-quote">“My editor is behaving strangely. Check its configuration and help me reset the affected files.”</p><p class="tile-outcome">Diagnose the likely cause, explain the changes, and run the approved steps.</p></article>
+            <article class="example-tile"><span class="tile-icon" aria-hidden="true">▤</span><h3>Organize files and storage</h3><p class="example-quote">“Move these large files to another drive, and check that everything copied correctly.”</p><p class="tile-outcome">Inspect source and destination, perform the approved copy, and verify what arrived.</p></article>
+          </div>
+        </div>
+        <p class="examples-footnote">The featured video is a real SMTO session, edited for length. The other examples summarize possible workflows; results depend on the model, tools, and permissions you configure.</p>
+        <p class="comparison-jump"><a href="#compare">Compare tools and approaches <span aria-hidden="true">↓</span></a></p>
+      </div>
+    </section>
+
+    
+
+
+
+
+<section id="compare" class="page-section comparison-section" aria-labelledby="compare-heading">
+  <div class="shell">
+    <div class="section-intro comparison-intro">
+      <div class="eyebrow">FIND YOUR FIT</div>
+      <h2 id="compare-heading">Different tools. Different strengths.</h2>
+      <p>SMTO is built for people who want their own AI model to carry out real work—with privacy choices, focused context, permissions, and progress they can inspect. Developer frameworks, coding agents, and visual automation platforms approach different parts of that problem.</p>
+      <p class="comparison-context">These products are not all direct substitutes. See where each excels, and where SMTO—or another approach—may be a better fit for your task.</p>
+    </div>
+    <p class="comparison-categories">General-purpose AI task workspace: SMTO · Agent frameworks: LangChain, LangGraph, CrewAI · Workflow automation: n8n · Coding agents: Codex, Claude Code, Cline, Continue, OpenHands</p>
+
+    <div class="comparison-table-card comparison-overview-card">
+    <table class="comparison-table comparison-overview">
+      <caption>A practical comparison of product focus, strengths, and trade-offs.</caption>
+      <colgroup><col class="product-column"><col class="type-column"><col class="strengths-column"><col></colgroup>
+      <thead><tr><th scope="col">Product</th><th scope="col">What it is</th><th scope="col">Where it excels</th><th scope="col">Limitations and trade-offs</th></tr></thead>
+      <tbody>
+        
+        <tr class="comparison-smto">
+          <th scope="row">SMTO</th>
+          <td>Local-first, model-independent AI agent workspace and execution runtime</td><td>
+    <span class="comparison-strength"><span class="comparison-strength-check" aria-hidden="true"></span><strong>Privacy and choice:</strong> Run compatible models locally and control available connections and access. You decide which model endpoint and tools the task can use. Running a local model does not make online tools or connected services private.</span> <span class="comparison-strength"><span class="comparison-strength-check" aria-hidden="true"></span><strong>Small-model focus:</strong> Focused context and relevant tools help manage multi-step work. SMTO keeps task records outside the model&#39;s immediate input and can show the relevant parts of tool results. This helps manage limited context space; it does not give a smaller model reasoning ability it lacks.</span> <span class="comparison-strength"><span class="comparison-strength-check" aria-hidden="true"></span><strong>Permission-aware execution:</strong> Access checks and approvals when required. A tool being available does not automatically authorize it to read a file or change a system. SMTO checks access, and you review requests that need additional permission.</span> <span class="comparison-strength"><span class="comparison-strength-check" aria-hidden="true"></span><strong>Durable, visible work:</strong> Saved progress, scheduling, and inspectable activity. You can follow what ran, what it returned, and what is waiting for input. Closing your browser does not erase an accepted task; the required computers and services must remain available for work to continue.</span> <span class="comparison-strength"><span class="comparison-strength-check" aria-hidden="true"></span><strong>Across computers:</strong> Direct tasks to the Gateway you choose. A Gateway runs machine-local tools on a selected computer, such as the workstation holding a file. That computer still needs the right software, access, and an active connection.</span> 
+  </td><td>
+    <span class="comparison-tradeoff"><strong>Setup and upkeep:</strong> You connect a compatible model, configure tools and permissions, and keep the required computers available. A fully managed service may be simpler if you do not want to maintain that setup.</span> <span class="comparison-tradeoff"><strong>Smaller ecosystem:</strong> SMTO has a smaller public ecosystem. You may need to configure an integration yourself instead of following an existing tutorial or using a ready-made connector.</span> <span class="comparison-tradeoff"><strong>Model quality:</strong> Results still depend on the model&#39;s reasoning and tool use. SMTO can organize steps and preserve evidence, but you still need to check important answers and changes.</span> <span class="comparison-tradeoff"><strong>Unproven coding parity:</strong> No published benchmark establishes parity with leading coding agents. Try a representative task with your chosen model and review the result before relying on it.</span> <span class="comparison-tradeoff"><strong>Data sharing:</strong> Online providers and tools can receive task data. A local model alone does not keep a workflow private if it also contacts an online service.</span> 
+  </td>
+        </tr>
+        
+        <tr>
+          <th scope="row"><a href="https://docs.langchain.com/oss/python/langchain/overview">LangChain</a></th>
+          <td>Framework for building AI agents</td><td>Model integrations, configurable tools, and composable agent behavior.</td><td>You still build, test, secure, and operate the application around it.</td>
+        </tr>
+        
+        <tr>
+          <th scope="row"><a href="https://docs.langchain.com/oss/python/langgraph/overview">LangGraph</a></th>
+          <td>Stateful agent orchestration framework</td><td>Durable execution, checkpoints, human-in-the-loop workflows, and explicit control flow.</td><td>Powerful for custom systems, but you design and maintain the workflow.</td>
+        </tr>
+        
+        <tr>
+          <th scope="row"><a href="https://docs.crewai.com/en/introduction">CrewAI</a></th>
+          <td>Multi-agent development framework</td><td>Coordinating specialized agents through collaborative crews and structured flows.</td><td>Multiple agents and custom flows can add development, coordination, and debugging work.</td>
+        </tr>
+        
+        <tr>
+          <th scope="row"><a href="https://docs.n8n.io/">n8n</a></th>
+          <td>Visual workflow automation platform</td><td>Connecting apps, triggers, schedules, and AI steps; offers self-hosting.</td><td>Open-ended computer tasks can require additional tools, nodes, and access configuration.</td>
+        </tr>
+        
+        <tr>
+          <th scope="row"><a href="https://learn.chatgpt.com/docs/cli/reference">OpenAI Codex</a></th>
+          <td>Agent focused on software development</td><td>Working with code, repositories, tests, and development environments across several interfaces.</td><td>Coding is the main focus; local-model and other options depend on the interface used.</td>
+        </tr>
+        
+        <tr>
+          <th scope="row"><a href="https://code.claude.com/docs/en/overview">Claude Code</a></th>
+          <td>Agent focused on software development</td><td>Codebase work, terminal tools, permissions, and workflows across CLI, IDE, and desktop.</td><td>Primarily designed for coding; provider and hosting choices depend on the setup.</td>
+        </tr>
+        
+        <tr>
+          <th scope="row"><a href="https://docs.cline.bot/getting-started/installing-cline">Cline</a></th>
+          <td>Coding agent for desktop, IDE, and CLI</td><td>Flexible model connections, developer tools, and task workflows including scheduled work.</td><td>Development is its core workflow; available features vary across its interfaces.</td>
+        </tr>
+        
+        <tr>
+          <th scope="row"><a href="https://docs.continue.dev/ide-extensions/agent/quick-start">Continue</a></th>
+          <td>AI coding assistant for IDE and CLI workflows</td><td>Inline code completion, agent/plan modes, and configurable local or hosted models.</td><td>Editor-centered experience; tool-use quality depends on the chosen model and configuration.</td>
+        </tr>
+        
+        <tr>
+          <th scope="row"><a href="https://docs.openhands.dev/overview/introduction">OpenHands</a></th>
+          <td>Software agent platform</td><td>Agent Canvas, software-engineering workflows, SDKs, and local or hosted backends.</td><td>Primarily designed for software work; self-hosted use requires infrastructure and setup.</td>
+        </tr>
+        
+      </tbody>
+    </table>
+    </div>
+
+    <div class="comparison-records">
+      <p class="comparison-caption">A practical comparison of product focus, strengths, and trade-offs.</p>
+      <ol role="list">
+        
+        <li class="comparison-smto">
+          <article aria-labelledby="compare-product-smto">
+            <div class="comparison-field-label">Product</div>
+            <h3 id="compare-product-smto">SMTO</h3>
+            <dl>
+              
+              <div><dt>What it is</dt><dd>Local-first, model-independent AI agent workspace and execution runtime</dd></div>
+              
+              <div><dt>Where it excels</dt><dd>
+    <span class="comparison-strength"><span class="comparison-strength-check" aria-hidden="true"></span><strong>Privacy and choice:</strong> Run compatible models locally and control available connections and access. You decide which model endpoint and tools the task can use. Running a local model does not make online tools or connected services private.</span> <span class="comparison-strength"><span class="comparison-strength-check" aria-hidden="true"></span><strong>Small-model focus:</strong> Focused context and relevant tools help manage multi-step work. SMTO keeps task records outside the model&#39;s immediate input and can show the relevant parts of tool results. This helps manage limited context space; it does not give a smaller model reasoning ability it lacks.</span> <span class="comparison-strength"><span class="comparison-strength-check" aria-hidden="true"></span><strong>Permission-aware execution:</strong> Access checks and approvals when required. A tool being available does not automatically authorize it to read a file or change a system. SMTO checks access, and you review requests that need additional permission.</span> <span class="comparison-strength"><span class="comparison-strength-check" aria-hidden="true"></span><strong>Durable, visible work:</strong> Saved progress, scheduling, and inspectable activity. You can follow what ran, what it returned, and what is waiting for input. Closing your browser does not erase an accepted task; the required computers and services must remain available for work to continue.</span> <span class="comparison-strength"><span class="comparison-strength-check" aria-hidden="true"></span><strong>Across computers:</strong> Direct tasks to the Gateway you choose. A Gateway runs machine-local tools on a selected computer, such as the workstation holding a file. That computer still needs the right software, access, and an active connection.</span> 
+  </dd></div>
+              
+              <div><dt>Limitations and trade-offs</dt><dd>
+    <span class="comparison-tradeoff"><strong>Setup and upkeep:</strong> You connect a compatible model, configure tools and permissions, and keep the required computers available. A fully managed service may be simpler if you do not want to maintain that setup.</span> <span class="comparison-tradeoff"><strong>Smaller ecosystem:</strong> SMTO has a smaller public ecosystem. You may need to configure an integration yourself instead of following an existing tutorial or using a ready-made connector.</span> <span class="comparison-tradeoff"><strong>Model quality:</strong> Results still depend on the model&#39;s reasoning and tool use. SMTO can organize steps and preserve evidence, but you still need to check important answers and changes.</span> <span class="comparison-tradeoff"><strong>Unproven coding parity:</strong> No published benchmark establishes parity with leading coding agents. Try a representative task with your chosen model and review the result before relying on it.</span> <span class="comparison-tradeoff"><strong>Data sharing:</strong> Online providers and tools can receive task data. A local model alone does not keep a workflow private if it also contacts an online service.</span> 
+  </dd></div>
+              
+            </dl>
+          </article>
+        </li>
+        
+        <li>
+          <article aria-labelledby="compare-product-langchain">
+            <div class="comparison-field-label">Product</div>
+            <h3 id="compare-product-langchain"><a href="https://docs.langchain.com/oss/python/langchain/overview">LangChain</a></h3>
+            <dl>
+              
+              <div><dt>What it is</dt><dd>Framework for building AI agents</dd></div>
+              
+              <div><dt>Where it excels</dt><dd>Model integrations, configurable tools, and composable agent behavior.</dd></div>
+              
+              <div><dt>Limitations and trade-offs</dt><dd>You still build, test, secure, and operate the application around it.</dd></div>
+              
+            </dl>
+          </article>
+        </li>
+        
+        <li>
+          <article aria-labelledby="compare-product-langgraph">
+            <div class="comparison-field-label">Product</div>
+            <h3 id="compare-product-langgraph"><a href="https://docs.langchain.com/oss/python/langgraph/overview">LangGraph</a></h3>
+            <dl>
+              
+              <div><dt>What it is</dt><dd>Stateful agent orchestration framework</dd></div>
+              
+              <div><dt>Where it excels</dt><dd>Durable execution, checkpoints, human-in-the-loop workflows, and explicit control flow.</dd></div>
+              
+              <div><dt>Limitations and trade-offs</dt><dd>Powerful for custom systems, but you design and maintain the workflow.</dd></div>
+              
+            </dl>
+          </article>
+        </li>
+        
+        <li>
+          <article aria-labelledby="compare-product-crewai">
+            <div class="comparison-field-label">Product</div>
+            <h3 id="compare-product-crewai"><a href="https://docs.crewai.com/en/introduction">CrewAI</a></h3>
+            <dl>
+              
+              <div><dt>What it is</dt><dd>Multi-agent development framework</dd></div>
+              
+              <div><dt>Where it excels</dt><dd>Coordinating specialized agents through collaborative crews and structured flows.</dd></div>
+              
+              <div><dt>Limitations and trade-offs</dt><dd>Multiple agents and custom flows can add development, coordination, and debugging work.</dd></div>
+              
+            </dl>
+          </article>
+        </li>
+        
+        <li>
+          <article aria-labelledby="compare-product-n8n">
+            <div class="comparison-field-label">Product</div>
+            <h3 id="compare-product-n8n"><a href="https://docs.n8n.io/">n8n</a></h3>
+            <dl>
+              
+              <div><dt>What it is</dt><dd>Visual workflow automation platform</dd></div>
+              
+              <div><dt>Where it excels</dt><dd>Connecting apps, triggers, schedules, and AI steps; offers self-hosting.</dd></div>
+              
+              <div><dt>Limitations and trade-offs</dt><dd>Open-ended computer tasks can require additional tools, nodes, and access configuration.</dd></div>
+              
+            </dl>
+          </article>
+        </li>
+        
+        <li>
+          <article aria-labelledby="compare-product-codex">
+            <div class="comparison-field-label">Product</div>
+            <h3 id="compare-product-codex"><a href="https://learn.chatgpt.com/docs/cli/reference">OpenAI Codex</a></h3>
+            <dl>
+              
+              <div><dt>What it is</dt><dd>Agent focused on software development</dd></div>
+              
+              <div><dt>Where it excels</dt><dd>Working with code, repositories, tests, and development environments across several interfaces.</dd></div>
+              
+              <div><dt>Limitations and trade-offs</dt><dd>Coding is the main focus; local-model and other options depend on the interface used.</dd></div>
+              
+            </dl>
+          </article>
+        </li>
+        
+        <li>
+          <article aria-labelledby="compare-product-claude-code">
+            <div class="comparison-field-label">Product</div>
+            <h3 id="compare-product-claude-code"><a href="https://code.claude.com/docs/en/overview">Claude Code</a></h3>
+            <dl>
+              
+              <div><dt>What it is</dt><dd>Agent focused on software development</dd></div>
+              
+              <div><dt>Where it excels</dt><dd>Codebase work, terminal tools, permissions, and workflows across CLI, IDE, and desktop.</dd></div>
+              
+              <div><dt>Limitations and trade-offs</dt><dd>Primarily designed for coding; provider and hosting choices depend on the setup.</dd></div>
+              
+            </dl>
+          </article>
+        </li>
+        
+        <li>
+          <article aria-labelledby="compare-product-cline">
+            <div class="comparison-field-label">Product</div>
+            <h3 id="compare-product-cline"><a href="https://docs.cline.bot/getting-started/installing-cline">Cline</a></h3>
+            <dl>
+              
+              <div><dt>What it is</dt><dd>Coding agent for desktop, IDE, and CLI</dd></div>
+              
+              <div><dt>Where it excels</dt><dd>Flexible model connections, developer tools, and task workflows including scheduled work.</dd></div>
+              
+              <div><dt>Limitations and trade-offs</dt><dd>Development is its core workflow; available features vary across its interfaces.</dd></div>
+              
+            </dl>
+          </article>
+        </li>
+        
+        <li>
+          <article aria-labelledby="compare-product-continue">
+            <div class="comparison-field-label">Product</div>
+            <h3 id="compare-product-continue"><a href="https://docs.continue.dev/ide-extensions/agent/quick-start">Continue</a></h3>
+            <dl>
+              
+              <div><dt>What it is</dt><dd>AI coding assistant for IDE and CLI workflows</dd></div>
+              
+              <div><dt>Where it excels</dt><dd>Inline code completion, agent/plan modes, and configurable local or hosted models.</dd></div>
+              
+              <div><dt>Limitations and trade-offs</dt><dd>Editor-centered experience; tool-use quality depends on the chosen model and configuration.</dd></div>
+              
+            </dl>
+          </article>
+        </li>
+        
+        <li>
+          <article aria-labelledby="compare-product-openhands">
+            <div class="comparison-field-label">Product</div>
+            <h3 id="compare-product-openhands"><a href="https://docs.openhands.dev/overview/introduction">OpenHands</a></h3>
+            <dl>
+              
+              <div><dt>What it is</dt><dd>Software agent platform</dd></div>
+              
+              <div><dt>Where it excels</dt><dd>Agent Canvas, software-engineering workflows, SDKs, and local or hosted backends.</dd></div>
+              
+              <div><dt>Limitations and trade-offs</dt><dd>Primarily designed for software work; self-hosted use requires infrastructure and setup.</dd></div>
+              
+            </dl>
+          </article>
+        </li>
+        
+      </ol>
+    </div>
+    <p class="comparison-note">Capabilities vary by version, model, configuration, and deployment. This is a comparison of product focus—not a measured performance ranking. SMTO is not a model provider.</p>
+
+    <details class="comparison-details" id="compare-capabilities">
+      <summary class="ui-disclosure-trigger">Explore detailed capabilities</summary>
+      <div class="comparison-detail-body">
+        <p>The details below summarize common deployment options rather than guarantees. Developer frameworks can often be extended to support a capability; agent products may provide it only in specific interfaces.</p>
+        <div class="comparison-picker" hidden>
+          <label for="compare-product">Compare with SMTO</label>
+          <select id="compare-product" aria-controls="compare-matrix">
+            
+            <option value="langchain">LangChain</option>
+            
+            <option value="langgraph">LangGraph</option>
+            
+            <option value="crewai">CrewAI</option>
+            
+            <option value="n8n">n8n</option>
+            
+            <option value="codex" selected>Codex</option>
+            
+            <option value="claude-code">Claude Code</option>
+            
+            <option value="cline">Cline</option>
+            
+            <option value="continue">Continue</option>
+            
+            <option value="openhands">OpenHands</option>
+            
+          </select>
+        </div>
+        <div class="comparison-scroll" role="region" aria-label="Detailed capability comparison" tabindex="0">
+          <table class="comparison-table capability-table" id="compare-matrix">
+            <caption>How the approaches handle common requirements. Configuration and model choice matter.</caption>
+            <thead><tr><th scope="col">Capability</th><th scope="col" data-product="smto">SMTO</th><th scope="col" data-product="langchain">LangChain</th><th scope="col" data-product="langgraph">LangGraph</th><th scope="col" data-product="crewai">CrewAI</th><th scope="col" data-product="n8n">n8n</th><th scope="col" data-product="codex">Codex</th><th scope="col" data-product="claude-code">Claude Code</th><th scope="col" data-product="cline">Cline</th><th scope="col" data-product="continue">Continue</th><th scope="col" data-product="openhands">OpenHands</th></tr></thead>
+            <tbody>
+              
+              <tr><th scope="row">Primary use</th><td data-product="smto">General tasks across chosen computers</td><td data-product="langchain">Build agents</td><td data-product="langgraph">Design stateful agent flows</td><td data-product="crewai">Build agent teams</td><td data-product="n8n">Automate workflows</td><td data-product="codex">Code tasks</td><td data-product="claude-code">Code tasks</td><td data-product="cline">Developer agent</td><td data-product="continue">Coding in IDE/<wbr>CLI</td><td data-product="openhands">Software agents</td></tr>
+              
+              <tr><th scope="row">Ready-to-use experience</th><td data-product="smto">Web workspace plus local controller/<wbr>Gateways</td><td data-product="langchain">Developer framework</td><td data-product="langgraph">Developer framework</td><td data-product="crewai">Developer framework</td><td data-product="n8n">Visual editor</td><td data-product="codex">App /<wbr> CLI /<wbr> IDE</td><td data-product="claude-code">Desktop /<wbr> CLI /<wbr> IDE</td><td data-product="cline">Desktop /<wbr> IDE /<wbr> CLI</td><td data-product="continue">IDE /<wbr> CLI</td><td data-product="openhands">Canvas /<wbr> SDK /<wbr> cloud</td></tr>
+              
+              <tr><th scope="row">Model choice</th><td data-product="smto">Compatible local or hosted endpoints</td><td data-product="langchain">Broad integrations</td><td data-product="langgraph">Configured integrations</td><td data-product="crewai">Configurable LLMs</td><td data-product="n8n">AI nodes/<wbr>connectors</td><td data-product="codex">OpenAI; local CLI options</td><td data-product="claude-code">Claude-focused; some third-party routes</td><td data-product="cline">Multiple providers</td><td data-product="continue">Multiple providers</td><td data-product="openhands">Configurable providers</td></tr>
+              
+              <tr><th scope="row">Local-model option</th><td data-product="smto">Supported; bring own inference service</td><td data-product="langchain">Via integrations</td><td data-product="langgraph">Via integrations</td><td data-product="crewai">Configurable</td><td data-product="n8n">Via model setup</td><td data-product="codex">CLI OSS mode</td><td data-product="claude-code">Not the usual mode</td><td data-product="cline">Supported</td><td data-product="continue">Supported</td><td data-product="openhands">Configurable</td></tr>
+              
+              <tr><th scope="row">Privacy boundary</th><td data-product="smto">Local-first option; remote data flow depends on setup</td><td data-product="langchain">Deployment-dependent</td><td data-product="langgraph">Deployment-dependent</td><td data-product="crewai">Deployment-dependent</td><td data-product="n8n">Cloud or self-hosted</td><td data-product="codex">Interface/<wbr>model-dependent</td><td data-product="claude-code">Provider/<wbr>setup-dependent</td><td data-product="cline">Model/<wbr>setup-dependent</td><td data-product="continue">Model/<wbr>setup-dependent</td><td data-product="openhands">Backend/<wbr>model-dependent</td></tr>
+              
+              <tr><th scope="row">Tool actions</th><td data-product="smto">Files, shell, web, connected services</td><td data-product="langchain">Compose tools</td><td data-product="langgraph">Configure nodes/<wbr>tools</td><td data-product="crewai">Configure tools</td><td data-product="n8n">Connected nodes</td><td data-product="codex">File/<wbr>shell/<wbr>code tools</td><td data-product="claude-code">File/<wbr>shell/<wbr>code tools</td><td data-product="cline">File/<wbr>shell/<wbr>code tools</td><td data-product="continue">Editor tools /<wbr> MCP</td><td data-product="openhands">Agent tools and sandboxes</td></tr>
+              
+              <tr><th scope="row">Human approvals</th><td data-product="smto">Capability/<wbr>resource requests and policy checks</td><td data-product="langchain">Configurable</td><td data-product="langgraph">Interrupt /<wbr> review</td><td data-product="crewai">Human feedback</td><td data-product="n8n">Workflow design</td><td data-product="codex">Approval modes</td><td data-product="claude-code">Permission controls</td><td data-product="cline">Approval options</td><td data-product="continue">Ask-first policies</td><td data-product="openhands">Configuration-dependent</td></tr>
+              
+              <tr><th scope="row">Durable state</th><td data-product="smto">Saved tasks, pause/<wbr>resume and continuation</td><td data-product="langchain">Via LangGraph</td><td data-product="langgraph">Built-in checkpoints</td><td data-product="crewai">Flows and memory</td><td data-product="n8n">Execution history</td><td data-product="codex">Sessions/<wbr>tasks</td><td data-product="claude-code">Sessions/<wbr>tasks</td><td data-product="cline">Sessions</td><td data-product="continue">Sessions</td><td data-product="openhands">Agent conversations/<wbr>state</td></tr>
+              
+              <tr><th scope="row">Scheduled work</th><td data-product="smto">Built-in; requires available runtime/<wbr>tools</td><td data-product="langchain">Configure deployment</td><td data-product="langgraph">Configure deployment</td><td data-product="crewai">Configure deployment</td><td data-product="n8n">Workflow triggers</td><td data-product="codex">Depends on surface</td><td data-product="claude-code">Depends on surface</td><td data-product="cline">Supported by surface</td><td data-product="continue">Automation setup</td><td data-product="openhands">Automation services</td></tr>
+              
+              <tr><th scope="row">Multiple machines</th><td data-product="smto">Selectable Gateway per task</td><td data-product="langchain">Developer-defined</td><td data-product="langgraph">Developer-defined</td><td data-product="crewai">Via tools</td><td data-product="n8n">Remote integrations</td><td data-product="codex">Local/<wbr>remote/<wbr>cloud options</td><td data-product="claude-code">Local/<wbr>remote/<wbr>cloud options</td><td data-product="cline">Desktop SSH and other options</td><td data-product="continue">Environment-dependent</td><td data-product="openhands">Multiple backend options</td></tr>
+              
+              <tr><th scope="row">Context handling</th><td data-product="smto">Configurable head/<wbr>tail tool previews, output recovery and memory</td><td data-product="langchain">Middleware/<wbr>tools</td><td data-product="langgraph">Designed in state</td><td data-product="crewai">Memory and flows</td><td data-product="n8n">Node/<wbr>workflow design</td><td data-product="codex">Agent-managed</td><td data-product="claude-code">Agent-managed</td><td data-product="cline">Agent-managed</td><td data-product="continue">Context tools</td><td data-product="openhands">Agent-managed</td></tr>
+              
+              <tr><th scope="row">Small-model use</th><td data-product="smto">Design priority; gains depend on model/<wbr>task</td><td data-product="langchain">Model dependent</td><td data-product="langgraph">Model dependent</td><td data-product="crewai">Model dependent</td><td data-product="n8n">Model dependent</td><td data-product="codex">Local OSS CLI supported</td><td data-product="claude-code">Not a central focus</td><td data-product="cline">Local-model options</td><td data-product="continue">Local model/<wbr>tool options</td><td data-product="openhands">Model dependent</td></tr>
+              
+              <tr><th scope="row">Action visibility</th><td data-product="smto">Tool activity, results, errors, status</td><td data-product="langchain">Tracing integrations</td><td data-product="langgraph">State/<wbr>tracing</td><td data-product="crewai">Agent traces</td><td data-product="n8n">Execution log</td><td data-product="codex">Agent activity</td><td data-product="claude-code">Agent activity</td><td data-product="cline">Agent activity</td><td data-product="continue">Tool results</td><td data-product="openhands">Agent events</td></tr>
+              
+              <tr><th scope="row">IDE autocomplete</th><td data-product="smto">Not a core feature</td><td data-product="langchain">Custom integration</td><td data-product="langgraph">Custom integration</td><td data-product="crewai">Not primary</td><td data-product="n8n">Not primary</td><td data-product="codex">IDE coding surface</td><td data-product="claude-code">IDE coding surface</td><td data-product="cline">IDE coding tools</td><td data-product="continue">Dedicated autocomplete</td><td data-product="openhands">Not primary</td></tr>
+              
+              <tr><th scope="row">Best fit</th><td data-product="smto">Local-first cross-tool work across computers</td><td data-product="langchain">Custom agent apps</td><td data-product="langgraph">Engineered durable workflows</td><td data-product="crewai">Collaborative agents</td><td data-product="n8n">App/<wbr>service automation</td><td data-product="codex">Software engineering</td><td data-product="claude-code">Software engineering</td><td data-product="cline">Developer workflows</td><td data-product="continue">Editor-centered coding</td><td data-product="openhands">Software automation</td></tr>
+              
+            </tbody>
+          </table>
+        </div>
+        <p class="comparison-note">“Configurable” does not mean built in or ready to use. “Supported” does not guarantee that every model or installation will perform equally well. The matrix is not a security certification, a performance benchmark, or a promise that one product cannot perform another product&#39;s use cases.</p>
+      </div>
+    </details>
+
+    <details class="comparison-details" id="compare-limitations">
+      <summary class="ui-disclosure-trigger">Where SMTO may not be the best fit</summary>
+      <div class="comparison-detail-body">
+        <p>We think people should know the trade-offs before choosing an AI work environment.</p>
+        <div class="comparison-table-card">
+        <table class="comparison-table limitations-table">
+          <caption>SMTO considerations and trade-offs.</caption>
+          <thead><tr><th scope="col">Consideration</th><th scope="col">What it means for SMTO</th></tr></thead>
+          <tbody><tr><th scope="row">The model still matters</th><td>SMTO can structure work and provide tools, but it cannot replace a model&#39;s reasoning ability or guarantee correct outcomes. It can help a model keep track of a task, but the model may still misunderstand a request or interpret a result incorrectly. Check important answers against the underlying files or results.</td></tr><tr><th scope="row">No proven parity with leading coding agents</th><td>We have not published a controlled head-to-head benchmark showing SMTO matches Codex or Claude Code on coding tasks. Feature descriptions are not measurements of coding quality, speed, or reliability. Evaluate the kinds of tasks you actually plan to run with the model and tools you will use.</td></tr><tr><th scope="row">You manage your setup</th><td>Connecting models, tools, and computers takes configuration and upkeep. A fully managed service may be simpler. You choose a compatible model endpoint, make the required tools available, and keep execution computers connected. Saved tasks and schedules still depend on those services being available.</td></tr><tr><th scope="row">Smaller ecosystem</th><td>SMTO does not yet have the breadth of public integrations, tutorials, or community support of established platforms. A workflow may need manual configuration or an integration you build yourself. Check that the tools and guidance you need are available before committing to a larger rollout.</td></tr><tr><th scope="row">Not designed as an autocomplete-first editor</th><td>If inline coding suggestions are your main priority, a dedicated IDE assistant may suit you better. SMTO is organized around asking for work, following tool activity, and reviewing results. It is not built around predicting the next few characters as you type code.</td></tr><tr><th scope="row">Privacy depends on connections</th><td>Local models can keep model inference on your hardware, but online model providers and connected services may receive task data. For example, a web or account integration can contact an external service even when the AI model is local. Review both the model endpoint and each tool&#39;s data access.</td></tr><tr><th scope="row">Guardrails reduce risk; they do not remove it</th><td>Permission checks and activity history help you stay informed, but sensitive actions and results still need appropriate review. Before approving a sensitive operation, check the action and target computer. Afterwards, inspect the actual result; authorization is not proof that an action was correct or successful.</td></tr></tbody>
+        </table>
+        </div>
+        <p>SMTO is intended to make practical task execution accessible with the model and computers you choose. The right choice depends on the work you need done.</p>
+      </div>
+    </details>
+
+    <details class="comparison-details comparison-sources">
+      <summary class="ui-disclosure-trigger">Sources and scope</summary>
+      <div class="comparison-detail-body">
+        <p>Reviewed 18 October 2026 using the products&#39; own documentation and the SMTO codebase. Feature availability changes; check each project&#39;s documentation for the latest details. This table describes common capabilities and trade-offs, not verified comparative performance.</p>
+        <ul><li><a href="https://docs.langchain.com/oss/python/langchain/overview">LangChain</a></li><li><a href="https://docs.langchain.com/oss/python/langgraph/overview">LangGraph</a></li><li><a href="https://docs.crewai.com/en/introduction">CrewAI</a></li><li><a href="https://docs.n8n.io/">n8n</a></li><li><a href="https://learn.chatgpt.com/docs/cli/reference">OpenAI Codex</a></li><li><a href="https://code.claude.com/docs/en/overview">Claude Code</a></li><li><a href="https://docs.cline.bot/getting-started/installing-cline">Cline</a></li><li><a href="https://docs.continue.dev/ide-extensions/agent/quick-start">Continue</a></li><li><a href="https://docs.openhands.dev/overview/introduction">OpenHands</a></li></ul>
+      </div>
+    </details>
+  </div>
+</section>
+
+    <section id="how-it-works" class="page-section how-section" aria-labelledby="how-heading">
+      <div class="shell">
+        <div class="section-intro"><div class="eyebrow">SIMPLE BY DESIGN</div><h2 id="how-heading">Ask. Let it work. Review.</h2><p>Tell your AI the outcome you want. It can take the next step using the tools you allow, work with the results, and ask when a decision needs you.</p></div>
+        <div class="step-grid">
+          <article><span class="step-label">01 / ASK</span><h3>Describe the job.</h3><p>Describe the job in everyday language and choose where it should run.</p></article>
+          <article><span class="step-label">02 / WORK</span><h3>Let it take the steps.</h3><p>The model chooses actions. SMTO checks access, uses the available tools, and tracks the results.</p></article>
+          <article><span class="step-label">03 / REVIEW</span><h3>See what happened.</h3><p>See the outcome and the activity behind it. Check important results against their sources or files.</p></article>
+        </div>
+        <p class="how-continuity">When configured, longer tasks can continue, wait for input, or run on a schedule while the required systems are available.</p>
+        <figure class="diagram-block">
+          <div class="diagram-pictures" data-diagram="loop">
+  
+    
+  <img class="diagram-light diagram-wide" src="static/smto-task-loop-wide-light.svg?v=b02933918e968000" width="1220" height="450" loading="lazy" decoding="async" alt="An AI chooses steps and SMTO checks and runs tools; results return to the AI for the next step.">
+    
+  <img class="diagram-dark diagram-wide" src="static/smto-task-loop-wide-dark.svg?v=ccade4c137cbfe8d" width="1220" height="450" loading="lazy" decoding="async" alt="An AI chooses steps and SMTO checks and runs tools; results return to the AI for the next step.">
+    
+  
+    
+  <img class="diagram-light diagram-compact" src="static/smto-task-loop-compact-light.svg?v=2e1e687dacba86a3" width="400" height="550" loading="lazy" decoding="async" alt="An AI chooses steps and SMTO checks and runs tools; results return to the AI for the next step.">
+    
+  <img class="diagram-dark diagram-compact" src="static/smto-task-loop-compact-dark.svg?v=03eee3ee42617e6a" width="400" height="550" loading="lazy" decoding="async" alt="An AI chooses steps and SMTO checks and runs tools; results return to the AI for the next step.">
+    
+  
+</div>
+          <figcaption>The model provides the reasoning. SMTO manages access, actions, and progress. Results go back to the model to guide what happens next.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="computers" class="page-section computers-section" aria-labelledby="computers-heading">
+      <div class="shell">
+        <div class="section-intro medium-intro"><div class="eyebrow">WORK WHERE YOU WANT</div><h2 id="computers-heading">One workspace. <span class="block-lg">All your computers.</span></h2><p>Your AI doesn&#39;t have to work on the computer in front of you. Connect a laptop, workstation, or server, then choose the machine that has the files or tools a task needs.</p></div>
+        <figure class="diagram-block machine-diagram">
+          <div class="diagram-pictures" data-diagram="machine">
+  
+    
+  <img class="diagram-light diagram-wide" src="static/smto-machine-target-wide-light.svg?v=6969655e1c0eec2a" width="1220" height="530" loading="lazy" decoding="async" alt="A SMTO workspace chooses one connected computer for a task. The workstation is selected; computers keep separate files and permissions.">
+    
+  <img class="diagram-dark diagram-wide" src="static/smto-machine-target-wide-dark.svg?v=cf5845a5531700b2" width="1220" height="530" loading="lazy" decoding="async" alt="A SMTO workspace chooses one connected computer for a task. The workstation is selected; computers keep separate files and permissions.">
+    
+  
+    
+  <img class="diagram-light diagram-compact" src="static/smto-machine-target-compact-light.svg?v=e3612d485d1141e4" width="400" height="540" loading="lazy" decoding="async" alt="A SMTO workspace chooses one connected computer for a task. The workstation is selected; computers keep separate files and permissions.">
+    
+  <img class="diagram-dark diagram-compact" src="static/smto-machine-target-compact-dark.svg?v=b437dfc15906748e" width="400" height="540" loading="lazy" decoding="async" alt="A SMTO workspace chooses one connected computer for a task. The workstation is selected; computers keep separate files and permissions.">
+    
+  
+</div>
+          <figcaption>Each computer keeps its own files and permissions. Selecting one doesn&#39;t automatically share data with the others.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="models" class="page-section models-section" aria-labelledby="models-heading">
+      <div class="shell models-grid">
+        <div class="models-copy"><div class="eyebrow">YOUR MODEL</div><h2 id="models-heading">Bring your own AI.</h2><p>SMTO isn&#39;t a model provider. Connect a compatible model running on your own hardware or use a supported online service. Keep a familiar workspace for your tasks and tools even when you change models.</p><p class="fineprint">The name reflects SMTO&#39;s roots in smaller models, not a limit on model size. The model you choose still shapes the quality of its reasoning and answers.</p></div>
+        <div class="model-options"><article><span class="model-icon" aria-hidden="true">⌁</span><div><h3>Local models</h3><p>Run a compatible model using hardware you control.</p></div></article><article><span class="model-icon" aria-hidden="true">☁</span><div><h3>Online models</h3><p>Connect a supported hosted model service when that&#39;s the right fit.</p></div></article></div>
+      </div>
+    </section>
+
+    <section id="control" class="page-section control-section" aria-labelledby="control-heading">
+      <div class="shell control-grid">
+        <div class="control-copy"><div class="eyebrow">STAY IN CONTROL</div><h2 id="control-heading">Know what your AI is doing.</h2><p>Useful AI needs access to real tools. SMTO helps keep that access understandable: see the work, follow results, and decide whether to approve actions that require your permission.</p><div class="mini-proofs"><div><strong>See the activity</strong><span>Review tool actions, results, and errors.</span></div><div><strong>Approve when needed</strong><span>Restricted access can pause for your decision.</span></div><div><strong>Know where it runs</strong><span>Choose the computer or connected service a task may use.</span></div></div><p class="fineprint">Online model providers and connected services may receive the information required for a task. Review your connections and permissions before sharing sensitive data.</p>
+
+</div>
+        <figure class="permission-figure"><div class="permission-top"><span class="permission-line-icon" aria-hidden="true">⚑</span><span>Example access request</span></div><div class="permission-body"><span class="permission-eyebrow">YOUR DECISION IS NEEDED</span><h3>Access to project files</h3><p>The AI needs permission to read a folder for this task.</p><div class="permission-detail"><span>Requested resource</span><strong>Project folder</strong></div><div class="permission-detail"><span>Requested access</span><strong>Read files</strong></div></div><figcaption>Illustrative approval view — permissions depend on task policy.</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="get-smto" class="page-section final-section" aria-labelledby="get-heading">
+      <div class="shell final-panel">
+
+        <div class="eyebrow">GET STARTED</div>
+        <h2 id="get-heading">Ready to put your AI to work?</h2>
+        <p>Download SMTO, connect a compatible model, and start with one task you can check. Expand the tools and computers you use as you go.</p>
+        <a class="btn btn-primary final-btn" href="https://github.com/vinithbraj/smto/releases" rel="noopener noreferrer" target="_blank">Browse SMTO downloads <span aria-hidden="true">↗</span></a>
+        
+        <p class="fineprint licensing-summary">Free for personal, noncommercial use only. Commercial and organizational use requires a separate license.</p>
+        <p class="fineprint">Questions before you start? <a href="faq/">Read the FAQ</a>.</p>
+        <p class="fineprint">Find the current downloads and installation information in the project repository. Choose the files for your operating system and verify them using the published instructions.</p>
+        <details class="fineprint"><summary class="ui-disclosure-trigger">Before you install</summary><p>Proprietary SMTO distributions are subject to their included software license and End User License Agreement. Earlier open-source software and third-party components retain their own licenses. Review the terms and notices that accompany the version you download.</p><a href="legal/proprietary-license/">Read licensing terms</a></details>
+      </div>
+    </section>
+
+</div>
+</main>
+<footer class="site-footer shell">
+  <p class="fineprint licensing-summary">Free for personal, noncommercial use only. Commercial and organizational use requires a separate license.</p>
+  <div class="footer-intro"><a class="wordmark" href="./" aria-label="SMTO home"><img class="brand-mark" src="static/favicon.svg?v=aaa2c8cdddadf04a" width="42" height="42" alt=""><span>SMTO</span></a><p>AI models provide the intelligence.<br>SMTO gives them a way to work.</p></div>
+  <nav aria-label="Footer navigation">
+    <a href="#top">Back to top</a><a href="https://github.com/vinithbraj/smto/releases" target="_blank" rel="noopener noreferrer">Downloads</a><a href="#control">Privacy &amp; permissions</a><a href="faq/">FAQ</a><a href="legal/proprietary-license/">Licensing &amp; legal</a>
+  </nav>
+  
+</footer>
+</body>
+</html>

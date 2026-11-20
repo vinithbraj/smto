@@ -1,0 +1,24 @@
+/**
+ * Style public editorial indexes, article metadata, cards and content blocks.
+ */
+.editorial-index, .editorial-article { padding-block: 4rem; }
+.editorial-article { max-width: 820px; }
+.editorial-article header { margin-bottom: 2.5rem; }
+.editorial-meta, .editorial-cards time, .editorial-body figcaption { color: var(--smto-text-muted); }
+.editorial-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
+.editorial-cards article { padding: 1.5rem; border: 1px solid var(--smto-border); border-radius: 16px; background: var(--smto-surface); }
+.editorial-cards h2 { font-size: 1.5rem; }
+.editorial-pagination { display: flex; justify-content: space-between; gap: 1rem; padding-top: 2rem; }
+.editorial-body { line-height: 1.75; overflow-wrap: anywhere; }
+.editorial-body > div, .editorial-body figure { margin: 1.75rem 0; }
+.editorial-body img { display: block; max-width: 100%; height: auto; border-radius: 12px; }
+.editorial-body pre { max-width: 100%; overflow: auto; padding: 1rem; background: var(--smto-surface); border: 1px solid var(--smto-border); border-radius: 12px; }
+.editorial-body table { display: block; max-width: 100%; overflow: auto; }
+.editorial-body th, .editorial-body td { padding: .5rem; border: 1px solid var(--smto-border); }
+.editorial-video .smto-demo-player { aspect-ratio: 16/9; }
+.editorial-video .smto-demo-poster, .editorial-video .smto-demo-iframe { display: block; width: 100%; height: 100%; aspect-ratio: 16/9; border: 0; }
+.editorial-video .smto-demo-poster { position: relative; }
+.editorial-video .smto-demo-poster img { width: 100%; height: 100%; object-fit: contain; }
+.editorial-video .smto-demo-play { position: absolute; bottom: 1rem; left: 1rem; padding: .7rem 1rem; border-radius: 10px; background: var(--smto-surface); color: var(--smto-text); border: 1px solid var(--smto-border); }
+@media (max-width: 650px) { .editorial-cards { grid-template-columns: 1fr; } }
+@media (min-width: 801px) and (max-width: 1150px) { .cms-publishing .header-row { flex-wrap: wrap; } .cms-publishing #primary-nav { width: 100%; justify-content: flex-end; padding-bottom: 1rem; } }
