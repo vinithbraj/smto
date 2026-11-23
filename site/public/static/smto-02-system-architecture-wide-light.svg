@@ -3,7 +3,7 @@
   <desc id="desc">The browser is the user interface to the controller. A separately configured model endpoint supplies model decisions; SMTO does not include the model. Inside the controller, the conceptual responsibilities are task state, tool selection, permission and execution checks, and result observations. Saved progress, context and memory, and activity history support those responsibilities. A selected Gateway executes machine-local tools and returns results. Controller-local tools and service integrations are separate execution routes. These are responsibility boundaries, not a promise that every block is a separate service or storage engine. The independent public website serves documentation and downloads, not live task execution.</desc>
   <defs>
     <marker id="arrow-blue" markerWidth="9" markerHeight="9" refX="7.6" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
-      <path d="M0,0 L9,4.5 L0,9 Z" fill="#3F63CF" />
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#2B2B2B" />
     </marker>
     <marker id="arrow-teal" markerWidth="9" markerHeight="9" refX="7.6" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
       <path d="M0,0 L9,4.5 L0,9 Z" fill="#166C59" />
@@ -18,22 +18,22 @@
       <path d="M0,0 L9,4.5 L0,9 Z" fill="#B02D3A" />
     </marker>
     <marker id="arrow-muted" markerWidth="9" markerHeight="9" refX="7.6" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
-      <path d="M0,0 L9,4.5 L0,9 Z" fill="#526078" />
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#5C5C5C" />
     </marker>
   </defs>
   <rect width="1536" height="690" fill="#FFFFFF" />
   <g transform="translate(-32,-202)">
-    <rect x="65" y="227" width="340" height="125" rx="18" fill="#F5F7FB" stroke="#D6DDE8" stroke-width="1.5" />
-    <rect x="65" y="227" width="5" height="125" rx="2" fill="#3F63CF" />
-    <rect x="87" y="250" width="66" height="66" rx="17" fill="#EDF2FF" />
-    <g transform="translate(96,259) scale(0.75)" fill="none" stroke="#3F63CF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="65" y="227" width="340" height="125" rx="18" fill="#F7F7F7" stroke="#E0E0E0" stroke-width="1.5" />
+    <rect x="65" y="227" width="5" height="125" rx="2" fill="#2B2B2B" />
+    <rect x="87" y="250" width="66" height="66" rx="17" fill="#EFEFEF" />
+    <g transform="translate(96,259) scale(0.75)" fill="none" stroke="#2B2B2B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
       <rect x="7" y="10" width="50" height="38" rx="5" />
       <path d="M7 21h50M23 57h18M32 48v9" />
       <path d="M14 16h1m5 0h1m5 0h1" />
     </g>
     <text x="173" y="272.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="700" text-anchor="start" fill="#202020">Your</text>
     <text x="173" y="310.28" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="700" text-anchor="start" fill="#202020">browser</text>
-    <rect x="1155" y="227" width="380" height="125" rx="18" fill="#F5F7FB" stroke="#D6DDE8" stroke-width="1.5" />
+    <rect x="1155" y="227" width="380" height="125" rx="18" fill="#F7F7F7" stroke="#E0E0E0" stroke-width="1.5" />
     <rect x="1155" y="227" width="5" height="125" rx="2" fill="#6751A7" />
     <rect x="1177" y="250" width="66" height="66" rx="17" fill="#F2EEFB" />
     <g transform="translate(1186,259) scale(0.75)" fill="none" stroke="#6751A7" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
@@ -41,39 +41,39 @@
     </g>
     <text x="1263" y="272.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="700" text-anchor="start" fill="#202020">Model</text>
     <text x="1263" y="310.28" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="700" text-anchor="start" fill="#202020">endpoint</text>
-    <rect x="475" y="224" width="610" height="452" rx="26" fill="#EDF2FF" stroke="#3F63CF" stroke-width="1.5" />
-    <text x="510" y="269.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="700" text-anchor="start" fill="#3F63CF">SMTO CONTROLLER</text>
-    <rect x="503" y="291" width="554" height="76" rx="12" fill="#F5F7FB" stroke="#D6DDE8" stroke-width="1.5" />
-    <g transform="translate(518,303) scale(0.75)" fill="none" stroke="#3F63CF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="475" y="224" width="610" height="452" rx="26" fill="#EFEFEF" stroke="#2B2B2B" stroke-width="1.5" />
+    <text x="510" y="269.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="700" text-anchor="start" fill="#2B2B2B">SMTO CONTROLLER</text>
+    <rect x="503" y="291" width="554" height="76" rx="12" fill="#F7F7F7" stroke="#E0E0E0" stroke-width="1.5" />
+    <g transform="translate(518,303) scale(0.75)" fill="none" stroke="#2B2B2B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
       <rect x="13" y="13" width="38" height="38" rx="10" />
       <path d="M23 23h18v18H23zM23 5v8m9-8v8m9-8v8M23 51v8m9-8v8m9-8v8M5 23h8m-8 9h8m-8 9h8m38-18h8m-8 9h8m-8 9h8" />
     </g>
     <text x="586" y="322.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="700" text-anchor="start" fill="#202020">Task state</text>
-    <text x="586" y="350.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#526078">Accepted work, progress and waits</text>
-    <rect x="503" y="378" width="554" height="76" rx="12" fill="#F5F7FB" stroke="#D6DDE8" stroke-width="1.5" />
-    <g transform="translate(518,390) scale(0.75)" fill="none" stroke="#3F63CF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <text x="586" y="350.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#5C5C5C">Accepted work, progress and waits</text>
+    <rect x="503" y="378" width="554" height="76" rx="12" fill="#F7F7F7" stroke="#E0E0E0" stroke-width="1.5" />
+    <g transform="translate(518,390) scale(0.75)" fill="none" stroke="#2B2B2B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
       <path d="M39 9a15 15 0 0 0-14 20L9 45a8 8 0 0 0 11 11l16-17a15 15 0 0 0 20-19L44 30l-9-9L45 9z" />
     </g>
     <text x="586" y="409.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="700" text-anchor="start" fill="#202020">Tool selection</text>
-    <text x="586" y="437.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#526078">Relevant capabilities for this task</text>
-    <rect x="503" y="465" width="554" height="76" rx="12" fill="#F5F7FB" stroke="#D6DDE8" stroke-width="1.5" />
-    <g transform="translate(518,477) scale(0.75)" fill="none" stroke="#3F63CF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <text x="586" y="437.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#5C5C5C">Relevant capabilities for this task</text>
+    <rect x="503" y="465" width="554" height="76" rx="12" fill="#F7F7F7" stroke="#E0E0E0" stroke-width="1.5" />
+    <g transform="translate(518,477) scale(0.75)" fill="none" stroke="#2B2B2B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
       <path d="M32 6 53 14v17c0 12-9 22-21 28C20 53 11 43 11 31V14z" />
       <path d="m22 31 7 7 14-15" />
     </g>
     <text x="586" y="496.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="700" text-anchor="start" fill="#202020">Execution checks</text>
-    <text x="586" y="524.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#526078">Permission, target and operation</text>
-    <rect x="503" y="552" width="554" height="76" rx="12" fill="#F5F7FB" stroke="#D6DDE8" stroke-width="1.5" />
-    <g transform="translate(518,564) scale(0.75)" fill="none" stroke="#3F63CF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <text x="586" y="524.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#5C5C5C">Permission, target and operation</text>
+    <rect x="503" y="552" width="554" height="76" rx="12" fill="#F7F7F7" stroke="#E0E0E0" stroke-width="1.5" />
+    <g transform="translate(518,564) scale(0.75)" fill="none" stroke="#2B2B2B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
       <path d="M17 8h24l10 10v38H17zM41 8v11h10M25 28h17m-17 9h17m-17 9h9" />
       <path d="m4 27 4 4 7-8m-11 22 4 4 7-8" />
     </g>
     <text x="586" y="583.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="700" text-anchor="start" fill="#202020">Result observations</text>
-    <text x="586" y="611.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#526078">Recorded information for the model</text>
-    <path d="M405,290 H468" fill="none" stroke="#3F63CF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-blue)" />
+    <text x="586" y="611.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#5C5C5C">Recorded information for the model</text>
+    <path d="M405,290 H468" fill="none" stroke="#2B2B2B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-blue)" />
     <path d="M1086,280 H1149" fill="none" stroke="#6751A7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-violet)" />
     <path d="M1155,326 H1093" fill="none" stroke="#6751A7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-violet)" />
-    <rect x="65" y="430" width="340" height="206" rx="18" fill="#F5F7FB" stroke="#D6DDE8" stroke-width="1.5" />
+    <rect x="65" y="430" width="340" height="206" rx="18" fill="#F7F7F7" stroke="#E0E0E0" stroke-width="1.5" />
     <rect x="65" y="430" width="5" height="206" rx="2" fill="#166C59" />
     <rect x="87" y="453" width="66" height="66" rx="17" fill="#EAF6F1" />
     <g transform="translate(96,462) scale(0.75)" fill="none" stroke="#166C59" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
@@ -82,10 +82,10 @@
     </g>
     <text x="173" y="475.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="700" text-anchor="start" fill="#202020">Saved</text>
     <text x="173" y="511.96" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="700" text-anchor="start" fill="#202020">progress</text>
-    <text x="91" y="557.92" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#526078">Context and memory</text>
-    <text x="91" y="586.96" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#526078">Activity history</text>
+    <text x="91" y="557.92" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#5C5C5C">Context and memory</text>
+    <text x="91" y="586.96" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#5C5C5C">Activity history</text>
     <path d="M405,529 H468" fill="none" stroke="#166C59" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-teal)" stroke-dasharray="7 7" />
-    <rect x="1155" y="430" width="380" height="206" rx="18" fill="#F5F7FB" stroke="#D6DDE8" stroke-width="1.5" />
+    <rect x="1155" y="430" width="380" height="206" rx="18" fill="#F7F7F7" stroke="#E0E0E0" stroke-width="1.5" />
     <rect x="1155" y="430" width="5" height="206" rx="2" fill="#6751A7" />
     <rect x="1177" y="453" width="66" height="66" rx="17" fill="#F2EEFB" />
     <g transform="translate(1186,462) scale(0.75)" fill="none" stroke="#6751A7" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
@@ -93,10 +93,10 @@
     </g>
     <text x="1263" y="475.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="27" font-weight="700" text-anchor="start" fill="#202020">Other tool</text>
     <text x="1263" y="510.64" font-family="DejaVu Sans, Arial, sans-serif" font-size="27" font-weight="700" text-anchor="start" fill="#202020">routes</text>
-    <text x="1181" y="555.28" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#526078">Controller-local tools</text>
-    <text x="1181" y="584.32" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#526078">Connected services</text>
+    <text x="1181" y="555.28" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#5C5C5C">Controller-local tools</text>
+    <text x="1181" y="584.32" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#5C5C5C">Connected services</text>
     <path d="M1086,531 H1148" fill="none" stroke="#6751A7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-violet)" />
-    <rect x="475" y="732" width="610" height="130" rx="18" fill="#F5F7FB" stroke="#D6DDE8" stroke-width="1.5" />
+    <rect x="475" y="732" width="610" height="130" rx="18" fill="#F7F7F7" stroke="#E0E0E0" stroke-width="1.5" />
     <rect x="475" y="732" width="5" height="130" rx="2" fill="#166C59" />
     <rect x="497" y="755" width="66" height="66" rx="17" fill="#EAF6F1" />
     <g transform="translate(506,764) scale(0.75)" fill="none" stroke="#166C59" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
@@ -104,10 +104,10 @@
       <path d="M32 8v48M16 25h22m-6-6 6 6-6 6M48 40H26m6-6-6 6 6 6" />
     </g>
     <text x="583" y="777.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="31" font-weight="700" text-anchor="start" fill="#202020">Selected Gateway</text>
-    <path d="M747,676 V725" fill="none" stroke="#3F63CF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-blue)" />
+    <path d="M747,676 V725" fill="none" stroke="#2B2B2B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-blue)" />
     <path d="M810,731 V683" fill="none" stroke="#166C59" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-teal)" stroke-dasharray="7 7" />
-    <text x="1120" y="784.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#526078">Files · programs · local tools</text>
-    <text x="65" y="776.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="700" text-anchor="start" fill="#3F63CF">Public website ≠ runtime</text>
-    <text x="65" y="815.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="20" font-weight="400" text-anchor="start" fill="#526078">Docs and downloads only</text>
+    <text x="1120" y="784.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#5C5C5C">Files · programs · local tools</text>
+    <text x="65" y="776.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="700" text-anchor="start" fill="#2B2B2B">Public website ≠ runtime</text>
+    <text x="65" y="815.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="20" font-weight="400" text-anchor="start" fill="#5C5C5C">Docs and downloads only</text>
   </g>
 </svg>

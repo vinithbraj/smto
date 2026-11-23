@@ -121,6 +121,18 @@
     "scene": "ask-user"
   },
   {
+    "file": "ask-user-dark.webp",
+    "title": "The model asks before choosing",
+    "caption": "When a choice belongs to the user, the model asks. The question card offers suggested answers and a free-text field, and the task waits for the reply.",
+    "alt": "SMTO conversation with the request 'Read meeting-notes.md and save the action items to action-items.md'. After two progress notes, a question card asks how to save 4 new action items because action-items.md already lists 2, with three suggested answers (append, replace, save to a new dated file) and an 'Other answer' field.",
+    "theme": "dark",
+    "viewport": "desktop",
+    "order": 61,
+    "width": 2880,
+    "height": 1800,
+    "scene": "ask-user"
+  },
+  {
     "file": "capabilities-light.webp",
     "title": "Capabilities",
     "caption": "The Capabilities dialog lists the skills and tools the model may use, with include and exclude controls and an 'Apply to' scope selector.",
@@ -145,13 +157,37 @@
     "scene": "settings"
   },
   {
-    "file": "settings-gateways-dark.webp",
-    "title": "Gateways",
-    "caption": "The Gateways section lists the computers SMTO can run tasks on, with their connection status, an on/off switch and software update status.",
-    "alt": "SMTO Settings page in dark mode with the Gateways section: a table with two Gateways, 'localhost' and 'LocalMachine', both Connected and enabled, and buttons to add a Gateway and check for updates.",
+    "file": "settings-models-dark.webp",
+    "title": "Model routing",
+    "caption": "Model routing in Settings. The Main model entry is open, showing its endpoint, automatic model selection, API key and generation profile.",
+    "alt": "SMTO Settings page with the Model routing section open. The Main model entry shows the endpoint http://127.0.0.1:8080/v1, an Auto-select model switch turned on, an empty API key field and the 'smTO recommended' generation profile; a list of settings sections is on the left.",
     "theme": "dark",
     "viewport": "desktop",
     "order": 81,
+    "width": 2880,
+    "height": 1800,
+    "scene": "settings"
+  },
+  {
+    "file": "settings-gateways-light.webp",
+    "title": "Gateways",
+    "caption": "The Gateways section lists the computers SMTO can run tasks on, with their connection status, an on/off switch and software update status.",
+    "alt": "SMTO Settings page with the Gateways section: a table with two Gateways, 'localhost' and 'LocalMachine', both Connected and enabled, and buttons to add a Gateway and check for updates.",
+    "theme": "light",
+    "viewport": "desktop",
+    "order": 82,
+    "width": 2880,
+    "height": 1800,
+    "scene": "settings"
+  },
+  {
+    "file": "settings-gateways-dark.webp",
+    "title": "Gateways",
+    "caption": "The Gateways section lists the computers SMTO can run tasks on, with their connection status, an on/off switch and software update status.",
+    "alt": "SMTO Settings page with the Gateways section: a table with two Gateways, 'localhost' and 'LocalMachine', both Connected and enabled, and buttons to add a Gateway and check for updates.",
+    "theme": "dark",
+    "viewport": "desktop",
+    "order": 83,
     "width": 2880,
     "height": 1800,
     "scene": "settings"
@@ -164,6 +200,18 @@
     "theme": "light",
     "viewport": "desktop",
     "order": 90,
+    "width": 2880,
+    "height": 1800,
+    "scene": "workflows"
+  },
+  {
+    "file": "workflows-dark.webp",
+    "title": "Workflows",
+    "caption": "Saved workflows are reusable requests. Each card can be run now, scheduled, edited or opened to see its run history.",
+    "alt": "SMTO Workflows page listing three saved workflows, 'Weekly disk space report', 'Nightly backup check' and 'Meeting notes to action items', each with its prompt and buttons including Run now, Schedule, Edit and History.",
+    "theme": "dark",
+    "viewport": "desktop",
+    "order": 91,
     "width": 2880,
     "height": 1800,
     "scene": "workflows"
@@ -208,7 +256,7 @@
     "file": "phone-answer-dark.webp",
     "title": "Answers on a phone",
     "caption": "A completed task on a phone in dark mode: the answer, built from the commands the model ran, and a box to continue the conversation.",
-    "alt": "SMTO phone layout in dark mode: an answer saying ~/Downloads holds about 33 GB with 14 GB free on /, a short list of the largest items, and a 'Continue this conversation' box with Continue and Queue buttons.",
+    "alt": "SMTO phone layout in dark mode: an answer saying ~/Downloads holds about 33 GB with 14 GB free on /, a short list of the largest items, and a 'Continue this conversation' box.",
     "theme": "dark",
     "viewport": "phone",
     "order": 121,

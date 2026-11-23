@@ -2,9 +2,9 @@
   "site_url": "https://vinithbraj.github.io/smto/",
   "source": {
     "repository": "openfabric",
-    "commit": "cbab46d263da94706d77a2ca01e65fe6e6b4feb9",
-    "commit_date": "2026-11-19T16:09:47-08:00",
-    "branch": "V494_CODE_FREEZE_REVIEW_AND_AUDIT",
+    "commit": "8a79a1c9bad9e2fc83efb24613804ba076e47f7f",
+    "commit_date": "2026-11-22T13:07:33-08:00",
+    "branch": "V500_website-update-to-github-hosted",
     "dirty": false
   },
   "html_pages": [
@@ -21,36 +21,36 @@
     "/releases"
   ],
   "redirect_pages": 26,
-  "files_written": 4494,
-  "bytes_written": 40433096,
+  "files_written": 4519,
+  "bytes_written": 42081266,
   "gallery": {
     "desktop": 12,
     "phone": 3,
     "diagrams": 15
   },
   "manual": {
-    "docs": 2141,
-    "files": 4327,
-    "bytes": 37075969,
+    "docs": 2142,
+    "files": 4329,
+    "bytes": 37239821,
     "kinds": {
       "manual": 32,
       "architecture": 87,
       "guide": 2,
-      "generated": 1980,
+      "generated": 1981,
       "legacy": 40
     },
     "bytes_by_area": {
-      "documents": 25460653,
-      "related": 853904,
-      "catalog": 4030571,
-      "search_index": 2654220,
-      "static": 3710466,
+      "documents": 25573316,
+      "related": 854764,
+      "catalog": 4036144,
+      "search_index": 2661087,
+      "static": 3748355,
       "error_catalog": 334709
     },
     "links": {
       "external": 105,
       "heading": 6,
-      "manual": 4776,
+      "manual": 4802,
       "markdown": 816,
       "unlinked": 1240
     },
@@ -61,10 +61,10 @@
       "static/page-inline-1.js",
       "static/page-inline-2.js"
     ],
-    "revision": "90099a2a048e5849",
-    "fingerprint": "d0602743c18548da",
+    "revision": "c213d2e1d89211e5",
+    "fingerprint": "16f39b07dfe761d5",
     "notes": [],
-    "seconds": 65.2,
+    "seconds": 65.5,
     "out_dir": "~/Desktop/smto_release/site/public/manual"
   },
   "skipped_routes": [],

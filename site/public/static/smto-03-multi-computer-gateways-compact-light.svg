@@ -3,7 +3,7 @@
   <desc id="desc">A single SMTO controller can retain connections to multiple Gateways. In the example, task A selects Gateway A on a laptop to use local files, task B selects Gateway B on a workstation to run local programs, and task C selects Gateway C on a server to work with server files. Their results return to the controller. A Gateway is an execution target, not an AI model. The diagram does not instruct one task to broadcast to all machines. A different target does not inherit another computer's files, paths, credentials or permissions. Each computer needs its own available Gateway and installed tools. A saved connection does not prove that it is online.</desc>
   <defs>
     <marker id="arrow-blue" markerWidth="9" markerHeight="9" refX="7.6" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
-      <path d="M0,0 L9,4.5 L0,9 Z" fill="#3F63CF" />
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#2B2B2B" />
     </marker>
     <marker id="arrow-teal" markerWidth="9" markerHeight="9" refX="7.6" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
       <path d="M0,0 L9,4.5 L0,9 Z" fill="#166C59" />
@@ -18,39 +18,39 @@
       <path d="M0,0 L9,4.5 L0,9 Z" fill="#B02D3A" />
     </marker>
     <marker id="arrow-muted" markerWidth="9" markerHeight="9" refX="7.6" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
-      <path d="M0,0 L9,4.5 L0,9 Z" fill="#526078" />
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#5C5C5C" />
     </marker>
   </defs>
   <rect width="720" height="496" fill="#FFFFFF" />
-  <rect x="20" y="20" width="330" height="156" rx="16" fill="#F5F7FB" stroke="#D6DDE8" />
-  <g transform="translate(42,38) scale(0.625)" fill="none" stroke="#3F63CF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="20" y="20" width="330" height="156" rx="16" fill="#F7F7F7" stroke="#E0E0E0" />
+  <g transform="translate(42,38) scale(0.625)" fill="none" stroke="#2B2B2B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
     <rect x="13" y="13" width="38" height="38" rx="10" />
     <path d="M23 23h18v18H23zM23 5v8m9-8v8m9-8v8M23 51v8m9-8v8m9-8v8M5 23h8m-8 9h8m-8 9h8m38-18h8m-8 9h8m-8 9h8" />
   </g>
   <text x="42" y="116" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#202020">One controller</text>
-  <rect x="370" y="20" width="330" height="156" rx="16" fill="#F5F7FB" stroke="#D6DDE8" />
+  <rect x="370" y="20" width="330" height="156" rx="16" fill="#F7F7F7" stroke="#E0E0E0" />
   <g transform="translate(392,38) scale(0.625)" fill="none" stroke="#166C59" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
     <rect x="8" y="8" width="48" height="48" rx="8" />
     <path d="M32 8v48M16 25h22m-6-6 6 6-6 6M48 40H26m6-6-6 6 6 6" />
   </g>
   <text x="392" y="116" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#202020">Task A →</text>
   <text x="392" y="154" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#202020">Gateway A</text>
-  <rect x="20" y="196" width="330" height="156" rx="16" fill="#F5F7FB" stroke="#D6DDE8" />
+  <rect x="20" y="196" width="330" height="156" rx="16" fill="#F7F7F7" stroke="#E0E0E0" />
   <g transform="translate(42,214) scale(0.625)" fill="none" stroke="#6751A7" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
     <rect x="8" y="8" width="48" height="48" rx="8" />
     <path d="M32 8v48M16 25h22m-6-6 6 6-6 6M48 40H26m6-6-6 6 6 6" />
   </g>
   <text x="42" y="292" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#202020">Task B →</text>
   <text x="42" y="330" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#202020">Gateway B</text>
-  <rect x="370" y="196" width="330" height="156" rx="16" fill="#F5F7FB" stroke="#D6DDE8" />
+  <rect x="370" y="196" width="330" height="156" rx="16" fill="#F7F7F7" stroke="#E0E0E0" />
   <g transform="translate(392,214) scale(0.625)" fill="none" stroke="#835800" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
     <rect x="8" y="8" width="48" height="48" rx="8" />
     <path d="M32 8v48M16 25h22m-6-6 6 6-6 6M48 40H26m6-6-6 6 6 6" />
   </g>
   <text x="392" y="292" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#202020">Task C →</text>
   <text x="392" y="330" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#202020">Gateway C</text>
-  <rect x="20" y="372" width="680" height="104" rx="16" fill="#F5F7FB" stroke="#D6DDE8" />
-  <g transform="translate(42,402) scale(0.625)" fill="none" stroke="#3F63CF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="20" y="372" width="680" height="104" rx="16" fill="#F7F7F7" stroke="#E0E0E0" />
+  <g transform="translate(42,402) scale(0.625)" fill="none" stroke="#2B2B2B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
     <path d="M17 8h24l10 10v38H17zM41 8v11h10M25 28h17m-17 9h17m-17 9h9" />
     <path d="m4 27 4 4 7-8m-11 22 4 4 7-8" />
   </g>

@@ -4,172 +4,345 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-ihPIAdwF8pX2Jh+LmRi1xxl1vOosPbsJWuTvELo4WuI='; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'; frame-src https://www.youtube-nocookie.com">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-fATHp2166WhJmD8gFfsFM0Li3wW+iOk6Z+ieoSTt1Uc='; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'; frame-src https://www.youtube-nocookie.com">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="#fafbfd" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#11141b" media="(prefers-color-scheme: dark)">
-  <title>SMTO — Put your AI to work</title>
-  <meta name="description" content="SMTO (Small Model Task Orchestration) gives the AI model you choose tools and a workspace to investigate problems, run tasks, and show its work.">
+  <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+  <title>SMTO — Put your local AI to work</title>
+  <meta name="description" content="SMTO (Small Model Task Orchestration) puts the model you run to work: tools, approvals and a record of every step, on computers you control.">
   <link rel="canonical" href="https://vinithbraj.github.io/smto/">
-  <meta property="og:title" content="Put your AI to work — SMTO">
-  <meta property="og:description" content="Your AI model. Your tools. Your computers. One workspace for real work.">
+  <meta property="og:title" content="Put your local AI to work — SMTO">
+  <meta property="og:description" content="Your model. Your tools. Your computers. A record of every step.">
   <meta property="og:url" content="https://vinithbraj.github.io/smto/">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://vinithbraj.github.io/smto/static/social.png?v=475ad43273647267">
-  <meta property="og:image:alt" content="SMTO: a model chooses steps, the controller manages work, and selected tools act.">
+  <meta property="og:image" content="https://vinithbraj.github.io/smto/static/social.png?v=ccbd8ffb32400ee5">
+  <meta property="og:image:alt" content="SMTO: Put your local AI to work. The SMTO workspace beside the headline, showing a disk-space task answered from the commands that ran.">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   
   <link rel="icon" href="static/favicon.svg?v=aaa2c8cdddadf04a" type="image/svg+xml">
   <script src="static/theme-init.js?v=b2874f15afde4b2d"></script>
-  <link rel="stylesheet" href="static/site.css?v=8bb107672657d85b">
+  <link rel="stylesheet" href="static/site.css?v=c281582900f51c41">
   <link rel="stylesheet" href="static/disclosure_controls.css?v=ac3352ad86afea1f">
   
-  <link rel="stylesheet" href="static/home.css?v=a12543f0a481a8cb">
+  <link rel="stylesheet" href="static/home.css?v=070e8cc3e5bd5b64">
   
   <link rel="alternate" type="application/rss+xml" title="SMTO releases" href="feed.xml">
-  <script src="static/site.js?v=ccc0b3d0747c8387" defer></script>
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "applicationCategory": "ProductivityApplication", "description": "SMTO (Small Model Task Orchestration) gives the AI model you choose tools and a workspace to investigate problems, run tasks, and show its work.", "name": "SMTO", "url": "https://vinithbraj.github.io/smto/"}</script>
+  <script src="static/site.js?v=b97f9f5422ff9e18" defer></script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "applicationCategory": "ProductivityApplication", "description": "SMTO (Small Model Task Orchestration) puts the model you run to work: tools, approvals and a record of every step, on computers you control.", "name": "SMTO", "url": "https://vinithbraj.github.io/smto/"}</script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="shell header-row">
-    <a class="wordmark" href="./" aria-label="SMTO — Small Model Task Orchestration home"><img class="brand-mark" src="static/favicon.svg?v=aaa2c8cdddadf04a" width="42" height="42" alt=""><span class="wordmark-copy"><span>sm<span class="wordmark-accent">TO</span></span><span class="wordmark-detail">Small Model Task Orchestration</span></span></a>
-    <div class="theme-picker" hidden>
-      <button class="theme-toggle" type="button" aria-label="Choose theme" title="Choose theme" aria-expanded="false" aria-controls="theme-options">
-        <svg class="theme-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5" /></svg>
-        <svg class="theme-moon" viewBox="0 0 24 24" aria-hidden="true" hidden><path d="M20.5 13.5A8.5 8.5 0 0 1 10.5 3.5a8.5 8.5 0 1 0 10 10Z" /></svg>
-      </button>
-      <div id="theme-options" class="theme-options" hidden>
-        <fieldset>
-          <legend>Theme</legend>
-          <label><input type="radio" name="theme" value="auto" checked> Automatic</label>
-          <label><input type="radio" name="theme" value="light"> Light</label>
-          <label><input type="radio" name="theme" value="dark"> Dark</label>
-        </fieldset>
-      </div>
-    </div>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" hidden>Menu</button>
+    <a class="wordmark" href="./" aria-label="SMTO — Small Model Task Orchestration home"><img class="brand-mark" src="static/favicon.svg?v=aaa2c8cdddadf04a" width="26" height="26" alt=""><span class="wordmark-copy">sm<span class="wordmark-accent">TO</span></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg><span class="menu-label">Menu</span></button>
     <nav id="primary-nav" aria-label="Main navigation">
       
-      <a href="#benefits">Why SMTO</a>
-      
-      <a href="#examples">Examples</a>
+      <a href="#benefits">Overview</a>
       
       <a href="#how-it-works">How it works</a>
       
+      <a href="#examples">Features</a>
+      
       <a href="gallery/">Gallery</a>
       
-      <a href="manual/">Manuals</a>
+      <a href="manual/">Manual</a>
       
       <a href="faq/">FAQ</a>
       
       <a href="#get-smto" class="button small">Download</a>
       
     </nav>
+    <div class="header-tools">
+      <a class="header-icon" href="https://github.com/vinithbraj/smto" target="_blank" rel="noopener noreferrer" aria-label="SMTO on GitHub" title="SMTO on GitHub"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
+      <div class="theme-picker" hidden>
+        <button class="theme-toggle" type="button" aria-label="Choose theme" title="Choose theme" aria-expanded="false" aria-controls="theme-options">
+          <svg class="theme-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5" /></svg>
+          <svg class="theme-moon" viewBox="0 0 24 24" aria-hidden="true" hidden><path d="M20.5 13.5A8.5 8.5 0 0 1 10.5 3.5a8.5 8.5 0 1 0 10 10Z" /></svg>
+        </button>
+        <div id="theme-options" class="theme-options" hidden>
+          <fieldset>
+            <legend>Theme</legend>
+            <label><input type="radio" name="theme" value="auto" checked> Automatic</label>
+            <label><input type="radio" name="theme" value="light"> Light</label>
+            <label><input type="radio" name="theme" value="dark"> Dark</label>
+          </fieldset>
+        </div>
+      </div>
+    </div>
   </div>
 </header>
 <main id="main" tabindex="-1">
 <div class="one-page">
-    <section id="top" class="hero section-shell" aria-labelledby="hero-title">
-      <div class="shell hero-grid">
-        <div class="hero-copy">
-          <div class="eyebrow"><span class="little-bar" aria-hidden="true"></span> YOUR MODEL. YOUR TOOLS. YOUR CONTROL.</div>
-          <h1 id="hero-title">Put your AI <span class="hero-line">to work.</span></h1>
-          <p class="lead">An AI model can answer a question. Getting work done takes tools, task continuity, and clear boundaries. SMTO brings those pieces together around the model you choose.</p>
-          <p class="hero-note"><strong>SMTO</strong> stands for <strong>Small Model Task Orchestration</strong>. It’s a workspace for the AI model you connect, not another model provider.</p>
-          <div class="cta-row">
-            <a class="btn btn-primary" href="#get-smto">Download SMTO <span aria-hidden="true">↗</span></a>
-            <a class="btn btn-secondary" href="#examples">See examples <span aria-hidden="true">→</span></a>
-          </div>
-          <p class="fineprint licensing-summary">Free for personal, noncommercial use only. Commercial and organizational use requires a separate license.</p>
+
+  <section id="top" class="hero" aria-labelledby="hero-title">
+    <div class="shell">
+      <div class="hero-copy">
+        <p class="eyebrow">Small Model Task Orchestration</p>
+        <h1 id="hero-title">Put your local AI <span class="hero-line">to work.</span></h1>
+        <p class="lead">SMTO turns the model you run into an assistant that finishes real tasks on your own computers, with the tools it needs, approvals you control and a record of every step.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#get-smto">Get SMTO <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="arrow-link" href="#how-it-works">See how it works <span class="arrow" aria-hidden="true">→</span></a>
         </div>
+        <p class="hero-note">Linux and macOS · Self-contained downloads · No SMTO cloud account</p>
+        <p class="hero-license fineprint licensing-summary">Free for personal, noncommercial use only. Commercial and organizational use requires a separate license.</p>
+      </div>
+    </div>
+    <div class="shell">
+      <figure class="hero-stage">
+        <div class="hero-art" aria-hidden="true"></div>
+        <div class="window window--browser">
+  <div class="window-bar" aria-hidden="true"><span class="window-dots"><i></i><i></i><i></i></span><span class="window-address">127.0.0.1:8011</span></div>
+  <img class="screen screen-light" src="static/product-hero-light.webp?v=ce7f249bba881243" width="2000" height="1250" alt="The SMTO workspace. The request “Find what&#39;s using disk space in ~/Downloads and summarise it” is followed by the model&#39;s progress notes and an answer with a table of the five largest items. The composer below shows that the task runs on the localhost Gateway." loading="eager" decoding="async">
+  <img class="screen screen-dark" src="static/product-hero-dark.webp?v=bc803bd182830efd" width="2000" height="1250" alt="The SMTO workspace. The request “Find what&#39;s using disk space in ~/Downloads and summarise it” is followed by the model&#39;s progress notes and an answer with a table of the five largest items. The composer below shows that the task runs on the localhost Gateway." loading="lazy" decoding="async">
+</div>
+      </figure>
+      <p class="hero-caption">Progress notes, then an answer built from the commands that ran. Captured from SMTO with sample files and scripted model replies.</p>
+    </div>
+  </section>
 
-        <section id="benefits" class="hero-principles" aria-labelledby="hero-principles-heading">
-          <h2 id="hero-principles-heading" class="eyebrow">WHY SMTO</h2>
-          <div class="hero-principles-grid">
-            <article>
-              <h3>Privacy on your terms.</h3>
-              <p>Run compatible AI models locally and choose which computers, files, and services they can access. Online models and connected tools may send task data to their providers.</p>
-            </article>
-            <article>
-              <h3>Built for smaller models.</h3>
-              <p>Focused context, relevant tools, and saved task progress help smaller models manage multi-step work without needing everything in one prompt.</p>
-            </article>
-            <article>
-              <h3>Real work. Clear guardrails.</h3>
-              <p>SMTO checks access, requests approval when needed, and records actions so you can review what happened—not just read the final answer.</p>
-            </article>
+  <section id="benefits" class="section overview" aria-labelledby="overview-heading">
+    <div class="shell">
+      <div class="split">
+        <div>
+          <p class="eyebrow">What is SMTO</p>
+          <h2 class="split-heading" id="overview-heading">The task runtime for the model you run.</h2>
+        </div>
+        <div>
+          <p class="split-text">A model on its own can only answer. SMTO gives it what real work takes: tools for files, commands, documents and the web; Gateways that run those tools on the computers you choose; permission checks and approvals; and saved progress, so a task can pause, wait and pick up where it left off. It’s built so smaller local models can finish multi-step work, and the same runtime works with larger or hosted models.</p>
+          <div class="link-row">
+            <a class="arrow-link" href="#how-it-works">See how it works <span class="arrow" aria-hidden="true">→</span></a>
+            <a class="arrow-link" href="manual/">Read the manual <span class="arrow" aria-hidden="true">→</span></a>
           </div>
-        </section>
-
-        <div class="hero-stage">
-          <div class="spot-grid" aria-hidden="true"></div>
-          <figure class="app-frame">
-            <div class="app-top">
-              <div class="app-logo"><img class="mini-mark" src="static/favicon.svg?v=aaa2c8cdddadf04a" width="25" height="25" alt=""><strong>SMTO</strong><span aria-hidden="true">·</span><span>Task activity</span></div>
-              <span class="context-label"><span class="tiny-circle"></span> Illustrative example</span>
-            </div>
-            <div class="app-body">
-              <div class="user-bubble"><span class="bubble-label">YOU ASK</span><p>My computer is running out of space. Find out why and show me what I can safely clean up.</p></div>
-              <div class="activity-list">
-                <div class="activity-title" id="activity-label">TASK ACTIVITY <span>4 steps</span></div>
-<ol class="activity-steps" aria-labelledby="activity-label">
-                <li class="activity"><span class="done" aria-hidden="true">✓</span><span>Checked available storage</span><small>Done</small></li>
-                <li class="activity"><span class="done" aria-hidden="true">✓</span><span>Inspected large folders</span><small>Done</small></li>
-                <li class="activity"><span class="done" aria-hidden="true">✓</span><span>Identified build files and caches</span><small>Done</small></li>
-                <li class="activity"><span class="done" aria-hidden="true">✓</span><span>Prepared cleanup recommendations</span><small>Done</small></li>
-              </ol></div>
-              <div class="result-card"><span class="result-icon" aria-hidden="true">✓</span><div><strong>Investigation complete</strong><p>Found several large folders worth reviewing. Nothing was deleted.</p></div></div>
-            </div>
-            <figcaption>Example activity. Real results depend on the model, available tools and permissions.</figcaption>
-          </figure>
-
         </div>
       </div>
-    </section>
-
-    <section id="examples" class="page-section examples-section" aria-labelledby="examples-heading">
-      <div class="shell">
-        <div class="section-intro"><div class="eyebrow">IN PRACTICE</div><h2 id="examples-heading">See what SMTO can do.</h2><p>Watch an actual SMTO task, then explore other things your AI can do with the right model, tools, and permissions.</p></div>
-        <div class="example-layout">
-          <article class="feature-example" aria-labelledby="disk-demo-heading">
-            <div class="feature-top"><span class="chip">REAL TASK · 2-MINUTE VIDEO</span></div>
-            <h3 id="disk-demo-heading">From disk-space investigation to approved cleanup.</h3>
-            <p class="smto-demo-lede">Watch SMTO investigate a Linux computer running low on storage, identify what was consuming space, present cleanup options, wait for approval, and verify what changed.</p>
-            <div class="smto-demo-player" data-smto-demo="disk-cleanup" data-video-id="xl3EEOI3dW4" data-video-title="SMTO disk-space investigation, approved cleanup, and verification — real task video">
-              <a class="smto-demo-poster" href="https://youtu.be/xl3EEOI3dW4" target="_blank" rel="noopener noreferrer" aria-label="Play the 2-minute SMTO demo (loads YouTube)" aria-describedby="smto-demo-privacy">
-                <img src="static/smto-disk-investigation-demo-poster.webp?v=def09737adc9c6d1" width="1280" height="720" loading="lazy" decoding="async" alt="Real SMTO disk-space investigation video showing the agent working in its task interface">
-                <span class="smto-demo-play" aria-hidden="true"><span>▶</span> Play the 2-minute demo</span>
-                <span class="smto-demo-duration" aria-hidden="true">2:00</span>
-              </a>
-            </div>
-            <div class="smto-demo-support">
-              <p><a href="https://youtu.be/xl3EEOI3dW4" target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a></p>
-              <p class="smto-demo-disclosure" id="smto-demo-privacy">YouTube loads only when you press Play. YouTube may receive information about your visit when the player opens.</p>
-            </div>
-            <ol class="smto-demo-steps" aria-label="Recorded workflow">
-              <li>Investigate</li><li>Recommend</li><li>Ask for approval</li><li>Clean up</li><li>Verify</li>
-            </ol>
-            <p class="smto-demo-result">About 3.5 GB was reclaimed. SMTO verified the disk-space change and reported that an empty directory remained because removing it required elevated permission.</p>
-            <p class="smto-demo-footnote">Real screen recording, edited to remove waiting time. Results depend on the model, available tools, and permissions.</p>
-          </article>
-          <div class="example-tiles">
-            <article class="example-tile"><span class="tile-icon" aria-hidden="true">⌘</span><h3>Handle repetitive project work</h3><p class="example-quote">“Create the next version of this project, preserve my unfinished changes, and publish the new branch.”</p><p class="tile-outcome">Check the repository, determine the next version, make the branch, and verify it was published.</p></article>
-            <article class="example-tile"><span class="tile-icon" aria-hidden="true">▧</span><h3>Work across computers</h3><p class="example-quote">“Build this project on my other computer and prepare the finished files for release.”</p><p class="tile-outcome">Use the chosen computer, follow build progress, and inspect the results.</p></article>
-            <article class="example-tile"><span class="tile-icon" aria-hidden="true">✳</span><h3>Investigate an application issue</h3><p class="example-quote">“My editor is behaving strangely. Check its configuration and help me reset the affected files.”</p><p class="tile-outcome">Diagnose the likely cause, explain the changes, and run the approved steps.</p></article>
-            <article class="example-tile"><span class="tile-icon" aria-hidden="true">▤</span><h3>Organize files and storage</h3><p class="example-quote">“Move these large files to another drive, and check that everything copied correctly.”</p><p class="tile-outcome">Inspect source and destination, perform the approved copy, and verify what arrived.</p></article>
-          </div>
-        </div>
-        <p class="examples-footnote">The featured video is a real SMTO session, edited for length. The other examples summarize possible workflows; results depend on the model, tools, and permissions you configure.</p>
-        <p class="comparison-jump"><a href="#compare">Compare tools and approaches <span aria-hidden="true">↓</span></a></p>
+      <div class="rule-grid rule-grid--3 hero-principles-grid">
+        <article><h3>Local first.</h3><p>Run the controller, your model and your tools on hardware you control. Online models and connected services are optional; when you use them, they receive what a task sends them.</p></article>
+        <article><h3>Built for smaller models.</h3><p>Focused context, relevant tools, and saved task progress help smaller models manage multi-step work without needing everything in one prompt.</p></article>
+        <article><h3>Real work. Clear guardrails.</h3><p>SMTO checks access, requests approval when needed, and records actions so you can review what happened—not just read the final answer.</p></article>
       </div>
-    </section>
+      <div class="facts" role="list" aria-label="At a glance">
+        <div class="fact" role="listitem"><p class="fact-value">Linux · macOS</p><p class="fact-label">Self-contained downloads. Python is bundled.</p></div><div class="fact" role="listitem"><p class="fact-value">vLLM · llama.cpp</p><p class="fact-label">Manage local models on Linux, or connect an online provider.</p></div><div class="fact" role="listitem"><p class="fact-value">Many computers</p><p class="fact-label">Put a Gateway on each machine and choose one per task.</p></div><div class="fact" role="listitem"><p class="fact-value">Every step</p><p class="fact-label">Commands, results and approvals stay on record.</p></div>
+      </div>
+    </div>
+  </section>
 
+  <section id="how-it-works" class="section how" aria-labelledby="how-heading">
+    <div class="shell">
+      <div class="section-head">
+        <p class="eyebrow">How it works</p>
+        <h2 id="how-heading">Ask. Let it work. Review.</h2>
+        <p>Tell your AI the outcome you want. It can take the next step using the tools you allow, work with the results, and ask when a decision needs you.</p>
+      </div>
+      <ol class="rule-grid rule-grid--3 steps">
+        <li><span class="step-number" aria-hidden="true">01</span><h3>Describe the job.</h3><p>Ask in everyday language and choose the computer it should run on. Plan mode lets you agree on an approach before anything changes.</p></li>
+        <li><span class="step-number" aria-hidden="true">02</span><h3>Let it take the steps.</h3><p>The model chooses each action. SMTO checks access, runs the tool on the selected Gateway and returns the actual result for the next step.</p></li>
+        <li><span class="step-number" aria-hidden="true">03</span><h3>See what happened.</h3><p>Read the answer with the activity behind it. Check important results against their sources or files.</p></li>
+      </ol>
+      <figure class="diagram-block">
+        <div class="diagram-pictures" data-diagram="loop">
+  
     
+  <img class="diagram-light diagram-wide" src="static/smto-task-loop-wide-light.svg?v=15e86f4e2b662fde" width="1220" height="450" loading="lazy" decoding="async" alt="An AI chooses steps and SMTO checks and runs tools; results return to the AI for the next step.">
+    
+  <img class="diagram-dark diagram-wide" src="static/smto-task-loop-wide-dark.svg?v=31716fdf75651afe" width="1220" height="450" loading="lazy" decoding="async" alt="An AI chooses steps and SMTO checks and runs tools; results return to the AI for the next step.">
+    
+  
+    
+  <img class="diagram-light diagram-compact" src="static/smto-task-loop-compact-light.svg?v=8832d33ec6eb8f40" width="400" height="550" loading="lazy" decoding="async" alt="An AI chooses steps and SMTO checks and runs tools; results return to the AI for the next step.">
+    
+  <img class="diagram-dark diagram-compact" src="static/smto-task-loop-compact-dark.svg?v=d08586b35a09a43c" width="400" height="550" loading="lazy" decoding="async" alt="An AI chooses steps and SMTO checks and runs tools; results return to the AI for the next step.">
+    
+  
+</div>
+        <figcaption>The model provides the reasoning. SMTO manages access, actions, and progress. Results go back to the model to guide what happens next.</figcaption>
+      </figure>
+      <p class="how-continuity">When configured, longer tasks can continue, wait for input, or run on a schedule while the required systems are available.</p>
+    </div>
+  </section>
+
+  <section id="examples" class="section tour" aria-labelledby="examples-heading">
+    <div class="shell">
+      <div class="section-head">
+        <p class="eyebrow">In practice</p>
+        <h2 id="examples-heading">See it work.</h2>
+        <p>Screens from SMTO itself. Every task shows its plan, its progress and the evidence behind the answer.</p>
+      </div>
+      
+      <article class="tour-row" aria-labelledby="tour-1-heading">
+        <div class="tour-copy">
+          <p class="eyebrow">Activity</p>
+          <h3 id="tour-1-heading">Every step, on the record.</h3>
+          <p>Open a task’s activity to see each command the model chose, where it ran, its exit status and the output that came back.</p>
+          <ul class="check-list"><li>The command and the folder it ran in</li><li>The Gateway that ran it</li><li>Exit status and captured output</li></ul>
+        </div>
+        <div class="tour-media">
+          
+          <div class="window">
+  <div class="window-bar" aria-hidden="true"><span class="window-dots"><i></i><i></i><i></i></span></div>
+  <img class="screen screen-light" src="static/product-activity-light.webp?v=fe068682490e089c" width="1400" height="1166" alt="SMTO task activity in Debug mode. The group “Measuring the largest items in ~/Downloads” lists two completed shell steps, df -h / and du -sh ./* | sort -rh | head -n 8, each with exit 0 and its captured output." loading="lazy" decoding="async">
+  <img class="screen screen-dark" src="static/product-activity-dark.webp?v=1e739f2606d37a1c" width="1400" height="1166" alt="SMTO task activity in Debug mode. The group “Measuring the largest items in ~/Downloads” lists two completed shell steps, df -h / and du -sh ./* | sort -rh | head -n 8, each with exit 0 and its captured output." loading="lazy" decoding="async">
+</div>
+        </div>
+      </article>
+      
+      <article class="tour-row tour-row--flip" aria-labelledby="tour-2-heading">
+        <div class="tour-copy">
+          <p class="eyebrow">Approvals</p>
+          <h3 id="tour-2-heading">Nothing changes without you.</h3>
+          <p>When a step needs access it doesn’t have, the task pauses and shows you the exact action. Approve it once, allow it more widely, or stop the task.</p>
+          <ul class="check-list"><li>The exact command before it runs</li><li>Choose how far a decision applies</li><li>Deny and stop at any point</li></ul>
+        </div>
+        <div class="tour-media">
+          
+          <div class="window">
+  <div class="window-bar" aria-hidden="true"><span class="window-dots"><i></i><i></i><i></i></span></div>
+  <img class="screen screen-light" src="static/product-approval-light.webp?v=9b1edb1a6e86fac3" width="1382" height="1022" alt="An “Approval needed” card in SMTO showing the shell command that moves two Ubuntu ISO files to /mnt/backup/isos, an “Apply decision to” selector set to “This action”, and the buttons Approve once, Allow, Deny / stop task and Open Permissions." loading="lazy" decoding="async">
+  <img class="screen screen-dark" src="static/product-approval-dark.webp?v=f2db4318270f0b55" width="1382" height="1022" alt="An “Approval needed” card in SMTO showing the shell command that moves two Ubuntu ISO files to /mnt/backup/isos, an “Apply decision to” selector set to “This action”, and the buttons Approve once, Allow, Deny / stop task and Open Permissions." loading="lazy" decoding="async">
+</div>
+        </div>
+      </article>
+      
+      <article class="tour-row" aria-labelledby="tour-3-heading">
+        <div class="tour-copy">
+          <p class="eyebrow">Questions</p>
+          <h3 id="tour-3-heading">It asks instead of guessing.</h3>
+          <p>When a choice belongs to you, the model asks, offers suggested answers and waits for your reply before it continues.</p>
+          <ul class="check-list"><li>Pick a suggested answer or write your own</li><li>The task waits; nothing is assumed</li><li>Work resumes where it paused</li></ul>
+        </div>
+        <div class="tour-media">
+          
+          <div class="window">
+  <div class="window-bar" aria-hidden="true"><span class="window-dots"><i></i><i></i><i></i></span></div>
+  <img class="screen screen-light" src="static/product-ask-light.webp?v=7e28c0cc32439817" width="1400" height="682" alt="An SMTO question card asking how to save four new action items because action-items.md already lists two, with suggested answers and a field for another answer." loading="lazy" decoding="async">
+  <img class="screen screen-dark" src="static/product-ask-dark.webp?v=418dfdc3dfb08f40" width="1400" height="682" alt="An SMTO question card asking how to save four new action items because action-items.md already lists two, with suggested answers and a field for another answer." loading="lazy" decoding="async">
+</div>
+        </div>
+      </article>
+      
+      <article class="tour-row tour-row--flip" aria-labelledby="tour-4-heading">
+        <div class="tour-copy">
+          <p class="eyebrow">Workflows</p>
+          <h3 id="tour-4-heading">Make it routine.</h3>
+          <p>Save a request as a workflow, run it whenever you need it or on a schedule, and look back at every run.</p>
+          <ul class="check-list"><li>Reusable requests, one click to run</li><li>Schedules and reminders</li><li>Run history for every workflow</li></ul>
+        </div>
+        <div class="tour-media">
+          
+          <div class="window">
+  <div class="window-bar" aria-hidden="true"><span class="window-dots"><i></i><i></i><i></i></span></div>
+  <img class="screen screen-light" src="static/product-workflows-light.webp?v=cb29e0b38772e15d" width="1282" height="1065" alt="The SMTO Workflows page listing saved workflows such as “Weekly disk space report”, “Nightly backup check” and “Meeting notes to action items”, each with Run now, Schedule, Edit and History buttons." loading="lazy" decoding="async">
+  <img class="screen screen-dark" src="static/product-workflows-dark.webp?v=b9f15fefad72e10b" width="1282" height="1065" alt="The SMTO Workflows page listing saved workflows such as “Weekly disk space report”, “Nightly backup check” and “Meeting notes to action items”, each with Run now, Schedule, Edit and History buttons." loading="lazy" decoding="async">
+</div>
+        </div>
+      </article>
+      
+
+      <article class="demo" aria-labelledby="disk-demo-heading">
+        <div class="demo-copy">
+          <p class="eyebrow">REAL TASK · 2-MINUTE VIDEO</p>
+          <h3 id="disk-demo-heading">From disk-space investigation to approved cleanup.</h3>
+          <p class="demo-lede">Watch SMTO investigate a Linux computer running low on storage, identify what was consuming space, present cleanup options, wait for approval, and verify what changed.</p>
+          <ol class="demo-steps" aria-label="Recorded workflow">
+            <li>Investigate</li><li>Recommend</li><li>Ask for approval</li><li>Clean up</li><li>Verify</li>
+          </ol>
+          <p class="demo-result">About 3.5 GB was reclaimed. SMTO verified the disk-space change and reported that an empty directory remained because removing it required elevated permission.</p>
+        </div>
+        <div class="demo-media">
+          <div class="smto-demo-player" data-smto-demo="disk-cleanup" data-video-id="xl3EEOI3dW4" data-video-title="SMTO disk-space investigation, approved cleanup, and verification — real task video">
+            <a class="smto-demo-poster" href="https://youtu.be/xl3EEOI3dW4" target="_blank" rel="noopener noreferrer" aria-label="Play the 2-minute SMTO demo (loads YouTube)" aria-describedby="smto-demo-privacy">
+              <img src="static/smto-disk-investigation-demo-poster.webp?v=def09737adc9c6d1" width="1280" height="720" loading="lazy" decoding="async" alt="Real SMTO disk-space investigation video showing the agent working in its task interface">
+              <span class="smto-demo-play" aria-hidden="true"><span>▶</span> Play the 2-minute demo</span>
+              <span class="smto-demo-duration" aria-hidden="true">2:00</span>
+            </a>
+          </div>
+          <p class="demo-note"><a href="https://youtu.be/xl3EEOI3dW4" target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a></p>
+          <p class="demo-note demo-disclosure" id="smto-demo-privacy">YouTube loads only when you press Play. YouTube may receive information about your visit when the player opens.</p>
+          <p class="demo-note demo-footnote">Real screen recording, edited to remove waiting time. Results depend on the model, available tools, and permissions.</p>
+        </div>
+      </article>
+
+      <h3 class="prompts-heading">More things to ask</h3>
+      <div class="rule-grid rule-grid--4 prompts">
+        <article class="prompt"><h4>Handle repetitive project work</h4><p class="prompt-quote">“Create the next version of this project, preserve my unfinished changes, and publish the new branch.”</p><p class="prompt-outcome">Check the repository, determine the next version, make the branch, and verify it was published.</p></article><article class="prompt"><h4>Work across computers</h4><p class="prompt-quote">“Build this project on my other computer and prepare the finished files for release.”</p><p class="prompt-outcome">Use the chosen computer, follow build progress, and inspect the results.</p></article><article class="prompt"><h4>Investigate an application issue</h4><p class="prompt-quote">“My editor is behaving strangely. Check its configuration and help me reset the affected files.”</p><p class="prompt-outcome">Diagnose the likely cause, explain the changes, and run the approved steps.</p></article><article class="prompt"><h4>Organize files and storage</h4><p class="prompt-quote">“Move these large files to another drive, and check that everything copied correctly.”</p><p class="prompt-outcome">Inspect source and destination, perform the approved copy, and verify what arrived.</p></article>
+      </div>
+      <p class="fineprint section-foot examples-footnote">The featured video is a real SMTO session, edited for length. The other examples summarize possible workflows; results depend on the model, tools, and permissions you configure.</p>
+    </div>
+  </section>
+
+  <section id="computers" class="section computers" aria-labelledby="computers-heading">
+    <div class="shell feature-split">
+      <div class="feature-copy">
+        <p class="eyebrow">Work where you want</p>
+        <h2 id="computers-heading">One workspace. All your computers.</h2>
+        <p>Your AI doesn&#39;t have to work on the computer in front of you. Install a Gateway on a laptop, workstation or server, then choose the machine that has the files or tools a task needs.</p>
+        <ul class="check-list"><li>Each computer keeps its own files, credentials and permissions</li><li>See connection status and updates for every Gateway</li><li>Choosing a computer doesn&#39;t share files with the others</li></ul>
+      </div>
+      <div class="feature-media"><div class="window">
+  <div class="window-bar" aria-hidden="true"><span class="window-dots"><i></i><i></i><i></i></span></div>
+  <img class="screen screen-light" src="static/product-gateways-light.webp?v=f89403b025330d19" width="1400" height="676" alt="SMTO Settings in dark mode showing the Gateways section: two Gateways, localhost and LocalMachine, both connected and switched on, with buttons to add a Gateway and check for updates." loading="lazy" decoding="async">
+  <img class="screen screen-dark" src="static/product-gateways-dark.webp?v=cad3777704e8bc88" width="1400" height="676" alt="SMTO Settings in dark mode showing the Gateways section: two Gateways, localhost and LocalMachine, both connected and switched on, with buttons to add a Gateway and check for updates." loading="lazy" decoding="async">
+</div></div>
+    </div>
+  </section>
+
+  <section id="models" class="section models" aria-labelledby="models-heading">
+    <div class="shell feature-split feature-split--flip">
+      <div class="feature-copy">
+        <p class="eyebrow">Your model</p>
+        <h2 id="models-heading">Bring your own model.</h2>
+        <p>SMTO isn&#39;t a model provider. Connect a compatible model running on your own hardware or a supported online service, and keep the same workspace, tools and history when you change models.</p>
+        <div class="model-options">
+          <article><h3>Local models</h3><p>Run a model on hardware you control. On Linux, the Inference page can install, start and monitor vLLM and llama.cpp models for you.</p></article>
+          <article><h3>Online models</h3><p>Connect a supported hosted model service when that&#39;s the right fit.</p></article>
+        </div>
+        <p class="fineprint">The name reflects SMTO&#39;s roots in smaller models, not a limit on model size. The model you choose still shapes the quality of its reasoning and answers.</p>
+      </div>
+      <div class="feature-media"><div class="window">
+  <div class="window-bar" aria-hidden="true"><span class="window-dots"><i></i><i></i><i></i></span></div>
+  <img class="screen screen-light" src="static/product-models-light.webp?v=314e90b1ad47ef63" width="1400" height="1026" alt="SMTO Settings with Model routing open. The Main model entry shows the endpoint http://127.0.0.1:8080/v1, an Auto-select model switch, an API key field and a generation profile." loading="lazy" decoding="async">
+  <img class="screen screen-dark" src="static/product-models-dark.webp?v=408a326e5161b324" width="1400" height="1026" alt="SMTO Settings with Model routing open. The Main model entry shows the endpoint http://127.0.0.1:8080/v1, an Auto-select model switch, an API key field and a generation profile." loading="lazy" decoding="async">
+</div></div>
+    </div>
+  </section>
+
+  <section id="capabilities" class="section capabilities" aria-labelledby="capabilities-heading">
+    <div class="shell">
+      <div class="section-head">
+        <p class="eyebrow">Built in</p>
+        <h2 id="capabilities-heading">Everything a task needs.</h2>
+        <p>Tools are grouped into Skills. Turn on the ones your tasks need; access to each is still checked separately.</p>
+      </div>
+      <div class="rule-grid rule-grid--4 capability-grid">
+        <article><h3>Shell and files</h3><p>Run commands and make exact, checked edits to files on the selected computer.</p></article><article><h3>Python</h3><p>Calculate, analyse data and transform files with a Python runtime.</p></article><article><h3>Documents</h3><p>Read and create Word, Excel, PowerPoint and PDF files, with OCR for scans.</p></article><article><h3>Web research</h3><p>Search public sources and read pages, or drive a browser where one is available.</p></article><article><h3>Knowledge and memory</h3><p>Search your own documents and keep lessons that carry across conversations.</p></article><article><h3>Schedules</h3><p>Run saved workflows later or on a schedule, and get notified when they finish.</p></article><article><h3>Connected services</h3><p>GitHub, Gmail, Google Workspace, Microsoft 365, Slack and more, with your own credentials.</p></article><article><h3>On your phone</h3><p>Use the same workspace from a phone browser, in light or dark.</p></article>
+      </div>
+      <p class="section-foot link-row"><a class="arrow-link" href="manual/">See every Skill in the manual <span class="arrow" aria-hidden="true">→</span></a> <a class="arrow-link" href="#compare">Compare tools and approaches <span class="arrow" aria-hidden="true">↓</span></a></p>
+    </div>
+  </section>
+
+  <section id="control" class="section control" aria-labelledby="control-heading">
+    <div class="shell split">
+      <div>
+        <p class="eyebrow">Stay in control</p>
+        <h2 id="control-heading">Know what your AI is doing.</h2>
+        <p class="split-text">Useful AI needs access to real tools. SMTO helps keep that access understandable: see the work, follow results, and decide whether to approve actions that require your permission.</p>
+      </div>
+      <div>
+        <ul class="proof-list">
+          <li><strong>See the activity</strong><span>Review tool actions, results, and errors.</span></li><li><strong>Approve when needed</strong><span>Restricted access can pause for your decision.</span></li><li><strong>Know where it runs</strong><span>Choose the computer or connected service a task may use.</span></li>
+        </ul>
+        <p class="fineprint">Online model providers and connected services may receive the information required for a task. Review your connections and permissions before sharing sensitive data.</p>
+        
+        
+      </div>
+    </div>
+  </section>
+
+  
 
 
 
@@ -517,100 +690,150 @@
   </div>
 </section>
 
-    <section id="how-it-works" class="page-section how-section" aria-labelledby="how-heading">
-      <div class="shell">
-        <div class="section-intro"><div class="eyebrow">SIMPLE BY DESIGN</div><h2 id="how-heading">Ask. Let it work. Review.</h2><p>Tell your AI the outcome you want. It can take the next step using the tools you allow, work with the results, and ask when a decision needs you.</p></div>
-        <div class="step-grid">
-          <article><span class="step-label">01 / ASK</span><h3>Describe the job.</h3><p>Describe the job in everyday language and choose where it should run.</p></article>
-          <article><span class="step-label">02 / WORK</span><h3>Let it take the steps.</h3><p>The model chooses actions. SMTO checks access, uses the available tools, and tracks the results.</p></article>
-          <article><span class="step-label">03 / REVIEW</span><h3>See what happened.</h3><p>See the outcome and the activity behind it. Check important results against their sources or files.</p></article>
+  <section id="get-smto" class="section install" aria-labelledby="get-heading">
+    <div class="shell">
+      <div class="section-head">
+        <p class="eyebrow">Get started</p>
+        <h2 id="get-heading">Install SMTO in minutes.</h2>
+        <p>Download the self-contained build for your platform, start the Gateway and the Server, then connect a model in your browser. There is no Python or package setup to do first.</p>
+      </div>
+      <div class="install-layout">
+        <div class="install-tabs">
+          <fieldset class="tab-choices">
+            <legend class="visually-hidden">Choose your platform</legend>
+            <input class="tab-input" type="radio" name="install-platform" id="install-linux" value="linux" checked><label class="tab-label" for="install-linux">Linux</label><input class="tab-input" type="radio" name="install-platform" id="install-debian" value="debian"><label class="tab-label" for="install-debian">Debian / Ubuntu</label><input class="tab-input" type="radio" name="install-platform" id="install-macos" value="macos"><label class="tab-label" for="install-macos">macOS</label>
+          </fieldset>
+          
+          <div class="tab-panel tab-panel--linux">
+            <ol class="install-steps">
+              
+              <li><p class="install-step-title">Download the Gateway, the Server and the checksums</p><pre class="code-block" data-copy="Copy" data-copied="Copied"><code>mkdir -p ~/smto &amp;&amp; cd ~/smto
+base=https://github.com/vinithbraj/smto/releases/latest/download
+curl -L -O &#34;$base/smto-gateway&#34; -O &#34;$base/smto-server-inference&#34; -O &#34;$base/SHA256SUMS-linux&#34;</code></pre></li>
+              
+              <li><p class="install-step-title">Check the downloads against the published checksums</p><pre class="code-block" data-copy="Copy" data-copied="Copied"><code>sha256sum -c --ignore-missing SHA256SUMS-linux</code></pre></li>
+              
+              <li><p class="install-step-title">Start the Gateway in one terminal</p><pre class="code-block" data-copy="Copy" data-copied="Copied"><code>chmod +x smto-gateway smto-server-inference
+./smto-gateway --host 127.0.0.1 --port 8787</code></pre></li>
+              
+              <li><p class="install-step-title">Start the Server in another, then open http://127.0.0.1:8011</p><pre class="code-block" data-copy="Copy" data-copied="Copied"><code>./smto-server-inference --host 127.0.0.1 --port 8011 --manual-port 8013</code></pre></li>
+              
+            </ol>
+            <p class="install-note">Use smto-server-external instead when your model runs on another machine or service. The binaries need glibc 2.35 or newer (Ubuntu 22.04 and later). The first start takes longer while a private runtime is unpacked.</p>
+          </div>
+          
+          <div class="tab-panel tab-panel--debian">
+            <ol class="install-steps">
+              
+              <li><p class="install-step-title">Download smto-server and smto-gateway .deb packages and SHA256SUMS-linux from the latest release</p><p><a class="arrow-link" href="https://github.com/vinithbraj/smto/releases/latest" target="_blank" rel="noopener noreferrer">Open the latest release ↗</a></p></li>
+              
+              <li><p class="install-step-title">Check the packages against the published checksums</p><pre class="code-block" data-copy="Copy" data-copied="Copied"><code>sha256sum -c --ignore-missing SHA256SUMS-linux</code></pre></li>
+              
+              <li><p class="install-step-title">Install both packages</p><pre class="code-block" data-copy="Copy" data-copied="Copied"><code>sudo apt install ./smto-server_*_amd64.deb ./smto-gateway_*_amd64.deb</code></pre></li>
+              
+              <li><p class="install-step-title">Open SMTO Server Setup and SMTO Gateway Setup from your applications, or run setup in a terminal</p><pre class="code-block" data-copy="Copy" data-copied="Copied"><code>smto-server --setup-wizard cli
+smto-gateway --setup-wizard cli</code></pre></li>
+              
+            </ol>
+            <p class="install-note">Packages need an internet connection during setup. Setup runs as your regular account and asks for authorization only for the system steps that need it.</p>
+          </div>
+          
+          <div class="tab-panel tab-panel--macos">
+            <ol class="install-steps">
+              
+              <li><p class="install-step-title">Download the two apps and the checksums</p><pre class="code-block" data-copy="Copy" data-copied="Copied"><code>mkdir -p ~/smto &amp;&amp; cd ~/smto
+base=https://github.com/vinithbraj/smto/releases/latest/download
+curl -L -O &#34;$base/SMTO-server-macos-x86_64.zip&#34; -O &#34;$base/SMTO-gateway-macos-x86_64.zip&#34; -O &#34;$base/SHA256SUMS-macos-x86_64&#34;</code></pre></li>
+              
+              <li><p class="install-step-title">Check the downloads, then unzip them</p><pre class="code-block" data-copy="Copy" data-copied="Copied"><code>grep -E &#39;SMTO-(server|gateway)-macos&#39; SHA256SUMS-macos-x86_64 | shasum -a 256 -c -
+unzip -q SMTO-server-macos-x86_64.zip &amp;&amp; unzip -q SMTO-gateway-macos-x86_64.zip</code></pre></li>
+              
+              <li><p class="install-step-title">Start the Gateway in one terminal</p><pre class="code-block" data-copy="Copy" data-copied="Copied"><code>./SMTO-gateway.app/Contents/MacOS/gateway --host 127.0.0.1 --port 8787</code></pre></li>
+              
+              <li><p class="install-step-title">Start the Server in another, then open http://127.0.0.1:8011</p><pre class="code-block" data-copy="Copy" data-copied="Copied"><code>./SMTO-server.app/Contents/MacOS/server --host 127.0.0.1 --port 8011 --manual-port 8013</code></pre></li>
+              
+            </ol>
+            <p class="install-note">The apps are built for Intel Macs and are not signed or notarized. If macOS blocks them, right-click each app and choose Open once, or follow your organization&#39;s software policy.</p>
+          </div>
+          
         </div>
-        <p class="how-continuity">When configured, longer tasks can continue, wait for input, or run on a schedule while the required systems are available.</p>
-        <figure class="diagram-block">
-          <div class="diagram-pictures" data-diagram="loop">
-  
-    
-  <img class="diagram-light diagram-wide" src="static/smto-task-loop-wide-light.svg?v=b02933918e968000" width="1220" height="450" loading="lazy" decoding="async" alt="An AI chooses steps and SMTO checks and runs tools; results return to the AI for the next step.">
-    
-  <img class="diagram-dark diagram-wide" src="static/smto-task-loop-wide-dark.svg?v=ccade4c137cbfe8d" width="1220" height="450" loading="lazy" decoding="async" alt="An AI chooses steps and SMTO checks and runs tools; results return to the AI for the next step.">
-    
-  
-    
-  <img class="diagram-light diagram-compact" src="static/smto-task-loop-compact-light.svg?v=2e1e687dacba86a3" width="400" height="550" loading="lazy" decoding="async" alt="An AI chooses steps and SMTO checks and runs tools; results return to the AI for the next step.">
-    
-  <img class="diagram-dark diagram-compact" src="static/smto-task-loop-compact-dark.svg?v=03eee3ee42617e6a" width="400" height="550" loading="lazy" decoding="async" alt="An AI chooses steps and SMTO checks and runs tools; results return to the AI for the next step.">
-    
-  
-</div>
-          <figcaption>The model provides the reasoning. SMTO manages access, actions, and progress. Results go back to the model to guide what happens next.</figcaption>
-        </figure>
+        <aside class="install-aside">
+          <div class="aside-card">
+            <h3>Then connect a model.</h3>
+            <p>In SMTO, open Settings → Model routing and enter your model&#39;s endpoint: for example a llama.cpp or vLLM server such as http://127.0.0.1:8080/v1, or an online provider with its API key. On Linux, the Inference page can install and start a local model for you.</p>
+          </div>
+          <div class="aside-card">
+            <h3>Requirements</h3>
+            <ul class="check-list"><li>Linux x86_64 with glibc 2.35 or newer, or macOS on Intel</li><li>About 150 MB per component; Python is bundled</li><li>A model: local with llama.cpp or vLLM, or an online provider</li></ul>
+          </div>
+          <p class="fineprint">Current builds are development releases. They are not signed, and the macOS apps are not notarized. A matching SHA-256 checksum shows that a file arrived intact; it does not show who published it.</p>
+          <div class="aside-actions">
+            <a class="btn btn-primary" href="https://github.com/vinithbraj/smto/releases" rel="noopener noreferrer" target="_blank">All downloads on GitHub <span class="arrow" aria-hidden="true">↗</span></a>
+            <a class="arrow-link" href="manual/#doc=install-startup">Read the full install guide <span class="arrow" aria-hidden="true">→</span></a>
+          </div>
+        </aside>
       </div>
-    </section>
-
-    <section id="computers" class="page-section computers-section" aria-labelledby="computers-heading">
-      <div class="shell">
-        <div class="section-intro medium-intro"><div class="eyebrow">WORK WHERE YOU WANT</div><h2 id="computers-heading">One workspace. <span class="block-lg">All your computers.</span></h2><p>Your AI doesn&#39;t have to work on the computer in front of you. Connect a laptop, workstation, or server, then choose the machine that has the files or tools a task needs.</p></div>
-        <figure class="diagram-block machine-diagram">
-          <div class="diagram-pictures" data-diagram="machine">
-  
-    
-  <img class="diagram-light diagram-wide" src="static/smto-machine-target-wide-light.svg?v=6969655e1c0eec2a" width="1220" height="530" loading="lazy" decoding="async" alt="A SMTO workspace chooses one connected computer for a task. The workstation is selected; computers keep separate files and permissions.">
-    
-  <img class="diagram-dark diagram-wide" src="static/smto-machine-target-wide-dark.svg?v=cf5845a5531700b2" width="1220" height="530" loading="lazy" decoding="async" alt="A SMTO workspace chooses one connected computer for a task. The workstation is selected; computers keep separate files and permissions.">
-    
-  
-    
-  <img class="diagram-light diagram-compact" src="static/smto-machine-target-compact-light.svg?v=e3612d485d1141e4" width="400" height="540" loading="lazy" decoding="async" alt="A SMTO workspace chooses one connected computer for a task. The workstation is selected; computers keep separate files and permissions.">
-    
-  <img class="diagram-dark diagram-compact" src="static/smto-machine-target-compact-dark.svg?v=b437dfc15906748e" width="400" height="540" loading="lazy" decoding="async" alt="A SMTO workspace chooses one connected computer for a task. The workstation is selected; computers keep separate files and permissions.">
-    
-  
-</div>
-          <figcaption>Each computer keeps its own files and permissions. Selecting one doesn&#39;t automatically share data with the others.</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section id="models" class="page-section models-section" aria-labelledby="models-heading">
-      <div class="shell models-grid">
-        <div class="models-copy"><div class="eyebrow">YOUR MODEL</div><h2 id="models-heading">Bring your own AI.</h2><p>SMTO isn&#39;t a model provider. Connect a compatible model running on your own hardware or use a supported online service. Keep a familiar workspace for your tasks and tools even when you change models.</p><p class="fineprint">The name reflects SMTO&#39;s roots in smaller models, not a limit on model size. The model you choose still shapes the quality of its reasoning and answers.</p></div>
-        <div class="model-options"><article><span class="model-icon" aria-hidden="true">⌁</span><div><h3>Local models</h3><p>Run a compatible model using hardware you control.</p></div></article><article><span class="model-icon" aria-hidden="true">☁</span><div><h3>Online models</h3><p>Connect a supported hosted model service when that&#39;s the right fit.</p></div></article></div>
-      </div>
-    </section>
-
-    <section id="control" class="page-section control-section" aria-labelledby="control-heading">
-      <div class="shell control-grid">
-        <div class="control-copy"><div class="eyebrow">STAY IN CONTROL</div><h2 id="control-heading">Know what your AI is doing.</h2><p>Useful AI needs access to real tools. SMTO helps keep that access understandable: see the work, follow results, and decide whether to approve actions that require your permission.</p><div class="mini-proofs"><div><strong>See the activity</strong><span>Review tool actions, results, and errors.</span></div><div><strong>Approve when needed</strong><span>Restricted access can pause for your decision.</span></div><div><strong>Know where it runs</strong><span>Choose the computer or connected service a task may use.</span></div></div><p class="fineprint">Online model providers and connected services may receive the information required for a task. Review your connections and permissions before sharing sensitive data.</p>
-
-</div>
-        <figure class="permission-figure"><div class="permission-top"><span class="permission-line-icon" aria-hidden="true">⚑</span><span>Example access request</span></div><div class="permission-body"><span class="permission-eyebrow">YOUR DECISION IS NEEDED</span><h3>Access to project files</h3><p>The AI needs permission to read a folder for this task.</p><div class="permission-detail"><span>Requested resource</span><strong>Project folder</strong></div><div class="permission-detail"><span>Requested access</span><strong>Read files</strong></div></div><figcaption>Illustrative approval view — permissions depend on task policy.</figcaption></figure>
-      </div>
-    </section>
-
-    <section id="get-smto" class="page-section final-section" aria-labelledby="get-heading">
-      <div class="shell final-panel">
-
-        <div class="eyebrow">GET STARTED</div>
-        <h2 id="get-heading">Ready to put your AI to work?</h2>
-        <p>Download SMTO, connect a compatible model, and start with one task you can check. Expand the tools and computers you use as you go.</p>
-        <a class="btn btn-primary final-btn" href="https://github.com/vinithbraj/smto/releases" rel="noopener noreferrer" target="_blank">Browse SMTO downloads <span aria-hidden="true">↗</span></a>
+      <div class="install-legal">
         
         <p class="fineprint licensing-summary">Free for personal, noncommercial use only. Commercial and organizational use requires a separate license.</p>
-        <p class="fineprint">Questions before you start? <a href="faq/">Read the FAQ</a>.</p>
-        <p class="fineprint">Find the current downloads and installation information in the project repository. Choose the files for your operating system and verify them using the published instructions.</p>
         <details class="fineprint"><summary class="ui-disclosure-trigger">Before you install</summary><p>Proprietary SMTO distributions are subject to their included software license and End User License Agreement. Earlier open-source software and third-party components retain their own licenses. Review the terms and notices that accompany the version you download.</p><a href="legal/proprietary-license/">Read licensing terms</a></details>
       </div>
-    </section>
+    </div>
+  </section>
+
+  <section id="start" class="closing" aria-labelledby="closing-heading">
+    <div class="shell">
+      <h2 id="closing-heading">Your model. Your computers. Your rules.</h2>
+      <p>Download SMTO, connect a compatible model, and start with one task you can check. Expand the tools and computers you use as you go.</p>
+      <div class="cta-row">
+        <a class="btn btn-invert" href="#get-smto">Get SMTO <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost" href="faq/">Read the FAQ</a>
+      </div>
+    </div>
+  </section>
 
 </div>
 </main>
-<footer class="site-footer shell">
-  <p class="fineprint licensing-summary">Free for personal, noncommercial use only. Commercial and organizational use requires a separate license.</p>
-  <div class="footer-intro"><a class="wordmark" href="./" aria-label="SMTO home"><img class="brand-mark" src="static/favicon.svg?v=aaa2c8cdddadf04a" width="42" height="42" alt=""><span>SMTO</span></a><p>AI models provide the intelligence.<br>SMTO gives them a way to work.</p></div>
-  <nav aria-label="Footer navigation">
-    <a href="#top">Back to top</a><a href="https://github.com/vinithbraj/smto/releases" target="_blank" rel="noopener noreferrer">Downloads</a><a href="#control">Privacy &amp; permissions</a><a href="faq/">FAQ</a><a href="legal/proprietary-license/">Licensing &amp; legal</a>
-  </nav>
-  
+<footer class="site-footer">
+  <div class="shell">
+    <div class="footer-top">
+      <div class="footer-intro">
+        <a class="wordmark" href="./" aria-label="SMTO home"><img class="brand-mark" src="static/favicon.svg?v=aaa2c8cdddadf04a" width="26" height="26" alt=""><span>sm<span class="wordmark-accent">TO</span></span></a>
+        <p>AI models provide the intelligence. SMTO gives them a way to work.</p>
+      </div>
+      <nav class="footer-groups" aria-label="Footer navigation">
+        <div><h2>Product</h2>
+        <a href="#benefits">Overview</a>
+        
+        <a href="#how-it-works">How it works</a>
+        
+        <a href="#examples">Features</a>
+        
+        <a href="#get-smto">Install</a>
+        </div><div><h2>Resources</h2>
+        <a href="manual/">Manual</a>
+        
+        <a href="faq/">FAQ</a>
+        
+        <a href="https://github.com/vinithbraj/smto/releases" target="_blank" rel="noopener noreferrer">Downloads</a>
+        
+        <a href="#compare">Compare</a>
+        </div><div><h2>Trust</h2>
+        <a href="#control">Privacy &amp; permissions</a>
+        
+        <a href="legal/proprietary-license/">Licensing &amp; legal</a>
+        
+        <a href="legal/third-party/">Third-party notices</a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p class="licensing-summary">Free for personal, noncommercial use only. Commercial and organizational use requires a separate license.</p>
+      <a class="footer-top-link" href="#main">Back to top ↑</a>
+      
+    </div>
+    <p class="footer-wordmark" aria-hidden="true">smto</p>
+  </div>
 </footer>
 </body>
 </html>

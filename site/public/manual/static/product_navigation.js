@@ -12,7 +12,7 @@
     ["schedules", "Schedules", "/schedules", 0], ["notifications", "Notifications", "/notifications", 0],
     ["knowledge", "Knowledge", "/knowledge", 1], ["memories", "Memory Editor", "/memory-editor", 1],
     ["parameters", "Parameter Store", "/parameter-editor", 1], ["prompts", "Prompt Editor", "/prompt-editor", 1],
-    ["skills", "User Skills", "/skills", 1], ["system-health", "System Health", "/system-health", 2],
+    ["skill-editor", "Skills", "/skill-editor", 1], ["skills", "Python Skills", "/skills", 1], ["system-health", "System Health", "/system-health", 2],
     ["inference", "Inference", "/inference", 2], ["runtime", "Runtime", "/runtime", 2], ["console", "Console", "/console", 2],
     ["settings", "Settings", "/settings", 3], ["appearance", "Appearance", "/theme", 3],
     ["manual", "Manual", "/manual", 4], ["directory", "Directory", "/directory", 4],

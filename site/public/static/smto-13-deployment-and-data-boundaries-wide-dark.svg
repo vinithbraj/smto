@@ -3,7 +3,7 @@
   <desc id="desc">Within a computer or private network, the browser, controller, a local model endpoint and selected Gateways can operate together. The controller can instead use a compatible online model provider, and some tools contact online services. Dashed arrows crossing the boundary represent those optional data transfers. SMTO does not require an SMTO-hosted cloud service for the local setup, but that is not a guarantee that no data leaves the network. The user must review the configured model endpoint, target and tools. Offline work requires preinstalled local models and tools and tasks using locally available resources.</desc>
   <defs>
     <marker id="arrow-blue" markerWidth="9" markerHeight="9" refX="7.6" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
-      <path d="M0,0 L9,4.5 L0,9 Z" fill="#A5BDFF" />
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#E0E0E0" />
     </marker>
     <marker id="arrow-teal" markerWidth="9" markerHeight="9" refX="7.6" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
       <path d="M0,0 L9,4.5 L0,9 Z" fill="#88D6BA" />
@@ -18,24 +18,24 @@
       <path d="M0,0 L9,4.5 L0,9 Z" fill="#FFABB4" />
     </marker>
     <marker id="arrow-muted" markerWidth="9" markerHeight="9" refX="7.6" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
-      <path d="M0,0 L9,4.5 L0,9 Z" fill="#AEBBCD" />
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#A6A6A6" />
     </marker>
   </defs>
   <rect width="1536" height="690" fill="#181818" />
   <g transform="translate(-32,-202)">
-    <rect x="65" y="229" width="995" height="626" rx="24" fill="#22252B" stroke="#A5BDFF" stroke-width="1.5" stroke-dasharray="10 7" />
-    <text x="95" y="274.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="700" text-anchor="start" fill="#A5BDFF">YOUR COMPUTER / PRIVATE NETWORK</text>
-    <rect x="110" y="320" width="380" height="153" rx="18" fill="#22252B" stroke="#465164" stroke-width="1.5" />
-    <rect x="110" y="320" width="5" height="153" rx="2" fill="#A5BDFF" />
-    <rect x="132" y="343" width="66" height="66" rx="17" fill="#26344F" />
-    <g transform="translate(141,352) scale(0.75)" fill="none" stroke="#A5BDFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="65" y="229" width="995" height="626" rx="24" fill="#1A1A1A" stroke="#E0E0E0" stroke-width="1.5" stroke-dasharray="10 7" />
+    <text x="95" y="274.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="700" text-anchor="start" fill="#E0E0E0">YOUR COMPUTER / PRIVATE NETWORK</text>
+    <rect x="110" y="320" width="380" height="153" rx="18" fill="#1A1A1A" stroke="#3A3A3A" stroke-width="1.5" />
+    <rect x="110" y="320" width="5" height="153" rx="2" fill="#E0E0E0" />
+    <rect x="132" y="343" width="66" height="66" rx="17" fill="#262626" />
+    <g transform="translate(141,352) scale(0.75)" fill="none" stroke="#E0E0E0" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
       <rect x="13" y="13" width="38" height="38" rx="10" />
       <path d="M23 23h18v18H23zM23 5v8m9-8v8m9-8v8M23 51v8m9-8v8m9-8v8M5 23h8m-8 9h8m-8 9h8m38-18h8m-8 9h8m-8 9h8" />
     </g>
     <text x="218" y="365.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" text-anchor="start" fill="#ECECEC">Browser +</text>
     <text x="218" y="399.32" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" text-anchor="start" fill="#ECECEC">controller</text>
-    <text x="136" y="442.64" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="400" text-anchor="start" fill="#AEBBCD">Direct and track the task.</text>
-    <rect x="600" y="320" width="405" height="153" rx="18" fill="#22252B" stroke="#465164" stroke-width="1.5" />
+    <text x="136" y="442.64" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="400" text-anchor="start" fill="#A6A6A6">Direct and track the task.</text>
+    <rect x="600" y="320" width="405" height="153" rx="18" fill="#1A1A1A" stroke="#3A3A3A" stroke-width="1.5" />
     <rect x="600" y="320" width="5" height="153" rx="2" fill="#C6B5F2" />
     <rect x="622" y="343" width="66" height="66" rx="17" fill="#383047" />
     <g transform="translate(631,352) scale(0.75)" fill="none" stroke="#C6B5F2" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
@@ -43,9 +43,9 @@
     </g>
     <text x="708" y="365.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" text-anchor="start" fill="#ECECEC">Local model</text>
     <text x="708" y="399.32" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" text-anchor="start" fill="#ECECEC">option</text>
-    <text x="626" y="442.64" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="400" text-anchor="start" fill="#AEBBCD">Configured local endpoint.</text>
+    <text x="626" y="442.64" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="400" text-anchor="start" fill="#A6A6A6">Configured local endpoint.</text>
     <path d="M490,397 H592" fill="none" stroke="#C6B5F2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-violet)" />
-    <rect x="258" y="591" width="610" height="167" rx="18" fill="#22252B" stroke="#465164" stroke-width="1.5" />
+    <rect x="258" y="591" width="610" height="167" rx="18" fill="#1A1A1A" stroke="#3A3A3A" stroke-width="1.5" />
     <rect x="258" y="591" width="5" height="167" rx="2" fill="#88D6BA" />
     <rect x="280" y="614" width="66" height="66" rx="17" fill="#223C34" />
     <g transform="translate(289,623) scale(0.75)" fill="none" stroke="#88D6BA" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
@@ -53,18 +53,18 @@
       <path d="M32 8v48M16 25h22m-6-6 6 6-6 6M48 40H26m6-6-6 6 6 6" />
     </g>
     <text x="366" y="636.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="700" text-anchor="start" fill="#ECECEC">Selected Gateways</text>
-    <text x="284" y="695.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="400" text-anchor="start" fill="#AEBBCD">Use the files and tools on each target.</text>
-    <path d="M304,473 V532 H564 V583" fill="none" stroke="#A5BDFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-blue)" />
-    <rect x="1165" y="320" width="370" height="196" rx="18" fill="#22252B" stroke="#465164" stroke-width="1.5" />
+    <text x="284" y="695.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="400" text-anchor="start" fill="#A6A6A6">Use the files and tools on each target.</text>
+    <path d="M304,473 V532 H564 V583" fill="none" stroke="#E0E0E0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-blue)" />
+    <rect x="1165" y="320" width="370" height="196" rx="18" fill="#1A1A1A" stroke="#3A3A3A" stroke-width="1.5" />
     <rect x="1165" y="320" width="5" height="196" rx="2" fill="#C6B5F2" />
     <rect x="1187" y="343" width="66" height="66" rx="17" fill="#383047" />
     <g transform="translate(1196,352) scale(0.75)" fill="none" stroke="#C6B5F2" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
       <path d="M17 49C0 49 2 24 18 25c-1-20 31-22 33-1 16 3 17 25-1 25z" />
     </g>
     <text x="1273" y="365.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" text-anchor="start" fill="#ECECEC">Online model</text>
-    <text x="1191" y="424.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="400" text-anchor="start" fill="#AEBBCD">Optional provider receives</text>
-    <text x="1191" y="451.72" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="400" text-anchor="start" fill="#AEBBCD">configured requests.</text>
-    <rect x="1165" y="628" width="370" height="196" rx="18" fill="#22252B" stroke="#465164" stroke-width="1.5" />
+    <text x="1191" y="424.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="400" text-anchor="start" fill="#A6A6A6">Optional provider receives</text>
+    <text x="1191" y="451.72" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="400" text-anchor="start" fill="#A6A6A6">configured requests.</text>
+    <rect x="1165" y="628" width="370" height="196" rx="18" fill="#1A1A1A" stroke="#3A3A3A" stroke-width="1.5" />
     <rect x="1165" y="628" width="5" height="196" rx="2" fill="#E9C476" />
     <rect x="1187" y="651" width="66" height="66" rx="17" fill="#423722" />
     <g transform="translate(1196,660) scale(0.75)" fill="none" stroke="#E9C476" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
@@ -73,11 +73,11 @@
       <path d="M9 23h46M9 41h46M7 32h50" />
     </g>
     <text x="1273" y="673.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" text-anchor="start" fill="#ECECEC">Online tools</text>
-    <text x="1191" y="732.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="400" text-anchor="start" fill="#AEBBCD">Service connections can</text>
-    <text x="1191" y="759.72" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="400" text-anchor="start" fill="#AEBBCD">transfer task data.</text>
+    <text x="1191" y="732.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="400" text-anchor="start" fill="#A6A6A6">Service connections can</text>
+    <text x="1191" y="759.72" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="400" text-anchor="start" fill="#A6A6A6">transfer task data.</text>
     <path d="M490,355 V302 H1123 V398 H1157" fill="none" stroke="#C6B5F2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-violet)" stroke-dasharray="8 7" />
     <path d="M868,710 H1157" fill="none" stroke="#E9C476" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-amber)" stroke-dasharray="8 7" />
-    <text x="1092" y="562.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#AEBBCD">Optional external</text>
-    <text x="1092" y="589.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#AEBBCD">connections</text>
+    <text x="1092" y="562.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#A6A6A6">Optional external</text>
+    <text x="1092" y="589.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#A6A6A6">connections</text>
   </g>
 </svg>

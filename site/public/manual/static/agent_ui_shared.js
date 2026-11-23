@@ -82,7 +82,7 @@
    */
   document.addEventListener("DOMContentLoaded", () => {
     const page = window.__BRANDING_UI__?.page;
-    if (!["Scheduler", "Notifications", "Directory", "Parameter Store", "Memory Editor", "Console", "Themes", "Appearance", "Knowledge", "Prompt Editor", "User Skills", "Runtime"].includes(page)) return;
+    if (!["Scheduler", "Notifications", "Directory", "Parameter Store", "Memory Editor", "Console", "Themes", "Appearance", "Knowledge", "Prompt Editor", "User Skills", "Python Skills", "Skills", "Runtime"].includes(page)) return;
     let version = 0;
     window.SMTOUiUpdates?.subscribe(["settings.changed"], async () => {
       const request = ++version;

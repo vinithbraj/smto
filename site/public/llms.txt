@@ -1,6 +1,6 @@
 # SMTO — Small Model Task Orchestration
 
-> Put your AI to work. SMTO connects a compatible model to tools and computers.
+> Put your local AI to work. SMTO connects a compatible model to tools and computers.
 SMTO is not a model provider. The model chooses actions; SMTO manages access, tasks and results.
 Each task uses its selected computer. Files and permissions are not automatically shared.
 Online models and connected services may receive task data. Activity does not prove correctness.

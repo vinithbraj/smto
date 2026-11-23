@@ -609,11 +609,27 @@ if __name__ != "__main__" and os.environ.get(ENV):
             outputs=[ok(DF_BEFORE), ok(DU), ok(""), ok(DF_AFTER)],
         )
 
+    def bind_gateway(page):
+        """New chats start without a Gateway; choose the fixture Gateway as a user would."""
+        notice = page.get_by_role("button", name="Choose a Gateway", exact=True)
+        try:
+            notice.wait_for(state="visible", timeout=5000)
+        except Exception:  # Already bound (for example, a restored conversation).
+            return
+        # The button starts an @gateway mention; its menu lists the connected Gateways.
+        notice.click()
+        option = page.locator("[role=option]:visible", has_text="localhost").first
+        expect(option).to_be_visible()
+        option.click()
+        expect(notice).to_be_hidden()
+        page.locator("#prompt-input").fill("")
+
     def new_chat(page):
         """Start from an empty conversation, as the "New chat" button does."""
         page.locator("#new-chat-button").click()
         expect(page.locator("#prompt-input")).to_be_visible()
         expect(page.locator(".assistant-answer")).to_have_count(0)
+        bind_gateway(page)
 
     def submit_prompt(page, text):
         """Type and send a prompt once the composer reports it is ready to submit."""
@@ -905,11 +921,11 @@ Attendees: Priya, Sam, Lee, Morgan
                 expect(field).to_be_visible(timeout=30000)
                 page.wait_for_timeout(1500)
                 place(page.locator("article.turn").last, 122)
-                shot.capture(
-                    "ask-user-light",
+                both_themes(
+                    shot,
+                    "ask-user",
+                    60,
                     scene="ask-user",
-                    order=60,
-                    theme="light",
                     title="The model asks before choosing",
                     caption=(
                         "When a choice belongs to the user, the model asks. The question card "
@@ -974,11 +990,11 @@ Attendees: Priya, Sam, Lee, Morgan
                 open_details(main)
                 page.wait_for_timeout(1000)
                 place(section, 96)
-                shot.capture(
-                    "settings-models-light",
+                both_themes(
+                    shot,
+                    "settings-models",
+                    80,
                     scene="settings",
-                    order=80,
-                    theme="light",
                     title="Model routing",
                     caption=(
                         "Model routing in Settings. The Main model entry is open, showing its "
@@ -1001,12 +1017,11 @@ Attendees: Priya, Sam, Lee, Morgan
                 if results.count() and results.first.evaluate("el => el.open"):
                     results.first.locator(":scope > summary").click()
                 place(section, 96)
-                set_theme(page, "dark")
-                shot.capture(
-                    "settings-gateways-dark",
+                both_themes(
+                    shot,
+                    "settings-gateways",
+                    82,
                     scene="settings",
-                    order=81,
-                    theme="dark",
                     title="Gateways",
                     caption=(
                         "The Gateways section lists the computers SMTO can run tasks on, with "
@@ -1014,7 +1029,7 @@ Attendees: Priya, Sam, Lee, Morgan
                         "connection status, an on/off switch and software update status."
                     ),
                     alt=(
-                        "SMTO Settings page in dark mode with the Gateways section: a table with "
+                        "SMTO Settings page with the Gateways section: a table with "
                         "two "
                         "Gateways, 'localhost' and 'LocalMachine', both Connected and enabled, and "
                         "buttons to add a Gateway and check for updates."
@@ -1072,11 +1087,11 @@ Attendees: Priya, Sam, Lee, Morgan
                     expect(editor).not_to_be_visible()
                 expect(page.locator(".schedule-card")).to_have_count(len(WORKFLOWS))
                 page.wait_for_timeout(1000)
-                shot.capture(
-                    "workflows-light",
+                both_themes(
+                    shot,
+                    "workflows",
+                    90,
                     scene="workflows",
-                    order=90,
-                    theme="light",
                     title="Workflows",
                     caption=(
                         "Saved workflows are reusable requests. Each card can be run now, "
@@ -1265,7 +1280,19 @@ Attendees: Priya, Sam, Lee, Morgan
                 shot.open(base + "/agent-ui?ui=mobile", ready="#message")
                 page.locator("#new-chat").click()
                 page.wait_for_timeout(1000)
-                page.locator("#message").fill(DISK_PROMPT)
+                # New chats start without a Gateway; an @gateway mention binds one.
+                message = page.locator("#message")
+                message.click()
+                message.press_sequentially("@gateway ")
+                option = page.locator("[role=option]:visible", has_text="localhost").first
+                expect(option).to_be_visible()
+                option.click()
+                # Binding announces "Added localhost…" in a notice; close it before capturing.
+                dismiss = page.get_by_role("button", name="Dismiss", exact=True)
+                if dismiss.count() and dismiss.first.is_visible():
+                    dismiss.first.click()
+                message.fill(DISK_PROMPT)
+                expect(page.locator("#send")).to_be_enabled(timeout=10000)
                 shot.capture(
                     "phone-start-light",
                     scene="phone",
@@ -1301,7 +1328,7 @@ Attendees: Priya, Sam, Lee, Morgan
                     alt=(
                         "SMTO phone layout in dark mode: an answer saying ~/Downloads holds "
                         "about 33 GB with 14 GB free on /, a short list of the largest items, "
-                        "and a 'Continue this conversation' box with Continue and Queue buttons."
+                        "and a 'Continue this conversation' box."
                     ),
                 )
                 set_theme(page, "light")

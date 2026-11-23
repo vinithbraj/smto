@@ -3,7 +3,7 @@
   <desc id="desc">A task is saved with the context accepted for that work, including its selected target and model settings. A scheduled event can later make the task eligible to run. The controller drives the task using that context and the required execution checks. The selected Gateway or other execution route performs allowed work, and its results become part of the task record. Closing a browser tab does not stop the controller service. This does not promise execution while the controller is powered off, automatic target substitution, crash-time authorization revalidation, or an exact trigger time.</desc>
   <defs>
     <marker id="arrow-blue" markerWidth="9" markerHeight="9" refX="7.6" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
-      <path d="M0,0 L9,4.5 L0,9 Z" fill="#3F63CF" />
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#2B2B2B" />
     </marker>
     <marker id="arrow-teal" markerWidth="9" markerHeight="9" refX="7.6" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
       <path d="M0,0 L9,4.5 L0,9 Z" fill="#166C59" />
@@ -18,46 +18,46 @@
       <path d="M0,0 L9,4.5 L0,9 Z" fill="#B02D3A" />
     </marker>
     <marker id="arrow-muted" markerWidth="9" markerHeight="9" refX="7.6" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
-      <path d="M0,0 L9,4.5 L0,9 Z" fill="#526078" />
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#5C5C5C" />
     </marker>
   </defs>
   <rect width="720" height="496" fill="#FFFFFF" />
-  <rect x="20" y="20" width="330" height="156" rx="16" fill="#F5F7FB" stroke="#D6DDE8" />
-  <g transform="translate(42,38) scale(0.625)" fill="none" stroke="#3F63CF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="20" y="20" width="330" height="156" rx="16" fill="#F7F7F7" stroke="#E0E0E0" />
+  <g transform="translate(42,38) scale(0.625)" fill="none" stroke="#2B2B2B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
     <circle cx="32" cy="18" r="10" />
     <path d="M11 56v-9c0-19 42-19 42 0v9z" />
   </g>
   <text x="42" y="116" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#202020">Save the task</text>
-  <text x="328" y="62" text-anchor="end" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" fill="#526078">01</text>
-  <rect x="370" y="20" width="330" height="156" rx="16" fill="#F5F7FB" stroke="#D6DDE8" />
+  <text x="328" y="62" text-anchor="end" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" fill="#5C5C5C">01</text>
+  <rect x="370" y="20" width="330" height="156" rx="16" fill="#F7F7F7" stroke="#E0E0E0" />
   <g transform="translate(392,38) scale(0.625)" fill="none" stroke="#166C59" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
     <circle cx="32" cy="32" r="24" />
     <path d="M32 16v18l12 7M32 8v3m24 21h-3M32 56v-3M8 32h3" />
   </g>
   <text x="392" y="116" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#202020">Wait for its</text>
   <text x="392" y="154" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#202020">schedule</text>
-  <text x="678" y="62" text-anchor="end" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" fill="#526078">02</text>
-  <rect x="20" y="196" width="330" height="156" rx="16" fill="#F5F7FB" stroke="#D6DDE8" />
+  <text x="678" y="62" text-anchor="end" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" fill="#5C5C5C">02</text>
+  <rect x="20" y="196" width="330" height="156" rx="16" fill="#F7F7F7" stroke="#E0E0E0" />
   <g transform="translate(42,214) scale(0.625)" fill="none" stroke="#6751A7" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
     <rect x="13" y="13" width="38" height="38" rx="10" />
     <path d="M23 23h18v18H23zM23 5v8m9-8v8m9-8v8M23 51v8m9-8v8m9-8v8M5 23h8m-8 9h8m-8 9h8m38-18h8m-8 9h8m-8 9h8" />
   </g>
   <text x="42" y="292" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#202020">Resume the</text>
   <text x="42" y="330" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#202020">task</text>
-  <text x="328" y="238" text-anchor="end" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" fill="#526078">03</text>
-  <rect x="370" y="196" width="330" height="156" rx="16" fill="#F5F7FB" stroke="#D6DDE8" />
+  <text x="328" y="238" text-anchor="end" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" fill="#5C5C5C">03</text>
+  <rect x="370" y="196" width="330" height="156" rx="16" fill="#F7F7F7" stroke="#E0E0E0" />
   <g transform="translate(392,214) scale(0.625)" fill="none" stroke="#835800" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
     <rect x="8" y="8" width="48" height="48" rx="8" />
     <path d="M32 8v48M16 25h22m-6-6 6 6-6 6M48 40H26m6-6-6 6 6 6" />
   </g>
   <text x="392" y="292" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#202020">Run allowed</text>
   <text x="392" y="330" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#202020">tools</text>
-  <text x="678" y="238" text-anchor="end" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" fill="#526078">04</text>
-  <rect x="20" y="372" width="680" height="104" rx="16" fill="#F5F7FB" stroke="#D6DDE8" />
-  <g transform="translate(42,402) scale(0.625)" fill="none" stroke="#3F63CF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+  <text x="678" y="238" text-anchor="end" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" fill="#5C5C5C">04</text>
+  <rect x="20" y="372" width="680" height="104" rx="16" fill="#F7F7F7" stroke="#E0E0E0" />
+  <g transform="translate(42,402) scale(0.625)" fill="none" stroke="#2B2B2B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
     <path d="M17 8h24l10 10v38H17zM41 8v11h10M25 28h17m-17 9h17m-17 9h9" />
     <path d="m4 27 4 4 7-8m-11 22 4 4 7-8" />
   </g>
   <text x="102" y="418" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#202020">Review the result</text>
-  <text x="678" y="414" text-anchor="end" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" fill="#526078">05</text>
+  <text x="678" y="414" text-anchor="end" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" fill="#5C5C5C">05</text>
 </svg>

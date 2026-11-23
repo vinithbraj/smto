@@ -34,6 +34,8 @@
     theme: oneOf(["light", "dark"]),
     conversation_sort: oneOf(["recent", "oldest", "title", "best_match"]),
     conversation_status: oneOf(["", "completed", "needs_approval", "needs_input", "running", "interrupted", "failed", "cancelled", "multi_turn", "has_response"]),
+    conversation_open_folders: value => Array.isArray(value) && value.length <= 128
+      && value.every(id => typeof id === "string" && /^[a-f0-9]{32}$/.test(id)) ? [...new Set(value)] : undefined,
     conversation_pinned: boolean,
     conversation_task_type: oneOf(["", "normal", "scheduled"]),
     schedule_status: oneOf(["all", "active", "paused", "cancelled", "completed", "failed"]),

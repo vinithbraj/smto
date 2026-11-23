@@ -32,7 +32,7 @@ The pages are not a hand-made copy. `tools/build_site.py` imports the real websi
 
 | URL | Content | Source in openfabric |
 | --- | --- | --- |
-| `/` | Home page: why SMTO, examples, comparison, how it works, computers, models, privacy, downloads | `src/smto_site/templates/home.html` and `content/*.json` |
+| `/` | Home page: what SMTO is, how it works, product tour with real screenshots, computers, models, built-in skills, privacy, comparison, and step-by-step install for Linux, Debian/Ubuntu and macOS | `src/smto_site/templates/home.html` and `content/*.json` (CMS-editable fields) |
 | `/faq/` | Frequently asked questions with in-page search | `content/faq.json` |
 | `/gallery/` | **New on this edition.** 15 product screenshots (desktop and phone, light and dark, with a full-size viewer) and the site's 15 reference diagrams | `site/templates/gallery.html` (this folder); the diagrams come from `src/smto_site/visuals.py` |
 | `/manual/` | The full product manual (2,141 documents, about 37 MB): search, deep links (`#doc=…&heading=…`), diagrams, light and dark | `src/manual` |

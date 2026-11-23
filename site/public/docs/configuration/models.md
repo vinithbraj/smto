@@ -77,7 +77,7 @@ Changing normal execution settings does not replace those policies. See
 [Task Contract thinking](https://vinithbraj.github.io/smto/manual/#doc=task-contract-compiler&heading=thinking-during-task-contract-generation)
 for the compilation-specific controls.
 
-**Force budget and stop thinking** is off by default. When enabled, the next normal
+**Force budget and stop thinking** is on by default; a saved choice is kept. When enabled, the next normal
 execution decision can send its numeric thinking target to a server whose control
 support has been detected. A completion-token limit is required, and the target must
 leave space for the answer. Unknown support produces an availability notice;

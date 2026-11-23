@@ -3,7 +3,7 @@
   <desc id="desc">Install and run the SMTO controller according to the project guides. Configure a supported model endpoint, either local or online. Prepare and select the Gateway on the computer where machine-local tools should run; install the tools and provide required permissions. Start with a small task, such as reading notes and saving a summary, whose result you can inspect. The controller, model and Gateway can share one computer or be separated. This map does not replace operating-system-specific installation instructions and does not imply that downloads contain a model or every optional tool.</desc>
   <defs>
     <marker id="arrow-blue" markerWidth="9" markerHeight="9" refX="7.6" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
-      <path d="M0,0 L9,4.5 L0,9 Z" fill="#3F63CF" />
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#2B2B2B" />
     </marker>
     <marker id="arrow-teal" markerWidth="9" markerHeight="9" refX="7.6" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
       <path d="M0,0 L9,4.5 L0,9 Z" fill="#166C59" />
@@ -18,22 +18,22 @@
       <path d="M0,0 L9,4.5 L0,9 Z" fill="#B02D3A" />
     </marker>
     <marker id="arrow-muted" markerWidth="9" markerHeight="9" refX="7.6" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
-      <path d="M0,0 L9,4.5 L0,9 Z" fill="#526078" />
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#5C5C5C" />
     </marker>
   </defs>
   <rect width="1536" height="690" fill="#FFFFFF" />
   <g transform="translate(-32,-202)">
-    <rect x="65" y="249" width="685" height="226" rx="18" fill="#F5F7FB" stroke="#D6DDE8" stroke-width="1.5" />
-    <rect x="65" y="249" width="5" height="226" rx="2" fill="#3F63CF" />
-    <rect x="87" y="272" width="66" height="66" rx="17" fill="#EDF2FF" />
-    <g transform="translate(96,281) scale(0.75)" fill="none" stroke="#3F63CF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="65" y="249" width="685" height="226" rx="18" fill="#F7F7F7" stroke="#E0E0E0" stroke-width="1.5" />
+    <rect x="65" y="249" width="5" height="226" rx="2" fill="#2B2B2B" />
+    <rect x="87" y="272" width="66" height="66" rx="17" fill="#EFEFEF" />
+    <g transform="translate(96,281) scale(0.75)" fill="none" stroke="#2B2B2B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
       <rect x="13" y="13" width="38" height="38" rx="10" />
       <path d="M23 23h18v18H23zM23 5v8m9-8v8m9-8v8M23 51v8m9-8v8m9-8v8M5 23h8m-8 9h8m-8 9h8m38-18h8m-8 9h8m-8 9h8" />
     </g>
-    <text x="173" y="289.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="start" fill="#3F63CF">STEP 1</text>
+    <text x="173" y="289.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="start" fill="#2B2B2B">STEP 1</text>
     <text x="173" y="324.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="700" text-anchor="start" fill="#202020">Run SMTO</text>
-    <text x="91" y="371.28" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#526078">Install the controller from the guides.</text>
-    <rect x="850" y="249" width="685" height="226" rx="18" fill="#F5F7FB" stroke="#D6DDE8" stroke-width="1.5" />
+    <text x="91" y="371.28" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#5C5C5C">Install the controller from the guides.</text>
+    <rect x="850" y="249" width="685" height="226" rx="18" fill="#F7F7F7" stroke="#E0E0E0" stroke-width="1.5" />
     <rect x="850" y="249" width="5" height="226" rx="2" fill="#6751A7" />
     <rect x="872" y="272" width="66" height="66" rx="17" fill="#F2EEFB" />
     <g transform="translate(881,281) scale(0.75)" fill="none" stroke="#6751A7" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
@@ -41,8 +41,8 @@
     </g>
     <text x="958" y="289.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="start" fill="#6751A7">STEP 2</text>
     <text x="958" y="324.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="700" text-anchor="start" fill="#202020">Connect a model</text>
-    <text x="876" y="371.28" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#526078">Choose a supported local or online endpoint.</text>
-    <rect x="65" y="548" width="685" height="226" rx="18" fill="#F5F7FB" stroke="#D6DDE8" stroke-width="1.5" />
+    <text x="876" y="371.28" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#5C5C5C">Choose a supported local or online endpoint.</text>
+    <rect x="65" y="548" width="685" height="226" rx="18" fill="#F7F7F7" stroke="#E0E0E0" stroke-width="1.5" />
     <rect x="65" y="548" width="5" height="226" rx="2" fill="#166C59" />
     <rect x="87" y="571" width="66" height="66" rx="17" fill="#EAF6F1" />
     <g transform="translate(96,580) scale(0.75)" fill="none" stroke="#166C59" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
@@ -51,8 +51,8 @@
     </g>
     <text x="173" y="588.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="start" fill="#166C59">STEP 3</text>
     <text x="173" y="623.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="700" text-anchor="start" fill="#202020">Prepare a Gateway</text>
-    <text x="91" y="670.28" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#526078">Select the computer and allowed tools.</text>
-    <rect x="850" y="548" width="685" height="226" rx="18" fill="#F5F7FB" stroke="#D6DDE8" stroke-width="1.5" />
+    <text x="91" y="670.28" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#5C5C5C">Select the computer and allowed tools.</text>
+    <rect x="850" y="548" width="685" height="226" rx="18" fill="#F7F7F7" stroke="#E0E0E0" stroke-width="1.5" />
     <rect x="850" y="548" width="5" height="226" rx="2" fill="#835800" />
     <rect x="872" y="571" width="66" height="66" rx="17" fill="#FFF4DC" />
     <g transform="translate(881,580) scale(0.75)" fill="none" stroke="#835800" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
@@ -61,7 +61,7 @@
     </g>
     <text x="958" y="588.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="start" fill="#835800">STEP 4</text>
     <text x="958" y="623.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="700" text-anchor="start" fill="#202020">Try a small task</text>
-    <text x="876" y="670.28" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#526078">Inspect the result before doing more.</text>
-    <text x="800" y="855.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#3F63CF">The parts can share one computer — or be connected across your private network.</text>
+    <text x="876" y="670.28" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#5C5C5C">Inspect the result before doing more.</text>
+    <text x="800" y="855.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#2B2B2B">The parts can share one computer — or be connected across your private network.</text>
   </g>
 </svg>

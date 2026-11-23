@@ -1,6 +1,10 @@
 /* A shared desktop Find surface; highlight ranges never alter document markup. */
 ::highlight(smto-find), ::highlight(smto-filter) { background-color: #ffeb66; color: #1a1a1a; }
 ::highlight(smto-find-active) { background-color: #ffc53d; color: #1a1a1a; text-decoration: underline; }
+/* Passages related by meaning: a quieter tint than literal matches, in the theme accent. */
+::highlight(smto-find-related) { background-color: color-mix(in srgb, var(--accent, #2879dc) 16%, transparent); }
+/* Only matches hides presentation; the element and its state stay in the document. */
+[data-ui-find-hidden] { display: none !important; }
 .ui-find-trigger {
   display: inline-flex; align-items: center; justify-content: center;
   flex: none; min-width: 36px; min-height: var(--ui-control-height, 36px); padding: 4px 10px;
@@ -24,7 +28,7 @@
 }
 .ui-find-bar[hidden] { display: none !important; }
 .ui-find-scope { flex: 0 0 100%; font-size: calc(12px * var(--ui-font-scale, 1)); overflow-wrap: anywhere; }
-.ui-find-bar input { flex: 1 1 100px; width: 100px; min-width: 0; min-height: var(--ui-control-height, 36px); box-sizing: border-box;
+.ui-find-bar input[type="search"] { flex: 1 1 100px; width: 100px; min-width: 0; min-height: var(--ui-control-height, 36px); box-sizing: border-box;
   padding: 5px 10px; border: 1px solid var(--border-strong, #777); border-radius: 8px;
   color: inherit; background: var(--bg, #fff); font: inherit; }
 .ui-find-count { min-width: 68px; font-variant-numeric: tabular-nums; text-align: center; }
@@ -33,12 +37,90 @@
 .ui-find-bar button:not(:disabled):hover { background: var(--surface-hover, #eee); }
 .ui-find-bar button:disabled { opacity: .4; cursor: default; }
 .ui-find-trigger:focus-visible, .ui-find-bar :is(button, input):focus-visible { outline: 2px solid var(--accent, #2879dc); outline-offset: 2px; }
+.ui-find-bar .ui-find-toc-entry:focus-visible { outline-offset: -2px; }
 dialog > .ui-find-bar, [role="dialog"] > .ui-find-bar { position: sticky; top: 4px; margin: 4px 0 8px auto; max-width: 100%; }
+/* Options: three independent choices, remembered by the browser. Contents is a pill button;
+   Only matches and Semantic are the shared switches (mission_switch.css) with an icon. */
+.ui-find-options { flex: 0 0 100%; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 16px; }
+.ui-find-options[hidden] { display: none; }
+.ui-find-bar .ui-find-option {
+  flex: 0 1 auto; display: inline-flex; align-items: center; gap: 6px; width: auto;
+  min-height: var(--ui-control-compact-height, 28px); padding: 3px 10px;
+  border: 1px solid var(--border, #777); border-radius: 999px; background: transparent; color: var(--text-secondary, inherit);
+  font: 500 calc(12px * var(--ui-font-scale, 1))/1.2 var(--ui-font, system-ui, sans-serif);
+  transition: background-color var(--ui-motion-duration, 120ms) ease, border-color var(--ui-motion-duration, 120ms) ease, color var(--ui-motion-duration, 120ms) ease;
+}
+.ui-find-option svg { flex: none; width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.ui-find-bar .ui-find-option:not(:disabled):hover { background: var(--surface-hover, #eee); color: var(--text, inherit); }
+.ui-find-bar .ui-find-option[aria-pressed="true"] {
+  border-color: color-mix(in srgb, var(--accent, #2879dc) 55%, transparent);
+  background: color-mix(in srgb, var(--accent, #2879dc) 14%, transparent); color: var(--text, inherit);
+}
+.ui-find-bar .ui-find-option[aria-pressed="true"]:not(:disabled):hover { background: color-mix(in srgb, var(--accent, #2879dc) 20%, transparent); }
+.ui-find-bar .ui-find-option[aria-pressed="true"] svg { color: var(--accent, #2879dc); }
+.ui-find-bar .ui-find-option:disabled { opacity: .6; cursor: default; }
+/* appearance.js makes every labelled checkbox a shared switch row, and pages lay those rows out
+   as full-width settings (Settings: label left, switch right). In the Find bar a switch stays a
+   compact inline control: switch, icon, label. */
+.ui-find-bar .ui-find-options > label.ui-find-switch {
+  display: inline-flex; align-items: center; gap: 7px; max-width: none; margin: 0; padding: 0; cursor: pointer;
+  min-height: var(--ui-control-compact-height, 28px); color: var(--text-secondary, inherit);
+  font: 500 calc(12px * var(--ui-font-scale, 1))/1.2 var(--ui-font, system-ui, sans-serif);
+  user-select: none;
+}
+.ui-find-bar .ui-find-options > label.ui-find-switch > input.mission-switch { order: 0; margin: 0; align-self: center; }
+.ui-find-bar .ui-find-options > label.ui-find-switch > span:first-of-type { color: inherit; font: inherit; }
+.ui-find-switch svg { flex: none; width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.ui-find-bar label.ui-find-switch:has(> input:checked) { color: var(--text, inherit); }
+.ui-find-bar label.ui-find-switch:has(> input:checked) svg { color: var(--accent, #2879dc); }
+.ui-find-bar label.ui-find-switch:has(> input:disabled) { cursor: default; }
+.ui-find-note { flex: 0 0 100%; margin: 0; color: var(--text-secondary, inherit); font-size: calc(12px * var(--ui-font-scale, 1)); overflow-wrap: anywhere; }
+.ui-find-note[hidden] { display: none; }
+.ui-find-note.is-error { color: var(--danger, #b00020); }
+/* Contents: links to every match, scrolling inside the bar. */
+.ui-find-toc {
+  flex: 0 0 100%; box-sizing: border-box; max-height: min(420px, 48vh); margin: 2px -4px -4px; padding: 0 4px 4px;
+  overflow-y: auto; overscroll-behavior: contain; border-top: 1px solid var(--border, #777);
+}
+.ui-find-toc[hidden] { display: none; }
+dialog .ui-find-toc, [role="dialog"] .ui-find-toc { max-height: min(320px, 40vh); }
+.ui-find-toc-heading {
+  position: sticky; top: 0; z-index: 1; display: flex; justify-content: space-between; margin: 0; padding: 8px 6px 4px;
+  background: var(--bg, #fff); color: var(--text-secondary, inherit);
+  font: 600 calc(11px * var(--ui-font-scale, 1))/1.3 var(--ui-font, system-ui, sans-serif); letter-spacing: .02em; text-transform: uppercase;
+}
+.ui-find-toc-heading span { font-variant-numeric: tabular-nums; }
+.ui-find-toc-list { margin: 0; padding: 0; list-style: none; }
+.ui-find-bar .ui-find-toc-entry {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 8px; width: 100%; min-height: 0; padding: 6px 8px;
+  border: 0; border-radius: var(--ui-radius-control, 8px); background: transparent; color: inherit; text-align: left;
+  font: calc(13px * var(--ui-font-scale, 1))/1.35 var(--ui-font, system-ui, sans-serif);
+}
+.ui-find-bar .ui-find-toc-entry:not(:disabled):hover { background: var(--surface-hover, #eee); }
+.ui-find-bar .ui-find-toc-entry[aria-current="true"] { background: color-mix(in srgb, var(--accent, #2879dc) 14%, transparent); }
+.ui-find-toc-context { grid-column: 1; overflow: hidden; color: var(--text-secondary, inherit); font-size: calc(11px * var(--ui-font-scale, 1)); text-overflow: ellipsis; white-space: nowrap; }
+.ui-find-toc-snippet { grid-column: 1; display: -webkit-box; overflow: hidden; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow-wrap: anywhere; }
+.ui-find-toc-snippet mark { border-radius: 2px; background: #ffeb66; color: #1a1a1a; }
+.ui-find-toc-score {
+  grid-column: 2; grid-row: 1 / span 2; align-self: center; padding: 1px 6px; border-radius: 999px;
+  background: var(--surface, #f2f2f2); color: var(--text-secondary, inherit);
+  font-size: calc(11px * var(--ui-font-scale, 1)); font-variant-numeric: tabular-nums;
+}
+.ui-find-toc-more { margin: 6px; color: var(--text-secondary, inherit); font-size: calc(12px * var(--ui-font-scale, 1)); }
 @media (max-width: 980px), (pointer: coarse) {
   .ui-find-trigger, .ui-find-bar button { min-width: 44px; min-height: 44px; }
   .ui-find-bar button { flex-basis: 44px; }
-  .ui-find-bar input { min-height: 44px; font-size: max(16px, 1em); }
+  .ui-find-bar input[type="search"] { min-height: 44px; font-size: max(16px, 1em); }
+  .ui-find-bar .ui-find-option { flex-basis: auto; min-height: 44px; }
+  .ui-find-bar .ui-find-options > label.ui-find-switch { min-height: 44px; }
+  .ui-find-bar .ui-find-toc-entry { flex-basis: auto; min-height: 44px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ui-find-bar .ui-find-option { transition: none; }
 }
 @media (forced-colors: active) {
   ::highlight(smto-find), ::highlight(smto-filter), ::highlight(smto-find-active) { background-color: Highlight; color: HighlightText; }
+  ::highlight(smto-find-related) { background-color: Mark; color: MarkText; }
+  .ui-find-bar .ui-find-option[aria-pressed="true"], .ui-find-bar .ui-find-toc-entry[aria-current="true"] { outline: 2px solid Highlight; }
+  .ui-find-toc-snippet mark { background: Mark; color: MarkText; }
 }

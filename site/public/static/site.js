@@ -13,6 +13,7 @@ State:
 Security:
 - A validated theme preference uses local storage; the optional counter uses a first-party cookie.
 - A fixed YouTube player loads only after explicit demo activation.
+- Copy buttons write only the visible command text to the clipboard after a click.
 Collaborators:
 - base.html declares the button and navigation targets.
 Public surface:
@@ -107,7 +108,7 @@ Public surface:
     picker.querySelector('.theme-moon').toggleAttribute('hidden', theme !== 'dark');
     for (const choice of choices) choice.checked = choice.value === preference;
     for (const meta of document.querySelectorAll('meta[name="theme-color"]')) {
-      meta.content = theme === 'dark' ? '#11141b' : '#fafbfd';
+      meta.content = theme === 'dark' ? '#0a0a0a' : '#fafafa';
     }
   };
   const close = () => {
@@ -199,5 +200,34 @@ Public surface:
   });
   document.addEventListener('click', event => {
     if (!navigation.contains(event.target) && !button.contains(event.target)) close();
+  });
+})();
+
+// Add a Copy button to install commands; without JavaScript the text stays selectable.
+(() => {
+  const blocks = document.querySelectorAll('pre[data-copy]');
+  if (!blocks.length || !navigator.clipboard) return;
+  blocks.forEach(block => {
+    const code = block.querySelector('code');
+    if (!code) return;
+    const button = document.createElement('button');
+    const label = block.dataset.copy || 'Copy';
+    const done = block.dataset.copied || 'Copied';
+    button.type = 'button';
+    button.className = 'copy-button';
+    button.textContent = label;
+    button.setAttribute('aria-label', label + ': ' + code.textContent.split('\n')[0].slice(0, 60));
+    button.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(code.textContent);
+        button.textContent = done;
+        button.classList.add('is-done');
+      } catch (_) {
+        return;
+      }
+      setTimeout(() => { button.textContent = label; button.classList.remove('is-done'); }, 1600);
+    });
+    block.classList.add('has-copy');
+    block.append(button);
   });
 })();
