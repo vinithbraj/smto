@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" /><meta name="smto-static-manual" content="c213d2e1d89211e5"><script src="static/static-manual.js?v=380db3985d" data-revision="c213d2e1d89211e5"></script>
+  <script src="static/browser_support.js?v=20261119-safari"></script><script src="static/appearance.js?v=20261108-toggle-indicators"></script>
+<script src="static/appearance_standalone.js?v=20261107-ui-polish"></script>
+<link rel="stylesheet" href="static/appearance.css?v=20261108-toggle-indicators">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Manual · smTO</title>
+    <meta name="color-scheme" content="light dark" />
+    <script src="static/ui_session_state.js?v=20261028-navigation"></script>
+    <script src="static/navigation_groups.js?v=20261028-navigation" defer></script>
+
+    <link rel="stylesheet" href="static/app.css?v=20261107-ui-polish" />
+    <link rel="stylesheet" href="static/navigation_groups.css?v=20261028-navigation" />
+    <script src="api/agent/errors/client.js"></script>
+    <script src="static/error_presenter.js"></script>
+<script src="static/recovery.js"></script>
+    <link rel="stylesheet" href="static/error_presenter.css" />
+  <link rel="stylesheet" href="static/theme_switcher.css?v=20261102-instant-theme">
+<script src="static/theme_catalog.js?v=20261116-all-gray"></script>
+<script src="static/theme_palette.js?v=20261107-font-weight"></script>
+<link rel="stylesheet" href="static/theme_palette.css?v=20261107-font-weight">
+<link rel="stylesheet" href="static/tooltips.css?v=20261102-tooltips">
+<script src="static/tooltips.js?v=20261102-tooltips" defer></script>
+<script src="static/theme_switcher.js?v=20261102-instant-theme"></script>
+<link rel="stylesheet" href="static/ui_find.css?v=20261104-navigation">
+<link rel="stylesheet" href="static/product_navigation.css?v=20261114-unified-nav6">
+<script src="static/ui_find.js?v=20261104-navigation" defer></script>
+<script src="static/product_navigation.js?v=20261118-idle-cpu" defer></script>
+<meta name="smto-navigation" content="{&quot;controllerUrl&quot;:&quot;&quot;,&quot;destinations&quot;:{&quot;manual&quot;:&quot;./&quot;}}"><meta name="application-name" content="smTO" /><meta name="apple-mobile-web-app-title" content="smTO" /><link rel="icon" href="static/branding/smto-cube.svg?v=8bf423a5900395cf" /><script src="static/page-inline-1.js?v=69602e9fa8"></script><script src="static/branding.js?v=20260929"></script><script src="static/page-inline-2.js?v=007a2865cf"></script><link rel="stylesheet" href="static/static-site.css?v=30f4bb499f"></head>
+  <body>
+    <div class="manual-shell">
+      <header class="manual-topbar" data-product-surface="manual" data-product-search-target="#manual-search">
+        <div class="product-navigation-brand"><strong><a class="static-home-link" href="../" title="Home"><span data-agent-name title="smTO"><span data-agent-name-custom hidden></span><span data-agent-name-default><span data-brand-wordmark><img data-brand-image src="static/branding/smto-light.svg?v=8bf423a5900395cf" alt="smTO" hidden style="max-height:1.5em;max-width:9em;object-fit:contain;vertical-align:middle" /><span data-brand-text>smTO</span></span></span></span></a></strong><h1>Manual</h1></div>
+        <div class="product-navigation-controls">
+          <button type="button" data-product-search data-ui-find-ignore aria-label="Search this surface" title="Search this surface"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></button>
+          <button type="button" class="day-night-switch" data-theme-switcher aria-label="Switch to night theme">Night</button>
+          <button type="button" data-product-menu-trigger aria-label="More destinations" title="More destinations" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></svg></button>
+        </div>
+      </header>
+<div class="product-page-toolbar"><button type="button" data-standalone-appearance>Appearance</button><button id="nav-toggle" type="button" hidden>Sections</button><label class="search-box" for="manual-search">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z" />
+            <path d="M16 16l5 5" />
+          </svg>
+          <input id="manual-search" type="search" autocomplete="off" placeholder="Search manual" />
+        </label></div>
+
+      <div class="manual-layout">
+        <aside id="manual-nav" class="manual-nav" aria-label="Manual navigation">
+          <div class="nav-section filter-section"><div id="kind-filters"></div>
+            <label class="historical-filter"><input id="include-historical" type="checkbox" data-control-kind="selection"> Include historical reference</label>
+          </div>
+          <nav id="document-nav" class="document-nav"></nav>
+          <details class="manual-filters nav-section">
+            <summary>Filter by tags<span id="filter-count"></span></summary>
+            <div id="tag-filters" class="tag-filters"></div>
+          </details>
+        </aside>
+
+        <main class="manual-main">
+          <p id="search-status" class="visually-hidden" role="status" aria-live="polite"></p>
+          <div id="search-results" class="search-results" hidden></div>
+          <article id="manual-article" class="manual-article" tabindex="-1"></article>
+        </main>
+
+        <aside class="manual-aside" aria-label="Document details">
+          <section class="doc-meta-panel">
+            <div id="doc-meta" class="doc-meta"></div>
+          </section>
+          <section class="outline-panel">
+            <div class="section-label">Outline</div>
+            <nav id="outline-nav" class="outline-nav"></nav>
+          </section>
+          <section class="related-panel">
+            <div class="section-label">Related</div>
+            <div id="related-list" class="related-list"></div>
+          </section>
+        </aside>
+      </div>
+    </div>
+    <script src="static/vendor/mermaid/mermaid.min.js"></script>
+    <script src="static/app.js?v=20261107-ui-polish" type="module"></script>
+  </body>
+</html>

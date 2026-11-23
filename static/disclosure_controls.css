@@ -1,0 +1,51 @@
+/* Presentation only. Native details or each button's controller owns expansion.
+   Menus and structural summaries deliberately do not opt into this class. */
+:root {
+  --ui-disclosure-size: calc(12px * var(--ui-font-scale, 1));
+  --ui-disclosure-gap: calc(6px * var(--ui-font-scale, 1));
+  --ui-disclosure-stroke: 1.5px;
+}
+:root .ui-disclosure-trigger {
+  list-style: none;
+  cursor: pointer;
+  text-align: start;
+}
+:root .ui-disclosure-trigger::-webkit-details-marker { display: none; }
+:root .ui-disclosure-trigger::marker { content: ''; }
+:root .ui-disclosure-trigger::before {
+  content: '';
+  display: inline-block;
+  box-sizing: border-box;
+  flex: 0 0 calc(var(--ui-disclosure-size) * .6);
+  width: calc(var(--ui-disclosure-size) * .6);
+  height: calc(var(--ui-disclosure-size) * .6);
+  margin-inline: calc(var(--ui-disclosure-size) * .2) calc(var(--ui-disclosure-gap) + var(--ui-disclosure-size) * .2);
+  margin-block: 0;
+  vertical-align: .05em;
+  border: 0;
+  border-right: var(--ui-disclosure-stroke) solid currentColor;
+  border-bottom: var(--ui-disclosure-stroke) solid currentColor;
+  opacity: 1;
+  color: inherit;
+  transform: rotate(-45deg);
+  transform-origin: center;
+  transition: transform 120ms ease;
+  pointer-events: none;
+}
+:root .ui-disclosure-trigger::after { content: none; }
+:root .ui-disclosure-trigger:dir(rtl)::before { transform: rotate(135deg); }
+:root details[open] > summary.ui-disclosure-trigger::before,
+:root .ui-disclosure-trigger[aria-expanded='true']::before { transform: rotate(45deg); }
+:root .ui-disclosure-trigger:focus-visible { outline: 2px solid var(--accent, var(--blue, Highlight)); outline-offset: 2px; }
+:root .ui-disclosure-trigger:disabled { cursor: default; }
+:root .ui-disclosure-trigger.ui-disclosure-icon-only::before { margin-inline: calc(var(--ui-disclosure-size) * .2); }
+@media (max-width: 600px), (pointer: coarse) {
+  :root .ui-disclosure-trigger { min-height: 44px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  :root .ui-disclosure-trigger::before { transition: none !important; }
+}
+@media (forced-colors: active) {
+  :root .ui-disclosure-trigger { color: ButtonText; }
+  :root .ui-disclosure-trigger:focus-visible { outline-color: Highlight; }
+}

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="496" viewBox="0 0 720 496" role="img" aria-labelledby="title desc" lang="en">
+  <title id="title">Give smaller models a structured way to act.</title>
+  <desc id="desc">SMTO provides a structured environment around a configured model. Relevant tool choices reduce the need to describe unrelated tools. Recorded results can be presented as useful observations while the saved record remains distinct from the model's bounded context. Permissions and explicit task state help manage actions and unfinished work outside the model itself. A smaller model still needs to understand the task and use tools competently; model capabilities differ. Larger compatible models can use the same runtime. The illustration contains no benchmark, performance multiplier or guarantee that these mechanisms make a weak model equivalent to a stronger one.</desc>
+  <defs>
+    <marker id="arrow-blue" markerWidth="9" markerHeight="9" refX="7.6" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#2B2B2B" />
+    </marker>
+    <marker id="arrow-teal" markerWidth="9" markerHeight="9" refX="7.6" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#166C59" />
+    </marker>
+    <marker id="arrow-violet" markerWidth="9" markerHeight="9" refX="7.6" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#6751A7" />
+    </marker>
+    <marker id="arrow-amber" markerWidth="9" markerHeight="9" refX="7.6" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#835800" />
+    </marker>
+    <marker id="arrow-red" markerWidth="9" markerHeight="9" refX="7.6" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#B02D3A" />
+    </marker>
+    <marker id="arrow-muted" markerWidth="9" markerHeight="9" refX="7.6" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#5C5C5C" />
+    </marker>
+  </defs>
+  <rect width="720" height="496" fill="#FFFFFF" />
+  <rect x="20" y="20" width="330" height="156" rx="16" fill="#F7F7F7" stroke="#E0E0E0" />
+  <g transform="translate(42,38) scale(0.625)" fill="none" stroke="#2B2B2B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M39 9a15 15 0 0 0-14 20L9 45a8 8 0 0 0 11 11l16-17a15 15 0 0 0 20-19L44 30l-9-9L45 9z" />
+  </g>
+  <text x="42" y="116" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#202020">Relevant tools</text>
+  <rect x="370" y="20" width="330" height="156" rx="16" fill="#F7F7F7" stroke="#E0E0E0" />
+  <g transform="translate(392,38) scale(0.625)" fill="none" stroke="#166C59" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M32 6 53 14v17c0 12-9 22-21 28C20 53 11 43 11 31V14z" />
+    <path d="m22 31 7 7 14-15" />
+  </g>
+  <text x="392" y="116" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#202020">Explicit checks</text>
+  <rect x="20" y="196" width="330" height="156" rx="16" fill="#F7F7F7" stroke="#E0E0E0" />
+  <g transform="translate(42,214) scale(0.625)" fill="none" stroke="#6751A7" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="32" cy="14" rx="22" ry="8" />
+    <path d="M10 14v35c0 10 44 10 44 0V14M10 31c0 10 44 10 44 0M10 43c0 10 44 10 44 0" />
+  </g>
+  <text x="42" y="292" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#202020">Focused</text>
+  <text x="42" y="330" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#202020">observations</text>
+  <rect x="370" y="196" width="330" height="156" rx="16" fill="#F7F7F7" stroke="#E0E0E0" />
+  <g transform="translate(392,214) scale(0.625)" fill="none" stroke="#835800" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M17 8h24l10 10v38H17zM41 8v11h10M25 28h17m-17 9h17m-17 9h9" />
+    <path d="m4 27 4 4 7-8m-11 22 4 4 7-8" />
+  </g>
+  <text x="392" y="292" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#202020">Saved task</text>
+  <text x="392" y="330" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#202020">state</text>
+  <rect x="20" y="372" width="680" height="104" rx="16" fill="#F7F7F7" stroke="#E0E0E0" />
+  <g transform="translate(42,402) scale(0.625)" fill="none" stroke="#2B2B2B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M31 11c-8-10-20-2-17 8-10 1-12 16-4 21-5 10 8 20 17 14l5-6V15c3-12 17-12 20-2 7 2 9 12 4 17 10 9 3 23-7 21-3 10-15 8-17 0M20 16c0 6 4 10 10 10M12 31c8-2 12 2 12 9M17 50c6 0 10-4 10-9M43 17c-4 4-4 9 0 13M50 39c-8-1-11 3-11 9" />
+  </g>
+  <text x="102" y="418" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#202020">A capable model still matters</text>
+</svg>

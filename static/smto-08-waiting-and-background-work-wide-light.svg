@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="690" viewBox="0 0 1536 690" role="img" aria-labelledby="title desc" lang="en">
+  <title id="title">Waiting is a state, not more thinking.</title>
+  <desc id="desc">A short tool action returns its result when it finishes. A supported long-running action can be tracked as saved background work; SMTO can resume the task when the relevant result or event arrives. When an answer or approval is required from you, the task retains its progress and waits for your input. It does not need repeated model calls merely to remain in the waiting state. Closing the original browser tab is not the same as stopping the controller. The controller, target Gateway, model connection and tools still need to be available as required. These paths are conceptual and make no timing or latency guarantee.</desc>
+  <defs>
+    <marker id="arrow-blue" markerWidth="9" markerHeight="9" refX="7.6" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#2B2B2B" />
+    </marker>
+    <marker id="arrow-teal" markerWidth="9" markerHeight="9" refX="7.6" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#166C59" />
+    </marker>
+    <marker id="arrow-violet" markerWidth="9" markerHeight="9" refX="7.6" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#6751A7" />
+    </marker>
+    <marker id="arrow-amber" markerWidth="9" markerHeight="9" refX="7.6" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#835800" />
+    </marker>
+    <marker id="arrow-red" markerWidth="9" markerHeight="9" refX="7.6" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#B02D3A" />
+    </marker>
+    <marker id="arrow-muted" markerWidth="9" markerHeight="9" refX="7.6" refY="4.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#5C5C5C" />
+    </marker>
+  </defs>
+  <rect width="1536" height="690" fill="#FFFFFF" />
+  <g transform="translate(-32,-202)">
+    <rect x="60" y="245" width="1480" height="184" rx="20" fill="#EAF6F1" stroke="#E0E0E0" stroke-width="1.5" />
+    <g transform="translate(83,273) scale(0.984375)" fill="none" stroke="#166C59" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="6" y="11" width="52" height="42" rx="6" />
+      <path d="m17 25 8 7-8 7m16 1h14" />
+    </g>
+    <text x="82" y="371.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" fill="#166C59">SHORT ACTION</text>
+    <text x="345" y="309.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" text-anchor="start" fill="#202020">Run tool</text>
+    <text x="345" y="355.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="400" text-anchor="start" fill="#5C5C5C">Allowed action</text>
+    <path d="M672,326 H724" fill="none" stroke="#166C59" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-teal)" />
+    <text x="737" y="309.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" text-anchor="start" fill="#202020">Tool finishes</text>
+    <text x="737" y="355.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="400" text-anchor="start" fill="#5C5C5C">Result is available</text>
+    <path d="M1064,326 H1116" fill="none" stroke="#166C59" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-teal)" />
+    <text x="1129" y="309.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" text-anchor="start" fill="#202020">Return result</text>
+    <text x="1129" y="355.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="400" text-anchor="start" fill="#5C5C5C">Continue the task</text>
+    <rect x="60" y="457" width="1480" height="184" rx="20" fill="#EFEFEF" stroke="#E0E0E0" stroke-width="1.5" />
+    <g transform="translate(83,485) scale(0.984375)" fill="none" stroke="#2B2B2B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="32" cy="32" r="24" />
+      <path d="M32 16v18l12 7M32 8v3m24 21h-3M32 56v-3M8 32h3" />
+    </g>
+    <text x="82" y="583.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" fill="#2B2B2B">BACKGROUND WORK</text>
+    <text x="345" y="521.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" text-anchor="start" fill="#202020">Start supported job</text>
+    <text x="345" y="567.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="400" text-anchor="start" fill="#5C5C5C">Keep its task record</text>
+    <path d="M672,538 H724" fill="none" stroke="#2B2B2B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-blue)" />
+    <text x="737" y="521.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" text-anchor="start" fill="#202020">Work remains active</text>
+    <text x="737" y="567.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="400" text-anchor="start" fill="#5C5C5C">Track the saved job</text>
+    <path d="M1064,538 H1116" fill="none" stroke="#2B2B2B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-blue)" />
+    <text x="1129" y="521.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" text-anchor="start" fill="#202020">Result arrives</text>
+    <text x="1129" y="567.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="400" text-anchor="start" fill="#5C5C5C">Continue from progress</text>
+    <rect x="60" y="669" width="1480" height="184" rx="20" fill="#FFF4DC" stroke="#E0E0E0" stroke-width="1.5" />
+    <g transform="translate(83,697) scale(0.984375)" fill="none" stroke="#835800" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="32" cy="18" r="10" />
+      <path d="M11 56v-9c0-19 42-19 42 0v9z" />
+    </g>
+    <text x="82" y="795.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" fill="#835800">HUMAN INPUT</text>
+    <text x="345" y="733.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" text-anchor="start" fill="#202020">Need your input</text>
+    <text x="345" y="779.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="400" text-anchor="start" fill="#5C5C5C">Ask a specific question</text>
+    <path d="M672,750 H724" fill="none" stroke="#835800" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-amber)" />
+    <text x="737" y="733.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" text-anchor="start" fill="#202020">Save a pause</text>
+    <text x="737" y="779.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="400" text-anchor="start" fill="#5C5C5C">Wait for your response</text>
+    <path d="M1064,750 H1116" fill="none" stroke="#835800" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-amber)" />
+    <text x="1129" y="733.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" text-anchor="start" fill="#202020">Your reply arrives</text>
+    <text x="1129" y="779.00" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="400" text-anchor="start" fill="#5C5C5C">Continue within scope</text>
+  </g>
+</svg>
